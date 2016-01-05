@@ -33,7 +33,7 @@ Strategy for migrating old fronter-guide content
 Directory structure
 =========================
 
-..  code::
+.. code-block::
   homestead-guide
     build    - workdir, not commited to repo
     source   - actual content in rst
