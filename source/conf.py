@@ -22,6 +22,10 @@ import shlex
 #sys.path.insert(0, os.path.abspath('.'))
 
 # -- General configuration ------------------------------------------------
+def setup(sphinx):
+    sys.path.insert(0, os.path.abspath('./utils'))
+    from SolidityLexer import SolidityLexer
+    sphinx.add_lexer('Solidity', SolidityLexer())
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #needs_sphinx = '1.0'
@@ -78,7 +82,7 @@ language = None
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = []
+exclude_patterns = ['_build']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -97,6 +101,8 @@ exclude_patterns = []
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
+
+highlight_language = 'Solidity'
 
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
