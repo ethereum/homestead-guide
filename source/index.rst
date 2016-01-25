@@ -14,13 +14,12 @@ Contents
 .. toctree::
    :maxdepth: 2
 
-   introduction.rst
-   ethereum-ecosystem.rst
-   using-ethereum-the-basics.rst
-   solidity-in-depth.rst
-   contracts-and-transactions.rst
-   developing-on-ethereum.rst
-   frequently-asked-questions.rst
+   sections\introduction\introduction.rst
+   sections\ethereum-ecosystem\ethereum-ecosystem.rst
+   sections\using-ethereum-the-basics\using-ethereum-the-basics.rst
+   sections\contracts-and-transactions.rst
+   sections\developing-on-ethereum\developing-on-ethereum.rst
+   sections\frequently-asked-questions\frequently-asked-questions.rst
 
 
 
@@ -68,6 +67,10 @@ Using Ethereum: The Basics
     * ARM
     * Binaries
     * Source Installation
+  - Connecting to the Network
+    * Syncing vs Fast Syncing
+    * Light Client Network Connectivity
+    * NAT and Peer Discovery
   - Creating an Account
     * Using Console
     * Using EthKey
@@ -80,8 +83,8 @@ Using Ethereum: The Basics
     * Accounts (EOA) [Externally Owned Accounts are referenced here. make sure to differentiate from contract accounts that are mentioned later in the guide]
   - Backup/Import Accounts
   	* Backing Up Wallets
-	* Importing Wallets [including pre-sale wallets]
-	* Online wallets, Paper Wallets and Cold Storage
+	  * Importing Wallets [including pre-sale wallets]
+	  * Online wallets, Paper Wallets, and Cold Storage
   - Ether
     * What is Ether?
     * [Table of Sub Units]
@@ -122,7 +125,7 @@ Contracts and Transactions
 Developing on Ethereum
   - Developer Tools
     * IDEs/Frameworks
-    * High Level Languages
+    * Solidity Contract Language Resources
     * Other Tools
   - DApp Development
     * Web3
