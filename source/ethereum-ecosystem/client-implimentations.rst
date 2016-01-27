@@ -1,3 +1,3 @@
 *****
-Client Implimentations
+Client Implementations
 *****
