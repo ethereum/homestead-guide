@@ -9,10 +9,8 @@ Welcome to Ethereum Homestead Documentation!
 Contents
 ========
 
-:ref:`Keyword Index <genindex>`, :ref:`Search Page <search>`
-
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    introduction/introduction.rst
    ethereum-ecosystem/ethereum-ecosystem.rst
@@ -20,15 +18,6 @@ Contents
    contracts-and-transactions/contracts-and-transactions.rst
    developing-on-ethereum/developing-on-ethereum.rst
    frequently-asked-questions/frequently-asked-questions.rst
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
 
 Structure of Guide
@@ -71,8 +60,7 @@ Using Ethereum: The Basics
     * Installing from Source
 
   - Connecting to the Network
-
-    * Syncing vs Fast Syncing
+    * How to Connect
     * Light Client Network Connectivity
     * NAT and Peer Discovery
 
