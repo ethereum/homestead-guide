@@ -4,6 +4,10 @@ Homestead-guide
 
 Homestead guide is the reference documentation accompanying the homestead release of the ethereum project.
 
+
+`Hosted on ReadTheDocs`_
+
+
 Roadmap for homestead guide
 ==============================
 
@@ -34,16 +38,16 @@ Directory structure
 =========================
 
 .. code-block::
-  homestead-guide
-    build    - workdir, not commited to repo
-    source   - actual content in rst
-      conf.py - sphinx configuration
-    frontier
-      wiki    - the legacy wiki
-      gitbook - the legacy gitbook resources (converted to rst)
-    make.bat - windows command to build docs
-    Makefile - platforms with make to build docs
+
+    homestead-guide
+      build    - workdir, not commited to repo
+      source   - actual content in rst
+        conf.py - sphinx configuration
+      frontier
+        wiki    - the legacy wiki
+        gitbook - the legacy gitbook resources (converted to rst)
+      make.bat - windows command to build docs
+      Makefile - platforms with make to build docs
 
 
-
-
+.. _Hosted on ReadTheDocs: https://ethereum-homestead.readthedocs.org/en/latest/
