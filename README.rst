@@ -34,7 +34,7 @@ Build and view html
 ---------------------
 * In a terminal window, go to your homestead-guide directory.
 * ``make html``
-* ``cd build\html``
+* ``cd build/html``
 * ``open index.html`` (open in web browser)
 * Tip: each time you run ``make html``, just reload your browser to view changes
 
