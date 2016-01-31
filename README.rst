@@ -20,7 +20,7 @@ Install Sphinx, etc
 ---------------------
 For OSX/Linux users (based on instructions here: https://read-the-docs.readthedocs.org/en/latest/getting_started.html)
 
-* From command line: sudo pip install sphinx 
+* From command line: ``sudo pip install sphinx``
 
 For Windows users:
 
