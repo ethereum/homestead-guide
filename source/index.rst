@@ -6,12 +6,22 @@
 Welcome to Ethereum Homestead Documentation!
 ============================================
 
+
+..  image:: img/ethereum-logo.jpg
+..   :height: 300px
+..   :width: 300 px
+   :scale: 50 %
+   :alt: ethereum-logo
+   :align: center
+
+
 Contents
 ========
 
 .. toctree::
    :maxdepth: 2
 
+   about.rst
    introduction/introduction.rst
    ethereum-ecosystem/ethereum-ecosystem.rst
    using-ethereum-the-basics/using-ethereum-the-basics.rst

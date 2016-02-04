@@ -1,18 +1,18 @@
-*****
+********************************************************************************
 DApp Development
-*****
+********************************************************************************
 
 Web3
-=============
+================================================================================
 TODO
 
 Connecting to Morden Testnet
-=============
+================================================================================
 
 TODO
 
 Setting Up a Local Private Testnet
-=============
+================================================================================
 You either pre-generate or mine your own Ether on a private
 testnet. It is a much more cost effective way of trying out
 Ethereum.
@@ -24,7 +24,7 @@ The things that are required to specify in a private chain are:
  - (Recommended) Disable Node Discovery
 
 The Genesis File
-----------------
+--------------------------------------------------------------------------------
 
 The Genesis block is the start of the Blockchain - the first
 block, block 0, and the only block that does not point to a predecessor
@@ -47,7 +47,7 @@ You will reference this when starting your geth node using the following flag:
 ``--genesis /path/to/CustomGenesis.json``
 
 Geth Flags For Your Private Network
-------------------------------
+--------------------------------------------------------------------------------
 
 There are some command line options (also called “flags”) that are
 necessary in order to make sure that your network is private. We already covered the genesis flag, but we need a few more. 
@@ -69,7 +69,7 @@ This will enable RPC interface on your node. This is generally enabled by defaul
 
 This dictates what APIs that are allowed to be accessed over RPC. By default, Geth enables the web3 interface over RPC. 
 
-**IMPORTANT: Please note that offering an API over the RPC/IPC interface will give everyone access to the API who can access this interface (e.g. DApp's). Be careful which API's you enable. By default geth enables all API's over the ipc interface and only the db,eth,net and web3 API's over the RPC interface.**
+**IMPORTANT: Please note that offering an API over the RPC/IPC interface will give everyone access to the API who can access this interface (e.g. DApp's). Be careful which API's you enable. By default geth enables all API's over the ipc interface and only the db,eth,net and web3 API's over the RPC interface.********************************************************************************
 
 
 ``--rpcport "8080"``
@@ -98,7 +98,7 @@ Here is an example of how these identities show up on the network.
 
 
 Creating the geth Command
-------------------------------
+--------------------------------------------------------------------------------
 
 After you have created your custom genesis block JSON file and created a directory for your chain to go into, type the following command into your console that has access to geth:
 
@@ -109,7 +109,7 @@ After you have created your custom genesis block JSON file and created a directo
 You will need to start your geth instance with your custom chain command every time you want to access your custom chain. If you just type "geth" in your console, it will not remember all of the flags you have set. Different operating systems have ways to make this easier. Check out this page NEED LINK HERE for other geth console commands that may be applicable to your network set-up and situation.
 
 Pre-Allocating Ether to Your Account
-------------------------------
+--------------------------------------------------------------------------------
 
 A difficulty of "0x400" allows you to mine Ether very quickly on your private testnet chain. If you create your chain and start mining, you should have hundreds of Ether in a matter of minutes which is way more than enough to test transactions on your network. If you would still like to pre-allocate Ether to your account, you will need to:
 1. Create a new Ethereum account after you create your private chain

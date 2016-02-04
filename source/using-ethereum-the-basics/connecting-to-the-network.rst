@@ -1,9 +1,9 @@
-*****
+********************************************************************************
 Connecting to the Network
-*****
+********************************************************************************
 
 How to Connect
-=============
+================================================================================
 Geth continuously attempts to connect to other nodes on the network
 until it has peers. If you have UPnP enabled on your router or run
 ethereum on an Internet-facing server, it will also accept connections
@@ -18,7 +18,7 @@ source code.
 
 
 Checking Connectivity and ENODE IDs
-------------------------------
+--------------------------------------------------------------------------------
 To check how many peers the client is connected to in the interactive console, the ``net`` module has two attributes give you info about the number of peers and whether you are a listening node.
 
 .. code-block:: Javascript
@@ -80,7 +80,7 @@ To check the ports used by geth and also find your enode URI run:
   }
 
 Common Problems With Connectivity
-------------------------------
+--------------------------------------------------------------------------------
 Sometimes you just can't get connected. The most common reasons are
 as follows:
 
@@ -95,17 +95,17 @@ as follows:
 To start geth without the discovery protocol, you can use the `--nodiscover` parameter. You only want this is you are running a test node or an experimental test network with fixed nodes.
 
 Syncing vs Fast Syncing
-------------------------------
+--------------------------------------------------------------------------------
 
 TODO
 
 Light Client Network Connectivity
-=============
+================================================================================
 
 TODO
 
 Static Nodes, Trusted Nodes, and Boot Nodes
-=============
+================================================================================
 
 Geth supports a feature called static nodes if you have certain
 peers you always want to connect to. Static nodes are re-connected

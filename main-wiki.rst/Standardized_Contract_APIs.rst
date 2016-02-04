@@ -1,0 +1,374 @@
+Although Ethereum allows developers to create absolutely any kind of
+application without restriction to specific feature types, and prides
+itself on its "lack of features", there is nevertheless a need to
+standardize certain very common use cases in order to allow users and
+applications to more easily interact with each other. This includes
+sending currency units, registering names, making offers on exchanges,
+and other similar functions. A standard typically consists of a set of
+function signatures for a few methods, eg. ``send``, ``register``,
+``delete``, providing the set of arguments and their formats in the
+`Ethereum contract
+ABI <https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI>`__
+language.
+
+The standards described below have sample implementations available
+`here <https://github.com/ethereum/dapp-bin/tree/master/standardized_contract_apis>`__.
+
+All function names are in lower camelCase (eg. ``sendCoin``) and all
+event names are in upper CamelCase (eg. ``CoinTransfer``). Input
+variables are in underscore-prefixed lower camelCase (eg. ``_offerId``),
+and output variables are ``_r`` for pure getter (ie. constant)
+functions, ``_success`` (always boolean) when denoting success or
+failure, and other values (eg. ``_maxValue``) for methods that perform
+an action but need to return a value as an identifier. Addresses are
+referred to using ``_address`` when generic, and otherwise if a more
+specific description exists (eg. ``_from``, ``_to``).
+
+Transferable Fungibles
+======================
+
+Also known as tokens, coins and sub-currencies.
+
+Methods
+~~~~~~~
+
+totalSupply
+^^^^^^^^^^^
+
+.. code:: js
+
+    function totalSupply() constant returns (uint256 supply)
+
+Get the total token supply
+
+balanceOf
+^^^^^^^^^
+
+.. code:: js
+
+    function balanceOf(address _owner) constant returns (uint256 balance)
+
+Get the account balance of another account with address ``_owner``
+
+transfer
+^^^^^^^^
+
+.. code:: js
+
+    function transfer(address _to, uint256 _value) returns (bool success)
+
+Send ``_value`` amount of tokens to address ``_to``
+
+transferFrom
+^^^^^^^^^^^^
+
+.. code:: js
+
+    function transferFrom(address _from, address _to, uint256 _value) returns (bool success)
+
+Send ``_value`` amount of tokens from address ``_from`` to address
+``_to``
+
+The ``transferFrom`` method is used for a withdraw workflow, allowing
+contracts to send tokens on your behalf, for example to "deposit" to a
+contract address and/or to charge fees in sub-currencies; the command
+should fail unless the ``_from`` account has deliberately authorized the
+sender of the message via some mechanism; we propose these standardized
+APIs for approval:
+
+approve
+^^^^^^^
+
+.. code:: js
+
+    function approve(address _spender, uint256 _value) returns (bool success)
+
+Allow ``_spender`` to withdraw from your account, multiple times, up to
+the ``_value`` amount. If this function is called again it overwrites
+the current allowance with ``_value``.
+
+allowance
+^^^^^^^^^
+
+.. code:: js
+
+    function allowance(address _owner, address _spender) constant returns (uint256 remaining)
+
+Returns the amount which ``_spender`` is still allowed to withdraw from
+``_owner``.
+
+Events
+~~~~~~
+
+Transfer
+^^^^^^^^
+
+.. code:: js
+
+    event Transfer(address indexed _from, address indexed _to, uint256 _value)
+
+Triggered when tokens are transferred.
+
+Approval
+^^^^^^^^
+
+.. code:: js
+
+    event Approval(address indexed _owner, address indexed _spender, uint256 _value)
+
+Triggered whenever ``approve(address _spender, uint256 _value)`` is
+called.
+
+TF Registries
+-------------
+
+Token registries contain information about tokens. There is at least one
+global registry (though other may create more like the global Registry)
+to which you can add your token. Adding your token to it would increase
+the experience of the user that the GUI Client can use or not.
+
+symbol
+^^^^^^
+
+.. code:: js
+
+    setSymbol(string _s)
+    symbol(address _token) constant returns (string)
+
+Sets or returns a short sequence of letters that are used to represent
+the unit of the coin. When setting, it assumes the ``msg.sender`` is the
+token. Solidity string is on UTF-8 format so this should support any
+character supported by UTF-8. Symbols are chosen by the contract and
+it's up to the client to decide how to handle different currencies with
+similar or identical symbols.
+
+Examples or symbols: ``USDX``, ``BOB$``, ``Ƀ``, ``% of shares``.
+
+name
+^^^^
+
+.. code:: js
+
+    setName(string _s)
+    name(address _token) constant returns (string)
+
+Sets or returns the name of a token. Solidity string is on UTF-8 format
+so this should support any character supported by UTF-8. Names are
+chosen by the contract and it's up to the client to decide how to handle
+different currencies with similar or identical names.
+
+Examples of names: ``e-Dollar``, ``BobToken``, ``Bitcoin-Eth``.
+
+baseUnit
+^^^^^^^^
+
+.. code:: js
+
+    setBaseUnit(uint _s)
+    baseUnit(address _token) constant returns (uint256)
+
+Sets or returns the base unit of a token. Although most tokens are
+displayed to the final user as containing decimal points, token values
+are unsigned integers counting in the smallest possible unit. The client
+should always display the total units divided by ``baseUnit``. Base
+units can be any integer but we suggest only using powers of 10. At the
+moment there is no support for multiple sub-units.
+
+Example: Bob has a balance of 100000 BobTokens, whose base unit is 100.
+His balance will be displayed on the client as **BOB$1000.00**
+
+Registries
+----------
+
+Registries (eg. domain name systems) have the following API:
+
+Methods
+~~~~~~~
+
+reserve
+^^^^^^^
+
+.. code:: js
+
+    reserve(string _name) returns (bool _success)
+
+Reserves a name and sets its owner to you if it is not yet reserved.
+
+owner
+^^^^^
+
+.. code:: js
+
+    owner(string _name) constant returns (address _r)
+
+Get the owner of a particular name.
+
+transfer
+^^^^^^^^
+
+.. code:: js
+
+    transfer(string _name, address _newOwner)
+
+Transfer ownership of a name.
+
+setAddr
+^^^^^^^
+
+.. code:: js
+
+    setAddr(string _name, address _address)
+
+Set the primary address associated with a name (similar to an A record
+in traditional DNS.)
+
+addr
+^^^^
+
+.. code:: js
+
+    addr(string _name) constant returns (address _r)
+
+Get the primary address associated with a name.
+
+setContent
+^^^^^^^^^^
+
+.. code:: js
+
+    setContent(string _name, bytes32 _content)
+
+If you are the owner of a name, sets its associated content.
+
+content
+^^^^^^^
+
+.. code:: js
+
+    content(string _name) constant returns (bytes32 _r)
+
+Get the content associated with a name.
+
+setSubRegistrar
+^^^^^^^^^^^^^^^
+
+.. code:: js
+
+    setSubRegistrar(string _name, address _subRegistrar)
+
+Records the name as referring to a sub-registrar at the given address.
+
+subRegistrar
+^^^^^^^^^^^^
+
+.. code:: js
+
+    subRegistrar(string _name) constant returns (address _r)
+
+Gets the sub-registrar associated with the given name.
+
+disown
+^^^^^^
+
+.. code:: js
+
+    disown(string _name)
+
+Relinquishes control over a name that you currently control.
+
+Events
+~~~~~~
+
+Changed
+^^^^^^^
+
+.. code:: js
+
+    event Changed(string name, bytes32 indexed __hash_name)
+
+Triggered when changed to a domain happen.
+
+Data feeds
+----------
+
+The data feed standard is a *templated standard*, ie. in the below
+descriptions one should be free to replace ``<t>`` with any desired data
+type, eg. ``uint256``, ``bytes32``, ``address``, ``real192x64``.
+
+Methods
+~~~~~~~
+
+get
+^^^
+
+.. code:: js
+
+    get(bytes32 _key) returns (<t> _r)
+
+Get the value associated with a key.
+
+set
+^^^
+
+.. code:: js
+
+    set(bytes32 _key, <t> _value)
+
+Set the value associated with a key if you are the owner.
+
+setFee
+^^^^^^
+
+.. code:: js
+
+    setFee(uint256 _fee)
+
+Sets the fee.
+
+setFeeCurrency
+^^^^^^^^^^^^^^
+
+.. code:: js
+
+    setFeeCurrency(address _feeCurrency)
+
+Sets the currency that the fee is paid in
+
+The latter two methods are optional; also, note that the fee may be
+charged either in ether or subcurrency; if the contract charges in ether
+then the ``setFeeCurrency`` method is unnecessary.
+
+Forwarding contracts (eg. multisig)
+-----------------------------------
+
+Forwarding contracts will likely work very differently depending on what
+the authorization policy of each one is. However, there are some
+standard workflows that should be used as much as possible:
+
+Methods
+~~~~~~~
+
+execute
+^^^^^^^
+
+.. code:: js
+
+    execute(address _to, uint _value, bytes _data) returns (bytes32 _id)
+
+Create a message with the desired recipient, value and data. Returns a
+"pending ID" for the transaction.
+
+confirm
+^^^^^^^
+
+.. code:: js
+
+    confirm(bytes32 _id) returns (bool _success)
+
+Confirm a pending message with a particular ID using your account;
+returns success or failure. If enough confirmations are made, sends the
+message along.
+
+Access policies can be of any form, eg. multisig, an arbitrary CNF
+boolean formula, a scheme that depends on the *value* or *contents* of a
+transaction, etc.
