@@ -6,7 +6,7 @@ Ethereum Ecosystem
    :maxdepth: 2
 
    ethereum-network-stats.rst
-   client-implimentations.rst
+   client-implementations.rst
    evm-compilers.rst
    block-explorers.rst
    miscellaneous-tools.rst
