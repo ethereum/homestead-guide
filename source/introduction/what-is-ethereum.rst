@@ -32,11 +32,14 @@ Notably, Ethereum is unique in the realm of cryptocurrencies in that ether has u
 
 A platform for decentralized apps
 =======================================================================
-A decentralized app, or DApp, 
+A decentralized app, or DApp.
 
 Web 3.0
 ---------------------------------------------------------------
-Ethereum was founded with the goal of 
+
+* A giant decentralized computer.
+* peer-to-peer
+* IPFS (third party)
 
 
 Smart contracts
@@ -46,63 +49,23 @@ One of the most important capabilities for Ethereum developers is the ability to
 At the launch of the Ethereum Frontier network in 2015, developers were provided with a Javascript-like programming language called Solidity which could be written and tested in a development environment called AlethZero. Developers also have the option of writing contracts in a new Python-like language called Serpent.
 
 
-Sidechains
----------------------------------------------------------------
-
-
 Private blockchains and applications
 ---------------------------------------------------------------
-Ethereum is also open source and 
 
-State
-At a higher level, Ethereum is also a platform for decentralized apps. 
-
- (where smart contracts are )
-
-A giant decentralized computer.
-
-A decentralized network of computers has unique challenges not faced by computers that participate in a traditional, centralized client-server model.
-
-Traditionally, a centralized
-"DApps"
-p2p
-DAO
-Prediction markets
-
-
-A peer-to-peer
-
-* 
-* Internet of Things
-* IPFS
-
-
-Web 3.0
-==================================
-
-
-
+* Ethereum is also open source and ...
+* Consortium and private blockchains
 
 
 
 Ethereum Foundation
 =======================================================================
-The Ethereum Foundation is the organization that launched the Ethereum network and technologies and guides the evolution of the Ethereum 
 
-Pre-sale
+Notes:
 
-
-
-
-Ethereum is constantly growing and evolving
-=======================================================================
-By empowering the blockchain world with robust programming languages and a scalable blockchain architecture, 
+* The Ethereum Foundation is the organization that launched the Ethereum network and technologies and guides the evolution of the Ethereum 
+* Pre-sale
 
 
-the definition of Ethereum is continuously evolving and 
-There are networks built on top of Ethereum (e.g. Augur, Digix, Maker, etc) 
-And there are 
-and a continuous stream open source tools and Dapps
 
 
 
