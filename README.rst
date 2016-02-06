@@ -98,7 +98,7 @@ Directory structure
       build    - workdir, not commited to repo
       source   - actual content in rst
         conf.py - sphinx configuration
-      frontier
+      old-docs-for-reference (Frontier era stuff)
         wiki    - the legacy wiki
         gitbook - the legacy gitbook resources (converted to rst)
       make.bat - windows command to build docs
