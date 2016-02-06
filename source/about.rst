@@ -7,7 +7,7 @@ Purpose and audience
 =============================
 
 This guide should serve to be an entry level for all Ethereum users and developers.
-The goal is to create a documentation with information, short tutorials, and examples that will cover all of the basic and intermediate functionality of using Ethereum to interact with dapps or develop a dapp.
+The goal is to create documentation with information, short tutorials, and examples that will cover all of the basic and intermediate functionality of using Ethereum to interact with dapps or develop a dapp.
 
 Any information that is overly specific, technical, or not necessary to accomplish the documentation goal will remain on the Github Wiki. It may be referenced in this guide if necessary.
 
@@ -21,7 +21,7 @@ Examples of overly specific and technical documentation include:
 * ETHash, CASPER, ABI, RLP, or other technical specs.
 * Full API specs for protocols. Caveat: If an example, information, or tutorial needs to reference API calls for a client or interface in order to fulfill its example it is acceptable to reference the specific call. Be sure to make a reference where the user can find remaining pieces of the specific documentation that may be on the GitHub Wiki.
 
-Resources for examplary decumentations
+Resources for examplary documentation
 ================================================
 
 Here are some examples of previous Ethereum documentation + good examples of documentation. Please add to this list.
