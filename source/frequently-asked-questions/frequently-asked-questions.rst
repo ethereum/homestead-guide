@@ -90,7 +90,7 @@ Where can I learn more about Ethereum?
 -  Blog: https://blog.ethereum.org
 -  Wiki: http://wiki.ethereum.org
 -  Meetups: http://ethereum.meetup.com
--  Whitepaper: http://ethereum.org/ethereum.html
+-  Whitepaper: https://github.com/ethereum/wiki/wiki/White-Paper
 -  Yellow Paper: http://gavwood.com/paper.pdf
 -  Facebook: https://www.facebook.com/ethereumproject
 -  Youtube: http://www.youtube.com/ethereumproject
@@ -100,23 +100,11 @@ Where can I learn more about Ethereum?
 Where can I find the main project repositories?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  `cpp-ethereum <https://github.com/ethereum/cpp-ethereum/>`__
-   ([@gavofyork](https://github.com/gavofyork),
-   [@programmerTim](https://github.com/programmerTim),
-   [@caktux](https://github.com/caktux))
--  `go-ethereum <https://github.com/ethereum/go-ethereum>`__
-   ([@obscuren](https://github.com/obscuren),
-   [@maran](https://github.com/maran))
--  `pyethereum <https://github.com/ethereum/pyethereum>`__
-   ([@vbuterin](https://github.com/vbuterin),
-   [@heikoheiko](https://github.com/heikoheiko),
-   [@chenhouwu](https://github.com/chenhouwu))
--  `ethereumj <https://github.com/ethereum/ethereumj>`__
-   ([@romanman](https://github.com/romanman),
-   [@nicksavers](https://github.com/nicksavers))
--  `ethereumjs-lib <https://github.com/ethereum/ethereumjs-lib>`__
-   ([@ethers](https://github.com/ethers),
-   [@wanderer](https://github.com/wanderer))
+-  `cpp-ethereum <https://github.com/ethereum/cpp-ethereum/>`__ ( `@gavofyork <https://github.com/gavofyork>`_, `@programmerTim <https://github.com/programmerTim>`_,  `@caktux <https://github.com/caktux>`_ )
+-  `go-ethereum <https://github.com/ethereum/go-ethereum>`__ (`@obscuren <https://github.com/obscuren>`_, `@maran <https://github.com/maran>`_ )
+-  `pyethereum <https://github.com/ethereum/pyethereum>`__ ( `@vbuterin <https://github.com/vbuterin>`_, `@heikoheiko <https://github.com/heikoheiko>`_ `@chenhouwu <https://github.com/chenhouwu>`_ )
+-  `ethereumj <https://github.com/ethereum/ethereumj>`__ (`@romanman <https://github.com/romanman>`_, `@nicksavers <https://github.com/nicksavers>`_ )
+-  `ethereumjs-lib <https://github.com/ethereum/ethereumjs-lib>`__ (`@ethers <https://github.com/ethers>`_, `@wanderer <https://github.com/wanderer>`_ )
 
 Where can I learn about the Ether sale and mining?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -142,20 +130,15 @@ Where can I find official releases?
 How to install development builds?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  Homebrew
--  `Homebrew Ethereum <https://github.com/caktux/homebrew-ethereum>`__
-   ([@caktux](https://github.com/caktux))
--  Guides
--  `AlethZero super easy install guide for
-   OSX <https://forum.ethereum.org/discussion/1388/alethzero-super-easy-install-guide-for-osx>`__
-   ([@stephantual](https://github.com/stephantual))
--  `Go-Ethereum simple build guide for
-   OSX <http://forum.ethereum.org/discussion/905/go-ethereum-cli-ethereal-simple-build-guide-for-osx-now-with-one-line-install>`__
-   ([@stephantual](https://github.com/stephantual))
--  `Building on
-   Ubuntu <https://github.com/ethereum/cpp-ethereum/wiki/Building-on-Ubuntu#user-content-trusty-1404>`__
--  Builds
--  `Ethdev Buildbot <http://build.ethdev.com/waterfall>`__
+
+- Homebrew: 
+    - `Homebrew Ethereum <https://github.com/caktux/homebrew-ethereum>`__ ( `@caktux <https://github.com/caktux>`_ )
+- Guides
+    - `AlethZero super easy install guide for OSX <https://forum.ethereum.org/discussion/1388/alethzero-super-easy-install-guide-for-osx>`__ (`@stephantual <https://github.com/stephantual>`_ )
+    - `Go-Ethereum simple build guide for OSX <http://forum.ethereum.org/discussion/905/go-ethereum-cli-ethereal-simple-build-guide-for-osx-now-with-one-line-install>`__ (`@stephantual <https://github.com/stephantual>`_ )
+    - `Building on Ubuntu <https://github.com/ethereum/cpp-ethereum/wiki/Building-on-Ubuntu#user-content-trusty-1404>`__
+- Builds
+   - `Ethdev Buildbot <http://build.ethdev.com/waterfall>`__
 
 How to install the clients from source?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -196,8 +179,7 @@ With the eth client
 How to get free testnet Ether?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  `ZeroGox Wei Faucet <https://zerogox.com/ethereum/wei_faucet>`__
-   ([@caktux](https://github.com/caktux))
+-  `ZeroGox Wei Faucet <https://zerogox.com/ethereum/wei_faucet>`__ `@caktux <https://github.com/caktux>`_
 
 Contracts
 ---------
@@ -215,54 +197,40 @@ Where can I learn about contract development?
 Where can I learn Serpent, the Python-like language?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  Specifications
--  `The Serpent
-   Language <https://github.com/ethereum/wiki/wiki/Serpent>`__
--  Examples
--  `Vitalik's Serpent
-   examples <https://github.com/ethereum/serpent/tree/master/examples>`__
--  Tutorials
--  `Pyethereum and Serpent Programming
-   Guide <https://blog.ethereum.org/2014/04/10/pyethereum-and-serpent-programming-guide/>`__
--  Videos
--  `Learn Ethereum with
-   Vitalik <https://www.youtube.com/watch?v=nXYDfLCLmMs>`__
+- Specifications
+	- `The Serpent Language <https://github.com/ethereum/wiki/wiki/Serpent>`__
+- Examples
+	- `Vitalik's Serpent examples <https://github.com/ethereum/serpent/tree/master/examples>`__
+- Tutorials
+	- `Pyethereum and Serpent Programming Guide <https://blog.ethereum.org/2014/04/10/pyethereum-and-serpent-programming-guide/>`__
+- Videos
+	- `Learn Ethereum with Vitalik <https://www.youtube.com/watch?v=nXYDfLCLmMs>`__
 
 Where can I learn LLL, the Lisp-like language?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  Specifications
--  `The LLL
-   Language <https://github.com/ethereum/cpp-ethereum/wiki/LLL-PoC-6>`__
+	-  `The LLL Language <https://github.com/ethereum/cpp-ethereum/wiki/LLL-PoC-6>`__
 -  Examples
--  `LLL examples for PoC
-   6 <https://github.com/ethereum/cpp-ethereum/wiki/LLL%20Examples%20for%20PoC%205>`__
+	-  `LLL examples for PoC 6 <https://github.com/ethereum/cpp-ethereum/wiki/LLL%20Examples%20for%20PoC%205>`__
 -  Videos
--  `Programming Society with
-   Asm <https://www.youtube.com/watch?v=xO1AxsYAkU8>`__
+	-  `Programming Society with Asm <https://www.youtube.com/watch?v=xO1AxsYAkU8>`__
 
 Where can I learn Solidity, the JavaScript-like language?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  Specifications
--  `Solidity, Docs and
-   ABI <https://github.com/ethereum/cpp-ethereum/wiki/Solidity%2C-Docs-and-ABI>`__
--  `Solidity
-   Features <https://github.com/ethereum/wiki/wiki/Solidity-Features>`__
+	- `Solidity, Docs and ABI <https://github.com/ethereum/cpp-ethereum/wiki/Solidity%2C-Docs-and-ABI>`__
+	- `Solidity Features <https://github.com/ethereum/wiki/wiki/Solidity-Features>`__
 -  Tutorials
--  `Solidity
-   Tutorial <https://github.com/ethereum/wiki/wiki/Solidity-Tutorial>`__
--  `Contract Writing in
-   Solidity <https://dappsforbeginners.wordpress.com>`__
+	-  `Solidity Tutorial <https://github.com/ethereum/wiki/wiki/Solidity-Tutorial>`__
+	-  `Contract Writing in Solidity <https://dappsforbeginners.wordpress.com>`__
 
 How to test contracts?
 ~~~~~~~~~~~~~~~~~~~~~~
 
--  `EVM Contract Simulator <https://github.com/EtherCasts/evm-sim/>`__
-   ([@EtherCasts](https://github.com/EtherCasts))
--  `Pyethereum
-   Tester <https://github.com/ethereum/pyethereum/blob/master/tests/test_contracts.py>`__
-   ([@ethereum](https://github.com/ethereum))
+-  `EVM Contract Simulator <https://github.com/EtherCasts/evm-sim/>`__ (`@EtherCasts <https://github.com/EtherCasts>`_)
+-  `Pyethereum Tester <https://github.com/ethereum/pyethereum/blob/master/tests/test_contracts.py>`__ (`@ethereum <https://github.com/ethereum>`_)
 
 How to deploy contracts automatically?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -273,28 +241,16 @@ Where to find example contracts?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  Serpent
--  `By Vitalik
-   Buterin <https://github.com/ethereum/serpent/tree/master/examples>`__
-   ([@vbuterin](https://github.com/vbuterin))
--  `By EtherCasts <https://github.com/EtherCasts>`__
-   ([@EtherCasts](https://github.com/EtherCasts))
--  `By Rob Myers <https://github.com/robmyers/artworld-ethereum>`__
-   ([@robmyers](https://github.com/robmyers))
--  `By Tyler
-   Florez <https://github.com/qualiabyte/ethereum-contracts>`__
-   ([@qualiabyte](https://github.com/qualiabyte))
+	-  `By Vitalik Buterin <https://github.com/ethereum/serpent/tree/master/examples>`__ (`@vbuterin <https://github.com/vbuterin>`_ )
+	-  `By EtherCasts <https://github.com/EtherCasts>`__ (`@EtherCasts <https://github.com/EtherCasts>`_)
+	-  `By Rob Myers <https://github.com/robmyers/artworld-ethereum>`__ (`@robmyers <https://github.com/robmyers>`_ )
+	-  `By Tyler
+	   Florez <https://github.com/qualiabyte/ethereum-contracts>`__ (`@qualiabyte <https://github.com/qualiabyte>`_ )
 -  LLL
--  `By Gavin
-   Wood <https://github.com/ethereum/cpp-ethereum/wiki/LLL%20Examples%20for%20PoC%205>`__
-   ([@gavofyork](https://github.com/gavofyork))
--  `By Dennis
-   Mckinnon <https://github.com/dennismckinnon/Ethereum-Contracts>`__
-   ([@dennismckinnon](https://github.com/dennismckinnon))
--  `By Project
-   Douglas <https://github.com/project-douglas/eris/tree/master/contracts>`__
-   ([@project-douglas](https://github.com/project-douglas))
--  `By Doug A. <https://github.com/d11e9/g3>`__
-   ([@dlle9](https://github.com/d11e9))
+	-  `By Gavin Wood <https://github.com/ethereum/cpp-ethereum/wiki/LLL%20Examples%20for%20PoC%205>`__ (`@gavofyork <https://github.com/gavofyork>`_ )
+	-  `By Dennis Mckinnon <https://github.com/dennismckinnon/Ethereum-Contracts>`__ (`@dennismckinnon <https://github.com/dennismckinnon>`_ )
+	-  `By Project Douglas <https://github.com/project-douglas/eris/tree/master/contracts>`__ (`@project-douglas <https://github.com/project-douglas>`_ )
+	-  `By Doug A. <https://github.com/d11e9/g3>`__ (`@dlle9 <https://github.com/dlle9>`_ )
 
 ÐApps
 -----
@@ -302,88 +258,54 @@ Where to find example contracts?
 Where can I learn about the Ethereum APIs?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  `The PoC 6 API for
-   C++ <https://github.com/ethereum/cpp-ethereum/wiki/Client-Development-with-PoC-6>`__
--  `The PoC 5 API for
-   Go <https://github.com/ethereum/go-ethereum/wiki/PoC-5-Public-Go-API>`__
--  `The PoC 6 API for
-   QML <https://github.com/ethereum/go-ethereum/wiki/QML-PoC6-API>`__
--  `The PoC 7 API for
-   JavaScript <https://github.com/ethereum/wiki/wiki/JavaScript-API>`__
+-  `The PoC 6 API for C++ <https://github.com/ethereum/cpp-ethereum/wiki/Client-Development-with-PoC-6>`__
+-  `The PoC 5 API for Go <https://github.com/ethereum/go-ethereum/wiki/PoC-5-Public-Go-API>`__
+-  `The PoC 6 API for QML <https://github.com/ethereum/go-ethereum/wiki/QML-PoC6-API>`__
+-  `The PoC 7 API for JavaScript <https://github.com/ethereum/wiki/wiki/JavaScript-API>`__
 
 Where can I learn about ÐApp development?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  `Writing Your Own
-   Currency <http://hidskes.com/blog/2014/05/21/ethereum-dapp-development-for-web-developers/>`__
-   ([@maran](https://github.com/maran))
+-  `Writing Your Own Currency <http://hidskes.com/blog/2014/05/21/ethereum-dapp-development-for-web-developers/>`__ `@maran <https://github.com/maran>`_
 
 Where can I find ÐApp development tools?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Official
 
--  `AlethZero GUI client
-   (C++) <https://github.com/ethereum/cpp-ethereum/wiki/Using-AlethZero>`__
--  `Eth command-line client
-   (C++) <https://github.com/ethereum/cpp-ethereum/wiki/Using-Ethereum-CLI-Client>`__
--  `LLLC Compiler
-   (C++) <https://github.com/ethereum/cpp-ethereum/blob/develop/lllc/main.cpp>`__
--  `Ethereum command-line client
-   (Go) <https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options>`__
+-  `AlethZero GUI client (C++) <https://github.com/ethereum/cpp-ethereum/wiki/Using-AlethZero>`__
+-  `Eth command-line client (C++) <https://github.com/ethereum/cpp-ethereum/wiki/Using-Ethereum-CLI-Client>`__
+-  `LLLC Compiler (C++) <https://github.com/ethereum/cpp-ethereum/blob/develop/lllc/main.cpp>`__
+-  `Ethereum command-line client (Go) <https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options>`__
 -  `Mist Browser (Go) <https://github.com/ethereum/go-ethereum>`__
--  `Pyeth command-line client
-   (Python) <https://github.com/ethereum/pyethereum#interacting-with-the-network>`__
--  `Serpent Compiler
-   (Python) <https://github.com/ethereum/wiki/wiki/Serpent>`__
+-  `Pyeth command-line client (Python) <https://github.com/ethereum/pyethereum#interacting-with-the-network>`__
+-  `Serpent Compiler (Python) <https://github.com/ethereum/wiki/wiki/Serpent>`__
 
 Community
 
--  `C3D <https://github.com/project-douglas/c3d>`__
-   ([@project-douglas](https://github.com/project-douglas))
--  `Emacs LLL Mode <https://github.com/robmyers/lll-mode>`__
-   ([@robmyers](https://github.com/robmyers))
--  `Emacs Serpent Mode <https://github.com/robmyers/serpent-mode>`__
-   ([@robmyers](https://github.com/robmyers))
--  `EPM <https://github.com/project-douglas/epm>`__
-   ([@project-douglas](https://github.com/project-douglas))
--  `EPM Sublime
-   Plugin <https://github.com/project-douglas/epm-sublime>`__
-   ([@project-douglas](https://github.com/project-douglas))
--  `Ethos Browser <https://github.com/projectdnet/ethos>`__
-   ([@projectdnet](https://github.com/projectdnet))
--  `EVM-Sim <https://github.com/EtherCasts/evm-sim/>`__
-   ([@EtherCasts](https://github.com/EtherCasts))
--  `MintChalk <http://www.mintchalk.com/>`__
-   ([@mintchalk](https://github.com/mintchalk))
--  `Poly-Eth <https://github.com/projectdnet/poly-eth>`__
-   ([@projectdnet](https://github.com/projectdnet))
+-  `C3D <https://github.com/project-douglas/c3d>`__ (`@project-douglas <https://github.com/project-douglas>`_ )
+-  `Emacs LLL Mode <https://github.com/robmyers/lll-mode>`__ (`@robmyers <https://github.com/robmyers>`_ )
+-  `Emacs Serpent Mode <https://github.com/robmyers/serpent-mode>`__ (`@robmyers <https://github.com/robmyers>`_ )
+-  `EPM <https://github.com/project-douglas/epm>`__ (`@project-douglas <https://github.com/project-douglas>`_ )
+-  `EPM Sublime Plugin <https://github.com/project-douglas/epm-sublime>`__ (`@project-douglas <https://github.com/project-douglas>`_ )
+-  `Ethos Browser <https://github.com/projectdnet/ethos>`__ (`@projectdnet <https://github.com/projectdnet>`_ )
+-  `EVM-Sim <https://github.com/EtherCasts/evm-sim/>`__ (`@EtherCasts <https://github.com/EtherCasts>`_ )
+-  `MintChalk <http://www.mintchalk.com/>`__ (`@mintchalk <https://github.com/mintchalk>`_ )
+-  `Poly-Eth <https://github.com/projectdnet/poly-eth>`__ (`@projectdnet <https://github.com/projectdnet>`_ )
 
 Where can I find example ÐApps?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  `dapp-bin <https://github.com/ethereum/dapp-bin>`__
-   ([@ethereum](https://github.com/ethereum))
--  `GavCoin <http://gavwood.com/gavcoin.html>`__
-   ([@gavofyork](https://github.com/gavofyork))
--  `JeffCoin <https://github.com/obscuren/jeffcoin>`__
-   ([@obscuren](https://github.com/obscuren))
--  `Make It Rain <https://github.com/EtherCasts/make-it-rain>`__
-   ([@EtherCasts](https://github.com/EtherCasts))
--  `Chronos <https://github.com/mquandalle/chronos>`__
-   ([@mquandalle](https://github.com/mquandalle))
--  `Artworld-Ethereum <https://github.com/robmyers/artworld-ethereum>`__
-   ([@robmyers](https://github.com/robmyers))
--  `Eris <https://github.com/project-douglas/eris>`__
-   ([@project-douglas](https://github.com/project-douglas),
-   [@compleatang](https://github.com/compleatang),
-   [@dennismckinnon](https://github.com/dennismckinnon))
--  `CryptoCoinWatch <https://github.com/EtherCasts/cryptocoinwatch>`__
-   ([@EtherCasts](https://github.com/EtherCasts))
--  `Occam's Run <https://github.com/d11e9/Occams-Run>`__
-   ([@d11e9](https://github.com/d11e9))
--  `TrustDavis <https://github.com/EtherCasts/trustdavis>`__
-   ([@EtherCasts](https://github.com/EtherCasts))
+-  `dapp-bin <https://github.com/ethereum/dapp-bin>`__ (`@ethereum <https://github.com/ethereum>`_ )
+-  `GavCoin <http://gavwood.com/gavcoin.html>`__ (`@gavofyork <https://github.com/gavofyork>`_ )
+-  `JeffCoin <https://github.com/obscuren/jeffcoin>`__ (`@obscuren <https://github.com/obscuren>`_ )
+-  `Make It Rain <https://github.com/EtherCasts/make-it-rain>`__ (`@EtherCasts <https://github.com/EtherCasts>`_ )
+-  `Chronos <https://github.com/mquandalle/chronos>`__ (`@mquandalle <https://github.com/mquandalle>`_ )
+-  `Artworld-Ethereum <https://github.com/robmyers/artworld-ethereum>`__ (`@robmyers <https://github.com/robmyers>`_ )
+-  `Eris <https://github.com/project-douglas/eris>`__ (`@project-douglas <https://github.com/project-douglas>`_, `@compleatang <https://github.com/compleatang>`_, `@dennismckinnon <https://github.com/dennismckinnon>`_ )
+-  `CryptoCoinWatch <https://github.com/EtherCasts/cryptocoinwatch>`__ (`@EtherCasts <https://github.com/EtherCasts>`_ )
+-  `Occam's Run <https://github.com/d11e9/Occams-Run>`__ (`@d11e9 <https://github.com/d11e9>`_ )
+-  `TrustDavis <https://github.com/EtherCasts/trustdavis>`__ (`@EtherCasts <https://github.com/EtherCasts>`_ )
 
 IRC
 ---
@@ -391,8 +313,7 @@ IRC
 How can I join the Ethereum IRC channels?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  `Chat with the ethereum dev community on
-   IRC! <https://forum.ethereum.org/discussion/1495/chat-with-the-ethereum-dev-community-on-irc>`__
+-  `Chat with the ethereum dev community on IRC! <https://forum.ethereum.org/discussion/1495/chat-with-the-ethereum-dev-community-on-irc>`__
 
 Where can I find the Ethereum IRC logs?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -407,5 +328,7 @@ Where can I learn about the ZeroGox bot?
 More Questions and Answers
 ==========================
 
--  [FAQ by
-   @fivedogit](https://docs.google.com/document/d/14EIe984\_86Y-uuNm-a4EsVeD3eI4qAAlz\_MZof1qkqM/)
+-  `FAQ by @fivedogit <https://docs.google.com/document/d/14EIe984_86Y-uuNm-a4EsVeD3eI4qAAlz_MZof1qkqM/edit>`_
+
+
+.. Original page: https://github.com/ethereum/wiki/wiki/FAQ
