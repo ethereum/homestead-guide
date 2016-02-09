@@ -74,15 +74,12 @@ the dedicated `What is
 Ethereum <http://github.com/ethereum/wiki/wiki/What-is-Ethereum>`__ wiki
 page.
 
-If you prefer to learn by watching videos, see: + `Introducing
-Ethereum <http://youtu.be/mRWNr3MA2jo>`__ (Video, 10min) + `Vitalik
-Buterin reveals Ethereum at Bitcoin Miami
-2014 <http://youtu.be/l9dpjN3Mwps>`__ (Video, 28min) + `Singularity 1 on
-1: Ethereum is a Decentralized Consensus
-Platform <http://youtu.be/fbEtivJIfIU>`__ (Video, 69min) + `Our second
-Reddit "Ask Me Anything" for community selected
-questions <http://www.reddit.com/r/IAmA/comments/2bjmgb/hi_we_are_the_ethereum_project_team_ask_us/>`__
-(not actually a video)
+If you prefer to learn by watching videos, see: 
+
++ `Introducing Ethereum <http://youtu.be/mRWNr3MA2jo>`__ (Video, 10min) 
++ `Vitalik Buterin reveals Ethereum at Bitcoin Miami 2014 <http://youtu.be/l9dpjN3Mwps>`__ (Video, 28min) 
++ `Singularity 1 on 1: Ethereum is a Decentralized Consensus Platform <http://youtu.be/fbEtivJIfIU>`__ (Video, 69min) 
++ `Our second Reddit "Ask Me Anything" for community selected questions <http://www.reddit.com/r/IAmA/comments/2bjmgb/hi_we_are_the_ethereum_project_team_ask_us/>`__ (not actually a video)
 
 Where can I learn more about Ethereum?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
