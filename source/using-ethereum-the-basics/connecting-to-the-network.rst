@@ -62,7 +62,6 @@ To get more information about the connected peers, such as IP address and port n
    } ]
 
 
-TODO: Explain ENODE ID
 To check the ports used by geth and also find your enode URI run:
 
 .. code-block:: Javascript
@@ -85,7 +84,7 @@ Sometimes you just can't get connected. The most common reasons are
 as follows:
 
 - Your local time might be incorrect. An accurate clock is required
-  to participate in the Ethereum network.  Check your OS for how to resync
+  to participate in the Ethereum network.Check your OS for how to resync
   your clock (example sudo ntpdate -s time.nist.gov) because even 12
   seconds too fast can lead to 0 peers.
 - Some firewall configurations can prevent UDP traffic from flowing.
@@ -97,12 +96,15 @@ To start geth without the discovery protocol, you can use the `--nodiscover` par
 Syncing vs Fast Syncing
 --------------------------------------------------------------------------------
 
-TODO
+.. todo::
+   Explain syncing vs. fast syncing.
+
 
 Light Client Network Connectivity
 ================================================================================
 
-TODO
+.. todo::
+   Explain light client.
 
 Static Nodes, Trusted Nodes, and Boot Nodes
 ================================================================================

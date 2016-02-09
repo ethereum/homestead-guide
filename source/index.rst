@@ -14,6 +14,11 @@ Welcome to Ethereum Homestead Documentation!
    :alt: ethereum-logo
    :align: center
 
+Homestead To-Dos:
+See this page to help us with these to-dos :)
+
+.. todolist::
+
 
 Contents
 ========

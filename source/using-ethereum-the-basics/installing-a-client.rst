@@ -19,6 +19,7 @@ Android
 
 Raspberry Pi
 ================================================================================
+`See this Ethereum Wiki page for Raspberry Pi installation instructions <https://github.com/ethereum/wiki/wiki/Raspberry-Pi-instructions>`__
 
 ARM
 ================================================================================

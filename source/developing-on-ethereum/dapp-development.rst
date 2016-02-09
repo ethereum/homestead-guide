@@ -1,15 +1,22 @@
 ********************************************************************************
-DApp Development
+ÐApp Development
 ********************************************************************************
 
-Web3
+Three Primary Resources
 ================================================================================
-TODO
+ÐApp development requires an understanding of the Web3 Javascript API, the JSON RPC API, and the Solidity programming language. Note: There are developer tools that help you develop, test, and deploy ÐApps.
+
+.. todo::
+   Add cross reference to developer tools page.
+
+-  `Web3 JavaScript API <https://github.com/ethereum/wiki/wiki/JavaScript-API>`__ - This is the main JavaScript SDK to use when you want to interact with an Ethereum node.
+-  `JSON RPC API <https://github.com/ethereum/wiki/wiki/JSON-RPC>`__ - This is the low level JSON RPC 2.0 interface to interface with a node. This API is used by the `Web3 JavaScript API <https://github.com/ethereum/wiki/wiki/JavaScript-API>`__.
+-  `Solidity Documentation <https://solidity.readthedocs.org/en/latest/>`__ - Solidity is the Ethereum developed Smart Contract language, which compiles to EVM (Ethereum Virtual Machine) opcodes.
 
 Connecting to Morden Testnet
 ================================================================================
-Morden is the first Ethereum alternative testnet. It is expected to
-continue throughout the Frontier and Homestead era.
+Morden is a public Ethereum alternative testnet. It is expected to
+continue throughout the Frontier and Homestead milestones of the software.
 
 Usage
 --------------------------------------------------------------------------------
@@ -101,7 +108,8 @@ One way to get Ether is by using the `Ethereum wei
 faucet <https://zerogox.com/ethereum/wei_faucet>`__. Just type in your
 account address and enjoy some free ether.
 
-TODO: FINISH MODREN SECTION
+.. todo::
+   Finish Morden Testnet Section
 
 
 
@@ -129,11 +137,13 @@ CustomGensis.json
 
 .. code-block:: JSON
 
-  {     "nonce": "0x0000000000000042",     "timestamp": "0x0",     
-  "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",     
-  "extraData": "0x0",     "gasLimit": "0x8000000",     "difficulty": "0x400",     
-  "mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",     
-  "coinbase": "0x3333333333333333333333333333333333333333",     "alloc": {     } }
+  {   
+      "nonce": "0x0000000000000042",     "timestamp": "0x0",     
+      "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",     
+      "extraData": "0x0",     "gasLimit": "0x8000000",     "difficulty": "0x400",     
+      "mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",     
+      "coinbase": "0x3333333333333333333333333333333333333333",     "alloc": {     }
+  }
 
 Save a file called CustomGenesis.json.
 You will reference this when starting your geth node using the following flag:
@@ -163,7 +173,7 @@ This will enable RPC interface on your node. This is generally enabled by defaul
 
 This dictates what APIs that are allowed to be accessed over RPC. By default, Geth enables the web3 interface over RPC. 
 
-**IMPORTANT: Please note that offering an API over the RPC/IPC interface will give everyone access to the API who can access this interface (e.g. DApp's). Be careful which API's you enable. By default geth enables all API's over the ipc interface and only the db,eth,net and web3 API's over the RPC interface.**
+**IMPORTANT: Please note that offering an API over the RPC/IPC interface will give everyone access to the API who can access this interface (e.g. ÐApp's). Be careful which API's you enable. By default geth enables all API's over the ipc interface and only the db,eth,net and web3 API's over the RPC interface.**
 
 
 ``--rpcport "8080"``
