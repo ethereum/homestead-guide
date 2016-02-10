@@ -10,3 +10,4 @@ Introduction
    history-of-ethereum.rst
    disclaimer.rst
    glossary.rst
+   contributors.rst
