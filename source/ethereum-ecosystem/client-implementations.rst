@@ -15,4 +15,5 @@ Javascript/Node          `EthereumJS <http://ethereumjs.github.io/>`_
 Python                   `Pyethereum <https://github.com/ethereum/pyethereum>`_
 Java                     `ethereumJ <https://github.com/ethereum/ethereumj>`_
 Haskell                  `ethereumH <https://github.com/blockapps/strato-p2p-client>`_
+Rust					 `Parity <https://ethcore.io/parity.html>`__
 ===============         ===============

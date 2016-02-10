@@ -2,16 +2,17 @@
 ÐApp Development
 ********************************************************************************
 
-Three Primary Resources
+Four Primary Resources
 ================================================================================
-ÐApp development requires an understanding of the Web3 Javascript API, the JSON RPC API, and the Solidity programming language. Note: There are developer tools that help you develop, test, and deploy ÐApps.
+ÐApp development requires an understanding of the Web3 Javascript API, the JSON RPC API, and the Solidity programming language. Note: There are developer tools that help you develop, test, and deploy ÐApps in a way that automatically utilizes the resources listed below.
 
 .. todo::
-   Add cross reference to developer tools page.
+   Add cross reference to developer tools page in the first paragraph.
 
 -  `Web3 JavaScript API <https://github.com/ethereum/wiki/wiki/JavaScript-API>`__ - This is the main JavaScript SDK to use when you want to interact with an Ethereum node.
 -  `JSON RPC API <https://github.com/ethereum/wiki/wiki/JSON-RPC>`__ - This is the low level JSON RPC 2.0 interface to interface with a node. This API is used by the `Web3 JavaScript API <https://github.com/ethereum/wiki/wiki/JavaScript-API>`__.
 -  `Solidity Documentation <https://solidity.readthedocs.org/en/latest/>`__ - Solidity is the Ethereum developed Smart Contract language, which compiles to EVM (Ethereum Virtual Machine) opcodes.
+-  Testnets - Test networks help developers develop and test Ethereum code and network interactions without spending their own Ether on the main network. Test network options are listed below.
 
 Connecting to Morden Testnet
 ================================================================================
@@ -24,40 +25,40 @@ Usage
 TurboEthereum (C++)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This is supported natively on 0.9.93 and above. Pass the ``--morden``
-argument in when starting any of the clients. e.g.:
+This is supported natively on 0.9.93 and above. Pass the ``--morden`` argument in when starting any of the clients. e.g.:
 
-::
+.. code:: Console
 
-    > eth --morden
+   > eth --morden
 
 Or, for AlethZero
 
-::
+.. code:: Console
 
-    > alethzero --morden
+   > alethzero --morden
 
 PyEthApp (Python client)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 PyEthApp supports the morden network from v1.0.5 onwards:
 
-::
+.. code:: Console
 
-    > pyethapp --profile morden run
+   > pyethapp --profile morden run
 
 geth (Go client)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-::
+.. code:: Console
 
-    > geth --testnet
+   > geth --testnet
 
 Details
 --------------------------------------------------------------------------------
+All parameters are the same as Frontier except:
 
--  Network Identity: **2**
--  All parameters same as Frontier except:
+-  Network Name: **Morden**
+-  Network Identity: 2
 -  genesis.json (given below);
 -  Initial Account Nonce (``IAN``) is 2^20 (instead of 0 in all previous
    networks).
@@ -71,15 +72,10 @@ Details
 -  Genesis state root:
    ``f3f4696bbf3b3b07775128eb7a3763279a394e382130f27c21e70233e04946a9``
 
-Seed Nodes
+Morden's genesis.json
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  ``enode://e58d5e26b3b630496ec640f2530f3e7fa8a8c7dfe79d9e9c4aac80e3730132b869c852d3125204ab35bb1b1951f6f2d40996c1034fd8c5a69b383ee337f02ddc@92.51.165.126:30303``
-
-genesis.json
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code:: json
+.. code:: JSON
 
     {
             "nonce": "0x00006d6f7264656e",
@@ -103,14 +99,12 @@ Getting Morden Testnet Ether
 --------------------------------------------------------------------------------
 
 Three ways to get Morden testnet ether:
-You can mine testnet Ethereum
-One way to get Ether is by using the `Ethereum wei
-faucet <https://zerogox.com/ethereum/wei_faucet>`__. Just type in your
-account address and enjoy some free ether.
+
+- You can mine testnet Ethereum
+- Use the `Ethereum wei faucet <https://zerogox.com/ethereum/wei_faucet>`__. 
 
 .. todo::
    Finish Morden Testnet Section
-
 
 
 Setting Up a Local Private Testnet
@@ -173,8 +167,7 @@ This will enable RPC interface on your node. This is generally enabled by defaul
 
 This dictates what APIs that are allowed to be accessed over RPC. By default, Geth enables the web3 interface over RPC. 
 
-**IMPORTANT: Please note that offering an API over the RPC/IPC interface will give everyone access to the API who can access this interface (e.g. ÐApp's). Be careful which API's you enable. By default geth enables all API's over the ipc interface and only the db,eth,net and web3 API's over the RPC interface.**
-
+**IMPORTANT: Please note that offering an API over the RPC/IPC interface will give everyone access to the API who can access this interface (e.g. ÐApp's). Be careful which API's you enable. By default geth enables all API's over the IPC interface and only the db,eth,net and web3 API's over the RPC interface.**
 
 ``--rpcport "8080"``
 
@@ -182,7 +175,7 @@ Change 8000 to any port that is open on your network. The default for geth is 80
 
 ``--rpccorsdomain "http://chriseth.github.io/browser-solidity/"``
 
-This dictates what URLs can connect to your node in order to perform RPC client tasks. Be very careful with this put a specific URL rather than the wildcard (*) which would allow any URL to connect to your RPC instance. Since this is a private chain that will not hold real Ether, I usually put a wildcard so I can use sites such as [Browser Solidity](http://chriseth.github.io/browser-solidity/) for my testing.
+This dictates what URLs can connect to your node in order to perform RPC client tasks. Be very careful with this and type a specific URL rather than the wildcard (*) which would allow any URL to connect to your RPC instance.
 
 
 ``--datadir "/home/TestChain1"``
@@ -204,18 +197,21 @@ Here is an example of how these identities show up on the network.
 Creating the geth Command
 --------------------------------------------------------------------------------
 
-After you have created your custom genesis block JSON file and created a directory for your chain to go into, type the following command into your console that has access to geth:
+After you have created your custom genesis block JSON file and created a directory for your blockchain data, type the following command into your console that has access to geth:
 
 .. code-block:: Console
 
   geth --identity "MyNodeName" --genesis /path/to/CustomGenesis.json --rpc --rpcport "8080" --rpccorsdomain "*" --datadir "C:\chains\TestChain1" --port "30303" --nodiscover --rpcapi "db,eth,net,web3" --networkid 1999 console
 
-You will need to start your geth instance with your custom chain command every time you want to access your custom chain. If you just type "geth" in your console, it will not remember all of the flags you have set. Different operating systems have ways to make this easier. Check out this page NEED LINK HERE for other geth console commands that may be applicable to your network set-up and situation.
+**Note:** Please change the flags to match your custom settings.
+
+You will need to start your geth instance with your custom chain command every time you want to access your custom chain. If you just type "geth" in your console, it will not remember all of the flags you have set.
 
 Pre-Allocating Ether to Your Account
 --------------------------------------------------------------------------------
 
 A difficulty of "0x400" allows you to mine Ether very quickly on your private testnet chain. If you create your chain and start mining, you should have hundreds of Ether in a matter of minutes which is way more than enough to test transactions on your network. If you would still like to pre-allocate Ether to your account, you will need to:
+
 1. Create a new Ethereum account after you create your private chain
 2. Copy your new account address
 3. Add the following command to your Custom_Genesis.json file:
@@ -228,13 +224,32 @@ A difficulty of "0x400" allows you to mine Ether very quickly on your private te
 	  { "balance": "20000000000000000000" } 
   }
 
-Save your genesis file and re-run the command at the bottom of this guide to start your private chain in Geth. You are now in the Geth console. We want to assign an address as "primary" and check it's balance.
+**Note:** Replace ``0x1fb891f92eb557f4d688463d0d7c560552263b5a`` with your account address.
+
+Save your genesis file and re-run your private chain command. Once geth is fully loaded, close Geth.
+
+We want to assign an address as "primary" and check it's balance.
+
+Run the command ``geth account list`` in your console to see what account # your new address was assigned.
+
+.. code-block:: Console
+
+   > geth account list
+   Account #0: {d1ade25ccd3d550a7eb532ac759cac7be09c2719}
+   Account #1: {da65665fc30803cb1fb7e6d86691e20b1826dee0}
+   Account #2: {e470b1a7d2c9c5c6f03bbaa8fa20db6d404a0c32}
+   Account #3: {f4dd5c3794f1fd0cdc0327a83aa472609c806e99}
+   
+Take note of which account # is the one that you pre-allocated Ether to.
 
 .. code-block:: Console
 
   > primary = eth.accounts[0];
 
-This should return you your primary Ethereum address you created. If it does not, try settinfg primary to 1, 2, etc. until you find your address you created. Addrsses are assigned those array indexes in order of creation.
+**Note:** Replace ``0`` with your account's number.
+This console command should return your primary Ethereum address. 
+
+Type the following command:
 
 .. code-block:: Console
 
