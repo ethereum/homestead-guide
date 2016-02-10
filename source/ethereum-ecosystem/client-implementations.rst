@@ -9,7 +9,7 @@ Client List
 ===============         ===============
 Language                 Name
 ===============         ===============
-Golang                   `Geth <http://ethereum.github.io/go-ethereum/)>`_
+Golang                   `Geth <http://ethereum.github.io/go-ethereum/>`_
 C++                      `TurboEthereum (formerly eth) <https://github.com/ethereum/webthree-umbrella/wiki>`_
 Javascript/Node          `EthereumJS <http://ethereumjs.github.io/>`_
 Python                   `Pyethereum <https://github.com/ethereum/pyethereum>`_
