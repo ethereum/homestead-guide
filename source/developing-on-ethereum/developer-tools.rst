@@ -7,6 +7,8 @@ development.
 IDEs/Frameworks
 ================================================================================
 
+- `Populus Documentation <http://populus.readthedocs.org/en/latest/>`__ - Populus is a Smart Contract development framework written in python.
+
 
 Solidity Contract Language Resources
 ================================================================================
