@@ -18,9 +18,9 @@ Ethereum software
 There are many advancements that have been built into Ethereum, including but not limited to:
 
 * **Development tools:** Ethereum offers a wide range of development tools and programming languages to enable the development of smart contracts and decentralized apps (A.K.A. dapps). 
-* **Accounts:** In Bitcoin, there is no data structure that represents an account with a balance where funds can be credited or debited. Instead, Bitcoin aggregates payments that have not been spent (unspent transaction outputs, or UTXOs) to determine how much Bitcoin a wallet contains. In Ethereum, Accounts are a central part of the network and are essential part of any transaction or contract. 
+* **Accounts:** In Bitcoin, there is no data structure that represents an account with a balance where funds can be credited or debited. Instead, Bitcoin aggregates payments that have not been spent (unspent transaction outputs, or UTXOs) to determine how much Bitcoin a wallet contains. In Ethereum, Accounts are a central part of the network and are an essential part of any transaction or contract. 
 * **Cryptofuel for gas and fees:** All requests in the Ethereum blockchain require some amount of ether (the Ethereum currency) to pay for the computing resources consumed. This has the added benefit of reducing the incidence of DDoS/spam attacks, since every request requires the sender to pay for it.
-* **Light client protocol:** Ethereum is also designed to run in low-capacity environments such as smartphones and embedded devices, while still operating securely in relation to the Ethereum network state. This will facilitate the development of solutions for the Internet of Things (IoT) that can participate as light client nodes on the Ethereum network.
+* **Light client protocol:** Ethereum is also designed to run in low-capacity environments such as smartphones and embedded devices, while still operating securely in relation to the Ethereum network state. This will facilitate the development of solutions for Internet of Things (IoT) devices that can participate as light client nodes on the Ethereum network.
 
 A digital currency and cryptofuel
 =======================================================================
@@ -31,7 +31,7 @@ Notably, Ethereum is unique in the realm of cryptocurrencies in that ether has u
 
 A platform for decentralized apps
 =======================================================================
-Ethereum's mission is to enable Web 3.0 and bring about the truly decentralized Internet. Decentralized apps (dapps) are software components implemented in the Ethereum network using the programming languages and development tools provided by developers in the Ethereum ecosystem. 
+Ethereum's mission is to enable Web 3.0 and bring about the truly decentralized internet. Decentralized apps (dapps) are software components implemented in the Ethereum network using the programming languages and development tools provided by developers in the Ethereum ecosystem. 
 
 As intended by the Ethereum developers, Ethereum is a blank canvas and you have the freedom to build whatever you want with it. The Ethereum protocol is meant to be generalized so that the core features can be combined in arbitrary ways. Ideally, dapp projects on Ethereum will leverage the Ethereum blockchain to build solutions that rely on decentralized consensus to provide new products and services that were not previously possible.
 
@@ -41,7 +41,7 @@ Smart contracts
 ---------------------------------------------------------------
 One of the most important capabilities for Ethereum developers is the ability to write and execute smart contracts. The idea of "smart contracts" was first posited by Nick Szabo in 1993 as a type of automated software where the terms of a contract can be written as code and executed by the software. With Ethereum, the idea of smart contracts becomes reality by providing users with the programming languages and tools for writing contract code to run on the Ethereum network.  
 
-At the launch of the Ethereum Frontier network in 2015, developers were provided with a Javascript-like programming language called Solidity which could be written and tested in a development environment called AlethZero. Developers also have the option of writing contracts in a new Python-like language called Serpent. Typically, a smart contract is just one element of a larger dapp and will frequently interact with other smart contracts.
+At the launch of the Ethereum Frontier network in 2015, developers were provided with a Javascript-like programming language called Solidity which could be written and tested in a development environment called AlethZero. Developers also have the option of writing contracts in a new Python-like language called Serpent. Typically, a smart contract is just one element of a larger dapp and will frequently interact with other smart contracts as well as off-chain software.
 
 
 Private blockchains and applications
