@@ -84,14 +84,14 @@ Sometimes you just can't get connected. The most common reasons are
 as follows:
 
 - Your local time might be incorrect. An accurate clock is required
-  to participate in the Ethereum network.Check your OS for how to resync
+  to participate in the Ethereum network. Check your OS for how to resync
   your clock (example sudo ntpdate -s time.nist.gov) because even 12
   seconds too fast can lead to 0 peers.
 - Some firewall configurations can prevent UDP traffic from flowing.
   You can use the static nodes feature or ``admin.addPeer()`` on the console
   to configure connections by hand.
 
-To start geth without the discovery protocol, you can use the `--nodiscover` parameter. You only want this is you are running a test node or an experimental test network with fixed nodes.
+To start geth without the discovery protocol, you can use the `--nodiscover` parameter. You only want this if you are running a test node or an experimental test network with fixed nodes.
 
 Syncing vs Fast Syncing
 --------------------------------------------------------------------------------
