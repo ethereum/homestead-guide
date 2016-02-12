@@ -17,8 +17,8 @@ Ethereum, like all blockchain technologies, uses an incentive-driven model of se
 
 The Ethereum blockchain is in many ways similar to the Bitcoin blockchain, although it does have some differences. The main difference between Ethereum and Bitcoin with regard to the blockchain architecture is that, unlike Bitcoin, Ethereum blocks contain a copy of both the transaction list and the most recent state. Aside from that, two other values, the block number and the difficulty, are also stored in the block.
 
-[The proof of work algorithm used is called
-`Ethash <https://github.com/ethereum/wiki/wiki/Ethash>`__ (a modified version of `Dagger-Hashimoto <https://github.com/ethereum/wiki/wiki/Dagger-Hashimoto>`__ involves finding a nonce input to the algorithm so that the result is below a certain threshold depending on the difficulty. The point in PoW algorithms is that there is no better strategy to find such a nonce than enumerating the possibilities while verification of a solution is trivial and cheap. If outputs have a uniform distribution, then we can guarantee that on average the time needed to find a nonce depends on the difficulty threshold, making it possible to control the time of finding a new block just by manipulating difficulty.
+The proof of work algorithm used is called
+`Ethash <https://github.com/ethereum/wiki/wiki/Ethash>`__ (a modified version of `Dagger-Hashimoto <https://github.com/ethereum/wiki/wiki/Dagger-Hashimoto>`)__ and involves finding a nonce input to the algorithm so that the result is below a certain threshold depending on the difficulty. The point in PoW algorithms is that there is no better strategy to find such a nonce than enumerating the possibilities while verification of a solution is trivial and cheap. If outputs have a uniform distribution, then we can guarantee that on average the time needed to find a nonce depends on the difficulty threshold, making it possible to control the time of finding a new block just by manipulating difficulty.
 
 The difficulty dynamically adjusts so that on average one block is
 produced by the entire network every 12 seconds (ie., 12 s block time).
