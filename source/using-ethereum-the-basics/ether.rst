@@ -50,7 +50,7 @@ The `Ethereum Wallet`_ supports sending ether via a graphical interface.
 
 Ether can also be transfered using the **geth console**.
 
-.. code-block:: bash
+.. code-block:: shell
 
     > var sender = eth.accounts[0];
     > var receiver = eth.accounts[1];
