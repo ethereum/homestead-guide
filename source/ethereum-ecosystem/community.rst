@@ -26,3 +26,10 @@ Hubs
 
 Meetups
 ================================================================================
+
+| `Directory hosted on Meetup`_
+| `Meetup channel on Ethereum Forum`_
+
+.. _Directory hosted on Meetup: http://www.meetup.com/topics/ethereum/
+.. _Meetup channel on Ethereum Forum: http://forum.ethereum.org/categories/meetups/
+
