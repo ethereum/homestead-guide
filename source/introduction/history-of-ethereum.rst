@@ -29,17 +29,17 @@ Following the successful crowdsale, Ethereum development was formalized under a 
 
 DEVcon-0
 --------------------------------------------------------------------------------
-In November 2014, ETH DEV organized the `DEVcon-0 event <https://blog.ethereum.org/2014/12/05/d%CE%BEvcon-0-recap/>`_, which brought together Ethereum developers from around the world to Berlin to meet and discuss a diverse range of Ethereum technology topics. Several of the presentations and sessions at DEVcon-0 would later drive important initiatives to make Ethereum more stable, more secure, and more scalable. Overall, the event galvanized developers as they continued to work towards the launch of Ethereum. 
+In November 2014, ETH DEV organized the `DEVcon-0 event <https://blog.ethereum.org/2014/12/05/d%CE%BEvcon-0-recap/>`_, which brought together Ethereum developers from around the world to Berlin to meet and discuss a diverse range of Ethereum technology topics. Several of the presentations and sessions at DEVcon-0 would later drive important initiatives to make Ethereum more reliable, more secure, and more scalable. Overall, the event galvanized developers as they continued to work towards the launch of Ethereum. 
 
 ETH DEV Bounty Hunters
 --------------------------------------------------------------------------------
-In early 2015, a bug bounty program was launched through `ETH DEV Bounty Hunters website <http://bounty.ethdev.com/>`_ offering BTC rewards for finding vulnerabilities in any part of the Ethereum software stack. This has undoubtedly contributed to the stability and security of Ethereum and the confidence of the Ethereum community in the technology. The bounty program is currently still active and there is no end date planned. 
+In early 2015, a bug bounty program was launched through `ETH DEV Bounty Hunters website <http://bounty.ethdev.com/>`_ offering BTC rewards for finding vulnerabilities in any part of the Ethereum software stack. This has undoubtedly contributed to the reliability and security of Ethereum and the confidence of the Ethereum community in the technology. The bounty program is currently still active and there is no end date planned. 
 
 * https://blog.ethereum.org/2015/03/20/juttas-update-bug-bounty-program-security-audit/.
 
 DEVgrants program
 --------------------------------------------------------------------------------
-In April 2015, `the DEVgrants program <https://blog.ethereum.org/2015/04/07/devgrants-help/>`_ was announced, which is a program that offers funding for contributions both to the Ethereum platform, and to projects based on Ethereum. Hundreds of developers were already contributing their time and thinking to Ethereum projects or in open source projects. This program served to reward and support those developers for their contributions. The DEVgrants program continues to operate today and has funding of the program was recently renewed in January 2016.
+In April 2015, `the DEVgrants program <https://blog.ethereum.org/2015/04/07/devgrants-help/>`_ was announced, which is a program that offers funding for contributions both to the Ethereum platform, and to projects based on Ethereum. Hundreds of developers were already contributing their time and thinking to Ethereum projects and in open source projects. This program served to reward and support those developers for their contributions. The DEVgrants program continues to operate today and funding of the program was recently renewed in January 2016.
 
 * https://blog.ethereum.org/2016/01/08/d%CE%BEvgrants-update-new-funding/
 
@@ -52,33 +52,21 @@ The Ethereum security audit began at the end of 2014 and continued through the f
 
 The Ethereum Frontier Launch
 =======================================================================
-The Ethereum "Frontier" network launched on July 30th, 2015, and the world 
+The Ethereum Frontier network launched on July 30th, 2015, and developers began writing smart contracts and decentralized apps to deploy on the live Ethereum network. In addition, miners began to join the Ethereum network to help secure the Ethereum blockchain and earn ether from mining blocks. Even though the Frontier release is the first milestone in the Ethereum project and was intended for use by developers as a beta version, it turned out to be more capable and reliable than anyone expected, and developers have rushed in to build solutions and improve the Ethereum ecosystem. 
 
-and communities
-The Frontier release is the first milestone in the Ethereum project
-
-During the Frontier release, we expect early adopters and application developers to establish communities and start forming a live ecosystem
+See also:
 
 * https://blog.ethereum.org/2015/07/30/ethereum-launches/
 * https://blog.ethereum.org/2015/07/22/frontier-is-coming-what-to-expect-and-how-to-prepare/
 
-Foundation finances update
----------------------------------------------------------------
-
-
-
-Future
----------------------------------------------------------------
-
-* Homestead
-* Proof of Stake
-
-
-
 DEVCON1
-=======================================================================
+--------------------------------------------------------------------------------
+The `DEVCON1 <https://devcon.ethereum.org/>`_ event took place in London at the beginning of November 2015, and the Ethereum community was growing fast and beyond  developers. The event was attended by nearly 400 people, and the audience and presentations contained a mix of developers, entrepreneurs, thinkers, and business executives. 
 
-short delay, DEVCON1 was announced to take place in London, England for a week in November 2015. Almost 400 people joined together at this location for an entire week, totaling 80 talks and topics about the Ethereum ecosystem.
+Following the Ethereum launch, a growing number of news articles were published that signaled the increasing popularity of Ethereum. As a next generation blockchain with a complete, built-in programming language, it also attracted the interest of both large companies and startups. One of those companies was Microsoft, which announced that it would offer Ethereum on its new Blockchain as a Service offering on the Microsoft Azure cloud platform. In conjunction with DEVCON1, this announcement will be remembered as the moment when blockchain technology became mainstream, with Ethereum at the center of it. 
+ 
+
+
 
 
 
