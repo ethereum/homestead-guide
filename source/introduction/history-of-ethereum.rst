@@ -8,8 +8,6 @@ Ethereum was initially described by Vitalik Buterin in late 2013 as a result of 
 
 Around that time, Vitalik also started working with Dr. Gavin Wood and together co-founded Ethereum. By April 2014, Gavin published the `Ethereum Yellow Paper <http://gavwood.com/paper.pdf>`_ that would serve as the technical specification for the Ethereum Virtual Machine (EVM). By following the detailed specification in the Yellow Paper, the Ethereum client has been implemented in six programming languages (C++, Go, Python, Java, JavaScript, and Haskell), and has resulted in better software overall.
 
-.. When a discrepancy occurs due to either human or computer languages, a roundtable of client developers can compare results and discuss the ramifications of a particular interpretation so as to determine a specific course of action. Aided by automated and random testing, sometimes the result of a consensus failure was not in code, but the documentation itself. Nonetheless, the benefits of a specification-driven implementation began to shine, helping to neutralise human error as we interpreted words into code.
-
 .. https://blog.ethereum.org/2016/02/09/cut-and-try-building-a-dream/
 .. http://www.coindesk.com/ethererum-launches-cryptocurrency-2-0-network/
 
