@@ -178,3 +178,8 @@ Pool Mining
 ================================================================================
 
 [Will link to mining pools list in ecosystem section]
+
+
+
+.. _Geth: https://build.ethdev.com/builds/Windows%20Go%20master%20branch/
+.. _Ethminer: http://cryptomining-blog.com/tag/ethminer-cuda-download/
