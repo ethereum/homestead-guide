@@ -37,9 +37,15 @@ Getting Ether
 Version 0.3.9 (Beta 6) of the `Ethereum Wallet`_ introduced the ability to
 purchase ether via Shape Shift.
 
-You can also purchase Ether on any exchange which supports the currency.  As of
-2015-02-12 Poloniex was the exchange with the highest volume in Ethereum
+You can also purchase Ether on any exchange which supports the currency.  As 
+of 2015-02-12 Poloniex was the exchange with the highest volume in Ethereum
 transactions.
+
+Ether may also be mined using your computer's graphics card (GPU). To be 
+efficient the GPU should have a sufficient amount of memory, as it must hold 
+and access the "DAG" efficiently. The DAG is a resource that is required by 
+Ethash, the ASIC-resistant (i.e. memory-hard) proof of work algorithm used by 
+Ethereum. The DAG is more than 1 GB in size.
 
 [Will point to mining and exchanges pages with explanation of both]
 
@@ -60,3 +66,4 @@ Ether can also be transfered using the **geth console**.
 
 
 .. _Ethereum Wallet: https://github.com/ethereum/mist/releases/tag/0.3.9
+
