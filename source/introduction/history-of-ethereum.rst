@@ -62,7 +62,7 @@ See also:
 
 DEVCON1
 --------------------------------------------------------------------------------
-The `DEVCON1 <https://devcon.ethereum.org/>`_ event took place in London at the beginning of November 2015, and the Ethereum community was growing fast and just among  developers. The event was attended by nearly 400 people, and the audience and presentations contained a mix of developers, entrepreneurs, thinkers, and business executives. 
+The `DEVCON1 <https://devcon.ethereum.org/>`_ event took place in London at the beginning of November 2015, and the Ethereum community was growing fast and not just among  developers. The event was attended by nearly 400 people, and the audience and presentations contained a mix of developers, entrepreneurs, thinkers, and business executives. 
 
 Following the Ethereum launch, a growing number of news articles were published that signaled the increasing popularity of Ethereum. As a next generation blockchain with a complete, built-in programming language, it also attracted the interest of both large companies and startups. One of those companies was Microsoft, which announced that it would offer Ethereum on its new Blockchain as a Service offering on the Microsoft Azure cloud platform. In conjunction with DEVCON1, this announcement will be remembered as the moment when blockchain technology became mainstream, with Ethereum at the center of it. 
  
