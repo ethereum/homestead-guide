@@ -66,5 +66,4 @@ Ether can also be transfered using the **geth console**.
 
 
 .. _Ethereum Wallet: https://github.com/ethereum/mist/releases/tag/0.3.9
-.. _Geth: https://build.ethdev.com/builds/Windows%20Go%20master%20branch/
-.. _Ethminer: http://cryptomining-blog.com/tag/ethminer-cuda-download/
+
