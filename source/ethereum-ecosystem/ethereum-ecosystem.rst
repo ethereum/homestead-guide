@@ -7,7 +7,7 @@ Ethereum Ecosystem
 
    ethereum-network-stats.rst
    client-implementations.rst
-   evm-compilers.rst
+   ethereum-high-level-languages.rst
    block-explorers.rst
    miscellaneous-tools.rst
    exchanges.rst
