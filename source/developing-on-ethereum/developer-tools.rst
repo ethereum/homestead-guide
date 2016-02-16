@@ -32,4 +32,4 @@ Other Tools
 ================================================================================
 -  `Useful Ðapp
    Patterns <https://github.com/ethereum/wiki/wiki/Useful-Ðapp-Patterns>`__
-   - Code snippets which are useful for Ðapp development.
+- Code snippets which are useful for Ðapp development.

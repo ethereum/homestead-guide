@@ -131,53 +131,88 @@ API. Two RPC functions are provided; ``eth_getWork`` and
 ``eth_submitWork``.
 
 These are formally documented on the `JSON-RPC
-API <https://github.com/ethereum/wiki/wiki/JSON-RPC>`__ wiki article.
+API <https://github.com/ethereum/wiki/wiki/JSON-RPC>`_ wiki article.
+
+Mining Preliminaries
+======================
+
+In order to do mining, you need an ether account. This account is used to send the mining rewards to and is often referred to as 'coinbase' or 'etherbase'.
+So on any platform, any implementation, you first need to `create a new geth account`. Using ``geth`` you simply type ``geth account new`` and hit Enter.
+You will be asked to enter a password. Careful! You won't see the password when you type. Also, do not lose your password! Without it you will lose all Ether associated with the account.
+
+
+Mining rewards
+========================
+
+https://forum.ethereum.org/discussion/2262/eli5-whats-an-uncle-in-ethereum-mining
+
 
 CPU Mining
 ================================================================================
+
+You can use your computer's central processing unit (CPU) to mine ether.
+This is no longer profitable, since GPU miners are roughtly two orders of magnitude more efficient.
+However, you can use CPU mining to mine of the testnet or a private chain for the purposes of creating ether to test contracts and transactions without spending your real ether on the live network.
+Note that ether (sourced from faucet or earned via mining) has no value other than using it for testing purposes. It is most unlikely there will ever be a proper market for testnet ether.
+
+
 
 GPU Mining
 ================================================================================
 
 GPU Mining on Windows
-1. To start mining on Windows, first download `Geth`_. Geth communicates with 
-the Ethereum network to coordinate the mining process over all computers 
-connected to the network. 
-2. Unzip Geth (right-click and select unpack) and launch Command Prompt.
-3. Use 'cd' to navigate to the location of the Geth folder.
-e.g. 'cd /' to go to the C: drive. 
-4. Now create a new geth account by typing 'geth account new'. Hit Enter.
-5. You will be asked to enter a password.
-Careful! You won't see the password when you type. Also, do not lose your 
-password! Without it you will lose all Ether associated with the wallet held 
-by that private key.
-7. Now let's start Geth. Type 'geth --rpc'.
-As soon as you enter this the Ethereum blockchain will start downloading. 
-Sometimes your firewall may block the synchronisation process (it will prompt 
-you when doing so). If this is the case, click "Allow access". 
-8. Now it's time to download the actual mining software, `Ethminer`_. 
-9. Install Ethminer (your firewall or Windows itself may act up, allow access)
-10. Open up another Command Prompt (leave the first one running!) 
-11. Type 'cd /' and hit Enter.
-12. Type 'cd prog' and hit Tab. It will auto-complete to 'cd Program Files'.
-Hit Enter.
-13. Type 'cd eth' and hit Tab again. It will auto-complete to 'cd Ethereum(++)'.
-A version number will follow after 'Ethereum(++)'. Hit Enter. 
-14. Type 'cd release' and hit Enter. 
-15. Now type 'ethminer -G' and hit Enter. This will start the mining process!
-At this point some problems may appear. If you get an error press 'Ctrl' and 
-'c' at the same time to shut down the process. If the error says 
-"Insufficient Memory", your GPU does not have enough memory to mine Ether. 
-You may want to get another graphics card or opt for CPU mining.
-16. For CPU mining, type 'ethminer' and hit Enter. 
+-------------------------------
 
-You can also use your computer's central processing unit (CPU) to mine ether 
-on the testnet. This ether has no value outside of testing purposes. 
+To start mining on Windows, first download `Geth`_. Geth communicates with
+the Ethereum network to coordinate the mining process over all computers
+connected to the network.
+
+Unzip Geth (right-click and select unpack) and launch Command Prompt.
+Use 'cd' to navigate to the location of the Geth folder.
+e.g. 'cd /' to go to the C: drive.
+
+Start geth by typing ``geth --rpc ``.
+As soon as you enter this the Ethereum blockchain will start downloading.
+Sometimes your firewall may block the synchronisation process (it will prompt
+you when doing so). If this is the case, click "Allow access".
+
+Download and install the C++ mining software, `Ethminer`_.
+(your firewall or Windows itself may act up, allow access)
+
+Open up another Command Prompt (leave the first one running!), change directory by typing ``cd /Program\ Files/Ethereum(++)/release``
+
+Now make sure `geth` has finished syncing the blockchain by.
+If it is not syncing any longer, you can  start the mining process by typing
+``ethminer -G`` at the command prompt
+At this point some problems may appear. If you get an error press, you can abort the miner by pressing 'Ctrl+C'. If the error says
+"Insufficient Memory", your GPU does not have enough memory to mine Ether.
+
+
+* http://cryptomining-blog.com/5323-quick-guide-on-how-to-mine-ethereum-on-windows/
+*
+
+GPU Mining on Ubuntu linux
+-----------------------------
+
+* `Spacience blogpost <http://spacience.blogspot.sg/2015/11/gpu-mining-in-ethereum-1404-from-scratch.html>`_
+
 
 Pool Mining
 ================================================================================
 
-[Will link to mining pools list in ecosystem section]
+Mining pools are cooperatives that aims to smooth out expected revenue by pooling resources, submit blocks with proof of work found by the pool participants from a central account and redistribute the reward to participants in proportion to their contributed mining power. Unlike in Bitcoin, the benefit of pooling is minimal due to the very short blocktime.
+
+_`Mining Pools` lists the pools we know of.
+
+Note that most mining pools involve third party central components which means they are not trustless. In other worlds, pool operators can run away with your earnings. Act with caution.
+
+There are a number of trustless, decentralised pools with open source codebase.
+We recommend using those.
+
+Mining pools only outsource proof of work calculation, they do not validate blocks or run the VM to check state transitions brought about by executing the transactions.
+This effectively make pools behave like single nodes in terms of security, so their growing big poses a centralisation risk of a 51% attack. Make sure you follow the network capacity distribution and do not allow pools to grow big.
+
+
 
 
 

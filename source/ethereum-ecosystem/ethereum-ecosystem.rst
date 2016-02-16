@@ -5,13 +5,17 @@ Ethereum Ecosystem
 .. toctree::
    :maxdepth: 2
 
-   ethereum-network-stats.rst
+   foundation.rst
+   community.rst
    client-implementations.rst
+   developers.rst
+   ethereum-network-stats.rst
    ethereum-high-level-languages.rst
    block-explorers.rst
-   miscellaneous-tools.rst
-   exchanges.rst
-   mining-pools.rst
    base-layer-services.rst
    dapps.rst
-   community.rst
+   exchanges.rst
+   mining-pools.rst
+
+TODO
+   This chapter should be recapped as a section under introduction or basics?

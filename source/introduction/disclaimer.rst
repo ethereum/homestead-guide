@@ -98,3 +98,10 @@ Force Majeure
 -  lack of energy, or
 -  any similar unforeseen event that renders performance commercially
    implausible.
+
+Disclosure of Agency inquiries
+-----------------------------------------
+
+Stiftung Ethereum has never been contacted by any agency anywhere in the world in a way which requires that contact not to be disclosed.
+
+Stiftung Ethereum will publicly disclose any sort of inquiry from government agencies that falls outside the scope of regular business operations.
