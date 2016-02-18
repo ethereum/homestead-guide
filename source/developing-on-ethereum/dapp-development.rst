@@ -31,11 +31,6 @@ This is supported natively on 0.9.93 and above. Pass the ``--morden`` argument i
 
    > eth --morden
 
-Or, for AlethZero
-
-.. code:: Console
-
-   > alethzero --morden
 
 PyEthApp (Python client)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -67,9 +62,9 @@ All parameters are the same as Frontier except:
    -  Whenever an account is inserted into the state trie it is
       initialised with nonce = ``IAN``.
 
--  Genesis block hash:
+-  Genesis generic block hash:
    ``0cd786a2425d16f152c658316c423e6ce1181e15c3295826d7c9904cba9ce303``
--  Genesis state root:
+-  Genesis generic state root:
    ``f3f4696bbf3b3b07775128eb7a3763279a394e382130f27c21e70233e04946a9``
 
 Morden's genesis.json
@@ -95,18 +90,6 @@ Morden's genesis.json
             }
     }
 
-Getting Morden Testnet Ether
---------------------------------------------------------------------------------
-
-Three ways to get Morden testnet ether:
-
-- You can mine testnet Ethereum
-- Use the `Ethereum wei faucet <https://zerogox.com/ethereum/wei_faucet>`__. 
-
-.. todo::
-   Finish Morden Testnet Section
-
-
 Setting Up a Local Private Testnet
 ================================================================================
 You either pre-generate or mine your own Ether on a private
@@ -124,31 +107,31 @@ The Genesis File
 
 The Genesis block is the start of the Blockchain - the first
 block, block 0, and the only block that does not point to a predecessor
-block. Ethereum’s client protocol ensures that no other node will agree with your version of the
+block. The protocol ensures that no other node will agree with your version of the
 blockchain unless they have the same genesis block, so you can make as many private testnet blockchains as you'd like!
 
-CustomGensis.json
+:file:`CustomGenesis.json`
 
 .. code-block:: JSON
 
-  {   
-      "nonce": "0x0000000000000042",     "timestamp": "0x0",     
-      "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",     
-      "extraData": "0x0",     "gasLimit": "0x8000000",     "difficulty": "0x400",     
-      "mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",     
+  {
+      "nonce": "0x0000000000000042",     "timestamp": "0x0",
+      "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "extraData": "0x0",     "gasLimit": "0x8000000",     "difficulty": "0x400",
+      "mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",
       "coinbase": "0x3333333333333333333333333333333333333333",     "alloc": {     }
   }
 
-Save a file called CustomGenesis.json.
+Save a file called :file:`CustomGenesis.json`.
 You will reference this when starting your geth node using the following flag:
 
 ``--genesis /path/to/CustomGenesis.json``
 
-Geth Flags For Your Private Network
+Command line parameters for private network
 --------------------------------------------------------------------------------
 
 There are some command line options (also called “flags”) that are
-necessary in order to make sure that your network is private. We already covered the genesis flag, but we need a few more. 
+necessary in order to make sure that your network is private. We already covered the genesis flag, but we need a few more.
 
 ``--nodiscover``
 
@@ -165,7 +148,7 @@ This will enable RPC interface on your node. This is generally enabled by defaul
 
 ``--rpcapi "db,eth,net,web3"``
 
-This dictates what APIs that are allowed to be accessed over RPC. By default, Geth enables the web3 interface over RPC. 
+This dictates what APIs that are allowed to be accessed over RPC. By default, Geth enables the web3 interface over RPC.
 
 **IMPORTANT: Please note that offering an API over the RPC/IPC interface will give everyone access to the API who can access this interface (e.g. ÐApp's). Be careful which API's you enable. By default geth enables all API's over the IPC interface and only the db,eth,net and web3 API's over the RPC interface.**
 
@@ -180,7 +163,7 @@ This dictates what URLs can connect to your node in order to perform RPC client 
 
 ``--datadir "/home/TestChain1"``
 
-This is the data directory that your private chain data will be stored in. Choose a location that is separate from your public Ethereum chain folder.
+This is the data directory that your private chain data will be stored in (under the :file:`nubits` . Choose a location that is separate from your public Ethereum chain folder.
 
 
 ``--port "30303"``
@@ -193,8 +176,7 @@ This is the "network listening port", which you will use to connect with other p
 This will set up an identity for your node so it can be identified more easily in a list of peers.
 Here is an example of how these identities show up on the network.
 
-
-Creating the geth Command
+Launching ``geth``
 --------------------------------------------------------------------------------
 
 After you have created your custom genesis block JSON file and created a directory for your blockchain data, type the following command into your console that has access to geth:
@@ -207,7 +189,7 @@ After you have created your custom genesis block JSON file and created a directo
 
 You will need to start your geth instance with your custom chain command every time you want to access your custom chain. If you just type "geth" in your console, it will not remember all of the flags you have set.
 
-Pre-Allocating Ether to Your Account
+Pre-allocating ether to your account
 --------------------------------------------------------------------------------
 
 A difficulty of "0x400" allows you to mine Ether very quickly on your private testnet chain. If you create your chain and start mining, you should have hundreds of Ether in a matter of minutes which is way more than enough to test transactions on your network. If you would still like to pre-allocate Ether to your account, you will need to:
@@ -219,18 +201,18 @@ A difficulty of "0x400" allows you to mine Ether very quickly on your private te
 .. code-block:: Javascript
 
   "alloc":
-  { 
+  {
 	  "<your account address e.g. 0x1fb891f92eb557f4d688463d0d7c560552263b5a>":
-	  { "balance": "20000000000000000000" } 
+	  { "balance": "20000000000000000000" }
   }
 
 **Note:** Replace ``0x1fb891f92eb557f4d688463d0d7c560552263b5a`` with your account address.
 
-Save your genesis file and re-run your private chain command. Once geth is fully loaded, close Geth.
+Save your genesis file and rerun your private chain command. Once geth is fully loaded, close it by .
 
-We want to assign an address as "primary" and check it's balance.
+We want to assign an address to the variable ``primary`` and check its balance.
 
-Run the command ``geth account list`` in your console to see what account # your new address was assigned.
+Run the command ``geth account list`` in your terminal to see what account # your new address was assigned.
 
 .. code-block:: Console
 
@@ -239,15 +221,22 @@ Run the command ``geth account list`` in your console to see what account # your
    Account #1: {da65665fc30803cb1fb7e6d86691e20b1826dee0}
    Account #2: {e470b1a7d2c9c5c6f03bbaa8fa20db6d404a0c32}
    Account #3: {f4dd5c3794f1fd0cdc0327a83aa472609c806e99}
-   
+
 Take note of which account # is the one that you pre-allocated Ether to.
+Alternatively, you can launch the console with ``geth console`` (keep the same parameters as when you launched ``geth`` first). Once the prompt appears, type
 
 .. code-block:: Console
 
-  > primary = eth.accounts[0];
+  > eth.accounts
 
-**Note:** Replace ``0`` with your account's number.
-This console command should return your primary Ethereum address. 
+This will return the array of account addresses you possess.
+
+.. code-block:: Console
+
+  > primary = eth.accounts[0]
+
+**Note:** Replace ``0`` with your account's index.
+This console command should return your primary Ethereum address.
 
 Type the following command:
 
@@ -255,4 +244,4 @@ Type the following command:
 
   > balance = web3.fromWei(eth.getBalance(primary), "ether");
 
-This should return you ``20`` Ether in your account. The reason we had to put such a large number in the alloc section of your genesis file is because the "balance" field takes a number in wei which is the smallest sub-unit of Ether.
+This should return ``7.5`` indicating you have that much Ether in your account. The reason we had to put such a large number in the alloc section of your genesis file is because the "balance" field takes a number in wei which is the smallest denomination of the Ethereum currency Ether (see _`Ether`).

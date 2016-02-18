@@ -1,10 +1,6 @@
 ********************************************************************************
-Ether exchanges
+Ether
 ********************************************************************************
-
-TODO
-   To be extended with wallets and ether storage services and merchant/market services
-
 
 In order to obtain Ether, you need to either
 * become an Ethereum miner (see _`Mining`)  or
@@ -28,7 +24,7 @@ Exchange                   Currencies
 Poloniex                   BTC
 Kraken                     BTC, USD, EUR, CAD, GBP
 Gatecoin                   BTC, EUR
-Shapeshift                 BTC,
+Shapeshift[#]_             BTC
 Bittrex                    BTC
 Bluetrade                  BTC, LTC, DOGE
 HitBTC                     BTC
@@ -40,13 +36,29 @@ Yunbi                      CNY
 Metaexchange               BTC
 ========================== ============================
 
-Resources
-------------------
+..  rubric:
+    _[#]: `Shapeshift <shapeshift.io>`_  is not a currency exchange market, but an easy fixed rate exchange between BTC and ETH
 
-`ETH markets exhaustive listing by volume on coinmarketcap <https://coinmarketcap.com/currencies/ethereum/#markets>`_
-Aggregating realtime stats of major ETH markets:
-  `Tradeblock <https://tradeblock.com/ethereum>`_
-  `Ethereumwisdom <http://ethereumwisdom.com>`_
-  `Cryptocompare <https://www.cryptocompare.com/coins/eth/overview>`_
-  `Coinmarketcap <https://coinmarketcap.com/currencies/ethereum/>`_
+
+Trading and price analytics
+-------------------------------
+
+* `ETH markets exhaustive listing by volume on coinmarketcap <https://coinmarketcap.com/currencies/ethereum/#markets>`_
+* Aggregating realtime stats of major ETH markets:
+  * `Tradeblock <https://tradeblock.com/ethereum>`_
+  * `Ethereumwisdom <http://ethereumwisdom.com>`_
+  * `Cryptocompare <https://www.cryptocompare.com/coins/eth/overview>`_
+  * `Coinmarketcap <https://coinmarketcap.com/currencies/ethereum/>`_
+
+===================================================================
+Wallet and Ether storage services
+===================================================================
+
+* `Mist Ethereum Wallet <https://github.com/ethereum/mist/releases/>`_ by the Foundation, standalone GUI wallet. On 2016-02-18, it is beta 7, v 0.4.0
+* `MyEtherWallet <http://myetherwallet.com>`_ with
+  * `Chrome Extension <http://sebfor.com/myetherwallet-chrome-extension-release/>`_
+  * `presale wallet import
+* `Jaxx wallets <https://jaxx.io>`_ by `Kyptokit <http://krypyokit.org>`_ - android,  chrome and firefox extension, iOS (late Feb), Jaxx Ice Hardware Wallet - Late 2016
+* `Icebox <>`_ by `ConsenSys <>`_ cold storage based on lightwallet HD wallet lib
+* `Kraken sweeper tool <http://kraken.com/>`_ - Presale wallet import
 

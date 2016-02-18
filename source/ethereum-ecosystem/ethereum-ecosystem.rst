@@ -7,15 +7,8 @@ Ethereum Ecosystem
 
    foundation.rst
    community.rst
-   client-implementations.rst
-   developers.rst
-   ethereum-network-stats.rst
-   ethereum-high-level-languages.rst
-   block-explorers.rst
-   base-layer-services.rst
-   dapps.rst
+   infrastructure.rst
    exchanges.rst
-   mining-pools.rst
+   web3.rst
+   developers.rst
 
-TODO
-   This chapter should be recapped as a section under introduction or basics?
