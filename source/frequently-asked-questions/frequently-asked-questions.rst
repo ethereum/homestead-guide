@@ -1,6 +1,10 @@
 ################################################################################
 Frequently Asked Questions
 ################################################################################
+
+*Test 
+  *Test1
+
 * I have heard of Ethereum, but what are Geth, Mist, Ethminer AlethZero and AlethOne? As you already know, Ethereum is the blockchain-based smart contract platform that this Wiki describes. Akin to Bitcoin, Ethereum needs miners to solve cryptographic puzzles to confirm transactions and bring cryptocurrency into existence, nodes to witness and record any transactions/computations made and 'wallets' to initiate transactions/computations. The programs in the header therefore performs one or more of these functions:
   *Geth: This is the Go implementation of an Ethereum node, and is the basis for any interactions with the Ethereum blockchain. Running this locally will allow you to easily interact with the Ethereum blockchain.
   *Mist: This is the equivalent of a web browser, but then for the Ethereum platform. It acts as a GUI to display the accounts and contracts that you have or use on the Ethereum blockchain. It also allows you to create and interact with contracts in a graphical user interface without ever touching the command line. If you are not a developer and just want to store Ether and interact with Ethereum contracts, then Mist is the program to use. 
