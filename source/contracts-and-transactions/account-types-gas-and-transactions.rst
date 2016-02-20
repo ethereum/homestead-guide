@@ -59,7 +59,7 @@ Ethereum implements an execution environment on the blockchain called the Ethere
 
 Gas is name for the execution fee for every operation made on an Ethereum blockchain. Its price is expressed in ether and it's decided by the miners, which can refuse to process transaction with less than a certain gas price. To get gas you simply need to add ether to your account. The Ethereum client automatically converts Ether to gas and gas to Ether when transactions are processed.
 
-The Ethereum protocol charges a fee per computational step that is executed in a contract or transaction to prevent deliberate attacks and abuse on the Ethereum network. Every transaction is required to include a gas limit and a fee that it is willing to pay per gas. Miners have the choice of including the transaction and collecting the fee or not. If the total number of gas used by the computational steps spawned by the transaction, including the original message and any sub-messages that may be triggered, is less than or equal to the gas limit, then the transaction processes. If the total gas exceeds the gas limit, then all changes are reverted, except that the transaction is still valid and the fee can still be collected by the miner. This means that it is wiser to send transactions with a gas limit well above the estimates 
+The Ethereum protocol charges a fee per computational step that is executed in a contract or transaction to prevent deliberate attacks and abuse on the Ethereum network. Every transaction is required to include a gas limit and a fee that it is willing to pay per gas. Miners have the choice of including the transaction and collecting the fee or not. If the total number of gas used by the computational steps spawned by the transaction, including the original message and any sub-messages that may be triggered, is less than or equal to the gas limit, then the transaction processes. If the total gas exceeds the gas limit, then all changes are reverted, except that the transaction is still valid and the fee can still be collected by the miner. This means that it is wiser to send transactions with a gas limit well above the estimates
 
 Estimating Transaction Costs
 ================================================================================
@@ -73,9 +73,9 @@ The total cost of a transaction is based on 2 factors:
 
 gasUsed
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Each operation in the EVM was assigned a number of how much gas it consumes. ``gasUsed`` is summing up all the gas for all the operations executed. There is a `spreadsheet`_ which offers a glimpse to some of the analysis behind them.
+Each operation in the EVM was assigned a number of how much gas it consumes. ``gasUsed`` is summing up all the gas for all the operations executed. There is a `spreadsheet <http://ethereum.stackexchange.com/q/52/42>`_ which offers a glimpse to some of the analysis behind them.
 
-For estimating ``gasUsed``, there is an `estimateGas API that can be used but has some caveats`_.
+For estimating ``gasUsed``, there is an `estimateGas API <http://ethereum.stackexchange.com/q/266/42>`_ that can be used but has some caveats.
 
 gasPrice
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -95,10 +95,26 @@ Since 1 Ether is 1e18 wei, the total cost would be 0.00000015 Ether.
 This is a simplification since it ignores some costs, such as the cost
 of passing the 2 numbers to contract, before they can even be added.
 
-.. _spreadsheet: http://ethereum.stackexchange.com/q/52/42
-.. _estimateGas API that can be used but has some caveats: http://ethereum.stackexchange.com/q/266/42
-.. _question: http://ethereum.stackexchange.com/q/324/42
+* `question <http://ethereum.stackexchange.com/q/324/42>`_
+* `gas fees <http://ether.fund/tool/gas-fees>`_
+* `gas cost calculator <http://ether.fund/tool/calculator>`_
 
+=================  =========    ============================
+operation name     gas cost     Remark
+=================  =========    ============================
+step               1            default amount per an execution cycle
+stop               0            free
+suicide            0            free
+sha3               20
+sload              20           get from permanent storage
+sstore             100          put into permanent storage
+balance            20
+create             100          contract creation
+call               20           initiating a read only call
+memory             1            every additional word when expanding memory
+txdata             5            every byte of data or code for a transaction
+transaction        500          base fee transaction.
+=================  =========    =============================
 
 Lifecycle of a Transaction
 ================================================================================

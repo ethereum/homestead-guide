@@ -145,7 +145,7 @@ Mining rewards
 ========================
 
 https://forum.ethereum.org/discussion/2262/eli5-whats-an-uncle-in-ethereum-mining
-
+`Mining difficulty chart on etherscan <http://etherscan.io/charts/difficulty>`_
 
 CPU Mining
 ================================================================================
@@ -212,9 +212,9 @@ We recommend using those.
 Mining pools only outsource proof of work calculation, they do not validate blocks or run the VM to check state transitions brought about by executing the transactions.
 This effectively make pools behave like single nodes in terms of security, so their growing big poses a centralisation risk of a 51% attack. Make sure you follow the network capacity distribution and do not allow pools to grow big.
 
-
-
-
+Mining profitability calculators:
+  * `in the ether <http://ethereum-mining-calculator.com/>`_
+  * `
 
 .. _Geth: https://build.ethdev.com/builds/Windows%20Go%20master%20branch/
 .. _Ethminer: http://cryptomining-blog.com/tag/ethminer-cuda-download/
