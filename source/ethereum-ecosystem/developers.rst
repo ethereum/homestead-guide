@@ -56,13 +56,13 @@ Serpent is a language similar to Python which can be used to develop contracts a
 * `Serpent EVM compiler <>`_
 
 
-LLL - unmaintained ?
+LLL
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Lisp Like Language is a low level language similar to Assembly. It is meant to be very simple and minimalistic; essentially just a tiny wrapper over coding in EVM directly.
 
 
-Mutan - unmaintained?
+Mutan (Deprecated)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Mutan is a statically typed, C-Like language. Mutan is a  higher level language.
