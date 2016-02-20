@@ -29,6 +29,7 @@ Ethereum network stats
 Live statistics on the Ethereum network can be viewed on the `stats dashboard <https://ethstats.net/>`_. This dashboard displays important numbers such as the current block, hash difficulty, gas price and gas spending and is updated realitime.
 The nodes shown on the page are only a selection of actual nodes on the network.
 Anyone is allowed to connect. The `Netstats README on github <https://github.com/cubedro/eth-netstats>`_ describes how to connect.
+<<<<<<< 6c217e60ea5ec28078d9a14f9fa377f61ef122b3
 
 
 
@@ -46,6 +47,25 @@ Below is an excerpt from the blog post `On Public and Private Blockchains <https
 
 While these private/consortium blockchains may not have any connection to the public blockchain, they still contribute to the overall Ethereum ecosystem by investing in Ethereum software development. Over time, this translates into software improvements, shared knowledge, and job opportunities.
 
+=======
+
+
+
+Public, private, and consortium blockchain
+================================================================================
+Most Ethereum projects today rely on Ethereum as a public blockchain, which grants access to a larger audience of users, network nodes, currency, and markets.  However, there are often reasons to prefer a private blockchain or consortium blockchain (among a group of trusted participants). For example, a number of companies in verticals, like banking, are looking to Ethereum as a platform for their own private blockchains.
+
+Below is an excerpt from the blog post `On Public and Private Blockchains <https://blog.ethereum.org/2015/08/07/on-public-and-private-blockchains/>`_ that explains the difference between the three types of blockchains based on permissioning:
+
+**Public blockchains**: a public blockchain is a blockchain that anyone in the world can read, anyone in the world can send transactions to and expect to see them included if they are valid, and anyone in the world can participate in the consensus process – the process for determining what blocks get added to the chain and what the current state is. As a substitute for centralized or quasi-centralized trust, public blockchains are secured by cryptoeconomics – the combination of economic incentives and cryptographic verification using mechanisms such as proof of work or proof of stake, following a general principle that the degree to which someone can have an influence in the consensus process is proportional to the quantity of economic resources that they can bring to bear. These blockchains are generally considered to be “fully decentralized”.
+
+**Consortium blockchains**: a consortium blockchain is a blockchain where the consensus process is controlled by a pre-selected set of nodes; for example, one might imagine a consortium of 15 financial institutions, each of which operates a node and of which 10 must sign every block in order for the block to be valid. The right to read the blockchain may be public, or restricted to the participants, and there are also hybrid routes such as the root hashes of the blocks being public together with an API that allows members of the public to make a limited number of queries and get back cryptographic proofs of some parts of the blockchain state. These blockchains may be considered “partially decentralized”.
+
+**Private blockchains**: a fully private blockchain is a blockchain where write permissions are kept centralized to one organization. Read permissions may be public or restricted to an arbitrary extent. Likely applications include database management, auditing, etc internal to a single company, and so public readability may not be necessary in many cases at all, though in other cases public auditability is desired.
+
+While these private/consortium blockchains may not have any connection to the public blockchain, they still contribute to the overall Ethereum ecosystem by investing in Ethereum software development. Over time, this translates into software improvements, shared knowledge, and job opportunities.
+
+>>>>>>> Added/Edited Infrastructure, Developers, and DApp Development pages.
 
 .. todo::
    extend network stats to network types
