@@ -60,13 +60,13 @@ Hosted blockchain explorers
 -  `EtherCamp <https://live.ether.camp/>`_
 -  `EtherScan <http://etherscan.io/>`_
 -  `Etherscan Morden Testnet  <http://testnet.etherscan.io>`_
--  `EtherBlockchain <http://www.etherblockchain.io/>`_
+-  `EtherBlockchain <http://www.etherblockchain.io/>`_ (to come)
 
 Alternative ways to explore the blockchain
 --------------------------------------------------------------------------------
 
-* `Etherlisten <www.etherlisten.com>`_ realtime Ethereum transaction visualizer and audializer
-* `chaingraph <https://www.reddit.com/r/ethereum/comments/3ibjxu/chain_graph_a_blockchain_visualiser/>`_ - visualised blockchain explorer - *no longer available*
+* `Etherlisten <www.etherlisten.com>`_ - Realtime Ethereum transaction visualizer and audializer
+* `chaingraph <https://www.reddit.com/r/ethereum/comments/3ibjxu/chain_graph_a_blockchain_visualiser/>`_ - Visualised blockchain explorer - *no longer available*
 
 
 Mining pools
@@ -115,7 +115,7 @@ Getting and storing Ether
 
 In order to obtain Ether, you need to either
 
-* become an Ethereum miner (see `Mining`_)  or
+* become an Ethereum miner (see _`Mining`)  or
 * trade other currencies for Ether
 
 Trustless services
@@ -125,18 +125,19 @@ Note that the ethereum platform is special in that the smart contracts enable tr
 
 Such projects (alpha/prelaunch status at the time of writing) are:
 
-* `BTCrelay <http://btcrelay.org/>`_ - `More information <https://medium.com/@ConsenSys/taking-stock-bitcoin-and-ethereum-4382f0a2f17>`_.
-* `EtherEx decentralised exchange <https://etherex.org>`_
+* `BTCrelay <http://btcrelay.org/>`_ - `More information <https://medium.com/@ConsenSys/taking-stock-bitcoin-and-ethereum-4382f0a2f17>`_ (about ETH/BTC 2-way peg without modifying bitcoin code).
+* `EtherEx decentralised exchange <https://etherex.org>`_.
 
 List of centralised exchanges
 --------------------------------------------------------------------------------
 
 ========================== ============================
 Exchange                   Currencies
+========================== ============================
 Poloniex                   BTC
 Kraken                     BTC, USD, EUR, CAD, GBP
 Gatecoin                   BTC, EUR
-Shapeshift                 BTC, LTC, DOGE, Other
+Shapeshift [#]_            BTC, LTC, DOGE, Other
 Bittrex                    BTC
 Bluetrade                  BTC, LTC, DOGE
 HitBTC                     BTC
@@ -148,7 +149,11 @@ Yunbi                      CNY
 Metaexchange               BTC
 ========================== ============================
 
-Trading and price analytic
+..  rubric:
+    [#]: `Shapeshift <shapeshift.io>`_  is not a currency exchange market, but an easy fixed rate exchange between BTC and ETH
+
+
+Trading and price analytics
 --------------------------------------------------------------------------------
 
 * `ETH markets exhaustive listing by volume on coinmarketcap <https://coinmarketcap.com/currencies/ethereum/#markets>`_
@@ -158,7 +163,7 @@ Trading and price analytic
   * `Ethereumwisdom <http://ethereumwisdom.com>`_
   * `Cryptocompare <https://www.cryptocompare.com/coins/eth/overview>`_
   * `Coinmarketcap <https://coinmarketcap.com/currencies/ethereum/>`_
-* `Shapeshift <shapeshift.io>`_ - easy fix-rate exchange between BTC and ETH
+* `Shapeshift <shapeshift.io>`_ - Easy fix-rate exchange between BTC, fiat and ETH
 
 Wallet and Ether storage services
 ================================================================================

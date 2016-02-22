@@ -8,7 +8,6 @@ Ethereum Ecosystem
    foundation.rst
    community.rst
    infrastructure.rst
-   exchanges.rst
    web3.rst
    developers.rst
 
