@@ -4,8 +4,8 @@ Frequently Asked Questions
 * **I have heard of Ethereum, but what are Geth, Mist, Ethminer AlethZero and AlethOne?**
   As you already know, Ethereum is the blockchain-based smart contract platform that this Wiki describes. Akin to Bitcoin, Ethereum needs miners to solve cryptographic puzzles to confirm transactions and bring cryptocurrency into existence, nodes to witness and record any transactions/computations made and 'wallets' to initiate transactions/computations.
     * **Geth**: This is the Go implementation of an Ethereum node, and is the basis for any interactions with the Ethereum blockchain. Running this locally will allow you to easily interact with the Ethereum blockchain.
-    * **Mist**: This is the equivalent of a web browser, but then for the Ethereum platform. It acts as a GUI to display the accounts and contracts that you have or use on the Ethereum blockchain. It also allows you to create and interact with contracts in a graphical user interface without ever touching the command line. If you are not a developer and just want to store Ether and interact with Ethereum contracts, then Mist is the program to use. 
-    * **AlethZero/AlethOne**: These are hardcore clients for working with Ethereum, with AlethOne being the later version. Once Geth is running in the background, you can use these to deploy contracts, mine for ether, set up private blockchains, etc. 
+    * **Mist**: This is the equivalent of a web browser, but then for the Ethereum platform. It acts as a GUI to display the accounts and contracts that you have or use on the Ethereum blockchain. It also allows you to create and interact with contracts in a graphical user interface without ever touching the command line. If you are not a developer and just want to store Ether and interact with Ethereum contracts, then Mist is the program to use.
+    * **AlethZero/AlethOne**: These are hardcore clients for working with Ethereum, with AlethOne being the later version. Once Geth is running in the background, you can use these to deploy contracts, mine for ether, set up private blockchains, etc.
     * **Ethminer**: This is the dedicated software to use if you want to mine ether.
 
 * **How can I store big files on the blockchain?**
@@ -86,6 +86,10 @@ can a contract call another contract specfed an input parameter
 
 can a transaction be signed offline
 
+can a transaction be sent by a third party? i.e can transaction broadcasting be outsourced
+  technically yes but there is an important restriction as opposed to bitcoin signed transactions: in ethereum the transaction has a nonce (more precisely, each account increases counter). As a result, third party must make send transaction respecting the origin drsoord
+
 which client is the fastest? :)
 
 
+Is the content of the data and contracts sent over the Ethereum network encrypted?
