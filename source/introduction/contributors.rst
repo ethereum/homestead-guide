@@ -19,6 +19,7 @@ We would like to thank everybody who helped in this effort for `their contributi
 - `Alex Fisher <https://github.com/alexfisher>`_
 - `Taylor Gerring <https://github.com/tgerring>`_
 - `Joël Hubert <https://github.com/jmahhh>`_
+- `Guangmian Kung <https://github.com/gmkung>`_
 - `Hugh Lang <https://github.com/hughlang>`_
 - `Chris Peel <https://github.com/christianpeel>`_
 - `Colm Ragu <https://github.com/colm>`_
@@ -32,6 +33,5 @@ We would like to thank everybody who helped in this effort for `their contributi
 And these pseudonymous contributors:
 
 - `c0d3inj3cT <https://github.com/c0d3inj3cT>`_
-- `gmkung <https://github.com/gmkung>`_
 - `klmoney <https://github.com/klmoney>`_
 - `LiteBit <https://github.com/LiteBit>`_
