@@ -28,10 +28,10 @@ We would like to thank everybody who helped in this effort for `their contributi
 - `Scott Stevenson <https://github.com/ScottStevenson>`_
 - `Bob Summerwill <https://github.com/bobsummerwill>`_
 - `Alex van de Sande <https://github.com/alexvandesande>`_
+- `Sudeep Singh <https://github.com/c0d3inj3cT>`_
 - `Luca Zeug <https://github.com/luclu>`_
 
 And these pseudonymous contributors:
 
-- `c0d3inj3cT <https://github.com/c0d3inj3cT>`_
 - `klmoney <https://github.com/klmoney>`_
 - `LiteBit <https://github.com/LiteBit>`_
