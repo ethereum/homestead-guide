@@ -1,39 +1,28 @@
 ********************************************************************************
-Client Implementations
+Infrastructure
 ********************************************************************************
-Ethereum clients are written in multiple programming languages. Each implementation is based on the formal definition of the Ethereum protocol defined in the `Ethereum Yellow Paper <http://gavwood.com/paper.pdf>`_.
 
-Client List
+
+The Ethereum network
 ================================================================================
 
-===============         ===============
-Language                 Name
-===============         ===============
-Golang                   `Geth <http://ethereum.github.io/go-ethereum/>`_
-C++                      `Eth <https://github.com/ethereum/webthree-umbrella/wiki>`_
-Javas/Node          	 `EthereumJS <http://ethereumjs.github.io/>`_
-Python                   `Pyethereum <https://github.com/ethereum/pyethereum>`_
-Java                     `ethereumJ <https://github.com/ethereum/ethereumj>`_
-Haskell                  `ethereumH <https://github.com/blockapps/strato-p2p-client>`_
-Rust                     `Parity <https://ethcore.io/parity.html>`__
-===============         ===============
-
-Other Resources
---------------------------------------------------------------------------------
-* `Distribution of client implementations on the current live network <https://etherchain.org/nodes>`_ - Realtime stats on EtherChain.
-* `What is the need for that many implementations\? <https://www.reddit.com/r/ethereum/comments/2bxo9c/whats_the_need_for_that_many_implementations/>`_ - Reddit discussion.
+The basis for decentralised consensus is the peer-to-peer network of participating nodes which maintain and secure the blockchain.
 
 Ethereum network stats
-================================================================================
+--------------------------------------------------
 
 Live statistics on the Ethereum network can be viewed on the `stats dashboard <https://ethstats.net/>`_. This dashboard displays important numbers such as the current block, hash difficulty, gas price and gas spending and is updated realitime.
 The nodes shown on the page are only a selection of actual nodes on the network.
 Anyone is allowed to connect. The `Netstats README on github <https://github.com/cubedro/eth-netstats>`_ describes how to connect.
 
 
+.. todo::
+   extend network stats to network types
 
-Public, private, and consortium blockchain
-================================================================================
+
+Public, private, and consortium blockchains
+------------------------------------------------
+
 Most Ethereum projects today rely on Ethereum as a public blockchain, which grants access to a larger audience of users, network nodes, currency, and markets.  However, there are often reasons to prefer a private blockchain or consortium blockchain (among a group of trusted participants). For example, a number of companies in verticals, like banking, are looking to Ethereum as a platform for their own private blockchains.
 
 Below is an excerpt from the blog post `On Public and Private Blockchains <https://blog.ethereum.org/2015/08/07/on-public-and-private-blockchains/>`_ that explains the difference between the three types of blockchains based on permissioning:
@@ -47,8 +36,31 @@ Below is an excerpt from the blog post `On Public and Private Blockchains <https
 While these private/consortium blockchains may not have any connection to the public blockchain, they still contribute to the overall Ethereum ecosystem by investing in Ethereum software development. Over time, this translates into software improvements, shared knowledge, and job opportunities.
 
 
-.. todo::
-   extend network stats to network types
+Client implementations
+================================================================================
+
+Ethereum clients are written in multiple programming languages. Each implementation is based on the formal definition of the Ethereum protocol defined in the `Ethereum Yellow Paper <http://gavwood.com/paper.pdf>`_.
+
+Client List
+------------------------
+
+===============         ===============
+Language                 Name
+===============         ===============
+Golang                   `Geth <http://ethereum.github.io/go-ethereum/>`_
+C++                      `Eth <https://github.com/ethereum/webthree-umbrella/wiki>`_
+Javascript/Node          `EthereumJS <http://ethereumjs.github.io/>`_
+Python                   `Pyethereum <https://github.com/ethereum/pyethereum>`_
+Java                     `ethereumJ <https://github.com/ethereum/ethereumj>`_
+Haskell                  `ethereumH <https://github.com/blockapps/strato-p2p-client>`_
+Rust                     `Parity <https://ethcore.io/parity.html>`__
+===============         ===============
+
+Other Resources
+--------------------------------------------------------------------------------
+* `Distribution of client implementations on the current live network <https://etherchain.org/nodes>`_ - Realtime stats on EtherChain.
+* `What is the need for that many implementations\? <https://www.reddit.com/r/ethereum/comments/2bxo9c/whats_the_need_for_that_many_implementations/>`_ - Reddit discussion.
+
 
 Blockchain explorers
 ================================================================================
@@ -60,13 +72,88 @@ Hosted blockchain explorers
 -  `EtherCamp <https://live.ether.camp/>`_
 -  `EtherScan <http://etherscan.io/>`_
 -  `Etherscan Morden Testnet  <http://testnet.etherscan.io>`_
--  `EtherBlockchain <http://www.etherblockchain.io/>`_
+-  `EtherBlockchain <http://www.etherblockchain.io/>`_ (to come)
 
 Alternative ways to explore the blockchain
 --------------------------------------------------------------------------------
 
-* `Etherlisten <www.etherlisten.com>`_ realtime Ethereum transaction visualizer and audializer
-* `chaingraph <https://www.reddit.com/r/ethereum/comments/3ibjxu/chain_graph_a_blockchain_visualiser/>`_ - visualised blockchain explorer - *no longer available*
+* `Etherlisten <www.etherlisten.com>`_ - Realtime Ethereum transaction visualizer and audializer
+* `chaingraph <https://www.reddit.com/r/ethereum/comments/3ibjxu/chain_graph_a_blockchain_visualiser/>`_ - Visualised blockchain explorer - *no longer available*
+
+Getting and storing Ether
+================================================================================
+
+In order to obtain Ether, you need to either
+
+* become an Ethereum miner (see _`Mining`)  or
+* trade other currencies for Ether using centralised or trustless services
+* use the user friendly `Mist Ethereum Wallet <https://github.com/ethereum/mist/releases>`_ that as of Beta 6 introduced the ability to purchase ether using the `Shapeshift <https://shapeshift.io>`_ API.
+
+Trustless services
+--------------------------------------------------------------------------------
+
+Note that the ethereum platform is special in that the smart contracts enable trustless services that obviate the need for trusted third parties in a currency exchange transaction, ie. disintermediate currency exchange businesses.
+
+Such projects (alpha/prelaunch status at the time of writing) are:
+
+* `BTCrelay <http://btcrelay.org/>`_ - `More information <https://medium.com/@ConsenSys/taking-stock-bitcoin-and-ethereum-4382f0a2f17>`_ (about ETH/BTC 2-way peg without modifying bitcoin code).
+* `EtherEx decentralised exchange <https://etherex.org>`_.
+
+List of centralised exchange marketplaces
+--------------------------------------------------------------------------------
+
+========================== ============================
+Exchange                   Currencies
+========================== ============================
+Poloniex                   BTC
+Kraken                     BTC, USD, EUR, CAD, GBP
+Gatecoin                   BTC, EUR
+Bittrex                    BTC
+Bluetrade                  BTC, LTC, DOGE
+HitBTC                     BTC
+Livecoin                   BTC
+Coinsquare                 BTC
+Bittylicious               GBP
+BTER                       CNY
+Yunbi                      CNY
+Metaexchange               BTC
+========================== ============================
+
+Centralised fixed rate exchanges
+-----------------------------------
+
+========================== ============================
+Exchange                   Currencies
+========================== ============================
+`Shapeshift`_              BTC, LTC, DOGE, Other
+`Bity`_                    BTC, USD, EUR, CHF
+========================== ============================
+
+.. _Bity: https://bity.com
+.. _Shapeshift: shapeshift.io>
+
+Trading and price analytics
+--------------------------------------------------------------------------------
+
+* `ETH markets exhaustive listing by volume on coinmarketcap <https://coinmarketcap.com/currencies/ethereum/#markets>`_
+* Aggregating realtime stats of major ETH markets:
+
+  * `Tradeblock <https://tradeblock.com/ethereum>`_
+  * `Ethereumwisdom <http://ethereumwisdom.com>`_
+  * `Cryptocompare <https://www.cryptocompare.com/coins/eth/overview>`_
+  * `Coinmarketcap <https://coinmarketcap.com/currencies/ethereum/>`_
+
+Wallet and Ether storage services
+----------------------------------------------------
+
+* `Mist Ethereum Wallet <https://github.com/ethereum/mist/releases>`_ - Wallet created by the Ethereum Foundation. Standalone GUI wallet.
+* `MyEtherWallet <https://www.myetherwallet.com/>`_ - Open Source JavaScript Client-Side/Online Ether Wallet.
+* `MyEtherWallet Chrome Extension <http://sebfor.com/myetherwallet-chrome-extension-release/>`_ - 100% client side wallet allows you to save your wallets in your browser and transfer Ether from any page.
+* Presale wallet import in Geth client.
+* `Jaxx wallets <https://jaxx.io>`_ by `Kyptokit <http://krypyokit.org>`_ - Android App and Chrome extension.
+* `Icebox <https://github.com/ConsenSys/icebox>`_ by `ConsenSys <https://consensys.net/>`_ - Cold storage based on lightwallet with HD wallet library integrated.
+* `Kraken Wallet Sweeper Tool <https://www.kraken.com/ether>`_ - Pre-sale wallet import
+
 
 
 Mining pools
@@ -109,64 +196,3 @@ Resources
 * `Unmaintained list of pools on Forum <https://forum.ethereum.org/discussion/3659/list-of-pools>`_
 * `Mining profitability calculator by cryptowizzard <http://cryptowizzard.github.io/eth-mining-calculator/>`_
 * `Mining profitability calculator on etherscan <http://etherscan.io/ether-mining-calculator>`_
-
-Getting and storing Ether
-================================================================================
-
-In order to obtain Ether, you need to either
-
-* become an Ethereum miner (see `Mining`_)  or
-* trade other currencies for Ether
-
-Trustless services
---------------------------------------------------------------------------------
-
-Note that the ethereum platform is special in that the smart contracts enable trustless services that obviate the need for trusted third parties in a currency exchange transaction, ie. disintermediate currency exchange businesses.
-
-Such projects (alpha/prelaunch status at the time of writing) are:
-
-* `BTCrelay <http://btcrelay.org/>`_ - `More information <https://medium.com/@ConsenSys/taking-stock-bitcoin-and-ethereum-4382f0a2f17>`_.
-* `EtherEx decentralised exchange <https://etherex.org>`_
-
-List of centralised exchanges
---------------------------------------------------------------------------------
-
-========================== ============================
-Exchange                   Currencies
-Poloniex                   BTC
-Kraken                     BTC, USD, EUR, CAD, GBP
-Gatecoin                   BTC, EUR
-Shapeshift                 BTC, LTC, DOGE, Other
-Bittrex                    BTC
-Bluetrade                  BTC, LTC, DOGE
-HitBTC                     BTC
-Livecoin                   BTC
-Coinsquare                 BTC
-Bittylicious               GBP
-BTER                       CNY
-Yunbi                      CNY
-Metaexchange               BTC
-========================== ============================
-
-Trading and price analytic
---------------------------------------------------------------------------------
-
-* `ETH markets exhaustive listing by volume on coinmarketcap <https://coinmarketcap.com/currencies/ethereum/#markets>`_
-* Aggregating realtime stats of major ETH markets:
-
-  * `Tradeblock <https://tradeblock.com/ethereum>`_
-  * `Ethereumwisdom <http://ethereumwisdom.com>`_
-  * `Cryptocompare <https://www.cryptocompare.com/coins/eth/overview>`_
-  * `Coinmarketcap <https://coinmarketcap.com/currencies/ethereum/>`_
-* `Shapeshift <shapeshift.io>`_ - easy fix-rate exchange between BTC and ETH
-
-Wallet and Ether storage services
-================================================================================
-
-* `Mist Ethereum Wallet <https://github.com/ethereum/mist/releases>`_ - Wallet created by the Ethereum Foundation. Standalone GUI wallet.
-* `MyEtherWallet <https://www.myetherwallet.com/>`_ - Open Source JavaScript Client-Side/Online Ether Wallet.
-* `MyEtherWallet Chrome Extension <http://sebfor.com/myetherwallet-chrome-extension-release/>`_ - 100% client side wallet allows you to save your wallets in your browser and transfer Ether from any page.
-* Presale wallet import in Geth client.
-* `Jaxx wallets <https://jaxx.io>`_ by `Kyptokit <http://krypyokit.org>`_ - Android App and Chrome extension.
-* `Icebox <https://github.com/ConsenSys/icebox>`_ by `ConsenSys <https://consensys.net/>`_ - Cold storage based on lightwallet with HD wallet library integrated.
-* `Kraken Wallet Sweeper Tool <https://www.kraken.com/ether>`_ - Pre-sale wallet import

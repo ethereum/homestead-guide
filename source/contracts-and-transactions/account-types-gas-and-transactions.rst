@@ -98,10 +98,11 @@ of passing the 2 numbers to contract, before they can even be added.
 * `question <http://ethereum.stackexchange.com/q/324/42>`_
 * `gas fees <http://ether.fund/tool/gas-fees>`_
 * `gas cost calculator <http://ether.fund/tool/calculator>`_
+* `Ethereum Gas Prices <https://docs.google.com/spreadsheets/d/1m89CVujrQe5LAFJ8-YAUCcNK950dUzMQPMJBxRtGCqs>`_
 
-=================  =========    ============================
+=================  =========    =============================
 operation name     gas cost     Remark
-=================  =========    ============================
+=================  =========    =============================
 step               1            default amount per an execution cycle
 stop               0            free
 suicide            0            free
@@ -113,7 +114,8 @@ create             100          contract creation
 call               20           initiating a read only call
 memory             1            every additional word when expanding memory
 txdata             5            every byte of data or code for a transaction
-transaction        500          base fee transaction.
+transaction        500          base fee transaction
+contract creation  53000        changed in homestead from 21000
 =================  =========    =============================
 
 Lifecycle of a Transaction
@@ -124,3 +126,6 @@ Lifecycle of a Transaction
 Signing Transactions Offline
 ================================================================================
 [ Maybe add this to the FAQ and point to the ethkey section of turboethereum guide? ]
+
+* `Resilience Raw Transaction Broadcaster <https://github.com/resilience-me/broadcaster/>`_
+

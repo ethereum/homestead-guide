@@ -2,7 +2,6 @@
 Web3: the crypto 2.0 vision of the internet
 ********************************************************************************
 
-====================================
 Dapps (Decentralised appilications)
 ====================================
 
@@ -23,4 +22,4 @@ Dapp browsers
 | `Mist <https://github.com/ethereum/mist>`_ - official GUI dapp browser developed by the foundation, alpha stage. Mist as Wallet dapp is in beta.
 | `MetaMask <https://metamask.io/>`_ - Aaron Kumavis Davis's in-browser GUI
 | `~AlethZero~ <https://github.com/ethereum/alethzero>`_ - c++ eth GUI, discontinued
-| `~Supernova~ <>`_ (discontinued)
+| `~Supernova~ <http://www.supernove.cc>`_ (discontinued)
