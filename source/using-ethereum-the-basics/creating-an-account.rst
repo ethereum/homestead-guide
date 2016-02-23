@@ -1,7 +1,7 @@
 ********************************************************************************
 Creating An Account
 ********************************************************************************
-In order to create a new account using geth. We must first start the geth in console mode. 
+In order to create a new account using geth, we must first start geth in console mode: 
 
 .. code-block:: Bash
 
@@ -13,7 +13,7 @@ In order to create a new account using geth. We must first start the geth in con
 
 Using the Console
 ================================================================================
-The console allows you to interact with your local node by issueing commands. For example try the command to list your accounts
+The console allows you to interact with your local node by issuing commands. For example, try the command to list your accounts:
 
 
 .. code-block:: Javascript
@@ -25,7 +25,7 @@ The console allows you to interact with your local node by issueing commands. Fo
   message: "no keys in store"
   }
 
-This shows that you have no accounts. So lets create an account.
+This shows that you have no accounts. So let's create an account:
 
 .. code-block:: Javascript
 
@@ -34,7 +34,7 @@ This shows that you have no accounts. So lets create an account.
   Repeat passphrase: 
   "0xb2f69ddf70297958e582a0cc98bce43294f1007d"
 
-Remember to use a strong and randomly generated password. We just created our first account. If we try to list our accounts again we can see our new account. 
+Remember to use a strong and randomly generated password. We just created our first account. If we try to list our accounts again we can see our new account: 
 
 .. code-block:: Javascript
 
