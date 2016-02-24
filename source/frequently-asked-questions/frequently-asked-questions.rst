@@ -45,8 +45,7 @@ Frequently Asked Questions
     * Wallet
         * [Mist Multi-signature](http://ethereum.stackexchange.com/questions/6/how-can-i-create-a-multisignature-address-on-ethereum)
 
-* **How do I get a list of transactions into/out-of an address?**
-You would have to pull the transactions manually out of the blockchain to achieve this. Alternatively, you can rely on thirdparty explorers' API's like [Etherchain](https://etherchain.org/apidoc). For contract execution transactions however, you can filter the logs to achieve this. 
+* **How do I get a list of transactions into/out-of an address?** You would have to pull the transactions manually out of the blockchain to achieve this. Alternatively, you can rely on thirdparty explorers' API's like [Etherchain](https://etherchain.org/apidoc). For contract execution transactions however, you can filter the logs to achieve this. 
 
 * **Can a contract pay for its execution?** No this is not possible. The gas for the execution must be provided by the address submitting the execution request.
 
