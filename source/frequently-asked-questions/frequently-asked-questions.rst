@@ -59,7 +59,7 @@ Frequently Asked Questions
 
 * **Can a transaction be sent by a third party? i.e can transaction broadcasting be outsourced** Technically yes but there is an important restriction as opposed to bitcoin signed transactions: in ethereum the transaction has a nonce (more precisely, each account increases counter). 
 
-* **Can Ethereum contracts pull data using third-party APIs?** No, Ethereum contracts cannot access external information sources in this way. It is however possible to push data from external sites (e.g. weather sites, stock prices) to Ethereum contracts through transactions.
+* **Can Ethereum contracts pull data using third-party APIs?** No, Ethereum contracts cannot pull data from external information sources in this way. It is however possible to push data from external sites (e.g. weather sites, stock prices) to Ethereum contracts through transactions.
 
 * **Is the content of the data and contracts sent over the Ethereum network encrypted?** Data and contracts on the Ethereum network are are encoded, but not encrypted. The purpose of Ethereum is precisely that everyone can audit the behaviour of the contracts and the data sent to them. However, you are always free to encrypt data locally before broadcasting it to the network. 
 
