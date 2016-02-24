@@ -56,11 +56,8 @@ You would have to pull the transactions manually out of the blockchain to achiev
 
 #####STILL TO BE ORGANIZED######
 
-* [Ethereum](#ethereum)
-    * [What is Ethereum?](#what-is-ethereum)
-    * [Where can I learn more about Ethereum?](#where-can-i-learn-more-about-ethereum)
-    * [Where can I find the main project repositories?](#where-can-i-find-the-main-project-repositories)
-    * [Where can I learn about the Ether sale and mining?](#where-can-i-learn-about-the-ether-sale-and-mining)
+* [What is Ethereum?](https://github.com/ethereum/wiki/wiki/What-is-Ethereum)
+
 * [Clients](#clients)
     * [Where can I find official releases?](#where-can-i-find-official-releases)
     * [How to install development builds?](#how-to-install-development-builds)
