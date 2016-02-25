@@ -48,10 +48,9 @@ This chapter discusses the
 * Finally we provide information for developers that write smart contracts and build decentralised applications for the web3 by listing developer tools, testing practices, and access to base payer services.
 
 
-
-Web 3:
-A platform for decentralized apps
-=======================================================================
+********************************************************************************
+Web 3: A platform for decentralized apps
+********************************************************************************
 
 The realisation came early on that a trustless contract platform is perfectly suited as the shared backend to the internet we always wanted.
 Ethereum's mission to provide Web 3.0, the crypto 2.0 vision of a truly decentralized and secure internet populated by decentralized apps (dapps) and interacting autonomous agents was born.
