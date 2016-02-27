@@ -43,13 +43,13 @@ Frequently Asked Questions
         * Brain wallets.
         * Icebox Air gapped offline signing of transactions
     * Wallet
-        * `Mist Multi\-signature <http://ethereum.stackexchange.com/questions/6/how-can-i-create-a-multisignature-address-on-ethereum>_`
+        * `Mist Multi\-signature <http://ethereum.stackexchange.com/questions/6/how-can-i-create-a-multisignature-address-on-ethereum>`_
 
 * **How do I get a list of transactions into/out-of an address?** You would have to pull the transactions manually out of the blockchain to achieve this. Alternatively, you can rely on thirdparty explorers' API's like `Etherchain <https://etherchain.org/apidoc>`_. For contract execution transactions however, you can filter the logs to achieve this. 
 
 * **Can a contract pay for its execution?** No this is not possible. The gas for the execution must be provided by the address submitting the execution request.
 
-* **Can a contract call another contract?** Yes, this is possible see https://dappsforbeginners.wordpress.com/tutorials/interactions-between-contracts/.
+* **Can a contract call another contract?** Yes, this is possible, read `this <https://dappsforbeginners.wordpress.com/tutorials/interactions-between-contracts/>`_.
 
 * **Can a transaction be signed offline and then submitted on another online device?** Yes, you can refer to the solution from `Icebox <https://github.com/ConsenSys/icebox>`_.
 
@@ -63,7 +63,7 @@ Frequently Asked Questions
 
 * **Is the content of the data and contracts sent over the Ethereum network encrypted?** Data and contracts on the Ethereum network are are encoded, but not encrypted. The purpose of Ethereum is precisely that everyone can audit the behaviour of the contracts and the data sent to them. However, you are always free to encrypt data locally before broadcasting it to the network. 
 
-* **Can I store secrets or passwords on the Ethereum network so that contracts can interact with fiat and other cryptocurrencies?** All data on Ethereum is public. It is not possible to store secrets or passwords to internet banking sites in Ethereum contracts without it being seen by all. There is however work being done to make this a possibility through code obfuscation and other techniques. A good read would be this article by Vitalik Buterin (https://blog.ethereum.org/2016/01/15/privacy-on-the-blockchain/).
+* **Can I store secrets or passwords on the Ethereum network so that contracts can interact with fiat and other cryptocurrencies?** All data on Ethereum is public. It is not possible to store secrets or passwords to internet banking sites in Ethereum contracts without it being seen by all. There is however work being done to make this a possibility through code obfuscation and other techniques. A good read would be this article by `Vitalik Buterin <https://blog.ethereum.org/2016/01/15/privacy-on-the-blockchain/>`_.
 
 ##### Need help with thorough expert comments on these questions######
 
