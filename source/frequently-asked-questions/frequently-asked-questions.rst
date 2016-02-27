@@ -19,14 +19,14 @@ Frequently Asked Questions
 
 * **How can I use Ethereum to get information about the future?**
   Augur and Gnosis are building prediction markets that try to gather the best information about uncertain future events. Besides that, there are also other interesting Ethereum-related projects on the market:
-    * [Swarm:](https://www.youtube.com/watch?v=VOC45AgZG5Q&index=11&list=PLJqWcTqh_zKHQUFX4IaVjWjfT2tbS4NVk)
-    * [IPFS:](http://ipfs.io)
-    * [Ethercasts:] (http://dapps.ethercasts.com/)
-    * [Stake:] (https://www.youtube.com/watch?v=7Y3fWXA6d5k&index=3&list=PLJqWcTqh_zKHQUFX4IaVjWjfT2tbS4NVk)
-    * [scalability:] (https://www.youtube.com/watch?v=7Y3fWXA6d5k&index=3&list=PLJqWcTqh_zKHQUFX4IaVjWjfT2tbS4NVk)
-    * [store:] (https://blog.ethereum.org/2014/12/26/secret-sharing-daos-crypto-2-0/)
-    * [Augur:] (http://www.augur.net/)
-    * [Gnosis:] (http://groupgnosis.com/)
+    * `Swarm <https://www.youtube.com/watch?v=VOC45AgZG5Q&index=11&list=PLJqWcTqh_zKHQUFX4IaVjWjfT2tbS4NVk>`_
+    * `IPFS <http://ipfs.io>`_
+    * `Ethercasts  <http://dapps.ethercasts.com/>`_
+    * `Stake  <https://www.youtube.com/watch?v=7Y3fWXA6d5k&index=3&list=PLJqWcTqh_zKHQUFX4IaVjWjfT2tbS4NVk>`_
+    * `Scalability  <https://www.youtube.com/watch?v=7Y3fWXA6d5k&index=3&list=PLJqWcTqh_zKHQUFX4IaVjWjfT2tbS4NVk>`_
+    * `Store  <https://blog.ethereum.org/2014/12/26/secret-sharing-daos-crypto-2-0/>`_
+    * `Augur  <http://www.augur.net/>`_
+    * `Gnosis  <http://groupgnosis.com/>`_
 
 * **How is Ethereum better than Bitcoin, Ripple, MaidSafeCoin and other cryptocurrencies?** While all these platforms have a currency associated with it, that is where the similarity ends. Ethereum is currently then only platform that allows for decentralized computing through smart contracts. As the Ethereum platform is 'Turing complete', you can build not just new cryptocurrencies and gross settlement systems (a la Ripple), but also many other applications that are not possible on any other platforms.
 
@@ -43,7 +43,7 @@ Frequently Asked Questions
         * Brain wallets.
         * Icebox Air gapped offline signing of transactions
     * Wallet
-        * [Mist Multi-signature](http://ethereum.stackexchange.com/questions/6/how-can-i-create-a-multisignature-address-on-ethereum)
+        * `Mist Multi\-signature <http://ethereum.stackexchange.com/questions/6/how-can-i-create-a-multisignature-address-on-ethereum>_`
 
 * **How do I get a list of transactions into/out-of an address?** You would have to pull the transactions manually out of the blockchain to achieve this. Alternatively, you can rely on thirdparty explorers' API's like [Etherchain](https://etherchain.org/apidoc). For contract execution transactions however, you can filter the logs to achieve this. 
 
