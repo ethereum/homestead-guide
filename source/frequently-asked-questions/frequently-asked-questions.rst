@@ -1,7 +1,7 @@
 ################################################################################
 Frequently Asked Questions
 ################################################################################
-* **What is Ethereum?** Ethereum is a decentralized smart contracts platform that is powered by a cryptocurrency called Ether. A good starting point to learn more about its workings would be the Wiki at https://github.com/ethereum/wiki/wiki/What-is-Ethereum .
+* **What is Ethereum?** Ethereum is a decentralized smart contracts platform that is powered by a cryptocurrency called Ether. A good starting point to learn more about its workings would be the `Wiki <https://github.com/ethereum/wiki/wiki/What-is-Ethereum>`_.
 
 * **I have heard of Ethereum, but what are Geth, Mist, Ethminer, Mix, and AlethOne?**
   As you already know, Ethereum is the blockchain-based smart contract platform that this Wiki describes. Akin to Bitcoin, Ethereum needs miners to solve cryptographic puzzles to confirm transactions and bring cryptocurrency into existence, nodes to witness and record any transactions/computations made and 'wallets' to initiate transactions/computations.
@@ -45,13 +45,13 @@ Frequently Asked Questions
     * Wallet
         * `Mist Multi\-signature <http://ethereum.stackexchange.com/questions/6/how-can-i-create-a-multisignature-address-on-ethereum>_`
 
-* **How do I get a list of transactions into/out-of an address?** You would have to pull the transactions manually out of the blockchain to achieve this. Alternatively, you can rely on thirdparty explorers' API's like [Etherchain](https://etherchain.org/apidoc). For contract execution transactions however, you can filter the logs to achieve this. 
+* **How do I get a list of transactions into/out-of an address?** You would have to pull the transactions manually out of the blockchain to achieve this. Alternatively, you can rely on thirdparty explorers' API's like `Etherchain <https://etherchain.org/apidoc>`_. For contract execution transactions however, you can filter the logs to achieve this. 
 
 * **Can a contract pay for its execution?** No this is not possible. The gas for the execution must be provided by the address submitting the execution request.
 
 * **Can a contract call another contract?** Yes, this is possible see https://dappsforbeginners.wordpress.com/tutorials/interactions-between-contracts/.
 
-* **Can a transaction be signed offline and then submitted on another online device?** Yes, you can refer to the solution from [Icebox](https://github.com/ConsenSys/icebox).
+* **Can a transaction be signed offline and then submitted on another online device?** Yes, you can refer to the solution from `Icebox <https://github.com/ConsenSys/icebox>`_.
 
 * **which client is the fastest and most reliable?** For now, the Mist browser is definitely the most stable, reliable and fastest Ethereum client. 
 
