@@ -4,7 +4,7 @@ Glossary
 
 .. glossary::
    :sorted:
-
+ 
    Đ
       Đ, `D with stroke <https://en.wikipedia.org/wiki/D_with_stroke>`_, is used in Old English, Middle English, Icelandic, and Faroese to stand for an uppercase letter "Eth". The uppercase eth (Ð) is also used to symbolize the cryptocurrency Dogecoin.
 
