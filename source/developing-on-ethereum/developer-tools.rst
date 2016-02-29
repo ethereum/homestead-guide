@@ -19,6 +19,8 @@ Five Primary Resources
 - `IDE or Development Framework`_. This assists you in developing, debugging, and deploying Ethereum applications. 
 
 
+.. _ethereum-high-level-languages:
+
 Ethereum High Level Languages
 ===========================================================================
 
