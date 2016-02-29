@@ -6,5 +6,5 @@ Developing on Ethereum
    :maxdepth: 2
    
    developer-tools.rst
-   dapp-development.rst
+   test-networks.rst
    web3-base-layer-services.rst

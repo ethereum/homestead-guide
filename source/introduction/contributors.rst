@@ -20,7 +20,6 @@ We would like to thank everybody who helped in this effort for `their contributi
 - `Taylor Gerring <https://github.com/tgerring>`_
 - `Joël Hubert <https://github.com/jmahhh>`_
 - `Guangmian Kung <https://github.com/gmkung>`_
-- `Hugh Lang <https://github.com/hughlang>`_
 - `Chris Peel <https://github.com/christianpeel>`_
 - `Colm Ragu <https://github.com/colm>`_
 - `Laurent Raufaste <https://github.com/lra>`_
