@@ -187,17 +187,17 @@ Glossary
       The agreement among all nodes in the network about the state of the Ethereum network.
 
    homestead
-      
+      The second stage of Ethereum's release. When Homestead is launched mining will be bumped up to 100 % the normal rate. Checkpoints may or may not be removed. Operation will still be in the command-line only.
    metropolis
-      
+      The third stage of Ethereum's release. This is the stage when the user interfaces come out (e.g. Mist), including a Dapp store, and non-technical users should feel comfortable joining at this point.
    serenity
-      
+      The fourth stage of Ethereum's release. This is when things are going to get fancy: the network is going to change its mining process from Proof-of-Work to Proof-of-Stake.
    frontier
-      
+      The first stage of Ethereum's release, which is accessible through a computer’s command-line only. It will allow mining at 10 % the normal rate, and contracts will be uploadable and executable.
    olympic
-      
+      The Frontier pre-release, which launched on May 9th 2015. It was meant for developers to help test the limits of the Ethereum blockchain.
    morden
-      
+      Morden is the first Ethereum alternative testnet. It is expected to continue throughout the Frontier and Homestead era.
    testnet
       A mirror network of the production Ethereum network that is meant for testing.
 
@@ -375,17 +375,11 @@ Glossary
    block(chain) explorer
       A website that allows easy searching and extraction of data from the blockchain.
 
-Obsolete Terminology
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-TODO
-  put this into the glossary marked as obsolete
-
-   HLL
+   HLL (obsolete)
       Acronym for Higher Level Language, which is what Serpent and Solidity are. HLL is what early Ðapp developers called Ethereum programming languages that did not touch the low level elements. This phrase has been phased out.
 
-   CLL
+   CLL (obsolete)
       Acronym for C Like Language, which Mutan was. This acronym has been phased out.
 
-   ES1, ES2, and ES3
+   ES1, ES2, and ES3 (obsolete)
       "Ethereum Script" versions 1,2 and 3. There were early versions of what would become the Ethereum Virtual Machine (EVM).
