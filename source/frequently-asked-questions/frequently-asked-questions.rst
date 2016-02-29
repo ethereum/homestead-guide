@@ -1,20 +1,20 @@
 ################################################################################
 Frequently Asked Questions
 ################################################################################
-* **What is Ethereum?** Ethereum is a decentralized smart contracts platform that is powered by a cryptocurrency called Ether. A good starting point to learn more about its workings would be the `Wiki <https://github.com/ethereum/wiki/wiki/What-is-Ethereum>`_.
+* **What is Ethereum?** Ethereum is a decentralized smart contracts platform that is powered by a cryptocurrency called Ether. A good starting point to learn more about it's workings would be the `Wiki <https://github.com/ethereum/wiki/wiki/What-is-Ethereum>`_.
 
 * **I have heard of Ethereum, but what are Geth, Mist, Ethminer, Mix, and AlethOne?**
   As you already know, Ethereum is the blockchain-based smart contract platform that this Wiki describes. Akin to Bitcoin, Ethereum needs miners to solve cryptographic puzzles to confirm transactions and bring cryptocurrency into existence, nodes to witness and record any transactions/computations made and 'wallets' to initiate transactions/computations.
     * **Geth**: This is the Go implementation of an Ethereum node, and is the basis for any interactions with the Ethereum blockchain. Running this locally will allow you to easily interact with the Ethereum blockchain.
-    * **Mist**: This is the equivalent of a web browser, but then for the Ethereum platform. It acts as a GUI to display the accounts and contracts that you have or use on the Ethereum blockchain. It also allows you to create and interact with contracts in a graphical user interface without ever touching the command line. If you are not a developer and just want to store Ether and interact with Ethereum contracts, then Mist is the program to use. Latest releases can be found `here <https://github.com/ethereum/mist/releases>`_. 
+    * **Mist**: This is the equivalent of a web browser, but for the Ethereum platform. It acts as a GUI to display the accounts and contracts that you have or use on the Ethereum blockchain. It also allows you to create and interact with contracts in a graphical user interface without ever touching the command line. If you are not a developer and just want to store Ether and interact with Ethereum contracts, then Mist is the program to use. Latest releases can be found `here <https://github.com/ethereum/mist/releases>`_. 
     * **AlethOne**: The mainline Ethereum desktop miner. It connects and syncs to the Ethereum network and lets you mine, and send transactions. It will also let you do pool mining.  
     * **Ethminer**: A standalone miner. This can be used to check how fast you can mine and will mine for you in concert with eth, geth and pyethereum.
     * **Mix**: The integrated development environment for DApp authoring. Quickly prototype and debug decentralised applications on the Ethereum platform.
 * **How can I store big files on the blockchain?**
   Swarm is an Ethereum-specific project for distributed file storage. IPFS is an independent project which has close ties to Ethereum; it will be used independently and may be used as the layer underlying Swarm.
 * **Is Ethereum based on bitcoin?**
-  Only in the sense that it uses a blockchain, which Bitcoin pioneered. Ethereum has a separate blockchain that has several signigicant technical differences from Bitcoin.
-* **What other cool apps are being built?** See this list from Ethercasts.
+  Only in the sense that it uses a blockchain, which Bitcoin pioneered. Ethereum has a separate blockchain that has several significant technical differences from Bitcoin's blockchain.
+* **What other cool apps are being built?** See `this <http://dapps.ethercasts.com/>`_ list from Ethercasts.
 * **What's the future of Ethereum?** We are planning a switch to Proof of Stake_ in the near future. We are also investigating scalability_ solutions and how to store_ secrets on the blockchain
 
 * **How can I use Ethereum to get information about the future?**
@@ -34,9 +34,10 @@ Frequently Asked Questions
 
 * **Is your wallet only accessible from the computer you downloaded the client on?** Yes, if you are using Mist. You can of course export it for use on another computer.
 
-* **How long should it take to download the blockchain? self.ethereum** The Ethereum blockchain is constantly growing, and is nearing 7gb as of February 2016. It can take an hour or two to download. 
+* **How long should it take to download the blockchain?** The Ethereum blockchain is constantly growing, and is nearing 7GB as of February 2016. It can take an hour or two to download. 
 
-* **How can I safely store my ether?** Here are the possible ways to store ether:
+* **How can I safely store my ether?**
+Here are the possible ways to store ether:
     * Accounts
         * Mist/Geth accounts.
         * Paper wallets.
@@ -45,7 +46,7 @@ Frequently Asked Questions
     * Wallet
         * `Mist Multi\-signature <http://ethereum.stackexchange.com/questions/6/how-can-i-create-a-multisignature-address-on-ethereum>`_
 
-* **How do I get a list of transactions into/out-of an address?** You would have to pull the transactions manually out of the blockchain to achieve this. Alternatively, you can rely on thirdparty explorers' API's like `Etherchain <https://etherchain.org/apidoc>`_. For contract execution transactions however, you can filter the logs to achieve this. 
+* **How do I get a list of transactions into/out of an address?** You would have to pull the transactions manually out of the blockchain to achieve this. Alternatively, you can rely on thirdparty explorers' API's like `Etherchain <https://etherchain.org/apidoc>`_. For contract execution transactions however, you can filter the logs to achieve this. 
 
 * **Can a contract pay for its execution?** No this is not possible. The gas for the execution must be provided by the address submitting the execution request.
 
@@ -61,7 +62,7 @@ Frequently Asked Questions
 
 * **Can Ethereum contracts pull data using third-party APIs?** No, Ethereum contracts cannot pull data from external information sources in this way. It is however possible to push data from external sites (e.g. weather sites, stock prices) to Ethereum contracts through transactions.
 
-* **Is the content of the data and contracts sent over the Ethereum network encrypted?** Data and contracts on the Ethereum network are are encoded, but not encrypted. The purpose of Ethereum is precisely that everyone can audit the behaviour of the contracts and the data sent to them. However, you are always free to encrypt data locally before broadcasting it to the network. 
+* **Is the content of the data and contracts sent over the Ethereum network encrypted?** Data and contracts on the Ethereum network are encoded, but not encrypted. The purpose of Ethereum is precisely that everyone can audit the behaviour of the contracts and the data sent to them. However, you are always free to encrypt data locally before broadcasting it to the network. 
 
 * **Can I store secrets or passwords on the Ethereum network so that contracts can interact with fiat and other cryptocurrencies?** All data on Ethereum is public. It is not possible to store secrets or passwords to internet banking sites in Ethereum contracts without it being seen by all. There is however work being done to make this a possibility through code obfuscation and other techniques. A good read would be this article by `Vitalik Buterin <https://blog.ethereum.org/2016/01/15/privacy-on-the-blockchain/>`_.
 
