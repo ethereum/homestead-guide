@@ -65,12 +65,12 @@ The successful PoW miner of the winning block receives:
 * an extra reward for including uncles as part of the block, in the form of an extra 1/32 per uncle included
 
 All the gas consumed by the execution of all the transactions in the block submitted
-by the winning miner is compensated for by the senders. The gascost
+by the winning miner is compensated for by the senders. The gas cost
 incurred is credited to the miner's account as part of the consensus
-protocoll. Over time, it's expected these will dwarf the static block
+protocol. Over time, it's expected these will dwarf the static block
 reward.
 
-Uncles are stale blocks, ie with parent that are ancestors (max 6 blocks
+Uncles are stale blocks i.e. with parents that are ancestors (max 6 blocks
 back) of the including block. Valid uncles are rewarded in order to
 neutralise the effect of network lag on the dispersion of mining
 rewards, thereby increasing security. Uncles included in a block formed
@@ -151,7 +151,7 @@ CPU Mining
 ================================================================================
 
 You can use your computer's central processing unit (CPU) to mine ether.
-This is no longer profitable, since GPU miners are roughtly two orders of magnitude more efficient.
+This is no longer profitable, since GPU miners are roughly two orders of magnitude more efficient.
 However, you can use CPU mining to mine of the testnet or a private chain for the purposes of creating ether to test contracts and transactions without spending your real ether on the live network.
 Note that ether (sourced from faucet or earned via mining) has no value other than using it for testing purposes. It is most unlikely there will ever be a proper market for testnet ether.
 
@@ -184,7 +184,7 @@ Open up another Command Prompt (leave the first one running!), change directory 
 Now make sure `geth` has finished syncing the blockchain by.
 If it is not syncing any longer, you can  start the mining process by typing
 ``ethminer -G`` at the command prompt
-At this point some problems may appear. If you get an error press, you can abort the miner by pressing 'Ctrl+C'. If the error says
+At this point some problems may appear. If you get an error, you can abort the miner by pressing 'Ctrl+C'. If the error says
 "Insufficient Memory", your GPU does not have enough memory to mine Ether.
 
 
