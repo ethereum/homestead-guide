@@ -1,0 +1,15 @@
+sudo: false
+cache: pypi
+language: python
+python:
+  - "2.7"
+env:
+  matrix:
+    - TOX_ENV=rst_lint
+install:
+  - 'travis_retry pip install setuptools --upgrade'
+  - 'travis_retry pip install tox'
+script:
+  - tox -e $TOX_ENV
+after_script:
+  - cat .tox/$TOX_ENV/log/*.log
