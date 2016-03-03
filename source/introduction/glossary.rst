@@ -9,7 +9,7 @@ Glossary
       Đ, `D with stroke <https://en.wikipedia.org/wiki/D_with_stroke>`_, is used in Old English, Middle English, Icelandic, and Faroese to stand for an uppercase letter "Eth". The uppercase eth (Ð) is also used to symbolize the cryptocurrency Dogecoin.
 
    decentralized application
-      A program which is run by many people which either uses or creates a decentralized network for some specific purpose (eg. connecting buyers and sellers in some marketplace, sharing files, online file storage, maintaining a currency). Ethereum-based decentralized applications (also called Đapps, where the Đ is the Norse letter "eth") typically consist of an HTML/Javascript webpage, and if viewed inside the EtherBrowser the browser recognizes special Javascript APIs for sending transactions to the blockchain, reading data from the blockchain and interacting with Whisper and Swarm. A Đapp typically also has a specific associated contract on the blockchain, though Đapps that facilitate the creation of many contracts are quite possible.
+      A program which is run by many people which either uses or creates a decentralized network for some specific purpose (eg. connecting buyers and sellers in some marketplace, sharing files, online file storage, maintaining a currency). Ethereum-based decentralized applications (also called Đapps, where the Đ is the Norse letter "eth") typically consist of an HTML/Javascript webpage, and if viewed inside Mist the browser recognizes special Javascript APIs for sending transactions to the blockchain, reading data from the blockchain and interacting with Whisper and Swarm. A Đapp typically also has a specific associated contract on the blockchain, though Đapps that facilitate the creation of many contracts are quite possible.
 
    decentralized organization
       An organization that has no centralized leadership, instead using a combination of formal democratic voting processes and stigmergic self-organization as their primary operating principles. A less impressive but sometimes confused concept is a "geographically distributed organization", an organization where people work far apart from each other and which may even have no office at all; GDOs can still have formal centralized leadership.
@@ -18,7 +18,7 @@ Glossary
       A set of cryptographically verifiable interactions that have the property that they were all created by the same person
    
    reputation
-      The property of an identity that other entities believe that identity to be either (1) competent at some specific task, or (2) trustworthy in some context, ie. not likely to betray others even if short-term profitable.
+      The property of an identity that other entities believe that identity to be either (1) competent at some specific task, or (2) trustworthy in some context, i.e. not likely to betray others even if short-term profitable.
 
    escrow
       If two low-reputation entities are engaged in commerce, the payer may wish to leave the funds with a high-reputation third party and instruct that party to send the funds to the payee only when the product is delivered. This reduces the risk of the payer or payee committing fraud.
@@ -50,9 +50,6 @@ Glossary
    account
       A private and public key pair that allows you to receive and send ether. An account is the entry in a ledger, indexed by its address, that contains the complete data about the state of that account. In a currency system, this involves currency balances and perhaps unfulfilled trade orders; in other cases more complex relationships may be stored inside of accounts.
 
-   proof of work
-      One important property of a block in Bitcoin, Ethereum and many other crypto-ledgers is that the hash of the block must be smaller than some target value. The reason this is necessary is that in a decentralized system anyone can produce blocks, so in order to prevent the network from being flooded with blocks, and to provide a way of measuring how much consensus there is behind a particular version of the blockchain, it must in some way be hard to produce a block. Because hashes are pseudorandom, finding a block whose hash is less than 0000000100000000000000000000000000000000000000000000000000000000 takes an average of 4.3 billion attempts. In all such systems, the target value self-adjusts so that on average one node in the network finds a block every N minutes (eg. N = 10 for Bitcoin and 1 for Ethereum).
-
    Đapp
       Unofficially stands for either "distributed app" or "eth app". Some say it is pronounced Ethapp due to the use of the uppercase eth letter Ð.
 
@@ -63,16 +60,16 @@ Glossary
       Ether is the name of the currency used within Ethereum. It is used to pay for computations within the EVM.
 
    EOA
-      An account controlled by a private key. If you own the private key associated with the EOA you have the ability to send ether and messages from it. This differs from a contract account that has it's own code and is controlled by code. EOAs and contract accounts may be combined into a single account type during Serenity.
+      Externally Owned Account. An account controlled by a private key. If you own the private key associated with the EOA you have the ability to send ether and messages from it. This differs from a contract account that has it's own code and is controlled by code. EOAs and contract accounts may be combined into a single account type during Serenity.
 
    gas
       Name for the execution fee for every operation made on an Ethereum blockchain.
 
    gas limit
-      This is the maximum amount of gas that you indicate that you are willing to pay for a contract execution transaction. It is meant to protect users from getting their ether depleted when trying to execute buggy or malicious contracts.
+      Gas limit can apply to both individual transactions and to blocks. For individual transactions, the gas limit represents the maximum amount of gas you indicate you are willing to pay for a contract execution transaction. It is meant to protect users from getting their ether depleted when trying to execute buggy or malicious contracts. The block gas limit represents the maximum cumulative gas used for all the transactions in a block. With the launch of Homestead, the block gas limit floor will increase from 3,141,592 gas to 4,712,388 gas (~50% increase).
 
    gas price
-      Price (in ether) of one unit of gas specified in the transaction.
+      Price in ether of one unit of gas specified in a transaction. With the launch of Homestead, the default gas price reduces from 50 shannon to 20 shannon (~60% reduction).
 
    transaction
       The signed data package that stores a message to be sent from an externally owned account. Simply put, a transaction describes a transfer of information from an EOA to another EOA or a contract account.
@@ -93,7 +90,7 @@ Glossary
       Refers to an approach to public-key cryptography based on the algebraic structure of elliptic curves over finite fields. See `here <https://en.wikipedia.org/wiki/Elliptic_curve_cryptography>`_.
 
    wallet
-      A wallet is a smart contract that secures your ether and identity with features such as multisignature signing, new addresses for each transaction and password protection.
+      A wallet, in the most generic sense, refers to anything that can store ether or any other crypto token. In the crypto space in general, the term wallet is used to mean anything from a single private/public key pair (like a single paper wallet) all the way to applications that manage multiple key pairs, like the Mist Ethereum wallet.
 
    contract
       A persistent piece of code on the Ethereum blockchain that encompasses a set of data and executable functions. These functions execute when Ethereum transactions are made to them with certain input parameters. Based on the input parameters, the functions will execute and interact with data within and outside of the contract.
@@ -187,19 +184,24 @@ Glossary
       The agreement among all nodes in the network about the state of the Ethereum network.
 
    homestead
-      The second stage of Ethereum's release. When Homestead is launched mining will be bumped up to 100 % the normal rate. Checkpoints may or may not be removed. Operation will still be in the command-line only.
+      Homestead is the second major version release of the Ethereum platform. Homestead includes several protocol changes and a networking change that makes possible further network upgrades: `EIP\-2 Main homestead hardfork changes <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2.mediawiki>`_; `EIP\-7 Hardfork EVM update (DELEGATECALL) <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7.md>`_; `EIP\-8 devp2p forward compatibility <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-8.md>`_. Homestead will launch when block 1,150,00 is reached on the Mainnet. On the Testnet, Homestead will launch at block 494,000.
+
    metropolis
       The third stage of Ethereum's release. This is the stage when the user interfaces come out (e.g. Mist), including a Dapp store, and non-technical users should feel comfortable joining at this point.
+
    serenity
       The fourth stage of Ethereum's release. This is when things are going to get fancy: the network is going to change its mining process from Proof-of-Work to Proof-of-Stake.
+
    frontier
-      The first stage of Ethereum's release, which is accessible through a computer’s command-line only. It will allow mining at 10 % the normal rate, and contracts will be uploadable and executable.
+      Ethereum was planned to be released in four major steps with Frontier being the name for the first phase. The Frontier release went live on July 30th, 2015. The command line Frontier phase was mainly meant to get mining operations going with the full reward of 5 ether per block and also to promote the emergence of ether exchanges. Frontier surpassed earlier modest expectations and has nurtured tremendous growth of the ecosystem.
+
    olympic
       The Frontier pre-release, which launched on May 9th 2015. It was meant for developers to help test the limits of the Ethereum blockchain.
+
    morden
       Morden is the first Ethereum alternative testnet. It is expected to continue throughout the Frontier and Homestead era.
    testnet
-      A mirror network of the production Ethereum network that is meant for testing.
+      A mirror network of the production Ethereum network that is meant for testing. See Morden.
 
    private chain
       A fully private blockchain is a blockchain where write permissions are kept centralized to one organization.
@@ -260,7 +262,7 @@ Glossary
 
    DAG
       DAG stands for Directed Acyclic Graph. It is a graph, a set of nodes and links between nodes, that has very special properties.
-      Ethereum uses a DAG in Ethash, the Ethereum Proof of Work (POW) algorithm.The Ethash DAG takes a long time to be generated, which is done by a Miner node into a cache file for each Epoch. The file data is then used when a value from this graph is required by the algorithm. Directed Acyclic Graph Daggerav.
+      Ethereum uses a DAG in Ethash, the Ethereum Proof of Work (POW) algorithm.The Ethash DAG takes a long time to be generated, which is done by a Miner node into a cache file for each Epoch. The file data is then used when a value from this graph is required by the algorithm.
 
    uncle rate
       The number of uncles produced per block.
