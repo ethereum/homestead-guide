@@ -19,6 +19,7 @@ Frequently Asked Questions
 
 * **How can I use Ethereum to get information about the future?**
   Augur and Gnosis are building prediction markets that try to gather the best information about uncertain future events. Besides that, there are also other interesting Ethereum-related projects on the market:
+
     * `Swarm <https://www.youtube.com/watch?v=VOC45AgZG5Q&index=11&list=PLJqWcTqh_zKHQUFX4IaVjWjfT2tbS4NVk>`_
     * `IPFS <http://ipfs.io>`_
     * `Ethercasts  <http://dapps.ethercasts.com/>`_

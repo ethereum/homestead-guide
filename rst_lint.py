@@ -9,9 +9,10 @@ SOURCE_DIR = os.path.join(BASE_DIR, "source")
 
 from docutils.core import Publisher
 from docutils.parsers.rst.directives import register_directive
+from docutils.parsers.rst import roles
 
 from sphinx.application import Sphinx
-from sphinx.domains.std import Glossary
+from sphinx.domains.std import StandardDomain
 # Just importing the directives also triggers registration.
 from sphinx.directives import *  # NOQA
 
@@ -52,7 +53,10 @@ import restructuredtext_lint as rst_lint
 
 
 # The Glossary directive is special and needs to be registered on it's own.
-register_directive('glossary', Glossary)
+for role_name, role in StandardDomain.roles.items():
+    roles.register_local_role(role_name, role)
+for role_name, role in StandardDomain.directives.items():
+    register_directive(role_name, role)
 
 
 INFO = 10
