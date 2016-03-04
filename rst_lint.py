@@ -70,7 +70,7 @@ LEVELS = {
 }
 
 
-def lint(dir=SOURCE_DIR, log_level=ERROR):
+def lint(dir=SOURCE_DIR, log_level=WARNING):
     errors = []
 
     for root, subdirs, files in os.walk(SOURCE_DIR):
@@ -94,7 +94,8 @@ def lint(dir=SOURCE_DIR, log_level=ERROR):
 
     if errors:
         for error in errors:
-            message = "{full_file_path}:{line_no}: {message}\n".format(
+            message = "{prefix}: {full_file_path}:{line_no}: {message}\n".format(
+                prefix=error.type,
                 full_file_path=os.path.relpath(error.source),
                 line_no=error.line,
                 message=error.message,

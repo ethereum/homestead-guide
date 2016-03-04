@@ -14,7 +14,7 @@ Ethereum Foundation's Faces to the Community
 ---------------------------------------------------
 
 * `Official Homestead website <https://ethereum.org>`_ - main entrypoint
-* `Reddit <http://www.reddit.com/r/ethereum>`_ - see _`Community`
+* `Reddit <http://www.reddit.com/r/ethereum>`_ - see :ref:`community`
 * `Blog <http://blog.ethereum.org/>`_
 * `Twitter <http://twitter.com/ethereumproject>`_
 * `Youtube <https://www.youtube.com/user/ethereumproject>`_
@@ -28,4 +28,4 @@ Official communication from the Ethereum foundation most often comes in the form
 
 The foundation `Youtube channel <https://www.youtube.com/user/ethereumproject>`_ hosts our videos, including all talks of the developers conferences DEVCON0 and DEVCON1.
 
-For community discussion forums, see _`Community`.
+For community discussion forums, see :ref:`community`.

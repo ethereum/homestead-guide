@@ -1,3 +1,5 @@
+.. _community:
+
 ********************************************************************************
 Community
 ********************************************************************************
@@ -12,7 +14,7 @@ The `Ethereum subreddit`_ is the most inclusive Ethereum forum, where most of th
 
 Strictly no price discussion.
 
-Also, this is not the ideal place to ask for hands-on help or post questions you expect there are clear immediate answers to (use _`Gitter` and _`Stack Exchange` for these, respectively).
+Also, this is not the ideal place to ask for hands-on help or post questions you expect there are clear immediate answers to (use :ref:`gitter-rooms` and :ref:`stack-exchange` for these, respectively).
 
 Read the `Ethereum subreddit rules`_ before posting.
 
@@ -32,12 +34,17 @@ Further specialised subreddits (entirely  driven):
 .. _Ethinvestor: https://www.reddit.com/r/Ethinvestor/
 
 
+.. _stack-exchange:
+
 Stack Exchange
 ================================================================================
 
 With homestead we already have our very own `Ethereum Stack Exchange <http://ethereum.stackexchange.com/>`_ as part of the StackExchange network of Q&A communities. StackExchange free Q&A site where all the questions and answers preserved for posterity.
 
 This is the best  place to ask technical questions. Help your fellow etherians by answering questions and collect all the flair.
+
+
+.. _gitter-rooms:
 
 Gitter Rooms
 ================================================================================

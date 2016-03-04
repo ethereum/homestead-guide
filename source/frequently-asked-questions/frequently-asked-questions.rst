@@ -14,7 +14,7 @@ Frequently Asked Questions
   Swarm is an Ethereum-specific project for distributed file storage. IPFS is an independent project which has close ties to Ethereum; it will be used independently and may be used as the layer underlying Swarm.
 * **Is Ethereum based on bitcoin?**
   Only in the sense that it uses a blockchain, which Bitcoin pioneered. Ethereum has a separate blockchain that has several significant technical differences from Bitcoin's blockchain.
-* **What other cool apps are being built?** See `this <http://dapps.ethercasts.com/>`_ list from Ethercasts.
+* **What other cool apps are being built?** See `the dapp list <http://dapps.ethercasts.com/>`_ from Ethercasts.
 * **What's the future of Ethereum?** We are planning a switch to Proof of Stake_ in the near future. We are also investigating scalability_ solutions and how to store_ secrets on the blockchain
 
 * **How can I use Ethereum to get information about the future?**
@@ -38,6 +38,8 @@ Frequently Asked Questions
 * **How long should it take to download the blockchain?** The Ethereum blockchain is constantly growing, and is nearing 7GB as of February 2016. It can take an hour or two to download. 
 
 * **How can I safely store my ether?**
+
+
 Here are the possible ways to store ether:
     * Accounts
         * Mist/Geth accounts.
@@ -51,7 +53,7 @@ Here are the possible ways to store ether:
 
 * **Can a contract pay for its execution?** No this is not possible. The gas for the execution must be provided by the address submitting the execution request.
 
-* **Can a contract call another contract?** Yes, this is possible, read `this <https://dappsforbeginners.wordpress.com/tutorials/interactions-between-contracts/>`_.
+* **Can a contract call another contract?** Yes, this is possible, read `about interactions between contracts <https://dappsforbeginners.wordpress.com/tutorials/interactions-between-contracts/>`_.
 
 * **Can a transaction be signed offline and then submitted on another online device?** Yes, you can refer to the solution from `Icebox <https://github.com/ConsenSys/icebox>`_.
 

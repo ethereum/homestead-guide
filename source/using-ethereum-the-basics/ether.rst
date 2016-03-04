@@ -52,9 +52,8 @@ Ether can also be transfered using the **geth console**.
     > eth.sendTransaction({from:sender, to:receiver, value: amount})
 
 
-For more information of Ether transfer transactions, see _`Account Types, Gas, and Transactions`.
+For more information of Ether transfer transactions, see :ref:`account-types-gas-and-transactions`.
 
-Ethereum is unique in the realm of cryptocurrencies in that ether has utility value as a cryptofuel, commonly referred to as "gas". Beyond transaction fees, gas is a central part of every network request and requires the sender to pay for the computing resources consumed. The gas cost is dynamically calculated, based on the volume and complexity of the request and multiplied by the current gas price. Its value as a cryptofuel has the effect of increasing the stability and long-term  demand for ether and Ethereum as a whole. For more information, see _`Account Types, Gas, and Transactions`
-
+Ethereum is unique in the realm of cryptocurrencies in that ether has utility value as a cryptofuel, commonly referred to as "gas". Beyond transaction fees, gas is a central part of every network request and requires the sender to pay for the computing resources consumed. The gas cost is dynamically calculated, based on the volume and complexity of the request and multiplied by the current gas price. Its value as a cryptofuel has the effect of increasing the stability and long-term  demand for ether and Ethereum as a whole. For more information, see :ref:`account-types-gas-and-transactions`.
 
 
