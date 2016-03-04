@@ -87,7 +87,7 @@ Glossary
       Epoch is the interval between each regeneration of the DAG used as seed by the PoW algorithm Ethash. The epoch in specified as 30000 blocks.
 
    elliptic curve (cryptography)
-      Refers to an approach to public-key cryptography based on the algebraic structure of elliptic curves over finite fields. See `here <https://en.wikipedia.org/wiki/Elliptic_curve_cryptography>`_.
+      Refers to an approach to public-key cryptography based on the algebraic structure of elliptic curves over finite fields. See `elliptic curve cryptography <https://en.wikipedia.org/wiki/Elliptic_curve_cryptography>`_.
 
    wallet
       A wallet, in the most generic sense, refers to anything that can store ether or any other crypto token. In the crypto space in general, the term wallet is used to mean anything from a single private/public key pair (like a single paper wallet) all the way to applications that manage multiple key pairs, like the Mist Ethereum wallet.
@@ -200,6 +200,7 @@ Glossary
 
    morden
       Morden is the first Ethereum alternative testnet. It is expected to continue throughout the Frontier and Homestead era.
+
    testnet
       A mirror network of the production Ethereum network that is meant for testing. See Morden.
 
@@ -243,7 +244,7 @@ Glossary
       The number of hash calculations made per second.
 
    serialization
-      The process of converting a data structure into a sequence of bytes. Ethereum internally uses an encoding format called recursive-length prefix encoding (RLP), described `here <https://github.com/ethereum/wiki/wiki/RLP>`_.
+      The process of converting a data structure into a sequence of bytes. Ethereum internally uses an encoding format called recursive-length prefix encoding (RLP), described in the `RLP section of the wiki <https://github.com/ethereum/wiki/wiki/RLP>`_.
 
    double spend
       A deliberate blockchain fork, where a user with a large amount of mining power sends a transaction to purchase some produce, then after receiving the product creates another transaction sending the same coins to themselves. The attacker then creates a block, at the same level as the block containing the original transaction but containing the second transaction instead, and starts mining on the fork. If the attacker has more than 50% of all mining power, the double spend is guaranteed to succeed eventually at any block depth. Below 50%, there is some probability of success, but it is usually only substantial at a depth up to about 2-5; for this reason, most cryptocurrency exchanges, gambling sites and financial services wait until six blocks have been produced ("six confirmations") before accepting a payment.
@@ -349,7 +350,6 @@ Glossary
       A computer program that runs as a background process instead of in direct control by an interactive user.
 
    system service
-      
    base layer service
       Services such as SWARM and Whisper which are built into the Ethereum platform.
 

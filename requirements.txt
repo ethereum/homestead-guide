@@ -1,1 +1,3 @@
 restructuredtext-lint==0.14.2
+Pigments==1.6
+Sphinx==1.3.6

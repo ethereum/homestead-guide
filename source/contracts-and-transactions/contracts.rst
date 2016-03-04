@@ -178,20 +178,28 @@ following fields:
 
     ``code``
         The compiled EVM bytecode
+
     ``info``
         Additional metadata output from the compiler
+
     ``source``
         The source code
+        
     ``language``
         The contract language (Solidity, Serpent, LLL)
+
     ``languageVersion``
         The contract language version
+
     ``compilerVersion``
         The solidity compiler version that was used to compile this contract.
+
     ``abiDefinition``
         The `Application Binary Interface Definition <https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI>`__
+
     ``userDoc``
         The `NatSpec Doc <https://github.com/ethereum/wiki/wiki/Ethereum-Natural-Specification-Format>`__ for users.
+
     ``developerDoc``
         The `NatSpec Doc <https://github.com/ethereum/wiki/wiki/Ethereum-Natural-Specification-Format>`__ for developers.
 
@@ -280,7 +288,7 @@ Now all the function calls specified in the ABI are made available on the
 contract instance. You can just call those methods on the contract instance
 in one of two ways.
 
-.. code-block:: 
+.. code-block:: js
 
     > myMultiply7.multiply.sendTransaction(3, {from: address})
     "0x12345"

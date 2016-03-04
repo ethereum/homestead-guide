@@ -1,3 +1,5 @@
+.. _mining:
+
 ********************************************************************************
 Mining
 ********************************************************************************
@@ -171,7 +173,8 @@ Unzip Geth (right-click and select unpack) and launch Command Prompt.
 Use 'cd' to navigate to the location of the Geth folder.
 e.g. 'cd /' to go to the C: drive.
 
-Start geth by typing ``geth --rpc ``.
+Start geth by typing ``geth --rpc``.
+
 As soon as you enter this the Ethereum blockchain will start downloading.
 Sometimes your firewall may block the synchronisation process (it will prompt
 you when doing so). If this is the case, click "Allow access".
@@ -214,7 +217,7 @@ This effectively make pools behave like single nodes in terms of security, so th
 
 Mining profitability calculators:
   * `in the ether <http://ethereum-mining-calculator.com/>`_
-  * `
+
 
 .. _Geth: https://build.ethdev.com/builds/Windows%20Go%20master%20branch/
 .. _Ethminer: http://cryptomining-blog.com/tag/ethminer-cuda-download/
