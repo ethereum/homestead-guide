@@ -87,7 +87,7 @@ In order to obtain Ether, you need to either
 
 * become an Ethereum miner (see _`Mining`)  or
 * trade other currencies for Ether using centralised or trustless services
-* use the user friendly `Mist Ethereum Wallet <https://github.com/ethereum/mist/releases>`_ that as of Beta 6 introduced the ability to purchase ether using the `Shapeshift <https://shapeshift.io>`_ API.
+* use the user friendly `Mist Ethereum Wallet <https://github.com/ethereum/mist/releases>`_ that as of Beta 6 introduced the ability to purchase ether using the `Shapeshift`_ API.
 
 Trustless services
 --------------------------------------------------------------------------------

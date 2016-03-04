@@ -85,7 +85,7 @@ Getting Morden Testnet Ether
 
 Two ways to obtain Morden testnet ether:
 
-- Mine using your CPU/GPU, (see `Mining`_).
+- Mine using your CPU/GPU, (see :ref:`mining`).
 - Use the `Ethereum wei faucet <https://zerogox.com/ethereum/wei_faucet>`__.
 
 .. todo::
