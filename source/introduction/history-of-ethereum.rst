@@ -78,7 +78,7 @@ DEVCON1
 The second developers' conference `DEVCON1 <https://devcon.ethereum.org/>`_  took place in the city London at the beginning of November 2015. The 5-day event featured more than 100 presentations, panel discussions and lightening talks, attracted more than 400 participants, a mix of developers, entrepreneurs, thinkers, and business executives.
 The talks were all recorded and are `freely available <https://www.youtube.com/playlist?list=PLJqWcTqh_zKHQUFX4IaVjWjfT2tbS4NVk>`_
 
-The presence of large companies like UBS, IBM and Microsoft clearly indicated enterprise interest in the technologu. Microsoft announced that it would offer `Ethereum on its new Blockchain as a Service <https://azure.microsoft.com/en-us/blog/ethereum-blockchain-as-a-service-now-on-azure/>`_  offering on the Microsoft Azure cloud platform. In conjunction with DEVCON1, this announcement will be remembered as the moment when blockchain technology became mainstream, with Ethereum at the center of it.
+The presence of large companies like UBS, IBM and Microsoft clearly indicated enterprise interest in the technology. Microsoft announced that it would offer `Ethereum on its new Blockchain as a Service <https://azure.microsoft.com/en-us/blog/ethereum-blockchain-as-a-service-now-on-azure/>`_  offering on the Microsoft Azure cloud platform. In conjunction with DEVCON1, this announcement will be remembered as the moment when blockchain technology became mainstream, with Ethereum at the center of it.
 
 * `DEVCON1 talks Youtube playlist <https://www.youtube.com/playlist?list=PLJqWcTqh_zKHQUFX4IaVjWjfT2tbS4NVk>`_
 * `DEVCON1 website <https://devcon.ethereum.org/>`_ full listing of presentations with links to the slides if available.
