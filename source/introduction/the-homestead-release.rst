@@ -16,7 +16,7 @@ Milestones of the Ethereum development roadmap
 Homestead is introduced automatically at block number #?
 
 While `the original plan laid out before Frontier <https://blog.ethereum.org/2015/03/03/ethereum-launch-process/>`_ is still valid, the substance behind that thinking changed somewhat.
-As the Olympic testnet phase (before Frontier release) saw a lot of major improvements, Frontier was launched right after not including quite a few caveat features (lower mining reward). Naturally then Homestead was meant to be the real deal finally launching Ethereum network improving upon Frontier's wild west and bringing stability and reliability to the network. Our hope is that Homestead delivers on this promise no matter how high the bar is set already.
+As the Olympic testnet phase (before Frontier release) saw a lot of major improvements, Frontier was launched right after not including quite a few caveat features (lower mining reward). Naturally then Homestead was meant to be the real deal finally launching the Ethereum network improving upon Frontier's wild west and bringing stability and reliability to the network. Our hope is that Homestead delivers on this promise no matter how high the bar is set already.
 
 
 Homestead  hard fork changes
