@@ -14,7 +14,7 @@ The offered decentralised services listed cover a wide range of areas inlcuding 
 
 If you are developing a Dapp, consider adding an entry to these listings.
 
-In the future, dapps are likely to be listed and distributed in `dappstores_ <http://dappstore.io/>`_ integrated in dapp browsers.
+In the future, Dapps are likely to be listed and distributed in `dappstores_ <http://dappstore.io/>`_ integrated in dapp browsers.
 
 Dapp browsers
 ===========================
