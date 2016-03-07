@@ -6,9 +6,7 @@ Using Ethereum: The Basics
    :maxdepth: 2
 
    installing-a-client.rst
+   accounts.rst
    connecting-to-the-network.rst
-   creating-an-account.rst
-   account-management.rst
-   backup-import-accounts.rst
    ether.rst
    mining.rst
