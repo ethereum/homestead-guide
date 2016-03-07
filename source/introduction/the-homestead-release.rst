@@ -21,7 +21,7 @@ As the Olympic testnet phase (before Frontier release) saw a lot of major improv
 
 Homestead  hard fork changes
 ----------------------------------
-Ethereum in the narrow formal sense is a suite of ptotocols.
+Ethereum in the narrow formal sense is a suite of protocols.
 Homestead comes with a few backward-incompatible protocol changes, and therefore will require a hard fork.
 
 * `EIP 2: <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2.mediawiki>`_
