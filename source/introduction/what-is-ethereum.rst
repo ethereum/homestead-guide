@@ -60,9 +60,9 @@ Web 3: A platform for decentralized apps
 ********************************************************************************
 
 The realisation came early on that a trustless contract platform is perfectly suited as the shared backend to the internet we always wanted.
-Ethereum's mission to provide Web 3.0, the crypto 2.0 vision of a truly decentralized and secure internet populated by decentralized apps (dapps) and interacting autonomous agents was born.
+Ethereum's mission to provide Web 3.0, the crypto 2.0 vision of a truly decentralized and secure internet populated by decentralized apps (Dapps) and interacting autonomous agents was born.
 
-As intended by the Ethereum developers, Ethereum is a blank canvas and you have the freedom to build whatever you want with it. The Ethereum protocol is meant to be generalized so that the core features can be combined in arbitrary ways. Ideally, dapp projects on Ethereum will leverage the Ethereum blockchain to build solutions that rely on decentralized consensus to provide new products and services that were not previously possible.
+As intended by the Ethereum developers, Ethereum is a blank canvas and you have the freedom to build whatever you want with it. The Ethereum protocol is meant to be generalized so that the core features can be combined in arbitrary ways. Ideally, Dapp projects on Ethereum will leverage the Ethereum blockchain to build solutions that rely on decentralized consensus to provide new products and services that were not previously possible.
 
 Ethereum can also be understood by looking at the projects that use Ethereum. Already, there are a number of high-profile projects built on Ethereum such as Augur, Digix, Maker, and many more (see _`Dapps`). In addition, there are development teams that build open source components that anyone can use.  While each of these organizations are separate from the Ethereum Foundation and have their own goals, they undoutedly benefit the overall Ethereum ecosystem.
 
