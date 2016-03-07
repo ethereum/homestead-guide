@@ -11,7 +11,7 @@ The basis for decentralised consensus is the peer-to-peer network of participati
 Ethereum network stats
 --------------------------------------------------
 
-Live statistics on the Ethereum network can be viewed on the `stats dashboard <https://ethstats.net/>`_. This dashboard displays important numbers such as the current block, hash difficulty, gas price and gas spending and is updated realitime.
+Live statistics on the Ethereum network can be viewed on the `stats dashboard <https://ethstats.net/>`_. This dashboard displays important numbers such as the current block, hash difficulty, gas price and gas spending and is updated realtime.
 The nodes shown on the page are only a selection of actual nodes on the network.
 Anyone is allowed to connect. The `Netstats README on github <https://github.com/cubedro/eth-netstats>`_ describes how to connect.
 
