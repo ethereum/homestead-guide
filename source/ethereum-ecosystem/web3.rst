@@ -12,7 +12,7 @@ Dapps (Decentralised web3 applications) that use Ethereum in various stages of d
 
 The offered decentralised services listed cover a wide range of areas inlcuding finance, insurance, prediction markets, social networks, distributed computation and storage, gambling, marketplace, internet of things, governance, collaboration, development and games.
 
-If you are developing a Dapp, consider adding an entry to these listings.
+If you are developing a dapp, consider adding an entry to these listings.
 
 In the future, dapps are likely to be listed and distributed in `dappstores_ <http://dappstore.io/>`_ integrated in dapp browsers.
 
