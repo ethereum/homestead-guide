@@ -61,6 +61,7 @@ Other Resources
 * `Distribution of client implementations on the current live network <https://etherchain.org/nodes>`_ - Realtime stats on EtherChain.
 * `What is the need for that many implementations\? <https://www.reddit.com/r/ethereum/comments/2bxo9c/whats_the_need_for_that_many_implementations/>`_ - Reddit discussion.
 
+.. _blockchain_explorers:
 
 Blockchain explorers
 ================================================================================
