@@ -1,5 +1,4 @@
 .. _test-networks:
-
 ********************************************************************************
 Test Networks
 ********************************************************************************
@@ -12,7 +11,7 @@ continue throughout the Frontier and Homestead milestones of the software.
 Usage
 --------------------------------------------------------------------------------
 
-TurboEthereum (C++)
+++eth (C++ client)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This is supported natively on 0.9.93 and above. Pass the ``--morden`` argument in when starting any of the clients. e.g.:
@@ -88,15 +87,11 @@ Two ways to obtain Morden testnet ether:
 - Mine using your CPU/GPU, (see :ref:`mining`).
 - Use the `Ethereum wei faucet <https://zerogox.com/ethereum/wei_faucet>`__.
 
-.. todo::
-   Finish Morden Testnet Section
-
-
 Setting Up a Local Private Testnet
 ================================================================================
 You either pre-generate or mine your own Ether on a private
 testnet. It is a much more cost effective way of trying out
-Ethereum.
+Ethereum and you can avoid having to mine or find Morden test ether.
 
 The things that are required to specify in a private chain are:
  - Custom Genesis File
@@ -133,7 +128,7 @@ Command line parameters for private network
 --------------------------------------------------------------------------------
 
 There are some command line options (also called “flags”) that are
-necessary in order to make sure that your network is private. We already covered the genesis flag, but we need a few more.
+necessary in order to make sure that your network is private. We already covered the genesis flag, but we need a few more. Note that all of the commands below are to be used in the geth Ethereum client.
 
 ``--nodiscover``
 

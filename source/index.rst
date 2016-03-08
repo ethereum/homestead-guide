@@ -3,24 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Ethereum Homestead Documentation!
+Ethereum Homestead Documentation
 ===============================================================================
 
-
-..  image:: img/ethereum-logo.jpg
-..   :height: 300px
-..   :width: 300 px
+..  image:: img/ethereum-homestead-documentation-logo.png
+..   :height: 500px
+..   :width: 394 px
    :scale: 50 %
    :alt: ethereum-logo
    :align: center
-
-Homestead To-Dos
-===============================================================================
-
-See `this page <https://ethereum-homestead.readthedocs.org/en/latest/about.html>`__ to help us with these to-dos :)
-
-.. todolist::
-
 
 Contents
 ===============================================================================
@@ -35,3 +26,8 @@ Contents
    contracts-and-transactions/contracts-and-transactions.rst
    developing-on-ethereum/developing-on-ethereum.rst
    frequently-asked-questions/frequently-asked-questions.rst
+
+Improve the Documentation
+===============================================================================
+
+See `this page <https://ethereum-homestead.readthedocs.org/en/latest/about.html>`__ to help us improve the documentation.

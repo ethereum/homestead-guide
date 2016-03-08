@@ -1,3 +1,5 @@
+.. _infrastructure:
+
 ********************************************************************************
 Infrastructure
 ********************************************************************************
@@ -11,14 +13,10 @@ The basis for decentralised consensus is the peer-to-peer network of participati
 Ethereum network stats
 --------------------------------------------------
 
-Live statistics on the Ethereum network can be viewed on the `stats dashboard <https://ethstats.net/>`_. This dashboard displays important numbers such as the current block, hash difficulty, gas price and gas spending and is updated realtime.
-The nodes shown on the page are only a selection of actual nodes on the network.
-Anyone is allowed to connect. The `Netstats README on github <https://github.com/cubedro/eth-netstats>`_ describes how to connect.
+`EthStats\.net <https://ethstats.net/>`_ is a dashboard of live statistics of the Ethereum network. This dashboard displays important information such as the current block, hash difficulty, gas price, and gas spending. The nodes shown on the page are only a selection of actual nodes on the network. 
+Anyone is allowed to add their node to the EthStats dashboard. The `Eth\-Netstats README on Github <https://github.com/cubedro/eth-netstats>`_ describes how to connect.
 
-
-.. todo::
-   extend network stats to network types
-
+`EtherNodes\.com <https://www.ethernodes.org/>`_ displays current and historical data on node count and other information on both the Ethereum mainnet and Morden testnet.
 
 Public, private, and consortium blockchains
 ------------------------------------------------
@@ -139,11 +137,13 @@ Trading and price analytics
 * Aggregating realtime stats of major ETH markets:
 
   * `Tradeblock <https://tradeblock.com/ethereum>`_
-  * `Ethereumwisdom <http://ethereumwisdom.com>`_
+  * `EthereumWisdom <http://ethereumwisdom.com>`_
   * `Cryptocompare <https://www.cryptocompare.com/coins/eth/overview>`_
   * `Coinmarketcap <https://coinmarketcap.com/currencies/ethereum/>`_
 
-Wallet and Ether storage services
+.. _Ethereum-wallets-and-storage-solutions:
+
+Ethereum wallets and storage solutions
 ----------------------------------------------------
 
 * `Mist Ethereum Wallet <https://github.com/ethereum/mist/releases>`_ - Wallet created by the Ethereum Foundation. Standalone GUI wallet.
@@ -153,8 +153,6 @@ Wallet and Ether storage services
 * `Jaxx wallets <https://jaxx.io>`_ by `Kyptokit <http://krypyokit.org>`_ - Android App and Chrome extension.
 * `Icebox <https://github.com/ConsenSys/icebox>`_ by `ConsenSys <https://consensys.net/>`_ - Cold storage based on lightwallet with HD wallet library integrated.
 * `Kraken Wallet Sweeper Tool <https://www.kraken.com/ether>`_ - Pre-sale wallet import
-
-
 
 Mining pools
 ================================================================================
