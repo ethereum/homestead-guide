@@ -113,6 +113,7 @@ Miscellaneous
 
 * `Dapp development collaboration platform initiative <https://www.reddit.com/r/ethereum/comments/44yoap/can_we_go_ahead_and_create_a_dapp_development/>`_ (idea stage)
 * `Dappslist <http://dapplist.net/>`_ - Mailing list for developers on Ethereum (defunct)
+* `Dappcentral <http://dappcentral.io/>`_ - Sortable pages for Dapps with instructions, code validation, and network stats. 
 
 Obsolete
 ===================
