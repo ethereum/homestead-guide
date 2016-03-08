@@ -18,7 +18,6 @@ to be uploaded on the blockchain. Note that other languages also exist, notably
 Serpent and LLL, which are described further in the
 :ref:`ethereum-high-level-languages` section of this documentation.
 
-
 Write a Contract 
 ================================================================================
 
@@ -41,7 +40,6 @@ parameter "Hello, World!" each time it is executed.
 Visit the `Solidity documentation
 <https://solidity.readthedocs.org/en/latest/>`_ for more examples and
 guidelines to writing Solidty code.
-
 
 Compile a Contract 
 ================================================================================
@@ -98,6 +96,7 @@ Alternatively, you can set this option at runtime via the console:
     Christian <c@ethdev.com> and Lefteris <lefteris@ethdev.com> (c) 2014-2015
     true
 
+.. _compile_a_simple_contract:
 
 Compiling a simple contract
 --------------------------------------------------------------------------------
@@ -265,6 +264,8 @@ The asynchronous way of doing the same looks like this:
     });
 
 
+.. _interacting_with_a_contract:
+
 Interacting with a Contract
 ================================================================================
 
@@ -416,7 +417,7 @@ chain. See :ref:`test-networks`
 .. code:: js
 
     // create account. will prompt for password
-    personal.newAccount("mypassword");
+    personal.newAccount();
     // name your primary account, will often use it
     primary = eth.accounts[0];
     // check your balance (denominated in ether)
@@ -430,11 +431,11 @@ chain. See :ref:`test-networks`
     // mine 10 blocks to generate ether 
 
     // starting miner
-    miner.start(8);
-    // sleep for 10 blocks.
+    miner.start(4);
+    // sleep for 10 blocks (this can take quite some time).
     admin.sleepBlocks(10);
     // then stop mining (just not to burn heat in vain)
-    miner.stop()  ;
+    miner.stop();
     balance = web3.fromWei(eth.getBalance(primary), "ether");
 
 After you create transactions, you can force process them with the following lines:
@@ -443,7 +444,7 @@ After you create transactions, you can force process them with the following lin
 
     miner.start(1);
     admin.sleepBlocks(1);
-    miner.stop()  ;
+    miner.stop();
 
 You can check your pending transactions with:
 
@@ -465,10 +466,3 @@ If you submitted contract creation transaction, you can check if the desired cod
     contractaddress = eth.getTransactionReceipt(txhash);
     eth.getCode(contractaddress)
 
-
-
-web3.js
-================================================================================
-
-RPC
-================================================================================
