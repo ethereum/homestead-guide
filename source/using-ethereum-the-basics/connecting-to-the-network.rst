@@ -1,21 +1,14 @@
+.. _connecting-to-the-network:
+
 ********************************************************************************
 Connecting to the Network
 ********************************************************************************
 
 How to Connect
 ================================================================================
-Geth continuously attempts to connect to other nodes on the network
-until it has peers. If you have UPnP enabled on your router or run
-ethereum on an Internet-facing server, it will also accept connections
-from other nodes.
+Geth continuously attempts to connect to other nodes on the network until it has peers. If you have UPnP enabled on your router or run Ethereum on an Internet-facing server, it will also accept connections from other nodes.
 
-Geth finds peers through something called the discovery protocol. In
-the discovery protocol, nodes are gossipping with each other to find
-out about other nodes on the network. In order to get going initially,
-geth uses a set of bootstrap nodes whose endpoints are recorded in the
-source code.
-
-
+Geth finds peers through something called the discovery protocol. In the discovery protocol, nodes are gossipping with each other to find out about other nodes on the network. In order to get going initially, geth uses a set of bootstrap nodes whose endpoints are recorded in the source code.
 
 Checking Connectivity and ENODE IDs
 --------------------------------------------------------------------------------
@@ -78,41 +71,45 @@ To check the ports used by geth and also find your enode URI run:
     ListenAddr: '[::]:30303'
   }
 
-Common Problems With Connectivity
---------------------------------------------------------------------------------
-Sometimes you just can't get connected. The most common reasons are
-as follows:
-
-- Your local time might be incorrect. An accurate clock is required
-  to participate in the Ethereum network. Check your OS for how to resync
-  your clock (example sudo ntpdate -s time.nist.gov) because even 12
-  seconds too fast can lead to 0 peers.
-- Some firewall configurations can prevent UDP traffic from flowing.
-  You can use the static nodes feature or ``admin.addPeer()`` on the console
-  to configure connections by hand.
-
-To start geth without the discovery protocol, you can use the `--nodiscover` parameter. You only want this if you are running a test node or an experimental test network with fixed nodes.
-
-Syncing vs Fast Syncing
---------------------------------------------------------------------------------
-
-.. todo::
-   Explain syncing vs. fast syncing.
-
-
-Light Client Network Connectivity
+Download the blockchain quickly
 ================================================================================
+When you start an Ethereum client, the Ethereum blockchain is automatically downloaded. The time it takes download the Ethereum blockchain can vary based on client, client settings, connection speed, and number of peers available. Below are some options for more quickly obtaining the Ethereum blockchain.
 
-.. todo::
-   Explain light client.
+Using geth
+--------------------------------------------------------------------------------
+If you are using the geth client, there are some things you can do to speed up the time it takes to download the Ethereum blockchain. If you choose to use the ``--fast`` flag to perform an Ethereum fast sync, you will not retain past transaction data. You cannot use this flag after performing all or part of a normal sync operation, meaning you should not have any portion of the Ethereum blockchain downloaded before using this command. `See this Ethereum Stack\.Exchange answer for more information <http://ethereum.stackexchange.com/questions/1845/why-isnt-fast-sync-the-default>`_.
+
+Below are some flags to use when you want to sync your client more quickly.
+
+``--fast``
+
+This flag enables fast syncing through state downloads rather than downloading the full block data. This will also reduce the size of your blockchain dramatically.
+NOTE: ``--fast`` can only be run if you are syncing your blockchain from scratch and only the first time you download the blockchain for security reasons. `See this Reddit post for more information <https://www.reddit.com/r/ethereum/comments/3y9316/geth_fast_option_question/>`_.
+
+``--cache=1024``
+
+Megabytes of memory allocated to internal caching (min 16MB / database forced). Default is 16MB, so increasing this to 256, 512, 1024 (1GB), or 2048 (2GB) depending on how much RAM your computer has should make a difference.
+
+``--jitvm``
+
+This flag enable the JIT VM.
+
+Full example command with console:
+
+.. code-block:: Bash
+
+  geth --fast --cache=1024 --jitvm console
+
+For more discussion on fast syncing and blockchain download times, `see this Reddit post <https://www.reddit.com/r/ethereum/comments/46c4ga/lets_benchmark_the_clients/>`_.
+
+Exporting/Importing the blockchain
+--------------------------------------------------------------------------------
+If you already have a full Ethereum node synced, you can export the blockchain data from the fully synced node and import it into your new node. You can accomplish this in geth by exporting your full node with the command ``geth export filename`` and importing the blockchain into your node using ``geth import filename``.
 
 Static Nodes, Trusted Nodes, and Boot Nodes
 ================================================================================
 
-Geth supports a feature called static nodes if you have certain
-peers you always want to connect to. Static nodes are re-connected
-on disconnects. You can configure permanent static nodes by putting something like
-the following into ``<datadir>/static-nodes.json`` (this should be the same folder that your ``chaindata`` and ``keystore`` folders are in)
+Geth supports a feature called static nodes if you have certain peers you always want to connect to. Static nodes are re-connected on disconnects. You can configure permanent static nodes by putting something like the following into ``<datadir>/static-nodes.json`` (this should be the same folder that your ``chaindata`` and ``keystore`` folders are in)
 
 .. code-block:: Javascript
 
@@ -121,9 +118,18 @@ the following into ``<datadir>/static-nodes.json`` (this should be the same fold
   	"enode://pubkey@ip:port"
   ]
 
-
 You can also add static nodes at runtime via the Javascript console using `admin.addPeer()`
 
 .. code-block:: Console
 
   > admin.addPeer("enode://f4642fa65af50cfdea8fa7414a5def7bb7991478b768e296f5e4a54e8b995de102e0ceae2e826f293c481b5325f89be6d207b003382e18a8ecba66fbaf6416c0@33.4.2.1:30303")
+
+Common problems with connectivity
+--------------------------------------------------------------------------------
+Sometimes you just can't get connected. The most common reasons are
+as follows:
+
+- Your local time might be incorrect. An accurate clock is required to participate in the Ethereum network. Check your OS for how to resync your clock (example sudo ntpdate -s time.nist.gov) because even 12 seconds too fast can lead to 0 peers.
+- Some firewall configurations can prevent UDP traffic from flowing. You can use the static nodes feature or ``admin.addPeer()`` on the console to configure connections by hand.
+
+To start geth without the discovery protocol, you can use the `--nodiscover` parameter. You only want this if you are running a test node or an experimental test network with fixed nodes.
