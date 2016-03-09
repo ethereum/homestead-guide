@@ -54,7 +54,7 @@ mechanisms.
   installed).
 * The `online Solidity realtime compiler <https://chriseth.github.io/browser-solidity/>`_.
 * The `Mix IDE <https://github.com/ethereum/wiki/wiki/Mix:-The-DApp-IDE>`_. 
-* The `Ethereum Wallet <https://github.com/ethereum/mist/releases/tag/0.4.0>`_.
+* The `Ethereum Wallet <https://github.com/ethereum/mist/releases>`_.
 
 .. note::  More information on solc and compiling Solidity contract code can be found `here <https://solidity.readthedocs.org/en/latest/frequently-asked-questions.html#how-do-i-compile-contracts>`_.
 
