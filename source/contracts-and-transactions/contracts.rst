@@ -2,7 +2,7 @@
 Contracts
 ********************************************************************************
 
-What is a Contract?
+What is a contract?
 ================================================================================
 
 A contract is a collection of code (its functions) and data (its state) that
@@ -18,7 +18,9 @@ to be uploaded on the blockchain. Note that other languages also exist, notably
 Serpent and LLL, which are described further in the
 :ref:`ethereum-high-level-languages` section of this documentation.
 
-Write a Contract 
+.. note::
+
+Writing a contract 
 ================================================================================
 
 No language would be complete without a Hello World program. Operating within
@@ -37,13 +39,12 @@ blockchain:
 This contract will create a log entry on the blockchain of type Print with a
 parameter "Hello, World!" each time it is executed.
 
-Visit the `Solidity documentation
-<https://solidity.readthedocs.org/en/latest/>`_ for more examples and
+.. seealso:: `Solidity documentation
+<https://solidity.readthedocs.org/en/latest/>`_ has more examples and
 guidelines to writing Solidty code.
 
-Compile a Contract 
+Compiling a contract 
 ================================================================================
-
 
 Compilation of solidity contracts can be accomplished via a number of
 mechanisms.
@@ -59,7 +60,7 @@ mechanisms.
 .. note::  More information on solc and compiling Solidity contract code can be found `here <https://solidity.readthedocs.org/en/latest/frequently-asked-questions.html#how-do-i-compile-contracts>`_.
 
 
-Setting up the solidity compiler in geth.
+Setting up the solidity compiler in geth
 --------------------------------------------------------------------------------
 
 If you start up your ``geth`` node, you can check which compilers are
@@ -219,7 +220,7 @@ most current GlobalRegistrar code:
     contracts = eth.compile.solidity(globalRegistrarSrc)
 
 
-Create and Deploy a Contract
+Create and deploy a contract
 ================================================================================
 
 Before you begin this section, make sure you have both an unlocked account as
@@ -266,7 +267,7 @@ The asynchronous way of doing the same looks like this:
 
 .. _interacting_with_a_contract:
 
-Interacting with a Contract
+Interacting with a contract
 ================================================================================
 
 Interaction with a contract is typically done using an abstraction layer such
@@ -316,7 +317,7 @@ In the example above, there are no side effects, therefore ``sendTransaction``
 only burns gas and increases the entropy of the universe.
 
 
-Contract Metadata
+Contract metadata
 ================================================================================
 
 In the previous sections we explained how you create a contract on the
@@ -393,7 +394,7 @@ longer necessary.)
     });
 
 
-Testing Contracts and Transactions
+Testing contracts and transactions
 ================================================================================
 
 Often you need to resort to a low level strategy of testing and debugging
@@ -412,7 +413,7 @@ verbosity level is recommended:
     geth --datadir ~/dapps/testing/00/ --port 30310 --rpcport 8110 --networkid 4567890 --nodiscover --maxpeers 0 --vmdebug --verbosity 6 --pprof --pprofport 6110 console 2>> ~/dapp/testint/00/00.log
 
 Before you can submit any transactions, you need set up your private test
-chain. See :ref:`test-networks`
+chain. See :ref:`test-networks`.
 
 .. code:: js
 
@@ -465,4 +466,3 @@ If you submitted contract creation transaction, you can check if the desired cod
     //... mining
     contractaddress = eth.getTransactionReceipt(txhash);
     eth.getCode(contractaddress)
-

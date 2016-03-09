@@ -29,8 +29,16 @@ We would like to thank everybody who helped in this effort for `their contributi
 - `Alex van de Sande <https://github.com/alexvandesande>`_
 - `Sudeep Singh <https://github.com/c0d3inj3cT>`_
 - `Luca Zeug <https://github.com/luclu>`_
+- `John Mooney <https://github.com/mooneyj>`_
+- `Erik Edrosa <https://github.com/OrangeShark>`_
+- `Andrew Mazzola <https://github.com/admazzola>`_
+- `Rocky Fikki <https://github.com/rfikki>`_
 
 And these pseudonymous contributors:
 
 - `klmoney <https://github.com/klmoney>`_
 - `LiteBit <https://github.com/LiteBit>`_
+- `azulmarino <https://github.com/azulmarino>`_
+- `ethers <https://github.com/ethers>`_
+- `madhancr <https://github.com/madhancr>`_
+- `bas\-vk <https://github.com/bas-vk>`_

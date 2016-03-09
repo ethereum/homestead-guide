@@ -4,23 +4,23 @@
 Account Types, Gas, and Transactions
 ********************************************************************************
 
-EOA vs Contract Accounts
+EOA vs contract accounts
 ================================================================================
 
 There are two types of accounts in Ethereum
   - Externally Owned Accounts
   - Contracts Accounts
 
-Externally Owned Accounts (EOAs)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Externally owned accounts (EOAs)
+--------------------------------------------------------------------------------
 
 - Can have an Ether balance.
 - Can send transactions.
 - Are controlled by private keys.
 - Has no code.
 
-Contract Accounts:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Contract accounts
+--------------------------------------------------------------------------------
 - Can have an Ether balance.
 - Can send transactions.
 - Can send messages.
@@ -30,9 +30,9 @@ Contract Accounts:
 
 All Ether balances and values are denominated in units of wei: 1 Ether is 1e18 wei.
 
-Note that "contracts" in Ethereum should not be seen as something that should be "fulfilled" or "complied with"; rather, they are more like "autonomous agents" that live inside of the Ethereum execution environment, always executing a specific piece of code when "poked" by a message or transaction, and having direct control over their own ether balance and their own key/value store to keep track of persistent variables.
+.. note:: "Contracts" in Ethereum should not be seen as something that should be "fulfilled" or "complied with"; rather, they are more like "autonomous agents" that live inside of the Ethereum execution environment, always executing a specific piece of code when "poked" by a message or transaction, and having direct control over their own ether balance and their own key/value store to keep track of persistent variables.
 
-What is a Transaction?
+What is a transaction?
 ================================================================================
 The term "transaction" is used in Ethereum to refer to the signed data package that stores a message to be sent from an externally owned account.
 
@@ -44,7 +44,7 @@ Transactions contain:
  - A ``STARTGAS`` value, representing the maximum number of computational steps the transaction execution is allowed to take.
  - A ``GASPRICE`` value, representing the fee the sender pays per computational step.
 
-What is a Message?
+What is a message?
 ================================================================================
 Contracts have the ability to send "messages" to other contracts. Messages are virtual objects that are never serialized and exist only in the Ethereum execution environment.
 
@@ -57,7 +57,7 @@ A message contains:
 
 Essentially, a message is like a transaction, except it is produced by a contract and not an external actor. A message is produced when a contract currently executing code executes the ``CALL`` opcode, which produces and executes a message. Like a transaction, a message leads to the recipient account running its code. Thus, contracts can have relationships with other contracts in exactly the same way that external actors can.
 
-What is Gas?
+What is gas?
 ================================================================================
 Ethereum implements an execution environment on the blockchain called the Ethereum Virtual Machine (EVM). When you are running a decentralized application (dApp), every instruction is executed on every node of the network. This has a cost: for every operation in a contract that can be executed there is a specified cost, expressed in number of gas units.
 
@@ -65,7 +65,7 @@ Gas is name for the execution fee for every operation made on an Ethereum blockc
 
 The Ethereum protocol charges a fee per computational step that is executed in a contract or transaction to prevent deliberate attacks and abuse on the Ethereum network. Every transaction is required to include a gas limit and a fee that it is willing to pay per gas. Miners have the choice of including the transaction and collecting the fee or not. If the total number of gas used by the computational steps spawned by the transaction, including the original message and any sub-messages that may be triggered, is less than or equal to the gas limit, then the transaction processes. If the total gas exceeds the gas limit, then all changes are reverted, except that the transaction is still valid and the fee can still be collected by the miner. This means that it is wiser to send transactions with a gas limit well above the estimates
 
-Estimating Transaction Costs
+Estimating transaction costs
 ================================================================================
 The total cost of a transaction is based on 2 factors:
 
@@ -76,17 +76,17 @@ The total cost of a transaction is based on 2 factors:
 **Total cost = gasUsed * gasPrice**
 
 gasUsed
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------------------------------------------------
 Each operation in the EVM was assigned a number of how much gas it consumes. ``gasUsed`` is summing up all the gas for all the operations executed. There is a `spreadsheet <http://ethereum.stackexchange.com/q/52/42>`_ which offers a glimpse to some of the analysis behind them.
 
 For estimating ``gasUsed``, there is an `estimateGas API <http://ethereum.stackexchange.com/q/266/42>`_ that can be used but has some caveats.
 
 gasPrice
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------------------------------------------------
 A user constructs and signs a transaction, and each user may specify whatever ``gasPrice`` they desire, this includes zero. However, the Ethereum clients launched at Frontier had a default gasPrice of 0.05e12 wei. As miners optimize for their revenue, if most transactions are being submitted with a gasPrice of 0.05e12 wei, it would be difficult to convince a miner to accept a transaction that specified a lower, or zero, gasPrice.
 
-Example Transaction Cost
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example transaction cost
+--------------------------------------------------------------------------------
 
 Let’s take a contract that just adds 2 numbers. The EVM OPCODE ``ADD`` consumes 3 gas.
 
@@ -105,7 +105,7 @@ of passing the 2 numbers to contract, before they can even be added.
 * `Ethereum Gas Prices <https://docs.google.com/spreadsheets/d/1m89CVujrQe5LAFJ8-YAUCcNK950dUzMQPMJBxRtGCqs>`_
 
 =================  =========    =============================
-operation name     gas cost     Remark
+Operation Name     Gas Cost     Remark
 =================  =========    =============================
 step               1            default amount per an execution cycle
 stop               0            free
@@ -122,7 +122,7 @@ transaction        500          base fee transaction
 contract creation  53000        changed in homestead from 21000
 =================  =========    =============================
 
-Account Interactions Example - Betting Contract
+Account interactions example - betting contract
 ================================================================================
 As previously mentioned, there are two types of accounts:
 
@@ -165,9 +165,8 @@ Note that the GavCoin is all "stored" as entries in the GavCoin contract's datab
 ..
    :align: center
 
-Signing Transactions Offline
+Signing transactions offline
 ================================================================================
 [ Maybe add this to the FAQ and point to the ethkey section of turboethereum guide? ]
 
 * `Resilience Raw Transaction Broadcaster <https://github.com/resilience-me/broadcaster/>`_
-

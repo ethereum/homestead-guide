@@ -18,9 +18,7 @@ It is safe to transfer the entire directory or the individual keyfiles therein b
 
 Creating an account
 ================================================================================
-**WARNING:** Remember your passwords and backup your keyfiles.
-
-For anyone to send transactions from an account, including sending ether, they must have BOTH the keyfile and the password. Be absolutely sure to have a copy of your keyfile AND remember the password for that keyfile, and store them both as securely as possible. There are no escape routes here; lose the keyfile or forget your password and all your ether is gone. It is NOT possible to access your account without a password and there is no *forgot my password* option here. Do not forget it.
+.. warning:: **Remember your passwords and backup your keyfiles.** For anyone to send transactions from an account, including sending ether, they must have BOTH the keyfile and the password. Be absolutely sure to have a copy of your keyfile AND remember the password for that keyfile, and store them both as securely as possible. There are no escape routes here; lose the keyfile or forget your password and all your ether is gone. It is NOT possible to access your account without a password and there is no *forgot my password* option here. Do not forget it.
 
 Using ``geth account new``
 --------------------------------------------------------------------------------
@@ -250,11 +248,11 @@ For non-interactive use the passphrase can be specified with the ``--password`` 
   geth --password <passwordfile> account import <keyfile>
 
 
-**Note:** Since you can directly copy your encrypted accounts to another ethereum instance, this import/export mechanism is not needed when you transfer an account between nodes.
+.. note:: Since you can directly copy your encrypted accounts to another ethereum instance, this import/export mechanism is not needed when you transfer an account between nodes.
 
-**Warning:** When you copy keys into an existing node's ``keystore``, the order of accounts you are used to may change. Therefore you make sure you either do not rely on the account order or double-check and update the indexes used in your scripts.
+.. warning:: When you copy keys into an existing node's ``keystore``, the order of accounts you are used to may change. Therefore you make sure you either do not rely on the account order or double-check and update the indexes used in your scripts.
 
-**Warning:** If you use the ``--password`` flag with a password file, make sure the file is not readable or even listable for anyone but you.
+.. warning:: If you use the ``--password`` flag with a password file, make sure the file is not readable or even listable for anyone but you.
 
 For example, you can achieve this in Mac/Linux systems with:
 
@@ -266,10 +264,10 @@ For example, you can achieve this in Mac/Linux systems with:
   >I type my pass
 
 
-Online Wallets, Paper Wallets, and Cold Storage
+Online wallets, paper wallets, and cold storage
 ================================================================================
 
-TODO
+.. todo::
   This is here just a dumping ground of links and notes
   Please move this over in a listing form to ecosystem
 

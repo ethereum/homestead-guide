@@ -4,7 +4,6 @@ History of Ethereum
 
 For a recent historical account, see `Taylor Gerring's blogpost <https://blog.ethereum.org/2016/02/09/cut-and-try-building-a-dream/>`_
 
-
 Inception
 ================================================================================
 Ethereum was initially described by Vitalik Buterin in late 2013 as a result of his research and work in the Bitcoin community. Shortly thereafter, Vitalik published the `Ethereum white paper <http://vbuterin.com/ethereum.html>`_, where he describes in detail the technical design and rationale for the Ethereum protocol and smart contracts architecture. In January 2014, Ethereum was formally announced by Vitalik at the The North American Bitcoin Conference in Miami, Florida, USA.
@@ -14,7 +13,7 @@ Around that time, Vitalik also started working with Dr. Gavin Wood and together 
 * `Ethereum launches Cryptocurrency 2.0 network <http://www.coindesk.com/ethererum-launches-cryptocurrency-2-0-network/>`_ - Coindesk article of 2014 Jan on the beginnings
 * `Ethereum announcement on bitcointalk <https://bitcointalk.org/index.php?topic=428589.0>`_ Vitalik's original announcement to the bitcoin community. Forum thread with 5000 replies.
 
-The Ethereum Foundation and the Ether presale
+The Ethereum Foundation and the ether presale
 ================================================================================
 In addition to developing the software for Ethereum, the ability to launch a new cryptocurrency and blockchain requires a massive bootstrapping effort in order to assemble the resources needed to get it up and running. To kickstart a large network of developers, miners, investors, and other stakeholders, Ethereum announced its plan to conduct a presale of ether tokens, the currency unit of Ethereum. The legal and financial complexities of raising funds through a presale led to the creation of several legal entities, including the Ethereum Foundation (Stiftung Ethereum) established June 2014 in Zug, Switzerland.
 
@@ -26,7 +25,7 @@ Beginning in July 2014, Ethereum distributed the initial allocation of ether via
 * `Terms and Conditions of the Presale <https://www.ethereum.org/pdfs/TermsAndConditionsOfTheEthereumGenesisSale.pdf>`_
 
 
-ETH DEV and Ethereum development
+ETH/DEV and Ethereum development
 ================================================================================
 Following the successful ether presale, Ethereum development was formalized under a non-for-profit organization called ETH DEV, which manages the development of Ethereum under contract from Ethereum Suisse – with Vitalik Buterin, Gavin Wood, and Jeffrey Wilcke as the 3 directors of the organization. Developer interest in Ethereum grew steadily throughout 2014 and the ETH DEV team delivered a series of proof-of-concept (PoC) releases for the development community to evaluate. Frequent posts by ETH DEV team on the  `the Ethereum blog <https://blog.ethereum.org>`_ also kept the excitement and momentum around Ethereum going. Increasing traffic and growing user-base on both the Ethereum forum and the ethereum subreddit testified that the platform is attracting a fast-growing and devoted developer community. This trend has been continuing to this very day.
 
@@ -82,7 +81,3 @@ The presence of large companies like UBS, IBM and Microsoft clearly indicated en
 
 * `DEVCON1 talks Youtube playlist <https://www.youtube.com/playlist?list=PLJqWcTqh_zKHQUFX4IaVjWjfT2tbS4NVk>`_
 * `DEVCON1 website <https://devcon.ethereum.org/>`_ full listing of presentations with links to the slides if available.
-
-
-
-

@@ -12,7 +12,7 @@ The word mining originates in the context of the gold analogy for crypto currenc
 
 - Mining Ether = Securing the network = verify computation
 
-So What is Mining Anyway?
+So what is mining anyway?
 --------------------------------------------------------------------------------
 
 Ethereum, like all blockchain technologies, uses an incentive-driven model of security. Consensus is based on choosing the block with the highest total difficulty. Miners produce blocks which the others check for validity. Among other well-formedness criteria, a block is only valid if it contains **proof of work** (PoW) of a given **difficulty**. Note that in the Ethereum Serenity milestone, this is likely going to be replaced by a **proof of stake** (PoS) model.
@@ -51,7 +51,7 @@ with both low CPU and small memory.
 As a special case, when you start up your node from scratch, mining will
 only start once the DAG is built for the current epoch.
 
-Mining Rewards
+Mining rewards
 --------------------------------------------------------------------------------
 
 The successful PoW miner of the winning block receives:
@@ -101,7 +101,7 @@ For instance ``geth makedag 360000 ~/.ethash``. Note that ethash uses
 ``~/.ethash`` (Mac/Linux) or ``~/AppData/Ethash`` (Windows) for the DAG
 so that it can shared between clients.
 
-The Algorithm
+The algorithm
 ================================================================================
 
 Our algorithm, `Ethash <https://github.com/ethereum/wiki/wiki/Ethash>`__
@@ -129,7 +129,7 @@ API. Two RPC functions are provided; ``eth_getWork`` and
 These are formally documented on the `JSON-RPC
 API <https://github.com/ethereum/wiki/wiki/JSON-RPC>`_ wiki article.
 
-Mining Preliminaries
+Mining preliminaries
 ======================
 
 In order to do mining, you need an ether account. This account is used to send the mining rewards to and is often referred to as 'coinbase' or 'etherbase'.
@@ -143,7 +143,7 @@ Mining rewards
 https://forum.ethereum.org/discussion/2262/eli5-whats-an-uncle-in-ethereum-mining
 `Mining difficulty chart on etherscan <http://etherscan.io/charts/difficulty>`_
 
-CPU Mining
+CPU mining
 ================================================================================
 
 You can use your computer's central processing unit (CPU) to mine ether.
@@ -153,10 +153,10 @@ Note that ether (sourced from faucet or earned via mining) has no value other th
 
 
 
-GPU Mining
+GPU mining
 ================================================================================
 
-GPU Mining on Windows
+GPU mining on windows
 -------------------------------
 
 To start mining on Windows, first download `Geth`_. Geth communicates with
@@ -180,13 +180,13 @@ At this point some problems may appear. If you get an error, you can abort the m
 * http://cryptomining-blog.com/5323-quick-guide-on-how-to-mine-ethereum-on-windows/
 
 
-GPU Mining on Ubuntu linux
+GPU mining on Ubuntu linux
 -----------------------------
 
 * `Spacience blogpost <http://spacience.blogspot.sg/2015/11/gpu-mining-in-ethereum-1404-from-scratch.html>`_
 
 
-Pool Mining
+Pool mining
 ================================================================================
 
 Mining pools are cooperatives that aim to smooth out expected revenue by pooling the mining power of participating miners. The mining pool submits blocks with proof of work from a central account and redistributes the reward to participants in proportion to their contributed mining power. Unlike in Bitcoin, the benefit of pooling is minimal due to the very short blocktime. _`Mining Pools` lists the pools we know of.

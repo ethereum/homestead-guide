@@ -2,7 +2,7 @@
 Ether
 ********************************************************************************
 
-What is Ether?
+What is ether?
 ================================================================================
 
 Ether is the name of the currency used within Ethereum. It is used to pay for
@@ -33,9 +33,7 @@ their value in Wei. Following a common (although somewhat ambiguous) pattern, Et
 | **ether**               | 1e18 wei  | 1,000,000,000,000,000,000                 |
 +-------------------------+-----------+-------------------------------------------+
 
-
-
-Sending Ether
+Sending ether
 ================================================================================
 
 On how to acquire or purchase Ether, see _`Getting and storing Ether`.
@@ -51,9 +49,6 @@ Ether can also be transfered using the **geth console**.
     > var amount = web3.toWei(0.01, "ether")
     > eth.sendTransaction({from:sender, to:receiver, value: amount})
 
-
 For more information of Ether transfer transactions, see :ref:`account-types-gas-and-transactions`.
 
 Ethereum is unique in the realm of cryptocurrencies in that ether has utility value as a cryptofuel, commonly referred to as "gas". Beyond transaction fees, gas is a central part of every network request and requires the sender to pay for the computing resources consumed. The gas cost is dynamically calculated, based on the volume and complexity of the request and multiplied by the current gas price. Its value as a cryptofuel has the effect of increasing the stability and long-term  demand for ether and Ethereum as a whole. For more information, see :ref:`account-types-gas-and-transactions`.
-
-

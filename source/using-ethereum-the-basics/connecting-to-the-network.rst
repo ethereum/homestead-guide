@@ -4,13 +4,13 @@
 Connecting to the Network
 ********************************************************************************
 
-How to Connect
+How to connect
 ================================================================================
 Geth continuously attempts to connect to other nodes on the network until it has peers. If you have UPnP enabled on your router or run Ethereum on an Internet-facing server, it will also accept connections from other nodes.
 
 Geth finds peers through something called the discovery protocol. In the discovery protocol, nodes are gossipping with each other to find out about other nodes on the network. In order to get going initially, geth uses a set of bootstrap nodes whose endpoints are recorded in the source code.
 
-Checking Connectivity and ENODE IDs
+Checking connectivity and ENODE IDs
 --------------------------------------------------------------------------------
 To check how many peers the client is connected to in the interactive console, the ``net`` module has two attributes give you info about the number of peers and whether you are a listening node.
 
@@ -21,7 +21,6 @@ To check how many peers the client is connected to in the interactive console, t
 
   > net.peerCount
   4
-
 
 To get more information about the connected peers, such as IP address and port number, supported protocols, use the ``peers()`` function of the ``admin`` object. ``admin.peers()`` returns the list of currently connected peers.
 
@@ -77,7 +76,9 @@ When you start an Ethereum client, the Ethereum blockchain is automatically down
 
 Using geth
 --------------------------------------------------------------------------------
-If you are using the geth client, there are some things you can do to speed up the time it takes to download the Ethereum blockchain. If you choose to use the ``--fast`` flag to perform an Ethereum fast sync, you will not retain past transaction data. You cannot use this flag after performing all or part of a normal sync operation, meaning you should not have any portion of the Ethereum blockchain downloaded before using this command. `See this Ethereum Stack\.Exchange answer for more information <http://ethereum.stackexchange.com/questions/1845/why-isnt-fast-sync-the-default>`_.
+If you are using the geth client, there are some things you can do to speed up the time it takes to download the Ethereum blockchain. If you choose to use the ``--fast`` flag to perform an Ethereum fast sync, you will not retain past transaction data. 
+
+.. note:: You cannot use this flag after performing all or part of a normal sync operation, meaning you should not have any portion of the Ethereum blockchain downloaded before using this command. `See this Ethereum Stack\.Exchange answer for more information <http://ethereum.stackexchange.com/questions/1845/why-isnt-fast-sync-the-default>`_.
 
 Below are some flags to use when you want to sync your client more quickly.
 

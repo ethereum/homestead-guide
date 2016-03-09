@@ -1,9 +1,10 @@
 .. _test-networks:
+
 ********************************************************************************
 Test Networks
 ********************************************************************************
 
-Morden Testnet
+Morden testnet
 ================================================================================
 Morden is a public Ethereum alternative testnet. It is expected to
 continue throughout the Frontier and Homestead milestones of the software.
@@ -79,7 +80,7 @@ Morden's genesis.json
             }
     }
 
-Getting Morden Testnet Ether
+Getting Morden testnet ether
 --------------------------------------------------------------------------------
 
 Two ways to obtain Morden testnet ether:
@@ -87,7 +88,7 @@ Two ways to obtain Morden testnet ether:
 - Mine using your CPU/GPU, (see :ref:`mining`).
 - Use the `Ethereum wei faucet <https://zerogox.com/ethereum/wei_faucet>`__.
 
-Setting Up a Local Private Testnet
+Setting up a local private testnet
 ================================================================================
 You either pre-generate or mine your own Ether on a private
 testnet. It is a much more cost effective way of trying out
@@ -99,10 +100,10 @@ The things that are required to specify in a private chain are:
  - Custom NetworkID
  - (Recommended) Disable Node Discovery
 
-The Genesis File
+The genesis file
 --------------------------------------------------------------------------------
 
-The Genesis block is the start of the Blockchain - the first
+The genesis block is the start of the blockchain - the first
 block, block 0, and the only block that does not point to a predecessor
 block. The protocol ensures that no other node will agree with your version of the
 blockchain unless they have the same genesis block, so you can make as many private testnet blockchains as you'd like!
@@ -157,7 +158,6 @@ Change 8000 to any port that is open on your network. The default for geth is 80
 
 This dictates what URLs can connect to your node in order to perform RPC client tasks. Be very careful with this and type a specific URL rather than the wildcard (*) which would allow any URL to connect to your RPC instance.
 
-
 ``--datadir "/home/TestChain1"``
 
 This is the data directory that your private chain data will be stored in (under the :file:`nubits` . Choose a location that is separate from your public Ethereum chain folder.
@@ -182,7 +182,7 @@ After you have created your custom genesis block JSON file and created a directo
 
   geth --identity "MyNodeName" --genesis /path/to/CustomGenesis.json --rpc --rpcport "8080" --rpccorsdomain "*" --datadir "C:\chains\TestChain1" --port "30303" --nodiscover --rpcapi "db,eth,net,web3" --networkid 1999 console
 
-**Note:** Please change the flags to match your custom settings.
+.. note:: Please change the flags to match your custom settings.
 
 You will need to start your geth instance with your custom chain command every time you want to access your custom chain. If you just type "geth" in your console, it will not remember all of the flags you have set.
 
@@ -203,7 +203,7 @@ A difficulty of "0x400" allows you to mine Ether very quickly on your private te
 	  { "balance": "20000000000000000000" }
   }
 
-**Note:** Replace ``0x1fb891f92eb557f4d688463d0d7c560552263b5a`` with your account address.
+.. note:: Replace ``0x1fb891f92eb557f4d688463d0d7c560552263b5a`` with your account address.
 
 Save your genesis file and rerun your private chain command. Once geth is fully loaded, close it by .
 
@@ -232,7 +232,7 @@ This will return the array of account addresses you possess.
 
   > primary = eth.accounts[0]
 
-**Note:** Replace ``0`` with your account's index.
+.. note:: Replace ``0`` with your account's index.
 This console command should return your primary Ethereum address.
 
 Type the following command:

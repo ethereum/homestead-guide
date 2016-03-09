@@ -2,24 +2,22 @@
 The Homestead Release
 ********************************************************************************
 
-[MOST LIKELY INACCURATE - DO NOT QUOTE]
-
 Milestones of the Ethereum development roadmap
 -----------------------------------------------
 
 * Prerelease Step 0: Olympic testnet - launched May 2015
 * Release Step One: Frontier - launched 30 July 2015
 * Release Step Two: Homestead - to launch Q1 2016
-* Release Step Three: Metropolis -
-* Release Step Four: Serenity
+* Release Step Three: Metropolis - TBA
+* Release Step Four: Serenity - TBA
 
-Homestead is introduced automatically at block number #?
+Homestead is introduced automatically at block number #1,150,000 which should occur roughly around March 14th, 2016, Pi Day.
 
 While `the original plan laid out before Frontier <https://blog.ethereum.org/2015/03/03/ethereum-launch-process/>`_ is still valid, the substance behind that thinking changed somewhat.
 As the Olympic testnet phase (before Frontier release) saw a lot of major improvements, Frontier was launched right after not including quite a few caveat features (lower mining reward). Naturally then Homestead was meant to be the real deal finally launching the Ethereum network improving upon Frontier's wild west and bringing stability and reliability to the network. Our hope is that Homestead delivers on this promise no matter how high the bar is set already.
 
 
-Homestead  hard fork changes
+Homestead hard fork changes
 ----------------------------------
 Ethereum in the narrow formal sense is a suite of protocols.
 Homestead comes with a few backward-incompatible protocol changes, and therefore will require a hard fork.
@@ -44,5 +42,4 @@ The changes have the following benefits:
 * EIP-8 makes sure that all client software in use on the Ethereum network can cope with future network protocol upgrades.
 
 
-* `Reddit discussion on Homestead  hard fork changes <https://www.reddit.com/r/ethereum/comments/3tbwbo/planned_homestead_hard_fork_changes/>`_
-* `Homestead homepage preview <http://dipl.me:3000/>`_
+* `Reddit discussion on Homestead Release <https://www.reddit.com/r/ethereum/comments/48arax/homestead_release_faq/>`_
