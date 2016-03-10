@@ -296,7 +296,7 @@ that different binaries will be required for these platforms.
 
 Building for Raspberry Pi Model A, B+, Zero, 2 and 3
 --------------------------------------------------------------------------------
-`EthEmbedded <http://EthEmbedded.com">`_
+`EthEmbedded <http://EthEmbedded.com>`_
 maintain build scripts for all Raspberry Mi models.
 They are on Github in the 
 `Raspi-Eth-Install <https://github.com/EthEmbedded/Raspi-Eth-Install>`_ repository.
@@ -304,7 +304,7 @@ It is also possible to cross-build for these platforms.
 
 Building for Odroid XU3/XU4
 --------------------------------------------------------------------------------
-`EthEmbedded <http://EthEmbedded.com">`_
+`EthEmbedded <http://EthEmbedded.com>`_
 maintain build scripts for both of these Odroid models.  Support
 for a broader range of Odroid devices is likely in the future.
 They are on Github in the 
@@ -313,14 +313,14 @@ It is also possible to cross-build for these platforms.
 
 Building for BeagleBone Black
 --------------------------------------------------------------------------------
-`EthEmbedded <http://EthEmbedded.com">`_
+`EthEmbedded <http://EthEmbedded.com>`_
 maintain build scripts for BBB on Github in the
 `BBB-Eth-Install <https://github.com/EthEmbedded/BBB-Eth-Install>`_ repository.
 It is also possible to cross-build for this platform.
 
 Building for WandBoard
 --------------------------------------------------------------------------------
-`EthEmbedded <http://EthEmbedded.com">`_
+`EthEmbedded <http://EthEmbedded.com>`_
 maintain build scripts for the WandBoard on Github in the
 `WandBoard-Eth-Install <https://github.com/EthEmbedded/WandBoard-Eth-Install>`_ repository.
 It is also possible to cross-build for this platform.
