@@ -232,8 +232,7 @@ This will return the array of account addresses you possess.
 
   > primary = eth.accounts[0]
 
-.. note:: Replace ``0`` with your account's index.
-This console command should return your primary Ethereum address.
+.. note:: Replace ``0`` with your account's index. This console command should return your primary Ethereum address.
 
 Type the following command:
 
