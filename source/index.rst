@@ -26,6 +26,8 @@ Contents
    contracts-and-transactions/contracts-and-transactions.rst
    developing-on-ethereum/developing-on-ethereum.rst
    frequently-asked-questions/frequently-asked-questions.rst
+   cpp-ethereum-documentation/cpp-ethereum-documentation.rst
+
 
 Improve the Documentation
 ===============================================================================
