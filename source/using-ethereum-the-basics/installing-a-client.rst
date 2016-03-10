@@ -46,9 +46,9 @@ been built by the community or by other commercial entities.
 +------------------------+------------+------------------------+----------------------------------+
 | `cpp-ethereum`_        | C++        | `Ethereum Foundation`_ | `eth-v1.2.1`_                    |
 +------------------------+------------+------------------------+----------------------------------+
-| `pyethapp`_            | Python     | `Ethereum Foundation`_ | `pyethapp-v1.1.0`_               |
+| `pyethapp`_            | Python     | `Ethereum Foundation`_ |                                  |
 +------------------------+------------+------------------------+----------------------------------+
-| `ethereumjs-lib`_      | Javascript | `Ethereum Foundation`_ |                                  |
+| `ethereumjs-lib`_      | Javascript | `Ethereum Foundation`_ | `ethereumjs-lib-v3.0.0`_         |
 +------------------------+------------+------------------------+----------------------------------+
 | `Ethereum(J)`_         | Java       | `ConsenSys`_           | `ethereumJ-v1.2.0-homestead-RC`_ |
 +------------------------+------------+------------------------+----------------------------------+
@@ -62,7 +62,6 @@ been built by the community or by other commercial entities.
 .. _mist (dapp browser): http://github.com/ethereum/mist/
 .. _go-ethereum: http://github.com/ethereum/go-ethereum/
 .. _cpp-ethereum: https://github.com/ethereum/webthree-umbrella
-.. _pyethapp: https://github.com/ethereum/pyethapp
 .. _ethereumjs-lib: https://github.com/ethereumjs/ethereumjs-lib
 .. _Ethereum(J): https://github.com/ethereum/ethereumj
 .. _ethereumH: https://github.com/jamshidh/ethereum-client-haskell
@@ -78,6 +77,7 @@ been built by the community or by other commercial entities.
 .. _geth-v1.3.5: https://github.com/ethereum/go-ethereum/releases/tag/v1.3.5
 .. _eth-v1.2.1: https://github.com/ethereum/webthree-umbrella/releases/tag/v1.2.1
 .. _pyethapp-v1.1.0: https://github.com/ethereum/pyethapp/releases/tag/v1.1.0
+.. _ethereumjs-lib-v3.0.0: https://github.com/ethereumjs/ethereumjs-lib/tree/v3.0.0
 .. _ethereumJ-v1.2.0-homestead-RC: https://github.com/ethereum/ethereumj/releases/tag/1.2.0-homestead-RC
 
 
