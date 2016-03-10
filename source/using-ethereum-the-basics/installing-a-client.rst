@@ -129,5 +129,16 @@ recently flipped to Geth cross-builds with Light Client.
 What should I install on my SBC?
 ================================================================================
 
-Use EthEmbedded stuff.
-And doublethinkco cross-builds.
+You have some choice here depending on your skill level, and what you are looking to do.
+
+* Download a fully prepared image(link to page with detailed download & install instructions)
+
+  * If you are new to Ethereum AND SBC boards such as the Raspberry Pi then this is for you! Simply download the image specific to the dev board you are working with, burn it to an SD card, boot your device, and run Ethereum!
+  
+* Download a pre-compiled application(link to page with detailed download & install instructions)
+
+  * If you already have an SBC running and have a specific, preferred OS or setup that you want to keep, then this is your best option! Depending on the platform, you can simply download the apropriate executable, and with minimal linking of libraries and setting of PATH you can have Ethereum running in your existing environment!
+  
+* Build from source using customizable scripts(link to page with more detail and individual SBC links to https://github.com/ethembedded)
+
+  * Looking to perform a custom install?  We have scripts available to compile from source "on device". Our scripts contain auto-install of dependencies as well as the client itself. This will allow you to install a specific version of the Ethereum client(i.e.-"develop", "master", etc.), compile your own forked version of a client, and generally play around with the intracacies of the build process.
