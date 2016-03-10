@@ -82,15 +82,15 @@ on
 Raspberry Pi, Odroid, BeagleBone Black, Wandboard
 --------------------------------------------------------------------------------
 
-`John Gerryts <https://twitter.com/phonikg>`_ of the
-`EthEmbedded <http://ethembedded.com>`_ project builds binary images for a variety of
+`John Gerryts <https://twitter.com/phonikg>`_ of
+`EthEmbedded <http://ethembedded.com>`_ builds binary images for a variety of
 SBCs at major milestones, in addition to testing and maintaining build scripts
 for these devices.  EthEmbedded was a `devgrant recipient
 <https://twitter.com/EthEmbedded/status/601072825584103424>`_ in May 2015.
 He builds binaries for both eth and geth.
 
 Here are the `Homestead binaries <http://ethembedded.com/?page_id=102>`_
-from EthEmbedded.
+from `EthEmbedded <http://ethembedded.com>`_
 
 Cross-builds for ARM Linux.  Mobile, wearables, SBCs.
 --------------------------------------------------------------------------------
@@ -100,7 +100,7 @@ Cross-builds for ARM Linux.  Mobile, wearables, SBCs.
 `ARM binaries <https://github.com/doublethinkco/webthree-umbrella-cross/releases>`_
 which work on a very broad variety of hardware, from mobile and wearables
 Linux distros (Sailfish OS, Tizen OS, Ubuntu Touch) to the same SBCs which
-EthEmbedded target - and more.
+`EthEmbedded <http://ethembedded.com>`_ target - and more.
 doublethinkco was a 
 `BlockGrantX recipient
 <http://doublethink.co/2016/02/23/we-have-blockgrantx-funding/>`_ in Feb 2016.
@@ -285,5 +285,69 @@ This will generate an Xcode project file along with some configs for you: **cpp-
 * Unexpected "No such file or directory (or similar)" error e.g. `Sentinel.h.tmp`, `AdminUtilsFace.h.tmp`. Read the [libjson-rpc-cpp workaround](https://github.com/ethereum/webthree-umbrella/wiki/libjson-rpc-cpp-OS-X-workaround)
 * Build or runtime errors, complaining about missing [libmicrohttpd.10.dylib](https://github.com/ethereum/webthree-umbrella/wiki/homebrew-47806-workaround)
 
+Building for Android and iOS
+--------------------------------------------------------------------------------
+
+We don't currently have working Android and iOS builds, though they are on the
+roadmap for the doublethinkco cross-builds.  They are fairly ordinary ARM
+platforms, though with different ABIs than other ARM Linux platforms.   Those
+`ABI differences <http://doublethink.co/2015/12/31/a-tale-of-two-abis/>`_ mean
+that different binaries will be required for these platforms.
+
+Building for Raspberry Pi Model A, B+, Zero, 2 and 3
+--------------------------------------------------------------------------------
+`EthEmbedded <http://EthEmbedded.com">`_
+maintain build scripts for all Raspberry Mi models.
+They are on Github in the 
+`Raspi-Eth-Install <https://github.com/EthEmbedded/Raspi-Eth-Install>`_ repository.
+It is also possible to cross-build for these platforms.
+
+Building for Odroid XU3/XU4
+--------------------------------------------------------------------------------
+`EthEmbedded <http://EthEmbedded.com">`_
+maintain build scripts for both of these Odroid models.  Support
+for a broader range of Odroid devices is likely in the future.
+They are on Github in the 
+`OdroidXU3-Eth-Install <https://github.com/EthEmbedded/OdroidXU3-Eth-Install>`_ repository.
+It is also possible to cross-build for these platforms.
+
+Building for BeagleBone Black
+--------------------------------------------------------------------------------
+`EthEmbedded <http://EthEmbedded.com">`_
+maintain build scripts for BBB on Github in the
+`BBB-Eth-Install <https://github.com/EthEmbedded/BBB-Eth-Install>`_ repository.
+It is also possible to cross-build for this platform.
+
+Building for WandBoard
+--------------------------------------------------------------------------------
+`EthEmbedded <http://EthEmbedded.com">`_
+maintain build scripts for the WandBoard on Github in the
+`WandBoard-Eth-Install <https://github.com/EthEmbedded/WandBoard-Eth-Install>`_ repository.
+It is also possible to cross-build for this platform.
+
 Cross building
 --------------------------------------------------------------------------------
+`doublethinkco <http://doublethink.co>`_
+maintain a Docker-based cross-build infrastructure which is
+hosted on Github in the
+`webthree-umbrella-cross
+<http://github.com/doublethinkco/webthree-umbrella-cross>`_
+repository.
+
+At the time of writing, these cross-built binaries have been successfully used
+on the following devices:
+
+- Jolla Phone (Sailfish OS)
+- Nexus 5 (Sailfish OS)
+- Meizu MX4 Ubuntu Edition (Ubuntu Phone)
+- Raspberry Pi Model B+, Rpi2 (Raspbian)
+- Odroid XU3 (Ubuntu MATE)
+- BeagleBone Black (Debian)
+- Wandboard Quad (Debian)
+- C.H.I.P. (Debian)
+
+Still TODO:
+
+- Tizen
+- Android
+- iOS
