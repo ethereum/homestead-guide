@@ -5,7 +5,7 @@ Ethereum Clients
 .. toctree::
    :maxdepth: 2
 
-   cpp-ethereum/cpp-ethereum.rst
+   cpp-ethereum/index.rst
    go-ethereum/go-ethereum.rst
    pyethapp/pyethapp.rst
    ethereumjs-lib/ethereumjs-lib.rst
