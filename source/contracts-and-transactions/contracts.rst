@@ -11,14 +11,11 @@ able to pass messages between themselves as well as doing practically Turing
 complete computation. Contracts live on the blockchain in a Ethereum-specific
 binary format called Ethereum Virtual Machine (EVM) bytecode. 
 
-
 Contracts are typically written in some high level language such as `Solidity
 <https://solidity.readthedocs.org/en/latest/>`_ and then compiled into bytecode
-to be uploaded on the blockchain. Note that other languages also exist, notably
-Serpent and LLL, which are described further in the
-:ref:`ethereum-high-level-languages` section of this documentation.
+to be uploaded on the blockchain.
 
-.. note::
+.. seealso:: Other languages also exist, notably Serpent and LLL, which are described further in the :ref:`ethereum-high-level-languages` section of this documentation.
 
 Writing a contract 
 ================================================================================
@@ -39,9 +36,7 @@ blockchain:
 This contract will create a log entry on the blockchain of type Print with a
 parameter "Hello, World!" each time it is executed.
 
-.. seealso:: `Solidity documentation
-<https://solidity.readthedocs.org/en/latest/>`_ has more examples and
-guidelines to writing Solidty code.
+.. seealso:: `Solidity documentation <https://solidity.readthedocs.org/en/latest/>`_ has more examples and guidelines to writing Solidty code.
 
 Compiling a contract 
 ================================================================================

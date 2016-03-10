@@ -12,6 +12,7 @@ Dapps that use Ethereum are compiled to the following lists. They are listed in 
 * `Dappslist <https://dappslist.com/>`_
 * `Dappcentral <http://dappcentral.io/>`_ - Sortable pages for Dapps with instructions, code validation, and network stats. 
 * `Dapps Mailing List <http://dapplist.net/>`_ - Mailing list for developers on Ethereum (discontinued).
+
 The offered decentralised services listed cover a wide range of areas inlcuding finance, insurance, prediction markets, social networks, distributed computation and storage, gambling, marketplace, internet of things, governance, collaboration, development and games.
 
 In the future, dapps are likely to be listed and distributed in `dappstores_ <http://dappstore.io/>`_ integrated in dapp browsers.
