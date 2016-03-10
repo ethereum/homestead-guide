@@ -46,7 +46,7 @@ been built by the community or by other commercial entities.
 +------------------------+------------+------------------------+----------------------------------+
 | `cpp-ethereum`_        | C++        | `Ethereum Foundation`_ | `eth-v1.2.1`_                    |
 +------------------------+------------+------------------------+----------------------------------+
-| `pyethapp`_            | Python     | `Ethereum Foundation`_ | `pyethapp-v1.1.0`_               |
+| `pyethapp`_            | Python     | `Ethereum Foundation`_ |                                  |
 +------------------------+------------+------------------------+----------------------------------+
 | `ethereumjs-lib`_      | Javascript | `Ethereum Foundation`_ | `ethereumjs-lib-v3.0.0`_         |
 +------------------------+------------+------------------------+----------------------------------+
@@ -62,7 +62,6 @@ been built by the community or by other commercial entities.
 .. _mist (dapp browser): http://github.com/ethereum/mist/
 .. _go-ethereum: http://github.com/ethereum/go-ethereum/
 .. _cpp-ethereum: https://github.com/ethereum/webthree-umbrella
-.. _pyethapp: https://github.com/ethereum/pyethapp
 .. _ethereumjs-lib: https://github.com/ethereumjs/ethereumjs-lib
 .. _Ethereum(J): https://github.com/ethereum/ethereumj
 .. _ethereumH: https://github.com/jamshidh/ethereum-client-haskell
