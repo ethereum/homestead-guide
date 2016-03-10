@@ -107,6 +107,8 @@ Exporting/Importing the blockchain
 --------------------------------------------------------------------------------
 If you already have a full Ethereum node synced, you can export the blockchain data from the fully synced node and import it into your new node. You can accomplish this in geth by exporting your full node with the command ``geth export filename`` and importing the blockchain into your node using ``geth import filename``.
 
+.. _cr-static-node:
+
 Static Nodes, Trusted Nodes, and Boot Nodes
 ================================================================================
 
