@@ -4,6 +4,7 @@ Windows installer
 
 We generate Windows installers
 `for each release <https://github.com/ethereum/webthree-umbrella/releases>`_.
+
 These should work on Windows 7, Windows 8/8.1 and Windows 10, though our
 own automation is all Windows 8.1 based.
 
