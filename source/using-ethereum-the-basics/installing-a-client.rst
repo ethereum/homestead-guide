@@ -44,7 +44,7 @@ been built by the community or by other commercial entities.
 +------------------------+------------+------------------------+----------------------------------+
 | `go-ethereum`_         | Go         | `Ethereum Foundation`_ | `geth-v1.3.5`_                   |
 +------------------------+------------+------------------------+----------------------------------+
-| `cpp-ethereum`_        | C++        | `Ethereum Foundation`_ | `eth-v1.2.1`_                    |
+| `cpp-ethereum`_        | C++        | `Ethereum Foundation`_ | `eth-v1.2.2`_                    |
 +------------------------+------------+------------------------+----------------------------------+
 | `pyethapp`_            | Python     | `Ethereum Foundation`_ |                                  |
 +------------------------+------------+------------------------+----------------------------------+
@@ -76,7 +76,7 @@ been built by the community or by other commercial entities.
 
 .. _mist-v0.5.1: https://github.com/ethereum/mist/releases/tag/0.5.1
 .. _geth-v1.3.5: https://github.com/ethereum/go-ethereum/releases/tag/v1.3.5
-.. _eth-v1.2.1: https://github.com/ethereum/webthree-umbrella/releases/tag/v1.2.1
+.. _eth-v1.2.2: https://github.com/ethereum/webthree-umbrella/releases/tag/v1.2.2
 .. _ethereumjs-lib-v3.0.0: https://github.com/ethereumjs/ethereumjs-lib/tree/v3.0.0
 .. _ethereumJ-v1.2.0-homestead-RC: https://github.com/ethereum/ethereumj/releases/tag/1.2.0-homestead-RC
 
