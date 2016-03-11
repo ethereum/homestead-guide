@@ -3,7 +3,9 @@ ArchLinux User Repository (AUR)
 --------------------------------------------------------------------------------
 
 Arch Linux packages are community maintained by
-`Afri Schoedon <https://github.com/5chdn>`_. Check out the following packages
+`Afri Schoedon <https://github.com/5chdn>`_.
+
+Check out the following packages
 on `aur.archlinux.org <https://aur.archlinux.org>`_.
 
 - `ethereum <https://aur.archlinux.org/packages/ethereum/>`_ (stable, latest release)
