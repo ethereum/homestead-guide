@@ -56,7 +56,7 @@ been built by the community or by other commercial entities.
 +------------------------+------------+------------------------+----------------------------------+
 | `ethereum-ruby`_       | Ruby       | `Digix`_               |                                  |
 +------------------------+------------+------------------------+----------------------------------+
-| `Parity`_              | Rust       | `Ethcore`_             |                                  |
+| `Parity`_              | Rust       | `Ethcore`_             | `parity-0.9.1`_                  |
 +------------------------+------------+------------------------+----------------------------------+
 
 .. _mist (dapp browser): http://github.com/ethereum/mist/
@@ -79,6 +79,7 @@ been built by the community or by other commercial entities.
 .. _eth-v1.2.2: https://github.com/ethereum/webthree-umbrella/releases/tag/v1.2.2
 .. _ethereumjs-lib-v3.0.0: https://github.com/ethereumjs/ethereumjs-lib/tree/v3.0.0
 .. _ethereumJ-v1.2.0-homestead-RC: https://github.com/ethereum/ethereumj/releases/tag/1.2.0-homestead-RC
+.. _parity-0.9.1: https://github.com/ethcore/parity/releases/tag/beta-0.9.1
 
 
 What should I install on my desktop/laptop?
