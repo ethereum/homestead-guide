@@ -7,4 +7,4 @@ cpp-ethereum
 
    repository-layout.rst
    installing-binaries/index.rst
-   building-from-source.rst
+   building-from-source/index.rst

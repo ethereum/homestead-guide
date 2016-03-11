@@ -1,5 +1,5 @@
 
-Cross-builds for ARM Linux.  Mobile, wearables, SBCs.
+ARM Linux cross-builds for mobile, wearables, SBCs
 --------------------------------------------------------------------------------
 
 `Bob Summerwill <http://bobsummerwill.com>`_, of
@@ -16,7 +16,6 @@ See the
 `webthree-umbrella-cross README
 <https://github.com/doublethinkco/webthree-umbrella-cross>`_
 for a full matrix of platforms and known status.
-
 
 Here are the cross-build binaries from doublethinkco:
 `RELEASED – Cross-build eth binaries for Homestead
