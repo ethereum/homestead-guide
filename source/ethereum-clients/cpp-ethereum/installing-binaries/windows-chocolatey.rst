@@ -1,5 +1,5 @@
 
-Chocolatey NuGet packages for Windows
+Windows Chocolatey NuGet packages
 --------------------------------------------------------------------------------
 
 We aren't generating Chocolatey packages at the time of writing, though we have
