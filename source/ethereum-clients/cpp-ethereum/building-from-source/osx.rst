@@ -1,6 +1,6 @@
 
 Building for OS X
---------------------------------------------------------------------------------
+================================================================================
 
 It is impossible for us to avoid OS X build breaks because `Homebrew is a "rolling
 release" package manager
@@ -35,7 +35,8 @@ OS X version, we recommend that you update to the latest release, not
 just so that you can build cpp-ethereum, but for your own peace of mind.
 
 
-**Before doing anything else**
+Before doing anything else
+--------------------------------------------------------------------------------
 
 All OS X builds require you to `install the Homebrew <http://brew.sh>`_
 package manager.
@@ -53,7 +54,8 @@ if you ever want to start again from scratch.
 Install `XQuartz <http://xquartz.macosforge.org/landing/>`_ X11 Window
 system if you want to build the GUI apps.
 
-** Installing with Homebrew **
+Installing with Homebrew
+--------------------------------------------------------------------------------
 
 To install the Ethereum C++ components, execute these commands: ::
 
@@ -75,15 +77,20 @@ Here is the `Homebrew Formula
 <https://github.com/ethereum/homebrew-ethereum/blob/master/cpp-ethereum.rb>`_
 which details all the supported command-line options.
 
-# Building from Source
+Building from Source
+--------------------------------------------------------------------------------
 
 Homebrew wraps up the manual build process for the latest version of **webthree-umbrella** into a simpler command-line process (and also uses a prebuilt "bottle", for Yosemite at least).   If you want to just run the build steps yourself, here's how to do it.
 
-### Prerequisites
+Prerequisites
+--------------------------------------------------------------------------------
 
-* Install [xcode](https://developer.apple.com/xcode/download/)
+* Install `xcode <https://developer.apple.com/xcode/download/>`_
 
-### Install dependencies
+Install dependencies
+--------------------------------------------------------------------------------
+
+Install all required external dependencies ::
 
     brew install boost --c++11
     brew install cmake cryptopp miniupnpc leveldb gmp jsoncpp libmicrohttpd libjson-rpc-cpp llvm37
@@ -92,17 +99,20 @@ Homebrew wraps up the manual build process for the latest version of **webthree-
 
 NB:  The Qt5 step takes many hours on most people's machines, because it is using non-default build settings which result in build-from-source.  It also appears to use around 20Gb of temporary disk space.   Beware!
 
-### Clone source code repository, including sub-modules
+Clone source code repository, including sub-modules
+-------------------------------------------------------------------------------- ::
 
     git clone --recursive https://github.com/ethereum/webthree-umbrella.git
     cd webthree-umbrella
 
-### Make
+Make
+--------------------------------------------------------------------------------
 You can either generate a makefile and build on command-line or generate an Xcode project and build Ethereum in the IDE.
 
-#### Generate a makefile
+Generate a makefile
+--------------------------------------------------------------------------------
 
-From the project root:
+From the project root: ::
 
     mkdir build
     cd build
@@ -112,9 +122,10 @@ From the project root:
 
 This will also install the cli tool and libs into /usr/local.
 
-#### Xcode
+Xcode
+--------------------------------------------------------------------------------
 
-From the project root:
+From the project root: ::
 
     mkdir build_xc
     cd build_xc
@@ -122,9 +133,10 @@ From the project root:
 
 This will generate an Xcode project file along with some configs for you: **cpp-ethereum.xcodeproj**. Open this file in XCode and you should be able to build the project
 
-## Troubleshooting
+Troubleshooting
+--------------------------------------------------------------------------------
 
-* error: verify_app failed - you will need to use the [QTBUG-50155-workaround](https://github.com/ethereum/webthree-umbrella/wiki/QTBUG-50155-workaround)
-* Build error "non-virtual thunk to CryptoPP::Rijndael::Dec::AdvancedProcessBlocks" - this is due to a [bad bottle for CryptoPP 5.6.3](https://github.com/ethereum/webthree-umbrella/wiki/CryptoPP-5.6.3-workaround)
-* Unexpected "No such file or directory (or similar)" error e.g. `Sentinel.h.tmp`, `AdminUtilsFace.h.tmp`. Read the [libjson-rpc-cpp workaround](https://github.com/ethereum/webthree-umbrella/wiki/libjson-rpc-cpp-OS-X-workaround)
-* Build or runtime errors, complaining about missing [libmicrohttpd.10.dylib](https://github.com/ethereum/webthree-umbrella/wiki/homebrew-47806-workaround)
+* error: verify_app failed - you will need to use the `QTBUG-50155-workaround <https://github.com/ethereum/webthree-umbrella/wiki/QTBUG-50155-workaround>`_
+* Build error "non-virtual thunk to CryptoPP::Rijndael::Dec::AdvancedProcessBlocks" - this is due to a `bad bottle for CryptoPP 5.6.3 <https://github.com/ethereum/webthree-umbrella/wiki/CryptoPP-5.6.3-workaround>`_
+* Unexpected "No such file or directory (or similar)" error e.g. `Sentinel.h.tmp`, `AdminUtilsFace.h.tmp`. Read the `libjson-rpc-cpp workaround <https://github.com/ethereum/webthree-umbrella/wiki/libjson-rpc-cpp-OS-X-workaround>`_
+* Build or runtime errors, complaining about missing `libmicrohttpd.10.dylib <https://github.com/ethereum/webthree-umbrella/wiki/homebrew-47806-workaround>`_
