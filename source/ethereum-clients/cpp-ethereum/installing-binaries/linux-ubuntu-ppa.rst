@@ -34,7 +34,7 @@ For the latest stable version: ::
     sudo apt-get update
     sudo apt-get install cpp-ethereum
 
-If you want to use the cutting edge developer version:
+If you want to use the cutting edge developer version: ::
 
     sudo add-apt-repository ppa:ethereum/ethereum-qt
     sudo add-apt-repository ppa:ethereum/ethereum
