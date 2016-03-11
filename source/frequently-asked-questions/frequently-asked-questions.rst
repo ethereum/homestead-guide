@@ -69,6 +69,8 @@ Here are the possible ways to store ether:
 
 * **Can I store secrets or passwords on the Ethereum network so that contracts can interact with fiat and other cryptocurrencies?** All data on Ethereum is public. It is not possible to store secrets or passwords to internet banking sites in Ethereum contracts without it being seen by all. There is however work being done to make this a possibility through code obfuscation and other techniques. A good read would be this article by `Vitalik Buterin <https://blog.ethereum.org/2016/01/15/privacy-on-the-blockchain/>`_.
 
+* **Your question is still not answered?** Ask the community on `Ethereum Stackexchange <http://ethereum.stackexchange.com/>`_.
+
 ##### Need help with thorough expert comments on these questions######
 
 * How will Ethereum deal with ever increasing blockchain size? It is currently a problem with Bitcoin, current blockchain is over 40GB and growing.
