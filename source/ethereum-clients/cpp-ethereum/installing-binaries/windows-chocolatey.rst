@@ -12,5 +12,7 @@ We would like tools
 `support Chocolatey <https://github.com/ethereum/webthree-umbrella/issues/345>`_
 again in the near future for all the same reasons we support Homebrew on OS X
 and have PPAs for Ubuntu.  For technically competent users, doing
-command-line `choco install cpp-ethereum` and
-`choco update cpp-ethereum` will be very convenient.
+command-line operations like so would be very convenient: ::
+
+    choco install cpp-ethereum
+    choco update cpp-ethereum

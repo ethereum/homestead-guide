@@ -1,5 +1,5 @@
 
-ARM Linux cross-builds for mobile, wearables, SBCs
+Linux ARM cross-builds for mobile, wearables, SBCs
 --------------------------------------------------------------------------------
 
 `Bob Summerwill <http://bobsummerwill.com>`_, of
