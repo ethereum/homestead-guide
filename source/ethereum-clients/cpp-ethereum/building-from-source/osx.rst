@@ -35,79 +35,39 @@ OS X version, we recommend that you update to the latest release, not
 just so that you can build cpp-ethereum, but for your own peace of mind.
 
 
-Before doing anything else
+Pre-requisites
 --------------------------------------------------------------------------------
 
 All OS X builds require you to `install the Homebrew <http://brew.sh>`_
-package manager.
-
-Before starting, it is **always wise** to ensure that your Homebrew setup
-is up-to-date: ::
-
-    brew update
-    brew upgrade
-
-Here's how to `uninstall Homebrew
+package manager.  Here's how to `uninstall Homebrew
 <https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/FAQ.md#how-do-i-uninstall-homebrew>`_,
 if you ever want to start again from scratch.  
+
+Install `xcode <https://developer.apple.com/xcode/download/>`_, which contains
+the compiler, the IDE and other Apple development tools.
 
 Install `XQuartz <http://xquartz.macosforge.org/landing/>`_ X11 Window
 system if you want to build the GUI apps.
 
-Installing with Homebrew
---------------------------------------------------------------------------------
 
-To install the Ethereum C++ components, execute these commands: ::
-
-    brew tap ethereum/ethereum
-    brew install cpp-ethereum
-    brew linkapps cpp-ethereum
-
-Or ... ::
-
-    brew install cpp-ethereum --with-gui
-
-... if you want to build
-`AlethZero and AlethOne <https://github.com/ethereum/alethzero>`_ and
-the `Mix IDE <https://github.com/ethereum/wiki/wiki/Mix:-The-DApp-IDE>`_ too.
-
-Then `open /Applications/AlethZero.app`, `open /Applications/AlethOne.app`, `open /Applications/Mix.app` or `eth` (CLI).
-
-Here is the `Homebrew Formula
-<https://github.com/ethereum/homebrew-ethereum/blob/master/cpp-ethereum.rb>`_
-which details all the supported command-line options.
-
-Building from Source
---------------------------------------------------------------------------------
-
-Homebrew wraps up the manual build process for the latest version of **webthree-umbrella** into a simpler command-line process (and also uses a prebuilt "bottle", for Yosemite at least).   If you want to just run the build steps yourself, here's how to do it.
-
-Prerequisites
---------------------------------------------------------------------------------
-
-* Install `xcode <https://developer.apple.com/xcode/download/>`_
-
-Install dependencies
+Install external dependencies
 --------------------------------------------------------------------------------
 
 Install all required external dependencies ::
 
+    brew update
+    brew upgrade
     brew install boost --c++11
     brew install cmake cryptopp miniupnpc leveldb gmp jsoncpp libmicrohttpd libjson-rpc-cpp llvm37
     brew install homebrew/versions/v8-315
     brew install qt5 --with-d-bus
 
-NB:  The Qt5 step takes many hours on most people's machines, because it is using non-default build settings which result in build-from-source.  It also appears to use around 20Gb of temporary disk space.   Beware!
+**NB:  The Qt5 step takes many hours on most people's machines.**  This is because it is
+using non-default build settings which result in build-from-source.  It also appears
+to use around 20Gb of temporary disk space.   Beware!
 
-Clone source code repository, including sub-modules
--------------------------------------------------------------------------------- ::
-
-    git clone --recursive https://github.com/ethereum/webthree-umbrella.git
-    cd webthree-umbrella
-
-Make
---------------------------------------------------------------------------------
-You can either generate a makefile and build on command-line or generate an Xcode project and build Ethereum in the IDE.
+You can either generate a makefile and build on command-line or generate an
+Xcode project and build Ethereum in the IDE.
 
 Generate a makefile
 --------------------------------------------------------------------------------
@@ -132,6 +92,7 @@ From the project root: ::
     cmake -G Xcode ..
 
 This will generate an Xcode project file along with some configs for you: **cpp-ethereum.xcodeproj**. Open this file in XCode and you should be able to build the project
+
 
 Troubleshooting
 --------------------------------------------------------------------------------
