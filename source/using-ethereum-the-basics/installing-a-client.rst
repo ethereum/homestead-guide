@@ -2,40 +2,19 @@
 Installing a Client
 ********************************************************************************
 
-Why are there multiple clients?
-================================================================================
-
-A key design decision for Ethereum was to separate the definition of the
-protocol (the "Yellow Paper") from the implementation(s) of that protocol
-(geth, eth, etc).
-
-From the earlier days of the project there have been multiple interoperable
-client implementations across a range of different operating systems.
-
-As we enter the Homestead phase, the Go client is very, very dominant, but
-it hasn't always been that way, and won't necessarily be that way in the
-future.
-
-In the early days of the project the C++ client was more popular.
-BlockApps were able to create the Haskell client in stealth mode and to
-"uncloak" at DEVCON1 as part of the Azure partnership.  Ethcore have
-brought a Rust client to life in the last few months.  Every client
-has its own strengths.
-
-That client diversity is a huge win for the eco-system as a whole.
-It lets us verify that the protocol is unambiguous.  It keeps the door
-open for new innovation.  It keeps us all honest.
-
-However, it can be very confusing for end-users, because there is no
-universal "Ethereum Installer" for them to use.
-
-
-What clients are currently available, and which support Homestead?
-================================================================================
-
 There are a number of "official" clients whose development has been funded
-by the Ethereum Foundation, and there are various other clients which have
-been built by the community or by other commercial entities.
+from the resources administered by the Ethereum Foundation.  There are also
+various other clients which have been built by the community or by other
+commercial entities.
+
+Read more about the specific clients in the
+`Ethereum Clients <http://docs.ethereum.org/en/latest/ethereum-clients/index.html>`_ section.
+
+Only a subset of the clients have released versions which are Homestead
+compatible.  There are links to those releases in the right-hand column of
+the table below.   The clients without links are all working on getting
+Homestead-compatible versions released.   Keep checking back.   We will
+add links to them here as they are released.
 
 +------------------------+------------+------------------------+----------------------------------+
 | Client                 | Language   | Developers             | Homestead Release                |
@@ -54,8 +33,6 @@ been built by the community or by other commercial entities.
 +------------------------+------------+------------------------+----------------------------------+
 | `ethereumH`_           | Haskell    | `ConsenSys`_           |                                  |
 +------------------------+------------+------------------------+----------------------------------+
-| `ethereum-ruby`_       | Ruby       | `Digix`_               |                                  |
-+------------------------+------------+------------------------+----------------------------------+
 | `Parity`_              | Rust       | `Ethcore`_             |                                  |
 +------------------------+------------+------------------------+----------------------------------+
 
@@ -66,7 +43,6 @@ been built by the community or by other commercial entities.
 .. _ethereumjs-lib: https://github.com/ethereumjs/ethereumjs-lib
 .. _Ethereum(J): https://github.com/ethereum/ethereumj
 .. _ethereumH: https://github.com/jamshidh/ethereum-client-haskell
-.. _ethereum-ruby: https://github.com/DigixGlobal/ethereum-ruby
 .. _Parity: https://github.com/ethcore/parity
 
 .. _Ethereum Foundation: https://ethereum.org/foundation

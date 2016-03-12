@@ -13,8 +13,8 @@ Milestones of the Ethereum development roadmap
 
 Homestead is introduced automatically at block number #1,150,000 which should occur roughly around March 14th, 2016, Pi Day.
 
-While `the original plan laid out before Frontier <https://blog.ethereum.org/2015/03/03/ethereum-launch-process/>`_ is still valid, the substance behind that thinking changed somewhat.
-As the Olympic testnet phase (before Frontier release) saw a lot of major improvements, Frontier was launched right after not including quite a few caveat features (lower mining reward). Naturally then Homestead was meant to be the real deal finally launching the Ethereum network improving upon Frontier's wild west and bringing stability and reliability to the network. Our hope is that Homestead delivers on this promise no matter how high the bar is set already.
+While `the original plan laid out before Frontier <https://blog.ethereum.org/2015/03/03/ethereum-launch-process/>`_ is still valid, the substance behind it has changed somewhat.
+The Olympic testnet phase (before Frontier release) saw a lot of major improvements, followed by Frontier which was launched immediately after. Homestead marks the exit from a beta product to a stable release. Once the Ethereum blockchain reaches block 1,150,000, the Ethereum network will undergo a hardfork enabling a few major changes such as: the difficulty of creating new blocks, required gas limits, an upgrade to the devp2p protocol, and the creation of a new opcode ‘DELEGATECALL.’
 
 
 Homestead hard fork changes
@@ -28,8 +28,8 @@ Homestead comes with a few backward-incompatible protocol changes, and therefore
   * transaction signatures whose s-value is greater than ``secp256k1n/2`` are now considered invalid
   * If contract creation does not have enough gas to pay for the final gas fee for adding the contract code to the state, the contract creation fails (ie. goes out-of-gas) rather than leaving an empty contract.
   * Change the difficulty adjustment algorithm
-* `EIP 7: DELEGATECALL <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7.md>`_: Add a new opcode, ``DELEGATECALL`` at ``0xf4``, which is similar in idea to ``CALLCODE``, except that it propagates the sender and value from the parent scope to the child scope, ie. the call created has the same sender and value as the original call. See `comments on EIP 7 <https://github.com/ethereum/EIPs/issues/23>`_
-* `EIP 8: devp2p Forward Compatibility compliance with the Robustness Principle <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-8.md>`_ Changes to the RLPx Discovery Protocol and RLPx TCP transfer protocol to ensure that all client software in use on the Ethereum network can cope with future network protocol upgrades.
+* `EIP 7: DELEGATECALL <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7.md>`_: Add a new opcode, ``DELEGATECALL`` at ``0xf4``, which is similar in idea to ``CALLCODE``, except that it propagates the sender and value from the parent scope to the child scope, ie. the call created has the same sender and value as the original call. This means contracts can store pass through information while following msg.sender and msg.value from its parent contract. Great for contracts which create contracts but don’t repeat additional information which saves gas.See `comments on EIP 7 <https://github.com/ethereum/EIPs/issues/23>`_
+* `EIP 8: devp2p Forward Compatibility compliance with the Robustness Principle <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-8.md>`_ Changes to the RLPx Discovery Protocol and RLPx TCP transfer protocol to ensure that all client software in use on the Ethereum network can cope with future network protocol upgrades. For older versions of an Ethereum client, updates to the network protocol weren’t being accepted by older clients and would refuse communication if the hello packets didn’t meet expectations. This update means all future versions of the client will accept incoming network upgrades and handshakes.
 
 The changes have the following benefits:
 
