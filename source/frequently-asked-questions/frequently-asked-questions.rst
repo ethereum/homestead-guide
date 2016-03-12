@@ -10,7 +10,6 @@ Frequently Asked Questions
   * **AlethOne**: The mainline Ethereum desktop miner. It connects and syncs to the Ethereum network and lets you mine, and send transactions. It will also let you do pool mining.  
   * **Ethminer**: A standalone miner. This can be used to check how fast you can mine and will mine for you in concert with eth, geth and pyethereum.
   * **Mix**: The integrated development environment for DApp authoring. Quickly prototype and debug decentralised applications on the Ethereum platform.
->>>>>>> refs/remotes/origin/master
 * **How can I store big files on the blockchain?**
   Swarm is an Ethereum-specific project for distributed file storage. IPFS is an independent project which has close ties to Ethereum; it will be used independently and may be used as the layer underlying Swarm.
 * **Is Ethereum based on bitcoin?**
@@ -40,12 +39,12 @@ Frequently Asked Questions
 
 * **How can I safely store my ether?** Here are the possible ways to store ether:
 
-    * Accounts
-        * Mist/Geth accounts.
-        * Paper wallets.
-        * Brain wallets.
-        * Icebox Air gapped offline signing of transactions
-    * Wallet
+  * Accounts
+     * Mist/Geth accounts.
+     * Paper wallets.
+     * Brain wallets.
+     * Icebox Air gapped offline signing of transactions
+     * Wallet
         * `Mist Multi\-signature <http://ethereum.stackexchange.com/questions/6/how-can-i-create-a-multisignature-address-on-ethereum>`_
 
 * **How do I get a list of transactions into/out of an address?** You would have to pull the transactions manually out of the blockchain to achieve this. Alternatively, you can rely on thirdparty explorers' API's like `Etherchain <https://etherchain.org/apidoc>`_. For contract execution transactions however, you can filter the logs to achieve this. 
