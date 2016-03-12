@@ -5,11 +5,13 @@ Frequently Asked Questions
 
 * **I have heard of Ethereum, but what are Geth, Mist, Ethminer, Mix, and AlethOne?**
   As you already know, Ethereum is the blockchain-based smart contract platform that this Wiki describes. Akin to Bitcoin, Ethereum needs miners to solve cryptographic puzzles to confirm transactions and bring cryptocurrency into existence, nodes to witness and record any transactions/computations made and 'wallets' to initiate transactions/computations.
-* **Geth**: This is the Go implementation of an Ethereum node, and is the basis for any interactions with the Ethereum blockchain. Running this locally will allow you to easily interact with the Ethereum blockchain.
-* **Mist**: This is the equivalent of a web browser, but for the Ethereum platform. It acts as a GUI to display the accounts and contracts that you have or use on the Ethereum blockchain. It also allows you to create and interact with contracts in a graphical user interface without ever touching the command line. If you are not a developer and just want to store Ether and interact with Ethereum contracts, then Mist is the program to use. Latest releases can be found `here <https://github.com/ethereum/mist/releases>`_. 
-* **AlethOne**: The mainline Ethereum desktop miner. It connects and syncs to the Ethereum network and lets you mine, and send transactions. It will also let you do pool mining.  
-* **Ethminer**: A standalone miner. This can be used to check how fast you can mine and will mine for you in concert with eth, geth and pyethereum.
-* **Mix**: The integrated development environment for DApp authoring. Quickly prototype and debug decentralised applications on the Ethereum platform.
+
+    * **Geth**: This is the Go implementation of an Ethereum node, and is the basis for any interactions with the Ethereum blockchain. Running this locally will allow you to easily interact with the Ethereum blockchain. Read the `go-ethereum installation instructions <https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum>`_.
+    * **Mist**: This is the equivalent of a web browser, but for the Ethereum platform. It acts as a GUI to display the accounts and contracts that you have or use on the Ethereum blockchain. It also allows you to create and interact with contracts in a graphical user interface without ever touching the command line. If you are not a developer and just want to store Ether and interact with Ethereum contracts, then Mist is the program to use. Downloads can be found on the `Mist releases page  <https://github.com/ethereum/mist/releases>`_. 
+    * **AlethOne**: The mainline Ethereum desktop miner. It connects and syncs to the Ethereum network and lets you mine, and send transactions. It will also let you do pool mining.  AlethOne is distributed as part of the `webthree-umbrella software <https://github.com/ethereum/webthree-umbrella/releases>`_. 
+    * **Ethminer**: A standalone miner. This can be used to check how fast you can mine and will mine for you in concert with eth, geth and pyethereum. See also: `GPU mining with ethminer <https://github.com/ethereum/go-ethereum/wiki/Mining#gpu-mining-with-ethminer>`_
+    * **Mix**: The integrated development environment for DApp authoring. Quickly prototype and debug decentralised applications on the Ethereum platform. See also: `Mix IDE wiki page <https://github.com/ethereum/wiki/wiki/Mix:-The-DApp-IDE>`_
+
 * **How can I store big files on the blockchain?**
   Swarm is an Ethereum-specific project for distributed file storage. IPFS is an independent project which has close ties to Ethereum; it will be used independently and may be used as the layer underlying Swarm.
 * **Is Ethereum based on bitcoin?**
@@ -37,10 +39,8 @@ Frequently Asked Questions
 
 * **How long should it take to download the blockchain?** The Ethereum blockchain is constantly growing, and is nearing 7GB as of February 2016. It can take an hour or two to download. 
 
-* **How can I safely store my ether?**
+* **How can I safely store my ether?** Here are the possible ways to store ether:
 
-
-Here are the possible ways to store ether:
     * Accounts
         * Mist/Geth accounts.
         * Paper wallets.
@@ -59,7 +59,7 @@ Here are the possible ways to store ether:
 
 * **which client is the fastest and most reliable?** For now, the Mist browser is definitely the most stable, reliable and fastest Ethereum client. 
 
-* **How to get testnet Ether?** Testnet ether can either be mined yourself (using Mist for example), or requested from Testnet faucets like: faucet.etherparty.io/ .
+* **How to get testnet Ether?** Testnet ether can either be mined yourself (using Mist for example), or requested from Testnet faucets like: http://faucet.etherparty.io/.
 
 * **Can a transaction be sent by a third party? i.e can transaction broadcasting be outsourced** Technically yes but there is an important restriction as opposed to bitcoin signed transactions: in ethereum the transaction has a nonce (more precisely, each account increases counter). 
 
