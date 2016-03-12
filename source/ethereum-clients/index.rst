@@ -35,5 +35,4 @@ universal "Ethereum Installer" for them to use.
    ethereumjs-lib/ethereumjs-lib.rst
    ethereumj/ethereumj.rst
    ethereumh/ethereumh.rst
-   ethereum-ruby/ethereum-ruby.rst
    parity/parity.rst
