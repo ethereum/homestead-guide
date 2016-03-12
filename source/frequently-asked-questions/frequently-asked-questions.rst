@@ -37,15 +37,14 @@ Frequently Asked Questions
 
 * **How long should it take to download the blockchain?** The Ethereum blockchain is constantly growing, and is nearing 7GB as of February 2016. It can take an hour or two to download. 
 
-* **How can I safely store my ether?**
+* **How can I safely store my ether?** Here are the possible ways to store ether:
 
-Here are the possible ways to store ether:
-    * Accounts
-        * Mist/Geth accounts.
-        * Paper wallets.
-        * Brain wallets.
-        * Icebox Air gapped offline signing of transactions
-    * Wallet
+  * Accounts
+     * Mist/Geth accounts.
+     * Paper wallets.
+     * Brain wallets.
+     * Icebox Air gapped offline signing of transactions
+     * Wallet
         * `Mist Multi\-signature <http://ethereum.stackexchange.com/questions/6/how-can-i-create-a-multisignature-address-on-ethereum>`_
 
 * **How do I get a list of transactions into/out of an address?** You would have to pull the transactions manually out of the blockchain to achieve this. Alternatively, you can rely on thirdparty explorers' API's like `Etherchain <https://etherchain.org/apidoc>`_. For contract execution transactions however, you can filter the logs to achieve this. 
@@ -56,7 +55,7 @@ Here are the possible ways to store ether:
 
 * **Can a transaction be signed offline and then submitted on another online device?** Yes, you can refer to the solution from `Icebox <https://github.com/ConsenSys/icebox>`_.
 
-* **How to get testnet Ether?** Testnet ether can either be mined yourself (using Mist for example), or requested from Testnet faucets like: faucet.etherparty.io/.
+* **How to get testnet Ether?** Testnet ether can either be mined yourself (using Mist for example), or requested from Testnet faucets like: http://faucet.etherparty.io/.
 
 * **Can a transaction be sent by a third party? i.e can transaction broadcasting be outsourced** Technically yes but there is an important restriction as opposed to bitcoin signed transactions: in ethereum the transaction has a nonce (more precisely, each account increases counter). 
 
