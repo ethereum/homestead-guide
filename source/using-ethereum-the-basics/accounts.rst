@@ -91,9 +91,43 @@ Remember to use a strong and randomly generated password. We just created our fi
   > eth.accounts
   ["0xb2f69ddf70297958e582a0cc98bce43294f1007d"]
 
+Using Mist Ethereum wallet
+--------------------------------------------------------------------------------
+For the command line averse, there is now a GUI-based option for creating accounts: The “official” Mist Ethereum wallet. The Mist Ethereum wallet, and its parent Mist project, are being developed under the auspices of the Ethereum Foundation, hence the “official” status. Versions of the wallet app are available for Linux, Mac OS X, and Windows.
+
+Creating an account using the GUI Mist Ethereum wallet couldn’t be easier. In fact, your first account is created during the installation of the app.
+
+.. _cr-install-mist:
+
+1. `Download <https://github.com/ethereum/mist/releases>`_ the latest version of the wallet app for your operating system. Downloading the Wallet App involves syncing a full copy of the Ethereum blockchain on your computer, since you will in effect be running a full geth node.
+
+2. Unzip the downloaded folder and run the Ethereum-Wallet executable file.
+
+.. image:: ../img/51Downloading.png
+   :width: 582px
+   :height: 469px
+   :scale: 75 %
+   :alt: downloading-mist
+   :align: center
+
+3. Wait for the blockchain to fully sync, then follow the instructions on the screen and your first account will be created.
+
+4. When you launch the Mist Ethereum wallet for the first time, you will see the account you created during the installation process. By default it will be named MAIN ACCOUNT (ETHERBASE).
+
+.. image:: ../img/51OpeningScreen.png
+   :width: 1024px
+   :height: 938px
+   :scale: 50 %
+   :alt: opening-screen
+   :align: center
+
+5. Creating additional accounts is easy; just click on ADD ACCOUNT in the app’s main screen and enter the required password.
+
+.. note:: The Mist wallet is still in active development, so details of the steps outlined above may change with upgrades.
+
 Using EthKey
 --------------------------------------------------------------------------------
-ethkey is a CLI tool that allows you to interact with the Ethereum wallet. With it you can list, inspect, create, delete and modify keys and inspect, create and sign transactions.
+Ethkey is a CLI tool that allows you to interact with the Ethereum wallet. With it you can list, inspect, create, delete and modify keys and inspect, create and sign transactions.
 
 We'll assume you have not yet run a client such as eth or anything in the Aleth series of clients. If you have, you should skip this section.
 To create a wallet, run ethkey with the createwallet command:
@@ -152,9 +186,37 @@ Now let's make sure it worked properly by listing the keys in the wallet:
 
 It reports one key on each line (for a total of one key here). In this case our key is stored in a file 055dde... and has an ICAP address beginning XE472EVK.... Not especially easy things to remember so rather helpful that it has its proper name, test, too.
 
-Using Mist
+Importing your presale wallet
+================================================================================
+
+Using Mist Ethereum wallet
 --------------------------------------------------------------------------------
-Just link into Homestead website where the MIST wallet will be described?
+Importing your presale wallet using the GUI Mist Ethereum wallet is very easy. In fact, you will be asked if you want to import your presale wallet during the installation of the app.
+
+Instructions for installing the Mist Ethereum wallet are given in the section :ref:`Creating an account: Using Mist Ethereum wallet <cr-install-mist>`.
+
+Simply drag-and-drop your .json presale wallet file into the designated area and enter your password to import your presale account.
+
+.. image:: ../img/51PersaleImportInstall.png
+   :width: 582px
+   :height: 469px
+   :scale: 75 %
+   :alt: presale-import
+   :align: center
+
+If you choose not to import your presale wallet during installation of the app, you can import it at any time by selecting the ``Accounts`` menu in the app’s menu bar and then selecting ``Import Pre-sale Accounts``.
+
+.. note:: The Mist wallet is still in active development, so details of the steps outlined above may change with upgrades.
+
+Using geth
+--------------------------------------------------------------------------------
+If you have a standalone installation of geth, importing your presale wallet is accomplished by executing the following command in a terminal:
+
+.. code-block:: Bash
+
+  geth wallet import /path/to/my/presale-wallet.json
+
+You will be prompted to enter your password.
 
 Updating an account
 ================================================================================

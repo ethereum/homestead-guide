@@ -2,40 +2,19 @@
 Installing a Client
 ********************************************************************************
 
-Why are there multiple clients?
-================================================================================
-
-A key design decision for Ethereum was to separate the definition of the
-protocol (the "Yellow Paper") from the implementation(s) of that protocol
-(geth, eth, etc).
-
-From the earlier days of the project there have been multiple interoperable
-client implementations across a range of different operating systems.
-
-As we enter the Homestead phase, the Go client is very, very dominant, but
-it hasn't always been that way, and won't necessarily be that way in the
-future.
-
-In the early days of the project the C++ client was more popular.
-BlockApps were able to create the Haskell client in stealth mode and to
-"uncloak" at DEVCON1 as part of the Azure partnership.  Ethcore have
-brought a Rust client to life in the last few months.  Every client
-has its own strengths.
-
-That client diversity is a huge win for the eco-system as a whole.
-It lets us verify that the protocol is unambiguous.  It keeps the door
-open for new innovation.  It keeps us all honest.
-
-However, it can be very confusing for end-users, because there is no
-universal "Ethereum Installer" for them to use.
-
-
-What clients are currently available, and which support Homestead?
-================================================================================
-
 There are a number of "official" clients whose development has been funded
-by the Ethereum Foundation, and there are various other clients which have
-been built by the community or by other commercial entities.
+from the resources administered by the Ethereum Foundation.  There are also
+various other clients which have been built by the community or by other
+commercial entities.
+
+Read more about the specific clients in the
+`Ethereum Clients <http://docs.ethereum.org/en/latest/ethereum-clients/index.html>`_ section.
+
+Only a subset of the clients have released versions which are Homestead
+compatible.  There are links to those releases in the right-hand column of
+the table below.   The clients without links are all working on getting
+Homestead-compatible versions released.   Keep checking back.   We will
+add links to them here as they are released.
 
 +------------------------+------------+------------------------+----------------------------------+
 | Client                 | Language   | Developers             | Homestead Release                |
@@ -44,17 +23,15 @@ been built by the community or by other commercial entities.
 +------------------------+------------+------------------------+----------------------------------+
 | `go-ethereum`_         | Go         | `Ethereum Foundation`_ | `geth-v1.3.5`_                   |
 +------------------------+------------+------------------------+----------------------------------+
-| `cpp-ethereum`_        | C++        | `Ethereum Foundation`_ | `eth-v1.2.1`_                    |
+| `cpp-ethereum`_        | C++        | `Ethereum Foundation`_ | `eth-v1.2.2`_                    |
 +------------------------+------------+------------------------+----------------------------------+
-| `pyethapp`_            | Python     | `Ethereum Foundation`_ | `pyethapp-v1.1.0`_               |
+| `pyethapp`_            | Python     | `Ethereum Foundation`_ |                                  |
 +------------------------+------------+------------------------+----------------------------------+
-| `ethereumjs-lib`_      | Javascript | `Ethereum Foundation`_ |                                  |
+| `ethereumjs-lib`_      | Javascript | `Ethereum Foundation`_ | `ethereumjs-lib-v3.0.0`_         |
 +------------------------+------------+------------------------+----------------------------------+
 | `Ethereum(J)`_         | Java       | `ConsenSys`_           | `ethereumJ-v1.2.0-homestead-RC`_ |
 +------------------------+------------+------------------------+----------------------------------+
 | `ethereumH`_           | Haskell    | `ConsenSys`_           |                                  |
-+------------------------+------------+------------------------+----------------------------------+
-| `ethereum-ruby`_       | Ruby       | `Digix`_               |                                  |
 +------------------------+------------+------------------------+----------------------------------+
 | `Parity`_              | Rust       | `Ethcore`_             |                                  |
 +------------------------+------------+------------------------+----------------------------------+
@@ -66,7 +43,6 @@ been built by the community or by other commercial entities.
 .. _ethereumjs-lib: https://github.com/ethereumjs/ethereumjs-lib
 .. _Ethereum(J): https://github.com/ethereum/ethereumj
 .. _ethereumH: https://github.com/jamshidh/ethereum-client-haskell
-.. _ethereum-ruby: https://github.com/DigixGlobal/ethereum-ruby
 .. _Parity: https://github.com/ethcore/parity
 
 .. _Ethereum Foundation: https://ethereum.org/foundation
@@ -76,8 +52,8 @@ been built by the community or by other commercial entities.
 
 .. _mist-v0.5.1: https://github.com/ethereum/mist/releases/tag/0.5.1
 .. _geth-v1.3.5: https://github.com/ethereum/go-ethereum/releases/tag/v1.3.5
-.. _eth-v1.2.1: https://github.com/ethereum/webthree-umbrella/releases/tag/v1.2.1
-.. _pyethapp-v1.1.0: https://github.com/ethereum/pyethapp/releases/tag/v1.1.0
+.. _eth-v1.2.2: https://github.com/ethereum/webthree-umbrella/releases/tag/v1.2.2
+.. _ethereumjs-lib-v3.0.0: https://github.com/ethereumjs/ethereumjs-lib/tree/v3.0.0
 .. _ethereumJ-v1.2.0-homestead-RC: https://github.com/ethereum/ethereumj/releases/tag/1.2.0-homestead-RC
 
 
@@ -129,5 +105,16 @@ recently flipped to Geth cross-builds with Light Client.
 What should I install on my SBC?
 ================================================================================
 
-Use EthEmbedded stuff.
-And doublethinkco cross-builds.
+You have some choice here depending on your skill level, and what you are looking to do.
+
+* Download a fully prepared image(link to page with detailed download & install instructions)
+
+  * If you are new to Ethereum AND SBC boards such as the Raspberry Pi then this is for you! Simply download the image specific to the dev board you are working with, burn it to an SD card, boot your device, and run Ethereum!
+  
+* Download a pre-compiled application(link to page with detailed download & install instructions)
+
+  * If you already have an SBC running and have a specific, preferred OS or setup that you want to keep, then this is your best option! Depending on the platform, you can simply download the apropriate executable, and with minimal linking of libraries and setting of PATH you can have Ethereum running in your existing environment!
+  
+* Build from source using customizable scripts(link to page with more detail and individual SBC links to https://github.com/ethembedded)
+
+  * Looking to perform a custom install?  We have scripts available to compile from source "on device". Our scripts contain auto-install of dependencies as well as the client itself. This will allow you to install a specific version of the Ethereum client(i.e.-"develop", "master", etc.), compile your own forked version of a client, and generally play around with the intracacies of the build process.

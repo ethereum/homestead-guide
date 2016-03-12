@@ -65,7 +65,13 @@ Here are the possible ways to store ether:
 
 * **Is the content of the data and contracts sent over the Ethereum network encrypted?** Data and contracts on the Ethereum network are encoded, but not encrypted. The purpose of Ethereum is precisely that everyone can audit the behaviour of the contracts and the data sent to them. However, you are always free to encrypt data locally before broadcasting it to the network. 
 
-* **Can I store secrets or passwords on the Ethereum network so that contracts can interact with fiat and other cryptocurrencies?** All data on Ethereum is public. It is not possible to store secrets or passwords to internet banking sites in Ethereum contracts without it being seen by all. There is however work being done to make this a possibility through code obfuscation and other techniques. A good read on the topic is this blog post by `Vitalik Buterin <https://blog.ethereum.org/2016/01/15/privacy-on-the-blockchain/>`_.
+* **Can I store secrets or passwords on the Ethereum network so that contracts can interact with fiat and other cryptocurrencies?** All data on Ethereum is public. It is not possible to store secrets or passwords to internet banking sites in Ethereum contracts without it being seen by all. There is however work being done to make this a possibility through code obfuscation and other techniques. A good read would be this article by `Vitalik Buterin <https://blog.ethereum.org/2016/01/15/privacy-on-the-blockchain/>`_.
+
+##### Need help with thorough expert comments on these questions######
+
+* How will Ethereum deal with ever increasing blockchain size? It is currently a problem with Bitcoin, current blockchain is over 40GB and growing.
+
+* How will Ethereum deal with centralisation of mining pools? This was a problem with BTC.
 
 * **How will Ethereum combat centralisation of mining pools?** There are two primary ways that the Ethereum PoW based consensus algorithm combats mining centralisation (`Source <http://ethereum.stackexchange.com/questions/549/how-does-ethereum-avoid-mining-pool-centralization>`_).
     
@@ -78,3 +84,5 @@ Here are the possible ways to store ether:
 * **How will Ethereum deal with ever increasing blockchain size?** There are many discussions around blockchain scalability. This questioned has been partially answered on `this Ethereum StackExchange post <http://ethereum.stackexchange.com/questions/521/what-does-it-mean-to-run-code-on-the-blockchain-wouldnt-blockchain-become-hu>`_ and `this blog post from Vitalik Buterin <https://blog.ethereum.org/2014/02/18/ethereum-scalability-and-decentralization-updates/>`_.
 
 * **How will Ethereum ensure the network is capable of making 10,000+ transactions-per-second?** Ethereum is planning on implementing a proof-of-stake consensus protocol change during the Serenity phase of their development roadmap. More information on the likely Ethereum PoS candidate and how it may increase transactions-per-second can be `found here <https://blog.ethereum.org/2015/08/01/introducing-casper-friendly-ghost/>`_.
+
+* **Your question is still not answered?** Ask the community on `Ethereum Stackexchange <http://ethereum.stackexchange.com/>`_.
