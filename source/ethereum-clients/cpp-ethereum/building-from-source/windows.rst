@@ -1,6 +1,6 @@
 
 Building for Windows
---------------------------------------------------------------------------------
+================================================================================
 
 We support **only 64-bit** builds and only for the following versions of Windows:
 
@@ -12,6 +12,10 @@ It may be possible to get the client working for Windows 32-bit, by
 disabling EVMJIT and maybe other features too.  We might accept
 pull-requests to add such support, but we will not put any of our
 own development time into supporting Windows 32-bit builds.
+
+
+Pre-requisites
+--------------------------------------------------------------------------------
 
 You will need to install the following dependencies
 
@@ -44,12 +48,23 @@ You will need to install the following dependencies
 .. _MS VC++ 2010 SP1 Win64: https://www.microsoft.com/en-us/download/details.aspx?id=26999
 .. _VS Community 2013 Desktop: http://go.microsoft.com/fwlink/?LinkId=517284
 
+
 Open a command-shell in the root directory which you cloned the source code to, and
-then type: ::
+then type the following, which does a crude approximation of a package server,
+pulling pre-built binaries from our own server for the various external libraries
+which we depend on: ::
 
     cd webthree-helpers\extdep
     getstuff.bat
     cd ..\..
+
+
+Build from within Visual Studio
+--------------------------------------------------------------------------------
+
+Then execute the following commands, which will generate a Visual Studio
+solution file using CMake: ::
+
     mkdir build
     cd build
     cmake -G "Visual Studio 12 2013 Win64" ..
@@ -61,9 +76,17 @@ the **Release** configuration or **RelWithDebugInfo**.   The **Debug** configura
 is broken at the time of writing, though we are
 `working on resolving that issue <https://github.com/ethereum/webthree-umbrella/issues/123>`_.
 
-Alternative, you can build the project on the command-line, like so: ::
+
+Build on the command-line
+--------------------------------------------------------------------------------
+
+Alternatively, you can build the project on the command-line, like so: ::
 
     msbuild cpp-ethereum.sln /p:Configuration=Release
+
+
+Incremental builds
+--------------------------------------------------------------------------------
 
 After your first successful build, it should generally be possible to do an
 incremental build like so, from the root of the project: ::
