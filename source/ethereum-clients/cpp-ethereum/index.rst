@@ -4,6 +4,12 @@
 cpp-ethereum
 ################################################################################
 
+..  image:: http://devstickers.com/assets/img/pro/35k9.png
+    :height: 187px
+    :width: 187px
+
+..  image:: https://dappsforbeginners.files.wordpress.com/2015/02/ethereum-logo.jpg?w=300
+   
 Quick Start
 --------------------------------------------------------------------------------
 
