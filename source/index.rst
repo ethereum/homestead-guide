@@ -19,7 +19,6 @@ Contents
 .. toctree::
    :maxdepth: 2
 
-   about.rst
    introduction/introduction.rst
    ethereum-ecosystem/ethereum-ecosystem.rst
    using-ethereum-the-basics/using-ethereum-the-basics.rst
@@ -27,6 +26,7 @@ Contents
    developing-on-ethereum/developing-on-ethereum.rst
    frequently-asked-questions/frequently-asked-questions.rst
    ethereum-clients/index.rst
+   about.rst
 
 
 Improve the Documentation
