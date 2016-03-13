@@ -13,6 +13,14 @@ Ethereum Homestead Documentation
    :alt: ethereum-logo
    :align: center
 
+
+This documentation was put together for Homestead in a collaborative project
+involving many :ref:`contributors` from the Ethereum Community.
+
+We hope that you find it useful, and would welcome you to contribute to its
+ongoing development.
+
+
 Contents
 ===============================================================================
 
