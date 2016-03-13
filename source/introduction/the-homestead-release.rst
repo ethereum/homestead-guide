@@ -5,22 +5,29 @@ The Homestead Release
 Milestones of the Ethereum development roadmap
 -----------------------------------------------
 
+The `original development roadmap <https://blog.ethereum.org/2015/03/03/ethereum-launch-process/>`_ laid out before Ethereum went live specified the following milestones:
+
 * Prerelease Step 0: Olympic testnet - launched May 2015
 * Release Step One: Frontier - launched 30 July 2015
 * Release Step Two: Homestead - to launch Q1 2016
 * Release Step Three: Metropolis - TBA
 * Release Step Four: Serenity - TBA
 
-Homestead is introduced automatically at block number #1,150,000 which should occur roughly around March 14th, 2016, Pi Day.
 
-While `the original plan laid out before Frontier <https://blog.ethereum.org/2015/03/03/ethereum-launch-process/>`_ is still valid, the substance behind it has changed somewhat.
-The Olympic testnet phase (before Frontier release) saw a lot of major improvements, followed by Frontier which was launched immediately after. Homestead marks the exit from a beta product to a stable release. Once the Ethereum blockchain reaches block 1,150,000, the Ethereum network will undergo a hardfork enabling a few major changes such as: the difficulty of creating new blocks, required gas limits, an upgrade to the devp2p protocol, and the creation of a new opcode ‘DELEGATECALL.’
+While  is still valid, the substance behind it has changed somewhat.
+The `Olympic testnet <olympic-testnet>`_ phase (before the `Frontier release <frontier-launch>`) saw a lot of major improvements, followed by Frontier which was launched immediately after. Homestead marks the exit from a beta product to a stable release.
+Homestead is introduced automatically at block number 1,150,000 which should occur roughly around March 14th, 2016, Pi Day.
 
+If you are running a node connected to the live network, it is important that you upgrade to a Homestead-compatible client. Such clients with their versions are listed under :ref:`ethereum-clients`. Otherwise you will end up on the wrong fork and will no longer be in sync with the rest of the network.
+
+Once the Ethereum blockchain reaches block 1,150,000, the Ethereum network will undergo a hardfork enabling a few major changes such as explained in the following section.
+
+.. _homestead-hard-fork-changes:
 
 Homestead hard fork changes
 ----------------------------------
 Ethereum in the narrow formal sense is a suite of protocols.
-Homestead comes with a few backward-incompatible protocol changes, and therefore will require a hard fork.
+Homestead comes with a few backward-incompatible protocol changes, and therefore will require a hard fork. These changes that made their way through the process for `Ethereum Improvement Proposal <eips>`_ and got included are:
 
 * `EIP 2: <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2.mediawiki>`_
 
@@ -44,4 +51,4 @@ The changes have the following benefits:
 
 Additional resources:
 * `Reddit discussion on Homestead Release <https://www.reddit.com/r/ethereum/comments/48arax/homestead_release_faq/>`_
-* `EIP
+* :ref:`eips`

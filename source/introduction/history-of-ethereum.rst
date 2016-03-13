@@ -48,7 +48,7 @@ In April 2015, `the DEVgrants program <https://blog.ethereum.org/2015/04/07/devg
 * `DEVgrants public gitter room <https://gitter.im/devgrants/public>`_
 * `DEVgrants talk at DEVCON-1 by Wendell Davis on YouTube <https://www.youtube.com/watch?v=4jGqmlA4KEY>`_
 
-
+.. _olympic-testnet:
 
 Olympic testnet, bug bounty and security audit
 --------------------------------------------------------------------------------
@@ -65,6 +65,8 @@ The Ethereum security audit began at the end of 2014 and continued through the f
 * `Ethereum Bounty Program website <http://bounty.ethereum.org/>`_
 * `Least Authority audit blogpost <https://blog.ethereum.org/2015/07/07/know-ethereum-secure/>`_ - with links to the audit report
 * `Deja Vu audit blogpost <http://www.dejavusecurity.com/blog/2015/7/23/deja-vu-security-assists-in-ethereum-release>`_
+
+.. _frontier-launch:
 
 The Ethereum Frontier Launch
 =======================================================================
