@@ -9,7 +9,6 @@ which was coordinated by:
 
 - `Hudson Jameson ("Souptacular") <https://github.com/Souptacular>`_
 - `Viktor Trón ("zelig") <https://github.com/zelig>`_
-- `Hugh Lang <https://github.com/hughlang>`_
 
 We would like to thank everybody who helped in this effort for `their contributions <https://github.com/ethereum/homestead-guide/graphs/contributors>`_:
 
@@ -24,6 +23,7 @@ We would like to thank everybody who helped in this effort for `their contributi
 - `Joël Hubert <https://github.com/jmahhh>`_
 - `Bas van Kervel <https://github.com/bas-vk>`_
 - `Guangmian Kung <https://github.com/gmkung>`_
+- `Hugh Lang <https://github.com/hughlang>`_
 - `Andrew Mazzola <https://github.com/admazzola>`_
 - `John Mooney <https://github.com/mooneyj>`_
 - `Chris Peel <https://github.com/christianpeel>`_
