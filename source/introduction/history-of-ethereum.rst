@@ -48,14 +48,14 @@ Olympic testnet, bug bounty and security audit
 
 Throughout 2014 and 2015 development went through a series of proof of concept releases leading to the 9th POC open testnet, called Olympic. The developer community was `invited to test the limits of the network <https://blog.ethereum.org/2015/05/09/olympic-frontier-pre-release/>`_ and a substantial prize fund was allocated to award those holding various records or having success in breaking the system in some way or other. The `rewards were announced <https://blog.ethereum.org/2015/08/26/olympic-rewards-announced/>`_ officially a month after the live release.
 
-In early 2015, a bug bounty program was launched through `ETH DEV Bounty Hunters website <http://bounty.ethdev.com/>`_ offering BTC rewards for finding vulnerabilities in any part of the Ethereum software stack. This has undoubtedly contributed to the reliability and security of Ethereum and the confidence of the Ethereum community in the technology. The bounty program is currently still active and there is no end date planned.
+In early 2015, an `Ethereum Bounty Program <http://bounty.ethereum.org/>`_ was launched, offering BTC rewards for finding vulnerabilities in any part of the Ethereum software stack. This has undoubtedly contributed to the reliability and security of Ethereum and the confidence of the Ethereum community in the technology. The bounty program is currently still active and there is no end date planned.
 
 The Ethereum security audit began at the end of 2014 and continued through the first half of 2015. Ethereum engaged multiple third party software security firms to conduct an end-to-end audit of all protocol-critical components (Ethereum VM, networking, Proof of Work). The audits uncovered security issues that were addressed and tested again and as a result ultimately led to a more secure platform.
 
 * `Olympic testnet prerelease <https://blog.ethereum.org/2015/05/09/olympic-frontier-pre-release/>`_ - Vitalik's blogpost detailing olympic rewards
 * `Olympic rewards announced <https://blog.ethereum.org/2015/08/26/olympic-rewards-announced/>`_ - Vitalik's blogpost detailing the winners and prizes
 * `Bug bounty program launch <https://blog.ethereum.org/2015/03/20/juttas-update-bug-bounty-program-security-audit/>`_
-* `ETH DEV Bounty Hunters website <http://bounty.ethdev.com/>`_
+* `Ethereum Bounty Program website <http://bounty.ethereum.org/>`_
 * `Least Authority audit blogpost <https://blog.ethereum.org/2015/07/07/know-ethereum-secure/>`_ - with links to the audit report
 * `Deja Vu audit blogpost <http://www.dejavusecurity.com/blog/2015/7/23/deja-vu-security-assists-in-ethereum-release>`_
 

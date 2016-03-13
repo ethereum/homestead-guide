@@ -16,7 +16,6 @@ Ethereum Foundation's faces to the community
 * `Blog <https://blog.ethereum.org/>`_
 * `Twitter <http://twitter.com/ethereumproject>`_
 * `Youtube <https://www.youtube.com/user/ethereumproject>`_
-* `Ethdev website <https://ethdev.com>`_ - info on devs, outdated
 * `Facebook <https://www.facebook.com/ethereumproject>`_ - largely unused
 * `Email <mailto:info@ethereum.org>`_ - use if you must
 
