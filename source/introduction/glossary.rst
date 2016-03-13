@@ -4,7 +4,7 @@ Glossary
 
 .. glossary::
    :sorted:
- 
+
    Đ
       Đ, `D with stroke <https://en.wikipedia.org/wiki/D_with_stroke>`_, is used in Old English, Middle English, Icelandic, and Faroese to stand for an uppercase letter "Eth". The uppercase eth (Ð) is also used to symbolize the cryptocurrency Dogecoin.
 
@@ -16,7 +16,7 @@ Glossary
 
    identity
       A set of cryptographically verifiable interactions that have the property that they were all created by the same person
-   
+
    reputation
       The property of an identity that other entities believe that identity to be either (1) competent at some specific task, or (2) trustworthy in some context, i.e. not likely to betray others even if short-term profitable.
 
@@ -34,7 +34,7 @@ Glossary
 
    unique identity
       A set of cryptographically verifiable interactions that have the property that they were all created by the same person, with the added constraint that one person cannot have multiple unique identities
-   
+
    incentive compatibility
       A protocol is incentive-compatible if everyone is better off "following the rules" than attempting to cheat, at least unless a very large number of people agree to cheat together at the same time.
 
@@ -77,7 +77,7 @@ Glossary
 
    Web3
       The exact definition of the Web3 paradigm is still taking form, but it generally refers to the phenomenon of increased connectedness between all kinds of devices, decentralisation of services and applications, semantic storage of information online and application of artificial intelligence to the web.
-      
+
    DAO
       See Decentralized Autonomous Organisation.
 
@@ -148,7 +148,7 @@ Glossary
       Serpent is a high-level language whose syntax is similar to that of Python and it is designed to compile to code for the Ethereum Virtual Machine.
 
    EVM
-      Ethereum Virtual Machine, the decentralized computing platform which forms the core of the Ethereum platform. 
+      Ethereum Virtual Machine, the decentralized computing platform which forms the core of the Ethereum platform.
 
    virtual machine
       In computing, it refers to an emulation of a particular computer system.
@@ -176,7 +176,7 @@ Glossary
       An alternative method of mining blocks that require miners to demonstrate their possession of a certain amount of the currency of the network in question. This works on the principle that miners will be disincentivised to try to undermine a network in which they have a stake. PoS is less wasteful than PoW, but is still often used together with it to provide added security to the network.
 
    CASPER
-      Casper is a security-deposit based economic consensus protocol. This means that nodes, so called “bonded validators”, have to place a security deposit (an action we call “bonding”) in order to serve the consensus by producing blocks. If a validator produces anything that Casper considers “invalid”, the deposit is forfeited along with the privilege of participating in the consensus process.  
+      Casper is a security-deposit based economic consensus protocol. This means that nodes, so called “bonded validators”, have to place a security deposit (an action we call “bonding”) in order to serve the consensus by producing blocks. If a validator produces anything that Casper considers “invalid”, the deposit is forfeited along with the privilege of participating in the consensus process.
 
    consensus
       The agreement among all nodes in the network about the state of the Ethereum network.
@@ -408,3 +408,11 @@ Glossary
 
    ES1, ES2, and ES3 (obsolete)
       "Ethereum Script" versions 1,2 and 3. There were early versions of what would become the Ethereum Virtual Machine (EVM).
+
+   hardware wallet
+
+   brain wallet
+
+   cold storage
+
+

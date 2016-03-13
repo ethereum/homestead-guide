@@ -88,10 +88,9 @@ Alternatively, you can set this option at runtime via the console:
 .. code:: bash
 
     > admin.setSolc("/usr/local/bin/solc")
-    solc v0.9.32
-    Solidity Compiler: /usr/local/bin/solc
-    Christian <c@ethdev.com> and Lefteris <lefteris@ethdev.com> (c) 2014-2015
-    true
+    solc, the solidity compiler commandline interface
+    Version: 0.2.2-02bb315d/.-Darwin/appleclang/JIT linked to libethereum-1.2.0-8007cef0/.-Darwin/appleclang/JIT
+    path: /usr/local/bin/solc
 
 .. _compile_a_simple_contract:
 

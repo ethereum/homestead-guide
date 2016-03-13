@@ -8,7 +8,7 @@ various other clients which have been built by the community or by other
 commercial entities.
 
 Read more about the specific clients in the
-`Ethereum Clients <http://docs.ethereum.org/en/latest/ethereum-clients/index.html>`_ section.
+:ref:`Ethereum Clients` section.
 
 Only a subset of the clients have released versions which are Homestead
 compatible.  There are links to those releases in the right-hand column of
@@ -19,38 +19,30 @@ add links to them here as they are released.
 +------------------------+------------+------------------------+----------------------------------+
 | Client                 | Language   | Developers             | Homestead Release                |
 +========================+============+========================+==================================+
-| `mist (dapp browser)`_ | Javascript | `Ethereum Foundation`_ | `mist-v0.5.1`_                   |
+| `mist (dapp browser)`_ | Javascript | `Ethereum Foundation`_ | `mist-v0.5.2`_                   |
 +------------------------+------------+------------------------+----------------------------------+
-| `go-ethereum`_         | Go         | `Ethereum Foundation`_ | `geth-v1.3.5`_                   |
+| :ref:`go-ethereum`     | Go         | `Ethereum Foundation`_ | `geth-v1.3.5`_                   |
 +------------------------+------------+------------------------+----------------------------------+
-| `cpp-ethereum`_        | C++        | `Ethereum Foundation`_ | `eth-v1.2.2`_                    |
+| :ref:`cpp-ethereum`    | C++        | `Ethereum Foundation`_ | `eth-v1.2.2`_                    |
 +------------------------+------------+------------------------+----------------------------------+
-| `pyethapp`_            | Python     | `Ethereum Foundation`_ |                                  |
+| :ref:`pyethapp`        | Python     | `Ethereum Foundation`_ | v1.2.0 release imminent          |
 +------------------------+------------+------------------------+----------------------------------+
-| `ethereumjs-lib`_      | Javascript | `Ethereum Foundation`_ | `ethereumjs-lib-v3.0.0`_         |
+| :ref:`ethereumjs-lib`  | Javascript | `Ethereum Foundation`_ | `ethereumjs-lib-v3.0.0`_         |
 +------------------------+------------+------------------------+----------------------------------+
-| `Ethereum(J)`_         | Java       | `ConsenSys`_           | `ethereumJ-v1.2.0-homestead-RC`_ |
+| :ref:`Ethereum\(J\)`   | Java       | `ConsenSys`_           | `ethereumJ-v1.2.0-homestead-RC`_ |
 +------------------------+------------+------------------------+----------------------------------+
-| `ethereumH`_           | Haskell    | `ConsenSys`_           |                                  |
+| :ref:`ethereumH`       | Haskell    | `ConsenSys`_           | not available yet                |
 +------------------------+------------+------------------------+----------------------------------+
-| `Parity`_              | Rust       | `Ethcore`_             |                                  |
+| :ref:`Parity`          | Rust       | `Ethcore`_             | v1.0.0 release imminent          |
 +------------------------+------------+------------------------+----------------------------------+
 
 .. _mist (dapp browser): http://github.com/ethereum/mist/
-.. _go-ethereum: http://github.com/ethereum/go-ethereum/
-.. _cpp-ethereum: https://github.com/ethereum/webthree-umbrella
-.. _pyethapp: https://github.com/ethereum/pyethapp
-.. _ethereumjs-lib: https://github.com/ethereumjs/ethereumjs-lib
-.. _Ethereum(J): https://github.com/ethereum/ethereumj
-.. _ethereumH: https://github.com/jamshidh/ethereum-client-haskell
-.. _Parity: https://github.com/ethcore/parity
 
 .. _Ethereum Foundation: https://ethereum.org/foundation
 .. _ConsenSys: https://consensys.net/
-.. _Digix: https://dgx.io/
 .. _Ethcore: https://ethcore.io/
 
-.. _mist-v0.5.1: https://github.com/ethereum/mist/releases/tag/0.5.1
+.. _mist-v0.5.2: https://github.com/ethereum/mist/releases/tag/0.5.2
 .. _geth-v1.3.5: https://github.com/ethereum/go-ethereum/releases/tag/v1.3.5
 .. _eth-v1.2.2: https://github.com/ethereum/webthree-umbrella/releases/tag/v1.2.2
 .. _ethereumjs-lib-v3.0.0: https://github.com/ethereumjs/ethereumjs-lib/tree/v3.0.0
