@@ -2,6 +2,8 @@
 The Homestead Release
 ********************************************************************************
 
+Homestead is the second major version of the Ethereum platform and is the first production release of Ethereum. It includes several protocol changes and a networking change that provides the ability to do further network upgrades. The first version of Ethereum, called the Frontier release, was essentially a beta release that allowed developers to learn, experiment, and begin building Ethereum decentralized apps and tools. 
+
 Milestones of the Ethereum development roadmap
 -----------------------------------------------
 
@@ -9,7 +11,7 @@ The `original development roadmap <https://blog.ethereum.org/2015/03/03/ethereum
 
 * Prerelease Step 0: Olympic testnet - launched May 2015
 * Release Step One: Frontier - launched 30 July 2015
-* Release Step Two: Homestead - to launch Q1 2016
+* Release Step Two: Homestead - launches 14 March 2016 (Pi Day)
 * Release Step Three: Metropolis - TBA
 * Release Step Four: Serenity - TBA
 
