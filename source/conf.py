@@ -55,8 +55,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Ethereum Homestead'
-copyright = u'2016, ethdev && ethereum community'
-author = u'ethdev && ethereum community'
+copyright = u'2016, Ethereum community'
+author = u'Ethereum community'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
