@@ -1,5 +1,0 @@
-assasallah
-
-hu
-
-akbar
