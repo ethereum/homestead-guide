@@ -235,7 +235,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   (master_doc, 'homesteadguide.tex', u'Ethereum Homestead Documentation',
-   u'ethdev \\&\\& ethereum community', 'manual'),
+   u'Ethereum community', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
