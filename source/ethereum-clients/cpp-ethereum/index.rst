@@ -8,7 +8,9 @@ cpp-ethereum
     :height: 187px
     :width: 187px
 
-..  image:: https://dappsforbeginners.files.wordpress.com/2015/02/ethereum-logo.jpg?w=300
+..  image:: https://ethereum.org/images/logos/ETHEREUM-ICON_Black.png
+    :height: 187px
+    :width: 187px
    
 Quick Start
 --------------------------------------------------------------------------------
