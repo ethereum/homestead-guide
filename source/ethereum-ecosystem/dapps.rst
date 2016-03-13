@@ -1,7 +1,7 @@
 ********************************************************************************
 Dapps
 ********************************************************************************
-Dapps are programs which are run by many people that either uses or creates a decentralized network for some specific purpose (eg. connecting buyers and sellers in some marketplace, sharing files, online file storage, maintaining a currency). Ethereum-based decentralized applications (also called Đapps, where the Đ is the Norse letter “eth”) typically consist of an HTML/Javascript webpageand a special Javascript API for sending transactions to the blockchain, reading data from the blockchain, and interacting with Whisper and Swarm. A Đapp typically has a specific associated contract on the blockchain, though Đapps that facilitate the creation of many types of contracts are possible.
+Dapps are programs which are run by many people that either uses or creates a decentralized network for some specific purpose (eg. connecting buyers and sellers in some marketplace, sharing files, online file storage, maintaining a currency). Ethereum-based decentralized applications (also called Đapps, where the Đ is the Norse letter “eth”) typically consist of an HTML/Javascript webpage and a special Javascript API for sending transactions to the blockchain, reading data from the blockchain, and interacting with Whisper and Swarm. A Đapp typically has a specific associated contract on the blockchain, though Đapps that facilitate the creation of many types of contracts are possible.
 
 Dapp directories
 ====================================
