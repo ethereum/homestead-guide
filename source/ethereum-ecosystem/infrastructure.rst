@@ -42,6 +42,6 @@ Hosted blockchain explorers
 
 Alternative ways to explore the blockchain
 --------------------------------------------------------------------------------
-* `Etherlisten <www.etherlisten.com>`_ - Realtime Ethereum transaction visualizer and audializer
+* `Etherlisten <http://www.etherlisten.com>`_ - Realtime Ethereum transaction visualizer and audializer
 * `chaingraph <https://www.reddit.com/r/ethereum/comments/3ibjxu/chain_graph_a_blockchain_visualiser/>`_ - Visualised blockchain explorer - *no longer available*
 
