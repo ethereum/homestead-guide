@@ -28,7 +28,7 @@ Homestead comes with a few backward-incompatible protocol changes, and therefore
   * transaction signatures whose s-value is greater than ``secp256k1n/2`` are now considered invalid
   * If contract creation does not have enough gas to pay for the final gas fee for adding the contract code to the state, the contract creation fails (ie. goes out-of-gas) rather than leaving an empty contract.
   * Change the difficulty adjustment algorithm
-* `EIP 7: DELEGATECALL <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7.md>`_: Add a new opcode, ``DELEGATECALL`` at ``0xf4``, which is similar in idea to ``CALLCODE``, except that it propagates the sender and value from the parent scope to the child scope, ie. the call created has the same sender and value as the original call. This means contracts can store pass through information while following msg.sender and msg.value from its parent contract. Great for contracts which create contracts but don’t repeat additional information which saves gas.See `comments on EIP 7 <https://github.com/ethereum/EIPs/issues/23>`_
+* `EIP 7: DELEGATECALL <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7.md>`_: Add a new opcode, ``DELEGATECALL`` at ``0xf4``, which is similar in idea to ``CALLCODE``, except that it propagates the sender and value from the parent scope to the child scope, ie. the call created has the same sender and value as the original call. This means contracts can store pass through information while following msg.sender and ``msg.value`` from its parent contract. Great for contracts which create contracts but don’t repeat additional information which saves gas. See `comments on EIP 7 <https://github.com/ethereum/EIPs/issues/23>`_
 * `EIP 8: devp2p Forward Compatibility compliance with the Robustness Principle <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-8.md>`_ Changes to the RLPx Discovery Protocol and RLPx TCP transfer protocol to ensure that all client software in use on the Ethereum network can cope with future network protocol upgrades. For older versions of an Ethereum client, updates to the network protocol weren’t being accepted by older clients and would refuse communication if the hello packets didn’t meet expectations. This update means all future versions of the client will accept incoming network upgrades and handshakes.
 
 The changes have the following benefits:
@@ -42,4 +42,6 @@ The changes have the following benefits:
 * EIP-8 makes sure that all client software in use on the Ethereum network can cope with future network protocol upgrades.
 
 
+Additional resources:
 * `Reddit discussion on Homestead Release <https://www.reddit.com/r/ethereum/comments/48arax/homestead_release_faq/>`_
+* `EIP

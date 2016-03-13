@@ -10,7 +10,7 @@ Dapps that use Ethereum are compiled to the following lists. They are listed in 
 
 * `Ethercasts State of the Ðapps <http://dapps.ethercasts.com/>`_
 * `Dappslist <https://dappslist.com/>`_
-* `Dappcentral <http://dappcentral.io/>`_ - Sortable pages for Dapps with instructions, code validation, and network stats. 
+* `Dappcentral <http://dappcentral.io/>`_ - Sortable pages for Dapps with instructions, code validation, and network stats.
 * `Dapps Mailing List <http://dapplist.net/>`_ - Mailing list for developers on Ethereum (discontinued).
 
 The offered decentralised services listed cover a wide range of areas inlcuding finance, insurance, prediction markets, social networks, distributed computation and storage, gambling, marketplace, internet of things, governance, collaboration, development and games.
@@ -19,8 +19,8 @@ In the future, dapps are likely to be listed and distributed in `dappstores_ <ht
 
 Dapp browsers
 ===========================
-
+https://www.reddit.com/r/ethereum/comments/1vb1gc/is_ethereum_an_alt_coin_can_anyone_eli5/a
 | `Mist <https://github.com/ethereum/mist>`_ - official GUI dapp browser developed by the foundation, alpha stage. Mist as Wallet dapp is in beta.
-| `MetaMask <https://metamask.io/>`_ - Aaron Kumavis Davis's in-browser GUI.
+| `MetaMask <https://metamask.io/>`_ - Aaron Kumavis Davis's in-browser GUI. `Epicenter Bitcoin interview on github <https://www.reddit.com/r/ethereum/comments/3x97rg/aaron_davis_explains_the_differences_between/>`_
 | `AlethZero <https://github.com/ethereum/alethzero>`_ - C++ eth client GUI, (discontinued).
 | `Supernova <http://www.supernove.cc>`_ (discontinued).

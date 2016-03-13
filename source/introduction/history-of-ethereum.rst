@@ -29,18 +29,25 @@ ETH/DEV and Ethereum development
 ================================================================================
 Following the successful ether presale, Ethereum development was formalized under a non-for-profit organization called ETH DEV, which manages the development of Ethereum under contract from Ethereum Suisse – with Vitalik Buterin, Gavin Wood, and Jeffrey Wilcke as the 3 directors of the organization. Developer interest in Ethereum grew steadily throughout 2014 and the ETH DEV team delivered a series of proof-of-concept (PoC) releases for the development community to evaluate. Frequent posts by ETH DEV team on the  `the Ethereum blog <https://blog.ethereum.org>`_ also kept the excitement and momentum around Ethereum going. Increasing traffic and growing user-base on both the Ethereum forum and the ethereum subreddit testified that the platform is attracting a fast-growing and devoted developer community. This trend has been continuing to this very day.
 
-DEVcon-0
+DEVCON-0
 --------------------------------------------------------------------------------
-In November 2014, ETH DEV organized the `DEVcon-0 event <https://blog.ethereum.org/2014/12/05/d%CE%BEvcon-0-recap/>`_, which brought together Ethereum developers from around the world to Berlin to meet and discuss a diverse range of Ethereum technology topics. Several of the presentations and sessions at DEVcon-0 would later drive important initiatives to make Ethereum more reliable, more secure, and more scalable. Overall, the event galvanized developers as they continued to work towards the launch of Ethereum.
+In November 2014, ETH DEV organized the `DEVCON-0 event <https://blog.ethereum.org/2014/12/05/d%CE%BEvcon-0-recap/>`_, which brought together Ethereum developers from around the world to Berlin to meet and discuss a diverse range of Ethereum technology topics. Several of the presentations and sessions at DEVcon-0 would later drive important initiatives to make Ethereum more reliable, more secure, and more scalable. Overall, the event galvanized developers as they continued to work towards the launch of Ethereum.
 
-* https://www.youtube.com/watch?v=_BvvUlKDqp0&list=PLJqWcTqh_zKEjpSej3ddtDOKPRGl_7MhS
+* `DEVCON-0 talks youtube playlist <https://www.youtube.com/watch?v=_BvvUlKDqp0&list=PLJqWcTqh_zKEjpSej3ddtDOKPRGl_7MhS>`_
+* `DEVCON-0 reddit post <https://www.reddit.com/r/ethereum/comments/2nle7m/community_update_whats_going_on_devcon0/>`_
+* `Gav's DEV update mentioning DEVCON-0 <https://blog.ethereum.org/2014/11/18/gavs-d%CE%BEv-update-iii/>`_
+* `DEVcon-0 recap blog post <https://blog.ethereum.org/2014/12/05/d%CE%BEvcon-0-recap/>`_
 
 
 DEVgrants program
 --------------------------------------------------------------------------------
 In April 2015, `the DEVgrants program <https://blog.ethereum.org/2015/04/07/devgrants-help/>`_ was announced, which is a program that offers funding for contributions both to the Ethereum platform, and to projects based on Ethereum. Hundreds of developers were already contributing their time and thinking to Ethereum projects and in open source projects. This program served to reward and support those developers for their contributions. The DEVgrants program continues to operate today and funding of the program was recently renewed in January 2016.
 
-* https://blog.ethereum.org/2016/01/08/d%CE%BEvgrants-update-new-funding/
+* `DEVgrants initial announcement <https://blog.ethereum.org/2015/04/07/devgrants-help/>`_
+* `Announcement of new funding at DEVCON-1 <https://blog.ethereum.org/2016/01/08/d%CE%BEvgrants-update-new-funding/>`_
+* `DEVgrants public gitter room <https://gitter.im/devgrants/public>`_
+* `DEVgrants talk at DEVCON-1 by Wendell Davis on YouTube <https://www.youtube.com/watch?v=4jGqmlA4KEY>`_
+
 
 
 Olympic testnet, bug bounty and security audit
@@ -70,14 +77,20 @@ See also:
 * `Frontier is coming <https://blog.ethereum.org/2015/07/22/frontier-is-coming-what-to-expect-and-how-to-prepare>`_ - Frontier launch announcement by Stephan Tual
 * `Frontier launch final steps <https://blog.ethereum.org/2015/07/27/final-steps/>`_ - Follow-up post to announcement
 * `Ethereum goes live with Frontier launch <https://blog.ethereum.org/2015/07/30/ethereum-launches>`_
-* `The frontier website <https://frontier.ethereum.org>`_ -
+* `The frontier website <https://web.archive.org/web/20160207033817/https://ethereum.org/>`_
 
-DEVCON1
+DEVCON-1
 --------------------------------------------------------------------------------
-The second developers' conference `DEVCON1 <https://devcon.ethereum.org/>`_  took place in the city London at the beginning of November 2015. The 5-day event featured more than 100 presentations, panel discussions and lightening talks, attracted more than 400 participants, a mix of developers, entrepreneurs, thinkers, and business executives.
+The second developers' conference `DEVCON-1 <https://devcon.ethereum.org/>`_  took place in the city London at the beginning of November 2015. The 5-day event featured more than 100 presentations, panel discussions and lightening talks, attracted more than 400 participants, a mix of developers, entrepreneurs, thinkers, and business executives.
 The talks were all recorded and are `freely available <https://www.youtube.com/playlist?list=PLJqWcTqh_zKHQUFX4IaVjWjfT2tbS4NVk>`_
 
-The presence of large companies like UBS, IBM and Microsoft clearly indicated enterprise interest in the technology. Microsoft announced that it would offer `Ethereum on its new Blockchain as a Service <https://azure.microsoft.com/en-us/blog/ethereum-blockchain-as-a-service-now-on-azure/>`_  offering on the Microsoft Azure cloud platform. In conjunction with DEVCON1, this announcement will be remembered as the moment when blockchain technology became mainstream, with Ethereum at the center of it.
+The presence of large companies like UBS, IBM and Microsoft clearly indicated enterprise interest in the technology. Microsoft announced that it would offer `Ethereum on its new Blockchain as a Service <https://azure.microsoft.com/en-us/blog/ethereum-blockchain-as-a-service-now-on-azure/>`_  offering on the Microsoft Azure cloud platform. In conjunction with DEVCON-1, this announcement will be remembered as the moment when blockchain technology became mainstream, with Ethereum at the center of it.
 
-* `DEVCON1 talks Youtube playlist <https://www.youtube.com/playlist?list=PLJqWcTqh_zKHQUFX4IaVjWjfT2tbS4NVk>`_
-* `DEVCON1 website <https://devcon.ethereum.org/>`_ full listing of presentations with links to the slides if available.
+* `DEVCON-1 talks Youtube playlist <https://www.youtube.com/playlist?list=PLJqWcTqh_zKHQUFX4IaVjWjfT2tbS4NVk>`_
+* `DEVCON-1 website <https://devcon.ethereum.org/>`_ full listing of presentations with links to the slides if available.
+
+History resources
+----------------------------------------
+
+* `a simple graphical timeline <http://ethereumtimeline.org/>`
+*
