@@ -269,7 +269,7 @@ Glossary
       Sale of cryptocurrency before the actual launch of the network.
 
    static node
-      A feature supported by Geth, the Golang Ethereum client, which makes it possible to always connect to specific peers. Static nodes are re-connected on disconnects. For details, see the :ref:`section on static nodes <cr-static-node>`.
+      A feature supported by Geth, the Golang Ethereum client, which makes it possible to always connect to specific peers. Static nodes are re-connected on disconnects. For details, see the :ref:`section on static nodes <cr-static-nodes>`.
 
    bootnode
       The nodes which can be used to initiate the discovery process when running a node. The endpoints of these nodes are recorded in the Ethereum source code.
@@ -410,9 +410,7 @@ Glossary
       "Ethereum Script" versions 1,2 and 3. There were early versions of what would become the Ethereum Virtual Machine (EVM).
 
    hardware wallet
-
    brain wallet
-
    cold storage
 
 
