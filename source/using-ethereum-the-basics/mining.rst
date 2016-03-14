@@ -141,11 +141,11 @@ There is an option `to add extra Data <https://github.com/ethereum/go-ethereum/w
     ...
     }
 
-You can check your hashrate with `miner.hashrate <https://github.com/ethereum/go-ethereum/wiki/JavaScript-Console#adminminerhashrate>`_, the result is in H/s (Hash operations per second).
+You can check your hashrate with `eth.hashrate the result is in H/s (Hash operations per second).
 
 .. code-block:: javascript
 
-    > miner.hashrate
+    > eth.hashrate
     712000
 
 After you successfully mined some blocks, you can check the ether balance of your etherbase account. Now assuming your etherbase is a local account:
