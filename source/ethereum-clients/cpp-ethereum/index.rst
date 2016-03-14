@@ -136,7 +136,7 @@ What are the various modules?
         - secp256k1: implementation of the SECP 256k1 ECDSA signing algorithm.
 
 
-Detailed information on installing and building
+Installing and building
 --------------------------------------------------------------------------------
 
 .. toctree::
