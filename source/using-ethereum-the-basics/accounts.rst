@@ -163,7 +163,43 @@ Creating an account using the GUI Mist Ethereum wallet couldn’t be easier. In 
 
 .. note:: The Mist wallet is still in active development, so details of the steps outlined above may change with upgrades.
 
-Using EthKey
+Using Eth
+--------------------------------------------------------------------------------
+
+Every options related to key management available using geth can be used the same way in eth.
+
+Below are "account" related options:
+
+.. code-block:: Javascript
+
+  > eth account list  // List all keys available in wallet.
+  > eth account new   // Create a new key and add it to the wallet.
+  > eth account update [<uuid>|<address> , ... ]  // Decrypt and re-encrypt given keys.
+  > eth account import [<uuid>|<file>|<secret-hex>] // Import keys from given source and place in wallet.
+
+Below are "wallet" related option:
+
+.. code-block:: Javascript
+
+  > eth wallet import <file> //Import a presale wallet.
+
+.. note:: the 'account import' option can only be used to import generic key file. the 'wallet import' option can only be used to import a presale wallet.
+
+It is also possible to access keys management from the integrated console (using the built-in console or geth attach):
+
+.. code-block:: Javascript
+
+  > web3.personal
+  {
+	listAccounts: [],
+	getListAccounts: function(callback),
+	lockAccount: function(),
+	newAccount: function(),
+	unlockAccount: function()
+  }
+
+	
+Using EthKey (deprecated)
 --------------------------------------------------------------------------------
 
 Ethkey is a CLI tool of the C++ implementation that allows you to interact with the Ethereum wallet. With it you can list, inspect, create, delete and modify keys and inspect, create and sign transactions.
