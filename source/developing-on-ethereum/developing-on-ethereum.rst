@@ -7,5 +7,4 @@ Developing on Ethereum
    
    developer-tools.rst
    test-networks.rst
-   custom-networks.rst
    web3-base-layer-services.rst
