@@ -41,6 +41,9 @@ have passed security audits, work for all platforms and have
 :ref:`foundation` resources assigned to their ongoing maintenance and
 support.
 
+- Follow the :ref:`Installing binaries` instructions for **cpp-ethereum**
+- For **go-ethereum**, just unzip the `released binaries <https://github.com/ethereum/go-ethereum/releases>`_
+
 Beyond that, of course, it is all a matter of personal preference.  Try them all :-)
 
 If you want to do mining then Mist will not be sufficient.  Check out
