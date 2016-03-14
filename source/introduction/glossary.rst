@@ -4,19 +4,19 @@ Glossary
 
 .. glossary::
    :sorted:
- 
+
    Đ
       Đ, `D with stroke <https://en.wikipedia.org/wiki/D_with_stroke>`_, is used in Old English, Middle English, Icelandic, and Faroese to stand for an uppercase letter "Eth". The uppercase eth (Ð) is also used to symbolize the cryptocurrency Dogecoin.
 
    decentralized application
-      A program which is run by many people which either uses or creates a decentralized network for some specific purpose (eg. connecting buyers and sellers in some marketplace, sharing files, online file storage, maintaining a currency). Ethereum-based decentralized applications (also called Đapps, where the Đ is the Norse letter "eth") typically consist of an HTML/Javascript webpage, and if viewed inside Mist the browser recognizes special Javascript APIs for sending transactions to the blockchain, reading data from the blockchain and interacting with Whisper and Swarm. A Đapp typically also has a specific associated contract on the blockchain, though Đapps that facilitate the creation of many contracts are quite possible.
+      A program which is run by many people which either uses or creates a decentralized network for some specific purpose (e.g. connecting buyers and sellers in some marketplace, sharing files, online file storage, maintaining a currency). Ethereum-based decentralized applications (also called Đapps, where the Đ is the Norse letter "eth") typically consist of an HTML/Javascript webpage and a special Javascript API for sending transactions to the blockchain, reading data from the blockchain, and interacting with Whisper and Swarm. A Đapp typically also has a specific associated contract on the blockchain, though Đapps that facilitate the creation of many contracts are quite possible.
 
    decentralized organization
       An organization that has no centralized leadership, instead using a combination of formal democratic voting processes and stigmergic self-organization as their primary operating principles. A less impressive but sometimes confused concept is a "geographically distributed organization", an organization where people work far apart from each other and which may even have no office at all; GDOs can still have formal centralized leadership.
 
    identity
       A set of cryptographically verifiable interactions that have the property that they were all created by the same person
-   
+
    reputation
       The property of an identity that other entities believe that identity to be either (1) competent at some specific task, or (2) trustworthy in some context, i.e. not likely to betray others even if short-term profitable.
 
@@ -34,27 +34,25 @@ Glossary
 
    unique identity
       A set of cryptographically verifiable interactions that have the property that they were all created by the same person, with the added constraint that one person cannot have multiple unique identities
-   
+
    incentive compatibility
       A protocol is incentive-compatible if everyone is better off "following the rules" than attempting to cheat, at least unless a very large number of people agree to cheat together at the same time.
 
    decentralized autonomous organization
-      Decentralized organizations where the method of governance is in some fashion "autonomous", ie. it's not controlled by some form of discussion process or committee.
+      Decentralized organizations where the method of governance is in some fashion "autonomous", i.e. it's not controlled by some form of discussion process or committee.
 
    token system
       A fungible virtual good that can be traded. More formally, a token system is a database mapping addresses to numbers with the property that the primary allowed operation is a transfer of N tokens from A to B, with the conditions that N is non-negative, N is not greater than A's current balance, and a document authorizing the transfer is digitally signed by A. Secondary "issuance" and "consumption" operations may also exist, transaction fees may also be collected, and simultaneous multi-transfers with many parties may be possible. Typical use cases include currencies, cryptographic tokens inside of networks, company shares and digital gift cards.
 
    block
-      A block is a package of data that contains zero or more transactions, the hash of the previous block ("parent"), and optionally other data. The total set of blocks, with every block except for the initial "genesis block" containing the hash of its parent, is called the blockchain and contains the entire transaction history of a network. Note that some blockchain-based cryptocurrencies instead use the word "ledger" for a blockchain; the two are roughly equivalent, although in systems that use the term "ledger" each block generally contains a full copy of the current state (eg. currency balances, partially fulfilled contracts, registrations) of every account allowing users to discard outdated historical data.
+      A block is a package of data that contains zero or more transactions, the hash of the previous block ("parent"), and optionally other data. The total set of blocks, with every block except for the initial "genesis block" containing the hash of its parent, is called the blockchain and contains the entire transaction history of a network. Note that some blockchain-based cryptocurrencies instead use the word "ledger" for a blockchain; the two are roughly equivalent, although in systems that use the term "ledger" each block generally contains a full copy of the current state (e.g. currency balances, partially fulfilled contracts, registrations) of every account allowing users to discard outdated historical data.
 
-   account
-      A private and public key pair that allows you to receive and send ether. An account is the entry in a ledger, indexed by its address, that contains the complete data about the state of that account. In a currency system, this involves currency balances and perhaps unfulfilled trade orders; in other cases more complex relationships may be stored inside of accounts.
-
+   dapp
    Đapp
       Unofficially stands for either "distributed app" or "eth app". Some say it is pronounced Ethapp due to the use of the uppercase eth letter Ð.
 
    address
-      An address is the representation of a public key belonging to a particular user; for example, the address associated with the private key may look like cd2a3d9f938e13cd947ec05abc7fe734df8dd826. Note that in practice, the address is technically the hash of a public key, but for simplicity it's better to ignore this distinction.
+      An address is the representation of a public key belonging to a particular user; for example, the address associated with the private key may look like cd2a3d9f938e13cd947ec05abc7fe734df8dd826. Note that in practice, the address is technically the hash of a public key, but for simplicity it's better to ignore this distinction. A new `checksum-enabled address scheme <https://github.com/ethereum/EIPs/issues/55>`_ was introduced with the release of the Mist Ethereum wallet version 0.5.0.
 
    ether
       Ether is the name of the currency used within Ethereum. It is used to pay for computations within the EVM.
@@ -79,7 +77,7 @@ Glossary
 
    Web3
       The exact definition of the Web3 paradigm is still taking form, but it generally refers to the phenomenon of increased connectedness between all kinds of devices, decentralisation of services and applications, semantic storage of information online and application of artificial intelligence to the web.
-      
+
    DAO
       See Decentralized Autonomous Organisation.
 
@@ -150,7 +148,7 @@ Glossary
       Serpent is a high-level language whose syntax is similar to that of Python and it is designed to compile to code for the Ethereum Virtual Machine.
 
    EVM
-      Ethereum Virtual Machine, the decentralized computing platform which forms the core of the Ethereum platform. 
+      Ethereum Virtual Machine, the decentralized computing platform which forms the core of the Ethereum platform.
 
    virtual machine
       In computing, it refers to an emulation of a particular computer system.
@@ -172,19 +170,19 @@ Glossary
       In the case of Blockchain Proof of Work scenarios, the hash value, found by a Miner, matching the network's Difficulty thus proving the Block Validity is called Nonce as well.
 
    proof-of-work
-      Often seen in its abbreviated form "PoW", it refers to a mathematical value that can act act as the proof of having solved a resource and time consuming computational problem.
+      Often seen in its abbreviated form "PoW", it refers to a mathematical value that can act as the proof of having solved a resource and time consuming computational problem.
 
    proof-of-stake
-      An alternative method of mining blocks that require miners to demonstrate their possession of a certain amount of the currency of the network in question. This works on the principle that miners will be disincentivised to try to undermine a network in which they have a stake in. PoS is less wasteful than PoW, but is still often used together with it to provide added security to the network.
+      An alternative method of mining blocks that require miners to demonstrate their possession of a certain amount of the currency of the network in question. This works on the principle that miners will be disincentivised to try to undermine a network in which they have a stake. PoS is less wasteful than PoW, but is still often used together with it to provide added security to the network.
 
    CASPER
-      Casper is a security-deposit based economic consensus protocol. This means that nodes, so called “bonded validators”, have to place a security deposit (an action we call “bonding”) in order to serve the consensus by producing blocks. If a validator produces anything that Casper considers “invalid”, their deposit are forfeited along with the privilege of participating in the consensus process.  
+      Casper is a security-deposit based economic consensus protocol. This means that nodes, so called “bonded validators”, have to place a security deposit (an action we call “bonding”) in order to serve the consensus by producing blocks. If a validator produces anything that Casper considers “invalid”, the deposit is forfeited along with the privilege of participating in the consensus process.
 
    consensus
       The agreement among all nodes in the network about the state of the Ethereum network.
 
    homestead
-      Homestead is the second major version release of the Ethereum platform. Homestead includes several protocol changes and a networking change that makes possible further network upgrades: `EIP\-2 Main homestead hardfork changes <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2.mediawiki>`_; `EIP\-7 Hardfork EVM update (DELEGATECALL) <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7.md>`_; `EIP\-8 devp2p forward compatibility <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-8.md>`_. Homestead will launch when block 1,150,00 is reached on the Mainnet. On the Testnet, Homestead will launch at block 494,000.
+      Homestead is the second major version release of the Ethereum platform. Homestead includes several protocol changes and a networking change that makes possible further network upgrades: `EIP\-2 Main homestead hardfork changes <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2.mediawiki>`_; `EIP\-7 Hardfork EVM update (DELEGATECALL) <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7.md>`_; `EIP\-8 devp2p forward compatibility <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-8.md>`_. Homestead will launch when block 1,150,000 is reached on the Mainnet. On the Testnet, Homestead will launch at block 494,000.
 
    metropolis
       The third stage of Ethereum's release. This is the stage when the user interfaces come out (e.g. Mist), including a Dapp store, and non-technical users should feel comfortable joining at this point.
@@ -214,10 +212,10 @@ Glossary
       A micropayment is a financial transaction involving a very small sum of money (<1 USD) and usually one that occurs online.
 
    sharding
-      The splitting the space of possible accounts (contracts are accounts too) into subspaces, for example, based on first digits of their numerical addresses. This allows for contract executions to be executed within 'shards' instead of network wide, allowing for faster transactions and greater scalability.
+      The splitting of the space of possible accounts (contracts are accounts too) into subspaces, for example, based on first digits of their numerical addresses. This allows for contract executions to be executed within 'shards' instead of network wide, allowing for faster transactions and greater scalability.
 
    hash
-      A cryptographic function which takes an input (or 'message') and returns a fixed-size alphanumeric string, which is called the hash value (sometimes called a message digest, a digital fingerprint, a digest or a checksum). A hash function (or hash algorithm) is a process by which a document (ie. a piece of data or file) is processed into a small piece of data (usually 32 bytes) which looks completely random, and from which no meaningful data can be recovered about the document, but which has the important property that the result of hashing one particular document is always the same. Additionally, it is crucially important that it is computationally infeasible to find two documents that have the same hash. Generally, changing even one letter in a document will completely randomize the hash; for example, the SHA3 hash of "Saturday" is c38bbc8e93c09f6ed3fe39b5135da91ad1a99d397ef16948606cdcbd14929f9d, whereas the SHA3 hash of Caturday is b4013c0eed56d5a0b448b02ec1d10dd18c1b3832068fbbdc65b98fa9b14b6dbf. Hashes are usually used as a way of creating a globally agreed-upon identifier for a particular document that cannot be forged.
+      A cryptographic function which takes an input (or 'message') and returns a fixed-size alphanumeric string, which is called the hash value (sometimes called a message digest, a digital fingerprint, a digest or a checksum). A hash function (or hash algorithm) is a process by which a document (i.e. a piece of data or file) is processed into a small piece of data (usually 32 bytes) which looks completely random, and from which no meaningful data can be recovered about the document, but which has the important property that the result of hashing one particular document is always the same. Additionally, it is crucially important that it is computationally infeasible to find two documents that have the same hash. Generally, changing even one letter in a document will completely randomize the hash; for example, the SHA3 hash of "Saturday" is c38bbc8e93c09f6ed3fe39b5135da91ad1a99d397ef16948606cdcbd14929f9d, whereas the SHA3 hash of Caturday is b4013c0eed56d5a0b448b02ec1d10dd18c1b3832068fbbdc65b98fa9b14b6dbf. Hashes are usually used as a way of creating a globally agreed-upon identifier for a particular document that cannot be forged.
 
    crypto-fuel
       Similar to 'gas', referring to the amount of cryptocurrency required to power a transaction.
@@ -233,9 +231,6 @@ Glossary
 
    blocktime
       The average time interval between the mining of two blocks.
-
-   difficulty
-      The amount of effort required to mine a new block.
 
    network hashrate
       The number of hash calculations the network can make per second collectively.
@@ -253,7 +248,7 @@ Glossary
     A client that downloads only a small part of the blockchain, allowing users of low-power or low-storage hardware like smartphones and laptops to maintain almost the same guarantee of security by sometimes selectively downloading small parts of the state without needing to spend megabytes of bandwidth and gigabytes of storage on full blockchain validation and maintennance. See light client.
 
    uncle
-      Uncles are blockchain blocks found by a miner, when different miner has already found another block for the corresponding place in the blockchain. They are called “stale blocks”. The parent of an Uncle is an ancestor of the inserting block, located at the tip of the blockchain. In contrast to the Bitcoin network, Ethereum rewards stale blocks as well in order to avoid to penalise miners with a bad connection to the network. This is less critical In the Bitcoin network, because the Block Time there is much higher (~10 minutes) than on the Ethereum network (aimed to ~15 seconds, Frontier).
+      Uncles are blockchain blocks found by a miner, when a different miner has already found another block for the corresponding place in the blockchain. They are called “stale blocks”. The parent of an Uncle is an ancestor of the inserting block, located at the tip of the blockchain. In contrast to the Bitcoin network, Ethereum rewards stale blocks as well in order to avoid to penalise miners with a bad connection to the network. This is less critical in the Bitcoin network, because the Block Time there is much higher (~10 minutes) than on the Ethereum network (aimed to ~15 seconds).
 
    GHOST
       Greedy Heaviest-Observed Sub-Tree is an alternative chain-selection method that is designed to incentivise stale blocks (uncles) as well, thus reducing the incentive for pool mining. In GHOST, even the confirmation given by stale blocks to previous blocks are considered valid, and the miners of the stale blocks are also rewarded with a mining reward.
@@ -262,8 +257,7 @@ Glossary
       Merkle Patricia trees provide a cryptographically authenticated data structure that can be used to store all (key, value) bindings. They are fully deterministic, meaning that a Patricia tree with the same (key,value) bindings is guaranteed to be exactly the same down to the last byte and therefore have the same root hash, provide the holy grail of O(log(n)) efficiency for inserts, lookups and deletes, and are much easier to understand and code than more complex comparison-based alternatives like red-black trees.
 
    DAG
-      DAG stands for Directed Acyclic Graph. It is a graph, a set of nodes and links between nodes, that has very special properties.
-      Ethereum uses a DAG in Ethash, the Ethereum Proof of Work (POW) algorithm.The Ethash DAG takes a long time to be generated, which is done by a Miner node into a cache file for each Epoch. The file data is then used when a value from this graph is required by the algorithm.
+      DAG stands for Directed Acyclic Graph. It is a graph, a set of nodes and links between nodes, that has very special properties. Ethereum uses a DAG in Ethash, the Ethereum Proof of Work (POW) algorithm.The Ethash DAG takes a long time to be generated, which is done by a Miner node into a cache file for each Epoch. The file data is then used when a value from this graph is required by the algorithm.
 
    uncle rate
       The number of uncles produced per block.
@@ -275,13 +269,13 @@ Glossary
       Sale of cryptocurrency before the actual launch of the network.
 
    static node
-      ?
+      A feature supported by Geth, the Golang Ethereum client, which makes it possible to always connect to specific peers. Static nodes are re-connected on disconnects. For details, see the :ref:`section on static nodes <cr-static-nodes>`.
 
    bootnode
       The nodes which can be used to initiate the discovery process when running a node. The endpoints of these nodes are recorded in the Ethereum source code.
 
    exchange
-      An online marketplace which facilitate the exchange of crypto or fiat currencies based on the market exchange rate.
+      An online marketplace which facilitates the exchange of crypto or fiat currencies based on the market exchange rate.
 
    compiler
       A program that translates pieces of code written in high level languages into low level executable code.
@@ -290,10 +284,10 @@ Glossary
       The first block in a blockchain.
 
    network id
-      An number which identifies a particular version of the Ethereum network.
+      A number which identifies a particular version of the Ethereum network.
 
    block header
-      The data in a block which is unique to its content and the circumstances in which it was created. It includes hash of the previous block's header, the version of the software the block is mined with, the timestamp and the merkle root hash of the contents of the block.
+      The data in a block which is unique to its content and the circumstances in which it was created. It includes the hash of the previous block's header, the version of the software the block is mined with, the timestamp and the merkle root hash of the contents of the block.
 
    pending transaction
       A transaction that is not yet confirmed by the Ethereum network.
@@ -311,7 +305,7 @@ Glossary
       Locking down the exchange rate of the coins/tokens in two chains (usually a main and a side chain) in both directions.
 
    trustless
-      Refers to the ability of a network to trustworthily mediate transactions without any of the involved parties to trust anyone else.
+      Refers to the ability of a network to trustworthily mediate transactions without any of the involved parties needing to trust anyone else.
 
    faucet
       A website that dispenses (normally testnet) cryptocurrencies for free.
@@ -329,7 +323,7 @@ Glossary
       A string of characters derived from a private key that can be made public. The public key can be used to verify the authenticity of any signature created using the private key.
 
    encryption
-      Encryption is the conversion of electronic data into a form unreadable by anyone except the owner of the correct decryption key. It can further be described as a process by which a document (plaintext) is combined with a shorter string of data, called a key (eg. c85ef7d79691fe79573b1a7064c19c1a9819ebdbd1faaab1a8ec92344438aaf4), to produce an output (ciphertext) which can be "decrypted" back into the original plaintext by someone else who has the key, but which is incomprehensible and computationally infeasible to decrypt for anyone who does not have the key.
+      Encryption is the conversion of electronic data into a form unreadable by anyone except the owner of the correct decryption key. It can further be described as a process by which a document (plaintext) is combined with a shorter string of data, called a key (e.g. c85ef7d79691fe79573b1a7064c19c1a9819ebdbd1faaab1a8ec92344438aaf4), to produce an output (ciphertext) which can be "decrypted" back into the original plaintext by someone else who has the key, but which is incomprehensible and computationally infeasible to decrypt for anyone who does not have the key.
 
    digital signature
       A mathematical scheme for demonstrating the authenticity of a digital message or documents.
@@ -350,6 +344,8 @@ Glossary
       A computer program that runs as a background process instead of in direct control by an interactive user.
 
    system service
+      See base layer service
+
    base layer service
       Services such as SWARM and Whisper which are built into the Ethereum platform.
 
@@ -366,7 +362,7 @@ Glossary
       Application-specific integrated circuit, in this case referring to an integrated circuit custom built for cryptocurrency mining.
 
    memory-hard
-      Memory hard functions are processes that experiences a drastic decrease in speed or feasibility when the amount of available memory even slightly decreases.
+      Memory hard functions are processes that experience a drastic decrease in speed or feasibility when the amount of available memory even slightly decreases.
 
    keyfile
       Every account's private key/address pair exists as a single keyfile. These are JSON text files which contains the encrypted private key of the account, which can only be decrypted with the password entered during account creation.
@@ -377,6 +373,33 @@ Glossary
    block(chain) explorer
       A website that allows easy searching and extraction of data from the blockchain.
 
+   geth
+      Ethereum client implemented in the Golang programming language, based on the protocol as defined in the Ethereum Yellow Paper.
+
+   eth
+      Ethereum client implemented in the C++ programming language, based on the protocol as defined in the Ethereum Yellow Paper.
+
+   ethereumjs
+      Ethereum client implemented in the Javascript/Node programming language, based on the protocol as defined in the Ethereum Yellow Paper.
+
+   pyethereum
+      Ethereum client implemented in the Python programming language, based on the protocol as defined in the Ethereum Yellow Paper.
+
+   ethereumj
+      Ethereum client implemented in the Java programming language, based on the protocol as defined in the Ethereum Yellow Paper.
+
+   ethereumh
+      Ethereum client implemented in the Haskell programming language, based on the protocol as defined in the Ethereum Yellow Paper.
+
+   parity
+      Ethereum client implemented in the Rust programming language, based on the protocol as defined in the Ethereum Yellow Paper.
+
+   difficulty
+      In very general terms, the amount of effort required to mine a new block. With the launch of Homestead, the `difficulty adjustment algorithm will change <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2.mediawiki>`_.
+
+   account
+      Accounts are a central part of the Ethereum network and are an essential part of any transaction or contract. In Ethereum, there are two types of accounts: Externally Owned accounts (EOA) and Contract accounts.
+
    HLL (obsolete)
       Acronym for Higher Level Language, which is what Serpent and Solidity are. HLL is what early Ðapp developers called Ethereum programming languages that did not touch the low level elements. This phrase has been phased out.
 
@@ -385,3 +408,9 @@ Glossary
 
    ES1, ES2, and ES3 (obsolete)
       "Ethereum Script" versions 1,2 and 3. There were early versions of what would become the Ethereum Virtual Machine (EVM).
+
+   hardware wallet
+   brain wallet
+   cold storage
+
+

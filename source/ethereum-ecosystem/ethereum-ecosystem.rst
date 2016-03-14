@@ -8,4 +8,4 @@ Ethereum Ecosystem
    foundation.rst
    community.rst
    infrastructure.rst
-   web3.rst
+   dapps.rst
