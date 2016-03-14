@@ -4,7 +4,7 @@ Web3 Base Layer Services
 
 In addition to the Ethereum blockchain, more components are being developed that decentralise other important aspects of web applications.
 
-.. image:: https://blog.ethereum.org/wp-content/uploads/2014/08/ethereum-protocols.png
+.. image:: ../img/ethereum-protocols.png
 
 Swarm - Decentralised data storage and distribution
 ================================================================================

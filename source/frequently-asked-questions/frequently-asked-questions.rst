@@ -84,5 +84,4 @@ Frequently Asked Questions
 
 * **The Difference between POS and POW?**
 
-* **How can contracts access information about real world?**
-https://blog.ethereum.org/2014/03/28/schellingcoin-a-minimal-trust-universal-data-feed/
+* **How can contracts access information about real world?** https://blog.ethereum.org/2014/03/28/schellingcoin-a-minimal-trust-universal-data-feed/

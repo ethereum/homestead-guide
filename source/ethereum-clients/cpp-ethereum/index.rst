@@ -4,11 +4,11 @@
 cpp-ethereum
 ################################################################################
 
-..  image:: http://devstickers.com/assets/img/pro/35k9.png
+..  image:: ../../img/35k9.png
     :height: 187px
     :width: 187px
 
-..  image:: https://ethereum.org/images/logos/ETHEREUM-ICON_Black.png
+..  image:: ../../img/ETHEREUM-ICON_Black.png
     :height: 187px
     :width: 187px
    
@@ -74,11 +74,11 @@ repos <https://github.com/ethereum/webthree-umbrella/issues/251>`_.
 
 Current reality (squares are applications, circles are libraries):
 
-..  image:: http://doublethinkco.github.io/webthree-umbrella-cross/images/dependency_graph.svg
+..  image:: ../../img/dependency_graph.svg
 
 Target refactoring after Homestead:
 
-..  image:: http://doublethinkco.github.io/webthree-umbrella-cross/images/target_dependency_graph.svg
+..  image:: ../../img/target_dependency_graph.svg
 
 
 What are the various modules?
@@ -128,7 +128,7 @@ What are the various modules?
     - libweb3jsonrpc: json-rpc server-side endpoint, provides http and IPC (unix socket, windows pipe) connectors
     - libwebthree: service connectors for ethereum, swarm/ipfs and whisper.
     - libwhisper: whisper implementation
-**webthree-helpers** - build system and some external dependencies
+- **webthree-helpers** - build system and some external dependencies
     - cmake: cmake files for build system, contains specification of inter-dependencies
     - utils: external dependencies
         - json_spirit: JSON parser written for Boost's Spirit library.

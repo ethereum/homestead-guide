@@ -84,7 +84,7 @@ See `the full list of gitter rooms for the Ethereum organisation`_. Below is the
 .. _ethereumjs-lib: https://gitter.im/ethereum/ethereumjs-lib
 .. _devp2p: https://gitter.im/ethereum/devp2p
 
-.. _eips:
+.. _Ethereum Improvement Proposals:
 
 Ethereum Improvement Proposals (EIPs)
 ================================================================================
