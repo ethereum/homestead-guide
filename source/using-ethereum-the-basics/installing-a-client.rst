@@ -10,70 +10,41 @@ commercial entities.
 Read more about the specific clients in the
 :ref:`Ethereum Clients` section.
 
-Only a subset of the clients have released versions which are Homestead
-compatible.  There are links to those releases in the right-hand column of
-the table below.   The clients without links are all working on getting
-Homestead-compatible versions released.   Keep checking back.   We will
-add links to them here as they are released.
-
-+------------------------+------------+------------------------+----------------------------------+
-| Client                 | Language   | Developers             | Homestead Release                |
-+========================+============+========================+==================================+
-| `mist (dapp browser)`_ | Javascript | `Ethereum Foundation`_ | `mist-v0.5.2`_                   |
-+------------------------+------------+------------------------+----------------------------------+
-| :ref:`go-ethereum`     | Go         | `Ethereum Foundation`_ | `geth-v1.3.5`_                   |
-+------------------------+------------+------------------------+----------------------------------+
-| :ref:`cpp-ethereum`    | C++        | `Ethereum Foundation`_ | `eth-v1.2.2`_                    |
-+------------------------+------------+------------------------+----------------------------------+
-| :ref:`pyethapp`        | Python     | `Ethereum Foundation`_ | v1.2.0 release imminent          |
-+------------------------+------------+------------------------+----------------------------------+
-| :ref:`ethereumjs-lib`  | Javascript | `Ethereum Foundation`_ | `ethereumjs-lib-v3.0.0`_         |
-+------------------------+------------+------------------------+----------------------------------+
-| :ref:`Ethereum\(J\)`   | Java       | `ConsenSys`_           | `ethereumJ-v1.2.0-homestead-RC`_ |
-+------------------------+------------+------------------------+----------------------------------+
-| :ref:`ethereumH`       | Haskell    | `ConsenSys`_           | not available yet                |
-+------------------------+------------+------------------------+----------------------------------+
-| :ref:`Parity`          | Rust       | `Ethcore`_             | v1.0.0 release imminent          |
-+------------------------+------------+------------------------+----------------------------------+
-
-.. _mist (dapp browser): http://github.com/ethereum/mist/
-
-.. _Ethereum Foundation: https://ethereum.org/foundation
-.. _ConsenSys: https://consensys.net/
-.. _Ethcore: https://ethcore.io/
-
-.. _mist-v0.5.2: https://github.com/ethereum/mist/releases/tag/0.5.2
-.. _geth-v1.3.5: https://github.com/ethereum/go-ethereum/releases/tag/v1.3.5
-.. _eth-v1.2.2: https://github.com/ethereum/webthree-umbrella/releases/tag/v1.2.2
-.. _ethereumjs-lib-v3.0.0: https://github.com/ethereumjs/ethereumjs-lib/tree/v3.0.0
-.. _ethereumJ-v1.2.0-homestead-RC: https://github.com/ethereum/ethereumj/releases/tag/1.2.0-homestead-RC
 
 
 What should I install on my desktop/laptop?
 ================================================================================
 
 If you have a laptop or desktop machine, you should probably just install
-the Ethereum Wallet and you are done.
+the `Ethereum Wallet <https://github.com/ethereum/mist>`_ and you are done.
 
-That is a "single dapp" deployment of the Mist Browser which will be the
-centerpiece of the Metropolis phase of development, which comes after
-Homestead.   Mist comes with bundled geth and eth binaries and if you are
-not running a command-line client then Mist will run one of the bundles
-binaries for you.
+- Download ZIP from `Ethereum Wallet 0.5.2 <https://github.com/ethereum/mist/releases/tag/0.5.2>`_
+- Unzip wherever you like
+- Click on the executable (**Ethereum-Wallet, Ethereum-Wallet** or **Ethereum-Wallet.app**)
+- The block-chain will be downloaded
+
+The Ethereum Wallet is a "single dapp" deployment of the **Mist Browser**
+which will be the centerpiece of the Metropolis phase of development, which
+comes after Homestead.
+
+Mist comes with bundled :ref:`go-ethereum` and :ref:`cpp-ethereum` binaries
+and if you are not running a command-line Ethereum client when Mist starts
+then it will start running one of the bundles clients for you.
 
 If you want to interact with Ethereum on the command-line, and to take
 advantage of the Javascript console then you will want to install one of
-the client applications directly, as well as having the ability to connect
-to the network using Mist.
+the client applications directly, as well as Mist.
 
-geth and eth are the best place to start, because they have both been
-under development since the start of the project, have passed security
-audits, work for all platforms and have Ethereum Foundation resources
-assigned to their ongoing maintenance and support.  Beyond that, of course,
-it is all a matter of personal preference.  Try them all :-)
+:ref:`go-ethereum` and :ref:`cpp-ethereum` are the best place to start,
+because they have both been under development since the start of the project,
+have passed security audits, work for all platforms and have
+:ref:`foundation` resources assigned to their ongoing maintenance and
+support.
+
+Beyond that, of course, it is all a matter of personal preference.  Try them all :-)
 
 If you want to do mining then Mist will not be sufficient.  Check out
-the Mining section.
+the :ref:`mining` section.
 
 
 What should I install on my mobile/tablet?
@@ -90,8 +61,10 @@ off in a private branch, and is only available for the Go client.
 doublethinkco will be starting development of Light Client for the C++ client
 in the coming months, following grant funding.
 
-Check out Syng.im, who were initially using EthereumJ-Android but have
-recently flipped to Geth cross-builds with Light Client.
+Check out `Syng.im <http://syng.io>`_, who were initially using
+`ethereumj-personal <https://github.com/syng-im/ethereumj-personal>`_ based
+on :ref:`Ethereum(J)`, but have recently flipped to Geth cross-builds with
+Light Client.
 
 
 What should I install on my SBC?
