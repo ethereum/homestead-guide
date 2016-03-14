@@ -30,6 +30,8 @@ It is safe to transfer the entire directory or any individual keyfile between et
 
 .. warning:: Note that in case you are adding keyfiles to your node from a different node, the order of accounts may change. So make sure you do not rely or change the index in your scripts or code snippets.
 
+.. _creating_an_account:
+
 Creating an account
 ================================================================================
 
