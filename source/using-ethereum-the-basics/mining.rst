@@ -27,7 +27,7 @@ rewriting history by malicious actors are impossible unless the attacker possess
 
 Any node participating in the network can be a miner and their expected revenue from mining will be directly proportional to their (relative) mining power or *hashrate*, i.e., the number of nonces tried per second normalised by the total hashrate of the network.
 
-Ethash PoW is *memory hard*, making it *ASIC resistant*. Memory hardness is achieved with a proof of work algorithm that requires choosing subsets of a fixed resource dependent on the nonce and block header. This resource (a few gigabyte size data) is called a **DAG**. The `DAG <https://github.com/ethereum/wiki/wiki/Ethash-DAG>`_ is totally different every 30000 blocks, a 125-hour window called *epoch* (roughly 5.2 days) and takes a while to generate. Since the DAG only depends on block height, it can be pregenerated but if its not, the client needs to wait the end of this process to produce a block. If clients do not pregenerate and cache dags ahead of time the network may experience massive block delay on each epoch transition. Note that the DAG does not need to be generated for verifying the PoW essentially allowing for verification with both low CPU and small memory.
+Ethash PoW is *memory hard*, making it *ASIC resistant*. Memory hardness is achieved with a proof of work algorithm that requires choosing subsets of a fixed resource dependent on the nonce and block header. This resource (a few gigabyte size data) is called a **DAG**. The `DAG <https://github.com/ethereum/wiki/wiki/Ethash-DAG>`_ is different every 30000 blocks, a 125-hour window called *epoch* (roughly 5.2 days) and takes a while to generate. Since the DAG only depends on block height, it can be pregenerated but if its not, the client needs to wait the end of this process to produce a block. If clients do not pregenerate and cache dags ahead of time the network may experience massive block delay on each epoch transition. Note that the DAG does not need to be generated for verifying the PoW essentially allowing for verification with both low CPU and small memory.
 
 As a special case, when you start up your node from scratch, mining will only start once the DAG is built for the current epoch.
 
@@ -49,7 +49,7 @@ Mining success depends on the set block difficulty. Block difficulty dynamically
 Ethash DAG
 --------------------------------------------------------------------------------
 
-Ethash uses a *DAG* (directed acyclic graph) for the proof of work algorithm, this is generated for each *epoch*, i.e., every 30000 blocks (125 hours, ca. 5.2 days). The DAG takes a long time to generate. If clients only generate it on demand, you may see a long wait at each epoch transition before the first block of the new epoch is found. However, the DAG only depends on block number, so it can and should be calculated in advance to avoid long wait times at each epoch transition. Both ``geth`` and ``ethminer``implement automatic DAG generation and maintains two DAGS at a time for smooth epoch transitions. Automatic DAG generation is turned on and off when mining is controlled from the console. It is also turned on by default if ``geth`` is launched with the ``--mine`` option. Note that clients share a DAG resource, so if you are running multiple instances of any client, make sure automatic dag generation is switched off in all but one instance.
+Ethash uses a *DAG* (directed acyclic graph) for the proof of work algorithm, this is generated for each *epoch*, i.e., every 30000 blocks (125 hours, ca. 5.2 days). The DAG takes a long time to generate. If clients only generate it on demand, you may see a long wait at each epoch transition before the first block of the new epoch is found. However, the DAG only depends on the block number, so it can and should be calculated in advance to avoid long wait times at each epoch transition. Both ``geth`` and ``ethminer``implement automatic DAG generation and maintains two DAGs at a time for smooth epoch transitions. Automatic DAG generation is turned on and off when mining is controlled from the console. It is also turned on by default if ``geth`` is launched with the ``--mine`` option. Note that clients share a DAG resource, so if you are running multiple instances of any client, make sure automatic dag generation is switched off in all but one instance.
 
 To generate the DAG for an arbitrary epoch:
 
@@ -85,12 +85,12 @@ CPU mining
 
 You can use your computer's central processing unit (CPU) to mine ether. This is no longer profitable, since GPU miners are roughly two orders of magnitude more efficient. However, you can use CPU mining to mine on the Morden testnet or a private chain for the purposes of creating the ether you need to test contracts and transactions without spending your real ether on the live network.
 
-.. note:: that testnet ether has no value other than using it for testing purposes (see :ref: `test-networks`).
+.. note:: The testnet ether has no value other than using it for testing purposes (see :ref: `test-networks`).
 
 Using geth
 -------------------------------
 When you start up your ethereum node with ``geth`` it is not mining by
-default. To start it in mining mode, you use the ``--mine`` `command line option <https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options>`__.
+default. To start it in CPU mining mode, you use the ``--mine`` `command line option <https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options>`__.
 The ``-minerthreads`` parameter can be used to set the number parallel mining threads (defaulting to the total number of processor cores).
 
 ``geth --mine --minerthreads=4``
@@ -208,10 +208,9 @@ If you're on 15.04, Go to "Software and Updates > Additional Drivers" and set it
 
 If you're on 14.04, go to "Software and Updates > Additional Drivers" and set it to "Using video drivers for the AMD graphics accelerator from fglrx". Unfortunately, for some of you this will not work due to a known bug in Ubuntu 14.04.02 preventing you from switching to the proprietary graphics drivers required to GPU mine.
 
-So, if you encounter this bug, and before you do anything else, go to "Software and updates > Updates" and select "Pre-released updates trusty proposed". Then, go back to "Software and Updates > Additional Drivers" and set it to "Using video drivers for the AMD graphics accelerator from fglrx"). Reboot.
-Once rebooted, it's well worth having a check that the drivers have now indeed been installed correctly.
+So, if you encounter this bug, and before you do anything else, go to "Software and updates > Updates" and select "Pre-released updates trusty proposed". Then, go back to "Software and Updates > Additional Drivers" and set it to "Using video drivers for the AMD graphics accelerator from fglrx"). After rebooting, it's well worth having a check that the drivers have now indeed been installed correctly (For example by going to "Additional Drivers" again).
 
-Whatever you do, if you are on 14.04.02 do not alter the drivers or the drivers configuration once set. For example, the usage of aticonfig --initial can and likely will 'break' your setup. If you accidentally alter their configuration, you'll need to de-install the drivers, reboot, reinstall the drivers and reboot.
+Whatever you do, if you are on 14.04.02 do not alter the drivers or the drivers configuration once set. For example, the usage of aticonfig --initial (especially with the -f, --force option) can 'break' your setup. If you accidentally alter their configuration, you'll need to de-install the drivers, reboot, reinstall the drivers and reboot.
 
 Mac set-up
 -------------------------------
@@ -253,7 +252,7 @@ Using ethminer with geth
 
 .. note:: You do **not** need to give ``geth`` the ``--mine`` option or start the miner in the console unless you want to do CPU mining on TOP of GPU mining.
 
-If the default for ``ethminer`` does not work try to specify the OpenCL device with: ``--opencl-device X`` where X is 0, 1, 2, etc. When running ``ethminer`` with ``-M`` (benchmark), you should see something like:
+If the default for ``ethminer`` does not work try to specify the OpenCL device with: ``--opencl-device X`` where X is {0, 1, 2,...}. When running ``ethminer`` with ``-M`` (benchmark), you should see something like:
 
 .. code-block:: bash
 
@@ -311,9 +310,13 @@ Ensure that an eth++ node is running with your coinbase address properly set:
 
 Notice that we also added the -j argument so that the client can have the JSON-RPC server enabled to communicate with the ethminer instances. Additionally we removed the mining related arguments since ethminer will now do the mining for us.
 For each of your GPUs execute a different ethminer instance:
-ethminer --no-precompute -G --opencl-device XX
-Where XX is an index number corresponding to the openCL device you want the ethminer to use.
-In order to easily get a list of OpenCL devices you can execute ethminer --list-devices which will provide a list of all devices OpenCL can detect, with also some additional information per device.
+
+.. code-block:: bash
+
+ethminer --no-precompute -G --opencl-device X
+
+Where X is the index number corresponding to the openCL device you want the ethminer to use  {0, 1, 2,...}.
+In order to easily get a list of OpenCL devices you can execute ``ethminer --list-devices`` which will provide a list of all devices OpenCL can detect, with also some additional information per device.
 
 Below is a sample output:
 
@@ -325,7 +328,7 @@ Below is a sample output:
      CL_DEVICE_MAX_MEM_ALLOC_SIZE: 1071586304
      CL_DEVICE_MAX_WORK_GROUP_SIZE: 1024
 
-Finally the --no-precompute argument requests that the ethminers don't create the DAG of the next epoch ahead of time.
+Finally the ``--no-precompute`` argument requests that the ethminers don't create the DAG of the next epoch ahead of time. Although this is not recommended since you'll have a mining interruption every time when there's an epoch transition.
 
 Benchmarking
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -341,9 +344,9 @@ If you have many devices and you'll like to benchmark each individually, you can
 
 .. code-block:: bash
 
- ethminer -G -M --opencl-device XX
+ ethminer -G -M --opencl-device X
 
-Use ethminer --list-devices to list possible numbers to substitute for the XX.
+Use ethminer ``--list-devices`` to list possible numbers to substitute for the X {0, 1, 2,...}.
 
 
 
@@ -364,11 +367,11 @@ At this point some problems may appear. If you get an error, you can abort the m
 Pool mining
 ================================================================================
 
-Mining pools are cooperatives that aim to smooth out expected revenue by pooling the mining power of participating miners. The mining pool submits blocks with proof of work from a central account and redistributes the reward to participants in proportion to their contributed mining power. _`Mining Pools` lists the pools we know of.
+Mining pools are cooperatives that aim to smooth out expected revenue by pooling the mining power of participating miners. In return, they usually charge you 0-5% of your mining rewards. The mining pool submits blocks with proof of work from a central account and redistributes the reward to participants in proportion to their contributed mining power.
 
 .. warning::  Most mining pools involve third party, central components which means they are not trustless. In other words, pool operators can run away with your earnings. Act with caution. There are a number of trustless, decentralised pools with open source codebase.
 
-.. warning:: Mining pools only outsource proof of work calculation, they do not validate blocks or run the VM to check state transitions brought about by executing the transactions. This effectively make pools behave like single nodes in terms of security, so their growth poses a centralisation risk of a 51% attack. Make sure you follow the network capacity distribution and do not allow pools to grow too large.
+.. warning:: Mining pools only outsource proof of work calculation, they do not validate blocks or run the VM to check state transitions brought about by executing the transactions. This effectively make pools behave like single nodes in terms of security, so their growth poses a centralisation risk of a `51% attack <https://learncryptography.com/cryptocurrency/51-attack>`_. Make sure you follow the network capacity distribution and do not allow pools to grow too large.
 
 Mining pools
 --------------------------------------------------------------------
@@ -379,20 +382,22 @@ Mining pools
 * `supernova`_
 * `coinmine.pl`_
 * `eth.pp.ua`_
-* `talkether`_ - Unconventional payout scheme
+* `talkether`_ - Unconventional payout scheme, partially decentralized
 * `weipool`_
 * `ethereumpool`_
 * `pooleum`_
 * `alphapool`_
-* `dwarfpool`_
+* `cryptopool`_
+* `unitedminers`_
+* `dwarfpool`_ - Try to avoid this (currently over 50% of the network)
 * `laintimes <http://pool.laintimes.com/>`_ - Discontinued
 
 .. _Ethpool: https://github.com/etherchain-org/ethpool-core
 .. _Ethpool source: https://github.com/etherchain-org/ethpool-core
 .. _ethereumpool: https://ethereumpool.co/
 .. _nanopool: http://eth.nanopool.org/
-.. _pooleum:
-.. _alphapool:
+.. _pooleum: http://www.pooleum.com
+.. _alphapool: http://www.alphapool.xyz/
 .. _dwarfpool: http://dwarfpool.com/eth
 .. _talkether: http://talkether.org/
 .. _weipool: http://weipool.org/
@@ -401,6 +406,8 @@ Mining pools
 .. _eth.pp.ua:  https://eth.pp.ua/
 .. _coinotron: https://www.coinotron.com/
 .. _etherchain.org: https://etherchain.org/
+.. _unitedminers: http://eth.unitedminers.cloud/
+.. _cryptopool: http://ethereum.cryptopool.online/
 
 
 Mining resources
@@ -409,8 +416,9 @@ Mining resources
 * `Top miners of last 24h on etherchain <https://etherchain.org/statistics/miners>`_
 * `pool hashrate distribution for august 2015 <ehttp://cryptomining-blog.com/5607-the-current-state-of-ethereum-mining-pools/>`_
 * `Unmaintained list of pools on Forum <https://forum.ethereum.org/discussion/3659/list-of-pools>`_
-* `Mining profitability calculator by cryptowizzard <http://cryptowizzard.github.io/eth-mining-calculator/>`_
+* `Mining profitability calculator on cryptowizzard <http://cryptowizzard.github.io/eth-mining-calculator/>`_
+* `Mining profitability calculator with Profitability-Factor on ethermining<http://ethermining.ch/>`_
 * `Mining profitability calculator on etherscan <http://etherscan.io/ether-mining-calculator/>`_
-* `Mining profitability calculator in the ether <http://ethereum-mining-calculator.com/>`_
+* `Mining profitability calculator on In The Ether <http://ethereum-mining-calculator.com/>`_
 * `Forum thread explaining uncles <https://forum.ethereum.org/discussion/2262/eli5-whats-an-uncle-in-ethereum-mining>`_
 * `Mining difficulty chart on etherscan <http://etherscan.io/charts/difficulty>`_
