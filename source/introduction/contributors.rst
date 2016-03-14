@@ -15,7 +15,6 @@ We would like to thank everybody who helped in this effort for `their contributi
 .. image:: http://memesvault.com/wp-content/uploads/Feels-Good-Man-Frog-02.png
 
 - `Joseph Chow <https://github.com/ethers>`_
-- `Bertie Dinneen <https://github.com/bdinn1>`_
 - `Erik Edrosa <https://github.com/OrangeShark>`_
 - `Rocky Fikki <https://github.com/rfikki>`_
 - `Alex Fisher <https://github.com/alexfisher>`_
@@ -42,3 +41,4 @@ And these pseudonymous contributors:
 - `LiteBit <https://github.com/LiteBit>`_
 - `azulmarino <https://github.com/azulmarino>`_
 - `madhancr <https://github.com/madhancr>`_
+- `bdinn1 <https://github.com/bdinn1>`_
