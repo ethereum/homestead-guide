@@ -34,6 +34,7 @@ We would like to thank everybody who helped in this effort for `their contributi
 - `Scott Stevenson <https://github.com/ScottStevenson>`_
 - `Bob Summerwill <https://github.com/bobsummerwill>`_
 - `Alex van de Sande <https://github.com/alexvandesande>`_
+- `Paul Schmitzer <https://github.com/LiteBit>`_
 - `Sudeep Singh <https://github.com/c0d3inj3cT>`_
 - `Viktor Trón ("zelig") <https://github.com/zelig>`_
 - `Luca Zeug <https://github.com/luclu>`_
@@ -41,5 +42,4 @@ We would like to thank everybody who helped in this effort for `their contributi
 And these pseudonymous contributors:
 
 - `azulmarino <https://github.com/azulmarino>`_
-- `LiteBit <https://github.com/LiteBit>`_
 - `madhancr <https://github.com/madhancr>`_
