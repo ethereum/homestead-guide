@@ -34,6 +34,10 @@ In that case, the genesis block description provided by --config will be overwri
 	
 	- sealEngine (engine use to mine block)
 
+		"Ethash" is the Ethereum proof of work engine (used by the live network).
+
+		"NoProof" no proof of work is needed to mine a block.
+
 	- params (general network information like minGasLimit, minimumDifficulty, blockReward, networkID)
 
 	- genesis (genesis block description)
