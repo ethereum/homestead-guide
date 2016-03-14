@@ -21,6 +21,7 @@ We would like to thank everybody who helped in this effort for `their contributi
 - `Taylor Gerring <https://github.com/tgerring>`_
 - `Joël Hubert <https://github.com/jmahhh>`_
 - `Bas van Kervel <https://github.com/bas-vk>`_
+- `Chandra Kumar <https://github.com/klmoney>`_
 - `Guangmian Kung <https://github.com/gmkung>`_
 - `Hugh Lang <https://github.com/hughlang>`_
 - `Andrew Mazzola <https://github.com/admazzola>`_
@@ -37,7 +38,6 @@ We would like to thank everybody who helped in this effort for `their contributi
 
 And these pseudonymous contributors:
 
-- `klmoney <https://github.com/klmoney>`_
 - `LiteBit <https://github.com/LiteBit>`_
 - `azulmarino <https://github.com/azulmarino>`_
 - `madhancr <https://github.com/madhancr>`_
