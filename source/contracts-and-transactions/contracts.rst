@@ -2,7 +2,7 @@
 Contracts
 ********************************************************************************
 
-What is a Contract?
+What is a contract?
 ================================================================================
 
 A contract is a collection of code (its functions) and data (its state) that
@@ -11,15 +11,13 @@ able to pass messages between themselves as well as doing practically Turing
 complete computation. Contracts live on the blockchain in a Ethereum-specific
 binary format called Ethereum Virtual Machine (EVM) bytecode. 
 
-
 Contracts are typically written in some high level language such as `Solidity
 <https://solidity.readthedocs.org/en/latest/>`_ and then compiled into bytecode
-to be uploaded on the blockchain. Note that other languages also exist, notably
-Serpent and LLL, which are described further in the
-:ref:`ethereum-high-level-languages` section of this documentation.
+to be uploaded on the blockchain.
 
+.. seealso:: Other languages also exist, notably Serpent and LLL, which are described further in the :ref:`ethereum-high-level-languages` section of this documentation.
 
-Write a Contract 
+Writing a contract 
 ================================================================================
 
 No language would be complete without a Hello World program. Operating within
@@ -38,14 +36,10 @@ blockchain:
 This contract will create a log entry on the blockchain of type Print with a
 parameter "Hello, World!" each time it is executed.
 
-Visit the `Solidity documentation
-<https://solidity.readthedocs.org/en/latest/>`_ for more examples and
-guidelines to writing Solidty code.
+.. seealso:: `Solidity documentation <https://solidity.readthedocs.org/en/latest/>`_ has more examples and guidelines to writing Solidty code.
 
-
-Compile a Contract 
+Compiling a contract 
 ================================================================================
-
 
 Compilation of solidity contracts can be accomplished via a number of
 mechanisms.
@@ -55,13 +49,14 @@ mechanisms.
   ``geth`` or ``eth++`` (This still requires the ``solc`` compiler to be
   installed).
 * The `online Solidity realtime compiler <https://chriseth.github.io/browser-solidity/>`_.
+* The `Meteor dapp Cosmo for building solidity contracts <https://github.com/SilentCicero/meteor-dapp-cosmo>`_.
 * The `Mix IDE <https://github.com/ethereum/wiki/wiki/Mix:-The-DApp-IDE>`_. 
-* The `Ethereum Wallet <https://github.com/ethereum/mist/releases/tag/0.4.0>`_.
+* The `Ethereum Wallet <https://github.com/ethereum/mist/releases>`_.
 
 .. note::  More information on solc and compiling Solidity contract code can be found `here <https://solidity.readthedocs.org/en/latest/frequently-asked-questions.html#how-do-i-compile-contracts>`_.
 
 
-Setting up the solidity compiler in geth.
+Setting up the solidity compiler in geth
 --------------------------------------------------------------------------------
 
 If you start up your ``geth`` node, you can check which compilers are
@@ -93,11 +88,11 @@ Alternatively, you can set this option at runtime via the console:
 .. code:: bash
 
     > admin.setSolc("/usr/local/bin/solc")
-    solc v0.9.32
-    Solidity Compiler: /usr/local/bin/solc
-    Christian <c@ethdev.com> and Lefteris <lefteris@ethdev.com> (c) 2014-2015
-    true
+    solc, the solidity compiler commandline interface
+    Version: 0.2.2-02bb315d/.-Darwin/appleclang/JIT linked to libethereum-1.2.0-8007cef0/.-Darwin/appleclang/JIT
+    path: /usr/local/bin/solc
 
+.. _compile_a_simple_contract:
 
 Compiling a simple contract
 --------------------------------------------------------------------------------
@@ -220,7 +215,7 @@ most current GlobalRegistrar code:
     contracts = eth.compile.solidity(globalRegistrarSrc)
 
 
-Create and Deploy a Contract
+Create and deploy a contract
 ================================================================================
 
 Before you begin this section, make sure you have both an unlocked account as
@@ -265,7 +260,9 @@ The asynchronous way of doing the same looks like this:
     });
 
 
-Interacting with a Contract
+.. _interacting_with_a_contract:
+
+Interacting with a contract
 ================================================================================
 
 Interaction with a contract is typically done using an abstraction layer such
@@ -315,7 +312,7 @@ In the example above, there are no side effects, therefore ``sendTransaction``
 only burns gas and increases the entropy of the universe.
 
 
-Contract Metadata
+Contract metadata
 ================================================================================
 
 In the previous sections we explained how you create a contract on the
@@ -392,7 +389,7 @@ longer necessary.)
     });
 
 
-Testing Contracts and Transactions
+Testing contracts and transactions
 ================================================================================
 
 Often you need to resort to a low level strategy of testing and debugging
@@ -411,12 +408,12 @@ verbosity level is recommended:
     geth --datadir ~/dapps/testing/00/ --port 30310 --rpcport 8110 --networkid 4567890 --nodiscover --maxpeers 0 --vmdebug --verbosity 6 --pprof --pprofport 6110 console 2>> ~/dapp/testint/00/00.log
 
 Before you can submit any transactions, you need set up your private test
-chain. See :ref:`test-networks`
+chain. See :ref:`test-networks`.
 
 .. code:: js
 
     // create account. will prompt for password
-    personal.newAccount("mypassword");
+    personal.newAccount();
     // name your primary account, will often use it
     primary = eth.accounts[0];
     // check your balance (denominated in ether)
@@ -430,11 +427,11 @@ chain. See :ref:`test-networks`
     // mine 10 blocks to generate ether 
 
     // starting miner
-    miner.start(8);
-    // sleep for 10 blocks.
+    miner.start(4);
+    // sleep for 10 blocks (this can take quite some time).
     admin.sleepBlocks(10);
     // then stop mining (just not to burn heat in vain)
-    miner.stop()  ;
+    miner.stop();
     balance = web3.fromWei(eth.getBalance(primary), "ether");
 
 After you create transactions, you can force process them with the following lines:
@@ -443,7 +440,7 @@ After you create transactions, you can force process them with the following lin
 
     miner.start(1);
     admin.sleepBlocks(1);
-    miner.stop()  ;
+    miner.stop();
 
 You can check your pending transactions with:
 
@@ -464,11 +461,3 @@ If you submitted contract creation transaction, you can check if the desired cod
     //... mining
     contractaddress = eth.getTransactionReceipt(txhash);
     eth.getCode(contractaddress)
-
-
-
-web3.js
-================================================================================
-
-RPC
-================================================================================

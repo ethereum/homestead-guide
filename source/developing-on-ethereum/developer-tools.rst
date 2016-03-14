@@ -4,35 +4,27 @@ Developer Tools
 As a Ðapp developer you have five main resources which allow Ðapp
 development.
 
-
-Five Primary Resources
+Five primary resources
 ================================================================================
 ÐApp development requires an understanding of the Web3 Javascript API, the JSON RPC API, and the Solidity programming language. 
 
 .. note:: There are developer tools that help you develop, test, and deploy ÐApps in a way that automatically utilizes the resources listed below.
 
 
-* `Web3 JavaScript API <https://github.com/ethereum/wiki/wiki/JavaScript-API>`__ - This is the main
-  JavaScript SDK to use when you want to interact with an Ethereum node.
-* `JSON RPC API <https://github.com/ethereum/wiki/wiki/JSON-RPC>`__ - This is
-  the low level JSON RPC 2.0 interface to interface with a node. This API is
-  used by the `Web3 JavaScript API <https://github.com/ethereum/wiki/wiki/JavaScript-API>`__.
+* `Web3 JavaScript API <https://github.com/ethereum/wiki/wiki/JavaScript-API>`__ - This is the main JavaScript SDK to use when you want to interact with an Ethereum node.
+* `JSON RPC API <https://github.com/ethereum/wiki/wiki/JSON-RPC>`__ - This is the low level JSON RPC 2.0 interface to interface with a node. This API is used by the `Web3 JavaScript API <https://github.com/ethereum/wiki/wiki/JavaScript-API>`__.
 * `Solidity Documentation <https://solidity.readthedocs.org/en/latest/>`__ -
-  Solidity is the Ethereum developed Smart Contract language, which compiles to
-  EVM (Ethereum Virtual Machine) opcodes.
-* :ref:`test-networks` - Test networks help developers develop and test
-  Ethereum code and network interactions without spending their own Ether on
-  the main network. Test network options are listed below.
+  Solidity is the Ethereum developed Smart Contract language, which compiles to EVM (Ethereum Virtual Machine) opcodes.
+* :ref:`test-networks` - Test networks help developers develop and test Ethereum code and network interactions without spending their own Ether on the main network. Test network options are listed below.
 * :ref:`IDE-or-development-framework`. This assists you in developing,
   debugging, and deploying Ethereum applications. 
 
 
 .. _ethereum-high-level-languages:
 
-Ethereum High Level Languages
+Ethereum high level languages
 ===========================================================================
-
-Contracts live on the blockchain in an Ethereum-specific binary format (EVM bytecode) that is executed by the Ethereum Virtual Machine (EVM). However, contracts are typically written in a higher level language and then compiled using an EVM compiler into byte code which is then deployed to the blockchain.
+Contracts live on the blockchain in an Ethereum-specific binary format (EVM bytecode) that is executed by the Ethereum Virtual Machine (EVM). However, contracts are typically written in a higher level language (HLL) and then compiled using the EVM compiler into byte code to be deployed to the blockchain.
 
 Below are the different high level languages developers can use to write smart contracts for Ethereum.
 
@@ -62,7 +54,7 @@ LLL
 * `LIBLLL in GitHub <https://github.com/ethereum/libethereum/tree/develop/liblll>`_
 * `Examples of LLL <https://www.reddit.com/r/ethereum/comments/3secu1/anyone_have_a_copy_of_the_old_lll_tutorials/>`_
 
-Mutan (Deprecated)
+Mutan (deprecated)
 --------------------------------------------------------------------------------
 
 `Mutan <https://github.com/obscuren/mutan>`_ is a statically typed, C-like language designed and developed by Jeffrey Wilcke. It is no longer maintained.
@@ -72,11 +64,7 @@ Mutan (Deprecated)
 
 IDEs/Frameworks
 ================================================================================
-
 Below are developer frameworks and IDEs used for writing Ethereum Đapps.
-
-TODO
-  expand at least some of these to subsections, add reference to community
 
 * `Mix Ethereum IDE <https://github.com/ethereum/mix>`__ - Mix is an IDE that allows developers to build and deploy contracts and decentralized applications on top of the Ethereum blockchain. It includes a Solidity source code debugger.
 * `Truffle <https://github.com/ConsenSys/truffle>`__ - Truffle is a development environment, testing framework and asset pipeline for Ethereum.
@@ -87,7 +75,7 @@ TODO
 * `Resilience Raw Transaction Broadcaster <https://github.com/resilience-me/broadcaster/>`_
 
 
-Base Layer Services
+Base layer services
 =================================================
 
 Ethereum Alarm Clock
@@ -121,7 +109,6 @@ having to actually pay the high gas costs of executing them on-chain.
 
 The EVM
 ================================================================================
-
 The Ethereum Virtual Machine (EVM) is the runtime environment for smart contracts in Ethereum. It is not only sandboxed, but actually completely isolated, which means that code running inside the EVM has no access to network, filesystem, or other processes. Smart contracts even have limited access to other smart contracts.
 
 Contracts live on the blockchain in an Ethereum-specific binary format (EVM bytecode). However, contracts are typically written in an Ethereum high level language, compiled into byte code using an EVM compiler, and finally uploaded on the blockchain using an Ethereum client.

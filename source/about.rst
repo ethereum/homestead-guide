@@ -3,7 +3,7 @@ The Homestead Documentation Initiative
 ***************************************
 |Gitter|
 
-.. |Gitter| image:: https://badges.gitter.im/ethereum/homestead-guide.svg
+.. |Gitter| image:: img/homestead-guide.svg
    :target: https://gitter.im/ethereum/homestead-guide?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
    
 Purpose and Audience
