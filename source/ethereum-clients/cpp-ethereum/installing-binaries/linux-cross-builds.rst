@@ -13,8 +13,8 @@ doublethinkco was a
 <http://doublethink.co/2016/02/23/we-have-blockgrantx-funding/>`_ in Feb 2016.
 
 See the
-`webthree-umbrella-cross README
-<https://github.com/doublethinkco/webthree-umbrella-cross>`_
+`cpp-ethereum-cross README
+<https://github.com/doublethinkco/cpp-ethereum-cross>`_
 for a full matrix of platforms and known status.
 
 Here are the cross-build binaries from doublethinkco:
