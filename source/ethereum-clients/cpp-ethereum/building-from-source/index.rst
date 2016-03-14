@@ -17,6 +17,7 @@ The default branch is **develop**.   To switch to the latest versioned
 release, execute the following command in the directory which you cloned into: ::
 
     git checkout release
+    git submodule update
 
 From there, follow the platform-specific instructions below.
 
