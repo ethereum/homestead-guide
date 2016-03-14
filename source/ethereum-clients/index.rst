@@ -10,7 +10,8 @@ Why are there multiple Ethereum clients?
 The Ethereum clients are very analogous to a Java VM or .NET runtime.
 
 They enable you to execute "Ethereum programs" on your computer.  They are
-implemented to a written specification (the "Yellow Paper") and by design
+implemented to a written specification (the
+`Yellow Paper <https://github.com/ethereum/yellowpaper>`_) and by design
 are interoperable and somewhat "commodity".
 
 From the earlier days of the project there have been multiple interoperable
@@ -34,8 +35,6 @@ add links to them here as they are released.
 +------------------------+------------+------------------------+----------------------------------+
 | Client                 | Language   | Developers             | Homestead Release                |
 +========================+============+========================+==================================+
-| `mist (dapp browser)`_ | Javascript | `Ethereum Foundation`_ | `mist-v0.5.2`_                   |
-+------------------------+------------+------------------------+----------------------------------+
 | :ref:`go-ethereum`     | Go         | `Ethereum Foundation`_ | `geth-v1.3.5`_                   |
 +------------------------+------------+------------------------+----------------------------------+
 | :ref:`cpp-ethereum`    | C++        | `Ethereum Foundation`_ | `eth-v1.2.2`_                    |
@@ -50,8 +49,6 @@ add links to them here as they are released.
 +------------------------+------------+------------------------+----------------------------------+
 | :ref:`Parity`          | Rust       | `Ethcore`_             | v1.0.0 release imminent          |
 +------------------------+------------+------------------------+----------------------------------+
-
-.. _mist (dapp browser): http://github.com/ethereum/mist/
 
 .. _Ethereum Foundation: https://ethereum.org/foundation
 .. _ConsenSys: https://consensys.net/
