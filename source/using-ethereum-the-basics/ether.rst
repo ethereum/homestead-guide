@@ -121,11 +121,11 @@ Online wallets, paper wallets, and cold storage
     * `Jaxx main site <http://jaxx.io/>`_
     * `Mobile release <http://favs.pw/first-ethereum-mobile-app-released/#.VsHn_PGPL5c>`_
 * Etherwall
-    * `website <http://www.etherwall.com/>`_
-    * `source <https://github.com/almindor/etherwall>`_
+    * `Etherwall website <http://www.etherwall.com/>`_
+    * `Etherwall source <https://github.com/almindor/etherwall>`_
 * MyEtherWallet
-    * `website <https://www.myetherwallet.com/>`_
-    * `source <https://github.com/kvhnuke/etherwallet/>`_
+    * `MyEtherWallet website <https://www.myetherwallet.com/>`_
+    * `MyEtherWallet source <https://github.com/kvhnuke/etherwallet/>`_
     * `chrome extention <http://sebfor.com/myetherwallet-chrome-extension-release/>`_
 * cold storage
     * `Icebox <https://github.com/ConsenSys/icebox>`_ by `ConsenSys <https://consensys.net/>`_ - Cold storage based on lightwallet with HD wallet library integrated.

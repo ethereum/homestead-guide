@@ -20,7 +20,7 @@ While still valid, the substance behind it has changed somewhat.
 The `Olympic testnet <olympic-testnet>`_ phase (before the `Frontier release <frontier-launch>`) saw a lot of major improvements, followed by Frontier which was launched immediately after. Homestead marks the exit from a beta product to a stable release.
 Homestead is introduced automatically at block number 1,150,000 which should occur roughly around March 14th, 2016, Pi Day.
 
-If you are running a node connected to the live network, it is important that you upgrade to a Homestead-compatible client. Such clients with their versions are listed under :ref:`ethereum-clients`. Otherwise you will end up on the wrong fork and will no longer be in sync with the rest of the network.
+If you are running a node connected to the live network, it is important that you upgrade to a Homestead-compatible client. Such clients with their versions are listed under :ref:`Ethereum Clients`. Otherwise you will end up on the wrong fork and will no longer be in sync with the rest of the network.
 
 Once the Ethereum blockchain reaches block 1,150,000, the Ethereum network will undergo a hardfork enabling a few major changes such as explained in the following section.
 
@@ -52,5 +52,5 @@ The changes have the following benefits:
 
 
 Additional resources:
-* `Reddit discussion on Homestead Release <https://www.reddit.com/r/ethereum/comments/48arax/homestead_release_faq/>`_
-* :ref:`eips`
+- `Reddit discussion on Homestead Release <https://www.reddit.com/r/ethereum/comments/48arax/homestead_release_faq/>`_
+- :ref:`Ethereum Improvement Proposals`
