@@ -56,7 +56,7 @@ Deprecated executables, to be retired soon
 
 - **AlethZero** A Qt-based all-encompassing GUI for interacting with Ethereum (receives minimal support).
 - **AlethOne** One-click GUI miner.
-
+- **EthKey** Key management CLI.
 
 Project reboot
 --------------------------------------------------------------------------------
