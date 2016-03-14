@@ -5,63 +5,89 @@ Glossary
 .. glossary::
    :sorted:
 
+.. _geth-letter:
+
    Đ
-      Đ, `D with stroke <https://en.wikipedia.org/wiki/D_with_stroke>`_, is used in Old English, Middle English, Icelandic, and Faroese to stand for an uppercase letter "Eth". The uppercase eth (Ð) is also used to symbolize the cryptocurrency Dogecoin.
+      Đ, `D with stroke <https://en.wikipedia.org/wiki/D_with_stroke>`_, is used in Old English, Middle English, Icelandic, and Faroese to stand for an uppercase letter "Eth". It is used in words like ĐEV or Đapp (decentralized application), where the Đ is the Norse letter "eth". The uppercase eth (Ð) is also used to symbolize the cryptocurrency Dogecoin.
 
-   decentralized application
-      A program which is run by many people which either uses or creates a decentralized network for some specific purpose (e.g. connecting buyers and sellers in some marketplace, sharing files, online file storage, maintaining a currency). Ethereum-based decentralized applications (also called Đapps, where the Đ is the Norse letter "eth") typically consist of an HTML/Javascript webpage and a special Javascript API for sending transactions to the blockchain, reading data from the blockchain, and interacting with Whisper and Swarm. A Đapp typically also has a specific associated contract on the blockchain, though Đapps that facilitate the creation of many contracts are quite possible.
+.. _dec-app:
 
-   decentralized organization
-      An organization that has no centralized leadership, instead using a combination of formal democratic voting processes and stigmergic self-organization as their primary operating principles. A less impressive but sometimes confused concept is a "geographically distributed organization", an organization where people work far apart from each other and which may even have no office at all; GDOs can still have formal centralized leadership.
+   decentralized application (= `dapp or Đapp <gl:dapp>`_)
+      Service that operates without a central trusted party. An application  that enables direct interaction/agreements/communication between end users and/or resources without a middleman. See :ref:`dapps`.
+
+   DAO
+   decentralized autonomous organization
+      DAO is type of contract on the blockchain (or a suite of contracts) that is supposed to codify, enforce or automate the workings of an organisation including governance, fund-raising, operations, spending and expansion.
 
    identity
-      A set of cryptographically verifiable interactions that have the property that they were all created by the same person
+      A set of cryptographically verifiable interactions that have the property that they were all created by the same person.
+
+   digital identity
+      The set of cryptographically verifiable transactions signed by the same public key define the digital identity's behaviour. In many real world scenarios (voting) it is desireable that digital identities coincide with real world identities. Ensuring this without violence is an unsolved problem.
+
+   unique identity
+      A set of cryptographically verifiable interactions that have the property that they were all created by the same person, with the added constraint that one person cannot have multiple unique identities.
+
+   reputation
+      The property of an identity that other entities believe that identity to be either (1) competent at some specific task, or (2) trustworthy in some context, i.e., not likely to betray others even if short-term profitable.
 
    escrow
-      If two mutually-untrusting entities are engaged in commerce, they may wish to pass funds through a mutually trusted third party and instruct that party to send the funds to the payee only when evidence of product delivery has been shown. This reduces the risk of the payer or payee committing fraud.
+      If two mutually-untrusting entities are engaged in commerce, they may wish to pass funds through a mutually trusted third party and instruct that party to send the funds to the payee only when evidence of product delivery has been shown. This reduces the risk of the payer or payee committing fraud. Both this construction and the third party is called escrow.
 
    deposit
-      Digital property placed into a contract involving another party such that if certain conditions are not satisfied that property is automatically forfeited to the counterparty.
-
-   hostage
-      Digital property placed into a contract such that if certain conditions are not satisfied that property is automatically either destroyed or donated to charity or basic income funds, perhaps with widely distributed benefit but necessarily with no significant benefit to any specific individual.
+      Digital property placed into a contract involving another party such that if certain conditions are not satisfied that property is automatically forfeited and either credited to a counterparty as insurance against the conditions, or destroyed (= burnt = equally distributed) or donated to some charitable funds.
 
    web of trust
       The idea that if A highly rates B, and B highly rates C, then A is likely to trust C. Complicated and powerful mechanisms for determining the reliability of specific individuals in specific concepts can theoretically be gathered from this principle.
 
-   unique identity
-      A set of cryptographically verifiable interactions that have the property that they were all created by the same person, with the added constraint that one person cannot have multiple unique identities
-
    incentive compatibility
-      A protocol is incentive-compatible if everyone is better off "following the rules" than attempting to cheat, at least unless a very large number of people agree to cheat together at the same time.
+      A protocol is incentive-compatible if everyone is better off "following the rules" than attempting to cheat, at least unless a very large number of people agree to cheat together at the same time (collusion).
 
-   decentralized autonomous organization
-      Decentralized organizations where the method of governance is in some fashion "autonomous", i.e. it's not controlled by some form of discussion process or committee.
+   collusion
+      In an incentivised protocol scenario, when a number of participants *play together* (conspire) to game the rules to their own benefit.
 
    token system
       A fungible virtual good that can be traded. More formally, a token system is a database mapping addresses to numbers with the property that the primary allowed operation is a transfer of N tokens from A to B, with the conditions that N is non-negative, N is not greater than A's current balance, and a document authorizing the transfer is digitally signed by A. Secondary "issuance" and "consumption" operations may also exist, transaction fees may also be collected, and simultaneous multi-transfers with many parties may be possible. Typical use cases include currencies, cryptographic tokens inside of networks, company shares and digital gift cards.
 
    block
-      A block is a package of data that contains zero or more transactions, the hash of the previous block ("parent"), and optionally other data. The total set of blocks, with every block except for the initial "genesis block" containing the hash of its parent, is called the blockchain and contains the entire transaction history of a network. Note that some blockchain-based cryptocurrencies instead use the word "ledger" for a blockchain; the two are roughly equivalent, although in systems that use the term "ledger" each block generally contains a full copy of the current state (e.g. currency balances, partially fulfilled contracts, registrations) of every account allowing users to discard outdated historical data.
+      A block is a package of data that contains zero or more transactions, the hash of the previous block ("parent"), and optionally other data. The total set of blocks, with every block except for the initial "genesis block" containing the hash of its parent, is called the blockchain and contains the entire transaction history of a network. Note that some blockchain-based cryptocurrencies use the word "ledger" instead of blockchain; the two are roughly equivalent, although in systems that use the term "ledger" each block generally contains a full copy of the current state (e.g. currency balances, partially fulfilled contracts, registrations) of every account allowing users to discard outdated historical data.
+
+..  _gl:dapp:
 
    dapp
    Đapp
-      Unofficially stands for either "distributed app" or "eth app". Some say it is pronounced Ethapp due to the use of the uppercase eth letter Ð.
+      Stands for "decentralized application". Some say it is pronounced Ethapp due to the use of the `uppercase eth letter Ð <gl:eth-letter>`_.
 
    address
-      An address is the representation of a public key belonging to a particular user; for example, the address associated with the private key may look like cd2a3d9f938e13cd947ec05abc7fe734df8dd826. Note that in practice, the address is technically the hash of a public key, but for simplicity it's better to ignore this distinction. A new `checksum-enabled address scheme <https://github.com/ethereum/EIPs/issues/55>`_ was introduced with the release of the Mist Ethereum wallet version 0.5.0.
+      An ethereum address represents an account. For `externally owned accounts <gl:EOA>`_, the address is derived as the last 20 bytes of the public key controlling the account, e.g., ``cd2a3d9f938e13cd947ec05abc7fe734df8dd826``. This is a :ref:`gl:hexadecimal` format (base 16 notation), which is often indicated explicitly by appending ``0x`` to the address. Web3.js and console functions accept addresses with or  without this prefix but for trasparency we encourage their use. Since each byte of the address is represented by 2 hex characters, a prefixed address is  42 character long. Several apps and APIs are also meant to implement the new `checksum-enabled address scheme <https://github.com/ethereum/EIPs/issues/55>`_  introduced in the Mist Ethereum wallet as of version 0.5.0.
+
+.. _gl:hexadecimal:
+
+   hexadecimal
+      Common representation format for byte sequencing. Its advantage is that it only a small subset of uses two characters per byte (the characters ``[0-9][a-f]``
+      which uses two characters per byte (the characters ``[0-9][a-f]``
 
    ether
-      Ether is the name of the currency used within Ethereum. It is used to pay for computations within the EVM.
+      Ether is the name of the currency used within Ethereum. It is used to pay for computations within the EVM. Ambigously, ether is also the name of a unit in hte system;
+
+.. gl:EOA:
 
    EOA
-      Externally Owned Account. An account controlled by a private key. If you own the private key associated with the EOA you have the ability to send ether and messages from it. This differs from a contract account that has it's own code and is controlled by code. EOAs and contract accounts may be combined into a single account type during Serenity.
+      Externally Owned Account. An account controlled by a private key. If you own the private key associated with the EOA you have the ability to send ether and messages from it. Contract accounts also have an address, see _`Accounts`. EOAs and contract accounts may be combined into a single account type during Serenity.
+
+.. gl:gas:
 
    gas
-      Name for the execution fee for every operation made on an Ethereum blockchain.
+      Name for the :ref:`gl:cryptofuel` that is consumed when code is executed by the EVM. The gas is paid for execution fee for every operation made on an Ethereum blockchain.
+
+
+..  gl:gas-limit:
 
    gas limit
-      Gas limit can apply to both individual transactions and to blocks. For individual transactions, the gas limit represents the maximum amount of gas you indicate you are willing to pay for a contract execution transaction. It is meant to protect users from getting their ether depleted when trying to execute buggy or malicious contracts. The block gas limit represents the maximum cumulative gas used for all the transactions in a block. With the launch of Homestead, the block gas limit floor will increase from 3,141,592 gas to 4,712,388 gas (~50% increase).
+      Gas limit can apply to both individual transactions, see `transaction gas limit <gl:transaction-gas-limit>`_ and to blocks, `block gas limit <block-gas-limit>`_. For individual transactions, the gas limit represents the maximum amount of gas you indicate you are willing to pay for a contract execution transaction. It is meant to protect users from getting their ether depleted when trying to execute buggy or malicious contracts. The block gas limit represents the maximum cumulative gas used for all the transactions in a block. With the launch of Homestead, the block gas limit floor will increase from 3,141,592 gas to 4,712,388 gas (~50% increase).
+
+..  gl:transaction-gas-limit:
+    transaction gas limit
 
    gas price
       Price in ether of one unit of gas specified in a transaction. With the launch of Homestead, the default gas price reduces from 50 shannon to 20 shannon (~60% reduction).

@@ -1,7 +1,11 @@
+.. _dapps:
+
 ********************************************************************************
 Dapps
 ********************************************************************************
-Dapps are programs which are run by many people that either uses or creates a decentralized network for some specific purpose (eg. connecting buyers and sellers in some marketplace, sharing files, online file storage, maintaining a currency). Ethereum-based decentralized applications (also called Đapps, where the Đ is the Norse letter “eth”) typically consist of an HTML/Javascript webpage and a special Javascript API for sending transactions to the blockchain, reading data from the blockchain, and interacting with Whisper and Swarm. A Đapp typically has a specific associated contract on the blockchain, though Đapps that facilitate the creation of many types of contracts are possible.
+
+      . A service that enables direct interaction between end users and providers (e.g. connecting buyers and sellers in some marketplace, owners and storers in file storage). Ethereum dapps typically interface users via an HTML/Javascript web application using a Javascript API to communicate with the blockchain. Dapps would typically have their own suite of associated contracts on the blockchain.
+
 
 Dapp directories
 ====================================
@@ -19,8 +23,9 @@ In the future, dapps are likely to be listed and distributed in `dappstores_ <ht
 
 Dapp browsers
 ===========================
-https://www.reddit.com/r/ethereum/comments/1vb1gc/is_ethereum_an_alt_coin_can_anyone_eli5/a
-| `Mist <https://github.com/ethereum/mist>`_ - official GUI dapp browser developed by the foundation, alpha stage. Mist as Wallet dapp is in beta.
-| `MetaMask <https://metamask.io/>`_ - Aaron Kumavis Davis's in-browser GUI. `Epicenter Bitcoin interview on github <https://www.reddit.com/r/ethereum/comments/3x97rg/aaron_davis_explains_the_differences_between/>`_
-| `AlethZero <https://github.com/ethereum/alethzero>`_ - C++ eth client GUI, (discontinued).
-| `Supernova <http://www.supernove.cc>`_ (discontinued).
+
+* `Mist <https://github.com/ethereum/mist>`_ - official GUI dapp browser developed by the foundation, alpha stage. Mist as Wallet dapp is in beta.
+* `Syng <http://syng.im/>`_ - Mobile Ethereum browser (alpha) by Jarrad Hope - supported by DEVgrants
+* `MetaMask <https://metamask.io/>`_ - Aaron Kumavis Davis's in-browser GUI. `Epicenter Bitcoin interview on github <https://www.reddit.com/r/ethereum/comments/3x97rg/aaron_davis_explains_the_differences_between/>`_ - supported by DEVgrants
+* `AlethZero <https://github.com/ethereum/alethzero>`_ - C++ eth client GUI, (discontinued).
+* `Supernova <http://www.supernove.cc>`_ - (discontinued).

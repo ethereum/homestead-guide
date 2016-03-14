@@ -2,7 +2,7 @@
 Account Management
 ********************************************************************************
 
-What are accounts?
+Accounts
 ================================================================================
 
 Accounts play a central role in ethereum. In Ethereum, there are two types of accounts: *externally owned accounts* (EOAs) and *contract accounts*. Here we focus on externally owned accounts, which will be referred to simply as *accounts*. Contract accounts will be referred to as *contracts* and are discussed in detail in _`Contracts`. This generic notion of account subsuming both externally owned accounts and contracts is justified in that these entities are so called *state objects*. These entities have a state: accounts have balance and contracts have both balance and contract storage. The state of all accounts is the state of the ethereum network which is updated with every block and which the network really needs to reach a consensus about.
