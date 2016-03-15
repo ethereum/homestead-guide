@@ -95,7 +95,7 @@ The ``-minerthreads`` parameter can be used to set the number parallel mining th
 
 ``geth --mine --minerthreads=4``
 
-You can also start and stop CPU mining at runtime using the `console <https://github.com/ethereum/go-ethereum/wiki/JavaScript-Console#adminminerstart>`__. ``miner.start`` takes an optional parameter for the number of miner threads.
+You can also start and stop CPU mining at runtime using the `console <https://github.com/ethereum/go-ethereum/wiki/JavaScript-Console#adminminerstart>`__. ``miner.start`` requires a parameter for the number of miner threads.
 
 .. code-block:: Javascript
 
@@ -145,7 +145,7 @@ You can check your hashrate with `miner.hashrate <https://github.com/ethereum/go
 
 .. code-block:: javascript
 
-    > miner.hashrate
+    > eth.hashrate
     712000
 
 After you successfully mined some blocks, you can check the ether balance of your etherbase account. Now assuming your etherbase is a local account:
