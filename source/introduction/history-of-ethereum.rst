@@ -41,6 +41,7 @@ In November 2014, ETH DEV organized the `DEVCON-0 event <https://blog.ethereum.o
 
 DEVgrants program
 --------------------------------------------------------------------------------
+
 In April 2015, `the DEVgrants program <https://blog.ethereum.org/2015/04/07/devgrants-help/>`_ was announced, which is a program that offers funding for contributions both to the Ethereum platform, and to projects based on Ethereum. Hundreds of developers were already contributing their time and thinking to Ethereum projects and in open source projects. This program served to reward and support those developers for their contributions. The DEVgrants program continues to operate today and funding of the program was recently renewed in January 2016.
 
 * `DEVgrants initial announcement <https://blog.ethereum.org/2015/04/07/devgrants-help/>`_
@@ -68,7 +69,7 @@ The Ethereum security audit began at the end of 2014 and continued through the f
 
 .. _frontier-launch:
 
-The Ethereum Frontier Launch
+The Ethereum Frontier launch
 =======================================================================
 
 The Ethereum Frontier network launched on July 30th, 2015, and developers began writing smart contracts and decentralized apps to deploy on the live Ethereum network. In addition, miners began to join the Ethereum network to help secure the Ethereum blockchain and earn ether from mining blocks. Even though the Frontier release is the first milestone in the Ethereum project and was intended for use by developers as a beta version, it turned out to be more capable and reliable than anyone expected, and developers have rushed in to build solutions and improve the Ethereum ecosystem.

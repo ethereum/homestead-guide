@@ -18,23 +18,21 @@ Read the `Ethereum subreddit rules`_ before posting.
 
 Further specialised subreddits:
 
-| `EthTrader`_ - Ether trading, price and  market
-| `EtherMining`_ - Ether mining discussion
-| `Ethmarket`_ - Marketplace for individuals looking to exchange goods and services for Ether
-| `Ethinvestor`_ - News and prospects for Ethereum investors. Following the long term trends in the Ethereum marketplace.
+* `/r/EthTrader <https://www.reddit.com/r/EthTrader/>`_ - Ether trading, price and  market
+* `/r/EtherMining <https://www.reddit.com/r/EtherMining/>`_ - Ether mining discussion
+* `/r/Ethmarket <https://www.reddit.com/r/ethmarket/>`_ - Marketplace for individuals looking to exchange goods and services for Ether
+* `/r/Ethinvestor <https://www.reddit.com/r/Ethinvestor/>`_ - News and prospects for Ethereum investors. Following the long term trends in the Ethereum marketplace.
+* `/r/ethereumism/ <https://www.reddit.com/r/ethereumism/>`_ - a bit more ism, ostic, ical, ist and tinfoil hats, pyramids and crystal ball type of views - the ethereal side of Ethereum
+
 
 .. _Ethereum subreddit: https://www.reddit.com/r/ethereum/
 .. _Ethereum subreddit rules: http://www.reddit.com/r/ethereum/comments/3auc97/ethereum_subreddit_rules/
-.. _EthTrader: https://www.reddit.com/r/EthTrader/
-.. _EtherMining: https://www.reddit.com/r/EtherMining/
-.. _ethmarket: https://www.reddit.com/r/ethmarket/
-.. _Ethinvestor: https://www.reddit.com/r/Ethinvestor/
-
 
 .. _stack-exchange:
 
 Stack Exchange
 ================================================================================
+
 The `Ethereum Stack Exchange <http://ethereum.stackexchange.com/>`_ is part of the StackExchange network of Q&A communities. StackExchange is a free Q&A site where all the questions and answers are preserved for posterity.
 
 This is the best place to ask technical questions. Help your fellow etherians by answering questions and collect reputation points.
@@ -52,20 +50,20 @@ Most Gitter channels are organised around particular repositories, or generic to
 
 See `the full list of gitter rooms for the Ethereum organisation`_. Below is the list of active public channels:
 
-| `go-ethereum`_ - about geth (and tools related to the go implementation)
-| `cpp-ethereum`_ - about eth (and tools related to the C++ implementation)
-| `web3.js`_ - about web3.js, Ethereum JavaScript API library
-| `Solidity`_ - The Solidity Contract-Oriented Programming Language
-| `serpent`_ - The Serpent language for contract development
-| `mist`_ - GUI dapp browser, official wallet app
-| `light-client`_ - about light client and the LES protocol
-| `research`_ - Ethereum research
-| `governance`_ - about dev governance
-| `whisper`_ - anonymous datagram publishing
-| `swarm`_ - decentralised content storage and distribution network
-| `EIPs`_ - discussion of _`Ethereum Improvement Proposals (EIPs)`
-| `ethereumjs-lib`_ - a JavaScript library of core Ethereum functions
-| `devp2p`_ -  ÐΞV's p2p network protocol & framework
+* `go-ethereum`_ - about geth (and tools related to the go implementation)
+* `cpp-ethereum`_ - about eth (and tools related to the C++ implementation)
+* `web3.js`_ - about web3.js, Ethereum JavaScript API library
+* `Solidity`_ - The Solidity Contract-Oriented Programming Language
+* `serpent`_ - The Serpent language for contract development
+* `mist`_ - GUI dapp browser, official wallet app
+* `light-client`_ - about light client and the LES protocol
+* `research`_ - Ethereum research
+* `governance`_ - about dev governance
+* `whisper`_ - anonymous datagram publishing
+* `swarm`_ - decentralised content storage and distribution network
+* `EIPs`_ - discussion of _`Ethereum Improvement Proposals (EIPs)`
+* `ethereumjs-lib`_ - a JavaScript library of core Ethereum functions
+* `devp2p`_ -  ÐΞV's p2p network protocol & framework
 
 .. _the full list of gitter rooms for the Ethereum organisation: https://gitter.im/orgs/ethereum/rooms
 

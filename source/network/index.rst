@@ -1,12 +1,9 @@
-.. _developing-on-ethereum:
-
 ################################################################################
-Developing on Ethereum
+The Ethereum network
 ################################################################################
 
 .. toctree::
    :maxdepth: 2
 
-   developer-tools.rst
-   test-networks.rst
-   web3-base-layer-services.rst
+  connecting-to-the-network.rst
+  test-networks.rst

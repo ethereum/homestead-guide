@@ -432,6 +432,10 @@ Glossary
    ES1, ES2, and ES3 (obsolete)
       "Ethereum Script" versions 1,2 and 3. There were early versions of what would become the Ethereum Virtual Machine (EVM).
 
+   log event
+      Contracts are triggered by transactions executed as part of the block verification. If conceived of as a function call, contract execution is asyncronous, and therefore they have no return value. Instead contracts communicate to the outside world with log events. The log events are part of the transaction receipt which is produced when the transaction is executed.
+      The receipts are stored in the receipt trie, the integrity of which is guaranteed by the fact that the current root of the receipt trie is part of the block header alongside the roots of state and state-trie. In a broad sense from the external perspective receipts are part of the ethereum system state except that they are not readable contracts internally.
+
    hardware wallet
    brain wallet
    cold storage

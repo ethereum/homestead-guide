@@ -25,13 +25,15 @@ Contents
 .. toctree::
    :maxdepth: 2
 
-   introduction/introduction.rst
-   ethereum-ecosystem/ethereum-ecosystem.rst
-   using-ethereum-the-basics/using-ethereum-the-basics.rst
-   contracts-and-transactions/contracts-and-transactions.rst
-   developing-on-ethereum/developing-on-ethereum.rst
-   frequently-asked-questions/frequently-asked-questions.rst
+   introduction/index.rst
    ethereum-clients/index.rst
+   account-management.rst
+   ether.rst
+   network/index.rst
+   mining.rst
+   contracts-and-transactions/index.rst
+   frequently-asked-questions/frequently-asked-questions.rst
+   glossary.rst
    about.rst
 
 
