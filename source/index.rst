@@ -13,13 +13,18 @@ Ethereum Homestead Documentation
    :alt: ethereum-logo
    :align: center
 
+This documentation is the result of an ongoing collaborative effort by
+volunteers from the Ethereum :ref:`community`.  Although it has not been
+authorized by the :ref:`foundation`, we hope you will find it useful,
+and welcome new :ref:`contributors`.
+
+
 Contents
 ===============================================================================
 
 .. toctree::
    :maxdepth: 2
 
-   about.rst
    introduction/introduction.rst
    ethereum-ecosystem/ethereum-ecosystem.rst
    using-ethereum-the-basics/using-ethereum-the-basics.rst
@@ -27,6 +32,7 @@ Contents
    developing-on-ethereum/developing-on-ethereum.rst
    frequently-asked-questions/frequently-asked-questions.rst
    ethereum-clients/index.rst
+   about.rst
 
 
 Improve the Documentation

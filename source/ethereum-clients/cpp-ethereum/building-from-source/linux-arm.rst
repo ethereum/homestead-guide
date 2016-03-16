@@ -4,8 +4,8 @@ Building for Linux for ARM (cross builds)
 `doublethinkco <http://doublethink.co>`_
 maintain a Docker-based cross-build infrastructure which is
 hosted on Github in the
-`webthree-umbrella-cross
-<http://github.com/doublethinkco/webthree-umbrella-cross>`_
+`cpp-ethereum-cross
+<http://github.com/doublethinkco/cpp-ethereum-cross>`_
 repository.
 
 At the time of writing, these cross-built binaries have been successfully used

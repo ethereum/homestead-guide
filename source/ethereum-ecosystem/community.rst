@@ -84,8 +84,11 @@ See `the full list of gitter rooms for the Ethereum organisation`_. Below is the
 .. _ethereumjs-lib: https://gitter.im/ethereum/ethereumjs-lib
 .. _devp2p: https://gitter.im/ethereum/devp2p
 
+.. _Ethereum Improvement Proposals:
+
 Ethereum Improvement Proposals (EIPs)
 ================================================================================
+
 The EIP scheme aims to be a framework and largely informal business process coordinating improvements to the protocols. People should first propose their idea as an issue or pull request to the EIPs repository. After basic filtering, the proposal will receive a number and is published in draft form. For an EIP to become Active it will require the mutual consent of the community. Those proposing changes should consider that ultimately consent may rest with the consensus of the Ethereum users.
 For discussion of EIPs, use the `gitter channel for EIP discussions`_.
 
