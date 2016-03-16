@@ -16,6 +16,7 @@ We would like to thank everybody who helped in this effort for `their contributi
 
 .. image:: ../img/Feels-Good-Man-Frog-02.png
 
+- `Santanu Barai <https://github.com/0mkara>`_
 - `Joseph Chow <https://github.com/ethers>`_
 - `François Deppierraz <https://github.com/ctrlaltdel>`_
 - `Bertie Dinneen <https://github.com/bdinn1>`_
@@ -51,4 +52,3 @@ And these pseudonymous contributors:
 - `c0d3inj3cT <http://github.com/c0d3inj3cT>`_
 - `LucaTony <https://github.com/LucaTony>`_
 - `madhancr <https://github.com/madhancr>`_
-- `Omkara <https://github.com/0mkara>`_
