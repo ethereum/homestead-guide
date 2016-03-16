@@ -17,11 +17,8 @@ Glossary
    identity
       A set of cryptographically verifiable interactions that have the property that they were all created by the same person
 
-   reputation
-      The property of an identity that other entities believe that identity to be either (1) competent at some specific task, or (2) trustworthy in some context, i.e. not likely to betray others even if short-term profitable.
-
    escrow
-      If two low-reputation entities are engaged in commerce, the payer may wish to leave the funds with a high-reputation third party and instruct that party to send the funds to the payee only when the product is delivered. This reduces the risk of the payer or payee committing fraud.
+      If two mutually-untrusting entities are engaged in commerce, they may wish to pass funds through a mutually trusted third party and instruct that party to send the funds to the payee only when evidence of product delivery has been shown. This reduces the risk of the payer or payee committing fraud.
 
    deposit
       Digital property placed into a contract involving another party such that if certain conditions are not satisfied that property is automatically forfeited to the counterparty.
