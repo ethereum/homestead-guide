@@ -114,9 +114,9 @@ Online wallets, paper wallets, and cold storage
   Keep examples here, maybe explain paranoid practices, list dangers
 
 * Mist Ethereum Wallet
-  * `Releases to donwload <https://github.com/ethereum/mist/releases>`_
-  * `Mist Ethereum Wallet developer preview <https://blog.ethereum.org/2015/09/16/ethereum-wallet-developer-preview/>`_ - foundation blog post
-  * How to easily set up the Ethereum Mist wallet! *Tutorial* – Tommy Economics – https://www.youtube.com/watch?v=Z6lE0Ctaeqs
+    * `Releases to download <https://github.com/ethereum/mist/releases>`_
+    * `Mist Ethereum Wallet developer preview <https://blog.ethereum.org/2015/09/16/ethereum-wallet-developer-preview/>`_ - foundation blog post
+    * How to easily set up the Ethereum Mist wallet! *Tutorial* – Tommy Economics – https://www.youtube.com/watch?v=Z6lE0Ctaeqs
 * Kryptokit Jaxx
     * `Jaxx main site <http://jaxx.io/>`_
     * `Mobile release <http://favs.pw/first-ethereum-mobile-app-released/#.VsHn_PGPL5c>`_
@@ -127,21 +127,21 @@ Online wallets, paper wallets, and cold storage
     * `MyEtherWallet website <https://www.myetherwallet.com/>`_
     * `MyEtherWallet source <https://github.com/kvhnuke/etherwallet/>`_
     * `chrome extention <http://sebfor.com/myetherwallet-chrome-extension-release/>`_
-* cold storage
+* Cold storage
     * `Icebox <https://github.com/ConsenSys/icebox>`_ by `ConsenSys <https://consensys.net/>`_ - Cold storage based on lightwallet with HD wallet library integrated.
     * `reddit discussion 1 <https://www.reddit.com/r/ethereum/comments/45uvmy/offline_cold_storage_question/offline_cold_storage_question>`_
-* hardware wallet
+* Hardware wallet
     * `reddit discussion 2 <https://www.reddit.com/r/ethereum/comments/45siaq/hardware_wallet/>`_
     * `reddit discussion 3 <https://www.reddit.com/r/ethereum/comments/4521o4/crowdfunding_ethereum_hardware_cold_storage_wallet/>`_
-* brain wallet
-  * brain wallets are not safe, do not use them. https://www.reddit.com/r/ethereum/comments/45y8m7/brain_wallets_are_now_generally_shunned_by/
-  * Extreme caution with brain wallets. Read the recent controversy: https://reddit.com/r/ethereum/comments/43fhb5/brainwallets vs http://blog.ether.camp/post/138376049438/why-brain-wallet-is-the-best
+* Brain wallet
+    * brain wallets are not safe, do not use them. https://www.reddit.com/r/ethereum/comments/45y8m7/brain_wallets_are_now_generally_shunned_by/
+    * Extreme caution with brain wallets. Read the recent controversy: https://reddit.com/r/ethereum/comments/43fhb5/brainwallets vs http://blog.ether.camp/post/138376049438/why-brain-wallet-is-the-best
 * Misc
-  * `Kraken Wallet Sweeper Tool <https://www.kraken.com/ether>`_ - Pre-sale wallet import
-  * `Recommended ways to safely store ether <http://ethereum.stackexchange.com/questions/1239/what-is-the-recommended-way-to-safely-store-ether>`_
-  * `How to buy and stole ether <http://sebfor.com/how-to-buy-and-store-ether/>`_
-  * `A laymen's intro into brute forcing and why not to use brain wallets <http://www.fastcompany.com/3056651/researchers-find-a-crack-that-drains-supposedly-secure-bitcoin-wallets>`_
-  * `Pyethsaletool <https://github.com/ethereum/pyethsaletool/blob/master/README.md>`_
+    * `Kraken Wallet Sweeper Tool <https://www.kraken.com/ether>`_ - Pre-sale wallet import
+    * `Recommended ways to safely store ether <http://ethereum.stackexchange.com/questions/1239/what-is-the-recommended-way-to-safely-store-ether>`_
+    * `How to buy and stole ether <http://sebfor.com/how-to-buy-and-store-ether/>`_
+    * `A laymen's intro into brute forcing and why not to use brain wallets <http://www.fastcompany.com/3056651/researchers-find-a-crack-that-drains-supposedly-secure-bitcoin-wallets>`_
+    * `Pyethsaletool <https://github.com/ethereum/pyethsaletool/blob/master/README.md>`_
 
 
 Sending ether
