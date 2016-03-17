@@ -1,14 +1,15 @@
-.. _connecting-to-the-network:
+.. _sec:connecting-to-the-network:
 
 ********************************************************************************
 Connecting to the Network
 ********************************************************************************
 
+This section
 
 The Ethereum network
 ================================================================================
 
-The basis for decentralised consensus is the peer-to-peer network of participating nodes which maintain and secure the blockchain. See _`Mining`.
+The basis for decentralised consensus is the peer-to-peer network of participating nodes which maintain and secure the blockchain. See :ref:`mining`.
 
 Ethereum network stats
 --------------------------------------------------
@@ -159,7 +160,7 @@ Geth supports a feature called static nodes if you have certain peers you always
   	"enode://pubkey@ip:port"
   ]
 
-You can also add static nodes at runtime via the Javascript console using `admin.addPeer()`
+You can also add static nodes at runtime via the Javascript console using ``admin.addPeer()``
 
 .. code-block:: Console
 
@@ -170,7 +171,7 @@ Common problems with connectivity
 
 Sometimes you just can't get connected. The most common reasons are:
 
-* Your local time might be incorrect. An accurate clock is required to participate in the Ethereum network. Check your OS for how to resync your clock (example sudo ntpdate -s time.nist.gov) because even 12 seconds too fast can lead to 0 peers.
+* Your local time might be incorrect. An accurate clock is required to participate in the Ethereum network. Check your OS for how to resync your clock (example ``sudo ntpdate -s time.nist.gov``) because even 12 seconds too fast can lead to 0 peers.
 * Some firewall configurations can prevent UDP traffic from flowing. You can use the static nodes feature or ``admin.addPeer()`` on the console to configure connections by hand.
 
-To start geth without the discovery protocol, you can use the `--nodiscover` parameter. You only want this if you are running a test node or an experimental test network with fixed nodes.
+To start geth without the discovery protocol, you can use the ``--nodiscover`` parameter. You only want this if you are running a test node or an experimental test network with fixed nodes.

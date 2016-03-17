@@ -1,11 +1,16 @@
 ################################################################################
-Ethereum Ecosystem
+Introduction
 ################################################################################
 
 .. toctree::
    :maxdepth: 2
 
-   foundation.rst
+   what-is-ethereum.rst
+   how-to-use-this-guide.rst
+   the-homestead-release.rst
+
+   web3.rst
+   history-of-ethereum.rst
    community.rst
-   infrastructure.rst
-   dapps.rst
+   foundation.rst
+   contributors.rst

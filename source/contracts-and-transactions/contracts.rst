@@ -9,7 +9,7 @@ A contract is a collection of code (its functions) and data (its state) that
 resides at a specific address on the Ethereum blockchain. Contract accounts are
 able to pass messages between themselves as well as doing practically Turing
 complete computation. Contracts live on the blockchain in a Ethereum-specific
-binary format called Ethereum Virtual Machine (EVM) bytecode. 
+binary format called Ethereum Virtual Machine (EVM) bytecode.
 
 Contracts are typically written in some high level language such as `Solidity
 <https://solidity.readthedocs.org/en/latest/>`_ and then compiled into bytecode
@@ -17,12 +17,55 @@ to be uploaded on the blockchain.
 
 .. seealso:: Other languages also exist, notably Serpent and LLL, which are described further in the :ref:`ethereum-high-level-languages` section of this documentation.
 
-Writing a contract 
+:ref:`IDE-or-development-framework` lists the integrated development environments, developer tools that help you develop in these languages, offering testing, and deployment support among other features.
+
+.. _ethereum-high-level-languages:
+
+Ethereum high level languages
+===========================================================================
+
+Contracts live on the blockchain in an Ethereum-specific binary format (EVM bytecode) that is executed by the Ethereum Virtual Machine (EVM). However, contracts are typically written in a higher level language and then compiled using the EVM compiler into byte code to be deployed to the blockchain.
+
+Below are the different high level languages developers can use to write smart contracts for Ethereum.
+
+Solidity
+--------------------------------------------------------------------------------
+
+Solidity is a language similar to JavaScript which allows you to develop contracts and compile to EVM bytecode. It is currently the flagship language of Ethereum and the most popular.
+
+* `Solidity Documentation <http://solidity.readthedocs.org/en/latest/>`_ - Solidity is the flagship Ethereum high level language that is used to write contracts.
+* `Solidity online realtime compiler <http://chriseth.github.io/browser-solidity/>`_
+* `Standardized Contract APIs <https://github.com/ethereum/wiki/wiki/Standardized_Contract_APIs>`__
+* `Useful Ðapp Patterns <https://github.com/ethereum/wiki/wiki/Useful-Ðapp-Patterns>`__ - Code snippets which are useful for Ðapp development.
+
+Serpent
+--------------------------------------------------------------------------------
+
+Serpent is a language similar to Python which can be used to develop contracts and compile to EVM bytecode. It is intended to be maximally clean and simple, combining many of the efficiency benefits of a low-level language with ease-of-use in programming style, and at the same time adding special domain-specific features for contract programming. Serpent is compiled using _`LLL`.
+
+* `Serpent on the ethereum wiki <https://github.com/ethereum/wiki/wiki/Serpent>`_
+* `Serpent EVM compiler <https://github.com/ethereum/serpent>`_
+
+LLL
+--------------------------------------------------------------------------------
+
+`Lisp Like Language (LLL) <https://github.com/ethereum/libethereum/tree/develop/liblll>`_ is a low level language similar to Assembly. It is meant to be very simple and minimalistic; essentially just a tiny wrapper over coding in EVM directly.
+
+* `LIBLLL in GitHub <https://github.com/ethereum/libethereum/tree/develop/liblll>`_
+* `Examples of LLL <https://www.reddit.com/r/ethereum/comments/3secu1/anyone_have_a_copy_of_the_old_lll_tutorials/>`_
+
+Mutan (deprecated)
+--------------------------------------------------------------------------------
+
+`Mutan <https://github.com/obscuren/mutan>`_ is a statically typed, C-like language designed and developed by Jeffrey Wilcke. It is no longer maintained.
+
+
+Writing a contract
 ================================================================================
 
 No language would be complete without a Hello World program. Operating within
 the Ethereum environment, Solidity has no obvious way of "outputting" a string.
-The closest we can do is to use a log event to place a string into the
+The closest we can do is to use a *log event* to place a string into the
 blockchain:
 
 .. code:: js
@@ -35,9 +78,9 @@ blockchain:
 This contract will create a log entry on the blockchain of type Print with a
 parameter "Hello, World!" each time it is executed.
 
-.. seealso:: `Solidity documentation <https://solidity.readthedocs.org/en/latest/>`_ has more examples and guidelines to writing Solidty code.
+.. seealso:: `Solidity docs <https://solidity.readthedocs.org/en/latest/>`_ has more examples and guidelines to writing Solidty code.
 
-Compiling a contract 
+Compiling a contract
 ================================================================================
 
 Compilation of solidity contracts can be accomplished via a number of
@@ -49,7 +92,7 @@ mechanisms.
   installed).
 * The `online Solidity realtime compiler <https://chriseth.github.io/browser-solidity/>`_.
 * The `Meteor dapp Cosmo for building solidity contracts <https://github.com/SilentCicero/meteor-dapp-cosmo>`_.
-* The `Mix IDE <https://github.com/ethereum/wiki/wiki/Mix:-The-DApp-IDE>`_. 
+* The `Mix IDE <https://github.com/ethereum/wiki/wiki/Mix:-The-DApp-IDE>`_.
 * The `Ethereum Wallet <https://github.com/ethereum/mist/releases>`_.
 
 .. note::  More information on solc and compiling Solidity contract code can be found `here <https://solidity.readthedocs.org/en/latest/frequently-asked-questions.html#how-do-i-compile-contracts>`_.
@@ -69,7 +112,7 @@ available.
 This command returns an array of strings indicating which compilers are
 currently available.
 
-.. note:: 
+.. note::
     The ``solc`` compiler is installed with ``cpp-ethereum``.  Alternatively,
     you can `build it yourself
     <https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum>`_.
@@ -178,7 +221,7 @@ following fields:
 
     ``source``
         The source code
-        
+
     ``language``
         The contract language (Solidity, Serpent, LLL)
 
@@ -220,9 +263,9 @@ Create and deploy a contract
 Before you begin this section, make sure you have both an unlocked account as
 well as some funds.
 
-You will now create a contract on the blockchain by `sending a transaction <https://github.com/ethereum/wiki/wiki/JavaScript-API#web3ethsendtransaction>`__ to the empty address with the EVM code from the previous section as data. 
+You will now create a contract on the blockchain by `sending a transaction <https://github.com/ethereum/wiki/wiki/JavaScript-API#web3ethsendtransaction>`__ to the empty address with the EVM code from the previous section as data.
 
-.. note:: 
+.. note::
     This can be accomplished much easier using the `online Solidity realtime
     compiler <https://chriseth.github.io/browser-solidity/>`_ or the `Mix IDE
     <https://github.com/ethereum/wiki/wiki/Mix:-The-DApp-IDE>`_ program.
@@ -237,7 +280,7 @@ You will now create a contract on the blockchain by `sending a transaction <http
 All binary data is serialised in hexadecimal form. Hex strings always have a
 hex prefix ``0x``.
 
-.. note:: 
+.. note::
     Note that ``arg1, arg2, ...`` are the arguments for the contract
     constructor, in case it accepts any.  If the contract does not require any
     constructor arguments then these arguments can be omitted.
@@ -255,7 +298,7 @@ The asynchronous way of doing the same looks like this:
 
     MyContract.new([arg1, arg2, ...,]{from: primaryAccount, data: evmCode}, function(err, contract) {
       if (!err && contract.address)
-        console.log(contract.address); 
+        console.log(contract.address);
     });
 
 
@@ -373,13 +416,13 @@ longer necessary.)
     contract = eth.compile.solidity(source).test
     // create contract object
     var MyContract = eth.contract(contract.info.abiDefinition)
-    // extracts info from contract, save the json serialisation in the given file, 
+    // extracts info from contract, save the json serialisation in the given file,
     contenthash = admin.saveInfo(contract.info, "~/dapps/shared/contracts/test/info.json")
     // send off the contract to the blockchain
     MyContract.new({from: primaryAccount, data: contract.code}, function(error, contract){
       if(!error && contract.address) {
         // calculates the content hash and registers it with the code hash in `HashReg`
-        // it uses address to send the transaction. 
+        // it uses address to send the transaction.
         // returns the content hash that we use to register a url
         admin.register(primaryAccount, contract.address, contenthash)
         // here you deploy ~/dapps/shared/contracts/test/info.json to a url
@@ -423,7 +466,7 @@ chain. See :ref:`test-networks`.
     // assume an existing unlocked primary account
     primary = eth.accounts[0];
 
-    // mine 10 blocks to generate ether 
+    // mine 10 blocks to generate ether
 
     // starting miner
     miner.start(4);

@@ -44,6 +44,10 @@ All the gas consumed by the execution of all the transactions in the block submi
 
 *Uncles* are stale blocks i.e. with parents that are ancestors (max 6 blocks back) of the including block. Valid uncles are rewarded in order to neutralise the effect of network lag on the dispersion of mining rewards, thereby increasing security (this is called the GHOST protocol). Uncles included in a block formed by the successful PoW miner receive 7/8 of the static block reward (=4.375 ether). A maximum of 2 uncles are allowed per block.
 
+    * `Uncles ELI5 on reddit <https://www.reddit.com/r/ethereum/comments/3c9jbf/wtf_are_uncles_and_why_do_they_matter/>`_
+    * `Forum thread explaining uncles <https://forum.ethereum.org/discussion/2262/eli5-whats-an-uncle-in-ethereum-mining>`_
+
+
 Mining success depends on the set block difficulty. Block difficulty dynamically adjusts each block in order to regulate the network hashing power to produce a 12 second blocktime. Your chances of finding a block therefore follows from your hashrate relative to difficulty.
 
 Ethash DAG
@@ -63,18 +67,15 @@ so that it can shared between different client implementations as well as multip
 
 The algorithm
 ================================================================================
+
 Our algorithm, `Ethash <https://github.com/ethereum/wiki/wiki/Ethash>`__ (previously known as Dagger-Hashimoto), is based around the provision of a large, transient, randomly generated dataset which forms a DAG (the Dagger-part), and attempting to solve a particular constraint on it, partly determined through a block's header-hash.
 
 It is designed to hash a fast verifiability time within a slow CPU-only environment, yet provide vast speed-ups for mining when provided with a large amount of memory with high-bandwidth. The large memory requirements mean that large-scale miners get comparatively little super-linear benefit. The high bandwidth requirement means that a speed-up from piling on many super-fast processing units sharing the same memory gives little benefit over a single unit. This is important in that pool mining have no benefit for nodes doing verification, thus discourageing centralisation.
 
-JSON-RPC
---------------------------------------------------------------------------------
 Communication between the external mining application and the Ethereum daemon for work provision and submission happens through the JSON-RPC API. Two RPC functions are provided; ``eth_getWork`` and ``eth_submitWork``.
 
 These are formally documented on the `JSON-RPC API <https://github.com/ethereum/wiki/wiki/JSON-RPC>`_ wiki article under `miner <https://github.com/ethereum/go-ethereum/wiki/JavaScript-Console#miner>`_.
 
-Mining preliminaries
-======================
 
 In order to mine you need a fully synced Ethereum client that is enabled for mining and at least one ethereum account. This account is used to send the mining rewards to and is often referred to as *coinbase* or *etherbase*. Visit the ":ref: `creating_an_account`" section of this guide to learn how to create an account.
 
@@ -85,7 +86,7 @@ CPU mining
 
 You can use your computer's central processing unit (CPU) to mine ether. This is no longer profitable, since GPU miners are roughly two orders of magnitude more efficient. However, you can use CPU mining to mine on the Morden testnet or a private chain for the purposes of creating the ether you need to test contracts and transactions without spending your real ether on the live network.
 
-.. note:: The testnet ether has no value other than using it for testing purposes (see :ref: `test-networks`).
+.. note:: The testnet ether has no value other than using it for testing purposes (see :ref:`test-networks`).
 
 Using geth
 -------------------------------
@@ -153,7 +154,7 @@ After you successfully mined some blocks, you can check the ether balance of you
 .. code-block:: javascript
 
     > eth.getBalance(eth.coinbase).toNumber();
-    '34698870000000' 
+    '34698870000000'
 
 In order to spend your earnings on gas to transact, you will need to have this account unlocked.
 
@@ -180,8 +181,8 @@ You can check which blocks are mined by a particular miner (address) with the fo
       }
       return addrs
     }
-    // scans the last 1000 blocks and returns the blocknumbers of blocks mined by your coinbase 
-    // (more precisely blocks the mining reward for which is sent to your coinbase).   
+    // scans the last 1000 blocks and returns the blocknumbers of blocks mined by your coinbase
+    // (more precisely blocks the mining reward for which is sent to your coinbase).
     minedBlocks(1000, eth.coinbase);
     //[352708, 352655, 352559]
 
@@ -192,6 +193,7 @@ GPU mining
 
 Hardware
 -------------------------------
+
 The algorithm is memory hard and in order to fit the DAG into memory, it needs 1-2GB of RAM on each GPU. If you get ``Error GPU mining. GPU memory fragmentation?`` you do not have enough memory.
 The GPU miner is implemented in OpenCL, so AMD GPUs will be 'faster' than same-category NVIDIA GPUs.
 ASICs and FPGAs are relatively inefficient and therefore discouraged.
@@ -202,6 +204,7 @@ To get openCL for your chipset and platform, try:
 
 Ubuntu Linux set-up
 -------------------------
+
 For this quick guide, you'll need Ubuntu 14.04 or 15.04 and the fglrx graphics drivers. You can use NVidia drivers and other platforms, too, but you'll have to find your own way to getting a working OpenCL install with them, such as `Genoil's ethminer fork <http://cryptomining-blog.com/tag/ethminer/>`_.
 
 If you're on 15.04, Go to "Software and Updates > Additional Drivers" and set it to "Using video drivers for the AMD graphics accelerator from fglrx".
@@ -233,7 +236,7 @@ Windows set-up
 -------------------------------
 `Download the latest Eth\+\+ installation <https://github.com/ethereum/webthree-umbrella/releases>`_ and choose ethminer at the "Choose Components" screen of the installation screen.
 
-..  image:: ../img/eth_miner_setup.png
+..  image:: img/eth_miner_setup.png
 ..   :height: 513px
 ..   :width: 399 px
    :alt: ethereum-ethminer-set-upfdg
@@ -274,9 +277,9 @@ To debug the miner:
     make -DCMAKE_BUILD_TYPE=Debug -DETHASHCL=1 -DGUI=0
     gdb --args ethminer -G -M
 
-**Note** hashrate info is not available in ``geth`` when GPU mining.
-Check your hashrate with ``ethminer``, ``miner.hashrate`` will always
-report 0.
+..  note:: hashrate info is not available in ``geth`` when GPU mining.
+
+Check your hashrate with ``ethminer``, ``miner.hashrate`` will always report 0.
 
 Using ethminer with eth++
 -------------------------------
@@ -306,14 +309,14 @@ Ensure that an eth++ node is running with your coinbase address properly set:
 
 .. code-block:: bash
 
- eth -i -v 1 -a 0xcadb3223d4eebcaa7b40ec5722967ced01cfc8f2 --client-name "OPTIONALNAMEHERE" -x 50 -j
+   eth -i -v 1 -a 0xcadb3223d4eebcaa7b40ec5722967ced01cfc8f2 --client-name "OPTIONALNAMEHERE" -x 50 -j
 
 Notice that we also added the -j argument so that the client can have the JSON-RPC server enabled to communicate with the ethminer instances. Additionally we removed the mining related arguments since ethminer will now do the mining for us.
 For each of your GPUs execute a different ethminer instance:
 
 .. code-block:: bash
 
-ethminer --no-precompute -G --opencl-device X
+   ethminer --no-precompute -G --opencl-device X
 
 Where X is the index number corresponding to the openCL device you want the ethminer to use  {0, 1, 2,...}.
 In order to easily get a list of OpenCL devices you can execute ``ethminer --list-devices`` which will provide a list of all devices OpenCL can detect, with also some additional information per device.
@@ -338,7 +341,7 @@ To benchmark a single-device setup you can use ethminer in benchmarking mode thr
 
 .. code-block:: bash
 
- ethminer -G -M
+   ethminer -G -M
 
 If you have many devices and you'll like to benchmark each individually, you can use the --opencl-device option similarly to the previous section:
 
@@ -411,13 +414,22 @@ Mining pools
 
 
 Mining resources
---------------------------------------------------------------------------------
+=======================================================
 
 * `Top miners of last 24h on etherchain <https://etherchain.org/statistics/miners>`_
 * `pool hashrate distribution for august 2015 <ehttp://cryptomining-blog.com/5607-the-current-state-of-ethereum-mining-pools/>`_
 * `Unmaintained list of pools on Forum <https://forum.ethereum.org/discussion/3659/list-of-pools>`_
+* `Mining profitability calculator on cryptocompare <https://www.cryptocompare.com/mining/calculator/eth>`_
 * `Mining profitability calculator on cryptowizzard <http://cryptowizzard.github.io/eth-mining-calculator/>`_
 * `Mining profitability calculator on etherscan <http://etherscan.io/ether-mining-calculator/>`_
 * `Mining profitability calculator on In The Ether <http://ethereum-mining-calculator.com/>`_
-* `Forum thread explaining uncles <https://forum.ethereum.org/discussion/2262/eli5-whats-an-uncle-in-ethereum-mining>`_
 * `Mining difficulty chart on etherscan <http://etherscan.io/charts/difficulty>`_
+
+
+
+POS vs POW
+-----------------------------
+
+* https://www.reddit.com/r/ethereum/comments/38db1z/eli5_the_difference_between_pos_and_pow/
+* https://blog.ethereum.org/2014/11/25/proof-stake-learned-love-weak-subjectivity/
+* https://www.reddit.com/r/ethereum/comments/42o8oy/can_someone_explain_the_switch_to_pos_how_and_when/

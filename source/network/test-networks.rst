@@ -103,7 +103,7 @@ It is possible to connect to or create a new network by using the --genesis and 
 
   > eth --private "customChain" --config config.json --genesis genesis.json
 
-It is possible to use both --config and --genesis. 
+It is possible to use both --config and --genesis.
 
 In that case, the genesis block description provided by --config will be overwritten by the --genesis option.
 
@@ -112,11 +112,11 @@ In that case, the genesis block description provided by --config will be overwri
   --private //defines the name of the custom chain (optional).
 
 .. code:: Console
-  
+
   --config <filename>
- 
+
 .. note:: <filename> contains a JSON description of the network:
-	
+
 	- sealEngine (engine use to mine block)
 
 		"Ethash" is the Ethereum proof of work engine (used by the live network).
@@ -185,7 +185,7 @@ Here is a Config sample (used by the Olympic network):
 The content is the same as the genesis field provided by the 'config' parameter:
 
 .. code:: JavaScript
-  
+
   {
 		"nonce": "0x000000000000002a",
 		"difficulty": "0x20000",
@@ -355,3 +355,7 @@ Type the following command:
   > balance = web3.fromWei(eth.getBalance(primary), "ether");
 
 This should return ``7.5`` indicating you have that much Ether in your account. The reason we had to put such a large number in the alloc section of your genesis file is because the "balance" field takes a number in wei which is the smallest denomination of the Ethereum currency Ether (see _`Ether`).
+
+
+* https://www.reddit.com/r/ethereum/comments/3kdnus/question_about_private_chain_mining_dont_upvote/
+* http://adeduke.com/2015/08/how-to-create-a-private-ethereum-chain/

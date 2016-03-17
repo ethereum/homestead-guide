@@ -34,7 +34,20 @@ their value in Wei. Following a common (although somewhat ambiguous) pattern, Et
 +-------------------------+-----------+-------------------------------------------+
 
 
-Getting and storing ether
+Ether supply
+=========================
+
+issuance
+
+inflation
+
+* https://blog.ethereum.org/2014/04/10/the-issuance-model-in-ethereum/
+* https://www.reddit.com/r/ethereum/comments/44zy88/clarification_on_ether_supply_and_cost_of_gas/
+* https://www.reddit.com/r/ethereum/comments/45vj4g/question_about_scarcity_of_ethereum_and_its/
+* https://www.reddit.com/r/ethtrader/comments/48yqg6/is_there_a_cap_like_with_btc_with_how_many_ether/
+
+
+Getting ether
 ================================================================================
 
 In order to obtain Ether, you need to either
@@ -50,7 +63,9 @@ Note that the ethereum platform is special in that the smart contracts enable tr
 
 Such projects (alpha/prelaunch status at the time of writing) are:
 
-* `BTCrelay <http://btcrelay.org/>`_ - `More information <https://medium.com/@ConsenSys/taking-stock-bitcoin-and-ethereum-4382f0a2f17>`_ (about ETH/BTC 2-way peg without modifying bitcoin code).
+* `BTCrelay <http://btcrelay.org/>`_
+   * `More information <https://medium.com/@ConsenSys/taking-stock-bitcoin-and-ethereum-4382f0a2f17>`_ (about ETH/BTC 2-way peg without modifying bitcoin code).
+   * `BTCrelay audit <http://martin.swende.se/blog/BTCRelay-Auditing.html>`_
 * `EtherEx decentralised exchange <https://etherex.org>`_.
 
 List of centralised exchange marketplaces
@@ -116,7 +131,7 @@ Online wallets, paper wallets, and cold storage
 * Mist Ethereum Wallet
     * `Releases to download <https://github.com/ethereum/mist/releases>`_
     * `Mist Ethereum Wallet developer preview <https://blog.ethereum.org/2015/09/16/ethereum-wallet-developer-preview/>`_ - foundation blog post
-    * How to easily set up the Ethereum Mist wallet! *Tutorial* – Tommy Economics – https://www.youtube.com/watch?v=Z6lE0Ctaeqs
+    * `How to easily set up the Ethereum Mist wallet! <https://www.youtube.com/watch?v=Z6lE0Ctaeqs>`_ - Tutorial by Tommy Economics
 * Kryptokit Jaxx
     * `Jaxx main site <http://jaxx.io/>`_
     * `Mobile release <http://favs.pw/first-ethereum-mobile-app-released/#.VsHn_PGPL5c>`_
@@ -126,10 +141,11 @@ Online wallets, paper wallets, and cold storage
 * MyEtherWallet
     * `MyEtherWallet website <https://www.myetherwallet.com/>`_
     * `MyEtherWallet source <https://github.com/kvhnuke/etherwallet/>`_
-    * `chrome extention <http://sebfor.com/myetherwallet-chrome-extension-release/>`_
+    * `Chrome extension <http://sebfor.com/myetherwallet-chrome-extension-release/>`_
 * Cold storage
     * `Icebox <https://github.com/ConsenSys/icebox>`_ by `ConsenSys <https://consensys.net/>`_ - Cold storage based on lightwallet with HD wallet library integrated.
-    * `reddit discussion 1 <https://www.reddit.com/r/ethereum/comments/45uvmy/offline_cold_storage_question/offline_cold_storage_question>`_
+    * `Reddit discussion 1 <https://www.reddit.com/r/ethereum/comments/45uvmy/offline_cold_storage_question/offline_cold_storage_question>`_
+    * `How to setup a cold storage wallet <https://www.reddit.com/r/ethereum/comments/48wfbv/eli5_how_to_setup_a_cold_storage_wallet_as/>`_
 * Hardware wallet
     * `reddit discussion 2 <https://www.reddit.com/r/ethereum/comments/45siaq/hardware_wallet/>`_
     * `reddit discussion 3 <https://www.reddit.com/r/ethereum/comments/4521o4/crowdfunding_ethereum_hardware_cold_storage_wallet/>`_
@@ -142,14 +158,14 @@ Online wallets, paper wallets, and cold storage
     * `How to buy and stole ether <http://sebfor.com/how-to-buy-and-store-ether/>`_
     * `A laymen's intro into brute forcing and why not to use brain wallets <http://www.fastcompany.com/3056651/researchers-find-a-crack-that-drains-supposedly-secure-bitcoin-wallets>`_
     * `Pyethsaletool <https://github.com/ethereum/pyethsaletool/blob/master/README.md>`_
-
+    * `Account vs wallet <https://www.reddit.com/r/ethereum/comments/47j3r5/eli5_accounts_vs_wallet_contracts_on_mist/>`_
 
 Sending ether
 ================================================================================
 
 The `Ethereum Wallet  <https://github.com/ethereum/mist/releases>`_  supports sending ether via a graphical interface.
 
-Ether can also be transfered using the **geth console**.
+Ether can also be transferred using the **geth console**.
 
 .. code-block:: console
 
@@ -162,4 +178,21 @@ For more information of Ether transfer transactions, see :ref:`account-types-gas
 
 Ethereum is unique in the realm of cryptocurrencies in that ether has utility value as a cryptofuel, commonly referred to as "gas". Beyond transaction fees, gas is a central part of every network request and requires the sender to pay for the computing resources consumed. The gas cost is dynamically calculated, based on the volume and complexity of the request and multiplied by the current gas price. Its value as a cryptofuel has the effect of increasing the stability and long-term  demand for ether and Ethereum as a whole. For more information, see :ref:`account-types-gas-and-transactions`.
 
+Gas and ether
+=============================
 
+* https://www.reddit.com/r/ethereum/comments/271qdz/can_someone_explain_the_concept_of_gas_in_ethereum/
+* https://www.reddit.com/r/ethereum/comments/3fnpr1/can_someone_possibly_explain_the_concept_of/
+* https://www.reddit.com/r/ethereum/comments/49gol3/can_ether_be_used_as_a_currency_eli5_ether_gas/
+
+
+Gas is supposed to be the constant cost of network resources/utilisation. You want the real cost of sending a transaction to always be the same, so you can't really expect Gas to be issued, currencies in general are volatile.
+
+So instead, we issue Ether whose value is supposed to vary, but also implement a Gas Price in terms of Ether. If the price of Ether goes up, the Gas Price in terms of Ether should go down to keep the real cost of Gas the same.
+
+Gas has multiple associated terms with it: Gas Prices, Gas Cost, Gas Limit, and Gas Fees. The principle behind Gas is to have a stable value for how much a transaction or computation costs on the Ethereum network.
+
+* Gas Cost is a static value for how much a computation costs in terms of Gas, and the intent is that the real value of the Gas never changes, so this cost should always stay stable over time
+* Gas Price is how much Gas costs in terms of another currency or token like Ether. To stabilise the value of gas, the Gas Price is a floating value such that if the cost of tokens or currency fluctuates, the Gas Price changes to keep the same real value. The Gas Price is set by the equilibrium price of how much users are willing to spend, and how much processing nodes are willing to accept.
+* Gas Limit is the maximum amount of Gas that can be used per block, it is considered the maximum computational load, transaction volume, or block size of a block, and miners can slowly change this value over time.
+* Gas Fee is effectively the amount of Gas needed to be paid to run a particular transaction or program (called a contract). The Gas Fees of a block can be used to imply the computational load, transaction volume, or size of a block. The gas fees are paid to the miners (or bonded contractors in PoS).
