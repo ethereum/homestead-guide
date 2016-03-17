@@ -2,8 +2,8 @@
 The Ethereum network
 ################################################################################
 
-.. toctree::
-   :maxdepth: 2
+Network info.
 
+.. toctree::
   connecting-to-the-network.rst
   test-networks.rst

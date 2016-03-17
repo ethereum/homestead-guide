@@ -278,8 +278,8 @@ To debug the miner:
     gdb --args ethminer -G -M
 
 ..  note:: hashrate info is not available in ``geth`` when GPU mining.
-Check your hashrate with ``ethminer``, ``miner.hashrate`` will always
-report 0.
+
+Check your hashrate with ``ethminer``, ``miner.hashrate`` will always report 0.
 
 Using ethminer with eth++
 -------------------------------

@@ -60,7 +60,7 @@ Learn about Ethereum
 PR videos with some pathos:
 ---------------------------------
 
-* `The world computer <>`_
+* TODO - Add link to 'The world computer' video here.
 * `Ethereum -- your turn <https://vimeo.com/88959651>`_
 
 
@@ -73,6 +73,7 @@ Blockchain and Ethereum 101
 
 * `Explain Ethereum to non-technical people Q&A on stackexchange <http://ethereum.stackexchange.com/questions/45/how-would-i-explain-ethereum-to-a-non-technical-friend>`_
 * Reddit threads on ELI5-ing Ethereum:
+
 `[1] <https://www.reddit.com/r/ethereum/comments/43brik/explaining_ethereum_to_friends/>`_
 `[2] <https://www.reddit.com/r/ethereum/comments/3c132d/eli5_what_you_guys_do_here/>`_
 `[3] <https://www.reddit.com/r/ethereum/comments/1vvz13/eli5_ethereum/>`_
