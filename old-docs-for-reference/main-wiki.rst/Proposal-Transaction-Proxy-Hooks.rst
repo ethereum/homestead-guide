@@ -35,7 +35,7 @@ That's the entire JS API.
 
 In terms of JSON-RPC, there must be an alteration to ``eth_accounts``:
 rather than just including the accounts that we have the secret key for
-(and that the user has accepted are valid for this dapp to use and know
+(and that the user has accepted are valid for this ÐApp to use and know
 about), all accounts passed as the first argument to
 ``registerProxyTransactor`` should also be contained (with the same
 safeguards as per user acceptance).

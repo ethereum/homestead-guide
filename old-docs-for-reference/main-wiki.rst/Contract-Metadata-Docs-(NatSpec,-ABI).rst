@@ -26,7 +26,7 @@ solidity specific about these data, and other contract languages are
 encouraged to implement their NatSpec/ABI support potentially with IDE-s
 extending it.
 
-Since DAPPs and IDEs will typically want to interact with these
+Since ÐApps and IDEs will typically want to interact with these
 resources, standardising their deployment and distribution is important
 for a smooth ethereum experience.
 
@@ -49,7 +49,7 @@ their backend instantiating the natspec transaction notice from actual
 transaction data and present it to the user for confirmation.
 
 This serves as a first line of defense against illegitimate transactions
-sent by malicious DAPPs in the user's name.
+sent by malicious ÐApps in the user's name.
 
 Surely, this is only feasible if - the node can trust the authenticity
 of metadata sources. - nodes have secure reliable access to the metadata
@@ -76,7 +76,7 @@ since: - the authenticity of the link between the contract and metadata
 is secured by ethereum consensus - the authenticity of actual metadata
 content is secured by content hashing - the binding is tamper proof
 
-DAPP IDE environments are supposed to support the functionality, that
+ÐApp IDE environments are supposed to support the functionality, that
 when you create a contract, all its standard metadata is - bundled in a
 single ``cmd`` json file - compiled source code is keccak hashed ->
 ``Sha3(<evmcode>)`` - ``cmd`` json is keccak hashed ->

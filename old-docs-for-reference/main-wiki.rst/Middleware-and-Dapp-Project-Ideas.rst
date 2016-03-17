@@ -126,7 +126,7 @@ into account *all* "chains of trust" between two people, and not just
 the ones that flow through a particular centralized gateway.
 
 .. figure:: http://vitalik.ca/files/wot_centralized_and_decentralized.png?1
-   :alt: 
+   :alt:
 
 One example of an algorithm that does this well is the `Advogato trust
 metric <http://www.advogato.org/trust-metric.html>`__, a trust score
@@ -134,7 +134,7 @@ scheme based on
 `max-flow <https://en.wikipedia.org/wiki/Maximum_flow_problem>`__.
 
 A useful project would be to create an implementation of such a system
-on Ethereum, and create a dapp by which anyone can register an identity,
+on Ethereum, and create a ÐApp by which anyone can register an identity,
 and register trust scores for other identities. Then, create a
 decentralized cloud computing service by which anyone can query "provide
 a proof, consisting of a list of trust paths, showing the Advogato trust
@@ -144,13 +144,13 @@ charity to subsidize it); if user A wants to know "what is B's trust
 score", they can make this query, receive the result, verify the proof,
 and then display it.
 
-This system could then be used by many other dapps on ethereum,
+This system could then be used by many other ÐApps on ethereum,
 including financial contract using price feeds and arbitration.
 
 Financial Derivatives Market
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Essentially, a polished, working dapp that allows users to make options
+Essentially, a polished, working ÐApp that allows users to make options
 on any ethereum asset, and derivatives (eg. CFDs) on any ethereum price
 feed. This should support "multisig price feeds": choosing multiple data
 feed contract addresses that support a particular ticker symbol, and

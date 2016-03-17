@@ -45,7 +45,7 @@ Glossary
       A block is a package of data that contains zero or more transactions, the hash of the previous block ("parent"), and optionally other data. The total set of blocks, with every block except for the initial "genesis block" containing the hash of its parent, is called the blockchain and contains the entire transaction history of a network. Note that some blockchain-based cryptocurrencies instead use the word "ledger" for a blockchain; the two are roughly equivalent, although in systems that use the term "ledger" each block generally contains a full copy of the current state (e.g. currency balances, partially fulfilled contracts, registrations) of every account allowing users to discard outdated historical data.
 
    dapp
-   Đapp
+   ÐApp
       Unofficially stands for either "distributed app" or "eth app". Some say it is pronounced Ethapp due to the use of the uppercase eth letter Ð.
 
    address
@@ -182,7 +182,7 @@ Glossary
       Homestead is the second major version release of the Ethereum platform. Homestead includes several protocol changes and a networking change that makes possible further network upgrades: `EIP\-2 Main homestead hardfork changes <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2.mediawiki>`_; `EIP\-7 Hardfork EVM update (DELEGATECALL) <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7.md>`_; `EIP\-8 devp2p forward compatibility <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-8.md>`_. Homestead will launch when block 1,150,000 is reached on the Mainnet. On the Testnet, Homestead will launch at block 494,000.
 
    metropolis
-      The third stage of Ethereum's release. This is the stage when the user interfaces come out (e.g. Mist), including a Dapp store, and non-technical users should feel comfortable joining at this point.
+      The third stage of Ethereum's release. This is the stage when the user interfaces come out (e.g. Mist), including a ÐApp store, and non-technical users should feel comfortable joining at this point.
 
    serenity
       The fourth stage of Ethereum's release. This is when things are going to get fancy: the network is going to change its mining process from Proof-of-Work to Proof-of-Stake.
@@ -409,5 +409,3 @@ Glossary
    hardware wallet
    brain wallet
    cold storage
-
-

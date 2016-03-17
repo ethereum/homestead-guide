@@ -1,4 +1,4 @@
-URLs in DAPP browsers
+URLs in ÐApp browsers
 =====================
 
 URLs should contain all allowable urls in browsers and *all* ``http(s)``
@@ -53,7 +53,7 @@ attributes:
    ``http://eth:bzz@google.com`` (*optional*)
 
 If ``path`` is an empty string or is missing, the path matches the
-*document-root* of the DAPP. If ``contentType`` is empty or missing,
+*document-root* of the ÐApp. If ``contentType`` is empty or missing,
 manifest if assumed by default.
 
 (NOTE: Unclear. When no path matches and there is no fallback path e.g.
@@ -104,7 +104,7 @@ Example 1
          {
             "path": "cv.pdf",
             "contentType": "document/pdf",
-            "hash": "sdfhsd76ftsd86ft76sdgf78h7tg", 
+            "hash": "sdfhsd76ftsd86ft76sdgf78h7tg",
           }
        ]
     }
@@ -119,14 +119,14 @@ Now you can register the manifest hash with NameReg to resolve
 
 ::
 
-       http://my-website/cv.pdf 
+       http://my-website/cv.pdf
 
 serves ``cv.pdf``
 
 Example 2
 ~~~~~~~~~
 
-| Imagine you have a DAPP called *chat* and host it under
+| Imagine you have a ÐApp called *chat* and host it under
 | your local directory ``<dir>`` looks like this:
 
 ::
@@ -140,9 +140,9 @@ the webserver has the following routing rules:
 
 ::
 
-      -> <dir>/index.html 
+      -> <dir>/index.html
       <unkwown> -> <dir>/index.html # where <unknown> != index.html
-      img/logo.gif -> <dir>/img/logo.gif 
+      img/logo.gif -> <dir>/img/logo.gif
       img/avatars -> <dir>img/avatars/index.html
       img/avatars/fefe.jpg -> <dir>/img/avatars/fefe.jpg
       img/avatars/<unknown>.jpg <dir>/img/avatars/index.html # where <unknown> != fefe.jpg
@@ -152,7 +152,7 @@ following manifest:
 
 .. code:: js
 
-    { 
+    {
       "entries": [
       { "hash": HASH(<dir>/index.html) },
       { "path": "index.html", "hash": HASH(<dir>/index.html) },
@@ -219,7 +219,7 @@ Examples
 
     {
        "entries": [
-          { 
+          {
              "path": "chat",
              "hash": "sdfhsd76ftsd86ft76sdgf78h7tg",
              "status": 200,

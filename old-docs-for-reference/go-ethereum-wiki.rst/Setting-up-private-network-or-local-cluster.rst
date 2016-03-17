@@ -3,7 +3,7 @@ to make it private, and how to hook up your nodes on the eth-netstat
 network monitoring app. A fully controlled ethereum network is useful as
 a backend for network integration testing (core developers working on
 issues related to networking/blockchain synching/message propagation,
-etc or DAPP developers testing multi-block and multi-user scenarios).
+etc or ÐApp developers testing multi-block and multi-user scenarios).
 
 We assume you are able to build ``geth`` following the `build
 instructions <https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum>`__
@@ -50,7 +50,7 @@ Now you can launch a second node with:
 
 .. code:: bash
 
-    geth --datadir="/tmp/eth/60/02" --verbosity 6 --ipcdisable --port 30302 --rpcport 8102 console 2>> /tmp/eth/60/02.log 
+    geth --datadir="/tmp/eth/60/02" --verbosity 6 --ipcdisable --port 30302 --rpcport 8102 console 2>> /tmp/eth/60/02.log
 
 If you want to connect this instance to the previously started node you
 can add it as a peer from the console with
@@ -62,7 +62,7 @@ You can test the connection by typing in geth console:
 
     > net.listening
     true
-    > net.peerCount 
+    > net.peerCount
     1
     > admin.peers
     ...

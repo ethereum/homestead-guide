@@ -86,9 +86,9 @@ following components:
 
 -  ``web3.js`` library implementing the `JavaScript
    API <https://github.com/ethereum/wiki/wiki/JavaScript-API>`__ for
-   Dapps to conveniently interact with an ethereum node
+   ÐApps to conveniently interact with an ethereum node
 -  ``solc`` a standalone solidity compiler. You only need this if you
-   want to use your Dapp or `console to compile solidity
+   want to use your ÐApp or `console to compile solidity
    code <https://github.com/ethereum/go-ethereum/wiki/Contracts-and-Transactions#compiling-a-contract>`__.
 -  ``ethminer`` a standalone miner for openCL `GPU
    mining <https://github.com/ethereum/go-ethereum/wiki/Mining#gpu-mining>`__

@@ -8,7 +8,7 @@
 
 This is the Wiki for the official Ethereum golang implementation. For
 generic Ethereum-related information (whitepaper, yellow paper, protocol
-and interface specs, APIs, DAPP development guides, etc) see the
+and interface specs, APIs, ÐApp development guides, etc) see the
 `Ethereum main wiki <https://github.com/ethereum/wiki/wiki>`__.
 
 Main entry points:

@@ -10,8 +10,8 @@ is the one, which uploads the contracts as well and nobody want to
 deploy its app and contracts without being able to thoroughly test them
 on the main/test net beforehand.
 
-Additionally not all dapps use one or more contracts, but might want to
-deploy contracts on the fly (like the wallet dapp) and need a simple way
+Additionally not all ÐApps use one or more contracts, but might want to
+deploy contracts on the fly (like the wallet ÐApp) and need a simple way
 to get the compiled contract code.
 
 So here a re my suggestions:

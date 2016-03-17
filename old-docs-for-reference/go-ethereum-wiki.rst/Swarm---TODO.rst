@@ -25,13 +25,10 @@ CLI
 -  hooking into DPA local API
 -  running as a daemon accepting request via socket?
 
--
-~
-
 Encryption
 ----------
 
--  encryption gateway to incentivise encryption of public content
+-  encryption gateway to incentivize encryption of public content
 -  xor encryption with random chunks
 -  in-memory encryption keys
 -  originator encryption for private content
@@ -39,15 +36,15 @@ Encryption
 APIs
 ----
 
--  DAPP API - js integration (Fabian, Alex)
--  mist dapp storage scheme, url->hash mapping (Fabian, Alex)
+-  ÐApp API - js integration (Fabian, Alex)
+-  Mist ÐApp storage scheme, url->hash mapping (Fabian, Alex)
    https://github.com/ethereum/go-ethereum/wiki/URL-Scheme
 
 Discuss alternatives
 ====================
 
 I suggest we each pick 2/3 and read up on their project status,
-features, useability, objectives, etc - Is it even worth it to
+features, usability, objectives, etc - Is it even worth it to
 reinvent/reimplement the wheel? - what features do we want now and in
 future - roadmap
 
@@ -67,8 +64,8 @@ Brainstorming
 -  proof of storage capacity directly rewarded by contract
 -  streaming, hash chains
 -  routing and learning graph traversal
--  minimising hops
--  forwarding strategies, optimising dispersion of requests
+-  minimizing hops
+-  forwarding strategies, optimizing dispersion of requests
 -  lifetime of requests, renewals (repeated retrieval requests), expiry,
    reposting (repeated storage request)
 -  redundancy - store same data in multiple nodes (e.g 4x)
@@ -81,7 +78,7 @@ Simulations
 -  full table homogeneous nodes network size vs density vs table size
    expected row-sizes
 -  forwarding strategy vs latency vs traffic
--  stable table, dropout rate vs routing optimisation by precalculating
+-  stable table, dropout rate vs routing optimization by precalculating
    subtables for all peers. expected distance change (proximity delta)
    per hop
 
@@ -91,7 +88,7 @@ Swarm
 How far does the analogy go?
 
 +--------------------------+--------------------------------------------------+
-| swarm of bees            | a decentralised network of peers                 |
+| swarm of bees            | a decentralized network of peers                 |
 +==========================+==================================================+
 | living in a hive         | form a distributed preimage archive              |
 +--------------------------+--------------------------------------------------+

@@ -81,7 +81,7 @@ Next add the web3 package:
 I recommend also to add the following packages:
 
 -  `ethereum:dapp-styles <https://atmospherejs.com/ethereum/dapp-styles>`__
-   - The LESS/CSS framework which gives your dapp a nice Mist-consistent
+   - The LESS/CSS framework which gives your ÐApp a nice Mist-consistent
    look.
 -  `ethereum:tools <https://atmospherejs.com/ethereum/tools>`__ - This
    package gives you the ``EthTools`` object with a set of formatting an
@@ -147,7 +147,7 @@ https://github.com/SilentCicero/meteor-dapp-boilerplate
 Connect your Ðapp
 ~~~~~~~~~~~~~~~~~
 
-To connect our dapp we need to start ``geth`` with the right CORS
+To connect our ÐApp we need to start ``geth`` with the right CORS
 headers in another terminal:
 
 .. code:: bash
@@ -205,7 +205,7 @@ line inside:
     // libs
     @import '{ethereum:dapp-styles}/dapp-styles.less';
 
-Now you can use all dapp-styles classes and also overwrite all variables
+Now you can use all ``dapp-styles`` classes and also overwrite all variables
 of the framework. You can find them `in the
 repo <https://github.com/ethereum/dapp-styles/blob/master/constants.import.less>`__.
 Overwrite them by copying them to your ``myDapp.less`` file and set
@@ -308,7 +308,7 @@ allowing you to start the app by simply clicking the
 
 Be aware that when running your app on the ``file://`` protocol, you
 won't be able to use client side routing, due to web security. Later in
-mist you will be able to use client side routing, as dapps are severed
+mist you will be able to use client side routing, as ÐApps are severed
 over the ``eth://`` protocol.
 
 In the future you will be able to simply upload your Ðapp on swarm.

@@ -129,7 +129,7 @@ IRC Freenode channels: \* ``#ethereum``: for general discussion \*
 ``#ethereum-dev``: for development specific questions and discussions \*
 ``##ethereum``: for offtopic and banter \* ``#ethereumjs``: for
 questions related to web3.js and node-ethereum \* ``#ethereum-markets``:
-Trading \* ``#ethereum-mining`` Mining \* ``#dappdevs``: Dapp developers
+Trading \* ``#ethereum-mining`` Mining \* ``#dappdevs``: ÐApp developers
 channel \* ``#ethdev``: buildserver etc
 
 `IRC Logs by ZeroGox <https://zerogox.com/bot/log>`__
@@ -153,7 +153,7 @@ The ZeroGox Bot
 
 `ZeroGox Bot <https://zerogox.com/bot>`__
 
-Dapp developers' mailing list
+ÐApp developers' mailing list
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 https://dapplist.net/

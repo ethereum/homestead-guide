@@ -76,7 +76,7 @@ Docs and tutorials
    ethereum/wiki <https://github.com/ethereum/wiki/wiki/The-Solidity-Programming-Language>`__
 -  `Ethereum ÐΞVcon-0: Solidity, Vision and Roadmap - YouTube
    Video <https://www.youtube.com/watch?v=DIqGDNPO5YM>`__
--  `Dapps for beginners <https://dappsforbeginners.wordpress.com/>`__
+-  `ÐApps for beginners <https://dappsforbeginners.wordpress.com/>`__
 -  `Tutorial
    1 <https://forum.ethereum.org/discussion/1634/tutorial-1-your-first-contract/p1>`__
 -  `Tutorial
@@ -86,7 +86,7 @@ Docs and tutorials
    (Outdated)
 -  `Solidity tutorial 1 by Eris
    Industries <https://eng.erisindustries.com/tutorials/2015/03/11/solidity-1/>`__
--  `Dapp tutorials by Andreas Olofsson (Eris
+-  `ÐApp tutorials by Andreas Olofsson (Eris
    Industries) <https://www.youtube.com/playlist?list=PL_kFomDrqPoZBu5uxd8OBGColQPYbuz3i>`__
 -  `Eris Solidity
    resources <https://github.com/eris-ltd/solidity-resources>`__
@@ -94,15 +94,15 @@ Docs and tutorials
 Examples
 ^^^^^^^^
 
--  `a dapp
+-  `A ÐApp
    listing <https://github.com/ethereum/wiki/wiki/FAQ#where-can-i-find-example-%C3%90apps>`__
 -  `Solidity Contracts on Ethereum -
    Ether.Fund <https://ether.fund/contracts/solidity>`__
--  `Ethereum dapp bin <https://github.com/ethereum/dapp-bin/>`__
+-  `Ethereum ÐApp bin <https://github.com/ethereum/dapp-bin/>`__
 -  `Solidity Standard
    Library <https://github.com/ethereum/wiki/wiki/Solidity-standard-library>`__
 -  `Whisper chat
-   Dapp <https://github.com/ethereum/meteor-dapp-whisper-chat-client/tree/master/dist/deploy>`__
+   ÐApp <https://github.com/ethereum/meteor-dapp-whisper-chat-client/tree/master/dist/deploy>`__
    written in meteor
 -  `order statistic
    tree <https://github.com/drcode/ethereum-order-statistic-tree>`__ by
@@ -121,7 +121,7 @@ Serpent
 -  `serpent language
    spec <https://github.com/ethereum/wiki/wiki/Serpent>`__
 
-Contract/Dapp development environments and frameworks
+Contract/ÐApp development environments and frameworks
 -----------------------------------------------------
 
 -  `Mix standalone
@@ -313,7 +313,7 @@ The asynchronous way of doing the same looks like this:
 
     MyContract.new([arg1, arg2, ...,]{from: primaryAccount, data: evmCode}, function(err, contract) {
       if (!err && contract.address)
-        console.log(contract.address); 
+        console.log(contract.address);
     });
 
 Gas and transaction costs
@@ -420,13 +420,13 @@ model is used as document store, the url-hint is no longer necessary.)
     contract = eth.compile.solidity(source).test
     // create contract object
     var MyContract = eth.contract(contract.info.abiDefinition)
-    // extracts info from contract, save the json serialisation in the given file, 
+    // extracts info from contract, save the json serialisation in the given file,
     contenthash = admin.saveInfo(contract.info, "~/dapps/shared/contracts/test/info.json")
     // send off the contract to the blockchain
     MyContract.new({from: primaryAccount, data: contract.code}, function(error, contract){
       if(!error && contract.address) {
         // calculates the content hash and registers it with the code hash in `HashReg`
-        // it uses address to send the transaction. 
+        // it uses address to send the transaction.
         // returns the content hash that we use to register a url
         admin.register(primaryAccount, contract.address, contenthash)
         // here you deploy ~/dapps/shared/contracts/test/info.json to a url
@@ -509,7 +509,7 @@ The comment has expressions in between backticks which are to be
 evaluated at the time the transaction confirmation message is presented
 to the user. The variables that refer to parameters of method calls then
 are instantiated in accordance with the actual transaction data sent by
-the user (or the user's dapp). NatSpec support for confirmation notices
+the user (or the user's ÐApp). NatSpec support for confirmation notices
 is fully implemented in ``geth``. NatSpec relies on both the abi
 definition as well as the userDoc component to generate the proper
 confirmations. Therefore in order to access that, the contract needs to
@@ -578,7 +578,7 @@ And now try to send an actual transaction:
 .. code:: js
 
     > myMultiply7.multiply.sendTransaction(6, {from: eth.accounts[0]})
-    NatSpec: Will multiply 6 by 7. 
+    NatSpec: Will multiply 6 by 7.
     Confirm? [y/n] y
     >
 
@@ -646,7 +646,7 @@ private chain and for that you need an account. See the sections on
     // assume an existing unlocked primary account
     primary = eth.accounts[0];
 
-    // mine 10 blocks to generate ether 
+    // mine 10 blocks to generate ether
 
     // starting miner
     miner.start(8);
@@ -758,7 +758,7 @@ handled through it.
     // set UrlHint address via globalRegistrar
     urlHintAddr = admin.setUrlHint()
 
-    // (re)sets the registrar variable to a GlobalRegistrar contract instance 
+    // (re)sets the registrar variable to a GlobalRegistrar contract instance
     registrar = GlobalRegistrar.at(globalRegistrarAddr);
 
 If this is successful, you should be able to check with the following
@@ -782,7 +782,7 @@ and the following ones return correct code:
 Using the registrar services
 ----------------------------
 
-Can provide useful interfaces between contracts and dapps.
+Can provide useful interfaces between contracts and ÐApps.
 
 Global registrar
 ~~~~~~~~~~~~~~~~
@@ -978,7 +978,7 @@ always the live net.
 
     // retrieve contract address using global registrar entry with 'multply7'
     contractaddress = registrar.addr("multiply7);
-    // retrieve the info using the url 
+    // retrieve the info using the url
     info = admin.getContractInfo(contractaddress);
     multiply7 = eth.contract(info.abiDefinition).at(contractaddress);
     // try Natspec

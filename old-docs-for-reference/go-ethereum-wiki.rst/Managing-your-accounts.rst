@@ -58,7 +58,7 @@ And finally. **DO NOT FORGET YOUR PASSWORD**
             new     create a new account
             update  update an existing account
             import  import a private key into a new account
-            
+
 
 You can get info about further subcommands by
 ``geth account help <subcommand>``
@@ -212,7 +212,7 @@ You achieve this with:
 
 ::
 
-    touch /path/to/password 
+    touch /path/to/password
     chmod 700 /path/to/password
     cat > /path/to/password
     >I type my pass here^D
@@ -313,7 +313,7 @@ If you want to use an account non-interactively, you need to unlock it.
 You can do this on the command line with the ``--unlock`` option which
 takes a whitespace separated list of accounts (in hex or index) as
 argument so you can unlock the accounts programmatically for one
-session. This is useful if you want to use your account from Dapps via
+session. This is useful if you want to use your account from ÐApps via
 RPC. ``--unlock`` will unlock the first account. This is useful when you
 created your account programmatically, you do not need to know the
 actual account to unlock it.
@@ -322,8 +322,8 @@ Unlocking one account:
 
 ::
 
-    geth --password <(echo this is not secret!) account new 
-    geth --password <(echo this is not secret!) --unlock primary --rpccorsdomain localhost --verbosity 6 2>> geth.log 
+    geth --password <(echo this is not secret!) account new
+    geth --password <(echo this is not secret!) --unlock primary --rpccorsdomain localhost --verbosity 6 2>> geth.log
 
 Instead of the account address, you can use integer indexes which refers
 to the address position in the account listing (and corresponds to order
@@ -365,13 +365,13 @@ Print all balances with a JavaScript function:
 
 ::
 
-    function checkAllBalances() { 
-    var i =0; 
+    function checkAllBalances() {
+    var i =0;
     eth.accounts.forEach( function(e){
-        console.log("  eth.accounts["+i+"]: " +  e + " \tbalance: " + web3.fromWei(eth.getBalance(e), "ether") + " ether"); 
-    i++; 
+        console.log("  eth.accounts["+i+"]: " +  e + " \tbalance: " + web3.fromWei(eth.getBalance(e), "ether") + " ether");
+    i++;
     })
-    }; 
+    };
 
 That can then be executed with:
 

@@ -1,37 +1,37 @@
-To have a simple way to load and start Dapps vinay and I came up with a
+To have a simple way to load and start ÐApps vinay and I came up with a
 great idea:
 
-1. Dapp packages can be downloaded as .zip/.rlp/.dapp
+1. ÐApp packages can be downloaded as .zip/.rlp/.dapp
 
-   -  they will contain a ``dapp.json`` with author info and a dapp name
+   -  they will contain a ``dapp.json`` with author info and a ÐApp name
       and version.
    -  and a ``swarm.json``, with all the file paths and hashes, `see
       here <https://github.com/ethereum/go-ethereum/wiki/URL-Scheme#server-config-examples>`__)
 
 2. | run ``$ geth install mydapp.zip``, which will verify, extract and
-     copy the dapp locally somewhere.
+     copy the ÐApp locally somewhere.
    | **Note** This could also get a name reg domain and looks up the
      hash an content online, fetches it and installs it.
 
 3. run ``$ geth start mydapp`` will start a node, with the correct
    options (rpc, corsdomain etc) and start a local server which points
-   with its root into the dapps folder and resolves path and files
+   with its root into the ÐApps folder and resolves path and files
    through the ``swarm.json``
 
-4. goto ``http://localhost:5555`` to see you dapp running (needs to be
+4. goto ``http://localhost:5555`` to see you ÐApp running (needs to be
    thought of, as dapps would share localstorage, maybe use a different
-   and reusable port per dapp)
+   and reusable port per ÐApp)
 
 Update
 ------
 
 -  run ``$ geth update mydapp.zip``, which will extract, and overwrites
-   the old dapp files
+   the old ÐApp files
 
-Bundle dapp
+Bundle ÐApp
 -----------
 
--  run ``$ geth bundle myDappFolder/dist/``, which will create a dapp
+-  run ``$ geth bundle myDappFolder/dist/``, which will create a ÐApp
    bundle from a folder, to share with others.
 
 -  run ``$ geth deploy myDappFolder/dist/`` could save it to pastebin

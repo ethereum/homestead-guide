@@ -48,7 +48,7 @@ The Ethereum protocol design process follows a number of principles:
    concepts can be made more efficient by stripping out some of its
    functionality when it is not necessary. An example of this principle
    being followed is our choice of a LOG opcode as a way of feeding
-   information to (particularly light client) dapps, as opposed to
+   information to (particularly light client) ÐApps, as opposed to
    simply logging all transactions and messages as was internally
    suggested earlier - the concept of "message" is really the
    agglomeration of multiple concepts, including "function call" and
@@ -122,7 +122,7 @@ The benefits of UTXOs are:
 1. **Higher degree of privacy**: if a user uses a new address for each
    transaction that they receive then it will often be difficult to link
    accounts to each other. This applies greatly to currency, but less to
-   arbitrary dapps, as arbitrary dapps often necessarily involve keeping
+   arbitrary ÐApps, as arbitrary ÐApps often necessarily involve keeping
    track of complex bundled state of users and there may not exist such
    an easy user state partitioning scheme as in currency.
 2. **Potential scalability paradigms**: UTXOs are more theoretically
@@ -165,10 +165,10 @@ The benefits of accounts are:
    access all data related to an account by scanning down the state tree
    in a specific direction. In a UTXO paradigm, the references change
    with each transaction, a particularly burdensome problem for
-   long-running dapps that try to use the above mentioned
+   long-running ÐApps that try to use the above mentioned
    state-root-in-UTXO propagation mechanism.
 
-We have decided that, particularly because we are dealing with dapps
+We have decided that, particularly because we are dealing with ÐApps
 containing arbitrary state and code, the benefits of accounts massively
 outweigh the alternatives. Additionally, in the spirit of the We Have No
 Features principle, we note that if people really do care about privacy

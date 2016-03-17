@@ -294,7 +294,7 @@ both big-endian encoded, fixed-width 32-byte unsigned.
 The payload is otherwise unformatted binary data.
 
 In the Javascript API, the distinction between envelopes and messages is
-blurred. This is because DApps should know nothing about envelopes whose
+blurred. This is because ÐApps should know nothing about envelopes whose
 message cannot be inspected; the fact that nodes pass envelopes around
 regardless of their ability to decode the message (or indeed their
 interest in it at all) is an important component in Whisper's dark
