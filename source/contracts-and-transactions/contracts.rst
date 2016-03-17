@@ -27,10 +27,9 @@ blockchain:
 
 .. code:: js
 
-	contract HelloWorld
-	{
-  		event Print(string out);
-  		function() { Print("Hello, World!"); }
+	contract HelloWorld {
+		event Print(string out);
+		function() { Print("Hello, World!"); }
 	}
 
 This contract will create a log entry on the blockchain of type Print with a
