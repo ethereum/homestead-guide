@@ -20,22 +20,22 @@ Every account is defined by a pair of keys, a private key and public key. Accoun
 Creating a key is tantamount to creating an account.
 
 * You don't need to tell anybody else you're doing it
-* You don't need to syncronise with the blockchain
-* you don't need to run a client
-* you don't even need to be connected to the internet
+* You don't need to synchronize with the blockchain
+* You don't need to run a client
+* You don't even need to be connected to the internet
 
 Of course your new account will not contain any Ether. But it'll be yours and you can be certain that without your key and your password, nobody else can ever access it.
 
 It is safe to transfer the entire directory or any individual keyfile between ethereum nodes.
 
-.. warning:: Note that in case you are adding keyfiles to your node from a different node, the order of accounts may change. So make sure you do not rely or change the index in your scripts or code snippets.
+.. Warning:: Note that in case you are adding keyfiles to your node from a different node, the order of accounts may change. So make sure you do not rely or change the index in your scripts or code snippets.
 
 .. _creating_an_account:
 
 Creating an account
 ================================================================================
 
-.. warning:: **Remember your passwords and `backup your keyfiles <backup-and-restore-accounts>`_.** In order to send transactions from an account, including sending ether, you must have BOTH the keyfile and the password. Be absolutely sure to have a copy of your keyfile AND remember the password for that keyfile, and store them both as securely as possible. There are no escape routes here; lose the keyfile or forget your password and all your ether is gone. It is NOT possible to access your account without a password and there is no *forgot my password* option here. Do not forget it.
+.. Warning:: **Remember your passwords and `backup your keyfiles <backup-and-restore-accounts>`_.** In order to send transactions from an account, including sending ether, you must have BOTH the keyfile and the password. Be absolutely sure to have a copy of your keyfile AND remember the password for that keyfile, and store them both as securely as possible. There are no escape routes here; lose the keyfile or forget your password and all your ether is gone. It is NOT possible to access your account without a password and there is no *forgot my password* option here. Do not forget it.
 
 Using ``geth account new``
 --------------------------------------------------------------------------------
@@ -59,7 +59,7 @@ For non-interactive use you supply a plaintext password file as argument to the 
 
   $ geth --password /path/to/password account new
 
-..  warning:: Using the ``--password`` flag is meant to be used only for testing or automation in trusted environments. It is a bad idea to save your password to file or expose it in any other way. If you do use the ``--password`` flag with a password file, make sure the file is not readable or even listable for anyone but you. You can achieve this in Mac/Linux systems with:
+..  Warning:: Using the ``--password`` flag is meant to be used only for testing or automation in trusted environments. It is a bad idea to save your password to file or expose it in any other way. If you do use the ``--password`` flag with a password file, make sure the file is not readable or even listable for anyone but you. You can achieve this in Mac/Linux systems with:
 
 .. code-block:: Bash
 
@@ -69,7 +69,7 @@ For non-interactive use you supply a plaintext password file as argument to the 
   >I type my pass
 
 
-To list all the accounts with keyfiles currently in your ``keystore`` folder use the ``list`` subcommand of the ``geth account`` command:
+To list all the accounts with keyfiles currently in you’re ``keystore`` folder use the ``list`` subcommand of the ``geth account`` command:
 
 .. code-block:: Bash
 
@@ -116,7 +116,7 @@ This shows that you have no accounts. You can also create an account from the co
   Repeat passphrase:
   "0xb2f69ddf70297958e582a0cc98bce43294f1007d"
 
-.. note:: Remember to use a strong and randomly generated password.
+.. Note:: Remember to use a strong and randomly generated password.
 
 We just created our first account. If we try to list our accounts again we can see our new account:
 
@@ -133,7 +133,7 @@ Using Mist Ethereum wallet
 
 For the command line averse, there is now a GUI-based option for creating accounts: The “official” Mist Ethereum wallet. The Mist Ethereum wallet, and its parent Mist project, are being developed under the auspices of the Ethereum Foundation, hence the “official” status. Versions of the wallet app are available for Linux, Mac OS X, and Windows.
 
-.. warning:: The Mist wallet is beta sofware. Please beware and use it at your own risk.
+.. Warning:: The Mist wallet is beta software. Please beware and use it at your own risk.
 
 Creating an account using the GUI Mist Ethereum wallet couldn’t be easier. In fact, your first account is created during the installation of the app.
 
@@ -161,7 +161,7 @@ Creating an account using the GUI Mist Ethereum wallet couldn’t be easier. In 
 
 5. Creating additional accounts is easy; just click on ADD ACCOUNT in the app’s main screen and enter the required password.
 
-.. note:: The Mist wallet is still in active development, so details of the steps outlined above may change with upgrades.
+.. Note:: The Mist wallet is still in active development, so details of the steps outlined above may change with upgrades.
 
 
 Creating a Multi-Signature Wallet in Mist
@@ -220,7 +220,7 @@ Below are "wallet" related option:
 
   > eth wallet import <file> //Import a presale wallet.
 
-.. note:: the 'account import' option can only be used to import generic key file. the 'wallet import' option can only be used to import a presale wallet.
+.. Note:: the 'account import' option can only be used to import generic key file. the 'wallet import' option can only be used to import a presale wallet.
 
 It is also possible to access keys management from the integrated console (using the built-in console or geth attach):
 
@@ -251,7 +251,7 @@ To create a wallet, run ``ethkey`` with the ``createwallet`` command:
 Please enter a MASTER passphrase to protect your key store (make it strong!):
 You'll be asked for a "master" passphrase. This protects your privacy and acts as a default password for any keys. You'll need to confirm it by entering the same text again.
 
-.. note:: Use a strong randomly generated password.
+.. Note:: Use a strong randomly generated password.
 
 We can list the keys within the wallet simply by using the list command:
 
@@ -269,10 +269,10 @@ To create a key, we use the ``new`` command. To use it we must pass a name - thi
 
   > ethkey new test
 
-Enter a passphrase  with which to secure this account (or nothing to use the master passphrase).
+Enter a passphrase with which to secure this account (or nothing to use the master passphrase).
 It will prompt you to enter a passphrase to protect this key. If you just press enter, it'll use the default "master" passphrase. Typically this means you won't need to enter the passphrase for the key when you want to use the account (since it remembers the master passphrase). In general, you should try to use a different passphrase for each key since it prevents one compromised passphrase from giving access to other accounts. However, out of convenience you might decide that for low-security accounts to use the same passphrase.
 
-Here, let's give it the incredibly imaginitive passphrase of 123. (Never ever use simple passwords like this for anything else than ephemeral test accounts).
+Here, let's give it the incredibly imaginative passphrase of 123. (Never ever use simple passwords like this for anything else than ephemeral test accounts).
 Once you enter a passphrase, it'll ask you to confirm it by entering again. Enter 123 a second time.
 Because you gave it its own passphrase, it'll also ask you to provide a hint for this password which will be displayed to you whenever it asks you to enter it. The hint is stored in the wallet and is itself protected by the master passphrase. Enter the truly awful hint of 321 backwards.
 
@@ -289,7 +289,7 @@ Because you gave it its own passphrase, it'll also ask you to provide a hint for
     ICAP: XE472EVKU3CGMJF2YQ0J9RO1Y90BC0LDFZ
     Raw hex: 0092e965928626f8880629cec353d3fd7ca5974f
 
-All normal (aka direct) ICAP addresses begin with XE so you should be able to recognise them easily. Notice also that the key has another identifier after Created key. This is known as the UUID. This is a unique identifer for the key that has absolutely nothing to do with the account itself. Knowing it does nothing to help an attacker discover who you are on the network. It also happens to be the filename for the key, which you can find in either ~/.web3/keys (Mac or Linux) or $HOME/AppData/Web3/keys (Windows).
+All normal (aka direct) ICAP addresses begin with XE so you should be able to recognize them easily. Notice also that the key has another identifier after Created key. This is known as the UUID. This is a unique identifier for the key that has absolutely nothing to do with the account itself. Knowing it does nothing to help an attacker discover who you are on the network. It also happens to be the filename for the key, which you can find in either ~/.web3/keys (Mac or Linux) or $HOME/AppData/Web3/keys (Windows).
 Now let's make sure it worked properly by listing the keys in the wallet:
 
 .. code-block:: Bash
@@ -308,7 +308,7 @@ Using Mist Ethereum wallet
 
 Importing your presale wallet using the GUI Mist Ethereum wallet is very easy. In fact, you will be asked if you want to import your presale wallet during the installation of the app.
 
-.. warning:: Mist wallet is beta software. Beware and use it at your own risk.
+.. Warning:: Mist wallet is beta software. Beware and use it at your own risk.
 
 Instructions for installing the Mist Ethereum wallet are given in the section :ref:`Creating an account: Using Mist Ethereum wallet <using-mist-ethereum-wallet>`.
 
@@ -323,7 +323,7 @@ Simply drag-and-drop your ``.json`` presale wallet file into the designated area
 
 If you choose not to import your presale wallet during installation of the app, you can import it at any time by selecting the ``Accounts`` menu in the app’s menu bar and then selecting ``Import Pre-sale Accounts``.
 
-.. note:: The Mist wallet is still in active development, so details of the steps outlined above may change with upgrades.
+.. Note:: The Mist wallet is still in active development, so details of the steps outlined above may change with upgrades.
 
 Using geth
 --------------------------------------------------------------------------------
@@ -381,7 +381,7 @@ For non-interactive use the passphrase can be specified with the ``--password`` 
 
 Since only one password can be given, only format update can be performed, changing your password is only possible interactively.
 
-.. note:: account update has the side effect that the order of your accounts may change. After a successful update, all previous formats/versions of that same key will be removed!
+.. Note:: account update has the side effect that the order of your accounts may change. After a successful update, all previous formats/versions of that same key will be removed!
 
 
 .. _backup-and-restore-accounts:
@@ -433,9 +433,6 @@ For non-interactive use the passphrase can be specified with the ``--password`` 
   geth --password <passwordfile> account import <keyfile>
 
 
-.. note:: Since you can directly copy your encrypted accounts to another ethereum instance, this import/export mechanism is not needed when you transfer an account between nodes.
+.. Note:: Since you can directly copy your encrypted accounts to another ethereum instance, this import/export mechanism is not needed when you transfer an account between nodes.
 
-.. warning:: When you copy keys into an existing node's ``keystore``, the order of accounts you are used to may change. Therefore you make sure you either do not rely on the account order or double-check and update the indexes used in your scripts.
-
-
-
+.. Warning:: When you copy keys into an existing node's ``keystore``, the order of accounts you are used to may change. Therefore you make sure you either do not rely on the account order or double-check and update the indexes used in your scripts.
