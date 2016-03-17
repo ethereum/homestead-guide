@@ -45,7 +45,7 @@ Dapp development requires an understanding of the Web3 Javascript API, the JSON 
 
 * `Web3 JavaScript API <https://github.com/ethereum/wiki/wiki/JavaScript-API>`__ - This is the main JavaScript SDK to use when you want to interact with an Ethereum node.
 * `JSON RPC API <https://github.com/ethereum/wiki/wiki/JSON-RPC>`__ - This is the low level JSON RPC 2.0 interface to interface with a node. This API is used by the `Web3 JavaScript API <https://github.com/ethereum/wiki/wiki/JavaScript-API>`__.
-* `Solidity Documentation <https://solidity.readthedocs.org/en/latest/>`__ -
+* `Solidity Docs <https://solidity.readthedocs.org/en/latest/>`__ -
   Solidity is the Ethereum developed Smart Contract language, which compiles to EVM (Ethereum Virtual Machine) opcodes.
 * :ref:`test-networks` - Test networks help developers develop and test Ethereum code and network interactions without spending their own Ether on the main network. Test network options are listed below.
 * :ref:`IDE-or-development-framework`. This assists you in developing,
@@ -112,7 +112,7 @@ Whisper
 
 
 * `What is Whisper and what is it used for <http://ethereum.stackexchange.com/questions/127/what-is-whisper-and-what-is-it-used-for>`_ - stackexchange Q&A
-* `Whisper documentation < >`_
+* TODO - Add Whisper documentation here!
 * `Whisper: the Multi DHT Messaging System with Routing Privacy. Vision & Roadmap.` - DEVCON-0 talk youtube video
 * `Gavin Wood: Shh! Whisper <https://www.youtube.com/watch?v=U_nPoBVLPiw>` - DEVCON-1 talk youtube video
 * `Whisper overview and dream API usage <https://github.com/ethereum/wiki/wiki/Whisper-Overview>`_ -
@@ -141,7 +141,7 @@ Code and status
 
 * `ethersphere on twitter <https://twitter.com/ethersphere>`_
 * `swarm gitter room <https://gitter.im/ethereum/swarm>`_
-.. * `swarm subreddit <https://reddit.com/r/bzz>`_
+* `swarm subreddit <https://reddit.com/r/bzz>`_
 
 Storage on and offchain
 

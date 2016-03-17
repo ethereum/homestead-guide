@@ -16,7 +16,7 @@ Glossary
       Service that operates without a central trusted party. An application  that enables direct interaction/agreements/communication between end users and/or resources without a middleman. See :ref:`dapps`.
 
    DAO
-   decentralized autonomous organization
+      decentralized autonomous organization
       DAO is type of contract on the blockchain (or a suite of contracts) that is supposed to codify, enforce or automate the workings of an organisation including governance, fund-raising, operations, spending and expansion.
 
    identity
@@ -55,11 +55,11 @@ Glossary
 ..  _gl:dapp:
 
    dapp
-   Đapp
+      Đapp
       Stands for "decentralized application". Some say it is pronounced Ethapp due to the use of the `uppercase eth letter Ð <gl:eth-letter>`_.
 
    address
-      An ethereum address represents an account. For `externally owned accounts <gl:EOA>`_, the address is derived as the last 20 bytes of the public key controlling the account, e.g., ``cd2a3d9f938e13cd947ec05abc7fe734df8dd826``. This is a :ref:`gl:hexadecimal` format (base 16 notation), which is often indicated explicitly by appending ``0x`` to the address. Web3.js and console functions accept addresses with or  without this prefix but for trasparency we encourage their use. Since each byte of the address is represented by 2 hex characters, a prefixed address is  42 character long. Several apps and APIs are also meant to implement the new `checksum-enabled address scheme <https://github.com/ethereum/EIPs/issues/55>`_  introduced in the Mist Ethereum wallet as of version 0.5.0.
+      An ethereum address represents an account. For :ref:gl:EOA, the address is derived as the last 20 bytes of the public key controlling the account, e.g., ``cd2a3d9f938e13cd947ec05abc7fe734df8dd826``. This is a :ref:gl:hexadecimal format (base 16 notation), which is often indicated explicitly by appending ``0x`` to the address. Web3.js and console functions accept addresses with or  without this prefix but for trasparency we encourage their use. Since each byte of the address is represented by 2 hex characters, a prefixed address is  42 character long. Several apps and APIs are also meant to implement the new `checksum-enabled address scheme <https://github.com/ethereum/EIPs/issues/55>`_  introduced in the Mist Ethereum wallet as of version 0.5.0.
 
 .. _gl:hexadecimal:
 
@@ -70,7 +70,7 @@ Glossary
    ether
       Ether is the name of the currency used within Ethereum. It is used to pay for computations within the EVM. Ambigously, ether is also the name of a unit in hte system;
 
-.. gl:EOA:
+.. _gl:EOA:
 
    EOA
       Externally Owned Account. An account controlled by a private key. If you own the private key associated with the EOA you have the ability to send ether and messages from it. Contract accounts also have an address, see _`Accounts`. EOAs and contract accounts may be combined into a single account type during Serenity.

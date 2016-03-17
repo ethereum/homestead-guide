@@ -9,7 +9,7 @@ This section
 The Ethereum network
 ================================================================================
 
-The basis for decentralised consensus is the peer-to-peer network of participating nodes which maintain and secure the blockchain. See _`Mining`.
+The basis for decentralised consensus is the peer-to-peer network of participating nodes which maintain and secure the blockchain. See :ref:`mining`.
 
 Ethereum network stats
 --------------------------------------------------

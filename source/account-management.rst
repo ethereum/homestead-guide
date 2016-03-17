@@ -141,7 +141,7 @@ Creating an account using the GUI Mist Ethereum wallet couldn’t be easier. In 
 
 2. Unzip the downloaded folder and run the Ethereum-Wallet executable file.
 
-.. image:: ../img/51Downloading.png
+.. image:: img/51Downloading.png
    :width: 582px
    :height: 469px
    :scale: 75 %
@@ -152,7 +152,7 @@ Creating an account using the GUI Mist Ethereum wallet couldn’t be easier. In 
 
 4. When you launch the Mist Ethereum wallet for the first time, you will see the account you created during the installation process. By default it will be named MAIN ACCOUNT (ETHERBASE).
 
-.. image:: ../img/51OpeningScreen.png
+.. image:: img/51OpeningScreen.png
    :width: 1024px
    :height: 938px
    :scale: 50 %
@@ -314,7 +314,7 @@ Instructions for installing the Mist Ethereum wallet are given in the section :r
 
 Simply drag-and-drop your ``.json`` presale wallet file into the designated area and enter your password to import your presale account.
 
-.. image:: ../img/51PersaleImportInstall.png
+.. image:: img/51PresaleImportInstall.png
    :width: 582px
    :height: 469px
    :scale: 75 %
