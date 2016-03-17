@@ -129,7 +129,7 @@ Online wallets, paper wallets, and cold storage
   Keep examples here, maybe explain paranoid practices, list dangers
 
 * Mist Ethereum Wallet
-    * `Releases to donwload <https://github.com/ethereum/mist/releases>`_
+    * `Releases to download <https://github.com/ethereum/mist/releases>`_
     * `Mist Ethereum Wallet developer preview <https://blog.ethereum.org/2015/09/16/ethereum-wallet-developer-preview/>`_ - foundation blog post
     * `How to easily set up the Ethereum Mist wallet! <https://www.youtube.com/watch?v=Z6lE0Ctaeqs>`_ - Tutorial by Tommy Economics
 * Kryptokit Jaxx
