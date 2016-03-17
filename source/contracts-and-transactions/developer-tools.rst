@@ -4,7 +4,7 @@
 Dapps
 ********************************************************************************
 
-A dapp is service that enables direct interaction between end users and providers (e.g. connecting buyers and sellers in some marketplace, owners and storers in file storage). Ethereum dapps typically interface users via an HTML/Javascript web application using a Javascript API to communicate with the blockchain. Dapps would typically have their own suite of associated contracts on the blockchain which they use to encode business logic and allow persistent storage of their consensus-critical state. Remember that because of the redundant nature of computation on the ethereum network, the gas costs of execution will always be higher than private execution offchain. This incentivises dapp developers to restrict the amount of code they execute and amount of data they store on the blockchain.
+A dapp is service that enables direct interaction between end users and providers (e.g. connecting buyers and sellers in some marketplace, owners and storers in file storage). Ethereum dapps typically interface users via an HTML/Javascript web application using a Javascript API to communicate with the blockchain. Dapps would typically have their own suite of associated contracts on the blockchain which they use to encode business logic and allow persistent storage of their consensus-critical state. Remember that because of the redundant nature of computation on the Ethereum network, the gas costs of execution will always be higher than private execution offchain. This incentivizes dapp developers to restrict the amount of code they execute and amount of data they store on the blockchain.
 
 Dapp directories
 ====================================
@@ -16,7 +16,7 @@ Dapps that use Ethereum are compiled to the following lists. They are listed in 
 * `Dappcentral <http://dappcentral.io/>`_ - Sortable pages for Dapps with instructions, code validation, and network stats.
 * `Dapps Mailing List <http://dapplist.net/>`_ - Mailing list for developers on Ethereum (discontinued).
 
-The offered decentralised services listed cover a wide range of areas inlcuding finance, insurance, prediction markets, social networks, distributed computation and storage, gambling, marketplace, internet of things, governance, collaboration, development and games.
+The offered decentralised services listed cover a wide range of areas including finance, insurance, prediction markets, social networks, distributed computation and storage, gambling, marketplace, internet of things, governance, collaboration, development and games.
 
 * What apps can we eventually expect? https://www.reddit.com/r/ethereum/comments/2mnl7f/the_top_10_ether_dapps_of_2015/cm63nsf
 *
@@ -72,7 +72,7 @@ Examples
 ----------------------
 
 * `example use of pricefeed - web3 script printing all account balances <https://gist.github.com/larspensjo/ffd2e4d41f739dc5af54>`_
-* `Example ethereum contracts <https://github.com/drupalnomad/ethereum-contracts>`_
+* `Example Ethereum contracts <https://github.com/drupalnomad/ethereum-contracts>`_
 
 
 https://dappsforbeginners.wordpress.com/tutorials/your-first-dapp/
@@ -93,7 +93,7 @@ https://github.com/ConsenSys/ether-pudding
 IDEs/Frameworks
 ================================================================================
 
-Below are developer frameworks and IDEs used for writing Ethereum Đapps.
+Below are developer frameworks and IDEs used for writing Ethereum dapps.
 
 * `Mix Ethereum IDE <https://github.com/ethereum/mix>`__ - Mix is an IDE that allows developers to build and deploy contracts and decentralized applications on top of the Ethereum blockchain. It includes a Solidity source code debugger.
 * `Truffle <https://github.com/ConsenSys/truffle>`__ - Truffle is a development environment, testing framework and asset pipeline for Ethereum.
@@ -121,7 +121,7 @@ Whisper
 Swarm
 ---------------------------
 
-Swarm is a distributed storage platform and content distribution service, a native base layer service of the ethereum web 3 stack. The primary objective of Swarm is to provide a sufficiently decentralized and redundant store of Ethereum's public record, in particular to store and distribute Đapp code and data as well as block chain data. From an economic point of view, it allows participants to efficiently pool their storage and bandwidth resources in order to provide the aforementioned services to all participants.
+Swarm is a distributed storage platform and content distribution service, a native base layer service of the Ethereum web 3 stack. The primary objective of Swarm is to provide a sufficiently decentralized and redundant store of Ethereum's public record, in particular to store and distribute dapp code and data as well as block chain data. From an economic point of view, it allows participants to efficiently pool their storage and bandwidth resources in order to provide the aforementioned services to all participants.
 
 From the end user's perspective, Swarm is not that different from WWW, except that uploads are not to a specific server. The objective is to peer-to-peer storage and serving solution that is DDOS-resistant, zero-downtime, fault-tolerant and censorship-resistant as well as self-sustaining due to a built-in incentive system which uses peer to peer accounting and allows trading resources for payment. Swarm is designed to deeply integrate with the devp2p multiprotocol network layer of Ethereum as well as with the Ethereum blockchain for domain name resolution, service payments and content availability insurance.
 

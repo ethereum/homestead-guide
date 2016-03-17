@@ -103,7 +103,7 @@ never doing his turn of the childcare? Ethereum provides a platform on
 which rules can be defined and, to an ever increasing degree as
 technology improves, see enforced. For example, the camera could be
 listening to the blockchain and only record if the film-making
-collective's ÐApp approves Jo's access code.
+collective's dapp approves Jo's access code.
 
 Crowdfunding is a key example in the advancement organizational tools.
 It provides a couple of really important functions: a way for

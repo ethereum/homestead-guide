@@ -12,7 +12,7 @@ option here. Do not forget it.
 This document is meant to reflect accurate information on accounts as
 used by the frontier release.
 
-The ethereum CLI ``geth`` provides account management via the
+The Ethereum CLI ``geth`` provides account management via the
 ``account`` subcommand:
 
 ::
@@ -39,11 +39,11 @@ keys regularly! See `DATADIR backup &
 restore <https://github.com/ethereum/go-ethereum/wiki/Backup-&-restore>`__
 for more information. The newest format of the keyfiles is:
 ``UTC--<created_at UTC ISO8601>-<address hex>``. The order of accounts
-when listing, is lexicographic, but as a consequence of the timespamp
+when listing, is lexicographic, but as a consequence of the timestamp
 format, it is actually order of creation
 
 It is safe to transfer the entire directory or the individual keys
-therein between ethereum nodes. Note that in case you are adding keys to
+therein between Ethereum nodes. Note that in case you are adding keys to
 your node from a different node, the order of accounts may change. So
 make sure you do not rely or change the index in your scripts or code
 snippets.
@@ -198,7 +198,7 @@ For non-interactive use the passphrase can be specified with the
     geth --password <passwordfile> account import <keyfile>
 
 **Note**: Since you can directly copy your encrypted accounts to another
-ethereum instance, this import/export mechanism is not needed when you
+Ethereum instance, this import/export mechanism is not needed when you
 transfer an account between nodes.
 
 **Warning:** when you copy keys into an existing node's keystore, the
@@ -313,7 +313,7 @@ If you want to use an account non-interactively, you need to unlock it.
 You can do this on the command line with the ``--unlock`` option which
 takes a whitespace separated list of accounts (in hex or index) as
 argument so you can unlock the accounts programmatically for one
-session. This is useful if you want to use your account from ÐApps via
+session. This is useful if you want to use your account from dapps via
 RPC. ``--unlock`` will unlock the first account. This is useful when you
 created your account programmatically, you do not need to know the
 actual account to unlock it.

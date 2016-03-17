@@ -1,19 +1,19 @@
 This tutorial will show you how to setup a Meteor app to be used as a
-Ðapp and probably answer a few questions on why Meteor should be used.
+dapp and probably answer a few questions on why Meteor should be used.
 
-1. `Create your Ðapp <#create-your-%C3%90app>`__
-2. `Start your Ðapp <#start-your-%C3%90app>`__
-3. `Connect your Ðapp <#connect-your-%C3%90app>`__
-4. `Run your Ðapp <#run-your-%C3%90app>`__
-5. `Add Ðapp styles <#add-%C3%90app-styles>`__
-6. `Using ethereum:elements <#using-ethereumelements>`__
-7. `Ðapp code structure <#%C3%90app-code-structure>`__
-8. `Bundle your Ðapp <#bundle-your-%C3%90app>`__
+1. `Create your dapp <#create-your-%C3%90app>`__
+2. `Start your dapp <#start-your-%C3%90app>`__
+3. `Connect your dapp <#connect-your-%C3%90app>`__
+4. `Run your dapp <#run-your-%C3%90app>`__
+5. `Add dapp styles <#add-%C3%90app-styles>`__
+6. `Using Ethereum:elements <#using-ethereumelements>`__
+7. `Dapp code structure <#%C3%90app-code-structure>`__
+8. `Bundle your dapp <#bundle-your-%C3%90app>`__
 
 FAQ
 ---
 
-Isn't Meteor a full stack framework, how does that fit into Ðapp development
+Isn't Meteor a full stack framework, how does that fit into dapp development
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 True, Meteor is a full stack framework and its main improvement is
@@ -42,12 +42,12 @@ development and provided all necessary tools.
    or
    `indexedDB <https://atmospherejs.com/frozeman/persistent-minimongo2>`__
 
-Do i need to host my Ðapp on a server?
+Do I need to host my dapp on a server?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 No, using
 `meteor-build-client <https://github.com/frozeman/meteor-build-client>`__
-you can get all the static assets of you Ðapp to run without any server,
+you can get all the static assets of you dapp to run without any server,
 though if you use a router like
 `iron- <https://atmospherejs.com/iron/router>`__ or
 `flow-router <https://atmospherejs.com/meteorhacks/flow-router>`__, you
@@ -56,7 +56,7 @@ pushstate routes.
 
 --------------
 
-Create your Ðapp
+Create your dapp
 ----------------
 
 Install Meteor if don't have already:
@@ -81,17 +81,17 @@ Next add the web3 package:
 I recommend also to add the following packages:
 
 -  `ethereum:dapp-styles <https://atmospherejs.com/ethereum/dapp-styles>`__
-   - The LESS/CSS framework which gives your ÐApp a nice Mist-consistent
+   - The LESS/CSS framework which gives your dapp a nice Mist-consistent
    look.
 -  `ethereum:tools <https://atmospherejs.com/ethereum/tools>`__ - This
    package gives you the ``EthTools`` object with a set of formatting an
    conversion functions and template helpers for ether.
 -  `ethereum:elements <https://atmospherejs.com/ethereum/elements>`__ -
-   A set of interface elements specifically made for ethereum, see this
+   A set of interface elements specifically made for Ethereum, see this
    `Demo <http://ethereum-elements.meteor.com>`__ for more.
 -  `ethereum:accounts <https://atmospherejs.com/ethereum/accounts>`__ -
    Gives you the reactive ``EthAccounts`` collection with all current
-   available ethereum accounts, where balances will be automatically
+   available Ethereum accounts, where balances will be automatically
    updated.
 -  `ethereum:blocks <https://atmospherejs.com/ethereum/blocks>`__ -
    Gives you the reactive ``EthBlocks`` collection with the latest 50
@@ -105,29 +105,29 @@ I recommend also to add the following packages:
    - Allows you to auto persist your minimongo collection in local
    storage
 
-Start your Ðapp
+Start your dapp
 ---------------
 
 A short excursion into Meteors folder structure
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Meteor doesn't force you to have a specifc folder structure, though some
-folders have specifc meaning and will be treated differently when
+Meteor doesn't force you to have a specific folder structure, though some
+folders have specific meaning and will be treated differently when
 bundling/running your application.
 
 Folders with specific treatment - ``client`` - files in a folder called
 ``client`` will only be loaded by the client part of your app and as we
-are building a Ðapp, thats where most of our files go. - ``lib`` - files
+are building a dapp, thats where most of our files go. - ``lib`` - files
 in folders called ``lib`` will load before other files in the same
-folder. This is an ideal place your init files, libraries, or ethereum
-specifc files. - ``public`` - a folder called ``public`` contains assets
+folder. This is an ideal place your init files, libraries, or Ethereum
+specific files. - ``public`` - a folder called ``public`` contains assets
 meteor will make available on the root of your webserver (or later
-bundled Ðapp) - There are a few more specifc folders like ``server``,
+bundled dapp) - There are a few more specific folders like ``server``,
 ``tests``, ``packages``, etc. If you want to get to know them take a
 look at the `Meteor
 docs <http://docs.meteor.com/#/full/structuringyourapp>`__
 
-So to build a Ðapp we ideally create the following folder structure in
+So to build a dapp we ideally create the following folder structure in
 our ``myDapp`` folder:
 
 ::
@@ -140,14 +140,14 @@ our ``myDapp`` folder:
           - myDapp.css
        - public
 
-**Note** The community provides also Meteor Ðapp Boilerplates like this
+**Note** The community provides also Meteor dapp Boilerplates like this
 on from Nick Dodson:
 https://github.com/SilentCicero/meteor-dapp-boilerplate
 
-Connect your Ðapp
+Connect your dapp
 ~~~~~~~~~~~~~~~~~
 
-To connect our ÐApp we need to start ``geth`` with the right CORS
+To connect our dapp we need to start ``geth`` with the right CORS
 headers in another terminal:
 
 .. code:: bash
@@ -162,10 +162,10 @@ folder called ``init.js`` and add the following line:
     if(typeof web3 === 'undefined')
         web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
 
-Run your Ðapp
+Run your dapp
 ~~~~~~~~~~~~~
 
-Now we can run our Ðapp by simply running:
+Now we can run our dapp by simply running:
 
 .. code:: bash
 
@@ -180,17 +180,17 @@ the geth node:
     > web3.eth.accounts
     ['0xfff2b43a7433ddf50bb82227ed519cd6b142d382']
 
-Add Ðapp styles
+Add dapp styles
 ---------------
 
-If you want your Ðapp to nicely fit later into Mist and have follow the
+If you want your dapp to nicely fit later into Mist and have follow the
 official look use the `dapp-styles css css/less
 framework <https://atmospherejs.com/ethereum/dapp-styles>`__.
 
 *Note that they are under heavy development and the class names and
 elements may change.*
 
-To add it simple add the following packages to your Ðapp:
+To add it simple add the following packages to your dapp:
 
 .. code:: bash
 
@@ -211,11 +211,11 @@ repo <https://github.com/ethereum/dapp-styles/blob/master/constants.import.less>
 Overwrite them by copying them to your ``myDapp.less`` file and set
 different values.
 
-Using ethereum packages
+Using Ethereum packages
 -----------------------
 
-To make your live as a Ðapp developer easier we provide some packages
-that help you build Ðapps faster.
+To make your live as a dapp developer easier we provide some packages
+that help you build dapps faster.
 
 If you add the recommended packages above you should have the
 `ethereum:tools <https://atmospherejs.com/ethereum/tools>`__,
@@ -255,7 +255,7 @@ Now open the ``myDapp.js`` and add after the ``counter: function..`` the
 Then initialize EthBlocks by adding ``EthBlocks.init();`` after
 ``Session.setDefault('counter', 0);``
 
-If you now check your Ðapp in the browser you should see the latest
+If you now check your dapp in the browser you should see the latest
 block number, which will increase once you mine.
 
 *For more examples please checkout the packages readmes and the
@@ -263,7 +263,7 @@ block number, which will increase once you mine.
 (`source <https://github.com/frozeman/meteor-ethereum-elements-demo>`__)
 for more.*
 
-Ðapp code structure
+Dapp code structure
 -------------------
 
 *This tutorial won't go into building apps with Meteor. For this please
@@ -275,10 +275,10 @@ like `Building Single-page Web Apps with
 Meteor <https://www.packtpub.com/web-development/building-single-page-web-apps-meteor>`__
 or `Discover Meteor <http://discovermeteor.com>`__.*
 
-TODO Short: - put ethereum related stuff into
+TODO Short: - put Ethereum related stuff into
 ``client/lib/ethereum/somefile.js`` - use
 ``myCollection.observe({added: func, changed: func, removed: func})`` to
-communicate to ethereum, keep ethereum logic out of your app as much as
+communicate to Ethereum, keep Ethereum logic out of your app as much as
 possible. This way you just write and read from your reactive
 collections and the observe functions will handle the rest (e.g.
 sendTransactions) - Filters etc will add logs etc to your collections.
@@ -287,10 +287,10 @@ So you keep all the callback mess out of your app logic.
 For an example see the
 `Ethereum-Wallet <https://github.com/ethereum/meteor-dapp-wallet>`__.
 
-Bundle your Ðapp
+Bundle your dapp
 ----------------
 
-To bundle your Ðapp into a local standalone file use
+To bundle your dapp into a local standalone file use
 `meteor-build-client <https://github.com/frozeman/meteor-build-client>`__:
 
 .. code:: bash
@@ -299,7 +299,7 @@ To bundle your Ðapp into a local standalone file use
     $ cd myDapp
     $ meteor-build-client ../build --path ""
 
-This will put your Ðapps static files into the build folder, above your
+This will put your dapps static files into the build folder, above your
 ``myDapp`` folder.
 
 The last option ``--path`` will make the linking of all files relative,
@@ -308,7 +308,7 @@ allowing you to start the app by simply clicking the
 
 Be aware that when running your app on the ``file://`` protocol, you
 won't be able to use client side routing, due to web security. Later in
-mist you will be able to use client side routing, as ÐApps are severed
+mist you will be able to use client side routing, as dapps are severed
 over the ``eth://`` protocol.
 
-In the future you will be able to simply upload your Ðapp on swarm.
+In the future you will be able to simply upload your dapp on swarm.

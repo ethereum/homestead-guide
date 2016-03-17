@@ -1,11 +1,11 @@
 Overview
 ========
 
-Beside the official `ÐApp
+Beside the official `Dapp
 API <https://github.com/ethereum/wiki/wiki/JSON-RPC>`__ interface the go
-ethereum node has support for additional management API's. These API's
+Ethereum node has support for additional management API's. These API's
 are offered using `JSON-RPC <http://www.jsonrpc.org/specification>`__
-and follow the same conventions as used in the ÐApp API. The go ethereum
+and follow the same conventions as used in the Dapp API. The go Ethereum
 package comes with a console client which has support for all additional
 API's.
 
@@ -19,11 +19,11 @@ go ethereum daemon. Where ``${interface}`` can be ``rpc`` for the
 on Windows.
 
 For example, ``geth --ipcapi "admin,eth,miner" --rpcapi "eth,web3"``
-will \* enable the admin, official ÐApp and miner API over the IPC
+will \* enable the admin, official dapp and miner API over the IPC
 interface \* enable the eth and web3 API over the RPC interface
 
 Please note that offering an API over the ``rpc`` interface will give
-everyone access to the API who can access this interface (e.g. ÐApp's).
+everyone access to the API who can access this interface (e.g. dapp's).
 So be careful which API's you enable. By default geth enables all API's
 over the ``ipc`` interface and only the db,eth,net and web3 API's over
 the ``rpc`` interface.
@@ -59,7 +59,7 @@ will give all enabled modules including the version number:
 Integration
 -----------
 
-These additional API's follow the same conventions as the official ÐApp
+These additional API's follow the same conventions as the official dapp
 API. Web3 can be
 `extended <https://github.com/ethereum/web3.js/pull/229>`__ and used to
 consume these additional API's.
@@ -102,7 +102,7 @@ Provides various functions for managing a geth node \*
 Db
 --
 
-This is the official ÐApp API. See for more information `this
+This is the official Dapp API. See for more information `this
 page <https://github.com/ethereum/wiki/wiki/JSON-RPC>`__.
 
 Debug
@@ -118,7 +118,7 @@ Debug
 Eth
 ---
 
-This is the official ÐApp API. See for more information `this
+This is the official Dapp API. See for more information `this
 page <https://github.com/ethereum/wiki/wiki/JSON-RPC>`__.
 
 Miner
@@ -154,7 +154,7 @@ Gives insight in the transaction pool \* `status <#txpool_status>`__
 Web3
 ----
 
-This is the official ÐApp API. See for more information `this
+This is the official Dapp API. See for more information `this
 page <https://github.com/ethereum/wiki/wiki/JSON-RPC>`__.
 
 admin\_addPeer

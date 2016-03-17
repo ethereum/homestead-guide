@@ -36,8 +36,8 @@ Encryption
 APIs
 ----
 
--  ÐApp API - js integration (Fabian, Alex)
--  Mist ÐApp storage scheme, url->hash mapping (Fabian, Alex)
+-  Dapp API - js integration (Fabian, Alex)
+-  Mist dapp storage scheme, url->hash mapping (Fabian, Alex)
    https://github.com/ethereum/go-ethereum/wiki/URL-Scheme
 
 Discuss alternatives

@@ -130,7 +130,7 @@ verifying that index can see that something is wrong, either because the
 proof step does not check out, or because data is unavailable, and that
 client can then raise the alarm.
 
-The fourth protocol is useful in cases where a ÐApp wants to keep track
+The fourth protocol is useful in cases where a dapp wants to keep track
 of some kind of events that need to be efficiently verifiable, but which
 do not need to be part of the permanent state; an example is a
 decentralized exchange logging trades or a wallet logging transactions

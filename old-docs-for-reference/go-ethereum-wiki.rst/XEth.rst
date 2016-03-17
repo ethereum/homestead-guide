@@ -4,8 +4,8 @@ eXtended Ethereum API
 ***NOTE:** This documentation is out-of-date and in need of refresh
 against current codebase*
 
-General, easy to use, ethereum query interface. This API allows you to
-easily interface with ethereum's state and their respective objects,
+General, easy to use, Ethereum query interface. This API allows you to
+easily interface with Ethereum's state and their respective objects,
 create transactions and directly evaluate contract code.
 
 .. code:: go
@@ -19,7 +19,7 @@ Objects
 ~~~~~~~
 
 -  ``XEth``: Top level query interface
--  ``World``: world object through which you can query ethereum's state
+-  ``World``: world object through which you can query Ethereum's state
    and objects.
 -  ``Config``: config object through which you can query the ``Config``
    contract if available.
@@ -35,7 +35,7 @@ Functions
 ~~~~~~~~~~~~~~~~
 
 -  ``World() *world``: returns the world object through which you can
-   query ethereum's state.
+   query Ethereum's state.
 -  ``Balance(address []byte) *Value``: returns the balance of the given
    ``address``.
 -  ``Exists(address []byte) bool``: returns whether an object with the
@@ -46,7 +46,7 @@ Functions
 -  ``Storage(address, storage []byte) *Value``: returns the given object
    by ``address``'s value given by the ``storage`` address.
 -  ``ToAddress(privateKey []byte) []byte``: converts a private key to an
-   ethereum address.
+   Ethereum address.
 -  ``Execute(address, data []byte, value, gas, price *Value) []byte``:
    Simulates an evaluation of the object's code given by the ``address``
    and returns the outcome.
@@ -59,7 +59,7 @@ Functions
 ``World`` Methods
 ~~~~~~~~~~~~~~~~~
 
--  ``State() *State``: returns the current state of the ethereum
+-  ``State() *State``: returns the current state of the Ethereum
    ``world`` object.
 -  ``Get(addres []byte) *StateObject``: returns the object given by the
    ``address``. Returns ``nil`` if no object associated with the
@@ -77,7 +77,7 @@ Functions
 -  ``Get(name string) object``: returns the associated object given by
    the ``name``.
 -  ``Exist() bool``: returns whether the config object exist in
-   ethereum's present state.
+   Ethereum's present state.
 
 ``Object`` Methods
 ~~~~~~~~~~~~~~~~~~

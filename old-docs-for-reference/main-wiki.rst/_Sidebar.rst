@@ -17,10 +17,10 @@ Ethereum Clients
 -  `Geth (Go) <https://github.com/ethereum/go-ethereum/wiki>`__
 -  `pyeth (Python) <https://github.com/ethereum/pyethereum/wiki>`__
 
-ÐApp Development
+Dapp Development
 ~~~~~~~~~~~~~~~~
 
--  `ÐApp Developer
+-  `Dapp Developer
    Resources <https://github.com/ethereum/wiki/wiki/Dapp-Developer-Resources>`__
 -  `JavaScript
    API <https://github.com/ethereum/wiki/wiki/JavaScript-API>`__
@@ -28,11 +28,11 @@ Ethereum Clients
 -  `Solidity <https://ethereum.github.io/solidity/docs/home/>`__
 -  `Solidity
    Features <https://github.com/ethereum/wiki/wiki/Solidity-Features>`__
--  `Useful Ðapp
+-  `Useful dapp
    Patterns <https://github.com/ethereum/wiki/wiki/Useful-Ðapp-Patterns>`__
 -  `Standardized Contract
    APIs <https://github.com/ethereum/wiki/wiki/Standardized_Contract_APIs>`__
--  `ÐApp using
+-  `Dapp using
    Meteor <https://github.com/ethereum/wiki/wiki/Dapp-using-Meteor>`__
 -  `Ethereum development
    tutorial <https://github.com/ethereum/wiki/wiki/Ethereum-Development-Tutorial>`__

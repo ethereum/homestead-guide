@@ -24,9 +24,9 @@ more user friendly release) and paste the command below:
 
 ::
 
-    bash <(curl -L https://install-geth.ethereum.org)  
+    bash <(curl -L https://install-geth.ethereum.org)
 
-This script will detect your OS and will attempt to install the ethereum
+This script will detect your OS and will attempt to install the Ethereum
 CLI. For more options including package managers, check the OS-specific
 subsections.
 

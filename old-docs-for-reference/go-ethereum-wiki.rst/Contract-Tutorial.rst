@@ -2,7 +2,7 @@ Introduction
 ------------
 
 Now that you mastered the basics on how to get started and how to send
-ether, it's time to get your hands dirty in what really makes ethereum
+ether, it's time to get your hands dirty in what really makes Ethereum
 stand out of the crowd: smart contracts. Smart contracts are pieces of
 code that live on the blockchain and execute commands exactly how they
 were told to. They can read other contracts, make decisions, send ether
@@ -49,7 +49,7 @@ listener. Here is its code:
     contract greeter is mortal {
         /* define variable greeting of the type string */
         string greeting;
-        
+
         /* this runs when the contract is executed */
         function greeter(string _greeting) public {
             greeting = _greeting;
@@ -74,7 +74,7 @@ simple and easy to read.
 The inherited characteristic *"mortal"* simply means that the greeter
 contract can be killed by its owner, to clean up the blockchain and
 recover funds locked into it when the contract is no longer needed.
-Contracts in ethereum are, by default, immortal and have no owner,
+Contracts in Ethereum are, by default, immortal and have no owner,
 meaning that once deployed the author has no special privileges anymore.
 Consider this before deploying.
 
@@ -164,7 +164,7 @@ Compile from source
     mkdir cpp-ethereum/build
     cd cpp-ethereum/build
     cmake -DJSONRPC=OFF -DMINER=OFF -DETHKEY=OFF -DSERPENT=OFF -DGUI=OFF -DTESTS=OFF -DJSCONSOLE=OFF ..
-    make -j4 
+    make -j4
     make install
     which solc
 
@@ -248,7 +248,7 @@ thirty seconds and you'll see a message like this:
 
 ::
 
-    Contract mined! address: 0xdaa24d02bad7e9d6a80106db164bad9399a0423e 
+    Contract mined! address: 0xdaa24d02bad7e9d6a80106db164bad9399a0423e
 
 You will probably be asked for the password you picked in the beginning,
 because you need to pay for the gas costs to deploying your contract.
@@ -391,11 +391,11 @@ this eliminates the scenarios where one single server break-in can
 result in the loss of funds from thousands of clients.
 
 You could create your own token on a different blockchain, but creating
-on ethereum is easier — so you can focus your energy on the innovation
+on Ethereum is easier — so you can focus your energy on the innovation
 that will make your coin stand out - and it's more secure, as your
-security is provided by all the miners who are supporting the ethereum
+security is provided by all the miners who are supporting the Ethereum
 network. Finally, by creating your token in Ethereum, your coin will be
-compatible with any other contract running on ethereum.
+compatible with any other contract running on Ethereum.
 
 The Code
 ~~~~~~~~
@@ -404,15 +404,15 @@ This is the code for the contract we're building:
 
 ::
 
-    contract token { 
+    contract token {
         mapping (address => uint) public coinBalanceOf;
         event CoinTransfer(address sender, address receiver, uint amount);
-      
+
       /* Initializes contract with initial supply tokens to the creator of the contract */
       function token(uint supply) {
             coinBalanceOf[msg.sender] = supply;
         }
-      
+
       /* Very simple trade function */
         function sendCoin(address receiver, uint amount) returns(bool sufficient) {
             if (coinBalanceOf[msg.sender] < amount) return false;
@@ -461,8 +461,8 @@ account.
     var token = tokenContract.new(
       supply,
       {
-        from:web3.eth.accounts[0], 
-        data:tokenCompiled.token.code, 
+        from:web3.eth.accounts[0],
+        data:tokenCompiled.token.code,
         gas: 1000000
       }, function(e, contract){
         if(!e) {
@@ -497,7 +497,7 @@ thirty seconds and you'll see a message like this:
 
 ::
 
-    Contract mined! address: 0xdaa24d02bad7e9d6a80106db164bad9399a0423e 
+    Contract mined! address: 0xdaa24d02bad7e9d6a80106db164bad9399a0423e
 
 Check balance watching coin transfers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -704,7 +704,7 @@ Learn More
 -  `Meta coin
    standard <https://github.com/ethereum/wiki/wiki/Standardized_Contract_APIs>`__
    is a proposed standardization of function names for coin and token
-   contracts, to allow them to be automatically added to other ethereum
+   contracts, to allow them to be automatically added to other Ethereum
    contract that utilizes trading, like exchanges or escrow.
 
 -  `Formal
@@ -753,19 +753,19 @@ helped.
     contract token { mapping (address => uint) public coinBalanceOf; function token() {}  function sendCoin(address receiver, uint amount) returns(bool sufficient) {  } }
 
     contract Crowdsale {
-        
+
         address public beneficiary;
         uint public fundingGoal; uint public amountRaised; uint public deadline; uint public price;
-        token public tokenReward;   
+        token public tokenReward;
         Funder[] public funders;
         event FundTransfer(address backer, uint amount, bool isContribution);
-        
+
         /* data structure to hold information about campaign contributors */
         struct Funder {
             address addr;
             uint amount;
         }
-        
+
         /*  at initialization, setup the owner */
         function Crowdsale(address _beneficiary, uint _fundingGoal, uint _duration, uint _price, token _reward) {
             beneficiary = _beneficiary;
@@ -773,8 +773,8 @@ helped.
             deadline = now + _duration * 1 minutes;
             price = _price;
             tokenReward = token(_reward);
-        }   
-        
+        }
+
         /* The function without name is the default function that is called whenever anyone sends funds to a contract */
         function () {
             uint amount = msg.value;
@@ -783,7 +783,7 @@ helped.
             tokenReward.sendCoin(msg.sender, amount / price);
             FundTransfer(msg.sender, amount, true);
         }
-            
+
         modifier afterDeadline() { if (now >= deadline) _ }
 
         /* checks if the goal or time limit has been reached and ends the campaign */
@@ -794,9 +794,9 @@ helped.
             } else {
                 FundTransfer(0, 11, false);
                 for (uint i = 0; i < funders.length; ++i) {
-                  funders[i].addr.send(funders[i].amount);  
+                  funders[i].addr.send(funders[i].amount);
                   FundTransfer(funders[i].addr, funders[i].amount, false);
-                }               
+                }
             }
             suicide(beneficiary);
         }
@@ -842,14 +842,14 @@ copy the following commands on the terminal:
 
     var crowdsaleContract = web3.eth.contract(crowdsaleCompiled.Crowdsale.info.abiDefinition);
     var crowdsale = crowdsaleContract.new(
-      _beneficiary, 
-      _fundingGoal, 
-      _duration, 
-      _price, 
+      _beneficiary,
+      _fundingGoal,
+      _duration,
+      _price,
       _reward,
       {
-        from:web3.eth.accounts[0], 
-        data:crowdsaleCompiled.Crowdsale.code, 
+        from:web3.eth.accounts[0],
+        data:crowdsaleCompiled.Crowdsale.code,
         gas: 1000000
       }, function(e, contract){
         if(!e) {
@@ -874,7 +874,7 @@ Wait up to thirty seconds and you'll see a message like this:
 
 ::
 
-    Contract mined! address: 0xdaa24d02bad7e9d6a80106db164bad9399a0423e 
+    Contract mined! address: 0xdaa24d02bad7e9d6a80106db164bad9399a0423e
 
 If you received that alert then your code should be online. You can
 always double check by doing this:
@@ -907,12 +907,12 @@ paste this code:
 
     var event = crowdsale.FundTransfer({}, '', function(error, result){
       if (!error)
-        
+
         if (result.args.isContribution) {
             console.log("\n New backer! Received " + web3.fromWei(result.args.amount, "ether") + " ether from " + result.args.backer  )
 
             console.log( "\n The current funding at " +( 100 *  crowdsale.amountRaised.call() / crowdsale.fundingGoal.call()) + "% of its goals. Funders have contributed a total of " + web3.fromWei(crowdsale.amountRaised.call(), "ether") + " ether.");
-                  
+
             var timeleft = Math.floor(Date.now() / 1000)-crowdsale.deadline();
             if (timeleft>3600) {  console.log("Deadline has passed, " + Math.floor(timeleft/3600) + " hours ago")
             } else if (timeleft>0) {  console.log("Deadline has passed, " + Math.floor(timeleft/60) + " minutes ago")
@@ -941,7 +941,7 @@ Check if that's available and register:
 
 ::
 
-    registrar.addr(name) 
+    registrar.addr(name)
     registrar.reserve.sendTransaction(name, {from: eth.accounts[0]});
 
 Wait for the previous transaction to be picked up and then:
@@ -987,7 +987,7 @@ Recover funds
 Once the deadline is passed someone has to wake up the contract to have
 the funds sent to either the beneficiary or back to the funders (if it
 failed). This happens because there is no such thing as an active loop
-or timer on ethereum so any future transactions must be pinged by
+or timer on Ethereum so any future transactions must be pinged by
 someone.
 
 ::
@@ -1061,7 +1061,7 @@ The Code
         address public founder;
         Proposal[] public proposals;
         uint public numProposals;
-        
+
         event ProposalAdded(uint proposalID, address recipient, uint amount, bytes32 data, string description);
         event Voted(uint proposalID, int position, address voter);
         event ProposalTallied(uint proposalID, int result, uint quorum, bool active);
@@ -1076,20 +1076,20 @@ The Code
             Vote[] votes;
             mapping (address => bool) voted;
         }
-        
+
         struct Vote {
             int position;
             address voter;
         }
-        
+
         function Democracy(token _voterShareAddress, uint _minimumQuorum, uint _debatingPeriod) {
-            founder = msg.sender;  
+            founder = msg.sender;
             voterShare = token(_voterShareAddress);
             minimumQuorum = _minimumQuorum || 10;
             debatingPeriod = _debatingPeriod * 1 minutes || 30 days;
         }
 
-        
+
         function newProposal(address _recipient, uint _amount, bytes32 _data, string _description) returns (uint proposalID) {
             if (voterShare.coinBalanceOf(msg.sender)>0) {
                 proposalID = proposals.length++;
@@ -1104,7 +1104,7 @@ The Code
                 numProposals = proposalID+1;
             }
         }
-        
+
         function vote(uint _proposalID, int _position) returns (uint voteID){
             if (voterShare.coinBalanceOf(msg.sender)>0 && (_position >= -1 || _position <= 1 )) {
                 Proposal p = proposals[_proposalID];
@@ -1115,16 +1115,16 @@ The Code
                 Voted(_proposalID,  _position, msg.sender);
             }
         }
-        
+
         function executeProposal(uint _proposalID) returns (int result) {
             Proposal p = proposals[_proposalID];
             /* Check if debating period is over */
-            if (now > (p.creationDate + debatingPeriod) && p.active){   
+            if (now > (p.creationDate + debatingPeriod) && p.active){
                 uint quorum = 0;
                 /* tally the votes */
                 for (uint i = 0; i <  p.votes.length; ++i) {
                     Vote v = p.votes[i];
-                    uint voteWeight = voterShare.coinBalanceOf(v.voter); 
+                    uint voteWeight = voterShare.coinBalanceOf(v.voter);
                     quorum += voteWeight;
                     result += int(voteWeight) * v.position;
                 }
@@ -1185,12 +1185,12 @@ parameters with care, as you won't be able to change them in the future.
     var democracyContract = web3.eth.contract(daoCompiled.Democracy.info.abiDefinition);
 
     var democracy = democracyContract.new(
-        _voterShareAddress, 
-        _minimumQuorum, 
-        _debatingPeriod, 
+        _voterShareAddress,
+        _minimumQuorum,
+        _debatingPeriod,
         {
-          from:web3.eth.accounts[0], 
-          data:daoCompiled.Democracy.code, 
+          from:web3.eth.accounts[0],
+          data:daoCompiled.Democracy.code,
           gas: 3000000
         }, function(e, contract){
           if(!e) {
@@ -1203,7 +1203,7 @@ parameters with care, as you won't be able to change them in the future.
               console.log(contract);
             }
 
-          }      
+          }
         })
 
 **If you are using the *online compiler* Copy the contract code to the
@@ -1261,12 +1261,12 @@ The Democracy Watchbots
     var eventVote = democracy.Voted({}, '', function(error, result){
       if (!error)
         var opinion = "";
-        if (result.args.position > 0) { 
-          opinion = "in favor" 
-        } else if (result.args.position < 0) { 
-          opinion = "against" 
-        } else { 
-          opinion = "abstaining" 
+        if (result.args.position > 0) {
+          opinion = "in favor"
+        } else if (result.args.position < 0) {
+          opinion = "against"
+        } else {
+          opinion = "abstaining"
         }
 
         console.log("Vote on Proposal #"+ result.args.proposalID +"!\n " + result.args.voter + " is " + opinion )
@@ -1274,12 +1274,12 @@ The Democracy Watchbots
     var eventTally = democracy.ProposalTallied({}, '', function(error, result){
       if (!error)
         var totalCount = "";
-        if (result.args.result > 1) { 
-          totalCount = "passed" 
-        } else if (result.args.result < 1) { 
-          totalCount = "rejected" 
-        } else { 
-          totalCount = "a tie" 
+        if (result.args.result > 1) {
+          totalCount = "passed"
+        } else if (result.args.result < 1) {
+          totalCount = "rejected"
+        } else {
+          totalCount = "a tie"
         }
         console.log("Votes counted on Proposal #"+ result.args.proposalID +"!\n With a total of " + Math.abs(result.args.result) + " out of " + result.args.quorum + ", proposal is " + totalCount + ". Proposal is " + (result.args.active? " still on the floor" : "archived") )
     });
@@ -1328,10 +1328,10 @@ what they are and for whom:
 
     function checkAllProposals() {
         console.log("Country Balance: " + web3.fromWei( eth.getBalance(democracy.address), "ether") );
-        for (i = 0; i< (Number(democracy.numProposals())); i++ ) { 
-            var p = democracy.proposals(i); 
-            var timeleft = Math.floor(((Math.floor(Date.now() / 1000)) - Number(p[4]) - Number(democracy.debatingPeriod()))/60);  
-            console.log("Proposal #" + i + " Send " + web3.fromWei( p[1], "ether") + " ether to address " + p[0].substring(2,6) + " for "+ p[3] + ".\t Deadline:"+ Math.abs(Math.floor(timeleft)) + (timeleft>0?" minutes ago ":" minutes left ") + (p[5]? " Active":" Archived") ); 
+        for (i = 0; i< (Number(democracy.numProposals())); i++ ) {
+            var p = democracy.proposals(i);
+            var timeleft = Math.floor(((Math.floor(Date.now() / 1000)) - Number(p[4]) - Number(democracy.debatingPeriod()))/60);
+            console.log("Proposal #" + i + " Send " + web3.fromWei( p[1], "ether") + " ether to address " + p[0].substring(2,6) + " for "+ p[3] + ".\t Deadline:"+ Math.abs(Math.floor(timeleft)) + (timeleft>0?" minutes ago ":" minutes left ") + (p[5]? " Active":" Archived") );
         }
     }
 
@@ -1410,9 +1410,9 @@ through a trustless crowdfunding and used it to kickstart your own
 personal democratic organization.
 
 For the sake of simplicity, we only used the democratic organization you
-created to send ether around, the native currency of ethereum. While
+created to send ether around, the native currency of Ethereum. While
 that might be good enough for some, this is only scratching the surface
-of what can be done. In the ethereum network contracts have all the same
+of what can be done. In the Ethereum network contracts have all the same
 rights as any normal user, meaning that your organization could do any
 of the transactions that you executed coming from your own accounts.
 
@@ -1432,7 +1432,7 @@ What could happen next?
    holders approved.
 
 -  The organization could hold not only ethers, but any kind of other
-   coin created on ethereum, including assets whose value are tied to
+   coin created on Ethereum, including assets whose value are tied to
    the bitcoin or dollar.
 
 -  The DAO could be programmed to allow a proposal with multiple

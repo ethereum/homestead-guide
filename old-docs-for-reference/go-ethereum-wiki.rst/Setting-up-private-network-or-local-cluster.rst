@@ -1,9 +1,9 @@
 This page describes how to set up a local cluster of nodes, advise how
 to make it private, and how to hook up your nodes on the eth-netstat
-network monitoring app. A fully controlled ethereum network is useful as
+network monitoring app. A fully controlled Ethereum network is useful as
 a backend for network integration testing (core developers working on
 issues related to networking/blockchain synching/message propagation,
-etc or ÐApp developers testing multi-block and multi-user scenarios).
+etc or dapp developers testing multi-block and multi-user scenarios).
 
 We assume you are able to build ``geth`` following the `build
 instructions <https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum>`__
@@ -11,7 +11,7 @@ instructions <https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum>`__
 Setting up multiple nodes
 -------------------------
 
-In order to run multiple ethereum nodes locally, you have to make sure:
+In order to run multiple Ethereum nodes locally, you have to make sure:
 - each instance has a separate data directory (``--datadir``) - each
 instance runs on a different port (both eth and rpc)
 (``--port and --rpcport``) - in case of a cluster the instances must
@@ -79,7 +79,7 @@ script, and the README there for usage and examples.
 Private network
 ---------------
 
-An ethereum network is a private network if the nodes are not connected
+An Ethereum network is a private network if the nodes are not connected
 to the main network nodes. In this context private only means reserved
 or isolated, rather than protected or secure. Since connections between
 nodes are valid only if peers have identical protocol version and

@@ -32,8 +32,8 @@ in `eth-go <https://github.com/ethereum/eth-go>`__.
     func main() {
             // Read config
             ethutil.ReadConfig(".test", ethutil.LogStd, nil, "MyEthApp")
-            
-            // Create a new ethereum node
+
+            // Create a new Ethereum node
             ethereum, err := eth.New(eth.CapDefault, false)
             if err != nil {
                     panic(fmt.Sprintf("Could not start node: %s\n", err))
@@ -58,8 +58,8 @@ using the ``KeyRing`` found in the ``ethutil`` package.
     func main() {
             // Read config
             ethutil.ReadConfig(".test", ethutil.LogStd, nil, "MyEthApp")
-            
-            // Create a new ethereum node
+
+            // Create a new Ethereum node
             ethereum, err := eth.New(eth.CapDefault, false)
             if err != nil {
                 panic(fmt.Sprintf("Could not start node: %s\n", err))
@@ -68,7 +68,7 @@ using the ``KeyRing`` found in the ``ethutil`` package.
             ethereum.Port = "10101"
             // Once we reach max, bounce them off.
             ethereum.MaxPeers = 10
-            
+
             keyRing := ethutil.GetKeyRing()
             // Create a new key if non exist
             if keyRing.Len() == 0 {
@@ -77,7 +77,7 @@ using the ``KeyRing`` found in the ``ethutil`` package.
                     if err != nil {
                             panic(err)
                     }
-                
+
                     // Add the keypair to the key ring
                     keyRing.Add(keyPair)
             }
@@ -98,8 +98,8 @@ engines and connect to the main network.
     func main() {
             // Read config
             ethutil.ReadConfig(".test", ethutil.LogStd, nil, "MyEthApp")
-        
-            // Create a new ethereum node
+
+            // Create a new Ethereum node
             ethereum, err := eth.New(eth.CapDefault, false)
             if err != nil {
                     panic(fmt.Sprintf("Could not start node: %s\n", err))
@@ -108,7 +108,7 @@ engines and connect to the main network.
             ethereum.Port = "10101"
             // Once we reach max, bounce them off.
             ethereum.MaxPeers = 10
-        
+
             keyRing := ethutil.GetKeyRing()
             // Create a new key if non exist
             if keyRing.Len() == 0 {
@@ -117,7 +117,7 @@ engines and connect to the main network.
                     if err != nil {
                             panic(err)
                     }
-            
+
                     // Add the keypair to the key ring
                     keyRing.Add(keyPair)
             }

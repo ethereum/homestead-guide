@@ -84,7 +84,7 @@ the `Ethereum Wallet <https://github.com/ethereum/mist>`_ and you are done.
 - Click on the executable (**Ethereum-Wallet, Ethereum-Wallet** or **Ethereum-Wallet.app**)
 - The block-chain will be downloaded
 
-The Ethereum Wallet is a "single ÐApp" deployment of the **Mist Browser**
+The Ethereum Wallet is a "single dapp" deployment of the **Mist Browser**
 which will be the centerpiece of the Metropolis phase of development, which
 comes after Homestead.
 

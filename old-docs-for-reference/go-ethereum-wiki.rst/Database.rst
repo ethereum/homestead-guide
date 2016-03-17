@@ -1,4 +1,4 @@
-Go ethereum database
+Go Ethereum database
 
 ::
 

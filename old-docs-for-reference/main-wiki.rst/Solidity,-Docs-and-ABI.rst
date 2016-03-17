@@ -191,15 +191,15 @@ viewer to immediately discern what the contract conforms to; in this
 case they could see that it's premined in favour of the transaction
 sender and that the total amount of coins in the system never changes.
 
-For example, should a ÐApp, malicious or otherwise, attempt to send a
+For example, should a dapp, malicious or otherwise, attempt to send a
 transaction that gives all the user's GAV to itself, the user would,
 prior to signing and submission, receive a message saying something
 like:
 
 ::
 
-    Untrusted ÐApp "Foo Sprocket ÐApp" attempting to transact in your name:
-    Send 45.780 GAV from the account of Your Name Here to an account accessible only by Foo Sprocket ÐApp.
+    Untrusted dapp "Foo Sprocket dapp" attempting to transact in your name:
+    Send 45.780 GAV from the account of Your Name Here to an account accessible only by Foo Sprocket dapp.
     Do you wish to allow this?
 
 Of course, they might be a bit more cunning and send it to an anonymous

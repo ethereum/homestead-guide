@@ -5,8 +5,8 @@ Account Management
 Accounts
 ================================================================================
 
-Accounts play a central role in ethereum. There are two types of accounts: *externally owned accounts* (EOAs) and *contract accounts*. Here we focus on externally owned accounts, which will be referred to simply as *accounts*. Contract accounts will be referred to as *contracts* and are discussed in detail in _`Contracts`. This generic notion of account subsuming both externally owned accounts and contracts is justified in that these entities are so called *state objects*. These entities have a state: accounts have balance and contracts have both balance and contract storage. The state of all accounts is the state of the ethereum network which is updated with every block and which the network really needs to reach a consensus about.
-Account are essential for users to interact with the ethereum blockchain via transactions.
+Accounts play a central role in Ethereum. There are two types of accounts: *externally owned accounts* (EOAs) and *contract accounts*. Here we focus on externally owned accounts, which will be referred to simply as *accounts*. Contract accounts will be referred to as *contracts* and are discussed in detail in _`Contracts`. This generic notion of account subsuming both externally owned accounts and contracts is justified in that these entities are so called *state objects*. These entities have a state: accounts have balance and contracts have both balance and contract storage. The state of all accounts is the state of the Ethereum network which is updated with every block and which the network really needs to reach a consensus about.
+Account are essential for users to interact with the Ethereum blockchain via transactions.
 
 If we restrict Ethereum to only externally owned accounts and allow only transactions between them, we arrive at an "altcoin" system that is less powerful than bitcoin itself and can only be used to transfer ether.
 
@@ -26,7 +26,7 @@ Creating a key is tantamount to creating an account.
 
 Of course your new account will not contain any Ether. But it'll be yours and you can be certain that without your key and your password, nobody else can ever access it.
 
-It is safe to transfer the entire directory or any individual keyfile between ethereum nodes.
+It is safe to transfer the entire directory or any individual keyfile between Ethereum nodes.
 
 .. Warning:: Note that in case you are adding keyfiles to your node from a different node, the order of accounts may change. So make sure you do not rely or change the index in your scripts or code snippets.
 
@@ -433,6 +433,6 @@ For non-interactive use the passphrase can be specified with the ``--password`` 
   geth --password <passwordfile> account import <keyfile>
 
 
-.. Note:: Since you can directly copy your encrypted accounts to another ethereum instance, this import/export mechanism is not needed when you transfer an account between nodes.
+.. Note:: Since you can directly copy your encrypted accounts to another Ethereum instance, this import/export mechanism is not needed when you transfer an account between nodes.
 
 .. Warning:: When you copy keys into an existing node's ``keystore``, the order of accounts you are used to may change. Therefore you make sure you either do not rely on the account order or double-check and update the indexes used in your scripts.

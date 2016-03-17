@@ -10,7 +10,7 @@ Purpose and Audience
 ===============================================================================
 
 This guide should serve to be an entry level for all Ethereum users and developers.
-The goal is to create documentation with information, short tutorials, and examples that will cover all of the basic and intermediate functionality of using Ethereum to interact with ÐApps or develop a ÐApp.
+The goal is to create documentation with information, short tutorials, and examples that will cover all of the basic and intermediate functionality of using Ethereum to interact with dapps or develop a dapp.
 
 Any information that is overly specific, technical, or not necessary to accomplish the documentation's goal will remain on the Ethereum Github Wiki. It may be referenced in this guide if necessary.
 

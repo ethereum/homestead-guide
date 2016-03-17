@@ -1,14 +1,14 @@
 Geth
 ====
 
-``geth`` is the the command line interface for running a full ethereum
+``geth`` is the the command line interface for running a full Ethereum
 node implemented in Go. It is the main deliverable of the `Frontier
 Release <https://github.com/ethereum/go-ethereum/wiki/Frontier>`__
 
 Capabilities
 ------------
 
-By installing and running ``geth``, you can take part in the ethereum
+By installing and running ``geth``, you can take part in the Ethereum
 frontier live network and \* mine real ether \* transfer funds between
 addresses \* create contracts and send transactions \* explore block
 history \* and much much more
@@ -129,7 +129,7 @@ IRC Freenode channels: \* ``#ethereum``: for general discussion \*
 ``#ethereum-dev``: for development specific questions and discussions \*
 ``##ethereum``: for offtopic and banter \* ``#ethereumjs``: for
 questions related to web3.js and node-ethereum \* ``#ethereum-markets``:
-Trading \* ``#ethereum-mining`` Mining \* ``#dappdevs``: ÐApp developers
+Trading \* ``#ethereum-mining`` Mining \* ``#dappdevs``: Dapp developers
 channel \* ``#ethdev``: buildserver etc
 
 `IRC Logs by ZeroGox <https://zerogox.com/bot/log>`__
@@ -140,7 +140,7 @@ Gitter
 -  `go-ethereum Gitter <https://gitter.im/ethereum/go-ethereum>`__
 -  `cpp-ethereum Gitter <https://gitter.im/ethereum/cpp-ethereum>`__
 -  `web3.js Gitter <https://gitter.im/ethereum/web3.js>`__
--  `ethereum documentation project
+-  `Ethereum documentation project
    Gitter <https://gitter.im/ethereum/frontier-guide>`__
 
 Forum
@@ -153,7 +153,7 @@ The ZeroGox Bot
 
 `ZeroGox Bot <https://zerogox.com/bot>`__
 
-ÐApp developers' mailing list
+Dapp developers' mailing list
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 https://dapplist.net/

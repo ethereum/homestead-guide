@@ -9,7 +9,7 @@ Both types of accounts have an ether balance.
 
 Transactions can be fired from both types of accounts, though contracts
 only fire transactions in response to other transactions that they have
-received. Therefore, all action on the ethereum block chain is set in
+received. Therefore, all action on the Ethereum block chain is set in
 motion by transactions fired from externally-controlled accounts.
 
 The simplest transactions are ether transfer transactions. But before we
@@ -76,7 +76,7 @@ Docs and tutorials
    ethereum/wiki <https://github.com/ethereum/wiki/wiki/The-Solidity-Programming-Language>`__
 -  `Ethereum ÐΞVcon-0: Solidity, Vision and Roadmap - YouTube
    Video <https://www.youtube.com/watch?v=DIqGDNPO5YM>`__
--  `ÐApps for beginners <https://dappsforbeginners.wordpress.com/>`__
+-  `Dapps for beginners <https://dappsforbeginners.wordpress.com/>`__
 -  `Tutorial
    1 <https://forum.ethereum.org/discussion/1634/tutorial-1-your-first-contract/p1>`__
 -  `Tutorial
@@ -86,7 +86,7 @@ Docs and tutorials
    (Outdated)
 -  `Solidity tutorial 1 by Eris
    Industries <https://eng.erisindustries.com/tutorials/2015/03/11/solidity-1/>`__
--  `ÐApp tutorials by Andreas Olofsson (Eris
+-  `dapp tutorials by Andreas Olofsson (Eris
    Industries) <https://www.youtube.com/playlist?list=PL_kFomDrqPoZBu5uxd8OBGColQPYbuz3i>`__
 -  `Eris Solidity
    resources <https://github.com/eris-ltd/solidity-resources>`__
@@ -94,15 +94,15 @@ Docs and tutorials
 Examples
 ^^^^^^^^
 
--  `A ÐApp
+-  `A dapp
    listing <https://github.com/ethereum/wiki/wiki/FAQ#where-can-i-find-example-%C3%90apps>`__
 -  `Solidity Contracts on Ethereum -
    Ether.Fund <https://ether.fund/contracts/solidity>`__
--  `Ethereum ÐApp bin <https://github.com/ethereum/dapp-bin/>`__
+-  `Ethereum dapp bin <https://github.com/ethereum/dapp-bin/>`__
 -  `Solidity Standard
    Library <https://github.com/ethereum/wiki/wiki/Solidity-standard-library>`__
 -  `Whisper chat
-   ÐApp <https://github.com/ethereum/meteor-dapp-whisper-chat-client/tree/master/dist/deploy>`__
+   dapp <https://github.com/ethereum/meteor-dapp-whisper-chat-client/tree/master/dist/deploy>`__
    written in meteor
 -  `order statistic
    tree <https://github.com/drcode/ethereum-order-statistic-tree>`__ by
@@ -121,7 +121,7 @@ Serpent
 -  `serpent language
    spec <https://github.com/ethereum/wiki/wiki/Serpent>`__
 
-Contract/ÐApp development environments and frameworks
+Contract/dapp development environments and frameworks
 -----------------------------------------------------
 
 -  `Mix standalone
@@ -509,7 +509,7 @@ The comment has expressions in between backticks which are to be
 evaluated at the time the transaction confirmation message is presented
 to the user. The variables that refer to parameters of method calls then
 are instantiated in accordance with the actual transaction data sent by
-the user (or the user's ÐApp). NatSpec support for confirmation notices
+the user (or the user's dapp). NatSpec support for confirmation notices
 is fully implemented in ``geth``. NatSpec relies on both the abi
 definition as well as the userDoc component to generate the proper
 confirmations. Therefore in order to access that, the contract needs to
@@ -782,7 +782,7 @@ and the following ones return correct code:
 Using the registrar services
 ----------------------------
 
-Can provide useful interfaces between contracts and ÐApps.
+Can provide useful interfaces between contracts and dapps.
 
 Global registrar
 ~~~~~~~~~~~~~~~~

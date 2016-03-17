@@ -59,7 +59,7 @@ In order to obtain Ether, you need to either
 Trustless services
 --------------------------------------------------------------------------------
 
-Note that the ethereum platform is special in that the smart contracts enable trustless services that obviate the need for trusted third parties in a currency exchange transaction, ie. disintermediate currency exchange businesses.
+Note that the Ethereum platform is special in that the smart contracts enable trustless services that obviate the need for trusted third parties in a currency exchange transaction, ie. disintermediate currency exchange businesses.
 
 Such projects (alpha/prelaunch status at the time of writing) are:
 

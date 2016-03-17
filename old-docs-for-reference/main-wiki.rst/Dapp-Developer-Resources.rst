@@ -27,11 +27,11 @@ Other Resources:
 -  `Useful Ðapp
    Patterns <https://github.com/ethereum/wiki/wiki/Useful-Ðapp-Patterns>`__
    - Code snippets which are useful for Ðapp development.
--  `ÐApp using
+-  `Dapp using
    Meteor <https://github.com/ethereum/wiki/wiki/Dapp-using-Meteor>`__ -
-   This short tutorial gives an intro on how to start building a Ðapp
+   This short tutorial gives an intro on how to start building a dapp
    using `Meteor <https://www.meteor.com>`__, and also why Meteor is a
-   good fit for Ðapps.
+   good fit for dapps.
 
 Useful read
 ~~~~~~~~~~~

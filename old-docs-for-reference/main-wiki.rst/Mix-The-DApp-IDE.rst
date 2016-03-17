@@ -2,7 +2,7 @@ Welcome to Mix IDE!
 ===================
 
 This guide provides a very simple and quick introduction to the Mix IDE
-workflow by walking you through the creation of a simple ÐApp. Once you
+workflow by walking you through the creation of a simple dapp. Once you
 are done with this tutorial, you will have a general knowledge of how to
 create and run applications in the IDE.
 
@@ -22,7 +22,7 @@ the case, then Mix is already installed.
 Creating a new project
 ----------------------
 
-Let's create a simple ÐApp that will allow user to store and query
+Let's create a simple dapp that will allow user to store and query
 personal movie ratings.
 
 In the IDE, choose ``File > New Project``. Enter the project name
@@ -114,8 +114,8 @@ Now we need to configure a scenario for debugging. Mix has its own
 blockchain that is reset on each debugging session. Scenarios are used
 to get the blockchain to a point where it is possible to make
 transactions and calls to a contract. A scenario is defined by a
-sequence of transactions that create ÐApp and all dependencies on the
-blockchain and set up ÐApp initial storage.
+sequence of transactions that create dapp and all dependencies on the
+blockchain and set up dapp initial storage.
 
 If the scenario panel on the right side is not open, open it by pressing
 ``F7`` or selecting ``Windows > Show right view`` from the menu. A
@@ -175,7 +175,7 @@ instruction description.
 Deployment to network
 ---------------------
 
-This feature allows users to deploy the current project as a ÐApp in the
+This feature allows users to deploy the current project as a dapp in the
 main blockchain. This will deploy contracts and register frontend
 resources.
 
@@ -184,14 +184,14 @@ The deployment process includes three steps:
 -  **Deploy contract**: This step will deploy contracts in the main
    blockchain.
 
--  **Package ÐApp**: This step is used to package and upload frontend
+-  **Package dapp**: This step is used to package and upload frontend
    resources.
 
--  **Register**: To render the ÐApp, the Ethereum browser (Mist or
+-  **Register**: To render the dapp, the Ethereum browser (Mist or
    AlethZero) needs to access this package. This step will register the
    URL where the resources are stored.
 
-To Deploy your ÐApp, Please follow these instructions:
+To Deploy your dapp, Please follow these instructions:
 
 Click on ``Deploy``, ``Deploy to Network``. This modal dialog displays
 three parts (see above):
@@ -233,7 +233,7 @@ blocks generated on top of the last block which contains the last
 deployed transactions). Mix keep track of all the transactions. If one
 is missing (unvalidated) it will be displayed in this panel.
 
--  **Package ÐApp**
+-  **Package dapp**
 
 -  *Generate local package*
 
@@ -241,7 +241,7 @@ The action "Generate Package" will create the package.dapp in the
 specified folder
 
 "Local package Url" the content of this field can be pasted directly in
-AlethZero in order to use the ÐApp before uploading it.
+AlethZero in order to use the dapp before uploading it.
 
 -  *Upload and share package*
 
@@ -254,7 +254,7 @@ clipboard.
 "Host in pastebin.com" will open pastebin.com in a browser (you can then
 host your package as base64).
 
--  **Package ÐApp**
+-  **Package dapp**
 
 "Root Registrar address" is the account address of the root registrar
 contract
@@ -263,13 +263,13 @@ contract
 similar)
 
 "Ethereum URL" is the url that users will use in AlethZero or Mist to
-access your ÐApp.
+access your dapp.
 
 "Formatted Ethereum URL" is the url that users will use in AlethZero or
-Mist to access your ÐApp.
+Mist to access your dapp.
 
 "Gas Price" shows the default gas price of the network. You can also
 specify a different value.
 
 "Registration Cost" will display the amount of ether you need to
-register your ÐApp url.
+register your dapp url.

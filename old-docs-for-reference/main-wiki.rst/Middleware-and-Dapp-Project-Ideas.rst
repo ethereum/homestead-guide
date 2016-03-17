@@ -56,7 +56,7 @@ If you control:
 -  Any other data repository
 
 Then the Ethereum ecosystem will benefit from you publishing a data feed
-contract on the ethereum blockchain.
+contract on the Ethereum blockchain.
 
 A closely related idea is an **HTTP getter passthrough contract**.
 Essentially, the contract would have one method, ``get(string)``, that
@@ -134,7 +134,7 @@ scheme based on
 `max-flow <https://en.wikipedia.org/wiki/Maximum_flow_problem>`__.
 
 A useful project would be to create an implementation of such a system
-on Ethereum, and create a ÐApp by which anyone can register an identity,
+on Ethereum, and create a dapp by which anyone can register an identity,
 and register trust scores for other identities. Then, create a
 decentralized cloud computing service by which anyone can query "provide
 a proof, consisting of a list of trust paths, showing the Advogato trust
@@ -144,14 +144,14 @@ charity to subsidize it); if user A wants to know "what is B's trust
 score", they can make this query, receive the result, verify the proof,
 and then display it.
 
-This system could then be used by many other ÐApps on ethereum,
+This system could then be used by many other dapps on Ethereum,
 including financial contract using price feeds and arbitration.
 
 Financial Derivatives Market
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Essentially, a polished, working ÐApp that allows users to make options
-on any ethereum asset, and derivatives (eg. CFDs) on any ethereum price
+Essentially, a polished, working dapp that allows users to make options
+on any Ethereum asset, and derivatives (eg. CFDs) on any Ethereum price
 feed. This should support "multisig price feeds": choosing multiple data
 feed contract addresses that support a particular ticker symbol, and
 taking the median of them, so as to remove reliance on any single party.
@@ -182,7 +182,7 @@ Interface with national ID
 Create a system, relying on trusting no one other than the original
 issuer, by which users with electronic identities (eg. Estonian digital
 ID, other electronic passports, crypto KYC schemes, etc) can prove to
-the ethereum blockchain that they have that particular ID. Note that
+the Ethereum blockchain that they have that particular ID. Note that
 this can be plugged into the WoT by, eg, creating a contract which
 trusts everyone who has an Estonian digital ID with score 1.
 

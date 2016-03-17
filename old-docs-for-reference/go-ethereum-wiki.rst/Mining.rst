@@ -18,11 +18,11 @@ The C++ implementation of Ethereum also offers a GPU miner, both as part
 of Eth (its CLI), AlethZero (its GUI) and EthMiner (the standalone
 miner).
 
-***NOTE:** Ensure your blockchain is fully synchronised with the main
+***NOTE:** Ensure your blockchain is fully synchronized with the main
 chain before starting to mine, otherwise you will not be mining on the
 main chain.*
 
-When you start up your ethereum node with ``geth`` it is not mining by
+When you start up your Ethereum node with ``geth`` it is not mining by
 default. To start it in mining mode, you use the ``--mine`` `command
 line
 option <https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options>`__.
@@ -111,7 +111,7 @@ local account:
 ::
 
     > eth.getBalance(eth.coinbase).toNumber();
-    '34698870000000' 
+    '34698870000000'
 
 In order to spend your earnings `on gas to
 transact <https://github.com/ethereum/go-ethereum/wiki/Contracts-and-Transactions>`__,
@@ -141,8 +141,8 @@ with the following code snippet on the console:
       }
       return addrs
     }
-    // scans the last 1000 blocks and returns the blocknumbers of blocks mined by your coinbase 
-    // (more precisely blocks the mining reward for which is sent to your coinbase).   
+    // scans the last 1000 blocks and returns the blocknumbers of blocks mined by your coinbase
+    // (more precisely blocks the mining reward for which is sent to your coinbase).
     minedBlocks(1000, eth.coinbase);
     //[352708, 352655, 352559]
 
@@ -285,7 +285,7 @@ On Linux:
 
 ::
 
-    apt-get install cpp-ethereum 
+    apt-get install cpp-ethereum
 
 On Windows:
 https://github.com/ethereum/cpp-ethereum/wiki/Building-on-Windows
@@ -387,7 +387,7 @@ Further Resources:
    rigs <https://github.com/sammy007/ether-proxy>`__ (supports solo and
    pool mining proxy with web interface and rigs availability
    monitoring)
--  `ethereum forum mining FAQ live
+-  `Ethereum forum mining FAQ live
    update <https://forum.ethereum.org/discussion/197/mining-faq-live-updates>`__
 -  `yates randall mining
    video <https://www.youtube.com/watch?v=CnKnclkkbKg>`__

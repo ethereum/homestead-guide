@@ -1,4 +1,4 @@
-URLs in ÐApp browsers
+URLs in dapp browsers
 =====================
 
 URLs should contain all allowable urls in browsers and *all* ``http(s)``
@@ -13,7 +13,7 @@ the current urls scheme.
 
 Irrespective of the main protocol, ``<source>`` should be resolved with
 our version of DNS (``NameReg`` (ename registration contract on
-ethereum) and/or via swarm signed version stream.
+Ethereum) and/or via swarm signed version stream.
 
 In the special case of the bzz protocol, ``<source>`` must resolve to a
 Swarm hash of the content (in other words, the root key of the content).
@@ -53,7 +53,7 @@ attributes:
    ``http://eth:bzz@google.com`` (*optional*)
 
 If ``path`` is an empty string or is missing, the path matches the
-*document-root* of the ÐApp. If ``contentType`` is empty or missing,
+*document-root* of the dapp. If ``contentType`` is empty or missing,
 manifest if assumed by default.
 
 (NOTE: Unclear. When no path matches and there is no fallback path e.g.
@@ -126,7 +126,7 @@ serves ``cv.pdf``
 Example 2
 ~~~~~~~~~
 
-| Imagine you have a ÐApp called *chat* and host it under
+| Imagine you have a dapp called *chat* and host it under
 | your local directory ``<dir>`` looks like this:
 
 ::

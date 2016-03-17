@@ -38,14 +38,14 @@ Answers to questions about Ethereum
    automatically? <#how-to-deploy-contracts-automatically>`__
 -  `Where to find example
    contracts? <#where-to-find-example-contracts>`__
--  `ÐApps <#Ðapps>`__
+-  `Dapps <#dapps>`__
 -  `Where can I learn about the Ethereum
    APIs? <#where-can-i-learn-about-the-ethereum-apis>`__
--  `Where can I learn about ÐApp
-   development? <#where-can-i-learn-about-Ðapp-development>`__
--  `Where can I find ÐApp development
-   tools? <#where-can-i-find-Ðapp-development-tools>`__
--  `Where can I find example ÐApps? <#where-can-i-find-example-Ðapps>`__
+-  `Where can I learn about dapp
+   development? <#where-can-i-learn-about-dapp-development>`__
+-  `Where can I find dapp development
+   tools? <#where-can-i-find-dapp-development-tools>`__
+-  `Where can I find example dapps? <#where-can-i-find-example-dapps>`__
 -  `IRC <#irc>`__
 -  `How can I join the Ethereum IRC
    channels? <#how-can-i-join-the-ethereum-irc-channels>`__
@@ -295,7 +295,7 @@ Where to find example contracts?
 -  `By Doug A. <https://github.com/d11e9/g3>`__
    ([@dlle9](https://github.com/d11e9))
 
-ÐApps
+Dapps
 -----
 
 Where can I learn about the Ethereum APIs?
@@ -310,14 +310,14 @@ Where can I learn about the Ethereum APIs?
 -  `The PoC 7 API for
    JavaScript <https://github.com/ethereum/wiki/wiki/JavaScript-API>`__
 
-Where can I learn about ÐApp development?
+Where can I learn about dapp development?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  `Writing Your Own
    Currency <http://hidskes.com/blog/2014/05/21/ethereum-dapp-development-for-web-developers/>`__
    ([@maran](https://github.com/maran))
 
-Where can I find ÐApp development tools?
+Where can I find dapp development tools?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Official
@@ -358,7 +358,7 @@ Community
 -  `Poly-Eth <https://github.com/projectdnet/poly-eth>`__
    ([@projectdnet](https://github.com/projectdnet))
 
-Where can I find example ÐApps?
+Where can I find example dapps?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  `dapp-bin <https://github.com/ethereum/dapp-bin>`__
@@ -390,7 +390,7 @@ IRC
 How can I join the Ethereum IRC channels?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  `Chat with the ethereum dev community on
+-  `Chat with the Ethereum dev community on
    IRC! <https://forum.ethereum.org/discussion/1495/chat-with-the-ethereum-dev-community-on-irc>`__
 
 Where can I find the Ethereum IRC logs?

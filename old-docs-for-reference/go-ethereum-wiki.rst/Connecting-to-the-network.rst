@@ -6,7 +6,7 @@ How Peers Are Found
 
 Geth continuously attempts to connect to other nodes on the network
 until it has peers. If you have UPnP enabled on your router or run
-ethereum on an Internet-facing server, it will also accept connections
+Ethereum on an Internet-facing server, it will also accept connections
 from other nodes.
 
 Geth finds peers through something called the discovery protocol. In the
@@ -126,7 +126,7 @@ have the following format:
 
     {
       "alloc": {
-        "dbdbdb2cbd23b783741e8d7fcf51e459b497e4a6": { 
+        "dbdbdb2cbd23b783741e8d7fcf51e459b497e4a6": {
             "balance": "1606938044258990275541962092341162602522202993782792835301376"
         },
         "e6716f9544a56c530d868e4bfbacb172315bdead": {
