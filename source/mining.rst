@@ -290,9 +290,8 @@ In order to mine on a single GPU all that needs to be done is to run eth with th
 
 .. code-block:: bash
 
- eth -i -v 1 -a 0xcadb3223d4eebcaa7b40ec5722967ced01cfc8f2 --client-name "OPTIONALNAMEHERE" -x 50 -m on -G
+ eth -v 1 -a 0xcadb3223d4eebcaa7b40ec5722967ced01cfc8f2 --client-name "OPTIONALNAMEHERE" -x 50 -m on -G
 
-- ``-i`` Requests an interactive javascript console so that we can interact with the client
 - ``-v 1`` Set verbosity to 1. Let's not get spammed by messages.
 - ``-a YOURWALLETADDRESS`` Set the coinbase, where the mining rewards will go to. The above address is just an example. This argument is really important, make sure to not make a mistake in your wallet address or you will receive no ether payout.
 - ``--client-name "OPTIONAL"`` Set an optional client name to identify you on the network
@@ -300,7 +299,8 @@ In order to mine on a single GPU all that needs to be done is to run eth with th
 - ``-m on`` Actually launch with mining on.
 - ``-G`` set GPU mining on.
 
-While the client is running you can interact with it using the interactive console.
+While the client is running you can interact with it using either
+geth attach` or [ethconsole](https://github.com/ethereum/ethereum-console).
 
 Mining on a multiple GPUs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -309,7 +309,7 @@ Ensure that an eth++ node is running with your coinbase address properly set:
 
 .. code-block:: bash
 
-   eth -i -v 1 -a 0xcadb3223d4eebcaa7b40ec5722967ced01cfc8f2 --client-name "OPTIONALNAMEHERE" -x 50 -j
+   eth -v 1 -a 0xcadb3223d4eebcaa7b40ec5722967ced01cfc8f2 --client-name "OPTIONALNAMEHERE" -x 50 -j
 
 Notice that we also added the -j argument so that the client can have the JSON-RPC server enabled to communicate with the ethminer instances. Additionally we removed the mining related arguments since ethminer will now do the mining for us.
 For each of your GPUs execute a different ethminer instance:
