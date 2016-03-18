@@ -37,6 +37,7 @@ We would like to thank everybody who helped in this effort for `their contributi
 - `Chris Peel <https://github.com/christianpeel>`_
 - `Colm Ragu <https://github.com/colm>`_
 - `Laurent Raufaste <https://github.com/lra>`_
+- `Christian Reitwiessner <https://github.com/chriseth>`_
 - `Josh Stark <https://github.com/jjmstark>`_
 - `Scott Stevenson <https://github.com/ScottStevenson>`_
 - `Bob Summerwill <https://github.com/bobsummerwill>`_
