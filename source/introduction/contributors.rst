@@ -17,6 +17,7 @@ We would like to thank everybody who helped in this effort for `their contributi
 .. image:: ../img/Feels-Good-Man-Frog-02.png
 
 - `Santanu Barai <https://github.com/0mkara>`_
+- `Brooks Boyd <https://onename.com/midnight>`_
 - `Joseph Chow <https://github.com/ethers>`_
 - `François Deppierraz <https://github.com/ctrlaltdel>`_
 - `Bertie Dinneen <https://github.com/bdinn1>`_
