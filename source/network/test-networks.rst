@@ -262,7 +262,7 @@ This will enable RPC interface on your node. This is generally enabled by defaul
 
 This dictates what APIs that are allowed to be accessed over RPC. By default, Geth enables the web3 interface over RPC.
 
-**IMPORTANT: Please note that offering an API over the RPC/IPC interface will give everyone access to the API who can access this interface (e.g. ÐApp's). Be careful which API's you enable. By default geth enables all API's over the IPC interface and only the db,eth,net and web3 API's over the RPC interface.**
+**IMPORTANT: Please note that offering an API over the RPC/IPC interface will give everyone access to the API who can access this interface (e.g. dapp's). Be careful which API's you enable. By default geth enables all API's over the IPC interface and only the db,eth,net and web3 API's over the RPC interface.**
 
 ``--rpcport "8080"``
 

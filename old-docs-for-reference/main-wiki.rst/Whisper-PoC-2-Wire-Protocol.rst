@@ -38,7 +38,7 @@ packets.
 Topics and Abridged Topics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Topics* are 32-byte hashes, typically generated from ÐApp-specified
+*Topics* are 32-byte hashes, typically generated from dapp-specified
 data. The *abridged topic* is the first 4 bytes of the topic. Abridged
 topics allow the identification (within the bounds of an acceptably high
 probability) of a given topic, useful for determining the utility of a
@@ -57,7 +57,7 @@ maintained through the addition of bits.
 
 Blooms are formed by the bitwise OR operation on a number of bloomed
 topics. The bloom function takes the abridged topic (the first four
-bytes of the SHA3 of the ÐApp/user level topic description) and projects
+bytes of the SHA3 of the dapp/user level topic description) and projects
 them onto a 512-bit slice; in total, three bits are marked for each
 bloomed topic.
 

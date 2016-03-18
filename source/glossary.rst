@@ -17,13 +17,13 @@ Glossary
 
    DAO
       decentralized autonomous organization
-      DAO is type of contract on the blockchain (or a suite of contracts) that is supposed to codify, enforce or automate the workings of an organisation including governance, fund-raising, operations, spending and expansion.
+      DAO is type of contract on the blockchain (or a suite of contracts) that is supposed to codify, enforce or automate the workings of an organization including governance, fund-raising, operations, spending and expansion.
 
    identity
       A set of cryptographically verifiable interactions that have the property that they were all created by the same person.
 
    digital identity
-      The set of cryptographically verifiable transactions signed by the same public key define the digital identity's behaviour. In many real world scenarios (voting) it is desireable that digital identities coincide with real world identities. Ensuring this without violence is an unsolved problem.
+      The set of cryptographically verifiable transactions signed by the same public key define the digital identity's behavior. In many real world scenarios (voting) it is desireable that digital identities coincide with real world identities. Ensuring this without violence is an unsolved problem.
 
    unique identity
       A set of cryptographically verifiable interactions that have the property that they were all created by the same person, with the added constraint that one person cannot have multiple unique identities.
@@ -44,7 +44,7 @@ Glossary
       A protocol is incentive-compatible if everyone is better off "following the rules" than attempting to cheat, at least unless a very large number of people agree to cheat together at the same time (collusion).
 
    collusion
-      In an incentivised protocol scenario, when a number of participants *play together* (conspire) to game the rules to their own benefit.
+      In an incentivized protocol scenario, when a number of participants *play together* (conspire) to game the rules to their own benefit.
 
    token system
       A fungible virtual good that can be traded. More formally, a token system is a database mapping addresses to numbers with the property that the primary allowed operation is a transfer of N tokens from A to B, with the conditions that N is non-negative, N is not greater than A's current balance, and a document authorizing the transfer is digitally signed by A. Secondary "issuance" and "consumption" operations may also exist, transaction fees may also be collected, and simultaneous multi-transfers with many parties may be possible. Typical use cases include currencies, cryptographic tokens inside of networks, company shares and digital gift cards.
@@ -59,7 +59,7 @@ Glossary
       Stands for "decentralized application". Some say it is pronounced Ethapp due to the use of the `uppercase eth letter Ð <gl:eth-letter>`_.
 
    address
-      An ethereum address represents an account. For :ref:gl:EOA, the address is derived as the last 20 bytes of the public key controlling the account, e.g., ``cd2a3d9f938e13cd947ec05abc7fe734df8dd826``. This is a :ref:gl:hexadecimal format (base 16 notation), which is often indicated explicitly by appending ``0x`` to the address. Web3.js and console functions accept addresses with or  without this prefix but for trasparency we encourage their use. Since each byte of the address is represented by 2 hex characters, a prefixed address is  42 character long. Several apps and APIs are also meant to implement the new `checksum-enabled address scheme <https://github.com/ethereum/EIPs/issues/55>`_  introduced in the Mist Ethereum wallet as of version 0.5.0.
+      An Ethereum address represents an account. For :ref:gl:EOA, the address is derived as the last 20 bytes of the public key controlling the account, e.g., ``cd2a3d9f938e13cd947ec05abc7fe734df8dd826``. This is a :ref:gl:hexadecimal format (base 16 notation), which is often indicated explicitly by appending ``0x`` to the address. Web3.js and console functions accept addresses with or  without this prefix but for transparency we encourage their use. Since each byte of the address is represented by 2 hex characters, a prefixed address is  42 character long. Several apps and APIs are also meant to implement the new `checksum-enabled address scheme <https://github.com/ethereum/EIPs/issues/55>`_  introduced in the Mist Ethereum wallet as of version 0.5.0.
 
 .. _gl:hexadecimal:
 
@@ -68,7 +68,7 @@ Glossary
       which uses two characters per byte (the characters ``[0-9][a-f]``
 
    ether
-      Ether is the name of the currency used within Ethereum. It is used to pay for computations within the EVM. Ambigously, ether is also the name of a unit in hte system;
+      Ether is the name of the currency used within Ethereum. It is used to pay for computations within the EVM. Ambiguously, ether is also the name of a unit in hte system;
 
 .. _gl:EOA:
 
@@ -99,10 +99,10 @@ Glossary
       A data transfer mechanism contracts use to communicate with other contracts. Messages can also be described as virtual objects that are never serialized and exist only in the Ethereum execution environment.
 
    Web3
-      The exact definition of the Web3 paradigm is still taking form, but it generally refers to the phenomenon of increased connectedness between all kinds of devices, decentralisation of services and applications, semantic storage of information online and application of artificial intelligence to the web.
+      The exact definition of the Web3 paradigm is still taking form, but it generally refers to the phenomenon of increased connectedness between all kinds of devices, decentralization of services and applications, semantic storage of information online and application of artificial intelligence to the web.
 
    DAO
-      See Decentralized Autonomous Organisation.
+      See Decentralized Autonomous Organization.
 
    epoch
       Epoch is the interval between each regeneration of the DAG used as seed by the PoW algorithm Ethash. The epoch in specified as 30000 blocks.
@@ -179,7 +179,7 @@ Glossary
    peer to peer network
       A network of computers that are collectively able to perform functionalities normally only possible with centralized, server-based services.
 
-   decentralisation
+   decentralization
       The concept of moving the control and execution of computational processes away from a central entity.
 
    distributed hash table
@@ -196,7 +196,7 @@ Glossary
       Often seen in its abbreviated form "PoW", it refers to a mathematical value that can act as the proof of having solved a resource and time consuming computational problem.
 
    proof-of-stake
-      An alternative method of mining blocks that require miners to demonstrate their possession of a certain amount of the currency of the network in question. This works on the principle that miners will be disincentivised to try to undermine a network in which they have a stake. PoS is less wasteful than PoW, but is still often used together with it to provide added security to the network.
+      An alternative method of mining blocks that require miners to demonstrate their possession of a certain amount of the currency of the network in question. This works on the principle that miners will be disincentivized to try to undermine a network in which they have a stake. PoS is less wasteful than PoW, but is still often used together with it to provide added security to the network.
 
    CASPER
       Casper is a security-deposit based economic consensus protocol. This means that nodes, so called “bonded validators”, have to place a security deposit (an action we call “bonding”) in order to serve the consensus by producing blocks. If a validator produces anything that Casper considers “invalid”, the deposit is forfeited along with the privilege of participating in the consensus process.
@@ -208,7 +208,7 @@ Glossary
       Homestead is the second major version release of the Ethereum platform. Homestead includes several protocol changes and a networking change that makes possible further network upgrades: `EIP\-2 Main homestead hardfork changes <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2.mediawiki>`_; `EIP\-7 Hardfork EVM update (DELEGATECALL) <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7.md>`_; `EIP\-8 devp2p forward compatibility <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-8.md>`_. Homestead will launch when block 1,150,000 is reached on the Mainnet. On the Testnet, Homestead will launch at block 494,000.
 
    metropolis
-      The third stage of Ethereum's release. This is the stage when the user interfaces come out (e.g. Mist), including a Dapp store, and non-technical users should feel comfortable joining at this point.
+      The third stage of Ethereum's release. This is the stage when the user interfaces come out (e.g. Mist), including a dapp store, and non-technical users should feel comfortable joining at this point.
 
    serenity
       The fourth stage of Ethereum's release. This is when things are going to get fancy: the network is going to change its mining process from Proof-of-Work to Proof-of-Stake.
@@ -238,7 +238,7 @@ Glossary
       The splitting of the space of possible accounts (contracts are accounts too) into subspaces, for example, based on first digits of their numerical addresses. This allows for contract executions to be executed within 'shards' instead of network wide, allowing for faster transactions and greater scalability.
 
    hash
-      A cryptographic function which takes an input (or 'message') and returns a fixed-size alphanumeric string, which is called the hash value (sometimes called a message digest, a digital fingerprint, a digest or a checksum). A hash function (or hash algorithm) is a process by which a document (i.e. a piece of data or file) is processed into a small piece of data (usually 32 bytes) which looks completely random, and from which no meaningful data can be recovered about the document, but which has the important property that the result of hashing one particular document is always the same. Additionally, it is crucially important that it is computationally infeasible to find two documents that have the same hash. Generally, changing even one letter in a document will completely randomize the hash; for example, the SHA3 hash of "Saturday" is c38bbc8e93c09f6ed3fe39b5135da91ad1a99d397ef16948606cdcbd14929f9d, whereas the SHA3 hash of Caturday is b4013c0eed56d5a0b448b02ec1d10dd18c1b3832068fbbdc65b98fa9b14b6dbf. Hashes are usually used as a way of creating a globally agreed-upon identifier for a particular document that cannot be forged.
+      A cryptographic function which takes an input (or 'message') and returns a fixed-size alphanumeric string, which is called the hash value (sometimes called a message digest, a digital fingerprint, a digest or a checksum). A hash function (or hash algorithm) is a process by which a document (i.e. a piece of data or file) is processed into a small piece of data (usually 32 bytes) which looks completely random, and from which no meaningful data can be recovered about the document, but which has the important property that the result of hashing one particular document is always the same. Additionally, it is crucially important that it is computationally infeasible to find two documents that have the same hash. Generally, changing even one letter in a document will completely randomize the hash; for example, the SHA3 hash of "Saturday" is ``c38bbc8e93c09f6ed3fe39b5135da91ad1a99d397ef16948606cdcbd14929f9d``, whereas the SHA3 hash of "Caturday" is ``b4013c0eed56d5a0b448b02ec1d10dd18c1b3832068fbbdc65b98fa9b14b6dbf``. Hashes are usually used as a way of creating a globally agreed-upon identifier for a particular document that cannot be forged.
 
    crypto-fuel
       Similar to 'gas', referring to the amount of cryptocurrency required to power a transaction.
@@ -268,13 +268,13 @@ Glossary
       A deliberate blockchain fork, where a user with a large amount of mining power sends a transaction to purchase some produce, then after receiving the product creates another transaction sending the same coins to themselves. The attacker then creates a block, at the same level as the block containing the original transaction but containing the second transaction instead, and starts mining on the fork. If the attacker has more than 50% of all mining power, the double spend is guaranteed to succeed eventually at any block depth. Below 50%, there is some probability of success, but it is usually only substantial at a depth up to about 2-5; for this reason, most cryptocurrency exchanges, gambling sites and financial services wait until six blocks have been produced ("six confirmations") before accepting a payment.
 
    SPV client
-    A client that downloads only a small part of the blockchain, allowing users of low-power or low-storage hardware like smartphones and laptops to maintain almost the same guarantee of security by sometimes selectively downloading small parts of the state without needing to spend megabytes of bandwidth and gigabytes of storage on full blockchain validation and maintennance. See light client.
+    A client that downloads only a small part of the blockchain, allowing users of low-power or low-storage hardware like smartphones and laptops to maintain almost the same guarantee of security by sometimes selectively downloading small parts of the state without needing to spend megabytes of bandwidth and gigabytes of storage on full blockchain validation and maintenance. See light client.
 
    uncle
-      Uncles are blockchain blocks found by a miner, when a different miner has already found another block for the corresponding place in the blockchain. They are called “stale blocks”. The parent of an Uncle is an ancestor of the inserting block, located at the tip of the blockchain. In contrast to the Bitcoin network, Ethereum rewards stale blocks as well in order to avoid to penalise miners with a bad connection to the network. This is less critical in the Bitcoin network, because the Block Time there is much higher (~10 minutes) than on the Ethereum network (aimed to ~15 seconds).
+      Uncles are blockchain blocks found by a miner, when a different miner has already found another block for the corresponding place in the blockchain. They are called “stale blocks”. The parent of an Uncle is an ancestor of the inserting block, located at the tip of the blockchain. In contrast to the Bitcoin network, Ethereum rewards stale blocks as well in order to avoid to penalize miners with a bad connection to the network. This is less critical in the Bitcoin network, because the Block Time there is much higher (~10 minutes) than on the Ethereum network (aimed to ~15 seconds).
 
    GHOST
-      Greedy Heaviest-Observed Sub-Tree is an alternative chain-selection method that is designed to incentivise stale blocks (uncles) as well, thus reducing the incentive for pool mining. In GHOST, even the confirmation given by stale blocks to previous blocks are considered valid, and the miners of the stale blocks are also rewarded with a mining reward.
+      Greedy Heaviest-Observed Sub-Tree is an alternative chain-selection method that is designed to incentivize stale blocks (uncles) as well, thus reducing the incentive for pool mining. In GHOST, even the confirmation given by stale blocks to previous blocks are considered valid, and the miners of the stale blocks are also rewarded with a mining reward.
 
    merkle patricia tree
       Merkle Patricia trees provide a cryptographically authenticated data structure that can be used to store all (key, value) bindings. They are fully deterministic, meaning that a Patricia tree with the same (key,value) bindings is guaranteed to be exactly the same down to the last byte and therefore have the same root hash, provide O(log(n)) efficiency for inserts, lookups and deletes, and are much easier to understand and code than more complex comparison-based alternatives like red-black trees.
@@ -285,7 +285,7 @@ Glossary
    uncle rate
       The number of uncles produced per block.
 
-   issueance
+   issuance
       The minting and granting of new cryptocurrency to a miner who has found a new block.
 
    presale
@@ -322,7 +322,7 @@ Glossary
       A blockchain that branches off a main blockchain and checks in periodically with the main blockchain. Besides that it runs independently from the main chain, and any security compromises in the sidechain will not affect the main chain.
 
    pegging
-      Locking down the exchange rate of the coins/tokens in two chains (usually a main and a side chain) in a certain directiom.
+      Locking down the exchange rate of the coins/tokens in two chains (usually a main and a side chain) in a certain direction.
 
    2-way pegging
       Locking down the exchange rate of the coins/tokens in two chains (usually a main and a side chain) in both directions.
@@ -346,7 +346,7 @@ Glossary
       A string of characters derived from a private key that can be made public. The public key can be used to verify the authenticity of any signature created using the private key.
 
    encryption
-      Encryption is the conversion of electronic data into a form unreadable by anyone except the owner of the correct decryption key. It can further be described as a process by which a document (plaintext) is combined with a shorter string of data, called a key (e.g. c85ef7d79691fe79573b1a7064c19c1a9819ebdbd1faaab1a8ec92344438aaf4), to produce an output (ciphertext) which can be "decrypted" back into the original plaintext by someone else who has the key, but which is incomprehensible and computationally infeasible to decrypt for anyone who does not have the key.
+      Encryption is the conversion of electronic data into a form unreadable by anyone except the owner of the correct decryption key. It can further be described as a process by which a document (plaintext) is combined with a shorter string of data, called a key (e.g. ``c85ef7d79691fe79573b1a7064c19c1a9819ebdbd1faaab1a8ec92344438aaf4``), to produce an output (ciphertext) which can be "decrypted" back into the original plaintext by someone else who has the key, but which is incomprehensible and computationally infeasible to decrypt for anyone who does not have the key.
 
    digital signature
       A mathematical scheme for demonstrating the authenticity of a digital message or documents.
@@ -433,11 +433,9 @@ Glossary
       "Ethereum Script" versions 1,2 and 3. There were early versions of what would become the Ethereum Virtual Machine (EVM).
 
    log event
-      Contracts are triggered by transactions executed as part of the block verification. If conceived of as a function call, contract execution is asyncronous, and therefore they have no return value. Instead contracts communicate to the outside world with log events. The log events are part of the transaction receipt which is produced when the transaction is executed.
-      The receipts are stored in the receipt trie, the integrity of which is guaranteed by the fact that the current root of the receipt trie is part of the block header alongside the roots of state and state-trie. In a broad sense from the external perspective receipts are part of the ethereum system state except that they are not readable contracts internally.
+      Contracts are triggered by transactions executed as part of the block verification. If conceived of as a function call, contract execution is asynchronous, and therefore they have no return value. Instead contracts communicate to the outside world with log events. The log events are part of the transaction receipt which is produced when the transaction is executed.
+      The receipts are stored in the receipt trie, the integrity of which is guaranteed by the fact that the current root of the receipt trie is part of the block header alongside the roots of state and state-trie. In a broad sense from the external perspective receipts are part of the Ethereum system state except that they are not readable contracts internally.
 
    hardware wallet
    brain wallet
    cold storage
-
-

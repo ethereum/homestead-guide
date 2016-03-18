@@ -1,15 +1,15 @@
 Requirements
 ------------
 
-Need an abstraction mechanism to allow ÐApps like the Wallet provide
+Need an abstraction mechanism to allow dapps like the Wallet provide
 their services in an integrated manner without compromising the
-neutrality of the browser or placing undue burden on third-party ÐApp
+neutrality of the browser or placing undue burden on third-party dapp
 developers to support them.
 
 Basic Design
 ------------
 
-The ethereum.js interface may be utilised to allow the ÐApp client to
+The ethereum.js interface may be utilised to allow the dapp client to
 register itself as the transaction handler for each of a number of
 accounts; in doing so it will provide an additional callback.
 
@@ -82,7 +82,7 @@ transaction. E.g.:
 
 -  Send 56 ether to ``Dave - 0x56789123`` from account
    ``Gav's Bank Account - 0x12345678``.
--  Wallet ÐApp handling account ``Gav's Bank Account - 0x12345678``
+-  Wallet dapp handling account ``Gav's Bank Account - 0x12345678``
    requests authorisation to conduct the above through: Message from
    ``Gav - 0x34343455`` to ``Gav's Bank Account - 0x12345678`` to: Send
    56 ether to ``Dave - 0x56789123``.

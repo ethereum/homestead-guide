@@ -9,7 +9,7 @@ The monitoring system consists of two components:
 
 1. **eth-netstats** - the monitoring site which lists the nodes.
 2. **eth-net-intelligence-api** - these are processes that communicate
-   with the ethereum client using RPC and push the data to the
+   with the Ethereum client using RPC and push the data to the
    monitoring site via websockets.
 
 Monitoring site

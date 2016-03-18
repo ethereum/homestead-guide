@@ -8,10 +8,10 @@ Command line options
 
     USAGE:
        geth [options] command [command options] [arguments...]
-       
+
     VERSION:
        1.3.1
-       
+
     COMMANDS:
        recover      Attempts to recover a corrupted database by setting a new block by number or hash
        blocktest    loads a block test file
@@ -24,14 +24,14 @@ Command line options
        makedag      generate ethash dag (for testing)
        gpuinfo      gpuinfo
        gpubench     benchmark GPU
-       version      print ethereum version numbers
-       wallet       ethereum presale wallet
+       version      print Ethereum version numbers
+       wallet       Ethereum presale wallet
        account      manage accounts
        console      Geth Console: interactive JavaScript environment
        attach       Geth Console: interactive JavaScript environment (connect to node)
        js           executes the given JavaScript files in the Geth JavaScript VM
        help, h      Shows a list of commands or help for one command
-       
+
     ETHEREUM OPTIONS:
       --datadir "/home/youruser/.ethereum"  Data directory for the databases and keystore
       --networkid "1"                       Network identifier (integer, 0=Olympic, 1=Frontier, 2=Morden)
@@ -43,11 +43,11 @@ Command line options
       --fast                                Enables fast syncing through state downloads
       --cache "0"                           Megabytes of memory allocated to internal caching (min 16MB / database forced)
       --blockchainversion "3"               Blockchain version (integer)
-      
+
     ACCOUNT OPTIONS:
       --unlock      Unlock an account (may be creation index) until this program exits (prompts for password)
       --password    Password file to use with options/subcommands needing a pass phrase
-      
+
     API AND CONSOLE OPTIONS:
       --rpc                                                                 Enable the HTTP-RPC server
       --rpcaddr "127.0.0.1"                                                 HTTP-RPC server listening interface
@@ -59,7 +59,7 @@ Command line options
       --rpccorsdomain                                                       Domains from which to accept cross origin requests (browser enforced)
       --jspath "."                                                          JavaSript root path for `loadScript` and document root for `admin.httpGet`
       --exec                                                                Execute JavaScript statement (only in combination with console/attach)
-      
+
     NETWORKING OPTIONS:
       --bootnodes           Space-separated enode URLs for P2P discovery bootstrap
       --port "30303"        Network listening port
@@ -69,7 +69,7 @@ Command line options
       --nodiscover          Disables the peer discovery mechanism (manual peer addition)
       --nodekey             P2P node key file
       --nodekeyhex          P2P node key as hex (for testing)
-      
+
     MINER OPTIONS:
       --mine                        Enable mining
       --minerthreads "8"            Number of CPU threads to use for mining
@@ -78,7 +78,7 @@ Command line options
       --etherbase "0"               Public address for block mining rewards (default = first account created)
       --gasprice "50000000000"      Minimal gas price to accept for mining a transactions
       --extradata                   Block extra data set by the miner (default = client version)
-      
+
     GAS PRICE ORACLE OPTIONS:
       --gpomin "50000000000"        Minimum suggested gas price
       --gpomax "500000000000"       Maximum suggested gas price
@@ -86,13 +86,13 @@ Command line options
       --gpobasedown "10"            Suggested gas price base step down ratio (1/1000)
       --gpobaseup "100"             Suggested gas price base step up ratio (1/1000)
       --gpobasecf "110"             Suggested gas price base correction factor (%)
-      
+
     VIRTUAL MACHINE OPTIONS:
       --vmdebug             Virtual Machine debug output
       --jitvm               Enable the JIT VM
       --forcejit            Force the JIT VM to take precedence
       --jitcache "64"       Amount of cached JIT VM programs
-      
+
     LOGGING AND DEBUGGING OPTIONS:
       --verbosity "3"       Logging verbosity: 0-6 (0=silent, 1=error, 2=warn, 3=info, 4=core, 5=debug, 6=debug detail)
       --vmodule ""          Per-module verbosity: comma-separated list of <module>=<level>, where <module> is file literal or a glog pattern
@@ -101,11 +101,11 @@ Command line options
       --pprof               Enable the profiling server on localhost
       --pprofport "6060"    Profile server listening port
       --metrics             Enable metrics collection and reporting
-      
+
     EXPERIMENTAL OPTIONS:
       --shh         Enable Whisper
       --natspec     Enable NatSpec confirmation notice
-      
+
     MISCELLANEOUS OPTIONS:
       --solc "solc" Solidity compiler command to be used
       --help, -h    show help

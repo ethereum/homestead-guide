@@ -1,4 +1,4 @@
-Specifications of all ethereum technologies, languages, protocols, etc.
+Specifications of all Ethereum technologies, languages, protocols, etc.
 
 Whitepapers and design rationale
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

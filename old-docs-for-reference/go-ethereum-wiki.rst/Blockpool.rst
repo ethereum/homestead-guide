@@ -3,7 +3,7 @@ technical notes to the go-ethereum blockchain synchronisation module
 Intro
 -----
 
-An ethereum node needs to acquire the set of blocks from which the
+An Ethereum node needs to acquire the set of blocks from which the
 current consensus can be proved. This includes scenarios where the node
 starts up from scratch (i.e., with an empty database) in which case the
 block pool acts as a *download manager* as well as normal operation
@@ -16,7 +16,7 @@ same task: finding the best chain to give to the blockchain manager.
 the blockchain.
 
 In order the achieve this, the blockpool can only rely on p2p
-communication using the `ethereum wire
+communication using the `Ethereum wire
 protocol <https://github.com/ethereum/wiki/wiki/Ethereum-Wire-Protocol>`__.
 
 Terminology
@@ -241,7 +241,7 @@ the chain is killed and the synchronisation is reattempted with
 against attacks where a rogue peer is sending random blockhashes
 indefinitely.
 
-Interface to ethereum core
+Interface to Ethereum core
 --------------------------
 
 The interface of the Blockpool with the core is defined with the help of

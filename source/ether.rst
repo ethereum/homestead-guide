@@ -59,7 +59,7 @@ In order to obtain Ether, you need to either
 Trustless services
 --------------------------------------------------------------------------------
 
-Note that the ethereum platform is special in that the smart contracts enable trustless services that obviate the need for trusted third parties in a currency exchange transaction, ie. disintermediate currency exchange businesses.
+Note that the Ethereum platform is special in that the smart contracts enable trustless services that obviate the need for trusted third parties in a currency exchange transaction, ie. disintermediate currency exchange businesses.
 
 Such projects (alpha/prelaunch status at the time of writing) are:
 
@@ -141,37 +141,31 @@ Online wallets, paper wallets, and cold storage
 * MyEtherWallet
     * `MyEtherWallet website <https://www.myetherwallet.com/>`_
     * `MyEtherWallet source <https://github.com/kvhnuke/etherwallet/>`_
-    * `chrome extention <http://sebfor.com/myetherwallet-chrome-extension-release/>`_
-* cold storage
+    * `Chrome extension <http://sebfor.com/myetherwallet-chrome-extension-release/>`_
+* Cold storage
     * `Icebox <https://github.com/ConsenSys/icebox>`_ by `ConsenSys <https://consensys.net/>`_ - Cold storage based on lightwallet with HD wallet library integrated.
-    * `reddit discussion 1 <https://www.reddit.com/r/ethereum/comments/45uvmy/offline_cold_storage_question/offline_cold_storage_question>`_
-    * `how to setup a cold storage wallet <https://www.reddit.com/r/ethereum/comments/48wfbv/eli5_how_to_setup_a_cold_storage_wallet_as/>`_
-* hardware wallet
+    * `Reddit discussion 1 <https://www.reddit.com/r/ethereum/comments/45uvmy/offline_cold_storage_question/offline_cold_storage_question>`_
+    * `How to setup a cold storage wallet <https://www.reddit.com/r/ethereum/comments/48wfbv/eli5_how_to_setup_a_cold_storage_wallet_as/>`_
+* Hardware wallet
     * `reddit discussion 2 <https://www.reddit.com/r/ethereum/comments/45siaq/hardware_wallet/>`_
     * `reddit discussion 3 <https://www.reddit.com/r/ethereum/comments/4521o4/crowdfunding_ethereum_hardware_cold_storage_wallet/>`_
-* brain wallet
-  * brain wallets are not safe, do not use them. https://www.reddit.com/r/ethereum/comments/45y8m7/brain_wallets_are_now_generally_shunned_by/
-  * Extreme caution with brain wallets. Read the recent controversy: https://reddit.com/r/ethereum/comments/43fhb5/brainwallets vs http://blog.ether.camp/post/138376049438/why-brain-wallet-is-the-best
+* Brain wallet
+    * brain wallets are not safe, do not use them. https://www.reddit.com/r/ethereum/comments/45y8m7/brain_wallets_are_now_generally_shunned_by/
+    * Extreme caution with brain wallets. Read the recent controversy: https://reddit.com/r/ethereum/comments/43fhb5/brainwallets vs http://blog.ether.camp/post/138376049438/why-brain-wallet-is-the-best
 * Misc
-  * `Kraken Wallet Sweeper Tool <https://www.kraken.com/ether>`_ - Pre-sale wallet import
-  * `Recommended ways to safely store ether <http://ethereum.stackexchange.com/questions/1239/what-is-the-recommended-way-to-safely-store-ether>`_
-  * `How to buy and stole ether <http://sebfor.com/how-to-buy-and-store-ether/>`_
-  * `A laymen's intro into brute forcing and why not to use brain wallets <http://www.fastcompany.com/3056651/researchers-find-a-crack-that-drains-supposedly-secure-bitcoin-wallets>`_
-  * `Pyethsaletool <https://github.com/ethereum/pyethsaletool/blob/master/README.md>`_
-  * `account vs wallet <https://www.reddit.com/r/ethereum/comments/47j3r5/eli5_accounts_vs_wallet_contracts_on_mist/>`_
-
-
-
-
-
-
+    * `Kraken Wallet Sweeper Tool <https://www.kraken.com/ether>`_ - Pre-sale wallet import
+    * `Recommended ways to safely store ether <http://ethereum.stackexchange.com/questions/1239/what-is-the-recommended-way-to-safely-store-ether>`_
+    * `How to buy and stole ether <http://sebfor.com/how-to-buy-and-store-ether/>`_
+    * `A laymen's intro into brute forcing and why not to use brain wallets <http://www.fastcompany.com/3056651/researchers-find-a-crack-that-drains-supposedly-secure-bitcoin-wallets>`_
+    * `Pyethsaletool <https://github.com/ethereum/pyethsaletool/blob/master/README.md>`_
+    * `Account vs wallet <https://www.reddit.com/r/ethereum/comments/47j3r5/eli5_accounts_vs_wallet_contracts_on_mist/>`_
 
 Sending ether
 ================================================================================
 
 The `Ethereum Wallet  <https://github.com/ethereum/mist/releases>`_  supports sending ether via a graphical interface.
 
-Ether can also be transfered using the **geth console**.
+Ether can also be transferred using the **geth console**.
 
 .. code-block:: console
 

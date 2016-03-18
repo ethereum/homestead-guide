@@ -100,7 +100,7 @@ Videos
 
 * http://change.is/video/ethereum-the-world-computer-featuring-dr-gavin-wood
 
-Inforgarphics
+Inforgraphics
 --------------------------------
 
 * `Ethereum explained...[to your mother] <https://blog.ethereum.org/wp-content/uploads/2015/06/Ethereum-image-infographic-beginners-guide.png>`_
@@ -113,4 +113,3 @@ Comparison to alternatives
 
 * `NXT <https://www.reddit.com/r/ethereum/comments/23aejv/eli5_what_is_the_qnce_between_ethereum_and`/>`_
 * `MaidSafe <https://www.reddit.com/r/ethereum/comments/22r49u/how_is_maidsafe_different_then_etherium/>`_
-

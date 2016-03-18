@@ -126,7 +126,7 @@ transform it to other units when presenting to the user:
 
     var balance = new BigNumber('13124.234435346456466666457455567456');
 
-    balance.plus(21).toString(10); // toString(10) converts it to a number string, but can only show max 20 floating points 
+    balance.plus(21).toString(10); // toString(10) converts it to a number string, but can only show max 20 floating points
     // "13145.23443534645646666646" // you number would be cut after the 20 floating point
 
 Web3.js API Reference
@@ -268,7 +268,7 @@ web3.version.api
 Returns
 '''''''
 
-``String`` - The ethereum js api version.
+``String`` - The Ethereum JS API version.
 
 Example
 '''''''
@@ -340,7 +340,7 @@ web3.version.ethereum
 Returns
 '''''''
 
-``String`` - The ethereum protocol version.
+``String`` - The Ethereum protocol version.
 
 Example
 '''''''
@@ -401,13 +401,13 @@ Example
 .. code:: js
 
     if(!web3.isConnected()) {
-      
+
        // show some dialog to ask the user to start a node
 
     } else {
-     
+
        // start web3 filters, calls, etc
-      
+
     }
 
 --------------
@@ -686,7 +686,7 @@ web3.fromWei
 
     web3.fromWei(number, unit)
 
-Converts a number of wei into the following ethereum units:
+Converts a number of wei into the following Ethereum units:
 
 -  ``kwei``/``ada``
 -  ``mwei``/``babbage``
@@ -728,7 +728,7 @@ web3.toWei
 
     web3.toWei(number, unit)
 
-Converts an ethereum unit into wei. Possible units are:
+Converts an Ethereum unit into wei. Possible units are:
 
 -  ``kwei``/``ada``
 -  ``mwei``/``babbage``
@@ -857,7 +857,7 @@ Example
 web3.eth
 ~~~~~~~~
 
-Contains the ethereum blockchain related methods.
+Contains the Ethereum blockchain related methods.
 
 Example
 '''''''
@@ -1038,11 +1038,11 @@ Example
             if(sync === true) {
                // we use `true`, so it stops all filters, but not the web3.eth.syncing polling
                web3.reset(true);
-            
+
             // show sync info
             } else if(sync) {
                console.log(sync.currentBlock);
-            
+
             // re-gain app operation
             } else {
                 // run your app init function...
@@ -1184,7 +1184,7 @@ Example
 .. code:: js
 
     var accounts = web3.eth.accounts;
-    console.log(accounts); // ["0x407d73d8a49eeb85d32cf465507dd71d507100c1"] 
+    console.log(accounts); // ["0x407d73d8a49eeb85d32cf465507dd71d507100c1"]
 
 --------------
 
@@ -1850,7 +1850,7 @@ Example
 .. code:: js
 
     var result = web3.eth.call({
-        to: "0xc4abd0339eb8d57087278718986382264244252f", 
+        to: "0xc4abd0339eb8d57087278718986382264244252f",
         data: "0xc6888fa10000000000000000000000000000000000000000000000000000000000000003"
     });
     console.log(result); // "0x0000000000000000000000000000000000000000000000000000000000000015"
@@ -1885,7 +1885,7 @@ Example
 .. code:: js
 
     var result = web3.eth.estimateGas({
-        to: "0xc4abd0339eb8d57087278718986382264244252f", 
+        to: "0xc4abd0339eb8d57087278718986382264244252f",
         data: "0xc6888fa10000000000000000000000000000000000000000000000000000000000000003"
     });
     console.log(result); // "0x0000000000000000000000000000000000000000000000000000000000000015"
@@ -2064,7 +2064,7 @@ deploy the contract using the compiled byte code:
            // e.g. check tx hash on the first call (transaction send)
            if(!myContract.address) {
                console.log(myContract.transactionHash) // The hash of the transaction, which deploys the contract
-           
+
            // check address on the second call (contract deployed)
            } else {
                console.log(myContract.address) // the contract address
@@ -2405,14 +2405,14 @@ Example
 
 .. code:: js
 
-    var source = "" + 
+    var source = "" +
         "contract test {\n" +
         "   function multiply(uint a) returns(uint d) {\n" +
         "       return a * 7;\n" +
         "   }\n" +
         "}\n";
     var compiled = web3.eth.compile.solidity(source);
-    console.log(compiled); 
+    console.log(compiled);
     // {
       "test": {
         "code": "0x605280600c6000396000f3006000357c010000000000000000000000000000000000000000000000000000000090048063c6888fa114602e57005b60376004356041565b8060005260206000f35b6000600782029050604d565b91905056",

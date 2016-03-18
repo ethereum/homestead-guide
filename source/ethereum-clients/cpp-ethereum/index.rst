@@ -11,7 +11,7 @@ cpp-ethereum
 ..  image:: ../../img/ETHEREUM-ICON_Black.png
     :height: 187px
     :width: 187px
-   
+
 Quick Start
 --------------------------------------------------------------------------------
 
@@ -109,7 +109,7 @@ What are the various modules?
     - libdevcrypto: crypto primitives. Depends on libsecp256k1 and libcrypto++.
     - libp2p: core peer to peer networking implementation (excluding specific sub-protocols)
     - rlp: stand-alone rlp en-/decoder
-- **mix** - DApp IDE
+- **mix** - Dapp IDE
 - **solidity** - Solidity compiler
     - docs: documentation, appears at http://solidity.readthedocs.org/
     - libsolidity: actual implementation
@@ -120,7 +120,7 @@ What are the various modules?
     - interface: external interface for users of libsolidity
     - parsing: parser (creates the non-annotated AST)
     - solc: commandline compiler
-- **web3.js** - JavaScript DApp framework library (connects to backend via RPC / IPC)
+- **web3.js** - JavaScript Dapp framework library (connects to backend via RPC / IPC)
 - **webthree** - actual client / node implementation ("eth")
     - eth: commandline client / node
     - libjsconsole: JavaScript console for access to eth - deprecated, to be replaced by nodejs application

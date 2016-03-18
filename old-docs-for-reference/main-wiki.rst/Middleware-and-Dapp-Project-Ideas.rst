@@ -56,7 +56,7 @@ If you control:
 -  Any other data repository
 
 Then the Ethereum ecosystem will benefit from you publishing a data feed
-contract on the ethereum blockchain.
+contract on the Ethereum blockchain.
 
 A closely related idea is an **HTTP getter passthrough contract**.
 Essentially, the contract would have one method, ``get(string)``, that
@@ -126,7 +126,7 @@ into account *all* "chains of trust" between two people, and not just
 the ones that flow through a particular centralized gateway.
 
 .. figure:: http://vitalik.ca/files/wot_centralized_and_decentralized.png?1
-   :alt: 
+   :alt:
 
 One example of an algorithm that does this well is the `Advogato trust
 metric <http://www.advogato.org/trust-metric.html>`__, a trust score
@@ -144,14 +144,14 @@ charity to subsidize it); if user A wants to know "what is B's trust
 score", they can make this query, receive the result, verify the proof,
 and then display it.
 
-This system could then be used by many other dapps on ethereum,
+This system could then be used by many other dapps on Ethereum,
 including financial contract using price feeds and arbitration.
 
 Financial Derivatives Market
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Essentially, a polished, working dapp that allows users to make options
-on any ethereum asset, and derivatives (eg. CFDs) on any ethereum price
+on any Ethereum asset, and derivatives (eg. CFDs) on any Ethereum price
 feed. This should support "multisig price feeds": choosing multiple data
 feed contract addresses that support a particular ticker symbol, and
 taking the median of them, so as to remove reliance on any single party.
@@ -182,7 +182,7 @@ Interface with national ID
 Create a system, relying on trusting no one other than the original
 issuer, by which users with electronic identities (eg. Estonian digital
 ID, other electronic passports, crypto KYC schemes, etc) can prove to
-the ethereum blockchain that they have that particular ID. Note that
+the Ethereum blockchain that they have that particular ID. Note that
 this can be plugged into the WoT by, eg, creating a contract which
 trusts everyone who has an Estonian digital ID with score 1.
 
