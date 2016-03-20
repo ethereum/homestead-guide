@@ -154,7 +154,7 @@ How to install development builds?
 -  `Building on
    Ubuntu <https://github.com/ethereum/cpp-ethereum/wiki/Building-on-Ubuntu#user-content-trusty-1404>`__
 -  Builds
--  `Ethdev Buildbot <http://build.ethdev.com/waterfall>`__
+-  `Ethdev Buildbot <http://build.ethereum.org/waterfall>`__
 
 How to install the clients from source?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

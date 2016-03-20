@@ -32,4 +32,4 @@ subsections.
 
 Further links \* `Compiled binaries on launchpad.net buildbot
 listings <https://launchpad.net/~ethereum>`__ \* `Ethereum
-buildbot <https://build.ethdev.com/>`__
+buildbot <https://build.ethereum.org/>`__

@@ -19,4 +19,4 @@ The vast majority of individuals using Windows have 64-bit hardware now.
 
 Here is the
 `cpp-ethereum v1.2.2 Windows installer
-<https://build.ethdev.com/cpp-binaries-data/release-1.2.2/Ethereum.exe>`_ for Homestead.
+<https://build.ethereum.org/cpp-binaries-data/release-1.2.2/Ethereum.exe>`_ for Homestead.
