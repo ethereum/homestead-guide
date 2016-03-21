@@ -2,6 +2,9 @@
 Building for Windows
 ================================================================================
 
+(Start at :ref:`Building from source`. These are the Windows specific steps.
+That is the starting point)
+
 We support **only 64-bit** builds and only for the following versions of Windows:
 
 - `Windows 7 <https://en.wikipedia.org/wiki/Windows_7>`_

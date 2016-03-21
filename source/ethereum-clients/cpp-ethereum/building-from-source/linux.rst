@@ -3,6 +3,9 @@
 Building for Linux
 ################################################################################
 
+(Start at :ref:`Building from source`. These are the Linux specific steps.
+That is the starting point)
+
 NOTE - It may be possible to get the client working for Linux 32-bit, by
 disabling EVMJIT and maybe other features too.  We might accept
 pull-requests to add such support, but we will not put any of our
