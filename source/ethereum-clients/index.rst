@@ -15,3 +15,4 @@ Ethereum Clients
    ethereumj/ethereumj.rst
    ethereumh/ethereumh.rst
    parity/parity.rst
+   ruby-ethereum/ruby-ethereum.rst

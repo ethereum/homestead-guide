@@ -50,10 +50,13 @@ add links to them here as they are released.
 +------------------------+------------+------------------------+----------------------------------+
 | :ref:`Parity`          | Rust       | `Ethcore`_             | `Parity-v1.0.0-rc1`_             |
 +------------------------+------------+------------------------+----------------------------------+
+| :ref:`ruby-ethereum`   | Ruby       | `Jan Xie`_             | not available yet                |
++------------------------+------------+------------------------+----------------------------------+
 
 .. _Ethereum Foundation: https://ethereum.org/foundation
 .. _ConsenSys: https://consensys.net/
 .. _Ethcore: https://ethcore.io/
+.. _Jan Xie: https://github.com/janx/
 
 .. _mist-v0.5.2: https://github.com/ethereum/mist/releases/tag/0.5.2
 .. _geth-v1.3.5: https://github.com/ethereum/go-ethereum/releases/tag/v1.3.5
