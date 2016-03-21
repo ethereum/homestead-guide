@@ -2,6 +2,9 @@
 Building for OS X
 ================================================================================
 
+(Start at :ref:`Building from source`. These are the OS X specific steps.
+That is the starting point)
+
 It is impossible for us to avoid OS X build breaks because `Homebrew is a "rolling
 release" package manager
 <https://github.com/ethereum/webthree-umbrella/issues/118>`_
