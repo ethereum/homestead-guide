@@ -5,9 +5,9 @@ Download stable binaries
 ------------------------
 
 All versions of Geth are built and available for download at
-https://build.ethdev.com/builds/Windows%20Go%20master%20branch/. The
+https://build.ethereum.org/builds/Windows%20Go%20master%20branch/. The
 latest version is always available as
-`Geth-Win64-latest.zip <https://build.ethdev.com/builds/Windows%20Go%20master%20branch/Geth-Win64-latest.zip>`__
+`Geth-Win64-latest.zip <https://build.ethereum.org/builds/Windows%20Go%20master%20branch/Geth-Win64-latest.zip>`__
 
 1. Download zip file
 2. Extract geth.exe from zip

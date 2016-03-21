@@ -353,7 +353,7 @@ Use ethminer ``--list-devices`` to list possible numbers to substitute for the X
 
 
 
-To start mining on Windows, first `download the geth windows binary <https://build.ethdev.com/builds/Windows%20Go%20master%20branch/>`_.
+To start mining on Windows, first `download the geth windows binary <https://build.ethereum.org/builds/Windows%20Go%20master%20branch/>`_.
 
 * Unzip Geth (right-click and select unpack) and launch Command Prompt. Use `cd` to navigate to the location of the Geth data folder. (e.g. ``cd /`` to go to the ``C:`` drive)
 * Start geth by typing ``geth --rpc``.

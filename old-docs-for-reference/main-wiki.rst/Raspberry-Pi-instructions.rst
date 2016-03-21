@@ -100,7 +100,7 @@ Just get the binaries
 
 Alternativly, you can use the linux system of your choice and and get
 the arm binaries here: \*
-https://build.ethdev.com/builds/ARM%20Go%20develop%20branch/geth-ARM-latest.tar.bz2
+https://build.ethereum.org/builds/ARM%20Go%20develop%20branch/geth-ARM-latest.tar.bz2
 (go) \*
 https://github.com/doublethinkco/webthree-umbrella-cross/releases/tag/crosseth-armhf-apt-2015-12-31
 (cpp-ethereum)
