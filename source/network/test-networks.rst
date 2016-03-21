@@ -92,6 +92,7 @@ Two ways to obtain Morden testnet ether:
 Setting up a local private testnet
 ********************************************************************************
 
+.. _custom-networks-eth:
 
 ++eth (C++ client)
 ================================================================================
