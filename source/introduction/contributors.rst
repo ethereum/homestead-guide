@@ -54,3 +54,4 @@ And these pseudonymous contributors:
 - `c0d3inj3cT <http://github.com/c0d3inj3cT>`_
 - `LucaTony <https://github.com/LucaTony>`_
 - `madhancr <https://github.com/madhancr>`_
+- `tflux99 <https://github.com/tflux99>`_
