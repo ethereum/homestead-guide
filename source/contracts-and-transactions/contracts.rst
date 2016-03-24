@@ -275,7 +275,7 @@ You will now create a contract on the blockchain by `sending a transaction <http
 
     primaryAddress = eth.accounts[0]
     abi  = [{ constant: false, inputs: [{ name: 'a', type: 'uint256' } ]
-    MyContract = eth.contract(abi)
+    MyContract = eth.contract.abi;
     contract = MyContract.new(arg1, arg2, ...,{from: primaryAddress, data: evmByteCodeFromPreviousSection})
 
 All binary data is serialised in hexadecimal form. Hex strings always have a
