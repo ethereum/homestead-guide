@@ -274,6 +274,7 @@ You will now create a contract on the blockchain by `sending a transaction <http
 .. code:: js
 
     primaryAddress = eth.accounts[0]
+    abi  = [{ constant: false, inputs: [{ name: 'a', type: 'uint256' } ]
     MyContract = eth.contract.abi;
     contract = MyContract.new(arg1, arg2, ...,{from: primaryAddress, data: evmByteCodeFromPreviousSection})
 
