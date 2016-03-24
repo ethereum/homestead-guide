@@ -11,7 +11,7 @@ There are two types of accounts in Ethereum
   - Externally Owned Accounts
   - Contracts Accounts
 
-This distinction might be eliminate in Serenity.
+This distinction might be eliminated in Serenity.
 
 Externally owned accounts (EOAs)
 --------------------------------------------------------------------------------
