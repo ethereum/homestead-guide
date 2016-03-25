@@ -48,7 +48,7 @@ add links to them here as they are released.
 +------------------------+------------+------------------------+----------------------------------+
 | :ref:`ethereumH`       | Haskell    | `ConsenSys`_           | not available yet                |
 +------------------------+------------+------------------------+----------------------------------+
-| :ref:`Parity`          | Rust       | `Ethcore`_             | `Parity-v1.0.0-rc1`_             |
+| :ref:`Parity`          | Rust       | `Ethcore`_             | `Parity-v1.0.0`_                 |
 +------------------------+------------+------------------------+----------------------------------+
 | :ref:`ruby-ethereum`   | Ruby       | `Jan Xie`_             | not available yet                |
 +------------------------+------------+------------------------+----------------------------------+
@@ -63,7 +63,7 @@ add links to them here as they are released.
 .. _eth-v1.2.2: https://github.com/ethereum/webthree-umbrella/releases/tag/v1.2.2
 .. _ethereumjs-lib-v3.0.0: https://github.com/ethereumjs/ethereumjs-lib/tree/v3.0.0
 .. _ethereumJ-v1.2.0-homestead-RC: https://github.com/ethereum/ethereumj/releases/tag/1.2.0-homestead-RC
-.. _Parity-v1.0.0-rc1: https://github.com/ethcore/parity/releases/tag/v1.0.0-rc1
+.. _Parity-v1.0.0: https://github.com/ethcore/parity/releases/tag/v1.0.0
 
 ********************************************************************************
 Installing a Client
