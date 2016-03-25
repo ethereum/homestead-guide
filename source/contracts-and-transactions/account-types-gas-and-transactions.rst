@@ -77,23 +77,18 @@ Essentially, a message is like a transaction, except it is produced by a contrac
 What is gas?
 ================================================================================
 
-Ethereum implements an execution environment on the blockchain called the Ethereum Virtual Machine (EVM). Every node participating in the network run the EVM as part of the block verification protocol. They go through the transactions listed in the block they are verifying and run the code as triggered by the transaction within the EVM.
-Each and every full node in the network does the same calculations and storing the same values. Clearly Ethereum is not about optimising efficiency of computation, its parallel processing is redundantly parallel. This is in order to offer an efficient way to reach consensus on the system state without needing trusted thrid parties, oracles or violence monopolies. But importantly they are not there for optimal computation.
-The fact that contract executions are reundantly replicated across nodes, naturally make them expensive, which generally creates an incentive not to use the blockchain for computation that can be done offchain.
+Ethereum implements an execution environment on the blockchain called the Ethereum Virtual Machine (EVM). Every node participating in the network runs the EVM as part of the block verification protocol. They go through the transactions listed in the block they are verifying and run the code as triggered by the transaction within the EVM. Each and every full node in the network does the same calculations and stores the same values. Clearly Ethereum is not about optimising efficiency of computation. Its parallel processing is redundantly parallel. This is to offer an efficient way to reach consensus on the system state without needing trusted thrid parties, oracles or violence monopolies. But importantly they are not there for optimal computation. The fact that contract executions are reundantly replicated across nodes, naturally makes them expensive, which generally creates an incentive not to use the blockchain for computation that can be done offchain.
 
-When you are running a decentralized application (dapp),
-it interacts with the blockchain to read and modify its state, but dapps will typically only put on the blockchain the business logic and state that is crucial for consensus.
+When you are running a decentralized application (dapp), it interacts with the blockchain to read and modify its state, but dapps will typically only put the business logic and state that are crucial for consensus on the blockchain.
 
-When a contract is executed as a result of being triggered by a message or tranasction,
-every instruction is executed on every node of the network. This has a cost: for every operation in a contract that can be executed there is a specified cost, expressed in number of gas units.
+When a contract is executed as a result of being triggered by a message or tranasction, every instruction is executed on every node of the network. This has a cost: for every operation in a contract that can be executed there is a specified cost, expressed in number of gas units.
 
-Gas is name for the execution fee that senders of transactions need to pay for every operation made on an Ethereum blockchain. The name gas is inspired by the view that this fee acts as cryptofuel, driving the motion of smart contracts. Gas is purchased for ether from the miners that execute the code. Gas and ether are decoupled deliberately since units of gas align with computation units having a natural cost, while the price of ether generally fluctuates as a result of market forces. The two are mediated by a free market, the price of gas is actually decided by the miners, which can refuse to process transaction with a lower gas price than their minimum limit To get gas you simply need to add ether to your account. The Ethereum clients automatically purchase gas for your Ether in the amount you specify as your maximum expenditure for the transaction.
+Gas is name for the execution fee that senders of transactions need to pay for every operation made on an Ethereum blockchain. The name gas is inspired by the view that this fee acts as cryptofuel, driving the motion of smart contracts. Gas is purchased for ether from the miners that execute the code. Gas and ether are decoupled deliberately since units of gas align with computation units having a natural cost, while the price of ether generally fluctuates as a result of market forces. The two are mediated by a free market: the price of gas is actually decided by the miners, who can refuse to process transaction with a lower gas price than their minimum limit. To get gas you simply need to add ether to your account. The Ethereum clients automatically purchase gas for your Ether in the amount you specify as your maximum expenditure for the transaction.
 
-The Ethereum protocol charges a fee per computational step that is executed in a contract or transaction to prevent deliberate attacks and abuse on the Ethereum network. Every transaction is required to include a gas limit and a fee that it is willing to pay per gas. Miners have the choice of including the transaction and collecting the fee or not. If the total number of gas used by the computational steps spawned by the transaction, including the original message and any sub-messages that may be triggered, is less than or equal to the gas limit, then the transaction processes. If the total gas exceeds the gas limit, then all changes are reverted, except that the transaction is still valid and the fee can still be collected by the miner. All excess gas not used by the transaction execution is reimbursed to the sender as Ether. You do not need to worry that you overspend, since you are only charged for the gas you consume. This means that it is useful as well as safe to send transactions with a gas limit well above the estimates.
+The Ethereum protocol charges a fee per computational step that is executed in a contract or transaction to prevent deliberate attacks and abuse on the Ethereum network. Every transaction is required to include a gas limit and a fee that it is willing to pay per gas. Miners have the choice of including the transaction and collecting the fee or not. If the total amount of gas used by the computational steps spawned by the transaction, including the original message and any sub-messages that may be triggered, is less than or equal to the gas limit, then the transaction processes. If the total gas exceeds the gas limit, then all changes are reverted, except that the transaction is still valid and the fee can still be collected by the miner. All excess gas not used by the transaction execution is reimbursed to the sender as Ether. You do not need to worry about overspending, since you are only charged for the gas you consume. This means that it is useful as well as safe to send transactions with a gas limit well above the estimates.
 
 Estimating transaction costs
 ================================================================================
-
 
 The total ether cost of a transaction is based on 2 factors:
 
@@ -106,14 +101,14 @@ The total ether cost of a transaction is based on 2 factors:
 gasUsed
 --------------------------------------------------------------------------------
 
-Each operation in the EVM was assigned a number of how much gas it consumes. ``gasUsed`` is summing up all the gas for all the operations executed. There is a `spreadsheet <http://ethereum.stackexchange.com/q/52/42>`_ which offers a glimpse to some of the analysis behind them.
+Each operation in the EVM was assigned a number of how much gas it consumes. ``gasUsed`` is the sum of all the gas for all the operations executed. There is a `spreadsheet <http://ethereum.stackexchange.com/q/52/42>`_ which offers a glimpse to some of the analysis behind this.
 
 For estimating ``gasUsed``, there is an `estimateGas API <http://ethereum.stackexchange.com/q/266/42>`_ that can be used but has some caveats.
 
 gasPrice
 --------------------------------------------------------------------------------
 
-A user constructs and signs a transaction, and each user may specify whatever ``gasPrice`` they desire, this includes zero. However, the Ethereum clients launched at Frontier had a default gasPrice of 0.05e12 wei. As miners optimize for their revenue, if most transactions are being submitted with a gasPrice of 0.05e12 wei, it would be difficult to convince a miner to accept a transaction that specified a lower, or zero, gasPrice.
+A user constructs and signs a transaction, and each user may specify whatever ``gasPrice`` they desire, which can be zero. However, the Ethereum clients launched at Frontier had a default gasPrice of 0.05e12 wei. As miners optimize for their revenue, if most transactions are being submitted with a gasPrice of 0.05e12 wei, it would be difficult to convince a miner to accept a transaction that specified a lower, or zero, gasPrice.
 
 Example transaction cost
 --------------------------------------------------------------------------------
@@ -126,8 +121,7 @@ The approximate cost, using the default gas price (as of January 2016), would be
 
 Since 1 Ether is 1e18 wei, the total cost would be 0.00000015 Ether.
 
-This is a simplification since it ignores some costs, such as the cost
-of passing the 2 numbers to contract, before they can even be added.
+This is a simplification since it ignores some costs, such as the cost of passing the 2 numbers to contract, before they can even be added.
 
 * `question <http://ethereum.stackexchange.com/q/324/42>`_
 * `gas fees <http://ether.fund/tool/gas-fees>`_
@@ -137,7 +131,7 @@ of passing the 2 numbers to contract, before they can even be added.
 =================  =========    =============================
 Operation Name     Gas Cost     Remark
 =================  =========    =============================
-step               1            default amount per an execution cycle
+step               1            default amount per execution cycle
 stop               0            free
 suicide            0            free
 sha3               20
@@ -145,7 +139,7 @@ sload              20           get from permanent storage
 sstore             100          put into permanent storage
 balance            20
 create             100          contract creation
-call               20           initiating a read only call
+call               20           initiating a read-only call
 memory             1            every additional word when expanding memory
 txdata             5            every byte of data or code for a transaction
 transaction        500          base fee transaction
@@ -167,11 +161,11 @@ The code has the ability to read/write to its own internal storage (a database m
 Contracts generally serve four purposes:
 
 * Maintain a data store representing something which is useful to either other contracts or to the outside world; one example of this is a contract that simulates a currency, and another is a contract that records membership in a particular organization.
-* Serve as a sort of externally owned account with a more complicated access policy; this is called a "forwarding contract" and typically involves simply resending incoming messages to some desired destination only if certain conditions are met; for example, one can have a forwarding contract that waits until two out of a given three private keys have confirmed a particular message before resending it (ie. multisig). More complex forwarding contracts have different conditions based on the nature of the message sent; the simplest use case for this functionality is a withdrawal limit that is overrideable via some more complicated access procedure. Wallet contract is a good example of such a type.
+* Serve as a sort of externally-owned account with a more complicated access policy; this is called a "forwarding contract" and typically involves simply resending incoming messages to some desired destination only if certain conditions are met; for example, one can have a forwarding contract that waits until two out of a given three private keys have confirmed a particular message before resending it (ie. multisig). More complex forwarding contracts have different conditions based on the nature of the message sent. The simplest use case for this functionality is a withdrawal limit that is overrideable via some more complicated access procedure. A wallet contract is a good example of this.
 * Manage an ongoing contract or relationship between multiple users. Examples of this include a financial contract, an escrow with some particular set of mediators, or some kind of insurance. One can also have an open contract that one party leaves open for any other party to engage with at any time; one example of this is a contract that automatically pays a bounty to whoever submits a valid solution to some mathematical problem, or proves that it is providing some computational resource.
-* Provide functions to other contracts; essentially serving as a software library.
+* Provide functions to other contracts, essentially serving as a software library.
 
-Contracts interact with each other through an activity that is alternately called either "calling" or "sending messages". A "message" is an object containing some quantity of ether (a special internal currency used in Ethereum with the primary purpose of paying transaction fees), a byte-array of data of any size, the addresses of a sender and a recipient. When a contract receives a message it has the option of returning some data, which the original sender of the message can then immediately use. In this way, sending a message is exactly like calling a function.
+Contracts interact with each other through an activity that is alternately called either "calling" or "sending messages". A "message" is an object containing some quantity of ether, a byte-array of data of any size, the addresses of a sender and a recipient. When a contract receives a message, it has the option of returning some data, which the original sender of the message can then immediately use. In this way, sending a message is exactly like calling a function.
 
 Because contracts can play such different roles, we expect that contracts will be interacting with each other. As an example, consider a situation where Alice and Bob are betting 100 GavCoin that the temperature in San Francisco will not exceed 35ºC at any point in the next year. However, Alice is very security-conscious, and as her primary account uses a forwarding contract which only sends messages with the approval of two out of three private keys. Bob is paranoid about quantum cryptography, so he uses a forwarding contract which passes along only messages that have been signed with Lamport signatures alongside traditional ECDSA (but because he's old fashioned, he prefers to use a version of Lamport sigs based on SHA256, which is not supported in Ethereum directly).
 
@@ -183,7 +177,7 @@ The betting contract itself needs to fetch data about the San Francisco weather 
 
 When Bob wants to finalize the bet, the following steps happen:
 
-1. A transaction is sent, triggering a message from Bob's EOA to Bob's forwarding contract.
+1. A transaction is sent, triggering a message from Bob's EOA to his forwarding contract.
 2. Bob's forwarding contract sends the hash of the message and the Lamport signature to a contract which functions as a Lamport signature verification library.
 3. The Lamport signature verification library sees that Bob wants a SHA256-based Lamport sig, so it calls the SHA256 library many times as needed to verify the signature.
 4. Once the Lamport signature verification library returns 1, signifying that the signature has been verified, it sends a message to the contract representing the bet.
