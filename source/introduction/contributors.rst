@@ -27,15 +27,18 @@ We would like to thank everybody who helped in this effort for `their contributi
 - `Alex Fisher <https://github.com/alexfisher>`_
 - `Taylor Gerring <https://github.com/tgerring>`_
 - `Joël Hubert <https://github.com/jmahhh>`_
+- `Keith Irwin <https://github.com/keith24>`_
 - `Bas van Kervel <https://github.com/bas-vk>`_
 - `Michael Kilday <https://github.com/taoteh1221>`_
 - `Chandra Kumar <https://github.com/klmoney>`_
 - `Guangmian Kung <https://github.com/gmkung>`_
 - `Hugh Lang <https://github.com/hughlang>`_
 - `Yann Levreau <https://github.com/yann300>`_
+- `Kévin Maschtaler <https://github.com/Kmaschta>`_
 - `Andrew Mazzola <https://github.com/admazzola>`_
 - `John Mooney <https://github.com/mooneyj>`_
 - `Chris Peel <https://github.com/christianpeel>`_
+- `Craig Polley <https://github.com/polleykc>`_
 - `Colm Ragu <https://github.com/colm>`_
 - `Laurent Raufaste <https://github.com/lra>`_
 - `Christian Reitwiessner <https://github.com/chriseth>`_
@@ -52,6 +55,9 @@ And these pseudonymous contributors:
 
 - `azulmarino <https://github.com/azulmarino>`_
 - `c0d3inj3cT <http://github.com/c0d3inj3cT>`_
+- `giact <http://github.com/giact>`_
+- `kclowes <http://github.com/kclowes>`_
 - `LucaTony <https://github.com/LucaTony>`_
 - `madhancr <https://github.com/madhancr>`_
+- `Omkara <https://github.com/0mkara>`_
 - `tflux99 <https://github.com/tflux99>`_
