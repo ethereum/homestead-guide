@@ -29,7 +29,7 @@ The `C++ Ethereum project <http://github.com/ethereum/webthree-umbrella>`_ was
 initiated by `Gavin Wood <http://gavwood.com/>`_, the
 `former CTO <https://blog.ethereum.org/2016/01/11/last-blog-post/>`_ of the
 Ethereum Foundation, in December 2013.   It is the second most popular of the
-clients with around `8% of 'market share' <http://ethernodes.org/>`_, trailing
+clients with around `5% of 'market share' <http://ethernodes.org/>`_, trailing
 a long way behind go-ethereum.
 
 Many of the original C++ developers moved on to roles at
@@ -40,6 +40,8 @@ development.  Those cuts were part of a broader effort to bring Foundation
 costs under control, and they happened prior to the recent spike in ETH
 value which has put the Foundation in a much more comfortable financial
 position.
+
+These pioneers are recognized in the :ref:`cpp-ethereum Hall of Fame`.
 
 
 What are the primary executables?
@@ -180,3 +182,7 @@ It can be installed using npm:
         | <ipc socket path>  connect to the given ipc socket (use ipc://<path> if it does not end with .ipc)
         | <javascript file>    execute the given javascript file that has to end in .js non-interactively.
         | The script has to call process.exit() in order to terminate the console.
+
+
+.. toctree::
+   hall-of-fame.rst
