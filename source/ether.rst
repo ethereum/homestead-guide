@@ -155,7 +155,7 @@ Online wallets, paper wallets, and cold storage
 * Misc
     * `Kraken Wallet Sweeper Tool <https://www.kraken.com/ether>`_ - Pre-sale wallet import
     * `Recommended ways to safely store ether <http://ethereum.stackexchange.com/questions/1239/what-is-the-recommended-way-to-safely-store-ether>`_
-    * `How to buy and stole ether <http://sebfor.com/how-to-buy-and-store-ether/>`_
+    * `How to buy and store ether <http://sebfor.com/how-to-buy-and-store-ether/>`_
     * `A laymen's intro into brute forcing and why not to use brain wallets <http://www.fastcompany.com/3056651/researchers-find-a-crack-that-drains-supposedly-secure-bitcoin-wallets>`_
     * `Pyethsaletool <https://github.com/ethereum/pyethsaletool/blob/master/README.md>`_
     * `Account vs wallet <https://www.reddit.com/r/ethereum/comments/47j3r5/eli5_accounts_vs_wallet_contracts_on_mist/>`_
