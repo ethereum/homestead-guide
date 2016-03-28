@@ -12,21 +12,11 @@ disabling EVMJIT and maybe other features too.  We might accept
 pull-requests to add such support, but we will not put any of our
 own development time into supporting Linux 32-bit builds.
 
-After cloning the **webthree-umbrella** repo, the crux of the build process
-on Linux platforms is incredibly simple: ::
-
-    mkdir build
-    cd build
-    cmake ..
-    make               (or make -j <number> for parallel builds)
-
-But before it is possible to get to that stage we have to wade through
-a horror-show of distro-specific packaging system steps to install
-external packages which we depend on.
-
-The sections below attempt to capture those distro-specific steps for
-installing dependencies.   You will need to run through one of these
-sequences before you can do the simple build steps above.
+Linux has a horror-show of distro-specific packaging system steps which are
+the first thing which we need to do before we can start on
+:ref:`Building from source`.   The sections below attempt to capture those
+steps.   If you are using as different distro and hit issues, please
+`let us know <https://gitter.im/ethereum/cpp-ethereum>`_.
 
 
 

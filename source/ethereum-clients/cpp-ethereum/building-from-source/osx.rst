@@ -80,7 +80,7 @@ From the project root: ::
     mkdir build
     cd build
     cmake ..
-    make -j6
+    make -j4             (or different value, depending on your number of cores)
     make install
 
 This will also install the cli tool and libs into /usr/local.
