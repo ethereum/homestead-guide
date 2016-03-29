@@ -46,7 +46,7 @@ add links to them here as they are released.
 +------------------------+------------+------------------------+----------------------------------+
 | :ref:`Ethereum\(J\)`   | Java       | `\<ether.camp\>`_      | `ethereumJ-v1.2.0-homestead-RC`_ |
 +------------------------+------------+------------------------+----------------------------------+
-| :ref:`ethereumH`       | Haskell    | `ConsenSys`_           | not available yet                |
+| :ref:`ethereumH`       | Haskell    | `BlockApps`_           | not available yet                |
 +------------------------+------------+------------------------+----------------------------------+
 | :ref:`Parity`          | Rust       | `Ethcore`_             | `Parity-v1.0.0`_                 |
 +------------------------+------------+------------------------+----------------------------------+
@@ -55,7 +55,7 @@ add links to them here as they are released.
 
 .. _Ethereum Foundation: https://ethereum.org/foundation
 .. _\<ether.camp\>: http://www.ether.camp
-.. _ConsenSys: https://consensys.net/
+.. _BlockApps: http://www.blockapps.net/
 .. _Ethcore: https://ethcore.io/
 .. _Jan Xie: https://github.com/janx/
 
