@@ -34,6 +34,7 @@ We would like to thank everybody who helped in this effort for `their contributi
 - `Guangmian Kung <https://github.com/gmkung>`_
 - `Hugh Lang <https://github.com/hughlang>`_
 - `Yann Levreau <https://github.com/yann300>`_
+- `Roman Mandeleil <https://github.com/romanman>`_
 - `Kévin Maschtaler <https://github.com/Kmaschta>`_
 - `Andrew Mazzola <https://github.com/admazzola>`_
 - `John Mooney <https://github.com/mooneyj>`_
