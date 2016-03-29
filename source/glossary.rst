@@ -84,7 +84,7 @@ Glossary
 .. _gas limit:
 
    gas limit
-      Gas limit can apply to both individual transactions, see `transaction gas limit <gl:transaction-gas-limit>`_ and to blocks, `block gas limit <block-gas-limit>`_. For individual transactions, the gas limit represents the maximum amount of gas you indicate you are willing to pay for a contract execution transaction. It is meant to protect users from getting their ether depleted when trying to execute buggy or malicious contracts. The block gas limit represents the maximum cumulative gas used for all the transactions in a block. With the launch of Homestead, the block gas limit floor will increase from 3,141,592 gas to 4,712,388 gas (~50% increase).
+      Gas limit can apply to both individual transactions, see `transaction gas limit <transaction-gas-limit_>`_ and to blocks, `block-gas-limit`. For individual transactions, the gas limit represents the maximum amount of gas you indicate you are willing to pay for a contract execution transaction. It is meant to protect users from getting their ether depleted when trying to execute buggy or malicious contracts. The block gas limit represents the maximum cumulative gas used for all the transactions in a block. With the launch of Homestead, the block gas limit floor will increase from 3,141,592 gas to 4,712,388 gas (~50% increase).
 
 .. _transaction-gas-limit:
 
