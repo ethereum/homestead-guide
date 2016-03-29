@@ -44,7 +44,7 @@ add links to them here as they are released.
 +------------------------+------------+------------------------+----------------------------------+
 | :ref:`ethereumjs-lib`  | Javascript | `Ethereum Foundation`_ | `ethereumjs-lib-v3.0.0`_         |
 +------------------------+------------+------------------------+----------------------------------+
-| :ref:`Ethereum\(J\)`   | Java       | `ConsenSys`_           | `ethereumJ-v1.2.0-homestead-RC`_ |
+| :ref:`Ethereum\(J\)`   | Java       | `<ether.camp>`_        | `ethereumJ-v1.2.0-homestead-RC`_ |
 +------------------------+------------+------------------------+----------------------------------+
 | :ref:`ethereumH`       | Haskell    | `ConsenSys`_           | not available yet                |
 +------------------------+------------+------------------------+----------------------------------+
@@ -54,6 +54,7 @@ add links to them here as they are released.
 +------------------------+------------+------------------------+----------------------------------+
 
 .. _Ethereum Foundation: https://ethereum.org/foundation
+.. _<ether.camp> http://www.ether.camp
 .. _ConsenSys: https://consensys.net/
 .. _Ethcore: https://ethcore.io/
 .. _Jan Xie: https://github.com/janx/
