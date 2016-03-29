@@ -80,7 +80,7 @@ blockchain:
 This contract will create a log entry on the blockchain of type Print with a
 parameter "Hello, World!" each time it is executed.
 
-.. seealso:: `Solidity docs <https://solidity.readthedocs.org/en/latest/>`_ has more examples and guidelines to writing Solidty code.
+.. seealso:: `Solidity docs <https://solidity.readthedocs.org/en/latest/>`_ has more examples and guidelines to writing Solidity code.
 
 Compiling a contract
 ================================================================================
