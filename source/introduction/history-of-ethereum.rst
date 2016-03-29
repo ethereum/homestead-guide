@@ -15,7 +15,7 @@ Around that time, Vitalik also started working with Dr. Gavin Wood and together 
 
 The Ethereum Foundation and the ether presale
 ================================================================================
-In addition to developing the software for Ethereum, the ability to launch a new cryptocurrency and blockchain requires a massive bootstrapping effort in order to assemble the resources needed to get it up and running. To kickstart a large network of developers, miners, investors, and other stakeholders, Ethereum announced its plan to conduct a presale of ether tokens, the currency unit of Ethereum. The legal and financial complexities of raising funds through a presale led to the creation of several legal entities, including the Ethereum Foundation (Stiftung Ethereum) established June 2014 in Zug, Switzerland.
+In addition to developing the software for Ethereum, the ability to launch a new cryptocurrency and blockchain requires a massive bootstrapping effort in order to assemble the resources needed to get it up and running. To kickstart a large network of developers, miners, investors, and other stakeholders, Ethereum announced its plan to conduct a presale of ether tokens, the currency unit of Ethereum. The legal and financial complexities of raising funds through a presale led to the creation of several legal entities, including the :ref:`Ethereum Foundation (Stiftung Ethereum) <foundation>` established June 2014 in Zug, Switzerland.
 
 Beginning in July 2014, Ethereum distributed the initial allocation of ether via a 42-day public ether presale, netting 31,591 bitcoins, worth $18,439,086 at that time, in exchange for about 60,102,216 ether. The results of the sale were initially used to pay back mounting legal debts and also for the months of developer effort that had yet to be compensated, and to finance the ongoing development of the Ethereum.
 
@@ -95,5 +95,4 @@ The presence of large companies like UBS, IBM and Microsoft clearly indicated en
 History resources
 ----------------------------------------
 
-* `a simple graphical timeline <http://ethereumtimeline.org/>`
-*
+* `a simple graphical timeline <http://ethereumtimeline.org/>`_

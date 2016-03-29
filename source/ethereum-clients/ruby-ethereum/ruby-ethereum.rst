@@ -4,7 +4,7 @@
 ruby-ethereum
 ################################################################################
 
-**ruby-ethereum** is an implementation of the :ref:`the-EVM` written in Ruby.
+**ruby-ethereum** is an implementation of the :ref:`Ethereum Virtual Machine <the-EVM>` written in Ruby.
 
 
 Links

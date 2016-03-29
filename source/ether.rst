@@ -37,10 +37,6 @@ their value in Wei. Following a common (although somewhat ambiguous) pattern, Et
 Ether supply
 =========================
 
-issuance
-
-inflation
-
 * https://blog.ethereum.org/2014/04/10/the-issuance-model-in-ethereum/
 * https://www.reddit.com/r/ethereum/comments/44zy88/clarification_on_ether_supply_and_cost_of_gas/
 * https://www.reddit.com/r/ethereum/comments/45vj4g/question_about_scarcity_of_ethereum_and_its/

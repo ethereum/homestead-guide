@@ -1,6 +1,6 @@
 
 Web 3: A platform for decentralized apps
-================================================================================
+********************************************************************************
 
 
 
@@ -17,7 +17,7 @@ Ethereum is perhaps best described as an ecosystem: the core protocol is support
 * https://www.reddit.com/r/ethereum/comments/2trhw6/vitalik_buterin_explains_his_vision_for_crypto_20/
 
 Smart contracts
-================================
+================================================================================
 
 by Alex:
 
@@ -31,7 +31,7 @@ Instead of thinking of moving your current contracts to the blockchain, think of
 
 
 DAO
-==========================
+================================================================================
 
 Here is just one example: imagine you own a small business with your friends. Lawyers and accountants are expensive, and trusting a single partner to oversee the books can be a source of tension (even an opportunity for fraud). Complying strictly with a system in which more than one partner oversees the books can be trying and is subject to fraud whenever the protocol isn't followed exactly.
 

@@ -19,10 +19,8 @@ Dapps that use Ethereum are compiled to the following lists. They are listed in 
 The offered decentralised services listed cover a wide range of areas including finance, insurance, prediction markets, social networks, distributed computation and storage, gambling, marketplace, internet of things, governance, collaboration, development and games.
 
 * What apps can we eventually expect? https://www.reddit.com/r/ethereum/comments/2mnl7f/the_top_10_ether_dapps_of_2015/cm63nsf
-*
 
-
-In the future, dapps are likely to be listed and distributed in `dappstores_ <http://dappstore.io/>`_ integrated in dapp browsers.
+In the future, dapps are likely to be listed and distributed in `dappstores <http://dappstore.io/>`_ integrated in dapp browsers.
 
 Dapp browsers
 ===========================
@@ -85,9 +83,8 @@ Tutorials
 * `Dapp tutorials on ethereum.org <https://ethereum.org>`_
 * `Dapps for beginners tutorial series <https://dappsforbeginners.wordpress.com/>`_
 * `Tutorials on advanced Solidity <https://github.com/androlo/solidity-workshop>`_
-
-http://ethereumj.io/blog/2015/09/09/friendly-ether-bot/
-https://github.com/ConsenSys/ether-pudding
+* http://ethereumj.io/blog/2015/09/09/friendly-ether-bot/
+* https://github.com/ConsenSys/ether-pudding
 
 
 IDEs/Frameworks
@@ -110,13 +107,14 @@ Base layer services
 Whisper
 --------------------------
 
+.. * TODO - Add Whisper documentation here!
+.. `Whisper: the Multi DHT Messaging System with Routing Privacy. Vision & Roadmap.` - DEVCON-0 talk youtube video
 
 * `What is Whisper and what is it used for <http://ethereum.stackexchange.com/questions/127/what-is-whisper-and-what-is-it-used-for>`_ - stackexchange Q&A
-* TODO - Add Whisper documentation here!
-* `Whisper: the Multi DHT Messaging System with Routing Privacy. Vision & Roadmap.` - DEVCON-0 talk youtube video
-* `Gavin Wood: Shh! Whisper <https://www.youtube.com/watch?v=U_nPoBVLPiw>` - DEVCON-1 talk youtube video
+* `Gavin Wood: Shh! Whisper <https://www.youtube.com/watch?v=U_nPoBVLPiw>`_ - DEVCON-1 talk youtube video
 * `Whisper overview and dream API usage <https://github.com/ethereum/wiki/wiki/Whisper-Overview>`_ -
 * `ELI5 <https://www.reddit.com/r/ethereum/comments/2xzm5w/whisper_explain_to_me_like_im_5/>`_
+
 
 Swarm
 ---------------------------
@@ -193,7 +191,7 @@ RANDAO
 
 Random number
 * https://www.reddit.com/r/ethereum/comments/49yld7/eli5_how_does_a_service_like_szabodice_grab_a/
-*
+
 
 .. _the-EVM:
 

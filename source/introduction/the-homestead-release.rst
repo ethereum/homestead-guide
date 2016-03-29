@@ -29,7 +29,7 @@ Once the Ethereum blockchain reaches block 1,150,000, the Ethereum network will 
 Homestead hard fork changes
 ----------------------------------
 Ethereum in the narrow formal sense is a suite of protocols.
-Homestead comes with a few backward-incompatible protocol changes, and therefore will require a hard fork. These changes that made their way through the process for `Ethereum Improvement Proposal <eips>`_ and included are:
+Homestead comes with a few backward-incompatible protocol changes, and therefore will require a hard fork. These changes that made their way through the process for :ref:`Ethereum Improvement Proposals <Ethereum Improvement Proposals>` and included are:
 
 * `EIP 2: <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2.mediawiki>`_
 

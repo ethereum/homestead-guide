@@ -12,7 +12,7 @@ Glossary
 
 .. _dec-app:
 
-   decentralized application (= `dapp or Đapp <gl:dapp>`_)
+   decentralized application (= dapp_)
       Service that operates without a central trusted party. An application  that enables direct interaction/agreements/communication between end users and/or resources without a middleman. See :ref:`dapps`.
 
    DAO
@@ -52,16 +52,16 @@ Glossary
    block
       A block is a package of data that contains zero or more transactions, the hash of the previous block ("parent"), and optionally other data. The total set of blocks, with every block except for the initial "genesis block" containing the hash of its parent, is called the blockchain and contains the entire transaction history of a network. Note that some blockchain-based cryptocurrencies use the word "ledger" instead of blockchain; the two are roughly equivalent, although in systems that use the term "ledger" each block generally contains a full copy of the current state (e.g. currency balances, partially fulfilled contracts, registrations) of every account allowing users to discard outdated historical data.
 
-..  _gl:dapp:
+.. _dapp:
 
    dapp
       Đapp
       Stands for "decentralized application". Some say it is pronounced Ethapp due to the use of the `uppercase eth letter Ð <gl:eth-letter>`_.
 
    address
-      An Ethereum address represents an account. For :ref:gl:EOA, the address is derived as the last 20 bytes of the public key controlling the account, e.g., ``cd2a3d9f938e13cd947ec05abc7fe734df8dd826``. This is a :ref:gl:hexadecimal format (base 16 notation), which is often indicated explicitly by appending ``0x`` to the address. Web3.js and console functions accept addresses with or  without this prefix but for transparency we encourage their use. Since each byte of the address is represented by 2 hex characters, a prefixed address is  42 character long. Several apps and APIs are also meant to implement the new `checksum-enabled address scheme <https://github.com/ethereum/EIPs/issues/55>`_  introduced in the Mist Ethereum wallet as of version 0.5.0.
+      An Ethereum address represents an account. For EOA_, the address is derived as the last 20 bytes of the public key controlling the account, e.g., ``cd2a3d9f938e13cd947ec05abc7fe734df8dd826``. This is a hexadecimal_ format (base 16 notation), which is often indicated explicitly by appending ``0x`` to the address. Web3.js and console functions accept addresses with or  without this prefix but for transparency we encourage their use. Since each byte of the address is represented by 2 hex characters, a prefixed address is  42 character long. Several apps and APIs are also meant to implement the new `checksum-enabled address scheme <https://github.com/ethereum/EIPs/issues/55>`_  introduced in the Mist Ethereum wallet as of version 0.5.0.
 
-.. _gl:hexadecimal:
+.. _hexadecimal:
 
    hexadecimal
       Common representation format for byte sequencing. Its advantage is that it only a small subset of uses two characters per byte (the characters ``[0-9][a-f]``
@@ -70,24 +70,23 @@ Glossary
    ether
       Ether is the name of the currency used within Ethereum. It is used to pay for computations within the EVM. Ambiguously, ether is also the name of a unit in hte system;
 
-.. _gl:EOA:
+.. _EOA:
 
    EOA
-      Externally Owned Account. An account controlled by a private key. If you own the private key associated with the EOA you have the ability to send ether and messages from it. Contract accounts also have an address, see _`Accounts`. EOAs and contract accounts may be combined into a single account type during Serenity.
+      Externally Owned Account. An account controlled by a private key. If you own the private key associated with the EOA you have the ability to send ether and messages from it. Contract accounts also have an address, see :ref:`Accounts`. EOAs and contract accounts may be combined into a single account type during Serenity.
 
-.. gl:gas:
+.. _gas:
 
    gas
-      Name for the :ref:`gl:cryptofuel` that is consumed when code is executed by the EVM. The gas is paid for execution fee for every operation made on an Ethereum blockchain.
+      Name for the `cryptofuel` that is consumed when code is executed by the EVM. The gas is paid for execution fee for every operation made on an Ethereum blockchain.
 
 
-..  gl:gas-limit:
+.. _gas limit:
 
    gas limit
-      Gas limit can apply to both individual transactions, see `transaction gas limit <gl:transaction-gas-limit>`_ and to blocks, `block gas limit <block-gas-limit>`_. For individual transactions, the gas limit represents the maximum amount of gas you indicate you are willing to pay for a contract execution transaction. It is meant to protect users from getting their ether depleted when trying to execute buggy or malicious contracts. The block gas limit represents the maximum cumulative gas used for all the transactions in a block. With the launch of Homestead, the block gas limit floor will increase from 3,141,592 gas to 4,712,388 gas (~50% increase).
+      Gas limit can apply to both individual transactions, see `transaction gas limit <transaction-gas-limit_>`_ and to blocks, `block-gas-limit`. For individual transactions, the gas limit represents the maximum amount of gas you indicate you are willing to pay for a contract execution transaction. It is meant to protect users from getting their ether depleted when trying to execute buggy or malicious contracts. The block gas limit represents the maximum cumulative gas used for all the transactions in a block. With the launch of Homestead, the block gas limit floor will increase from 3,141,592 gas to 4,712,388 gas (~50% increase).
 
-..  gl:transaction-gas-limit:
-    transaction gas limit
+.. _transaction-gas-limit:
 
    gas price
       Price in ether of one unit of gas specified in a transaction. With the launch of Homestead, the default gas price reduces from 50 shannon to 20 shannon (~60% reduction).
@@ -436,6 +435,6 @@ Glossary
       Contracts are triggered by transactions executed as part of the block verification. If conceived of as a function call, contract execution is asynchronous, and therefore they have no return value. Instead contracts communicate to the outside world with log events. The log events are part of the transaction receipt which is produced when the transaction is executed.
       The receipts are stored in the receipt trie, the integrity of which is guaranteed by the fact that the current root of the receipt trie is part of the block header alongside the roots of state and state-trie. In a broad sense from the external perspective receipts are part of the Ethereum system state except that they are not readable contracts internally.
 
-   hardware wallet
-   brain wallet
-   cold storage
+   .. hardware wallet
+   .. brain wallet
+   .. cold storage

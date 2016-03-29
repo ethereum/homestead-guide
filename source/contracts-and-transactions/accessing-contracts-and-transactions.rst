@@ -13,8 +13,7 @@ blockchain and functionality that the node provides, such as compiling smart con
 `JSON-RPC 2.0 <http://www.jsonrpc.org/specification>`_ specification (no support for notifications or named parameters) as serialisation protocol and
 is available over HTTP and IPC (unix domain sockets on linux/OSX and named pipe's on Windows).
 
-If you are not interested in the details but are looking for an easy to use javascript library you can skip the following sections and continue
-:ref:`here <using_web3.js>`.
+If you are not interested in the details but are looking for an easy to use javascript library you can skip the following sections and continue with :ref:`Using Web3 <using_web3.js>`.
 
 Conventions
 ================================================================================
@@ -122,14 +121,13 @@ not been included in a block yet. Wait for a moment and check if your miner is r
 
 Interacting with smart contracts
 ================================================================================
-Now that our contract is deployed we can interact with it. There are 2 methods for this, sending a transaction or using call as previously
-:ref:`explained <interacting_with_a_contract>`. In this example we will be sending a transaction to the multiply method of the contract.
+Now that our contract is deployed we can interact with it. There are 2 methods for this, sending a transaction or :ref:`using call as previously explained <interacting_with_a_contract>`. In this example we will be sending a transaction to the multiply method of the contract.
 
 If we look at the documentation for the `eth_sendTransaction <https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_sendtransaction>`_ we can see that we need to supply
 several arguments. In our case we need to specify the ``from``, ``to`` and ``data`` arguments. ``From`` is the public address of our account and ``to``
 the contract address. The ``data`` argument is a bit harder. It contains a payload that defines which method must be called and with which arguments.
-This is were the ABI comes into play. The ABI defines how to define and encode data for the EVM. You can read all the details about the ABI
-`here <https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI>`_.
+This is were the ABI comes into play. The ABI defines how to define and encode data for the EVM. You can read 
+`all the details about the ABI here <https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI>`_.
 
 The bytes of the payload is the function selector and defines which method is called. This is done by taking the first 4 bytes from the Keccak hash
 over the function name and its argument types and hex encode it. The `multiply` function accepts an `uint` which is an
