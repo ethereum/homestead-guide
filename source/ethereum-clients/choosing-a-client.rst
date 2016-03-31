@@ -40,7 +40,7 @@ add links to them here as they are released.
 +------------------------+------------+------------------------+----------------------------------+
 | :ref:`cpp-ethereum`    | C++        | `Ethereum Foundation`_ | `eth-v1.2.2`_                    |
 +------------------------+------------+------------------------+----------------------------------+
-| :ref:`pyethapp`        | Python     | `Ethereum Foundation`_ | v1.2.0 release imminent          |
+| :ref:`pyethapp`        | Python     | `Ethereum Foundation`_ | `pyethapp-v1.1.2`_               |
 +------------------------+------------+------------------------+----------------------------------+
 | :ref:`ethereumjs-lib`  | Javascript | `Ethereum Foundation`_ | `ethereumjs-lib-v3.0.0`_         |
 +------------------------+------------+------------------------+----------------------------------+
@@ -65,6 +65,7 @@ add links to them here as they are released.
 .. _ethereumjs-lib-v3.0.0: https://github.com/ethereumjs/ethereumjs-lib/tree/v3.0.0
 .. _ethereumJ-v1.2.0-homestead-RC: https://github.com/ethereum/ethereumj/releases/tag/1.2.0-homestead-RC
 .. _Parity-v1.0.0: https://github.com/ethcore/parity/releases/tag/v1.0.0
+.. _pyethapp-v1.1.2: https://github.com/ethereum/pyethapp/releases/tag/v1.1.2
 
 ********************************************************************************
 Installing a Client
