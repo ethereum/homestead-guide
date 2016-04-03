@@ -76,7 +76,7 @@ Technically yes, but there is an important restriction as opposed to bitcoin sig
 
 Can Ethereum contracts pull data using third-party APIs?
 ----------------------------------------------------------------------------------------------
-No, Ethereum contracts cannot pull data from external information sources in this way. It is however possible to push data from external sites (e.g. weather sites, stock prices) to Ethereum contracts through transactions. There are "oracle" services that are copatible with the Ethereum network that will pull/push data to the Ethereum network for a fee.
+No, Ethereum contracts cannot pull data from external information sources in this way. It is however possible to push data from external sites (e.g. weather sites, stock prices) to Ethereum contracts through transactions. There are "oracle" services that are compatible with the Ethereum network that will pull/push data to the Ethereum network for a fee.
 
 Is the content of the data and contracts sent over the Ethereum network encrypted?
 ----------------------------------------------------------------------------------------------
@@ -95,7 +95,7 @@ There are two primary ways that the Ethereum PoW based consensus algorithm comba
   * This portion of the Ethereum mining algorithm, a technique referred to as GHOST, includes the headers only of recently orphaned blocks in return for a reduced reward to both the block producer and the includer of the (otherwise orphaned) block. These included orphans from "grandparent" or earlier blocks are frequently referred to as "uncle" blocks because the gender neutral term "ommer" isn't widely known or understood.
 
 * The second way that the Ethereum PoW consensus algorithm combats mining centralisation is by its use of a Proof of Work function that is ASIC resistant.
-  
+
   * By preventing mining from becoming dominated by specially designed and produced hardware, independent miners are kept competitive or even given an advantage in terms of their profits and/or levels of hardware investment, because they can make use of readily available commodity hardware (i.e. consumer graphics cards).
 
 How will Ethereum deal with ever increasing blockchain size?

@@ -47,7 +47,7 @@ Geth finds peers through something called the *discovery protocol*. In the disco
 Checking connectivity and ENODE IDs
 --------------------------------------------------------------------------------
 
-To check how many peers the client is connected to in the interactive console, the ``net`` module has two attributes give you info about the number of peers and whether you are a listening node.
+To check how many peers the client is connected to in the interactive console, the ``net`` module has two attributes that give you info about the number of peers and whether you are a listening node.
 
 .. code-block:: Javascript
 
@@ -108,7 +108,7 @@ To check the ports used by geth and also find your enode URI run:
 Download the blockchain faster
 ================================================================================
 
-When you start an Ethereum client, the Ethereum blockchain is automatically downloaded. The time it takes download the Ethereum blockchain can vary based on client, client settings, connection speed, and number of peers available. Below are some options for more quickly obtaining the Ethereum blockchain.
+When you start an Ethereum client, the Ethereum blockchain is automatically downloaded. The time it takes to download the Ethereum blockchain can vary based on client, client settings, connection speed, and number of peers available. Below are some options for more quickly obtaining the Ethereum blockchain.
 
 Using geth
 --------------------------------------------------------------------------------
@@ -130,7 +130,7 @@ Megabytes of memory allocated to internal caching (min 16MB / database forced). 
 
 ``--jitvm``
 
-This flag enable the JIT VM.
+This flag enables the JIT VM.
 
 Full example command with console:
 

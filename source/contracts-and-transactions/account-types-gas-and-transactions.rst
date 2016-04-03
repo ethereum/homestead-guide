@@ -32,15 +32,15 @@ A contract
 - has associated code,
 - code execution is triggered by transactions or messages (calls) received from other contracts.
 - when executed
-  - perform operations of arbitray complexity (Turing completeness)
+  - perform operations of arbitrary complexity (Turing completeness)
   - manipulate its own persistent storage, i.e.,  can have its own permanent state
   - can call other contracts
 
 
-All action on the Ethereum block chain is set in motion by transactions fired from externally owned accounts. Every time a contract account receives a transaction its code is executed as instructed by the input parameters sent as part of the transaction. The contract code is executed by the Ethereum Virtual Machine on each node participating in the network as part of their verification of new blocks.
+All action on the Ethereum block chain is set in motion by transactions fired from externally owned accounts. Every time a contract account receives a transaction, its code is executed as instructed by the input parameters sent as part of the transaction. The contract code is executed by the Ethereum Virtual Machine on each node participating in the network as part of their verification of new blocks.
 
 This execution needs to be completely deterministic, its only context is the position of the block on the blockchain and all data available.
-The blocks on the blockchain represent units of time, the blockchain itself is a temporal dimension and represents the entire of history of states at the discrete time points designated by the blocks on the chain.
+The blocks on the blockchain represent units of time, the blockchain itself is a temporal dimension and represents the entire history of states at the discrete time points designated by the blocks on the chain.
 
 All Ether balances and values are denominated in units of wei: 1 Ether is 1e18 wei.
 
