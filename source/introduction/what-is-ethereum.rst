@@ -36,7 +36,7 @@ How does Ethereum work?
 
 Ethereum incorporates many features and technologies that will be familiar to users of Bitcoin, while also introducing many modifications and innovations of its own.
 
-Whereas the Bitcoin blockchain was purely a list of transactions, :ref:`Ethereum's basic unit is the account <Accounts>`. The Ethereum blockchain tracks the state of every account, and all state transitions on the Ethereum blockchain are transfers of value and information between accounts. There are two types of account:
+Whereas the Bitcoin blockchain was purely a list of transactions, :ref:`Ethereum's basic unit is the account <Accounts>`. The Ethereum blockchain tracks the state of every account, and all state transitions on the Ethereum blockchain are transfers of value and information between accounts. There are two types of accounts:
 
 - Externally Owned Accounts (EOAs), which are controlled by private keys
 - Contract Accounts, which are controlled by their contract code and can only be "activated" by an EOA
@@ -60,7 +60,7 @@ Learn about Ethereum
 PR videos with some pathos:
 ---------------------------------
 
-* TODO - Add link to 'The world computer' video here.
+* `Ethereum: the World Computer <https://www.youtube.com/watch?v=j23HnORQXvs>`_
 * `Ethereum -- your turn <https://vimeo.com/88959651>`_
 
 

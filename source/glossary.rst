@@ -59,16 +59,15 @@ Glossary
       Stands for "decentralized application". Some say it is pronounced Ethapp due to the use of the `uppercase eth letter Ð <gl:eth-letter>`_.
 
    address
-      An Ethereum address represents an account. For EOA_, the address is derived as the last 20 bytes of the public key controlling the account, e.g., ``cd2a3d9f938e13cd947ec05abc7fe734df8dd826``. This is a hexadecimal_ format (base 16 notation), which is often indicated explicitly by appending ``0x`` to the address. Web3.js and console functions accept addresses with or  without this prefix but for transparency we encourage their use. Since each byte of the address is represented by 2 hex characters, a prefixed address is  42 character long. Several apps and APIs are also meant to implement the new `checksum-enabled address scheme <https://github.com/ethereum/EIPs/issues/55>`_  introduced in the Mist Ethereum wallet as of version 0.5.0.
+      An Ethereum address represents an account. For EOA_, the address is derived as the last 20 bytes of the public key controlling the account, e.g., ``cd2a3d9f938e13cd947ec05abc7fe734df8dd826``. This is a hexadecimal_ format (base 16 notation), which is often indicated explicitly by appending ``0x`` to the address. Web3.js and console functions accept addresses with or  without this prefix but for transparency we encourage their use. Since each byte of the address is represented by 2 hex characters, a prefixed address is  42 characters long. Several apps and APIs are also meant to implement the new `checksum-enabled address scheme <https://github.com/ethereum/EIPs/issues/55>`_  introduced in the Mist Ethereum wallet as of version 0.5.0.
 
 .. _hexadecimal:
 
    hexadecimal
-      Common representation format for byte sequencing. Its advantage is that it only a small subset of uses two characters per byte (the characters ``[0-9][a-f]``
-      which uses two characters per byte (the characters ``[0-9][a-f]``
+      Common representation format for byte sequencing. Its advantage is that values are represented in a compact format using two characters per byte (the characters ``[0-9][a-f]``).
 
    ether
-      Ether is the name of the currency used within Ethereum. It is used to pay for computations within the EVM. Ambiguously, ether is also the name of a unit in hte system;
+      Ether is the name of the currency used within Ethereum. It is used to pay for computations within the EVM. Ambiguously, ether is also the name of a unit in the system;
 
 .. _EOA:
 
@@ -143,7 +142,7 @@ Glossary
       Other computers on the network also running an Ethereum node (Geth) with an exact copy of the blockchain that you have.
 
    signing
-      Producing a piece of data from the data to be signed using your private key, to proof that the data originates from you.
+      Producing a piece of data from the data to be signed using your private key, to prove that the data originates from you.
 
    discovery (peer)
       The process of 'gossiping' with other nodes in the network to find out the state of other nodes on the network.

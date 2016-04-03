@@ -21,7 +21,7 @@ Ethereum Foundation's faces to the community
 * `Facebook <https://www.facebook.com/ethereumproject>`_ - largely unused
 * `Email <mailto:info@ethereum.org>`_ - use if you must
 
-Official communication from the Ethereum foundation most often comes in the form of a comrehensive blogpost on the `Ethereum blog <https://blog.ethereum.org/>`_. Some of the posts there are technical, some organisational, some personal. All  blog posts are announced on
+Official communication from the Ethereum foundation most often comes in the form of a comprehensive blogpost on the `Ethereum blog <https://blog.ethereum.org/>`_. Some of the posts there are technical, some organisational, some personal. All  blog posts are announced on
 `Twitter <http://twitter.com/ethereumproject>`_ and
 `Reddit <http://www.reddit.com/r/ethereum>`_.
 

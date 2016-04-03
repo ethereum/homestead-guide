@@ -35,7 +35,7 @@ DAO
 
 Here is just one example: imagine you own a small business with your friends. Lawyers and accountants are expensive, and trusting a single partner to oversee the books can be a source of tension (even an opportunity for fraud). Complying strictly with a system in which more than one partner oversees the books can be trying and is subject to fraud whenever the protocol isn't followed exactly.
 
-Using a smart contract, ownership in your company and terms for the disbursal of funds can be specified at the outset. The smart contract can be written such that it is only changeable given the approval of a majority of owners. Smart contracts like these will likely be available as open source software, so you won't even need to hire your own programmer in stead of an accountant/lawyer.
+Using a smart contract, ownership in your company and terms for the disbursal of funds can be specified at the outset. The smart contract can be written such that it is only changeable given the approval of a majority of owners. Smart contracts like these will likely be available as open source software, so you won't even need to hire your own programmer instead of an accountant/lawyer.
 
 A smart contract like this scales instantly. A couple of teenagers can split revenue from a lemonade stand just as transparently as a sovereign wealth fund can disburse funds to the hundred million citizens who are entitled to it. In both cases the price of this transparency is likely to be fractions of a penny per dollar.
 
