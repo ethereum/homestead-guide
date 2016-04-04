@@ -53,7 +53,7 @@ The term "transaction" is used in Ethereum to refer to the signed data package t
 
 Transactions contain:
  - the recipient of the message,
- - a signature identifying the sender and proving their intention to send the message to the blockchain to the reciptient,
+ - a signature identifying the sender and proving their intention to send the message to the blockchain to the recipient,
  - ``VALUE`` field - The amount of wei to transfer from the sender to the recipient,
  - an optional data field, which can contain the message sent to a contract,
  - a ``STARTGAS`` value, representing the maximum number of computational steps the transaction execution is allowed to take,
