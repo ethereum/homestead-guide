@@ -44,7 +44,7 @@ add links to them here as they are released.
 +------------------------+------------+------------------------+----------------------------------+
 | :ref:`ethereumjs-lib`  | Javascript | `Ethereum Foundation`_ | `ethereumjs-lib-v3.0.0`_         |
 +------------------------+------------+------------------------+----------------------------------+
-| :ref:`Ethereum\(J\)`   | Java       | `\<ether.camp\>`_      | `ethereumJ-v1.2.0-homestead-RC`_ |
+| :ref:`Ethereum\(J\)`   | Java       | `\<ether.camp\>`_      | `ethereumJ-v1.2.0`_              |
 +------------------------+------------+------------------------+----------------------------------+
 | :ref:`ethereumH`       | Haskell    | `BlockApps`_           | not available yet                |
 +------------------------+------------+------------------------+----------------------------------+
@@ -63,7 +63,7 @@ add links to them here as they are released.
 .. _geth-v1.3.5: https://github.com/ethereum/go-ethereum/releases/tag/v1.3.5
 .. _eth-v1.2.2: https://github.com/ethereum/webthree-umbrella/releases/tag/v1.2.2
 .. _ethereumjs-lib-v3.0.0: https://github.com/ethereumjs/ethereumjs-lib/tree/v3.0.0
-.. _ethereumJ-v1.2.0-homestead-RC: https://github.com/ethereum/ethereumj/releases/tag/1.2.0-homestead-RC
+.. _ethereumJ-v1.2.0: https://github.com/ethereum/ethereumj/releases/tag/1.2.0
 .. _Parity-v1.0.0: https://github.com/ethcore/parity/releases/tag/v1.0.0
 .. _pyethapp-v1.1.2: https://github.com/ethereum/pyethapp/releases/tag/v1.1.2
 
