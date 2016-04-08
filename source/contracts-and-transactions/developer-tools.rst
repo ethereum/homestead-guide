@@ -82,6 +82,7 @@ Tutorials
 
 * `Dapp tutorials on ethereum.org <https://ethereum.org>`_
 * `Dapps for beginners tutorial series <https://dappsforbeginners.wordpress.com/>`_
+* `Eris' Solidity Tutorial Series <https://docs.erisindustries.com/tutorials/solidity/>`_
 * `Tutorials on advanced Solidity <https://github.com/androlo/solidity-workshop>`_
 * http://ethereumj.io/blog/2015/09/09/friendly-ether-bot/
 * https://github.com/ConsenSys/ether-pudding
@@ -96,6 +97,7 @@ Below are developer frameworks and IDEs used for writing Ethereum dapps.
 * `Truffle <https://github.com/ConsenSys/truffle>`__ - Truffle is a development environment, testing framework and asset pipeline for Ethereum.
 * `Dapple <https://github.com/nexusdev/dapple>`__ - Dapple is a tool for Solidity developers to help build and manage complex contract systems on Ethereum-like blockchains.
 * `Populus <http://populus.readthedocs.org/en/latest/>`__ - Populus is a Smart Contract development framework written in python.
+* `Eris-PM <https://docs.erisindustries.com/documentation/eris-package-manager/>`__ - The Eris Package Manager deploys and tests smart contract systems on private and public chains.  
 * `Embark <https://iurimatias.github.io/embark-framework/>`__ - Embark is a Ðapp development framework written in JavaScript.
 * `EtherScripter \(obsolete, discontinued\) <http://etherscripter.com/0-5-1/>`_
 * `Resilience Raw Transaction Broadcaster <https://github.com/resilience-me/broadcaster/>`_
