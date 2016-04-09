@@ -23,7 +23,7 @@ by Alex:
 
 Would you enter in a contract with someone you've never met? Would you agree to lend money to some farmer in Ethiopia? Would you become an investor in a minority-run newspaper in a war zone? Would you go to the hassle of writing up a legal binding contract for a $5 dollar purchase over the internet?
 
-The answer is no for most of these reasons, the reason being that a contract requires a large infrastructure: sometimes you need a working trust relationship between the two parties, sometimes you rely on a working legal system, police force and lawyer costs.
+The answer is no for most of these questions, the reason being that a contract requires a large infrastructure: sometimes you need a working trust relationship between the two parties, sometimes you rely on a working legal system, police force and lawyer costs.
 
 In Ethereum you don't need any of that: if all the requisites to the contract can be put in the blockchain then they will, in a trustless environment for almost no cost.
 
