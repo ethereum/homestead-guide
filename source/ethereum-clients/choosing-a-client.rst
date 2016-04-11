@@ -38,7 +38,7 @@ add links to them here as they are released.
 +========================+============+========================+==================================+
 | :ref:`go-ethereum`     | Go         | `Ethereum Foundation`_ | `geth-v1.3.5`_                   |
 +------------------------+------------+------------------------+----------------------------------+
-| :ref:`cpp-ethereum`    | C++        | `Ethereum Foundation`_ | `eth-v1.2.2`_                    |
+| :ref:`cpp-ethereum`    | C++        | `Ethereum Foundation`_ | `eth-v1.2.3`_                    |
 +------------------------+------------+------------------------+----------------------------------+
 | :ref:`pyethapp`        | Python     | `Ethereum Foundation`_ | `pyethapp-v1.1.2`_               |
 +------------------------+------------+------------------------+----------------------------------+
@@ -61,7 +61,7 @@ add links to them here as they are released.
 
 .. _mist-v0.5.2: https://github.com/ethereum/mist/releases/tag/0.5.2
 .. _geth-v1.3.5: https://github.com/ethereum/go-ethereum/releases/tag/v1.3.5
-.. _eth-v1.2.2: https://github.com/ethereum/webthree-umbrella/releases/tag/v1.2.2
+.. _eth-v1.2.3: https://github.com/ethereum/webthree-umbrella/releases/tag/v1.2.3
 .. _ethereumjs-lib-v3.0.0: https://github.com/ethereumjs/ethereumjs-lib/tree/v3.0.0
 .. _ethereumJ-v1.2.0: https://github.com/ethereum/ethereumj/releases/tag/1.2.0
 .. _Parity-v1.0.0: https://github.com/ethcore/parity/releases/tag/v1.0.0
