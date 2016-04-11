@@ -93,7 +93,7 @@ IDEs/Frameworks
 
 Below are developer frameworks and IDEs used for writing Ethereum dapps.
 
-* `Mix Ethereum IDE <https://github.com/ethereum/mix>`__ - Mix is an IDE that allows developers to build and deploy contracts and decentralized applications on top of the Ethereum blockchain. It includes a Solidity source code debugger.
+* :ref:`sec:mix` - Mix is an IDE that allows developers to build and deploy contracts and decentralized applications on top of the Ethereum blockchain. It includes a Solidity source code debugger.
 * `Truffle <https://github.com/ConsenSys/truffle>`__ - Truffle is a development environment, testing framework and asset pipeline for Ethereum.
 * `Dapple <https://github.com/nexusdev/dapple>`__ - Dapple is a tool for Solidity developers to help build and manage complex contract systems on Ethereum-like blockchains.
 * `Populus <http://populus.readthedocs.org/en/latest/>`__ - Populus is a Smart Contract development framework written in python.
