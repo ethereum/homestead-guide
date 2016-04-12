@@ -19,13 +19,13 @@ Start by creating a new project that consists of
 .. toctree::
    :maxdepth: 2
 
-   project-editor.rst
-   scenario-editor.rst
-   state-viewer.rst
-   transaction-explorer.rst
-   javascript-console.rst
-   transaction-debugger.rst
-   dapp-deployment.rst
-   codeeditor.rst
+   mix/project-editor.rst
+   mix/scenario-editor.rst
+   mix/state-viewer.rst
+   mix/transaction-explorer.rst
+   mix/javascript-console.rst
+   mix/transaction-debugger.rst
+   mix/dapp-deployment.rst
+   mix/codeeditor.rst
 
 

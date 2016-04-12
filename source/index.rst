@@ -23,7 +23,7 @@ Contents
 ===============================================================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
    introduction/index.rst
    ethereum-clients/index.rst
