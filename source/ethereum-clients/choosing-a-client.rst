@@ -48,7 +48,7 @@ add links to them here as they are released.
 +------------------------+------------+------------------------+----------------------------------+
 | :ref:`ethereumH`       | Haskell    | `BlockApps`_           | not available yet                |
 +------------------------+------------+------------------------+----------------------------------+
-| :ref:`Parity`          | Rust       | `Ethcore`_             | `Parity-v1.0.0`_                 |
+| :ref:`Parity`          | Rust       | `Ethcore`_             | `Parity-v1.0.2`_                 |
 +------------------------+------------+------------------------+----------------------------------+
 | :ref:`ruby-ethereum`   | Ruby       | `Jan Xie`_             | not available yet                |
 +------------------------+------------+------------------------+----------------------------------+
@@ -64,7 +64,7 @@ add links to them here as they are released.
 .. _eth-v1.2.3: https://github.com/ethereum/webthree-umbrella/releases/tag/v1.2.3
 .. _ethereumjs-lib-v3.0.0: https://github.com/ethereumjs/ethereumjs-lib/tree/v3.0.0
 .. _ethereumJ-v1.2.0: https://github.com/ethereum/ethereumj/releases/tag/1.2.0
-.. _Parity-v1.0.0: https://github.com/ethcore/parity/releases/tag/v1.0.0
+.. _Parity-v1.0.2: https://github.com/ethcore/parity/releases/tag/v1.0.2
 .. _pyethapp-v1.1.2: https://github.com/ethereum/pyethapp/releases/tag/v1.1.2
 
 ********************************************************************************
