@@ -8,11 +8,6 @@ We have set up PPA instances for the following Ubuntu versions:
 - `Ubuntu Utopic Unicorn (14.10) <https://wiki.ubuntu.com/UtopicUnicorn>`_
 - `Ubuntu Vivid Vervet (15.04) <https://wiki.ubuntu.com/VividVervet>`_
 - `Ubuntu Wily Werewolf (15.10) <https://wiki.ubuntu.com/WilyWerewolf>`_
-
-We don't have a working PPA for the forthcoming Xenial release yet, but we
-have been made aware of the problem and will fix it before Xenial is
-released to the public.
-
 - `Ubuntu Xenial Xerus (16.04) <https://wiki.ubuntu.com/XenialXerus>`_
 
 **We only support 64-bit builds.**  It may be possible to get the

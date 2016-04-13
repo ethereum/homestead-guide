@@ -148,8 +148,12 @@ Steps: ::
 Ubuntu Xenial Xerus (16.04)
 --------------------------------------------------------------------------------
 
-Nobody has reported that they are building for Xenial yet.   Please let us know
-if it is broken or works for you.
+We have experimental Xenial builds working as of
+[13th April 2016](https://www.reddit.com/r/ethereum/comments/4el2c8/experimental_daily_dev_snapshots_of_cppethereum/).
+
+TODO - Add appropriate steps here.   We are also still awaiting confirmation
+from somebody running Xenial that the runtime behaviour is as expected.
+
 
 Installing dependencies for Fedora
 ================================================================================
