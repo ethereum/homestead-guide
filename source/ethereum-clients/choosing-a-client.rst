@@ -36,9 +36,9 @@ add links to them here as they are released.
 +------------------------+------------+------------------------+----------------------------------+
 | Client                 | Language   | Developers             | Homestead Release                |
 +========================+============+========================+==================================+
-| :ref:`go-ethereum`     | Go         | `Ethereum Foundation`_ | `geth-v1.3.5`_                   |
+| :ref:`go-ethereum`     | Go         | `Ethereum Foundation`_ | `geth-v1.3.6`_                   |
 +------------------------+------------+------------------------+----------------------------------+
-| :ref:`cpp-ethereum`    | C++        | `Ethereum Foundation`_ | `eth-v1.2.3`_                    |
+| :ref:`cpp-ethereum`    | C++        | `Ethereum Foundation`_ | `eth-v1.2.4`_                    |
 +------------------------+------------+------------------------+----------------------------------+
 | :ref:`pyethapp`        | Python     | `Ethereum Foundation`_ | `pyethapp-v1.1.2`_               |
 +------------------------+------------+------------------------+----------------------------------+
@@ -59,9 +59,9 @@ add links to them here as they are released.
 .. _Ethcore: https://ethcore.io/
 .. _Jan Xie: https://github.com/janx/
 
-.. _mist-v0.5.2: https://github.com/ethereum/mist/releases/tag/0.5.2
-.. _geth-v1.3.5: https://github.com/ethereum/go-ethereum/releases/tag/v1.3.5
-.. _eth-v1.2.3: https://github.com/ethereum/webthree-umbrella/releases/tag/v1.2.3
+.. _mist-v0.7.1: https://github.com/ethereum/mist/releases/tag/0.7.1
+.. _geth-v1.3.6: https://github.com/ethereum/go-ethereum/releases/tag/v1.3.6
+.. _eth-v1.2.4: https://github.com/ethereum/webthree-umbrella/releases/tag/v1.2.4
 .. _ethereumjs-lib-v3.0.0: https://github.com/ethereumjs/ethereumjs-lib/tree/v3.0.0
 .. _ethereumJ-v1.2.0: https://github.com/ethereum/ethereumj/releases/tag/1.2.0
 .. _Parity-v1.0.2: https://github.com/ethcore/parity/releases/tag/v1.0.2
