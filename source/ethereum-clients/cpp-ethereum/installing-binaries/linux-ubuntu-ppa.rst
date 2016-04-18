@@ -45,5 +45,5 @@ The `Mix IDE <https://github.com/ethereum/mix>`_ is shipped on
 Ubuntu as part of the developer PPA (above).  So follow the steps
 directly above, and then also do: ::
 
-    sudo apt-get install mix
-    mix
+    sudo apt-get install mix-ide
+    mix-ide
