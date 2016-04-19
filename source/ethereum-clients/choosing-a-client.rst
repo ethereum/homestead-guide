@@ -50,7 +50,7 @@ add links to them here as they are released.
 +------------------------+------------+------------------------+----------------------------------+
 | :ref:`Parity`          | Rust       | `Ethcore`_             | `Parity-v1.0.2`_                 |
 +------------------------+------------+------------------------+----------------------------------+
-| :ref:`ruby-ethereum`   | Ruby       | `Jan Xie`_             | not available yet                |
+| :ref:`ruby-ethereum`   | Ruby       | `Jan Xie`_             | `ruby-ethereum-v0.9.0`_          |
 +------------------------+------------+------------------------+----------------------------------+
 
 .. _Ethereum Foundation: https://ethereum.org/foundation
@@ -66,6 +66,7 @@ add links to them here as they are released.
 .. _ethereumJ-v1.2.0: https://github.com/ethereum/ethereumj/releases/tag/1.2.0
 .. _Parity-v1.0.2: https://github.com/ethcore/parity/releases/tag/v1.0.2
 .. _pyethapp-v1.1.2: https://github.com/ethereum/pyethapp/releases/tag/v1.1.2
+.. _ruby-ethereum-v0.9.0: https://rubygems.org/gems/ruby-ethereum/versions/0.9.0
 
 ********************************************************************************
 Installing a Client
