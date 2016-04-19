@@ -56,10 +56,10 @@ of the branches for existing PRs is updated:
 
 Here are the other Jenkins projects we have:
 
-* `ethbinaries-develop <http://52.28.164.97/job/ethbinaries-develop/>`_ and `ethbinaries-release <http://52.28.164.97/job/ethbinaries-release/>`_ - Projects for generating Windows and OX binaries for the develop and release branches of the webthree-umbrella
-* `ppa-build-develop <http://52.28.164.97/job/ppa-build-develop/>`_ and `ppa-build-release <http://52.28.164.97/job/ppa-build-release/>`_ - Projects for packaging source and build steps which are then pushing to `Launchpad <https://launchpad.net/~ethereum/+archive/ubuntu/ethereum>`_ where they will be built, and the binaries pushed to the world if they are successful.
-* `solidity-emscripten <http://52.28.164.97/job/solidity-emscripten/>`_ and `solidity-emscripten-publisher <http://52.28.164.97/job/solidity-emscripten-publisher/>`_ - Projects for Solidity builds.
-* `update-umbrella <http://52.28.164.97/job/update-umbrella/>`_ - Utility project which can be run manually to update the submodules in the webthree-umbrella project.  It will soon be obsolete.
+* `ethbinaries-develop <http://52.28.164.97/job/ethbinaries-develop/>`_ and `ethbinaries-release <http://52.28.164.97/job/ethbinaries-release/>`_ - Projects for generating Windows and OS X binaries for the develop and release branches of the webthree-umbrella.   The develop project is run nightly at midnight, Berlin time.   The release project is run manually.
+* `ppa-build-develop <http://52.28.164.97/job/ppa-build-develop/>`_ and `ppa-build-release <http://52.28.164.97/job/ppa-build-release/>`_ - Projects for packaging source and build steps which are then pushing to `Launchpad <https://launchpad.net/~ethereum/+archive/ubuntu/ethereum>`_ where they will be built, and the binaries pushed to the world if they are successful.  The develop project is run nightly at midnight, Berlin time.   The release project is run manually.
+* `solidity-emscripten <http://52.28.164.97/job/solidity-emscripten/>`_ - Solidity builds for the Emscripten architecture.  This is the build target, which calls the publish target detailed below.   It is run nightly at midnight, Berlin time.
+* `update-umbrella <http://52.28.164.97/job/update-umbrella/>`_ - Utility project which can be run manually to update the submodules in the webthree-umbrella project.  It will soon be obsolete.   It is run manually.
 
 The following projects are effectively "libraries" which are used to build the "user-facing"
 projects above.
@@ -67,6 +67,7 @@ projects above.
 * `ethbinaries-build <http://52.28.164.97/job/ethbinaries-build/>`_ - Used in ethbinaries-develop and ethbinaries-release.
 * `project-build <http://52.28.164.97/job/project-build/>`_ - Used in all the PR projects.
 * `project-test <http://52.28.164.97/job/project-test/>`_ - Used in all the PR projects.
+* `solidity-emscripten-publisher <http://52.28.164.97/job/solidity-emscripten-publisher/>`_ - Used in solidity-emscripten.
 
 Bob does not know what these Jenkins targets are.   They may be obsolete.
 
