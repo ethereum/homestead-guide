@@ -18,8 +18,8 @@ ethereumjs-lib
 * `devp2p <https://github.com/ethereumjs/node-devp2p>`_ - The networking protocol
 * `devp2p-dpt <https://github.com/ethereumjs/node-devp2p-dpt>`_ - The disputed peer table
 
-Links
---------------------------------------------------------------------------------
+Links:
+
 * Github: https://github.com/ethereumjs/ethereumjs-lib
 * Join the Gitter chat: https://gitter.im/ethereum/ethereumjs-lib
 
