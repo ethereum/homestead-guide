@@ -146,6 +146,7 @@ Installing and building
 
    installing-binaries/index.rst
    building-from-source/index.rst
+   ./automation.rst
 
 Running
 --------------------------------------------------------------------------------
