@@ -15,8 +15,8 @@ Ethereum(J) supports CPU mining.  It is currently implemented in pure Java
 and can be used in private and test networks. You may even mine on the
 live Ethereum network, even though it is not economically feasible.
 
-Links
---------------------------------------------------------------------------------
+Links:
+
 * Blog: http://ethereumj.io/
 * Github: https://github.com/ethereum/ethereumj
 * Gitter chat: https://gitter.im/ethereum/ethereumj

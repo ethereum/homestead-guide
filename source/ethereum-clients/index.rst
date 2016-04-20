@@ -9,10 +9,10 @@ Ethereum Clients
 
    choosing-a-client.rst
    cpp-ethereum/index.rst
-   go-ethereum/go-ethereum.rst
-   pyethapp/pyethapp.rst
-   ethereumjs-lib/ethereumjs-lib.rst
-   ethereumj/ethereumj.rst
-   ethereumh/ethereumh.rst
-   parity/parity.rst
-   ruby-ethereum/ruby-ethereum.rst
+   go-ethereum/index.rst
+   pyethapp/index.rst
+   ethereumjs-lib/index.rst
+   ethereumj/index.rst
+   ethereumh/index.rst
+   parity/index.rst
+   ruby-ethereum/index.rst

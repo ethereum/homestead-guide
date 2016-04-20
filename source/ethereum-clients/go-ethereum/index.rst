@@ -12,8 +12,7 @@ The go-ethereum client is commonly referred to as **geth**, which is the the com
 * explore block history
 * and much much more
 
-Links
---------------------------------------------------------------------------------
+Links:
 
 * Website: http://ethereum.github.io/go-ethereum/
 * Github: https://github.com/ethereum/go-ethereum
