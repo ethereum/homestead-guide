@@ -5,7 +5,7 @@ Using Testeth
 *****************************************************
 Ethereum cpp-client testeth tool for creation and execution of ethereum tests.  
 
-To run tests you should open folder (see also `Installing and building <../ethereum-clients/cpp-ethereum/index.html#installing-and-building>`_)
+To run tests you should open folder (see also `Installing and building <../../ethereum-clients/cpp-ethereum/index.html#installing-and-building>`_)
 
    ``/build/libethereum/test``
  

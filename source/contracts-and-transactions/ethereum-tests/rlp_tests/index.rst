@@ -4,7 +4,7 @@
 RLP Tests
 ################################################################################
 
-Describes an [rlp](https://github.com/ethereum/wiki/wiki/RLP) encoding using the .json file. 
+Describes an **RLP** (https://github.com/ethereum/wiki/wiki/RLP) encoding using the .json file. 
 The client should read the rlp byte stream, **decode** and check whether the contents match it's json representation. Then it should try do it reverse - **encode** json rlp representation into rlp byte stream and check whether it matches the given rlp byte stream.
 
 If it is an invalid RLP byte stream in the test, then 'in' field would contain string 'INVALID'
