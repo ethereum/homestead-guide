@@ -27,6 +27,7 @@ Contents
 
    introduction/index.rst
    ethereum-clients/index.rst
+   ethereum-tests/index.rst
    account-management.rst
    ether.rst
    network/index.rst
