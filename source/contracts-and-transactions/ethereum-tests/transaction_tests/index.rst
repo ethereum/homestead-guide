@@ -4,7 +4,7 @@
 Transaction Tests
 ################################################################################
 
-Describes a complete transaction and its ``RLP <https://github.com/ethereum/wiki/wiki/RLP>``_ representation using the .json file. 
+Describes a complete transaction and its `RLP <https://github.com/ethereum/wiki/wiki/RLP>`_ representation using the .json file. 
 The client should read the rlp and check whether the transaction is valid, has the correct sender and corresponds to the transaction parameters.
 If it is an invalid transaction, the transaction and the sender object will be missing.
 

@@ -10,4 +10,5 @@ Contracts and Transactions
    accessing-contracts-and-transactions.rst
    mix.rst
    developer-tools.rst
+   ethereum-tests/index.rst
    web3-base-layer-services.rst
