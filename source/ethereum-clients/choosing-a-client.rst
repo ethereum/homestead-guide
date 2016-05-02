@@ -36,11 +36,11 @@ add links to them here as they are released.
 +------------------------+------------+------------------------+----------------------------------+
 | Client                 | Language   | Developers             | Homestead Release                |
 +========================+============+========================+==================================+
-| :ref:`go-ethereum`     | Go         | `Ethereum Foundation`_ | `geth-v1.3.6`_                   |
+| :ref:`go-ethereum`     | Go         | `Ethereum Foundation`_ | `geth-v1.4.0`_                   |
 +------------------------+------------+------------------------+----------------------------------+
 | :ref:`cpp-ethereum`    | C++        | `Ethereum Foundation`_ | `eth-v1.2.4`_                    |
 +------------------------+------------+------------------------+----------------------------------+
-| :ref:`pyethapp`        | Python     | `Ethereum Foundation`_ | `pyethapp-v1.1.2`_               |
+| :ref:`pyethapp`        | Python     | `Ethereum Foundation`_ | `pyethapp-v1.2.1`_               |
 +------------------------+------------+------------------------+----------------------------------+
 | :ref:`ethereumjs-lib`  | Javascript | `Ethereum Foundation`_ | `ethereumjs-lib-v3.0.0`_         |
 +------------------------+------------+------------------------+----------------------------------+
@@ -48,9 +48,9 @@ add links to them here as they are released.
 +------------------------+------------+------------------------+----------------------------------+
 | :ref:`ethereumH`       | Haskell    | `BlockApps`_           | not available yet                |
 +------------------------+------------+------------------------+----------------------------------+
-| :ref:`Parity`          | Rust       | `Ethcore`_             | `Parity-v1.0.2`_                 |
+| :ref:`Parity`          | Rust       | `Ethcore`_             | `Parity-v1.1.0`_                 |
 +------------------------+------------+------------------------+----------------------------------+
-| :ref:`ruby-ethereum`   | Ruby       | `Jan Xie`_             | `ruby-ethereum-v0.9.0`_          |
+| :ref:`ruby-ethereum`   | Ruby       | `Jan Xie`_             | `ruby-ethereum-v0.9.1`_          |
 +------------------------+------------+------------------------+----------------------------------+
 
 .. _Ethereum Foundation: https://ethereum.org/foundation
@@ -59,14 +59,13 @@ add links to them here as they are released.
 .. _Ethcore: https://ethcore.io/
 .. _Jan Xie: https://github.com/janx/
 
-.. _mist-v0.7.1: https://github.com/ethereum/mist/releases/tag/0.7.1
-.. _geth-v1.3.6: https://github.com/ethereum/go-ethereum/releases/tag/v1.3.6
+.. _geth-v1.4.0: https://github.com/ethereum/go-ethereum/releases/tag/v1.4.0
 .. _eth-v1.2.4: https://github.com/ethereum/webthree-umbrella/releases/tag/v1.2.4
-.. _ethereumjs-lib-v3.0.0: https://github.com/ethereumjs/ethereumjs-lib/tree/v3.0.0
+.. _ethereumjs-lib-v3.0.0: https://github.com/ethereumjs/ethereumjs-lib/releases/tag/v3.0.0
 .. _ethereumJ-v1.2.0: https://github.com/ethereum/ethereumj/releases/tag/1.2.0
-.. _Parity-v1.0.2: https://github.com/ethcore/parity/releases/tag/v1.0.2
-.. _pyethapp-v1.1.2: https://github.com/ethereum/pyethapp/releases/tag/v1.1.2
-.. _ruby-ethereum-v0.9.0: https://rubygems.org/gems/ruby-ethereum/versions/0.9.0
+.. _Parity-v1.1.0: https://github.com/ethcore/parity/releases/tag/v1.1.0
+.. _pyethapp-v1.2.1: https://github.com/ethereum/pyethapp/releases/tag/v1.2.1
+.. _ruby-ethereum-v0.9.0: https://rubygems.org/gems/ruby-ethereum/versions/0.9.1
 
 ********************************************************************************
 Installing a Client
