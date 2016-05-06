@@ -15,5 +15,5 @@ To build and install the package, follow the `AUR installing package <https://wi
 
 - Acquire the tarball which contains the PKGBUILD 
 - Extract the tarball 
-- Run `makepkg -sri` as simple user in the directory where the files are saved
+- Run :code:`makepkg -sri` as simple user in the directory where the files are saved
 
