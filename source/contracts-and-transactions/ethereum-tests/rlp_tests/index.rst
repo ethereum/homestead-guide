@@ -46,5 +46,5 @@ Basic structure
 Sections
 --------------------------------------------------------------------------------
 
-* ``in`` - json object (array, int, string) representation of the rlp byte stream (*except values 'VALID' and 'INVALID')
+* ``in`` - json object (array, int, string) representation of the rlp byte stream (\*except values 'VALID' and 'INVALID')
 * ``out`` - string of rlp bytes stream

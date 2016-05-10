@@ -1,4 +1,3 @@
-.. _sec:clients:
 
 *****************************************************
 Using Testeth
@@ -13,7 +12,8 @@ and execute a command ``./testeth`` This will run all test cases automatically.
 To run a specific test case you could use parameter ``-t`` in the command line option:
 
     ``./testeth -t <TEST_SUITE>/<TEST_CASE>``
-Or just the test suite: 
+
+Or just the test suite:
     
    ``./testeth -t <TEST_SUITE>``
  
