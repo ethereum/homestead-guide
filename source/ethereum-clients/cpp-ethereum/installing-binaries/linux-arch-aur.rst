@@ -11,10 +11,9 @@ on `aur.archlinux.org <https://aur.archlinux.org>`_.
 - `ethereum <https://aur.archlinux.org/packages/ethereum/>`_ (stable, latest release)
 - `ethereum-git <https://aur.archlinux.org/packages/ethereum-git/>`_ (unstable, latest develop)
 
-To install them you can build them using an 
-`AUR Helper <https://wiki.archlinux.org/index.php/AUR_helpers>`_:
+To build and install the package, follow the `AUR installing package <https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages>`_ instructions:
 
-``yaourt -S ethereum``
+- Acquire the tarball which contains the PKGBUILD 
+- Extract the tarball 
+- Run :code:`makepkg -sri` as simple user in the directory where the files are saved
 
-Or download the ``PKGBUILD`` and 
-`install manually <https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages>`_.
