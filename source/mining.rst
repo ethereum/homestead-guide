@@ -281,7 +281,7 @@ To debug the miner:
 
 Check your hashrate with ``ethminer``, ``miner.hashrate`` will always report 0.
 
-Using ethminer with eth++
+Using ethminer with eth
 -------------------------------
 
 Mining on a single GPU
@@ -305,7 +305,7 @@ geth attach` or [ethconsole](https://github.com/ethereum/ethereum-console).
 Mining on a multiple GPUs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Mining with multiple GPUs and eth is very similar to mining with geth and multiple GPUs.
-Ensure that an eth++ node is running with your coinbase address properly set:
+Ensure that an eth node is running with your coinbase address properly set:
 
 .. code-block:: bash
 

@@ -90,7 +90,7 @@ mechanisms.
 
 * Using the ``solc`` compiler via the command line.
 * Using ``web3.eth.compile.solidity`` in the javascript console provided by
-  ``geth`` or ``eth++`` (This still requires the ``solc`` compiler to be
+  ``geth`` or ``eth`` (This still requires the ``solc`` compiler to be
   installed).
 * The `online Solidity realtime compiler <https://chriseth.github.io/browser-solidity/>`_.
 * The `Meteor dapp Cosmo for building solidity contracts <https://github.com/SilentCicero/meteor-dapp-cosmo>`_.

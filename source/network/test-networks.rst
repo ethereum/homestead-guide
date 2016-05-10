@@ -12,7 +12,7 @@ continue throughout the Frontier and Homestead milestones of the software.
 Usage
 --------------------------------------------------------------------------------
 
-++eth (C++ client)
+eth (C++ client)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This is supported natively on 0.9.93 and above. Pass the ``--morden`` argument in when starting any of the clients. e.g.:
@@ -94,7 +94,7 @@ Setting up a local private testnet
 
 .. _custom-networks-eth:
 
-++eth (C++ client)
+eth (C++ client)
 ================================================================================
 
 

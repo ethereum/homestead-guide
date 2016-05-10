@@ -57,7 +57,6 @@ Deprecated executables, to be retired soon
 --------------------------------------------------------------------------------
 
 - **AlethZero** A Qt-based all-encompassing GUI for interacting with Ethereum (receives minimal support).
-- **AlethOne** One-click GUI miner.
 - **EthKey** Key management CLI.
 
 Project reboot
@@ -87,7 +86,6 @@ What are the various modules?
 --------------------------------------------------------------------------------
 
 - **AlethZero** - A Qt-based GUI for interacting with Ethereum. Receives minimal support.
-- **AlethOne** One-click GUI miner.
 - **libethereum** - Modules related to the Ethereum part of web3, i.e. consensus engine, blockchain download, virtual machine.
     - **ethkey**: stand-alone key management
     - **ethminer**: stand-alone ethash miner
