@@ -97,7 +97,8 @@ Finally, there are two simple keys, ``gas`` and ``output``:
   and for convenient of the users is populated with three   
   types of numbers, all of them should be converted and   
   concatenated to a byte array for VM execution.   
- * The types are:    
+
+* The types are:    
   1. number - (unsigned 64bit)
   2. "longnumber" - (any long number)
   3. "0xhex_num"  - (hex format number)
