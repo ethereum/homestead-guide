@@ -84,7 +84,7 @@ What should I install on my desktop/laptop?
 If you have a laptop or desktop machine, you should probably just install
 the `Ethereum Wallet <https://github.com/ethereum/mist>`_ and you are done.
 
-- Download ZIP from `Ethereum Wallet 0.6.2 <https://github.com/ethereum/mist/releases/tag/0.6.2>`_
+- Download the latest `Ethereum Wallet ZIP <https://github.com/ethereum/mist/releases/latest>`_ from Github.
 - Unzip wherever you like
 - Click on the executable (**Ethereum-Wallet, Ethereum-Wallet** or **Ethereum-Wallet.app**)
 - The block-chain will be downloaded
