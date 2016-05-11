@@ -34,13 +34,12 @@ Or ... ::
     brew install cpp-ethereum --with-gui
 
 ... if you want to build
-`AlethZero and AlethOne <https://github.com/ethereum/alethzero>`_ and
+`AlethZero <https://github.com/ethereum/alethzero>`_ and
 the `Mix IDE <https://github.com/ethereum/wiki/wiki/Mix:-The-DApp-IDE>`_ too.
 
 To start the applications, type one of these commands in a Terminal window: ::
 
     open /Applications/AlethZero.app
-    open /Applications/AlethOne.app
     open /Applications/Mix.app
     eth
 
