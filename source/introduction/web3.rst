@@ -10,11 +10,13 @@ As intended by the Ethereum developers, Ethereum is a blank canvas and you have 
 
 Ethereum is perhaps best described as an ecosystem: the core protocol is supported by various pieces of infrastructure, code, and community that together make up the Ethereum project. Ethereum can also be understood by looking at the projects that use Ethereum. Already, there are a number of high-profile projects built on Ethereum such as Augur, Digix, Maker, and many more (see :ref:`dapps`). In addition, there are development teams that build open source components that anyone can use.  While each of these organizations are separate from the Ethereum Foundation and have their own goals, they undoubtedly benefit the overall Ethereum ecosystem.
 
+Further Watching/Reading:
 
-* Vitalik youtube/Fjhe0MVRHO4
-* Gavin youtube/U_LK0t_qaPo
-* best detailed here  youtube/GJGIeSCgskc
-* https://www.reddit.com/r/ethereum/comments/2trhw6/vitalik_buterin_explains_his_vision_for_crypto_20/
+* Vitalik Buterin - TNABC 2015: https://www.youtube.com/watch?v=Fjhe0MVRHO4
+
+* Gavin Wood - DEVCON 1 - Ethereum for Dummies: https://www.youtube.com/watch?v=U_LK0t_qaPo
+
+* Ethereum London Meetup (best detailed here): https://www.youtube.com/watch?v=GJGIeSCgskc
 
 Smart contracts
 ================================================================================
