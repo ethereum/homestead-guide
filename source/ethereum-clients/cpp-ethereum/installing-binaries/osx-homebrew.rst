@@ -2,9 +2,7 @@
 OS X Homebrew packages
 --------------------------------------------------------------------------------
 
-We generate Homebrew packages within our automated build system.  We only
-generate binaries for Yosemite at the time of writing, which means that
-**brew install** on El Capitan machines triggers a (very slow) build from source.
+We generate Homebrew packages within our automated build system.
 
 We **only** support the two most recent OS X versions:
 
