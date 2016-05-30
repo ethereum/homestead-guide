@@ -14,7 +14,3 @@ We **only** support the two most recent OS X versions:
 
 If your system does not support either of these OS X versions then you
 are out of luck.  Sorry!
-
-Here is the
-`cpp-ethereum v1.2.2 OS X DMG
-<https://build.ethereum.org/cpp-binaries-data/release-1.2.2/Ethereum.dmg>`_ for Homestead.
