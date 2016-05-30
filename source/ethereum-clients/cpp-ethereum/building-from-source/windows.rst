@@ -24,7 +24,7 @@ You will need to install the following dependencies
 +==============================+=======================================================+
 | `Git for Windows`_           | This for retrieving source from Github.               |
 +------------------------------+-------------------------------------------------------+
-| `CMake`_                     | Cross-platform build file generator. Don't use 3.5.0. |
+| `CMake`_                     | Cross-platform build file generator.                  |
 +------------------------------+-------------------------------------------------------+
 | `Visual Studio 2015`_        | C++ compiler and dev environment.                     |
 +------------------------------+-------------------------------------------------------+
@@ -34,31 +34,31 @@ You will need to install the following dependencies
 .. _Visual Studio 2015: https://www.visualstudio.com/products/vs-2015-product-editions
 
 
-Open a command-shell in the root directory which you cloned the source code to, and
-then type the following, which does a crude approximation of a package server,
-pulling pre-built binaries from our own server for the various external libraries
-which we depend on: ::
+Get the source
+--------------------------------------------------------------------------------
+
+Clone the git repository containing all the source code by executing the following command: ::
+
+    git clone --recursive https://github.com/ethereum/webthree-umbrella.git
+    
+
+Get the external dependencies
+--------------------------------------------------------------------------------
+
+Execute the CMake script that downloads and unpacks pre-built external libraries
+needed to build the project: ::
 
     cmake -P webthree-helpers/deps/install_deps.cmake
 
 
-Clone the repository
+Generate Visual Studio project files
 --------------------------------------------------------------------------------
-
-To clone the source code, execute the following command: ::
-
-    git clone --recursive https://github.com/ethereum/webthree-umbrella.git
-
-
-Build from within Visual Studio
---------------------------------------------------------------------------------
-
 Then execute the following commands, which will generate a Visual Studio
 solution file using CMake: ::
 
     mkdir build
     cd build
-    cmake -G "Visual Studio 12 2013 Win64" ..
+    cmake -G "Visual Studio 14 2015 Win64" ..
 
 Which should result in the creation of **cpp-ethereum.sln** in that build directory.
 
@@ -83,6 +83,6 @@ incremental build like so, from the root of the project: ::
     git pull
     del build\CMakeCache.txt
     cd build
-    cmake -G "Visual Studio 12 2013 Win64" ..
+    cmake -G "Visual Studio 14 2015 Win64" ..
 
 And then build on command-line or in Visual Studio as before.
