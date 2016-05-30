@@ -72,17 +72,3 @@ Build on the command-line
 Alternatively, you can build the project on the command-line, like so: ::
 
     cmake --build . --config RelWithDebInfo
-
-
-Incremental builds
---------------------------------------------------------------------------------
-
-After your first successful build, it should generally be possible to do an
-incremental build like so, from the root of the project: ::
-
-    git pull
-    del build\CMakeCache.txt
-    cd build
-    cmake -G "Visual Studio 14 2015 Win64" ..
-
-And then build on command-line or in Visual Studio as before.
