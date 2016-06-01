@@ -108,6 +108,42 @@ Below are developer frameworks and IDEs used for writing Ethereum dapps.
 * `Resilience Raw Transaction Broadcaster <https://github.com/resilience-me/broadcaster/>`_
 
 
+Ethereum-console
+================================================================================
+
+Commandline console for Ethereum nodes.
+
+`Ethconsole <https://github.com/ethereum/ethereum-console>`_ connects to an Ethereum node running in the background (tested with eth and geth) via IPC and provides an interactive javascript console containing the web3 object with admin additions.
+
+Here you could find a list of available commands `ethereum node control commands <https://github.com/ethereum/ethereum-console/blob/master/web3Admin.js>`_
+
+To use this console you would need to start a local ethereum node with ipc communication socket enabled (file ``geth.ipc`` in data directory). 
+By default ipc socket should be located at you local home directory in .ethereum after you started a node.
+You could also set ``--test`` option to use specific node test commands. 
+
+.. code:: Console
+
+   > eth --test
+   > ethconsole ipc://path/to/geth.ipc
+
+In the console you could then type
+
+.. code:: Console
+
+   > web3.eth.<command name> (arguments, function(){})
+
+Here the defenition of ``--test`` mode node commands: 
+
+.. code:: Console
+
+   > web3.test.addBlock("[RLP]", function(){}) - Add a block from a string containing it's hex RLP
+   > web3.test.rewindToBlock:("[int]", function(){}) - Reset the blockchain to specified block number
+   > web3.test.mineBlocks:("[int]", function(){}) - Mine a certain amount of NoProof blocks into chain
+   > web3.test.modifyTimestamp:("[int]", function(){}) - Set current block timestamp
+   > web3.test.setChainParams:("[json]", function(){}) - Reset the blockchain with given node configuration file 
+
+More information about node `configuration <../network/test-networks.html#custom-networks-eth>`_ file.
+
 Base layer services
 =================================================
 
