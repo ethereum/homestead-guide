@@ -66,7 +66,7 @@ For non-interactive use you supply a plaintext password file as argument to the 
 .. code-block:: Bash
 
   touch /path/to/password
-  chmod 700 /path/to/password
+  chmod 600 /path/to/password
   cat > /path/to/password
   >I type my pass
 
