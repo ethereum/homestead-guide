@@ -7,6 +7,7 @@ We support **only 64-bit** builds and only for the following versions of Windows
 - `Windows 7 <https://en.wikipedia.org/wiki/Windows_7>`_
 - `Windows 8/8.1 <https://en.wikipedia.org/wiki/Windows_8>`_
 - `Windows 10 <https://en.wikipedia.org/wiki/Windows_10>`_
+- `Windows Server 2012 R2 <https://en.wikipedia.org/wiki/Windows_Server_2012_R2>`_
 
 It may be possible to get the client working for Windows 32-bit, by
 disabling EVMJIT and maybe other features too.  We might accept
@@ -22,7 +23,7 @@ You will need to install the following dependencies
 +------------------------------+-------------------------------------------------------+
 | Software                     | Notes                                                 |
 +==============================+=======================================================+
-| `Git for Windows`_           | This for retrieving source from Github.               |
+| `Git for Windows`_           | Command-line tool for retrieving source from Github.  |
 +------------------------------+-------------------------------------------------------+
 | `CMake`_                     | Cross-platform build file generator.                  |
 +------------------------------+-------------------------------------------------------+
