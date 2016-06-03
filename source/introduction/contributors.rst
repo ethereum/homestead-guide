@@ -68,6 +68,7 @@ And these pseudonymous contributors:
 - `c0d3inj3cT <http://github.com/c0d3inj3cT>`_
 - `LucaTony <https://github.com/LucaTony>`_
 - `madhancr <https://github.com/madhancr>`_
+- `mWo <https://github.com/moneroexamples>`_
 - `Omkara <https://github.com/0mkara>`_
 - `tflux99 <https://github.com/tflux99>`_
 - `xyzether <https://github.com/xyzether>`_
