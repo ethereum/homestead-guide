@@ -66,6 +66,7 @@ And these pseudonymous contributors:
 
 - `12v <https://github.com/12v>`_
 - `c0d3inj3cT <http://github.com/c0d3inj3cT>`_
+- `ijcoe6ru <https://github.com/ijcoe6ru>`_
 - `LucaTony <https://github.com/LucaTony>`_
 - `madhancr <https://github.com/madhancr>`_
 - `mWo <https://github.com/moneroexamples>`_
