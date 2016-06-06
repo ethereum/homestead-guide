@@ -20,6 +20,7 @@ Quick Start
 - You can chat with the development team and community on the `cpp-ethereum gitter channel <https://gitter.im/ethereum/cpp-ethereum>`_.
 - If you just want to install binaries then head to :ref:`Installing binaries`.
 - If you want to build from source then head to :ref:`Building from source`.
+- cpp-ethereum is extremely portable and is used on a :ref:`very broad range of platforms <cpp-ethereum-portability>`.
 
 
 History of the code
@@ -185,3 +186,4 @@ It can be installed using npm:
 
 .. toctree::
    hall-of-fame.rst
+   portability.rst
