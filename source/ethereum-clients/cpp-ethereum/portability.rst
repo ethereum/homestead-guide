@@ -1,7 +1,7 @@
 .. _cpp-ethereum-portability:
 
 ################################################################################
-cpp-ethereum Portability
+Portability
 ################################################################################
 
 The Ethereum C++ client code is exceedingly portable, and is being successfully
