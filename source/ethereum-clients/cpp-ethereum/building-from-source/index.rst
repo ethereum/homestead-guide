@@ -3,6 +3,9 @@
 Building from source
 ================================================================================
 
+Overview
+--------------------------------------------------------------------------------
+
 The **cpp-ethereum** codebase is spread over several
 Git repositories which are all grouped as sub-modules under the 
 `webthree-umbrella <http://github.com/ethereum/webthree-umbrella>`_ repo
