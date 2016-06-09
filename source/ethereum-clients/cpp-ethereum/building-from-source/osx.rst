@@ -2,10 +2,8 @@
 Building for OS X
 ================================================================================
 
-Overview
+Overview - Here be dragons!
 --------------------------------------------------------------------------------
-
-**BEWARE!  Here be dragons!**
 
 It is impossible for us to avoid OS X build breaks because `Homebrew is a "rolling
 release" package manager
