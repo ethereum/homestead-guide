@@ -2,6 +2,9 @@
 Building for OS X
 ================================================================================
 
+Overview
+--------------------------------------------------------------------------------
+
 **BEWARE!  Here be dragons!**
 
 It is impossible for us to avoid OS X build breaks because `Homebrew is a "rolling
@@ -36,39 +39,51 @@ We only support the two most recent OS X versions:
 The cpp-ethereum code base does not build on older OS X versions and this
 is not something which we will ever support.  If you are using an older
 OS X version, we recommend that you update to the latest release, not
-just so that you can build cpp-ethereum, but for your own peace of mind.
+just so that you can build cpp-ethereum, but for your own security.
 
 
-Pre-requisites
+Pre-requisites and external dependencies
 --------------------------------------------------------------------------------
 
-All OS X builds require you to `install the Homebrew <http://brew.sh>`_
-package manager.  Here's how to `uninstall Homebrew
+Ensure that you have the latest version of
+`xcode installed <https://developer.apple.com/xcode/download/>`_.
+This contains the `Clang C++ compiler <https://en.wikipedia.org/wiki/Clang>`_, the
+`xcode IDE <https://en.wikipedia.org/wiki/Xcode>`_ and other Apple development
+tools which are required for building C++ applications on OS X.
+If you are installing xcode for the first time, or have just installed a new
+version then you will need to agree to the license before you can do
+command-line builds: ::
+
+    sudo xcodebuild -license accept
+
+You will need to install the `XQuartz <http://xquartz.macosforge.org/landing/>`_ X11 Window
+system if you want to build the GUI apps (AlethZero and Mix), because Qt on OS X uses that X11 layer.
+
+Our OS X builds require you to `install the Homebrew <http://brew.sh>`_
+package manager for installing external dependencies.
+Here's how to `uninstall Homebrew
 <https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/FAQ.md#how-do-i-uninstall-homebrew>`_,
-if you ever want to start again from scratch.  
+if you ever want to start again from scratch.
 
-Install `xcode <https://developer.apple.com/xcode/download/>`_, which contains
-the compiler, the IDE and other Apple development tools.
-
-Install `XQuartz <http://xquartz.macosforge.org/landing/>`_ X11 Window
-system if you want to build the GUI apps.
-
-
-Install external dependencies
---------------------------------------------------------------------------------
-
-Install all required external dependencies ::
+Install all required external dependencies using Homebrew ::
 
     brew update
     brew upgrade
-    brew install boost --c++11
-    brew install cmake cryptopp miniupnpc leveldb gmp jsoncpp libmicrohttpd libjson-rpc-cpp
+    brew install boost cmake cryptopp miniupnpc leveldb gmp jsoncpp libjson-rpc-cpp libmicrohttpd
     brew install homebrew/versions/llvm38
+
+And also the following if you want to build the GUI apps:  ::
+
     brew install qt5 --with-d-bus
 
-**NB:  The Qt5 step takes many hours on most people's machines.**  This is because it is
+**NOTE#1:  The Qt5 step takes many hours on most people's machines.**  This is because it is
 using non-default build settings which result in build-from-source.  It also appears
 to use around 20Gb of temporary disk space.   Beware!
+
+**NOTE#2:  Qt and Qt5 packages in Homebrew cannot coexist.**, If you have Qt
+installed then you will need to uninstall it before you can build cpp-ethereum successfully: ::
+
+    brew uninstall --force qt
 
 
 Clone the repository
@@ -78,11 +93,11 @@ To clone the source code, execute the following command: ::
 
     git clone --recursive https://github.com/ethereum/webthree-umbrella.git
 
-You can either generate a makefile and build on command-line or generate an
-Xcode project and build Ethereum in the IDE.
+You can either generate a `Makefile <https://en.wikipedia.org/wiki/Makefile>`_ and
+build on the command-line or you can generate an Xcode project and build in the IDE.
 
 
-Generate a makefile
+Command-line build
 --------------------------------------------------------------------------------
 
 From the project root: ::
@@ -91,11 +106,19 @@ From the project root: ::
     cd build
     cmake ..
     make -j4             (or different value, depending on your number of CPU cores)
+
+
+Install your own build
+--------------------------------------------------------------------------------
+
+You can also use the same Makefile to install your own build globally on your machine: ::
+
     make install
 
-This will also install the cli tool and libs into **/usr/local** and **/usr/bin**.
+This will install binaries into **/usr/local/** and **/usr/bin/**.
 
-Xcode
+
+Generate xcode project
 --------------------------------------------------------------------------------
 
 From the project root: ::
@@ -104,4 +127,5 @@ From the project root: ::
     cd build_xc
     cmake -G Xcode ..
 
-This will generate an Xcode project file along with some configs for you: **cpp-ethereum.xcodeproj**. Open this file in XCode and you should be able to build the project
+This will generate an Xcode project file called **cpp-ethereum.xcodeproj**,
+which you can then open with xcode and build/debug/run.
