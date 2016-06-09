@@ -29,6 +29,7 @@ We would like to thank everybody who helped in this effort for `their contributi
 - `Alex Fisher <https://github.com/alexfisher>`_
 - `Arno Gaboury <http://github.com/gabx>`_
 - `Taylor Gerring <https://github.com/tgerring>`_
+- `Dave Hoover <https://github.com/redsquirrel>`_
 - `Joël Hubert <https://github.com/jmahhh>`_
 - `Makoto Inoue <https://github.com/makoto>`_
 - `Keith Irwin <https://github.com/keith24>`_
