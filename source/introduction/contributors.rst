@@ -33,6 +33,7 @@ We would like to thank everybody who helped in this effort for `their contributi
 - `Joël Hubert <https://github.com/jmahhh>`_
 - `Makoto Inoue <https://github.com/makoto>`_
 - `Keith Irwin <https://github.com/keith24>`_
+- `Matthias Käppler <https://github.com/mttkay>`_
 - `Bas van Kervel <https://github.com/bas-vk>`_
 - `Michael Kilday <https://github.com/taoteh1221>`_
 - `Chandra Kumar <https://github.com/klmoney>`_
@@ -60,8 +61,8 @@ We would like to thank everybody who helped in this effort for `their contributi
 - `Ben Tannenbaum <https://github.com/BenUsername>`_
 - `Dean Alain Vernon <https://github.com/azulmarino>`_
 - `Paul Worrall <https://github.com/pjworrall>`_
-- `Will Zeng <https://github.com/willzeng>`_
 - `Luca Zeug <https://github.com/luclu>`_
+- `Will Zeng <https://github.com/willzeng>`_
 
 And these pseudonymous contributors:
 
