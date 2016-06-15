@@ -275,10 +275,10 @@ You will now create a contract on the blockchain by `sending a transaction <http
 
 .. code:: js
 
-    primaryAddress = eth.accounts[0]
-    abi  = [{ constant: false, inputs: [{ name: 'a', type: 'uint256' } ]
-    MyContract = eth.contract.abi;
-    contract = MyContract.new(arg1, arg2, ...,{from: primaryAddress, data: evmByteCodeFromPreviousSection})
+    var primaryAddress = eth.accounts[0]
+    var abi = [{ constant: false, inputs: [{ name: 'a', type: 'uint256' } ]
+    var MyContract = eth.contract(abi)
+    var contract = MyContract.new(arg1, arg2, ..., {from: primaryAddress, data: evmByteCodeFromPreviousSection})
 
 All binary data is serialised in hexadecimal form. Hex strings always have a
 hex prefix ``0x``.
