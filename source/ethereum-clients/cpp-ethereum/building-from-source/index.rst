@@ -30,6 +30,7 @@ Platform-specific instructions
    linux.rst
    windows.rst
    osx.rst
+   freebsd.rst
    android.rst
    ios.rst
    rpi.rst

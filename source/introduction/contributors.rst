@@ -27,6 +27,7 @@ We would like to thank everybody who helped in this effort for `their contributi
 - `Andrey Fedorov <https://github.com/anfedorov>`_
 - `Rocky Fikki <https://github.com/rfikki>`_
 - `Alex Fisher <https://github.com/alexfisher>`_
+- `Enrique Fynn <https://github.com/enriquefynn>`_
 - `Arno Gaboury <http://github.com/gabx>`_
 - `Taylor Gerring <https://github.com/tgerring>`_
 - `Dave Hoover <https://github.com/redsquirrel>`_
