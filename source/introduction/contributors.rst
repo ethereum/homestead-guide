@@ -63,6 +63,7 @@ We would like to thank everybody who helped in this effort for `their contributi
 - `Dean Alain Vernon <https://github.com/azulmarino>`_
 - `Paul Worrall <https://github.com/pjworrall>`_
 - `Luca Zeug <https://github.com/luclu>`_
+- `Weiyang Zhu <https://github.com/ZhuWeiyang>`_
 - `Will Zeng <https://github.com/willzeng>`_
 
 And these pseudonymous contributors:
