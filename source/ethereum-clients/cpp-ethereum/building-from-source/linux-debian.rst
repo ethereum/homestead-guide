@@ -94,6 +94,7 @@ Install json-rpc-cpp building from source: ::
     sudo make install
     sudo ldconfig  
 
+
 Troubleshooting
 +++++++++++++++
 
@@ -132,44 +133,4 @@ Troubleshooting
        which already exists in this directory.
 
  The workaround is ``$ cmake .. -DGUI=0 -DTESTS=0``
-
-* In case of the error below during ``make``: ::
-
-    [ 49%] Building C object libethereum/libethash/CMakeFiles/ethash.dir/internal.c.o
-    /home/<user>/webthree-umbrella/libethereum/libethash/internal.c: In function ‘ethash_light_compute_internal’:
-    /home/<user>/webthree-umbrella/libethereum/libethash/internal.c:243:34: error: array subscript is above array bounds [-Werror=array-bounds]
-    [   uint32_t reduction = mix->words[w + 0];
-                                       ^
- It will necessary an workaround, changing the file ``webthree-helpers/blob/develop/cmake/EthCompilerSettings.cmake``
-
- First, find the code: ::
-
-    21    # Enables all the warnings about constructions that some users consider questionable,
-    22    # and that are easy to avoid.  Also enable some extra warning flags that are not
-    23    # enabled by -Wall.   Finally, treat at warnings-as-errors, which forces developers
-    24    # to fix warnings as they arise, so they don't accumulate "to be fixed later".
-    25    add_compile_options(-Wall)
-    26    add_compile_options(-Wextra)
-    27    add_compile_options(-Werror)
-
- and comment line 27 ``add_compile_options(-Werror)``: ::
-
-    27    # add_compile_options(-Werror)
-
- Now, find the code: ::
-
-     98    # TODO - Nail down exactly where these warnings are manifesting and
-     99	   # try to suppress them in a more localized way.   Notes in this file
-    100	   # indicate that the first is needed for sepc256k1 and that the
-    101    # second is needed for the (clog, cwarn) macros.  These will need
-    102    # testing on at least OS X and Ubuntu.
-    103    add_compile_options(-Wno-unused-function)
-    104    add_compile_options(-Wno-dangling-else)
-
- and include a new line ``add_compile_options(-Wno-array-bounds)``: ::
-
-    102    # testing on at least OS X and Ubuntu.
-    103    add_compile_options(-Wno-unused-function)
-    104    add_compile_options(-Wno-dangling-else)
-    105    add_compile_optoins(-Wno-array-bounds)
 
