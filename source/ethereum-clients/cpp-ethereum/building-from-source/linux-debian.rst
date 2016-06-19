@@ -5,12 +5,20 @@ Installing dependencies for Debian
 
 Debian Jessie (8.5)
 --------------------------------------------------------------------------------
+
+.. warning::
+
+    GUI applications haven't been tried on Debian. So, to build without GUI applications use: ::
+
+        cmake .. -DGUI=0
+
 Steps: ::
 
     sudo apt-get -y install gcc
     sudo apt-get -y install g++
-    sudo apt-get -y install cmake
     sudo apt-get -y install unzip
+    sudo apt-get -y install cmake
+Make sure you installed the cmake version 3.5.2. If apt-get installed an older version, compile it from source following the instructions in this `link <https://cmake.org/download/>`_ ::
 
     sudo apt-get -y install libboost-all-dev
     sudo apt-get -y install libgmp-dev
@@ -93,44 +101,3 @@ Install json-rpc-cpp building from source: ::
     make
     sudo make install
     sudo ldconfig  
-
-
-Troubleshooting
-+++++++++++++++
-
-* In case of the error below: ::
-
-    CMake Error at libethereum/test/CMakeLists.txt:26 (file):
-      file STRINGS file
-      "/home/<user>/webthree-umbrella/libethereum/test/./..//./fuzzHelper.cpp"
-      cannot be read.
-
- 
-    CMake Error at libethereum/test/CMakeLists.txt:34 (add_test):
-      add_test given test NAME ""RandomTestCreationSuite"/&createRandomTest"
-      which already exists in this directory.
-
-
-    CMake Error at libethereum/test/CMakeLists.txt:26 (file):
-      file STRINGS file
-      "/home/<user>/webthree-umbrella/libethereum/test/./..//./createRandomTest.cpp"
-      cannot be read.
-
-
-    CMake Error at libethereum/test/CMakeLists.txt:34 (add_test):
-      add_test given test NAME ""RandomTestCreationSuite"/&createRandomTest"
-      which already exists in this directory.
-
-
-    CMake Error at libethereum/test/CMakeLists.txt:26 (file):
-      file STRINGS file
-      "/home/<user>/webthree-umbrella/libethereum/test/./..//./icap.cpp" cannot
-      be read.
-
-
-     CMake Error at libethereum/test/CMakeLists.txt:34 (add_test):
-       add_test given test NAME ""RandomTestCreationSuite"/&createRandomTest"
-       which already exists in this directory.
-
- The workaround is ``$ cmake .. -DGUI=0 -DTESTS=0``
-
