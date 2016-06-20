@@ -31,6 +31,7 @@ Installing dependencies (distro-specific)
    linux-fedora.rst
    linux-opensuse.rst
    linux-arch.rst
+   linux-debian.rst
 
 Build on the command-line
 ================================================================================
