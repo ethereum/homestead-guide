@@ -16,6 +16,7 @@ We would like to thank everybody who helped in this effort for `their contributi
 
 .. image:: ../img/Feels-Good-Man-Frog-02.png
 
+- `Ricardo de Azevedo Brandao <https://github.com/programonauta>`_
 - `Santanu Barai <https://github.com/0mkara>`_
 - `Brooks Boyd <https://onename.com/midnight>`_
 - `RJ Catalano <https://onename.com/VoR0220>`_
