@@ -25,33 +25,28 @@ very confusing for end-users, because there is no universal
 
 As we enter the Homestead phase, the Go client is very, very dominant, but
 it hasn't always been that way, and won't necessarily be that way in the
-future.
+future.   All of the clients except ethereumH have Homestead-compatible
+releases.  The table below contains links to the latest release.
 
-Only a subset of the clients have released versions which are Homestead
-compatible.  There are links to those releases in the right-hand column of
-the table below.   The clients without links are all working on getting
-Homestead-compatible versions released.   Keep checking back.   We will
-add links to them here as they are released.
-
-+------------------------+------------+------------------------+-----------------------------------+
-| Client                 | Language   | Developers             | Homestead Release                 |
-+========================+============+========================+===================================+
-| :ref:`go-ethereum`     | Go         | `Ethereum Foundation`_ | `go-ethereum-v1.4.8`_             |
-+------------------------+------------+------------------------+-----------------------------------+
-| :ref:`Parity`          | Rust       | `Ethcore`_             | `Parity-v1.2.0`_                  |
-+------------------------+------------+------------------------+-----------------------------------+
-| :ref:`cpp-ethereum`    | C++        | `Ethereum Foundation`_ | `cpp-ethereum-v1.2.9`_            |
-+------------------------+------------+------------------------+-----------------------------------+
-| :ref:`pyethapp`        | Python     | `Ethereum Foundation`_ | `pyethapp-v1.2.2`_                |
-+------------------------+------------+------------------------+-----------------------------------+
-| :ref:`ethereumjs-lib`  | Javascript | `Ethereum Foundation`_ | `ethereumjs-lib-v3.0.0`_          |
-+------------------------+------------+------------------------+-----------------------------------+
-| :ref:`Ethereum\(J\)`   | Java       | `\<ether.camp\>`_      | `ethereumJ-v1.3.0-RC2-daoRescue`_ |
-+------------------------+------------+------------------------+-----------------------------------+
-| :ref:`ruby-ethereum`   | Ruby       | `Jan Xie`_             | `ruby-ethereum-v0.9.1`_           |
-+------------------------+------------+------------------------+-----------------------------------+
-| :ref:`ethereumH`       | Haskell    | `BlockApps`_           | not available yet                 |
-+------------------------+------------+------------------------+-----------------------------------+
++------------------------+------------+------------------------+------------------------------------+
+| Client                 | Language   | Developers             | Latest release                     |
++========================+============+========================+====================================+
+| :ref:`go-ethereum`     | Go         | `Ethereum Foundation`_ | `go-ethereum-v1.4.9`_              |
++------------------------+------------+------------------------+------------------------------------+
+| :ref:`Parity`          | Rust       | `Ethcore`_             | `Parity-v1.2.0`_                   |
++------------------------+------------+------------------------+------------------------------------+
+| :ref:`cpp-ethereum`    | C++        | `Ethereum Foundation`_ | `cpp-ethereum-v1.2.9`_             |
++------------------------+------------+------------------------+------------------------------------+
+| :ref:`pyethapp`        | Python     | `Ethereum Foundation`_ | `pyethapp-v1.2.3`_                 |
++------------------------+------------+------------------------+------------------------------------+
+| :ref:`ethereumjs-lib`  | Javascript | `Ethereum Foundation`_ | `ethereumjs-lib-v3.0.0`_           |
++------------------------+------------+------------------------+------------------------------------+
+| :ref:`Ethereum\(J\)`   | Java       | `\<ether.camp\>`_      | `ethereumJ-v1.3.0-RC3-daoRescue2`_ |
++------------------------+------------+------------------------+------------------------------------+
+| :ref:`ruby-ethereum`   | Ruby       | `Jan Xie`_             | `ruby-ethereum-v0.9.3`_            |
++------------------------+------------+------------------------+------------------------------------+
+| :ref:`ethereumH`       | Haskell    | `BlockApps`_           | no Homestead release yet           |
++------------------------+------------+------------------------+------------------------------------+
 
 .. _Ethereum Foundation: https://ethereum.org/foundation
 .. _\<ether.camp\>: http://www.ether.camp
@@ -59,13 +54,13 @@ add links to them here as they are released.
 .. _Ethcore: https://ethcore.io/
 .. _Jan Xie: https://github.com/janx/
 
-.. _go-ethereum-v1.4.8: https://github.com/ethereum/go-ethereum/releases/tag/v1.4.8
+.. _go-ethereum-v1.4.9: https://github.com/ethereum/go-ethereum/releases/tag/v1.4.9
 .. _cpp-ethereum-v1.2.9: https://github.com/ethereum/webthree-umbrella/releases/tag/v1.2.9
 .. _ethereumjs-lib-v3.0.0: https://github.com/ethereumjs/ethereumjs-lib/releases/tag/v3.0.0
-.. _ethereumJ-v1.3.0-RC2-daoRescue: https://github.com/ethereum/ethereumj/releases/tag/1.3.0-RC2-daoRescue
+.. _ethereumJ-v1.3.0-RC3-daoRescue2: https://github.com/ethereum/ethereumj/releases/tag/1.3.0-RC3-daoRescue2
 .. _Parity-v1.2.0: https://github.com/ethcore/parity/releases/tag/v1.2.0
-.. _pyethapp-v1.2.2: https://github.com/ethereum/pyethapp/releases/tag/v1.2.2
-.. _ruby-ethereum-v0.9.1: https://rubygems.org/gems/ruby-ethereum/versions/0.9.1
+.. _pyethapp-v1.2.3: https://github.com/ethereum/pyethapp/releases/tag/v1.2.3
+.. _ruby-ethereum-v0.9.3: https://rubygems.org/gems/ruby-ethereum/versions/0.9.3
 
 ********************************************************************************
 Installing a Client
