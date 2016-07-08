@@ -60,7 +60,7 @@ Now, install LLVM building from source: ::
     sudo apt-get -y install build-essential
     mkdir ~/download/llvm
     cd ~/download/llvm
-    wget -c http://llvm.org/releases/3.7.1/llvm-3.8.0.src.tar.xz
+    wget -c http://llvm.org/releases/3.8.0/llvm-3.8.0.src.tar.xz
     wget -c http://llvm.org/releases/3.8.0/cfe-3.8.0.src.tar.xz
     wget -c http://llvm.org/releases/3.8.0/compiler-rt-3.8.0.src.tar.xz
 
