@@ -42,7 +42,7 @@ This is the best place to ask technical questions. Help your fellow etherians by
 Gitter Rooms
 ================================================================================
 
-Gitter is our forum of choice for daily chat. It is the virtual coworking space where devs hang out, so it is where you can get quick help and a bit of handholding in needed.
+Gitter is our forum of choice for daily chat. It is the virtual coworking space where devs hang out, so it is where you can get quick help and a bit of handholding if needed.
 
 Gitter uses Github accounts, offers Github integration (notification of pull requests etc), private channels, provides markdown formatting, and more.
 
