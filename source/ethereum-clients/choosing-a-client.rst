@@ -35,7 +35,7 @@ releases.  The table below contains links to the latest release.
 +------------------------+------------+------------------------+-------------------------------------+
 | :ref:`Parity`          | Rust       | `Ethcore`_             | `Parity-v1.2.2`_                    |
 +------------------------+------------+------------------------+-------------------------------------+
-| :ref:`cpp-ethereum`    | C++        | `Ethereum Foundation`_ | `cpp-ethereum-v1.2.9`_              |
+| :ref:`cpp-ethereum`    | C++        | `Ethereum Foundation`_ | `cpp-ethereum-v1.3.0`_              |
 +------------------------+------------+------------------------+-------------------------------------+
 | :ref:`pyethapp`        | Python     | `Ethereum Foundation`_ | `pyethapp-v1.3.2`_                  |
 +------------------------+------------+------------------------+-------------------------------------+
@@ -55,7 +55,7 @@ releases.  The table below contains links to the latest release.
 .. _Jan Xie: https://github.com/janx/
 
 .. _go-ethereum-v1.4.10: https://github.com/ethereum/go-ethereum/releases/tag/v1.4.10
-.. _cpp-ethereum-v1.2.9: https://github.com/ethereum/webthree-umbrella/releases/tag/v1.2.9
+.. _cpp-ethereum-v1.3.0: https://github.com/bobsummerwill/cpp-ethereum/releases/tag/v1.3.0
 .. _ethereumjs-lib-v3.0.0: https://github.com/ethereumjs/ethereumjs-lib/releases/tag/v3.0.0
 .. _ethereumJ-v1.3.0-RC5-DaoHardFork: https://github.com/ethereum/ethereumj/releases/tag/1.3.0-RC5-DaoHardFork
 .. _Parity-v1.2.2: https://github.com/ethcore/parity/releases/tag/v1.2.2
