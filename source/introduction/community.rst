@@ -92,7 +92,7 @@ For discussion of EIPs, use the `gitter channel for EIP discussions`_.
 
 * `EIP guidelines and sample EIP <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1.mediawiki>`_
 * `EIP template <https://github.com/ethereum/EIPs/blob/master/eip-X.mediawiki>`_
-* `EIP repository and README <https://github.com/ethereum/EIPshttps://github.com/ethereum/EIPs>`_
+* `EIP repository and README <https://github.com/ethereum/EIPs>`_
 * `gitter channel for EIP discussions <https://gitter.im/ethereum/EIPs>`_
 
 Meetups
