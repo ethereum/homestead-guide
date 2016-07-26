@@ -20,7 +20,23 @@ Clone the repository
 
 To clone the source code, execute the following command: ::
 
-    git clone --recursive https://github.com/ethereum/webthree-umbrella.git
+    git clone --recursive https://github.com/bobsummerwill/cpp-ethereum.git
+    cd cpp-ethereum
+    git checkout merge_repos
+    git submodule update --init
+
+Installing dependencies (the easy way!)
+================================================================================
+
+For the "Homecoming" release (v1.3.0) in July 2016 we added a new "one-button"
+script for installing external dependencies, which identifies your distro and
+installs the packages which you need.   This script is new and incomplete, but
+is a way easier experience than the manual steps described in the next section
+of this document.   Give it a go!  It works for Ubuntu and macOS and a few
+other distros already.   If you try it, and it doesn't work for you, please let
+us know and we will prioritize fixing your distro!::
+
+    ./install_deps.sh
 
 
 Installing dependencies (distro-specific)
