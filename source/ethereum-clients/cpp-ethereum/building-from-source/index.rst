@@ -6,10 +6,14 @@ Building from source
 Overview
 --------------------------------------------------------------------------------
 
-The **cpp-ethereum** codebase is spread over several
+The **cpp-ethereum** codebase is is mid-transition from several
 Git repositories which are all grouped as sub-modules under the 
 `webthree-umbrella <http://github.com/ethereum/webthree-umbrella>`_ repo
-on Github.
+on Github back to `cpp-ethereum <http://github.com/ethereum/cpp-ethereum>`_.
+
+As of right now (only for the v1.3.0 release), the canonical mainline is at:
+
+https://github.com/bobsummerwill/cpp-ethereum/tree/merge_repos
 
 We use a common `CMake <https://cmake.org/>`_ build system to generate
 platform-specific build files, meaning that the workflow is very similar
@@ -29,7 +33,7 @@ Platform-specific instructions
 
    linux.rst
    windows.rst
-   osx.rst
+   macos.rst
    freebsd.rst
    android.rst
    ios.rst

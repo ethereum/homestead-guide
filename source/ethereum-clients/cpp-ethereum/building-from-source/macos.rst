@@ -29,8 +29,9 @@ The `cpp-ethereum-development
 <https://gitter.im/ethereum/cpp-ethereum-development>`_ gitter channel is where we hang out, and try
 to work together to get known issues resolved.
 
-We only support the two most recent OS X versions:
+We only support the following OS X versions:
 
+- `OS X Mavericks (10.9) <https://en.wikipedia.org/wiki/OS_X_Mavericks>`_
 - `OS X Yosemite (10.10) <https://en.wikipedia.org/wiki/OS_X_Yosemite>`_
 - `OS X El Capitan (10.11) <https://en.wikipedia.org/wiki/OS_X_El_Capitan>`_
 
@@ -38,6 +39,17 @@ The cpp-ethereum code base does not build on older OS X versions and this
 is not something which we will ever support.  If you are using an older
 OS X version, we recommend that you update to the latest release, not
 just so that you can build cpp-ethereum, but for your own security.
+
+
+Clone the repository
+--------------------------------------------------------------------------------
+
+To clone the source code, execute the following command: ::
+
+    git clone --recursive https://github.com/bobsummerwill/cpp-ethereum.git
+    cd cpp-ethereum
+    git checkout merge_repos
+    git submodule update --init
 
 
 Pre-requisites and external dependencies
@@ -54,45 +66,16 @@ command-line builds: ::
 
     sudo xcodebuild -license accept
 
-You will need to install the `XQuartz <http://xquartz.macosforge.org/landing/>`_ X11 Window
-system if you want to build the GUI apps (AlethZero and Mix), because Qt on OS X uses that X11 layer.
-
 Our OS X builds require you to `install the Homebrew <http://brew.sh>`_
 package manager for installing external dependencies.
 Here's how to `uninstall Homebrew
 <https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/FAQ.md#how-do-i-uninstall-homebrew>`_,
 if you ever want to start again from scratch.
 
-Install all required external dependencies using Homebrew ::
+We now have a "one button" script which installs all required external dependencies
+on macOS and on numerous Linux distros.   This used to a multi-step manual process: ::
 
-    brew update
-    brew upgrade
-    brew install boost cmake cryptopp miniupnpc leveldb gmp jsoncpp libjson-rpc-cpp libmicrohttpd
-    brew install homebrew/versions/llvm38
-
-And also the following if you want to build the GUI apps:  ::
-
-    brew install qt5 --with-d-bus
-
-**NOTE#1:  The Qt5 step takes many hours on most people's machines.**  This is because it is
-using non-default build settings which result in build-from-source.  It also appears
-to use around 20Gb of temporary disk space.   Beware!
-
-**NOTE#2:  Qt and Qt5 packages in Homebrew cannot coexist.**, If you have Qt
-installed then you will need to uninstall it before you can build cpp-ethereum successfully: ::
-
-    brew uninstall --force qt
-
-
-Clone the repository
---------------------------------------------------------------------------------
-
-To clone the source code, execute the following command: ::
-
-    git clone --recursive https://github.com/ethereum/webthree-umbrella.git
-
-You can either generate a `Makefile <https://en.wikipedia.org/wiki/Makefile>`_ and
-build on the command-line or you can generate an Xcode project and build in the IDE.
+    ./install_dep.sh
 
 
 Command-line build
