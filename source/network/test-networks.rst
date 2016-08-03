@@ -236,7 +236,11 @@ blockchain unless they have the same genesis block, so you can make as many priv
   }
 
 Save a file called :file:`CustomGenesis.json`.
-You will reference this when starting your geth node using the following flag:
+You will reference this when starting your geth node using the following command:
+
+``init /path/to/CustomGenesis.json``
+
+If you are using an older version of geth (1.3.x), you should instead use:
 
 ``--genesis /path/to/CustomGenesis.json``
 
@@ -295,11 +299,49 @@ After you have created your custom genesis block JSON file and created a directo
 
 .. code-block:: Console
 
-  geth --identity "MyNodeName" --genesis /path/to/CustomGenesis.json --rpc --rpcport "8080" --rpccorsdomain "*" --datadir "C:\chains\TestChain1" --port "30303" --nodiscover --rpcapi "db,eth,net,web3" --networkid 1999 console
+  geth --identity "MyNodeName" --genesis /path/to/CustomGenesis.json --rpc --rpcport "8080" --rpccorsdomain "*" --datadir "C:\chains\TestChain1" --port "30303" --nodiscover --rpcapi "db,eth,net,web3" --networkid 1999 init /path/to/CustomGenesis.json
 
 .. note:: Please change the flags to match your custom settings.
 
+This will initialize your genesis block.  To interact with geth through the console enter: 
+
+.. code-block:: Console
+
+  geth --identity "MyNodeName" --genesis /path/to/CustomGenesis.json --rpc --rpcport "8080" --rpccorsdomain "*" --datadir "C:\chains\TestChain1" --port "30303" --nodiscover --rpcapi "db,eth,net,web3" --networkid 1999 console
+
 You will need to start your geth instance with your custom chain command every time you want to access your custom chain. If you just type "geth" in your console, it will not remember all of the flags you have set.
+
+The full list of methods available through the javascript console is available on `the geth wiki on github <https://github.com/ethereum/go-ethereum/wiki/JavaScript-Console>`_
+
+If you already have a geth node running, you can attach another geth instance to it using:
+
+.. code-block:: Console
+
+  geth attach
+
+Now you'll need to initialize a new account on the testnest, and set it as your etherbase (the address that will receive mining rewards).
+
+In the javascript console type
+
+.. code-block:: Console
+
+  personal.newAccount("password")
+
+.. note:: Replace with the password of your choice
+
+Now we'll set it as the etherbase:
+
+.. code-block:: Console
+
+  miner.setEtherbase(personal.listAccounts[0])
+
+If successful, the console will print "true"
+
+Finally, you are ready to start mining test ether:
+
+.. code-block:: Console
+
+  miner.start()
 
 Pre-allocating ether to your account
 --------------------------------------------------------------------------------
@@ -320,7 +362,7 @@ A difficulty of "0x400" allows you to mine Ether very quickly on your private te
 
 .. note:: Replace ``0x1fb891f92eb557f4d688463d0d7c560552263b5a`` with your account address.
 
-Save your genesis file and rerun your private chain command. Once geth is fully loaded, close it by .
+Save your genesis file and rerun your private chain command. 
 
 We want to assign an address to the variable ``primary`` and check its balance.
 
@@ -339,13 +381,13 @@ Alternatively, you can launch the console with ``geth console`` (keep the same p
 
 .. code-block:: Console
 
-  > eth.accounts
+  > personal.listAccounts
 
 This will return the array of account addresses you possess.
 
 .. code-block:: Console
 
-  > primary = eth.accounts[0]
+  > primary = personal.listAccounts[0]
 
 .. note:: Replace ``0`` with your account's index. This console command should return your primary Ethereum address.
 
@@ -353,7 +395,7 @@ Type the following command:
 
 .. code-block:: Console
 
-  > balance = web3.fromWei(eth.getBalance(primary), "ether");
+  > balance = web3.fromWei(web3.eth.getBalance(primary), "ether");
 
 This should return ``7.5`` indicating you have that much Ether in your account. The reason we had to put such a large number in the alloc section of your genesis file is because the "balance" field takes a number in wei which is the smallest denomination of the Ethereum currency Ether (see _`Ether`).
 
