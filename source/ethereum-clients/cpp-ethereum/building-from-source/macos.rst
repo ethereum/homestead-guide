@@ -75,7 +75,7 @@ if you ever want to start again from scratch.
 We now have a "one button" script which installs all required external dependencies
 on macOS and on numerous Linux distros.   This used to a multi-step manual process: ::
 
-    ./install_dep.sh
+    ./install_deps.sh
 
 
 Command-line build
