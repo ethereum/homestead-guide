@@ -6,7 +6,7 @@ Building from source
 Overview
 --------------------------------------------------------------------------------
 
-The **cpp-ethereum** codebase is is mid-transition from several
+The **cpp-ethereum** codebase is mid-transition from several
 Git repositories which are all grouped as sub-modules under the 
 `webthree-umbrella <http://github.com/ethereum/webthree-umbrella>`_ repo
 on Github back to `cpp-ethereum <http://github.com/ethereum/cpp-ethereum>`_.
