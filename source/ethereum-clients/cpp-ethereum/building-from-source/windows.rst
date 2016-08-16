@@ -40,10 +40,8 @@ Get the source
 
 Clone the git repository containing all the source code by executing the following command: ::
 
-    git clone --recursive https://github.com/bobsummerwill/cpp-ethereum.git
+    git clone --recursive https://github.com/ethereum/cpp-ethereum.git
     cd cpp-ethereum
-    git checkout merge_repos
-    git submodule update --init
     
 
 Get the external dependencies
@@ -52,7 +50,7 @@ Get the external dependencies
 Execute the CMake script that downloads and unpacks pre-built external libraries
 needed to build the project: ::
 
-    install_deps.bat
+    scripts\install_deps.bat
 
 
 Generate Visual Studio project files
