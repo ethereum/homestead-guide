@@ -13,10 +13,11 @@ Ethereum Homestead Documentation
    :alt: ethereum-logo
    :align: center
 
-This documentation is the result of an ongoing collaborative effort by
-volunteers from the Ethereum :ref:`community`.  Although it has not been
-authorized by the :ref:`foundation`, we hope you will find it useful.
-We welcome new :ref:`contributors`.
+The Ethereum Homestead Documentation describes the Ethereum blockchain network
+and its second major software update, Homestead.
+
+The Ethereum volunteer :ref:`community` that maintains the documentation welcomes
+your suggestions and also welcomes newv:ref:`contributors`.
 
 
 Contents
