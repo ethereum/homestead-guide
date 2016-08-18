@@ -15,7 +15,7 @@ The goal is to create documentation with information, short tutorials, and examp
 Any information that is overly specific, technical, or not necessary to accomplish the documentation's goal will remain on the Ethereum Github Wiki. It may be referenced in this guide if necessary.
 
 Although much of the information will be similar between the Frontier Guide and the Homestead Guide, efforts need to be made to make sure the information ported over is still accurate.
-This document is client agnostic and examples and tutorials may be based on any client that the author decides to write on, as long as a distinction is made as to what client is being used in the examples/tutorials.
+This document is client agnostic, and examples and tutorials may be based on any client that the author decides to write on, as long as a distinction is made as to what client is being used in the examples/tutorials.
 
 Although overly specific and technical documentation will not be included in the first iterations of this guide, community use and popularity of this guide will dictate future decisions to move Github wiki documentation to this format.
 

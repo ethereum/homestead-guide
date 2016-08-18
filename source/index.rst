@@ -15,8 +15,8 @@ Ethereum Homestead Documentation
 
 This documentation is the result of an ongoing collaborative effort by
 volunteers from the Ethereum :ref:`community`.  Although it has not been
-authorized by the :ref:`foundation`, we hope you will find it useful,
-and welcome new :ref:`contributors`.
+authorized by the :ref:`foundation`, we hope you will find it useful.
+We welcome new :ref:`contributors`.
 
 
 Contents

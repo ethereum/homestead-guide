@@ -192,7 +192,7 @@ iteration is controlled by a conditional block.
     InitStmt = SimpleStmt .
     PostStmt = SimpleStmt .
 
-A "for" in it's simplest form is a C-Like "while" statement (therefor
+A "for" in its simplest form is a C-Like "while" statement (therefor
 Mutan doesn't have a "while")
 
 .. code:: go
@@ -201,7 +201,7 @@ Mutan doesn't have a "while")
         a = a * 2
     }
 
-A "for" statement in it's purest form is controlled my a initialiser,
+A "for" statement in its purest form is controlled my a initialiser,
 condition and a post statement which will be executed at the end of the
 Block
 

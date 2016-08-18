@@ -63,8 +63,8 @@ note that data in these examples will differ on your local node. If you want to 
     > curl --data '{"jsonrpc":"2.0","method":"eth_getBalance", "params": ["0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a"], "id":2}' localhost:8545
     {"id":2,"jsonrpc":"2.0","result":"0x1639e49bba16280000"}
 
-Remember when we said that numbers are hex encoded? In this case the balance is returned in Wei as a hex string. If we want to have the balance in
-Ether as a number we can use web3 from the geth console.
+Remember when we said that numbers are hex encoded? In this case the balance is returned in wei as a hex string. If we want to have the balance in
+ether as a number we can use web3 from the geth console.
 
 .. code:: js
 
@@ -126,7 +126,7 @@ Now that our contract is deployed we can interact with it. There are 2 methods f
 If we look at the documentation for the `eth_sendTransaction <https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_sendtransaction>`_ we can see that we need to supply
 several arguments. In our case we need to specify the ``from``, ``to`` and ``data`` arguments. ``From`` is the public address of our account and ``to``
 the contract address. The ``data`` argument is a bit harder. It contains a payload that defines which method must be called and with which arguments.
-This is were the ABI comes into play. The ABI defines how to define and encode data for the EVM. You can read 
+This is were the ABI comes into play. The ABI defines how to define and encode data for the EVM. You can read
 `all the details about the ABI here <https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI>`_.
 
 The bytes of the payload is the function selector and defines which method is called. This is done by taking the first 4 bytes from the Keccak hash
@@ -270,4 +270,3 @@ Other Resources
 
 * `EtherNodes <http://ethernodes.org/>`_ - Geographic distribution of nodes and split by client
 * `EtherListen <http://www.etherlisten.com>`_ - Realtime Ethereum transaction visualizer and audializer
-

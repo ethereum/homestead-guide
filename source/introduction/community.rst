@@ -22,7 +22,7 @@ Further specialised subreddits:
 * `/r/EtherMining <https://www.reddit.com/r/EtherMining/>`_ - Ether mining discussion
 * `/r/Ethmarket <https://www.reddit.com/r/ethmarket/>`_ - Marketplace for individuals looking to exchange goods and services for Ether
 * `/r/Ethinvestor <https://www.reddit.com/r/Ethinvestor/>`_ - News and prospects for Ethereum investors. Following the long term trends in the Ethereum marketplace.
-* `/r/ethereumism/ <https://www.reddit.com/r/ethereumism/>`_ - a bit more ism, ostic, ical, ist and tinfoil hats, pyramids and crystal ball type of views - the ethereal side of Ethereum
+* `/r/ethereumism/ <https://www.reddit.com/r/ethereumism/>`_ - A bit more ism, ostic, ical, ist and tinfoil hats, pyramids and crystal ball type of views - the ethereal side of Ethereum
 
 
 .. _Ethereum subreddit: https://www.reddit.com/r/ethereum/
