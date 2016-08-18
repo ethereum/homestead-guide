@@ -63,7 +63,7 @@ note that data in these examples will differ on your local node. If you want to 
     > curl --data '{"jsonrpc":"2.0","method":"eth_getBalance", "params": ["0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a"], "id":2}' localhost:8545
     {"id":2,"jsonrpc":"2.0","result":"0x1639e49bba16280000"}
 
-Remember when we said that numbers are hex encoded? In this case the balance is returned in eei as a hex string. If we want to have the balance in
+Remember when we said that numbers are hex encoded? In this case the balance is returned in wei as a hex string. If we want to have the balance in
 ether as a number we can use web3 from the geth console.
 
 .. code:: js
