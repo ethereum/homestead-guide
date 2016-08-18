@@ -11,14 +11,14 @@ Questions
 
 What is Ethereum?
 ----------------------------------------------------------------------------------------------
-Ethereum is a decentralized smart contracts platform that is powered by a cryptocurrency called Ether. A good starting point to learn more about it's workings would be the ":ref:`what-is-ethereum`" page.
+Ethereum is a decentralized smart contracts platform that is powered by a cryptocurrency called Ether. A good starting point to learn more about its workings would be the ":ref:`what-is-ethereum`" page.
 
 I have heard of Ethereum, but what are Geth, Mist, Ethminer, Mix?
 ----------------------------------------------------------------------------------------------
 
 * **Geth**: This is the Go implementation of an Ethereum node, and is the basis for any interactions with the Ethereum blockchain. Running this locally will allow you to easily interact with the Ethereum blockchain. Read the `go-ethereum installation instructions <https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum>`_.
 
-* **Mist**: This is the equivalent of a web browser, but for the Ethereum platform. It acts as a GUI to display the accounts and contracts that you interact with. It also allows you to create and interact with contracts in a graphical user interface without ever touching the command line. If you are not a developer and just want to store Ether and interact with Ethereum contracts, then Mist is the program to use. Downloads can be found on the `Mist releases page  <https://github.com/ethereum/mist/releases>`_.
+* **Mist**: This is the equivalent of a web browser, but for the Ethereum platform. It acts as a GUI to display the accounts and contracts that you interact with. It also allows you to create and interact with contracts in a graphical user interface without ever touching the command line. If you are not a developer and just want to store ether and interact with Ethereum contracts, then Mist is the program to use. Downloads can be found on the `Mist releases page  <https://github.com/ethereum/mist/releases>`_.
 
 * **Ethminer**: A standalone miner. This can be used to mine or benchmark a mining set-up. It is compatible with eth, geth, and pyethereum. Check out the :ref:`mining` page for more information.
 

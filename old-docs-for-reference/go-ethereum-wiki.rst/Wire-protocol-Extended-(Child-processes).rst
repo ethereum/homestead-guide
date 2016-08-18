@@ -1,5 +1,5 @@
 Ethereum Child processes allow any node to connect to an existing node
-and share it's parent process to handle all network communication and
+and share its parent process to handle all network communication and
 data persisting. This will allow for multiple Ethereum light nodes on
 the same host with full access to the block chain through the parent
 process.

@@ -45,7 +45,7 @@ Dapp development requires an understanding of the Web3 Javascript API, the JSON 
 * `JSON RPC API <https://github.com/ethereum/wiki/wiki/JSON-RPC>`__ - This is the low level JSON RPC 2.0 interface to interface with a node. This API is used by the `Web3 JavaScript API <https://github.com/ethereum/wiki/wiki/JavaScript-API>`__.
 * `Solidity Docs <https://solidity.readthedocs.org/en/latest/>`__ -
   Solidity is the Ethereum developed Smart Contract language, which compiles to EVM (Ethereum Virtual Machine) opcodes.
-* :ref:`test-networks` - Test networks help developers develop and test Ethereum code and network interactions without spending their own Ether on the main network. Test network options are listed below.
+* :ref:`test-networks` - Test networks help developers develop and test Ethereum code and network interactions without spending their own ether on the main network. Test network options are listed below.
 * :ref:`IDE-or-development-framework`. This assists you in developing,
   debugging, and deploying Ethereum applications.
 
@@ -93,7 +93,7 @@ Mix-IDE
 
 Mix is the official Ethereum IDE that allows developers to build and deploy contracts and decentralized applications on top of the Ethereum blockchain. It includes a Solidity source code debugger.
 :ref:`sec:mix`
- 
+
 IDEs/Frameworks
 ================================================================================
 
@@ -102,7 +102,7 @@ Below are developer frameworks and IDEs used for writing Ethereum dapps.
 * `Truffle <https://github.com/ConsenSys/truffle>`__ - Truffle is a development environment, testing framework and asset pipeline for Ethereum.
 * `Dapple <https://github.com/nexusdev/dapple>`__ - Dapple is a tool for Solidity developers to help build and manage complex contract systems on Ethereum-like blockchains.
 * `Populus <http://populus.readthedocs.org/en/latest/>`__ - Populus is a Smart Contract development framework written in python.
-* `Eris-PM <https://docs.erisindustries.com/documentation/eris-package-manager/>`__ - The Eris Package Manager deploys and tests smart contract systems on private and public chains.  
+* `Eris-PM <https://docs.erisindustries.com/documentation/eris-package-manager/>`__ - The Eris Package Manager deploys and tests smart contract systems on private and public chains.
 * `Embark <https://iurimatias.github.io/embark-framework/>`__ - Embark is a Ðapp development framework written in JavaScript.
 * `EtherScripter \(obsolete, discontinued\) <http://etherscripter.com/0-5-1/>`_
 * `Resilience Raw Transaction Broadcaster <https://github.com/resilience-me/broadcaster/>`_
@@ -117,9 +117,9 @@ Commandline console for Ethereum nodes.
 
 Here you could find a list of available commands `ethereum node control commands <https://github.com/ethereum/ethereum-console/blob/master/web3Admin.js>`_
 
-To use this console you would need to start a local ethereum node with ipc communication socket enabled (file ``geth.ipc`` in data directory). 
+To use this console you would need to start a local ethereum node with ipc communication socket enabled (file ``geth.ipc`` in data directory).
 By default ipc socket should be located at you local home directory in .ethereum after you started a node.
-You could also set ``--test`` option to use specific node test commands. 
+You could also set ``--test`` option to use specific node test commands.
 
 .. code:: Console
 
@@ -132,15 +132,15 @@ In the console you could then type
 
    > web3.eth.<command name> (arguments, function(){})
 
-Here the defenition of ``--test`` mode node commands: 
+Here the defenition of ``--test`` mode node commands:
 
 .. code:: Console
 
-   > web3.test.addBlock("[RLP]", function(){}) - Add a block from a string containing it's hex RLP
+   > web3.test.addBlock("[RLP]", function(){}) - Add a block from a string containing its hex RLP
    > web3.test.rewindToBlock:("[int]", function(){}) - Reset the blockchain to specified block number
    > web3.test.mineBlocks:("[int]", function(){}) - Mine a certain amount of NoProof blocks into chain
    > web3.test.modifyTimestamp:("[int]", function(){}) - Set current block timestamp
-   > web3.test.setChainParams:("[json]", function(){}) - Reset the blockchain with given node configuration file 
+   > web3.test.setChainParams:("[json]", function(){}) - Reset the blockchain with given node configuration file
 
 More information about node `configuration <../network/test-networks.html#custom-networks-eth>`_ file.
 

@@ -18,7 +18,7 @@ Externally owned accounts (EOAs)
 
 An externally controlled account
 
-- has an Ether balance,
+- has an ether balance,
 - can send transactions (ether transfer or trigger contract code),
 - is controlled by private keys,
 - has no associated code.
@@ -28,7 +28,7 @@ Contract accounts
 
 A contract
 
-- has an Ether balance,
+- has an ether balance,
 - has associated code,
 - code execution is triggered by transactions or messages (calls) received from other contracts.
 - when executed
@@ -42,7 +42,7 @@ All action on the Ethereum block chain is set in motion by transactions fired fr
 This execution needs to be completely deterministic, its only context is the position of the block on the blockchain and all data available.
 The blocks on the blockchain represent units of time, the blockchain itself is a temporal dimension and represents the entire history of states at the discrete time points designated by the blocks on the chain.
 
-All Ether balances and values are denominated in units of wei: 1 Ether is 1e18 wei.
+All ether balances and values are denominated in units of wei: 1 ether is 1e18 wei.
 
 .. note:: "Contracts" in Ethereum should not be seen as something that should be "fulfilled" or "complied with"; rather, they are more like "autonomous agents" that live inside of the Ethereum execution environment, always executing a specific piece of code when "poked" by a message or transaction, and having direct control over their own ether balance and their own key/value store to store their permanent state.
 
@@ -83,7 +83,7 @@ When you are running a decentralized application (dapp), it interacts with the b
 
 When a contract is executed as a result of being triggered by a message or transaction, every instruction is executed on every node of the network. This has a cost: for every executed operation there is a specified cost, expressed in a number of gas units.
 
-Gas is the name for the execution fee that senders of transactions need to pay for every operation made on an Ethereum blockchain. The name gas is inspired by the view that this fee acts as cryptofuel, driving the motion of smart contracts. Gas is purchased for ether from the miners that execute the code. Gas and ether are decoupled deliberately since units of gas align with computation units having a natural cost, while the price of ether generally fluctuates as a result of market forces. The two are mediated by a free market: the price of gas is actually decided by the miners, who can refuse to process a transaction with a lower gas price than their minimum limit. To get gas you simply need to add ether to your account. The Ethereum clients automatically purchase gas for your Ether in the amount you specify as your maximum expenditure for the transaction.
+Gas is the name for the execution fee that senders of transactions need to pay for every operation made on an Ethereum blockchain. The name gas is inspired by the view that this fee acts as cryptofuel, driving the motion of smart contracts. Gas is purchased for ether from the miners that execute the code. Gas and ether are decoupled deliberately since units of gas align with computation units having a natural cost, while the price of ether generally fluctuates as a result of market forces. The two are mediated by a free market: the price of gas is actually decided by the miners, who can refuse to process a transaction with a lower gas price than their minimum limit. To get gas you simply need to add ether to your account. The Ethereum clients automatically purchase gas for your ether in the amount you specify as your maximum expenditure for the transaction.
 
 The Ethereum protocol charges a fee per computational step that is executed in a contract or transaction to prevent deliberate attacks and abuse on the Ethereum network. Every transaction is required to include a gas limit and a fee that it is willing to pay per gas. Miners have the choice of including the transaction and collecting the fee or not. If the total amount of gas used by the computational steps spawned by the transaction, including the original message and any sub-messages that may be triggered, is less than or equal to the gas limit, then the transaction is processed. If the total gas exceeds the gas limit, then all changes are reverted, except that the transaction is still valid and the fee can still be collected by the miner. All excess gas not used by the transaction execution is reimbursed to the sender as Ether. You do not need to worry about overspending, since you are only charged for the gas you consume. This means that it is useful as well as safe to send transactions with a gas limit well above the estimates.
 
@@ -119,7 +119,7 @@ The approximate cost, using the default gas price (as of January 2016), would be
 
 3 \* 0.05e12 = 1.5e11 wei
 
-Since 1 Ether is 1e18 wei, the total cost would be 0.00000015 Ether.
+Since 1 ether is 1e18 wei, the total cost would be 0.00000015 Ether.
 
 This is a simplification since it ignores some costs, such as the cost of passing the 2 numbers to contract, before they can even be added.
 

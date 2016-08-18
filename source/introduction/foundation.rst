@@ -3,7 +3,7 @@
 ***************************************************
 The Ethereum Foundation
 ***************************************************
-The Ethereum Foundation is a non-profit organization registered in Switzerland, and has the purpose of managing the funds that were raised from the Ether Sale in order to best serve the Ethereum and decentralized technology ecosystem.
+The Ethereum Foundation is a non-profit organization registered in Switzerland, and has the purpose of managing the funds that were raised from the ether Sale in order to best serve the Ethereum and decentralized technology ecosystem.
 
 Founded July 2014 in Switzerland, Stiftung Ethereum’s mission is the promotion of developments of new technologies and applications, especially in the fields of new open and decentralized software architectures.
 
