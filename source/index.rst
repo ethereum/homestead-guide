@@ -17,7 +17,7 @@ The Ethereum Homestead Documentation describes the Ethereum blockchain network
 and its second major software update, Homestead.
 
 The Ethereum volunteer :ref:`community` that maintains the documentation welcomes
-your suggestions and also welcomes newv:ref:`contributors`.
+your suggestions and also welcomes new :ref:`contributors`.
 
 
 Contents
