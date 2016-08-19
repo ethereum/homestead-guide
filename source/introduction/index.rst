@@ -6,7 +6,6 @@ Introduction
    :maxdepth: 2
 
    what-is-ethereum.rst
-   how-to-use-this-guide.rst
    the-homestead-release.rst
 
    web3.rst

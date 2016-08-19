@@ -11,7 +11,7 @@ which was coordinated by:
 
 - `Viktor Trón ("zelig") <https://github.com/zelig>`_
 - `Hudson Jameson ("Souptacular") <https://github.com/Souptacular>`_
- 
+
 We would like to thank everybody who helped in this effort for `their contributions <https://github.com/ethereum/homestead-guide/graphs/contributors>`_:
 
 .. image:: ../img/Feels-Good-Man-Frog-02.png
