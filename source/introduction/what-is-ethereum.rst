@@ -12,14 +12,17 @@ world develop and maintain its open source, on-chain programming environment.
 Origins
 ================================================================================
 
-In 2014, Ethereum founders Vitalik Buterin, Gavin Wood and Jeffrey Wilcke began
-implementing Ethereum as a scalable, trustless smart contract platform.
+ In late 2013, Ethereum's inventor Vitalik Buterin proposed that a single blockchain
+ with the capability to be reprogrammed to perform any arbitrarily complex
+ computation could subsume these many other projects.  In 2014, Ethereum founders
+ Vitalik Buterin, Gavin Wood and Jeffrey Wilcke began implementing Ethereum as a 
+ scalable, trustless smart contract platform.
 
 ================================================================================
 Ethereum Virtual Machine
 ================================================================================
 
-Unlike previous generations of blockchain technology which pre-defined operationd,
+Unlike previous generations of blockchain technology which pre-defined operations,
 Ethereum allows you to create on chain program operations of any complexity.
 In this way, it serves as a platform for many different types of decentralized
 blockchain applications, including cryptocurrencies.
