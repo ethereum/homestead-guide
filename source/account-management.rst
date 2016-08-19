@@ -213,7 +213,7 @@ Troubleshooting:
 Using Eth
 --------------------------------------------------------------------------------
 
-Every options related to key management available using geth can be used the same way in eth.
+Every option related to key management available using geth can be used the same way in eth.
 
 Below are "account" related options:
 
