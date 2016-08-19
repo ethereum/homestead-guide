@@ -4,58 +4,56 @@
 What is Ethereum ?
 ################################################################################
 
-Ethereum is a blockchain platform that lets you build decentralized applications.
-As an open source body of code, people around the world develop and maintain its
-open, on-chain programming environment.
-
+Ethereum is a blockchain platform that lets you build decentralized applications
+and deploy them via its distributed network of database nodes.  People around the
+world develop and maintain its open source, on-chain programming environment.
 
 ================================================================================
 Origins
 ================================================================================
 
 In 2014, Ethereum founders Vitalik Buterin, Gavin Wood and Jeffrey Wilcke began
-work on a next-generation blockchain that implemented a
-general, fully trustless smart contract platform.
+implementing Ethereum as a scalable, trustless smart contract platform.
 
 ================================================================================
 Ethereum Virtual Machine
 ================================================================================
 
-Ethereum is a programmable blockchain. Rather than give users a set of pre-defined
-operations (e.g. bitcoin transactions), Ethereum allows users to create their own
-operations of any complexity they wish. In this way, it serves as a platform for
-many different types of decentralized blockchain applications, including cryptocurrencies.
+Unlike previous generations of blockchain technology which pre-defined operationd,
+Ethereum allows you to create on chain program operations of any complexity.
+In this way, it serves as a platform for many different types of decentralized
+blockchain applications, including cryptocurrencies.
 
-Ethereum in the narrow sense refers to a suite of protocols that define a platform
-for decentralised applications. At the heart of it is the :ref:`Ethereum Virtual Machine ("EVM") <the-EVM>`,
-which can execute code of arbitrary algorithmic complexity. In computer science terms,
-Ethereum is "Turing complete". Developers can create applications that run on the
-EVM using friendly programming languages modelled on existing languages like JavaScript and Python.
+The Ethereum network protocols define the platform at the heart of which is the
+:ref:`Ethereum Virtual Machine ("EVM") <the-EVM>`, which can execute code of
+arbitrary algorithmic complexity.
+
+In computer science terms, Ethereum is "Turing complete", meaning that developers
+can create applications that run on the EVM using friendly programming languages
+modelled on existing languages like JavaScript and Python.
 
 Like any blockchain, Ethereum also includes a peer-to-peer network protocol. The
 Ethereum blockchain database is maintained and updated by many nodes connected to
 the network. Each and every node of the network runs the EVM and executes the
-same instructions. For this reason, Ethereum is sometimes described evocatively
-as a "world computer".
+same instructions. For this reason, Ethereum is sometimes described as a "world computer".
 
 This massive parallelisation of computing across the entire Ethereum network is
 not done to make computation more efficient. In fact, this process makes computation
-on Ethereum far slower and more expensive than on a traditional "computer". Rather,
-every Ethereum node runs the EVM in order to maintain consensus across the blockchain.
-Decentralized consensus gives Ethereum extreme levels of fault tolerance,
-ensures zero downtime, and makes data stored on the blockchain forever unchangeable and censorship-resistant.
+on Ethereum far slower and more expensive than on a traditional "computer".
 
-The Ethereum platform itself is featureless or value-agnostic. As with other programming
-languages, it is up to entrepreneurs and developers to decide what it should be
-used for. However, it is clear that certain application types benefit more than
-others from Ethereum's capabilities.
+Rather, every Ethereum node runs the EVM to maintain consensus across the blockchain.
+Decentralized consensus gives Ethereum extreme levels of fault tolerance, and makes
+data stored on the blockchain censorship-resistant.
 
-Specifically, Ethereum is **suited for applications
-that automate direct interaction between peers or facilitate coordinated group action
-across a network. For instance, applications for coordinating peer-to-peer marketplaces, or the
+The Ethereum platform itself is not an end-user application. It is up to entrepreneurs
+and developers to decide what it should be used for.
+
+Specifically, Ethereum is suited for applications that automate direct interaction
+between peers or facilitate coordinated group action across a network. Examples
+include applications for coordinating peer-to-peer marketplaces or the
 automation of complex financial contracts.
 
-In contrast to Bitcoin which largely limits itself to the exchange of cash without middlemen,
+In contrast with blockchain technologies that largely limit themselves to the exchange of money,
 Ethereum serves much wider purposes. Beyond financial applications, any environments
 where trust, security, and permanence are important – for instance, asset-registries,
 voting, governance, and the internet of things – make ideal candidates for the Ethereum platform.
@@ -65,11 +63,10 @@ How does Ethereum work?
 ================================================================================
 
 Ethereum incorporates many features and technologies that will be familiar to users
-of Bitcoin while also introducing many innovations of its own.
+of other blockchain technologies while also introducing many innovations of its own.
 
-Unlike Bitcoin, :ref:`Ethereum's blockchain holds accounts <Accounts>`. It tracks the state of
-every account. All state transitions on the Ethereum blockchain are transfers
-of value and information between accounts.
+For example, :ref:`Ethereum's blockchain holds accounts <Accounts>` and tracks their state.
+All state transitions on the Ethereum blockchain are transfers of value and information between accounts.
 
 There are two types of accounts:
 
