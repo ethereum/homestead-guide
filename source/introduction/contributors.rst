@@ -24,6 +24,7 @@ We would like to thank everybody who helped in this effort for `their contributi
 - `Keri Clowes <http://github.com/kclowes>`_
 - `François Deppierraz <https://github.com/ctrlaltdel>`_
 - `Bertie Dinneen <https://github.com/bdinn1>`_
+- `Gregg Dourgarian <https://github.com/greggdourgarian`>_
 - `Erik Edrosa <https://github.com/OrangeShark>`_
 - `Andrey Fedorov <https://github.com/anfedorov>`_
 - `Rocky Fikki <https://github.com/rfikki>`_
@@ -47,6 +48,7 @@ We would like to thank everybody who helped in this effort for `their contributi
 - `Andrew Mazzola <https://github.com/admazzola>`_
 - `Dominik Miszkiewicz <https://github.com/dmiszkiewicz>`_
 - `John Mooney <https://github.com/mooneyj>`_
+- `Steven Natera <https://github.com/nodox>`_
 - `Chris Peel <https://github.com/christianpeel>`_
 - `Craig Polley <https://github.com/polleykc>`_
 - `Colm Ragu <https://github.com/colm>`_
@@ -62,7 +64,9 @@ We would like to thank everybody who helped in this effort for `their contributi
 - `Giacomo Tazzari <http://github.com/giact>`_
 - `Ben Tannenbaum <https://github.com/BenUsername>`_
 - `Dean Alain Vernon <https://github.com/azulmarino>`_
+- `Daniel Weinmann <https://github.com/danielweinmann>`_
 - `Paul Worrall <https://github.com/pjworrall>`_
+- `Haoyu Yang <https://github.com/FrankMN>`_
 - `Luca Zeug <https://github.com/luclu>`_
 - `Weiyang Zhu <https://github.com/ZhuWeiyang>`_
 - `Will Zeng <https://github.com/willzeng>`_
@@ -77,4 +81,5 @@ And these pseudonymous contributors:
 - `mWo <https://github.com/moneroexamples>`_
 - `Omkara <https://github.com/0mkara>`_
 - `tflux99 <https://github.com/tflux99>`_
+- `Tim H <https://github.com/hobti01>`_
 - `xyzether <https://github.com/xyzether>`_
