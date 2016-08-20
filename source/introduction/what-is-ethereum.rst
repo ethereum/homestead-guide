@@ -3,7 +3,11 @@
 ################################################################################
 What is Ethereum ?
 ################################################################################
+.. raw:: html
 
+    <embed>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/H6bGuKN3m6E" frameborder="0" allowfullscreen></iframe>
+    </embed>
 Ethereum is a blockchain platform that lets you build decentralized applications
 and deploy them via its distributed network of database nodes.  People around the
 world develop and maintain its open source, on-chain programming environment.
@@ -11,12 +15,17 @@ world develop and maintain its open source, on-chain programming environment.
 ================================================================================
 Origins
 ================================================================================
+ .. raw:: html
 
- In late 2013, Ethereum's inventor Vitalik Buterin proposed that a single blockchain
- with the capability to be reprogrammed to perform any arbitrarily complex
- computation could subsume these many other projects.  In 2014, Ethereum founders
- Vitalik Buterin, Gavin Wood and Jeffrey Wilcke began implementing Ethereum as a
- scalable, trustless smart contract platform.
+     <embed>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/l9dpjN3Mwps" frameborder="0" allowfullscreen></iframe>
+     </embed>
+     
+In late 2013, Ethereum's inventor Vitalik Buterin proposed that a single blockchain
+with the capability to be reprogrammed to perform any arbitrarily complex
+computation could subsume these many other projects.  In 2014, Ethereum founders
+Vitalik Buterin, Gavin Wood and Jeffrey Wilcke began implementing Ethereum as a
+scalable, trustless smart contract platform.
 
 ================================================================================
 The Ethereum Virtual Machine

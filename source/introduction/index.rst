@@ -8,7 +8,7 @@ Introduction
    what-is-ethereum.rst
    the-homestead-release.rst
 
-   web3.rst
+   decentralized_apps.rst
    history-of-ethereum.rst
    community.rst
    foundation.rst
