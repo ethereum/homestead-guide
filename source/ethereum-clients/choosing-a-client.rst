@@ -43,7 +43,7 @@ releases.  The table below contains links to the latest release.
 +------------------------+------------+------------------------+-------------------------------------+
 | :ref:`Ethereum\(J\)`   | Java       | `\<ether.camp\>`_      | `ethereumJ-v1.3.0-RC5-DaoHardFork`_ |
 +------------------------+------------+------------------------+-------------------------------------+
-| :ref:`ruby-ethereum`   | Ruby       | `Jan Xie`_             | `ruby-ethereum-v0.9.3`_             |
+| :ref:`ruby-ethereum`   | Ruby       | `Jan Xie`_             | `ruby-ethereum-v0.9.4`_             |
 +------------------------+------------+------------------------+-------------------------------------+
 | :ref:`ethereumH`       | Haskell    | `BlockApps`_           | no Homestead release yet            |
 +------------------------+------------+------------------------+-------------------------------------+
@@ -60,7 +60,7 @@ releases.  The table below contains links to the latest release.
 .. _ethereumJ-v1.3.0-RC5-DaoHardFork: https://github.com/ethereum/ethereumj/releases/tag/1.3.0-RC5-DaoHardFork
 .. _Parity-v1.3.0: https://github.com/ethcore/parity/releases/tag/v1.3.0
 .. _pyethapp-v1.4.0: https://github.com/ethereum/pyethapp/releases/tag/v1.4.0
-.. _ruby-ethereum-v0.9.3: https://rubygems.org/gems/ruby-ethereum/versions/0.9.3
+.. _ruby-ethereum-v0.9.4: https://rubygems.org/gems/ruby-ethereum/versions/0.9.4
 
 ********************************************************************************
 Installing a Client
