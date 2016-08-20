@@ -1,7 +1,7 @@
 .. _account-types-gas-and-transactions:
 
 ********************************************************************************
-Account Types, Gas, and Transactions
+Account types, gas, and transactions
 ********************************************************************************
 
 EOA vs contract accounts

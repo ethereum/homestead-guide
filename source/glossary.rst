@@ -13,11 +13,10 @@ Glossary
 .. _dec-app:
 
    decentralized application (= dapp_)
-      Service that operates without a central trusted party. An application  that enables direct interaction/agreements/communication between end users and/or resources without a middleman. See :ref:`dapps`.
+      A service that operates without a central trusted party. An application  that enables direct interaction/agreements/communication between end users and/or resources without a middleman. See :ref:`dapps`.
 
    DAO
-      decentralized autonomous organization
-      DAO is type of contract on the blockchain (or a suite of contracts) that is supposed to codify, enforce or automate the workings of an organization including governance, fund-raising, operations, spending and expansion.
+      A DAO (decentralized autonomous organization) is a type of contract on the blockchain codifies, enforces or automates the workings of an organization including governance, fund-raising, operations, spending and expansion.
 
    identity
       A set of cryptographically verifiable interactions that have the property that they were all created by the same person.
@@ -32,7 +31,11 @@ Glossary
       The property of an identity that other entities believe that identity to be either (1) competent at some specific task, or (2) trustworthy in some context, i.e., not likely to betray others even if short-term profitable.
 
    escrow
-      If two mutually-untrusting entities are engaged in commerce, they may wish to pass funds through a mutually trusted third party and instruct that party to send the funds to the payee only when evidence of product delivery has been shown. This reduces the risk of the payer or payee committing fraud. Both this construction and the third party is called escrow.
+      A bond that allows two mutually-untrusting entities to pass funds through
+      a mutually trusted third party and instruct that party to send the funds
+      to the payee only when evidence of product delivery has been shown. This
+      reduces the risk of the payer or payee committing fraud. Both this
+      construction and the third party are called escrows.
 
    deposit
       Digital property placed into a contract involving another party such that if certain conditions are not satisfied that property is automatically forfeited and either credited to a counterparty as insurance against the conditions, or destroyed (= burnt = equally distributed) or donated to some charitable funds.
@@ -203,7 +206,7 @@ Glossary
       The agreement among all nodes in the network about the state of the Ethereum network.
 
    homestead
-      Homestead is the second major version release of the Ethereum platform. Homestead includes several protocol changes and a networking change that makes possible further network upgrades: `EIP\-2 Main homestead hardfork changes <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2.mediawiki>`_; `EIP\-7 Hardfork EVM update (DELEGATECALL) <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7.md>`_; `EIP\-8 devp2p forward compatibility <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-8.md>`_. Homestead launched when block 1,150,000 was reached on the Mainnet. 
+      Homestead is the second major version release of the Ethereum platform. Homestead includes several protocol changes and a networking change that makes possible further network upgrades: `EIP\-2 Main homestead hardfork changes <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2.mediawiki>`_; `EIP\-7 Hardfork EVM update (DELEGATECALL) <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7.md>`_; `EIP\-8 devp2p forward compatibility <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-8.md>`_. Homestead launched when block 1,150,000 was reached on the Mainnet.
 
    metropolis
       The third stage of Ethereum's release. This is the stage when the user interfaces come out (e.g. Mist), including a dapp store, and non-technical users should feel comfortable joining at this point.

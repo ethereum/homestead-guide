@@ -63,7 +63,7 @@ releases.  The table below contains links to the latest release.
 .. _ruby-ethereum-v0.9.3: https://rubygems.org/gems/ruby-ethereum/versions/0.9.3
 
 ********************************************************************************
-Installing a Client
+Installing a client
 ********************************************************************************
 
 There are a number of "official" clients whose development has been funded

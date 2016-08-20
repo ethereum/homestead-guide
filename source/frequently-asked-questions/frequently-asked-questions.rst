@@ -104,10 +104,6 @@ How will Ethereum ensure the network is capable of making 10,000+ transactions-p
 ----------------------------------------------------------------------------------------------
 Ethereum is planning on implementing a proof-of-stake consensus protocol change during the Serenity phase of their development roadmap. More information on the likely Ethereum PoS candidate and how it may increase transactions-per-second can be `found here <https://blog.ethereum.org/2015/08/01/introducing-casper-friendly-ghost/>`_.
 
-Where do the contracts reside?
-----------------------------------------------------------------------------------------------
-TODO
-
 Your question is still not answered?
 ----------------------------------------------------------------------------------------------
 Ask the community on `Ethereum StackExchange <http://ethereum.stackexchange.com/>`_.

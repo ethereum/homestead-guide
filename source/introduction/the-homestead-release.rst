@@ -1,8 +1,8 @@
 ********************************************************************************
-The Homestead Release
+The Homestead release
 ********************************************************************************
 
-Homestead is the second major version of the Ethereum platform and is the first production release of Ethereum. It includes several protocol changes and a networking change that provides the ability to do further network upgrades. The first version of Ethereum, called the Frontier release, was essentially a beta release that allowed developers to learn, experiment, and begin building Ethereum decentralized apps and tools. 
+Homestead is the second major version of the Ethereum platform and is the first production release of Ethereum. It includes several protocol changes and a networking change that provides the ability to do further network upgrades. The first version of Ethereum, called the Frontier release, was essentially a beta release that allowed developers to learn, experiment, and begin building Ethereum decentralized apps and tools.
 
 Milestones of the Ethereum development roadmap
 -----------------------------------------------

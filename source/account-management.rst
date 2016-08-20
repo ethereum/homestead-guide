@@ -1,5 +1,5 @@
 ********************************************************************************
-Account Management
+Account management
 ********************************************************************************
 
 .. _Accounts:
@@ -174,7 +174,7 @@ Creating an account using the GUI Mist Ethereum wallet couldn’t be easier. In 
 .. Note:: The Mist wallet is still in active development, so details of the steps outlined above may change with upgrades.
 
 
-Creating a Multi-Signature Wallet in Mist
+Creating a multi-signature wallet in Mist
 --------------------------------------------------------------------------------
 
 The Mist Ethereum wallet has an option to secure your wallet balance with a multisig wallet. The advantage of using a multisig wallet is that it requires authorization from more than one account to withdrawal larger amounts from your balance. Before you can create a multisig wallet, you'll need to create more than one account.
@@ -308,43 +308,6 @@ Now let's make sure it worked properly by listing the keys in the wallet:
   055dde03-47ff-dded-8950-0fe39b1fa101 0092e965… XE472EVKU3CGMJF2YQ0J9RO1Y90BC0LDFZ  test
 
 It reports one key on each line (for a total of one key here). In this case our key is stored in a file 055dde... and has an ICAP address beginning XE472EVK.... Not especially easy things to remember so rather helpful that it has its proper name, test, too.
-
-Importing your presale wallet
-================================================================================
-
-
-Using Mist Ethereum wallet
---------------------------------------------------------------------------------
-
-Importing your presale wallet using the GUI Mist Ethereum wallet is very easy. In fact, you will be asked if you want to import your presale wallet during the installation of the app.
-
-.. Warning:: Mist wallet is beta software. Beware and use it at your own risk.
-
-Instructions for installing the Mist Ethereum wallet are given in the section :ref:`Creating an account: Using Mist Ethereum wallet <using-mist-ethereum-wallet>`.
-
-Simply drag-and-drop your ``.json`` presale wallet file into the designated area and enter your password to import your presale account.
-
-.. image:: img/51PresaleImportInstall.png
-   :width: 582px
-   :height: 469px
-   :scale: 75 %
-   :alt: presale-import
-   :align: center
-
-If you choose not to import your presale wallet during installation of the app, you can import it at any time by selecting the ``Accounts`` menu in the app’s menu bar and then selecting ``Import Pre-sale Accounts``.
-
-.. Note:: The Mist wallet is still in active development, so details of the steps outlined above may change with upgrades.
-
-Using geth
---------------------------------------------------------------------------------
-
-If you have a standalone installation of geth, importing your presale wallet is accomplished by executing the following command in a terminal:
-
-.. code-block:: Bash
-
-  geth wallet import /path/to/my/presale-wallet.json
-
-You will be prompted to enter your password.
 
 Updating an account
 ================================================================================
