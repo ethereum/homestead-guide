@@ -17,13 +17,15 @@ add such support, but we will not put any of our development time into
 supporting Ubuntu 32-bit builds.
 
 For the latest stable version: ::
-
+    
+    sudo apt-get install software-properties-common
     sudo add-apt-repository ppa:ethereum/ethereum
     sudo apt-get update
     sudo apt-get install cpp-ethereum
 
 If you want to use the cutting edge developer version: ::
-
+    
+    sudo apt-get install software-properties-common
     sudo add-apt-repository ppa:ethereum/ethereum
     sudo add-apt-repository ppa:ethereum/ethereum-dev
     sudo apt-get update
