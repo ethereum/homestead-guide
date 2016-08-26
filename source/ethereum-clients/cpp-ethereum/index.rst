@@ -34,6 +34,7 @@ Details
    current-status.rst
    building-from-source/index.rst
    installing-binaries/index.rst
+   contributing.rst
    architecture.rst
    portability.rst
    running.rst
