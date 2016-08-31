@@ -2,6 +2,12 @@
 Ubuntu PPA (Personal Package Archive)
 ================================================================================
 
+**NOTE - At the time of writing (31st August 2016), the PPAs are broken,
+following significant repository reorganizations and a change of automation
+process.  We have not hooked the PPA generation steps back together
+yet, though this will happen in the very near future.  In the meantime,
+please follow the** :ref:`Building Linux from source` **instructions.**
+
 We have set up PPA instances for the following Ubuntu versions:
 
 - `Ubuntu Trusty Tahr (14.04) <https://wiki.ubuntu.com/TrustyTahr>`_
