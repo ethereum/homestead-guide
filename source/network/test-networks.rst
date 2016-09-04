@@ -295,11 +295,49 @@ After you have created your custom genesis block JSON file and created a directo
 
 .. code-block:: Console
 
-  geth --identity "MyNodeName" --genesis /path/to/CustomGenesis.json --rpc --rpcport "8080" --rpccorsdomain "*" --datadir "C:\chains\TestChain1" --port "30303" --nodiscover --rpcapi "db,eth,net,web3" --networkid 1999 console
+  geth --identity "MyNodeName" --genesis /path/to/CustomGenesis.json --rpc --rpcport "8080" --rpccorsdomain "*" --datadir "C:\chains\TestChain1" --port "30303" --nodiscover --rpcapi "db,eth,net,web3" --networkid 1999 init /path/to/CustomGenesis.json
 
 .. note:: Please change the flags to match your custom settings.
 
+This will initialize your genesis block.  To interact with geth through the console enter: 
+
+.. code-block:: Console
+
+  geth --identity "MyNodeName" --genesis /path/to/CustomGenesis.json --rpc --rpcport "8080" --rpccorsdomain "*" --datadir "C:\chains\TestChain1" --port "30303" --nodiscover --rpcapi "db,eth,net,web3" --networkid 1999 console
+
 You will need to start your geth instance with your custom chain command every time you want to access your custom chain. If you just type "geth" in your console, it will not remember all of the flags you have set.
+
+The full list of methods available through the javascript console is available on `the geth wiki on github <https://github.com/ethereum/go-ethereum/wiki/JavaScript-Console>`_
+
+If you already have a geth node running, you can attach another geth instance to it using:
+
+.. code-block:: Console
+
+  geth attach
+
+Now you'll need to initialize a new account on the testnest, and set it as your etherbase (the address that will receive mining rewards).
+
+In the javascript console type
+
+.. code-block:: Console
+
+  personal.newAccount("password")
+
+.. note:: Replace with the password of your choice
+
+Now we'll set it as the etherbase:
+
+.. code-block:: Console
+
+  miner.setEtherbase(personal.listAccounts[0])
+
+If successful, the console will print "true"
+
+Finally, you are ready to start mining test ether:
+
+.. code-block:: Console
+
+  miner.start()
 
 Pre-allocating ether to your account
 --------------------------------------------------------------------------------
@@ -359,4 +397,4 @@ This should return ``7.5`` indicating you have that much Ether in your account. 
 
 
 * https://www.reddit.com/r/ethereum/comments/3kdnus/question_about_private_chain_mining_dont_upvote/
-* http://adeduke.com/2015/08/how-to-create-a-private-ethereum-chain/
+
