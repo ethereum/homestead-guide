@@ -21,3 +21,4 @@ and we will add them to this list.
    linux-sbcs.rst
    linux-cross-builds.rst
    linux-arch-aur.rst
+   linux-mageia.rst
