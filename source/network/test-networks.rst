@@ -205,7 +205,7 @@ geth (Go client)
 ================================================================================
 
 
-You either pre-generate or mine your own Ether on a private
+You either pre-generate or mine your own ether on a private
 testnet. It is a much more cost effective way of trying out
 Ethereum and you can avoid having to mine or find Morden test ether.
 
@@ -342,7 +342,7 @@ Finally, you are ready to start mining test ether:
 Pre-allocating ether to your account
 --------------------------------------------------------------------------------
 
-A difficulty of "0x400" allows you to mine Ether very quickly on your private testnet chain. If you create your chain and start mining, you should have hundreds of Ether in a matter of minutes which is way more than enough to test transactions on your network. If you would still like to pre-allocate Ether to your account, you will need to:
+A difficulty of "0x400" allows you to mine Ether very quickly on your private testnet chain. If you create your chain and start mining, you should have hundreds of ether in a matter of minutes which is way more than enough to test transactions on your network. If you would still like to pre-allocate Ether to your account, you will need to:
 
 1. Create a new Ethereum account after you create your private chain
 2. Copy your new account address
@@ -372,7 +372,7 @@ Run the command ``geth account list`` in your terminal to see what account # you
    Account #2: {e470b1a7d2c9c5c6f03bbaa8fa20db6d404a0c32}
    Account #3: {f4dd5c3794f1fd0cdc0327a83aa472609c806e99}
 
-Take note of which account # is the one that you pre-allocated Ether to.
+Take note of which account # is the one that you pre-allocated ether to.
 Alternatively, you can launch the console with ``geth console`` (keep the same parameters as when you launched ``geth`` first). Once the prompt appears, type
 
 .. code-block:: Console
@@ -393,7 +393,7 @@ Type the following command:
 
   > balance = web3.fromWei(eth.getBalance(primary), "ether");
 
-This should return ``7.5`` indicating you have that much Ether in your account. The reason we had to put such a large number in the alloc section of your genesis file is because the "balance" field takes a number in wei which is the smallest denomination of the Ethereum currency Ether (see _`Ether`).
+This should return ``7.5`` indicating you have that much ether in your account. The reason we had to put such a large number in the alloc section of your genesis file is because the "balance" field takes a number in wei which is the smallest denomination of the Ethereum currency ether (see _`Ether`).
 
 
 * https://www.reddit.com/r/ethereum/comments/3kdnus/question_about_private_chain_mining_dont_upvote/

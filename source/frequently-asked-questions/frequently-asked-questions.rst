@@ -11,16 +11,16 @@ Questions
 
 What is Ethereum?
 ----------------------------------------------------------------------------------------------
-Ethereum is a decentralized smart contracts platform that is powered by a cryptocurrency called Ether. A good starting point to learn more about it's workings would be the ":ref:`what-is-ethereum`" page.
+Ethereum is a decentralized smart contracts platform that is powered by a cryptocurrency called Ether. A good starting point to learn more about its workings would be the ":ref:`what-is-ethereum`" page.
 
 I have heard of Ethereum, but what are Geth, Mist, Ethminer, Mix?
 ----------------------------------------------------------------------------------------------
 
 * **Geth**: This is the Go implementation of an Ethereum node, and is the basis for any interactions with the Ethereum blockchain. Running this locally will allow you to easily interact with the Ethereum blockchain. Read the `go-ethereum installation instructions <https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum>`_.
 
-* **Mist**: This is the equivalent of a web browser, but for the Ethereum platform. It acts as a GUI to display the accounts and contracts that you interact with. It also allows you to create and interact with contracts in a graphical user interface without ever touching the command line. If you are not a developer and just want to store Ether and interact with Ethereum contracts, then Mist is the program to use. Downloads can be found on the `Mist releases page  <https://github.com/ethereum/mist/releases>`_.
+* **Mist**: This is the equivalent of a web browser, but for the Ethereum platform. It acts as a GUI to display the accounts and contracts that you interact with. It also allows you to create and interact with contracts in a graphical user interface without ever touching the command line. If you are not a developer and just want to store ether and interact with Ethereum contracts, then Mist is the program to use. Downloads can be found on the `Mist releases page  <https://github.com/ethereum/mist/releases>`_.
 
-* **Ethminer**: A standalone miner. This can be used to mine or benchmark a mining set-up. It is compatible with eth, geth, and pyethereum. Check out the :ref: `mining` page for more information.
+* **Ethminer**: A standalone miner. This can be used to mine or benchmark a mining set-up. It is compatible with eth, geth, and pyethereum. Check out the :ref:`mining` page for more information.
 
 * **Mix**: The integrated development environment for DApp authoring. Quickly prototype and debug decentralised applications on the Ethereum platform. More information can be found at the `Mix GitHub Page <https://github.com/ethereum/mix>`_.
 
@@ -46,7 +46,7 @@ No, you are welcome to export or move the keyfile, but always remember to backup
 
 How long should it take to download the blockchain?
 ----------------------------------------------------------------------------------------------
-The Ethereum blockchain is constantly growing, and is nearing 10GB as of March 2016. The amount of time it will take to download depends on the amount of peers you are able to connect to, your internet connection speed, and other factors. See the :ref: `download-the-blockchain-faster` section for tips on syncing the blockchain more quickly.
+The Ethereum blockchain is constantly growing, and is nearing 10GB as of March 2016. The amount of time it will take to download depends on the amount of peers you are able to connect to, your internet connection speed, and other factors. See the :ref:`download-the-blockchain-faster` section for tips on syncing the blockchain more quickly.
 
 How do I get a list of transactions into/out of an address?
 ----------------------------------------------------------------------------------------------
@@ -66,7 +66,7 @@ Yes, you can refer to the solution from `Icebox <https://github.com/ConsenSys/ic
 
 How to get testnet Ether?
 ----------------------------------------------------------------------------------------------
-See :ref: `test-networks`.
+See :ref:`test-networks`.
 
 Can a transaction be sent by a third party? i.e can transaction broadcasting be outsourced
 ----------------------------------------------------------------------------------------------
@@ -82,7 +82,7 @@ Data and contracts on the Ethereum network are encoded, but not encrypted. Every
 
 Can I store secrets or passwords on the Ethereum network?
 ----------------------------------------------------------------------------------------------
-All data on Ethereum is public. It is not possible to store secrets or passwords in Ethereum contracts without it being seen by all. There is work being done to make this a possibility through code obfuscation and other techniques. A good read would be this article by `Vitalik Buterin <https://blog.ethereum.org/2016/01/15/privacy-on-the-blockchain/>`_.
+All data on Ethereum is public. It is not possible to store secrets or passwords in Ethereum contracts without it being seen by all. There is work being done to make this a possibility through code obfuscation and other techniques. A good read would be "`Privacy on the Blockchain <https://blog.ethereum.org/2016/01/15/privacy-on-the-blockchain/>`_" by Vitalik Buterin.
 
 How will Ethereum combat centralisation of mining pools?
 ----------------------------------------------------------------------------------------------

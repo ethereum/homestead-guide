@@ -8,7 +8,7 @@ Accounts
 ================================================================================
 
 Accounts play a central role in Ethereum. There are two types of accounts: *externally owned accounts* (EOAs) and *contract accounts*. Here we focus on externally owned accounts, which will be referred to simply as *accounts*. Contract accounts will be referred to as *contracts* and are :ref:`discussed in detail in Contracts <Contracts>`. This generic notion of account subsuming both externally owned accounts and contracts is justified in that these entities are so called *state objects*. These entities have a state: accounts have balance and contracts have both balance and contract storage. The state of all accounts is the state of the Ethereum network which is updated with every block and which the network really needs to reach a consensus about.
-Account are essential for users to interact with the Ethereum blockchain via transactions.
+Accounts are essential for users to interact with the Ethereum blockchain via transactions.
 
 If we restrict Ethereum to only externally owned accounts and allow only transactions between them, we arrive at an "altcoin" system that is less powerful than bitcoin itself and can only be used to transfer ether.
 
@@ -37,7 +37,7 @@ It is safe to transfer the entire directory or any individual keyfile between Et
 Creating an account
 ================================================================================
 
-.. Warning:: **Remember your passwords and `backup your keyfiles <backup-and-restore-accounts>`_.** In order to send transactions from an account, including sending ether, you must have BOTH the keyfile and the password. Be absolutely sure to have a copy of your keyfile AND remember the password for that keyfile, and store them both as securely as possible. There are no escape routes here; lose the keyfile or forget your password and all your ether is gone. It is NOT possible to access your account without a password and there is no *forgot my password* option here. Do not forget it.
+.. Warning:: **Remember your passwords and :ref:`backup your keyfiles <backup-and-restore-accounts>`.** In order to send transactions from an account, including sending ether, you must have BOTH the keyfile and the password. Be absolutely sure to have a copy of your keyfile AND remember the password for that keyfile, and store them both as securely as possible. There are no escape routes here; lose the keyfile or forget your password and all your ether is gone. It is NOT possible to access your account without a password and there is no *forgot my password* option here. Do not forget it.
 
 Using ``geth account new``
 --------------------------------------------------------------------------------

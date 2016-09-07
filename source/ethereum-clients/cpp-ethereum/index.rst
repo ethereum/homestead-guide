@@ -16,18 +16,13 @@ cpp-ethereum
 Quick Start
 ================================================================================
 
-- The Github project for the Ethereum C++ client is https://github.com/ethereum/cpp-ethereum/
-- As of right now, though (only for the v1.3.0 release), the canonical mainline is at https://github.com/bobsummerwill/cpp-ethereum/tree/merge_repos
-- Prior to the v1.3.0 release and for several months before, the canonical mainline was at https://github.com/ethereum/webthree-umbrella
-- If you just want to install binaries then head to :ref:`Installing binaries`.
-- If you want to build from source then head to :ref:`Building from source`.
-- You can chat with the community and developers at `cpp-ethereum-gitter`_
-- The developers have their in-depth conversations at `cpp-ethereum-development-gitter`_
-- Please log any issues using the `Github issue tracker <http://github.com/ethereum/webthree-umbrella/issues>`_.
+- Welcome to the Ethereum C++ project :-)
+- The Github repository for this project is `ethereum/cpp-ethereum <https://github.com/ethereum/cpp-ethereum/>`_
+- Automation runs on `Appveyor <https://ci.appveyor.com/project/ethereum/cpp-ethereum>`_ and `TravisCI <https://travis-ci.org/ethereum/cpp-ethereum/branches>`_.
+- We have instructions for :ref:`Installing binaries` and :ref:`Building from source`.
+- Most project communication happens in our `User <https://gitter.im/ethereum/cpp-ethereum>`_ and `Developer <https://gitter.im/ethereum/cpp-ethereum-development>`_ Gitter channels.
+- Issues are tracked in our `Github issue tracker <http://github.com/ethereum/cpp-ethereum/issues>`_.
 - cpp-ethereum is extremely portable and is used on a :ref:`very broad range of platforms <cpp-ethereum-portability>`.
-
-.. _cpp-ethereum-gitter: https://gitter.im/ethereum/cpp-ethereum
-.. _cpp-ethereum-development-gitter: https://gitter.im/ethereum/cpp-ethereum-development
 
 
 Details
@@ -36,11 +31,10 @@ Details
 .. toctree::
    :maxdepth: 2
 
-   project-reboot.rst
-   history-of-the-code.rst
-   portability.rst
-   installing-binaries/index.rst
+   current-status.rst
    building-from-source/index.rst
+   installing-binaries/index.rst
+   contributing.rst
+   architecture.rst
+   portability.rst
    running.rst
-   what-are-the-modules.rst
-   ./automation.rst

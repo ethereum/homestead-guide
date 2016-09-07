@@ -1,62 +1,95 @@
+.. _Building Linux from source:
 
-################################################################################
+##################
 Building for Linux
-################################################################################
-
-NOTE - It may be possible to get the client working for Linux 32-bit, by
-disabling EVMJIT and maybe other features too.  We might accept
-pull-requests to add such support, but we will not put any of our
-own development time into supporting Linux 32-bit builds.
-
-Linux has a horror-show of distro-specific packaging system steps which are
-the first thing which we need to do before we can start on
-:ref:`Building from source`.   The sections below attempt to capture those
-steps.   If you are using as different distro and hit issues, please
-`let us know <https://gitter.im/ethereum/cpp-ethereum>`_.
+##################
 
 
 Clone the repository
-================================================================================
+====================
 
-To clone the source code, execute the following command: ::
+To clone the source code, execute the following commands:
 
-    git clone --recursive https://github.com/bobsummerwill/cpp-ethereum.git
+.. code:: bash
+
+    git clone --recursive https://github.com/ethereum/cpp-ethereum.git
     cd cpp-ethereum
-    git checkout merge_repos
-    git submodule update --init
-
-Installing dependencies (the easy way!)
-================================================================================
-
-For the "Homecoming" release (v1.3.0) in July 2016 we added a new "one-button"
-script for installing external dependencies, which identifies your distro and
-installs the packages which you need.   This script is new and incomplete, but
-is a way easier experience than the manual steps described in the next section
-of this document.   Give it a go!  It works for Ubuntu and macOS and a few
-other distros already.   If you try it, and it doesn't work for you, please let
-us know and we will prioritize fixing your distro!::
-
-    ./install_deps.sh
 
 
-Installing dependencies (distro-specific)
-================================================================================
+Installing dependencies
+=======================
+
+Linux has a horror-show of fragmentation when it comes to packaging systems.
+
+We support a `"one-button" bash script <https://github.com/ethereum/cpp-ethereum/blob/develop/scripts/install_deps.sh>`_
+which attempts to make this minefield more navigable for users of common
+distros.  It identifies your distro and installs the external packages which
+you will need, using whatever combination of package servers and
+build-from-source is required for your specific distro version.  This is a
+non-trivial task, but by that token is also something which we don't want
+anybody to have to replicate themselves.
+
+.. code:: bash
+
+    ./scripts/install_deps.sh
+
+We use the same script within our Appveyor and TravisCI automated builds
+and automated runs, so it is continuously tested, which is especially
+important on macOS, where Homebrew is a constantly moving target.
+
+The script is known to support the following distros and versions:
+
+* Mac (OS X Mavericks, OS X Yosemite, OS X El Capitan, macOS Sierra)
+* Arch Linux
+* Alpine Linux (partial)
+* Debian (Jesse)
+* Fedora (partial)
+* Mint Linux (Qiana, Rebecca, Rafaela, Rosa, Sarah)
+* Ubuntu (Trusty, Vivid, Utopic, Xenial, work-in-progress on Yakkety)
+
+If you try it, and it doesn't work for you, please
+`report the problem <https://github.com/ethereum/cpp-ethereum/issues/new>`_
+with details of your distro, your version number and any other important
+details and we can work together to get it working for your use-case.
+
+We have manual instructions for Fedora, openSUSE and Arch Linux (see below).
+If you using some other distro then please contact us and we'll see if we
+can get you going.
 
 .. toctree::
-   linux-ubuntu.rst
    linux-fedora.rst
    linux-opensuse.rst
    linux-arch.rst
-   linux-debian.rst
+
 
 Build on the command-line
 ================================================================================
 
-**ONLY** after you have installed your dependencies (the rest of this doc!): ::
+When you have installed your dependencies you can build.
+
+.. code:: bash
 
     mkdir build                                              Make a directory for the build output
     cd build                                                 Switch into that directory
 
     cmake ..                                                 To generate a makefile.
     make                                                     To build that makefile on the command-line
-    make -j <number>                                         (or) Execute makefile with multiple cores in parallel
+    make -j<number>                                          (or) Execute makefile with multiple cores in parallel
+
+
+32-bit Linux builds
+===================
+
+We have cpp-ethereum building and running successfully on many 32-bit Linux
+distros, with the main constraint being the availability of external
+dependencies in 32-bit variants.  Probably the most active demand here is
+for single-board computers like the Raspberry Pi family.
+
+You will need to disable the JIT and the heavy-weight LLVM dependency which
+comes with that.  EVMJIT only supports x86_64.  Other than that, cpp-ethereum
+should "just work" on 32-bit platforms.  To disable JIT, you will need to
+use the following command for the Makefile generation phase:
+
+.. code:: bash
+
+    cmake .. -DEVMJIT=Off

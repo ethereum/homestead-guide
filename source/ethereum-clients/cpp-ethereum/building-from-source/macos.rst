@@ -11,13 +11,13 @@ release" package manager
 which means that the ground will forever be moving underneath us unless we add
 all external dependencies to our
 `Homebrew tap <http://github.com/ethereum/homebrew-ethereum>`_, or add them as
-git sub-modules within the umbrella projects.  End-user results vary depending
+git sub-modules.  End-user results vary depending
 on when they are build the project.  Building yesterday may have worked for
 you, but that doesn't guarantee that your friend will have the same result
 today on their machine.   Needless to say, this isn't a happy situation.
 
 If you hit build breaks for OS X please look through the `Github issues
-<https://github.com/ethereum/webthree-umbrella/issues>`_ to see whether the
+<https://github.com/ethereum/cpp-ethereum/issues>`_ to see whether the
 issue you are experiencing has already been reported.   If so, please comment
 on that existing issue.  If you don't see anything which looks similar,
 please create a new issue, detailing your OS X version, cpp-ethereum version,
@@ -46,10 +46,8 @@ Clone the repository
 
 To clone the source code, execute the following command: ::
 
-    git clone --recursive https://github.com/bobsummerwill/cpp-ethereum.git
+    git clone --recursive https://github.com/ethereum/cpp-ethereum.git
     cd cpp-ethereum
-    git checkout merge_repos
-    git submodule update --init
 
 
 Pre-requisites and external dependencies
@@ -75,7 +73,7 @@ if you ever want to start again from scratch.
 We now have a "one button" script which installs all required external dependencies
 on macOS and on numerous Linux distros.   This used to a multi-step manual process: ::
 
-    ./install_dep.sh
+    ./scripts/install_deps.sh
 
 
 Command-line build

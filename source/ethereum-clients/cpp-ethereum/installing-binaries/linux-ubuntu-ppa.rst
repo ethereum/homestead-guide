@@ -2,6 +2,12 @@
 Ubuntu PPA (Personal Package Archive)
 ================================================================================
 
+**NOTE - At the time of writing (31st August 2016), the PPAs are broken,
+following significant repository reorganizations and a change of automation
+process.  We have not hooked the PPA generation steps back together
+yet, though this will happen in the very near future.  In the meantime,
+please follow the** :ref:`Building Linux from source` **instructions.**
+
 We have set up PPA instances for the following Ubuntu versions:
 
 - `Ubuntu Trusty Tahr (14.04) <https://wiki.ubuntu.com/TrustyTahr>`_
@@ -16,34 +22,17 @@ EVMJIT and maybe other features too.  We might accept pull-requests to
 add such support, but we will not put any of our development time into
 supporting Ubuntu 32-bit builds.
 
-Installing the "eth" command-line tool
---------------------------------------------------------------------------------
-
-WARNING: The **ethereum-qt** PPA will upgrade your system-wide Qt5
-installation, from 5.2 on Trusty and 5.3 on Utopic, to 5.5.
-
 For the latest stable version: ::
-
-    sudo add-apt-repository ppa:ethereum/ethereum-qt
+    
+    sudo apt-get install software-properties-common
     sudo add-apt-repository ppa:ethereum/ethereum
     sudo apt-get update
     sudo apt-get install cpp-ethereum
 
 If you want to use the cutting edge developer version: ::
-
-    sudo add-apt-repository ppa:ethereum/ethereum-qt
+    
+    sudo apt-get install software-properties-common
     sudo add-apt-repository ppa:ethereum/ethereum
     sudo add-apt-repository ppa:ethereum/ethereum-dev
     sudo apt-get update
     sudo apt-get install cpp-ethereum
-
-
-Installing the Mix IDE
---------------------------------------------------------------------------------
-
-The `Mix IDE <https://github.com/ethereum/mix>`_ is shipped on
-Ubuntu as part of the developer PPA (above).  So follow the steps
-directly above, and then also do: ::
-
-    sudo apt-get install mix-ide
-    mix-ide
