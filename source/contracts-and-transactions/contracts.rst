@@ -250,7 +250,7 @@ rest (info) will ideally live on the decentralised cloud as publicly verifiable
 metadata complementing the code on the blockchain.
 
 If your source contains multiple contracts, the output will contain an entry
-for each contact, the corresponding contract info object can be retrieved with
+for each contract, the corresponding contract info object can be retrieved with
 the name of the contract as attribute name. You can try this by inspecting the
 most current GlobalRegistrar code:
 
@@ -276,7 +276,7 @@ You will now create a contract on the blockchain by `sending a transaction <http
 .. code:: js
 
     var primaryAddress = eth.accounts[0]
-    var abi = [{ constant: false, inputs: [{ name: 'a', type: 'uint256' } ]
+    var abi = [{ constant: false, inputs: { name: 'a', type: 'uint256' } ]
     var MyContract = eth.contract(abi)
     var contract = MyContract.new(arg1, arg2, ..., {from: primaryAddress, data: evmByteCodeFromPreviousSection})
 
@@ -340,7 +340,7 @@ in one of two ways.
 When called using ``sendTransaction`` the function call is executed via sending
 a transaction.  This will cost ether to send and the call will be recorded
 forever on the blockchain.  The return value of calls made in this manner is
-the hash of the stransaction.
+the hash of the transaction.
 
 When called using ``call`` the function is executed locally in the EVM and the
 return value of the function is returned with the function.  Calls made in this
