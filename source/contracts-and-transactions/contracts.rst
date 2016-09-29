@@ -340,7 +340,7 @@ in one of two ways.
 When called using ``sendTransaction`` the function call is executed via sending
 a transaction.  This will cost ether to send and the call will be recorded
 forever on the blockchain.  The return value of calls made in this manner is
-the hash of the stransaction.
+the hash of the transaction.
 
 When called using ``call`` the function is executed locally in the EVM and the
 return value of the function is returned with the function.  Calls made in this
