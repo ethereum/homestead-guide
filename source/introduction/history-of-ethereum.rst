@@ -6,7 +6,7 @@ For a recent historical account, see `Taylor Gerring's blogpost <https://blog.et
 
 Inception
 ================================================================================
-Ethereum was initially described by Vitalik Buterin in late 2013 as a result of his research and work in the Bitcoin community. Shortly thereafter, Vitalik published the `Ethereum white paper <http://vbuterin.com/ethereum.html>`_, where he describes in detail the technical design and rationale for the Ethereum protocol and smart contracts architecture. In January 2014, Ethereum was formally announced by Vitalik at the The North American Bitcoin Conference in Miami, Florida, USA.
+Ethereum was initially described by Vitalik Buterin in late 2013 as a result of his research and work in the Bitcoin community. Shortly thereafter, Vitalik published the `Ethereum white paper <https://github.com/ethereum/wiki/wiki/White-Paper>`_, where he describes in detail the technical design and rationale for the Ethereum protocol and smart contracts architecture. In January 2014, Ethereum was formally announced by Vitalik at the The North American Bitcoin Conference in Miami, Florida, USA.
 
 Around that time, Vitalik also started working with Dr. Gavin Wood and together co-founded Ethereum. By April 2014, Gavin published the `Ethereum Yellow Paper <https://github.com/ethereum/yellowpaper>`_ that would serve as the technical specification for the Ethereum Virtual Machine (EVM). By following the detailed specification in the Yellow Paper, the Ethereum client has been implemented in seven programming languages (C++, Go, Python, Java, JavaScript, Haskell, Rust), and has resulted in better software overall.
 
