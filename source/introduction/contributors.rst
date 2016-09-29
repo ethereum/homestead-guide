@@ -24,7 +24,8 @@ We would like to thank everybody who helped in this effort for `their contributi
 - `Keri Clowes <http://github.com/kclowes>`_
 - `François Deppierraz <https://github.com/ctrlaltdel>`_
 - `Bertie Dinneen <https://github.com/bdinn1>`_
-- `Gregg Dourgarian <https://github.com/greggdourgarian`>_
+- `Gregg Dourgarian <https://github.com/greggdourgarian>`_
+- `Raghav Dua <https://github.com/duaraghav8>`_
 - `Erik Edrosa <https://github.com/OrangeShark>`_
 - `Andrey Fedorov <https://github.com/anfedorov>`_
 - `Rocky Fikki <https://github.com/rfikki>`_
@@ -61,6 +62,7 @@ We would like to thank everybody who helped in this effort for `their contributi
 - `Paul Schmitzer <https://github.com/LiteBit>`_
 - `Afri Schoedon <https://github.com/5chdn>`_
 - `Sudeep Singh <https://github.com/c0d3inj3cT>`_
+- `Conor Svensson <https://github.com/conor10>`_
 - `Giacomo Tazzari <http://github.com/giact>`_
 - `Ben Tannenbaum <https://github.com/BenUsername>`_
 - `Dean Alain Vernon <https://github.com/azulmarino>`_
@@ -74,10 +76,12 @@ We would like to thank everybody who helped in this effort for `their contributi
 And these pseudonymous contributors:
 
 - `12v <https://github.com/12v>`_
+- `ana0 <https://github.com/ana0>`_
 - `c0d3inj3cT <http://github.com/c0d3inj3cT>`_
 - `ijcoe6ru <https://github.com/ijcoe6ru>`_
 - `LucaTony <https://github.com/LucaTony>`_
 - `madhancr <https://github.com/madhancr>`_
+- `mista66 <https://github.com/mista66>`_
 - `mWo <https://github.com/moneroexamples>`_
 - `Omkara <https://github.com/0mkara>`_
 - `tflux99 <https://github.com/tflux99>`_
