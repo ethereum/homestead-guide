@@ -18,5 +18,5 @@ live Ethereum network, even though it is not economically feasible.
 Links:
 
 * Blog: http://ethereumj.io/
-* Github: https://github.com/ethereum/ethereumj
+* GitHub: https://github.com/ethereum/ethereumj
 * Gitter chat: https://gitter.im/ethereum/ethereumj
