@@ -9,5 +9,5 @@ the Ethereum blockchain
 
 Links:
 
-* Github: https://github.com/blockapps/ethereumH
+* GitHub: https://github.com/blockapps/ethereumH
 * BlockApps: http://www.blockapps.net/

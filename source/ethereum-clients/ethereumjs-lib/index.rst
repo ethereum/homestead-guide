@@ -20,6 +20,6 @@ ethereumjs-lib
 
 Links:
 
-* Github: https://github.com/ethereumjs/ethereumjs-lib
+* GitHub: https://github.com/ethereumjs/ethereumjs-lib
 * Join the Gitter chat: https://gitter.im/ethereum/ethereumjs-lib
 

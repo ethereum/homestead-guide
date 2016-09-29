@@ -13,7 +13,7 @@ pyethapp leverages two ethereum core components to implement the client:
 
 Links:
 
-* Github: https://github.com/ethereum/pyethapp
+* GitHub: https://github.com/ethereum/pyethapp
 * Wiki: https://github.com/ethereum/pyethapp/wiki/Getting-Started
 * Gitter chat: https://gitter.im/ethereum/pyethapp
 

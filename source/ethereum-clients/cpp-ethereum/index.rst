@@ -17,7 +17,7 @@ Quick Start
 ================================================================================
 
 - Welcome to the Ethereum C++ project :-)
-- The Github repository for this project is `ethereum/cpp-ethereum <https://github.com/ethereum/cpp-ethereum/>`_
+- The GitHub repository for this project is `ethereum/cpp-ethereum <https://github.com/ethereum/cpp-ethereum/>`_
 - Automation runs on `Appveyor <https://ci.appveyor.com/project/ethereum/cpp-ethereum>`_ and `TravisCI <https://travis-ci.org/ethereum/cpp-ethereum/branches>`_.
 - We have instructions for :ref:`Installing binaries` and :ref:`Building from source`.
 - Most project communication happens in our `User <https://gitter.im/ethereum/cpp-ethereum>`_ and `Developer <https://gitter.im/ethereum/cpp-ethereum-development>`_ Gitter channels.

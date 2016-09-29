@@ -15,6 +15,6 @@ The go-ethereum client is commonly referred to as **geth**, which is the the com
 Links:
 
 * Website: http://ethereum.github.io/go-ethereum/
-* Github: https://github.com/ethereum/go-ethereum
+* GitHub: https://github.com/ethereum/go-ethereum
 * Wiki: https://github.com/ethereum/go-ethereum/wiki/geth
 * Gitter: https://gitter.im/ethereum/go-ethereum
