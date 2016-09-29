@@ -7,26 +7,15 @@ Choosing a client
 Why are there multiple Ethereum clients?
 =====================================================================
 
-
-The Ethereum clients are very analogous to a Java VM or .NET runtime.
-
-They enable you to execute "Ethereum programs" on your computer.  They are
-implemented to a written specification (the
-`Yellow Paper <https://github.com/ethereum/yellowpaper>`_) and by design
-are interoperable and somewhat "commodity".
-
-From the earlier days of the project there have been multiple interoperable
+From the earliest days of the project there have been multiple
 client implementations across a range of different operating systems.  That
 client diversity is a huge win for the ecosystem as a whole.
-It lets us verify that the protocol is unambiguous.  It keeps the door
-open for new innovation.  It keeps us all honest.  However, it can be
-very confusing for end-users, because there is no universal
-"Ethereum Installer" for them to use.
+It lets us verify that the protocol (specified in the `Yellow Paper <https://github.com/ethereum/yellowpaper>`_)
+is unambiguous.  It keeps the door open for new innovation.  It keeps us
+all honest.  However, it can be very confusing for end-users, because there
+is no universal "Ethereum Installer" for them to use.
 
-As we enter the Homestead phase, the Go client is very, very dominant, but
-it hasn't always been that way, and won't necessarily be that way in the
-future.   All of the clients except ethereumH have Homestead-compatible
-releases.  The table below contains links to the latest release.
+As of September 2016, the leading implementations are :ref:`go-ethereum` and :ref:`Parity`.
 
 +------------------------+------------+------------------------+-------------------------------------+
 | Client                 | Language   | Developers             | Latest release                      |
@@ -62,27 +51,12 @@ releases.  The table below contains links to the latest release.
 .. _pyethapp-v1.5.0: https://github.com/ethereum/pyethapp/releases/tag/v1.5.0
 .. _ruby-ethereum-v0.9.6: https://rubygems.org/gems/ruby-ethereum/versions/0.9.6
 
-********************************************************************************
-Installing a Client
-********************************************************************************
-
-There are a number of "official" clients whose development has been funded
-from the resources administered by the Ethereum Foundation.  There are also
-various other clients which have been built by the community or by other
-commercial entities.
-
-Read more about the specific clients in the specific client sections in this chapter.
 
 What should I install on my desktop/laptop?
 ================================================================================
 
-If you have a laptop or desktop machine, you should probably just install
-the `Ethereum Wallet <https://github.com/ethereum/mist>`_ and you are done.
-
-- Download the latest `Ethereum Wallet ZIP <https://github.com/ethereum/mist/releases/latest>`_ from Github.
-- Unzip wherever you like
-- Click on the executable (**Ethereum-Wallet, Ethereum-Wallet** or **Ethereum-Wallet.app**)
-- The block-chain will be downloaded
+Most users will likely just install `Mist / Ethereum Wallet <https://github.com/ethereum/mist>`_
+and that will be enough for their needs.
 
 The Ethereum Wallet is a "single dapp" deployment of the **Mist Browser**
 which will be the centerpiece of the Metropolis phase of development, which
@@ -90,24 +64,18 @@ comes after Homestead.
 
 Mist comes with bundled :ref:`go-ethereum` and :ref:`cpp-ethereum` binaries
 and if you are not running a command-line Ethereum client when Mist starts
-then it will start running one of the bundles clients for you.
+then it will start syncing the blockchain using one of the bundled clients
+(defaulting to **geth**).  If you want to use Parity with Mist, or to run Mist against
+a private network, just start your node before Mist, and Mist
+will connect to your node rather than starting one itself.
+
+**Work is underway to add Parity and other clients as "first-class entities"
+to Mist too.**
 
 If you want to interact with Ethereum on the command-line, and to take
 advantage of the Javascript console then you will want to install one of
-the client applications directly, as well as Mist.
-
-:ref:`go-ethereum` and :ref:`cpp-ethereum` are the best place to start,
-because they have both been under development since the start of the project,
-have passed security audits, work for all platforms and have
-:ref:`foundation` resources assigned to their ongoing maintenance and
-support.
-
-- Follow the :ref:`Installing binaries` instructions for **cpp-ethereum**
-- For **go-ethereum**, just unzip the `released binaries <https://github.com/ethereum/go-ethereum/releases>`_
-
-Parity is gaining in popularity fast.
-
-Beyond that, of course, it is all a matter of personal preference.  Try them all :-)
+the client applications directly, as well as Mist.  Follow the links in
+the table above for further instructions.
 
 If you want to do mining then Mist will not be sufficient.  Check out
 the :ref:`mining` section.
@@ -127,8 +95,8 @@ off in a private branch, and is only available for the Go client.
 doublethinkco will be starting development of Light Client for the C++ client
 in the coming months, following grant funding.
 
-Check out `Syng.im <http://syng.io>`_, who were initially using
-`ethereumj-personal <https://github.com/syng-im/ethereumj-personal>`_ based
+Check out `Status.im <http://status.im>`_, who were initially using
+`ethereumj-personal <https://github.com/status-im/ethereumj-personal>`_ based
 on :ref:`Ethereum(J)`, but have recently flipped to Geth cross-builds with
 Light Client.
 
