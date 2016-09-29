@@ -1,7 +1,7 @@
 .. _Accessing Contracts and Transactions:
 
 ********************************************************************************
-Accessing Contracts and Transactions
+Accessing contracts and transactions
 ********************************************************************************
 
 RPC
@@ -251,7 +251,7 @@ can connect to a local or remote geth or eth node. It will load the web3.js libr
 smart contract from the console using web3.js. In fact the examples in the :ref:`Web3.js <using_web3.js>` section can by copied into the console.
 
 
-Viewing Contracts and Transactions
+Viewing contracts and transactions
 ================================================================================
 
 There are several online blockchain explorers available that will allow you to inspect the Ethereum blockchain.
@@ -267,7 +267,7 @@ Hosted blockchain explorers
 -  `EtherCamp <https://live.ether.camp/>`_
 -  `EtherScan <http://etherscan.io/>`_ (and for `Testnet <http://testnet.etherscan.io>`_)
 
-Other Resources
+Other resources
 --------------------------------------------------------------------------------
 
 * `EtherNodes <http://ethernodes.org/>`_ - Geographic distribution of nodes and split by client

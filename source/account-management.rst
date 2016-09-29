@@ -1,5 +1,5 @@
 ********************************************************************************
-Account Management
+Account management
 ********************************************************************************
 
 .. _Accounts:
@@ -7,17 +7,25 @@ Account Management
 Accounts
 ================================================================================
 
-Accounts play a central role in Ethereum. There are two types of accounts: *externally owned accounts* (EOAs) and *contract accounts*. Here we focus on externally owned accounts, which will be referred to simply as *accounts*. Contract accounts will be referred to as *contracts* and are :ref:`discussed in detail in Contracts <Contracts>`. This generic notion of account subsuming both externally owned accounts and contracts is justified in that these entities are so called *state objects*. These entities have a state: accounts have balance and contracts have both balance and contract storage. The state of all accounts is the state of the Ethereum network which is updated with every block and which the network really needs to reach a consensus about.
-Accounts are essential for users to interact with the Ethereum blockchain via transactions.
+Accounts play a central role in Ethereum. There are two types of accounts: *externally owned accounts* (EOAs) and *contract accounts*.
 
-If we restrict Ethereum to only externally owned accounts and allow only transactions between them, we arrive at an "altcoin" system that is less powerful than bitcoin itself and can only be used to transfer ether.
+This section describes externally owned accounts, which will be referred to simply as *accounts*.  Contract accounts will be referred to as *contracts* and are :ref:`discussed in detail in Contracts <Contracts>`.
 
-Accounts represent identities of external agents (e.g., human personas, mining nodes or automated agents). Accounts use public key cryptography to sign transaction so that the EVM can securely validate the identity of a transaction sender.
+This generic notion of account subsuming both externally owned accounts and contracts is justified in that these entities are so called *state objects*. These entities have a state: accounts have balance and contracts have both balance and contract storage. The state of all accounts is the state of the Ethereum network which is updated with every block and which the network really needs to reach a consensus about.
+Accounts interact with the Ethereum blockchain via transactions.
+
+Accounts represent identities of external agents (e.g., human personas, mining nodes
+or automated agents). Accounts use public key cryptography to sign transactions so
+that the EVM can securely validate the identity of a transaction sender.
 
 Keyfiles
 ================================================================================
 
-Every account is defined by a pair of keys, a private key and public key. Accounts are indexed by their *address* which is derived from the public key by taking the last 20 bytes. Every private key/address pair is encoded in a *keyfile*. Keyfiles are JSON text files which you can open and view in any text editor. The critical component of the keyfile, your account’s private key, is always encrypted, and it is encrypted with the password you enter when you create the account. Keyfiles are found in the ``keystore`` subdirectory of your Ethereum node’s data directory. Make sure you backup your keyfiles regularly! See the section :ref:`backup-and-restore-accounts` for more information.
+Every account is defined by a pair of keys, a private key and public key. Accounts
+are indexed by their *address* which is derived from the public key by taking the
+last 20 bytes. Every private key/address pair is encoded in a *keyfile*.
+
+Keyfiles are JSON text files which you can open and view in any text editor. The critical component of the keyfile, your account’s private key, is always encrypted, and it is encrypted with the password you enter when you create the account. Keyfiles are found in the ``keystore`` subdirectory of your Ethereum node’s data directory. Make sure you backup your keyfiles regularly! See the section :ref:`backup-and-restore-accounts` for more information.
 
 Creating a key is tantamount to creating an account.
 
@@ -30,7 +38,7 @@ Of course your new account will not contain any Ether. But it'll be yours and yo
 
 It is safe to transfer the entire directory or any individual keyfile between Ethereum nodes.
 
-.. Warning:: Note that in case you are adding keyfiles to your node from a different node, the order of accounts may change. So make sure you do not rely or change the index in your scripts or code snippets.
+.. Warning:: Note that in case you are adding keyfiles to your node from a different node, the order of accounts may change. So make sure you do not rely on or change the index in your scripts or code snippets.
 
 .. _creating_an_account:
 
@@ -82,7 +90,7 @@ To list all the accounts with keyfiles currently in you’re ``keystore`` folder
   account #2: {7f444580bfef4b9bc7e14eb7fb2a029336b07c9d}
 
 
-The filenames of keyfiles has the format ``UTC--<created_at UTC ISO8601>-<address hex>``. The order of accounts when listing, is lexicographic, but as a consequence of the timestamp format, it is actually order of creation.
+The filenames of keyfiles has the format ``UTC--<created_at UTC ISO8601>-<address hex>``. The order of accounts when listing, is lexicographic (alphabetic), but as a consequence of the timestamp format, it is actually order of creation.
 
 
 Using geth console
@@ -166,7 +174,7 @@ Creating an account using the GUI Mist Ethereum wallet couldn’t be easier. In 
 .. Note:: The Mist wallet is still in active development, so details of the steps outlined above may change with upgrades.
 
 
-Creating a Multi-Signature Wallet in Mist
+Creating a multi-signature wallet in Mist
 --------------------------------------------------------------------------------
 
 The Mist Ethereum wallet has an option to secure your wallet balance with a multisig wallet. The advantage of using a multisig wallet is that it requires authorization from more than one account to withdrawal larger amounts from your balance. Before you can create a multisig wallet, you'll need to create more than one account.
@@ -205,7 +213,7 @@ Troubleshooting:
 Using Eth
 --------------------------------------------------------------------------------
 
-Every options related to key management available using geth can be used the same way in eth.
+Every option related to key management available using geth can be used the same way in eth.
 
 Below are "account" related options:
 
@@ -300,43 +308,6 @@ Now let's make sure it worked properly by listing the keys in the wallet:
   055dde03-47ff-dded-8950-0fe39b1fa101 0092e965… XE472EVKU3CGMJF2YQ0J9RO1Y90BC0LDFZ  test
 
 It reports one key on each line (for a total of one key here). In this case our key is stored in a file 055dde... and has an ICAP address beginning XE472EVK.... Not especially easy things to remember so rather helpful that it has its proper name, test, too.
-
-Importing your presale wallet
-================================================================================
-
-
-Using Mist Ethereum wallet
---------------------------------------------------------------------------------
-
-Importing your presale wallet using the GUI Mist Ethereum wallet is very easy. In fact, you will be asked if you want to import your presale wallet during the installation of the app.
-
-.. Warning:: Mist wallet is beta software. Beware and use it at your own risk.
-
-Instructions for installing the Mist Ethereum wallet are given in the section :ref:`Creating an account: Using Mist Ethereum wallet <using-mist-ethereum-wallet>`.
-
-Simply drag-and-drop your ``.json`` presale wallet file into the designated area and enter your password to import your presale account.
-
-.. image:: img/51PresaleImportInstall.png
-   :width: 582px
-   :height: 469px
-   :scale: 75 %
-   :alt: presale-import
-   :align: center
-
-If you choose not to import your presale wallet during installation of the app, you can import it at any time by selecting the ``Accounts`` menu in the app’s menu bar and then selecting ``Import Pre-sale Accounts``.
-
-.. Note:: The Mist wallet is still in active development, so details of the steps outlined above may change with upgrades.
-
-Using geth
---------------------------------------------------------------------------------
-
-If you have a standalone installation of geth, importing your presale wallet is accomplished by executing the following command in a terminal:
-
-.. code-block:: Bash
-
-  geth wallet import /path/to/my/presale-wallet.json
-
-You will be prompted to enter your password.
 
 Updating an account
 ================================================================================

@@ -1,7 +1,7 @@
 .. _sec:connecting-to-the-network:
 
 ********************************************************************************
-Connecting to the Network
+Connecting to the network
 ********************************************************************************
 
 This section
@@ -148,7 +148,7 @@ see `this link <staticnodes>`_
 
 ..  _cr-static-nodes:
 
-Static Nodes, Trusted Nodes, and Boot Nodes
+Static nodes, trusted bodes, and boot nodes
 ================================================================================
 
 Geth supports a feature called static nodes if you have certain peers you always want to connect to. Static nodes are re-connected on disconnects. You can configure permanent static nodes by putting something like the following into ``<datadir>/static-nodes.json`` (this should be the same folder that your ``chaindata`` and ``keystore`` folders are in)

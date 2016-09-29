@@ -1,5 +1,5 @@
 ********************************************************************************
-Web3 Base Layer Services
+Web3 base layer services
 ********************************************************************************
 
 In addition to the Ethereum blockchain, more components are being developed that decentralise other important aspects of web applications.
