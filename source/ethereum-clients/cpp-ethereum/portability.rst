@@ -17,11 +17,12 @@ Operating systems verified as working
 - Linux
     - Alpine Linux
     - Arch Linux
-    - Debian 8 (Jessie)
+    - Debian 8 (Jessie and Stretch)
     - Fedora 20
     - Fedora 21
     - Fedora 22
     - openSUSE Leap 42.1
+    - PureOS 2.1
     - Raspbian
     - Sailfish OS 2.0
     - Ubuntu 14.04 (Trusty)

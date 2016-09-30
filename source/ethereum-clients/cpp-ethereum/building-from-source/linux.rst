@@ -42,7 +42,7 @@ The script is known to support the following distros and versions:
 * Mac (OS X Mavericks, OS X Yosemite, OS X El Capitan, macOS Sierra)
 * Arch Linux
 * Alpine Linux (partial)
-* Debian (Jesse)
+* Debian (Jesse and Stretch)
 * Fedora (partial)
 * Mint Linux (Qiana, Rebecca, Rafaela, Rosa, Sarah)
 * Ubuntu (Trusty, Vivid, Utopic, Xenial, work-in-progress on Yakkety)
