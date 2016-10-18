@@ -6,31 +6,39 @@ releases) at docker hub. You can run these images as follows:
 
 Preparation
 -----------
+Before running the image, you should pull the latest version and prepare
+the data directories::
 
     # get the lastest version from dockerhub (redo for updates).
     docker pull ethereum/cpp-client
     # create mountable datadirs; blockchain/account data will be stored there
     mkdir -p ~/.ethereum ~/.web3
 
-These steps need to be done only once.
+These steps need to be done only once. For upgrading to a new version do
+the ``docker pull ...`` again.
 
 Execution
 ---------
-The simplest version is to run
+The simplest version is to run::
 
-    docker run --rm -it --net=host -v ~/.ethereum:/.ethereum -v ~/.web3:/.web3 -e HOME=/ --user $(id -u):$(id -g) ethereum/client-cpp
+    docker run --rm -it \
+        --net=host \
+        -v ~/.ethereum:/.ethereum \
+        -v ~/.web3:/.web3 \
+        -e HOME=/ \
+        --user $(id -u):$(id -g) \
+        ethereum/client-cpp
 
-This will write data to ``~/cppeth/.ethereum`` and ``~/.cppeth/.web3/`` on your
-host and run the client with your user's permissions.  For most cases this
-should be sufficient and the client should behave exactly as if run from a
-local build.
+This will write data to ``~/.ethereum`` and ``~/.web3/`` on your host and run
+the client with your user's permissions.  For most cases this should be
+sufficient and the client should behave exactly as if run from a local build.
 
 For convenience, you can create the file ``/usr/local/bin/docker-eth`` with the
-following content:
+following content::
 
     #!/usr/bin/env sh
     mkdir -p ~/.ethereum ~/.web3
-    if ! id -nG $(whoami)|grep -qw "docker"; then SUDO='sudo'; fi
+    if ! id -nG $(whoami)|grep -qw "docker"; then SUDO='sudo'; else SUDO=''; fi
     $SUDO docker run --rm -it \
         --net=host \
         -v ~/.ethereum:/.ethereum \
@@ -40,18 +48,15 @@ following content:
         ethereum/client-cpp $@
 
 And make it executable with ``chmod +x /usr/local/bin/docker-eth``. Now you can
-start the client with
+start the client with::
 
     docker-eth
 
-**Note:** The ``docker-eth`` command will accept the same flags as the raw
-``eth`` command.
+**Note:** The ``docker-eth`` command will accept the same flags as the raw ``eth``
+command.
 
 If you want to attach to the node, you can either just use mist (it will
-detect the node automatically), use
-
-    geth attach ipc:/$HOME/.ethereum/geth.ipc
-
+detect the node automatically), use ``geth attach ipc:/$HOME/.ethereum/geth.ipc``
 or ethereum-console as described in :ref:`Running cpp-ethereum`.
 
 Advanced usage:
