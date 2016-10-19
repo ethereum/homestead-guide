@@ -22,7 +22,8 @@ Execution
 The simplest version is to run::
 
     docker run --rm -it \
-        --net=host \
+        -p 127.0.0.1:8545:8545 \
+        -p 0.0.0.0:30303:30303 \
         -v ~/.ethereum:/.ethereum \
         -v ~/.web3:/.web3 \
         -e HOME=/ \
@@ -33,6 +34,10 @@ This will write data to ``~/.ethereum`` and ``~/.web3/`` on your host and run
 the client with your user's permissions.  For most cases this should be
 sufficient and the client should behave exactly as if run from a local build.
 
+If you want the rpc port reachable from the network (not recommended, never do this
+if you have valuable data or private keys on your machine), replace
+``-p 127.0.0.1:8545:8545`` by ``-p 0.0.0.0:8545:8545``.
+
 For convenience, you can create the file ``/usr/local/bin/docker-eth`` with the
 following content::
 
@@ -40,7 +45,8 @@ following content::
     mkdir -p ~/.ethereum ~/.web3
     if ! id -nG $(whoami)|grep -qw "docker"; then SUDO='sudo'; else SUDO=''; fi
     $SUDO docker run --rm -it \
-        --net=host \
+        -p 127.0.0.1:8545:8545 \
+        -p 0.0.0.0:30303:30303 \
         -v ~/.ethereum:/.ethereum \
         -v ~/.web3:/.web3 \
         -e HOME=/ \
