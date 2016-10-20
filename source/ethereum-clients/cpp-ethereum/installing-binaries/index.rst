@@ -15,6 +15,7 @@ and we will add them to this list.
 .. toctree::
    :maxdepth: 2
 
+   docker.rst
    linux-ubuntu-ppa.rst
    windows-chocolatey.rst
    osx-homebrew.rst
