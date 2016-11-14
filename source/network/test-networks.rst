@@ -236,9 +236,11 @@ blockchain unless they have the same genesis block, so you can make as many priv
   }
 
 Save a file called :file:`CustomGenesis.json`.
-You will reference this when starting your geth node using the following flag:
+You will reference this when starting your geth node using the following command:
 
-``--genesis /path/to/CustomGenesis.json``
+``geth init /path/to/CustomGenesis.json``
+
+.. note:: By default geth will use the same directory for network related files as for the public mainnet. Thus you are advised to set a custom ``--datadir`` to keep the public network's chaindata from bing reset.
 
 Command line parameters for private network
 --------------------------------------------------------------------------------
@@ -295,7 +297,7 @@ After you have created your custom genesis block JSON file and created a directo
 
 .. code-block:: Console
 
-  geth --identity "MyNodeName" --genesis /path/to/CustomGenesis.json --rpc --rpcport "8080" --rpccorsdomain "*" --datadir "C:\chains\TestChain1" --port "30303" --nodiscover --rpcapi "db,eth,net,web3" --networkid 1999 init /path/to/CustomGenesis.json
+  geth --identity "MyNodeName" --rpc --rpcport "8080" --rpccorsdomain "*" --datadir "C:\chains\TestChain1" --port "30303" --nodiscover --rpcapi "db,eth,net,web3" --networkid 1999 init /path/to/CustomGenesis.json
 
 .. note:: Please change the flags to match your custom settings.
 
@@ -303,7 +305,7 @@ This will initialize your genesis block.  To interact with geth through the cons
 
 .. code-block:: Console
 
-  geth --identity "MyNodeName" --genesis /path/to/CustomGenesis.json --rpc --rpcport "8080" --rpccorsdomain "*" --datadir "C:\chains\TestChain1" --port "30303" --nodiscover --rpcapi "db,eth,net,web3" --networkid 1999 console
+  geth --identity "MyNodeName" --rpc --rpcport "8080" --rpccorsdomain "*" --datadir "C:\chains\TestChain1" --port "30303" --nodiscover --rpcapi "db,eth,net,web3" --networkid 1999 console
 
 You will need to start your geth instance with your custom chain command every time you want to access your custom chain. If you just type "geth" in your console, it will not remember all of the flags you have set.
 
