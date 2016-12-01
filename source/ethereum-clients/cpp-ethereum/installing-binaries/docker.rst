@@ -10,7 +10,7 @@ Before running the image, you should pull the latest version and prepare
 the data directories::
 
     # get the lastest version from dockerhub (redo for updates).
-    docker pull ethereum/cpp-client
+    docker pull ethereum/client-cpp
     # create mountable datadirs; blockchain/account data will be stored there
     mkdir -p ~/.ethereum ~/.web3
 
