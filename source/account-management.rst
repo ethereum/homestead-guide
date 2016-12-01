@@ -417,7 +417,7 @@ This command imports an unencrypted private key from the plain text file ``<keyf
 The keyfile is assumed to contain an unencrypted private key as canonical EC raw bytes encoded into hex.
 The account is saved in encrypted format, you are prompted for a passphrase. You must remember this passphrase to unlock your account in the future.
 
-An example where the data directory is specified. If the ``--datadir`` flag is not used, the new account will be created in the default data directory, i.e., the keyfile will be places in the ``keyfiles`` subdirectory of the data directory.
+An example where the data directory is specified. If the ``--datadir`` flag is not used, the new account will be created in the default data directory, i.e., the keyfile will be placed in the ``keystore`` subdirectory of the data directory.
 
 .. code-block:: Bash
 
