@@ -14,8 +14,6 @@ which was coordinated by:
  
 We would like to thank everybody who helped in this effort for `their contributions <https://github.com/ethereum/homestead-guide/graphs/contributors>`_:
 
-.. image:: ../img/Feels-Good-Man-Frog-02.png
-
 - `Ricardo de Azevedo Brandao <https://github.com/programonauta>`_
 - `Santanu Barai <https://github.com/0mkara>`_
 - `Brooks Boyd <https://onename.com/midnight>`_
