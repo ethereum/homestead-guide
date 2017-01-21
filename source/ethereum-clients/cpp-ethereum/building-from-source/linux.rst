@@ -14,6 +14,7 @@ To clone the source code, execute the following commands:
 
     git clone --recursive https://github.com/ethereum/cpp-ethereum.git
     cd cpp-ethereum
+    git submodule update --init
 
 
 Installing dependencies
