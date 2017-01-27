@@ -6,7 +6,7 @@ Building for Linux
 
 
 Getting the source code
-===================
+=======================
 
 We use git and GitHub to maintain the source code. Clone the repository by:
 
@@ -15,14 +15,18 @@ We use git and GitHub to maintain the source code. Clone the repository by:
     git clone --recursive https://github.com/ethereum/cpp-ethereum.git
     cd cpp-ethereum
     
-The ``--recursive`` option is important. It orders git to clone also submodules which are required to build the project.
+The ``--recursive`` option is important. It orders git to clone additional submodules 
+which are required to build the project.
 If you missed it you can correct your mistake with command ``git submodule update --init``.
 
 
 CMake
 =====
 
-We use CMake to control the build configuration of the project. Quite recent version of CMake is required (at the time of writing 3.4 is the minimum). We recomand to install the latest version downloading and unpacking the binary distribution of the latest version awailable on the CMake download page:
+We use CMake to control the build configuration of the project. 
+Quite recent version of CMake is required (at the time of writing 3.4 is the minimum). 
+We recommend installing CMake by downloading and unpacking the binary distribution 
+of the latest version available on the download page:
 
 https://cmake.org/download/
 
@@ -30,7 +34,7 @@ https://cmake.org/download/
     
     The repository contains the script 
     `install_cmake.sh <https://github.com/ethereum/cpp-ethereum/blob/develop/scripts/install_cmake.sh>`_ 
-    that downloads fixed version of CMake and unpacks it
+    that downloads a fixed version of CMake and unpacks it
     to the given directory prefix. Example usage ``scripts/install_cmake.sh --prefix /usr/local``.
 
 
@@ -46,7 +50,8 @@ The following *libraries* are required to be installed in the system:
 - miniupnp
 - gmp
 
-They usually can be installed using OS-specific package manager. For example on Debian-based systems::
+They usually can be installed using distribution-specific package manager.
+For example on Debian-based systems::
 
     sudo apt-get install libboost-all-dev libleveldb-dev libcurl4-openssl-dev libmicrohttpd-dev libminiupnpc-dev libgmp-dev
     
