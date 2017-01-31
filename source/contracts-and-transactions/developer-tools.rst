@@ -4,7 +4,7 @@
 Dapps
 ********************************************************************************
 
-A dapp is service that enables direct interaction between end users and providers (e.g. connecting buyers and sellers in some marketplace, owners and storers in file storage). Ethereum dapps typically interface users via an HTML/Javascript web application using a Javascript API to communicate with the blockchain. Dapps would typically have their own suite of associated contracts on the blockchain which they use to encode business logic and allow persistent storage of their consensus-critical state. Remember that because of the redundant nature of computation on the Ethereum network, the gas costs of execution will always be higher than private execution offchain. This incentivizes dapp developers to restrict the amount of code they execute and amount of data they store on the blockchain.
+A dapp is a service that enables direct interaction between end users and providers (e.g. connecting buyers and sellers in some marketplace, owners and storers in file storage). Ethereum dapps typically interface users via an HTML/Javascript web application using a Javascript API to communicate with the blockchain. Dapps would typically have their own suite of associated contracts on the blockchain which they use to encode business logic and allow persistent storage of their consensus-critical state. Remember that because of the redundant nature of computation on the Ethereum network, the gas costs of execution will always be higher than private execution offchain. This incentivizes dapp developers to restrict the amount of code they execute and amount of data they store on the blockchain.
 
 Dapp directories
 ====================================
@@ -12,15 +12,12 @@ Dapp directories
 Dapps that use Ethereum are compiled to the following lists. They are listed in various stages of development (concept, working prototype, live/deployed). If you are developing a dapp, consider adding an entry to these listings:
 
 * `Ethercasts State of the Ðapps <http://dapps.ethercasts.com/>`_
-* `Dappslist <https://dappslist.com/>`_
-* `Dappcentral <http://dappcentral.io/>`_ - Sortable pages for Dapps with instructions, code validation, and network stats.
-* `Dapps Mailing List <http://dapplist.net/>`_ - Mailing list for developers on Ethereum (discontinued).
 
 The offered decentralised services listed cover a wide range of areas including finance, insurance, prediction markets, social networks, distributed computation and storage, gambling, marketplace, internet of things, governance, collaboration, development and games.
 
 * What apps can we eventually expect? https://www.reddit.com/r/ethereum/comments/2mnl7f/the_top_10_ether_dapps_of_2015/cm63nsf
 
-In the future, dapps are likely to be listed and distributed in `dappstores <http://dappstore.io/>`_ integrated in dapp browsers.
+In the future, dapps are likely to be listed and distributed in dappstores integrated in dapp browsers.
 
 Dapp browsers
 ===========================
@@ -94,7 +91,7 @@ Mix-IDE
 ================================================================================
 
 Mix is the official Ethereum IDE that allows developers to build and deploy contracts and decentralized applications on top of the Ethereum blockchain. It includes a Solidity source code debugger.
-:ref:`sec:mix`
+:ref:`sec:mix` (discontinued)
 
 IDEs/Frameworks
 ================================================================================
@@ -113,7 +110,7 @@ Below are developer frameworks and IDEs used for writing Ethereum dapps.
 Ethereum-console
 ================================================================================
 
-Commandline console for Ethereum nodes.
+Command-line console for Ethereum nodes.
 
 `Ethconsole <https://github.com/ethereum/ethereum-console>`_ connects to an Ethereum node running in the background (tested with eth and geth) via IPC and provides an interactive javascript console containing the web3 object with admin additions.
 
