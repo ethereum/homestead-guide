@@ -236,9 +236,11 @@ blockchain unless they have the same genesis block, so you can make as many priv
   }
 
 Save a file called :file:`CustomGenesis.json`.
-You will reference this when starting your geth node using the following flag:
+You will reference this when starting your geth node using the following command:
 
-``--genesis /path/to/CustomGenesis.json``
+``geth init /path/to/CustomGenesis.json``
+
+.. note:: By default geth will use the same directory for network related files as for the public mainnet. Thus you are advised to set a custom ``--datadir`` to keep the public network's chaindata from bing reset.
 
 Command line parameters for private network
 --------------------------------------------------------------------------------
