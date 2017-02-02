@@ -43,9 +43,9 @@ Prerequisites
 
 Install Sphinx, etc
 --------------------------------------------------------------------------------
-For OSX/Linux users (based on instructions here: https://read-the-docs.readthedocs.org/en/latest/getting_started.html)
+For OSX/Linux users (based on instructions here: https://read-the-docs.readthedocs.org/en/latest/getting_started.html). Sphinx as of 1.4.0 no longer automatically installs `sphinx_rtd_theme`, hence its addition below.
 
-* From command line: ``sudo pip install sphinx``
+* From command line: ``sudo pip install sphinx sphinx_rtd_theme``
 
 For Windows users:
 
