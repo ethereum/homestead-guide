@@ -23,7 +23,7 @@ Dapp browsers
 ===========================
 
 * `Mist <https://github.com/ethereum/mist>`_ - official GUI dapp browser developed by the foundation, alpha stage. Mist as Wallet dapp is in beta.
-* `Syng <http://syng.im/>`_ - Mobile Ethereum browser (alpha) by Jarrad Hope - supported by DEVgrants
+* `Status <https://status.im/>`_ - Mobile Ethereum browser (alpha)
 * `MetaMask <https://metamask.io/>`_ - Aaron Kumavis Davis's in-browser GUI. `Epicenter Bitcoin interview on github <https://www.reddit.com/r/ethereum/comments/3x97rg/aaron_davis_explains_the_differences_between/>`_ - supported by DEVgrants
 * `AlethZero <https://github.com/ethereum/alethzero>`_ - C++ eth client GUI, (discontinued).
 * `Supernova <http://www.supernove.cc>`_ - (discontinued).
