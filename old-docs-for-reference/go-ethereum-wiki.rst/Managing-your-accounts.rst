@@ -366,12 +366,10 @@ Print all balances with a JavaScript function:
 ::
 
     function checkAllBalances() {
-    var i =0;
-    eth.accounts.forEach( function(e){
-        console.log("  eth.accounts["+i+"]: " +  e + " \tbalance: " + web3.fromWei(eth.getBalance(e), "ether") + " ether");
-    i++;
-    })
-    };
+        eth.accounts.forEach(function (e, i) {
+            console.log("  eth.accounts["+i+"]: " +  e + " \tbalance: " + web3.fromWei(eth.getBalance(e), "ether") + " ether");
+        });
+    }
 
 That can then be executed with:
 
