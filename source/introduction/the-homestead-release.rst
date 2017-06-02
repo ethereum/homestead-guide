@@ -7,7 +7,7 @@ Homestead is the second major version of the Ethereum platform and is the first 
 Milestones of the Ethereum development roadmap
 -----------------------------------------------
 
-The `original development roadmap <https://blog.ethereum.org/2015/03/03/ethereum-launch-process/>`_ laid out before Ethereum went live specified the following milestones:
+The `original development roadmap <https://blog.ethereum.org/2015/03/03/ethereum-launch-process/>`_ that was laid out before Ethereum went live specified the following milestones:
 
 * Prerelease Step 0: Olympic testnet - launched May 2015
 * Release Step One: Frontier - launched 30 July 2015
