@@ -37,7 +37,7 @@ It is safe to transfer the entire directory or any individual keyfile between Et
 Creating an account
 ================================================================================
 
-.. Warning:: **Remember your passwords and :ref:`backup your keyfiles <backup-and-restore-accounts>`.** In order to send transactions from an account, including sending ether, you must have BOTH the keyfile and the password. Be absolutely sure to have a copy of your keyfile AND remember the password for that keyfile, and store them both as securely as possible. There are no escape routes here; lose the keyfile or forget your password and all your ether is gone. It is NOT possible to access your account without a password and there is no *forgot my password* option here. Do not forget it.
+.. Warning:: **Remember your passwords and** :ref:`backup your keyfiles <backup-and-restore-accounts>`. In order to send transactions from an account, including sending ether, you must have BOTH the keyfile and the password. Be absolutely sure to have a copy of your keyfile AND remember the password for that keyfile, and store them both as securely as possible. There are no escape routes here; lose the keyfile or forget your password and all your ether is gone. It is NOT possible to access your account without a password and there is no *forgot my password* option here. Do not forget it.
 
 Using ``geth account new``
 --------------------------------------------------------------------------------
@@ -183,7 +183,7 @@ We are now ready to create the multisig wallet. Under 'Wallet Contracts', select
 
 "This is a joint account controlled by X owners. You can send up to X ether per day. Any transaction over that daily limit requires the confirmation of X owners."
 
-Set whatever amount of owners (accounts) you are attaching to this multisig wallet, whatever you want for a daily withdrawal limit (that only requires one account to withdrawal that amount), and how many owners (accounts) are required to approve any withdrawal amount over the daily limit.
+Set whatever amount of owners (accounts) you are attaching to this multisig wallet, whatever you want for a daily withdrawal limit (that only requires one account to withdraw that amount), and how many owners (accounts) are required to approve any withdrawal amount over the daily limit.
 
 Now add the addresses of the accounts that you copied / pasted into your text editor earlier, confirm all your settings are correct, and click 'Create' at the bottom. You will then need to enter your password to send the transaction. In the 'Wallet Contracts' section it should show your new wallet, and say 'creating'.
 
