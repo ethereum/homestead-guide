@@ -106,7 +106,9 @@ Ethereum is planning on implementing a proof-of-stake consensus protocol change 
 
 Where do the contracts reside?
 ----------------------------------------------------------------------------------------------
-TODO
+Contracts reside on the blockchain as executable code. These contracts are able to be called and executed by any node, as contracts get distributed to all full nodes on the network.
+
+This is similar to the process of how transactions get dispersed and added to the blockchain.
 
 Your question is still not answered?
 ----------------------------------------------------------------------------------------------
