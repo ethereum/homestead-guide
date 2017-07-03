@@ -416,7 +416,7 @@ Glossary
       Ethereum client implemented in the Rust programming language, based on the protocol as defined in the Ethereum Yellow Paper.
 
    difficulty
-      In very general terms, the amount of effort required to mine a new block. With the launch of Homestead, the `difficulty adjustment algorithm will change <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2.mediawiki>`_.
+      In very general terms, the amount of effort required to mine a new block. With the launch of Homestead, the `difficulty adjustment algorithm will change <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2.md>`_.
 
    account
       Accounts are a central part of the Ethereum network and are an essential part of any transaction or contract. In Ethereum, there are two types of accounts: Externally Owned accounts (EOA) and Contract accounts.
