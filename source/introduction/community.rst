@@ -21,8 +21,9 @@ Further specialised subreddits:
 * `/r/EthTrader <https://www.reddit.com/r/EthTrader/>`_ - Ether trading, price and  market
 * `/r/EtherMining <https://www.reddit.com/r/EtherMining/>`_ - Ether mining discussion
 * `/r/Ethmarket <https://www.reddit.com/r/ethmarket/>`_ - Marketplace for individuals looking to exchange goods and services for Ether
-* `/r/Ethinvestor <https://www.reddit.com/r/Ethinvestor/>`_ - News and prospects for Ethereum investors. Following the long term trends in the Ethereum marketplace.
-* `/r/ethereumism/ <https://www.reddit.com/r/ethereumism/>`_ - A bit more ism, ostic, ical, ist and tinfoil hats, pyramids and crystal ball type of views - the ethereal side of Ethereum
+* `/r/EthInvestor <https://www.reddit.com/r/Ethinvestor/>`_ - News and prospects for Ethereum investors. Following the long term trends in the Ethereum marketplace.
+* `/r/Ethereumism/ <https://www.reddit.com/r/ethereumism/>`_ - A bit more ism, ostic, ical, ist and tinfoil hats, pyramids and crystal ball type of views - the ethereal side of Ethereum
+* `/r/EthLaw/ https://www.reddit.com/r/ethlaw//>`_ - Articles and discussions about how Ethereum relates to traditional legal systems, and how Ethereum technology can enable new forms of contracts and law.
 
 
 .. _Ethereum subreddit: https://www.reddit.com/r/ethereum/
