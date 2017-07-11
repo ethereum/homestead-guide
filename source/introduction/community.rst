@@ -22,6 +22,7 @@ Further specialised subreddits:
 * `/r/EtherMining <https://www.reddit.com/r/EtherMining/>`_ - Ether mining discussion
 * `/r/Ethmarket <https://www.reddit.com/r/ethmarket/>`_ - Marketplace for individuals looking to exchange goods and services for Ether
 * `/r/Ethinvestor <https://www.reddit.com/r/Ethinvestor/>`_ - News and prospects for Ethereum investors. Following the long term trends in the Ethereum marketplace.
+* `/r/Law/ <https://www.reddit.com/r/EthLaw/>`_ - Articles and discussions about how Ethereum relates to traditional legal systems, and how Ethereum technology can enable new forms of contracts and law.
 * `/r/ethereumism/ <https://www.reddit.com/r/ethereumism/>`_ - A bit more ism, ostic, ical, ist and tinfoil hats, pyramids and crystal ball type of views - the ethereal side of Ethereum
 
 
@@ -50,6 +51,11 @@ Most Gitter channels are organised around particular repositories, or generic to
 
 See `the full list of gitter rooms for the Ethereum organisation`_. Below is the list of active public channels:
 
+* `Welcome`_ - Ethereum guest lobby (main chat room)
+* `tutorials`_ - Ethereum help and Tutorials
+* `ENS`_ - about Go-Ethereum Name Registry
+* `EIPs`_ - The Ethereum Improvement Process
+* `Swarm`_ - about Ethereum Swarm implementation
 * `go-ethereum`_ - about geth (and tools related to the go implementation)
 * `cpp-ethereum`_ - about eth (and tools related to the C++ implementation)
 * `web3.js`_ - about web3.js, Ethereum JavaScript API library
