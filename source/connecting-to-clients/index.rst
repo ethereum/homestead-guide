@@ -24,6 +24,8 @@ A number of libraries have been written to help address these issues, allowing a
 +----------------------+------------+-----------------------------------------------+
 | :ref:`ethereum-ruby` | Ruby       | https://github.com/DigixGlobal/ethereum-ruby  |
 +----------------------+------------+-----------------------------------------------+
+| :ref:`web3.py`       | Python     | https://github.com/pipermerriam/web3.py       |
++----------------------+------------+-----------------------------------------------+
 
 Information on each library is provided in the following sections:
 
@@ -34,5 +36,6 @@ Information on each library is provided in the following sections:
    web3j/index.rst
    nethereum/index.rst
    ethereum-ruby/index.rst
+   web3.py/index.rst
 
 For an overview of creating and interacting with smart contracts and transactions via the web3.js library, please refer to the section :ref:`Accessing Contracts and Transactions`.
