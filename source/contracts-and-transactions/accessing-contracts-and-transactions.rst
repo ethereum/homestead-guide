@@ -22,7 +22,7 @@ Conventions
 The RPC interface uses a couple of conventions that are not part of the JSON-RPC 2.0 specification:
 
 * Numbers are hex encoded. This decision was made because some languages have no or limited support for working with extremly large numbers. To prevent
-  these type of errors numbers are hex encoded and it is up to the deverloper to parse these numbers and handle them appropriately. See the
+  these type of errors numbers are hex encoded and it is up to the developer to parse these numbers and handle them appropriately. See the
   `hex encoding section <https://github.com/ethereum/wiki/wiki/JSON-RPC#output-hex-values>`_ on the wiki for examples.
 * Default block number, several RPC methods accept a block number. In some cases it's not possible to give a block number or not very convenient. For
   these cases the default block number can be one of these strings ["earliest", "latest", "pending"]. See the
