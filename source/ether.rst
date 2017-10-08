@@ -70,6 +70,7 @@ List of centralised exchange marketplaces
 ========================== ============================
 Exchange                   Currencies
 ========================== ============================
+`Karsha`_                  BTC, LTC, BCH, ZEC, DSH, DGE, XMR, USD, EUR
 Poloniex                   BTC
 Kraken                     BTC, USD, EUR, CAD, GBP
 Gatecoin                   BTC, EUR
@@ -84,6 +85,7 @@ BTER                       CNY
 Yunbi                      CNY
 Metaexchange               BTC
 ========================== ============================
+.. _Karsha: https://karsha.biz
 
 
 Centralised fixed rate exchanges
