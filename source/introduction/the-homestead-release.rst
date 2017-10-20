@@ -10,7 +10,7 @@ Milestones of the Ethereum development roadmap
 The `original development roadmap <https://blog.ethereum.org/2015/03/03/ethereum-launch-process/>`_ that was laid out before Ethereum went live specified the following milestones:
 
 * Prerelease Step 0: Olympic testnet - launched May 2015 as announced `here<https://blog.ethereum.org/2015/05/09/olympic-frontier-pre-release/>`.
-* Release Step One: Frontier - launched 30 July 2015 (`Etherscan block 1<https://etherscan.io/block/1>` and an `Ethereum blog post before the launch<https://blog.ethereum.org/2015/05/02/the-end-of-the-beginning/>`)
+* Release Step One: Frontier - launched 30 July 2015 (`Etherscan block 1<https://etherscan.io/block/1>` and an `Ethereum blog post just before the launch<https://blog.ethereum.org/2015/07/27/final-steps/>` and `another before the launch<https://blog.ethereum.org/2015/05/02/the-end-of-the-beginning/>` plus a `Wiki`<https://ethereum.gitbooks.io/frontier-guide/content/frontier.html>`.)
 * Release Step Two: Homestead - launched 14 March 2016 (Pi Day) as announced `here<https://blog.ethereum.org/2016/02/29/homestead-release/>`.
 * Release Step 3.1: Metropolis phase 1: Byzantium - October 16 2017 as announced `here<https://blog.ethereum.org/2017/10/12/byzantium-hf-announcement/>`. Details are `here<https://github.com/ethereum/EIPs#accepted-eips-planned-for-adoption-in-the-byzantium-metropolis-hard-fork>`.
 * Release Step 3.1: Metropolis phase 2: Constantinople: TBA, expected in 2018. Details on Metropolis are `here<https://github.com/ethereum/EIPs#deferred-eips-adoption-postponed-until-the-constantinople-metropolis-hard-fork>`.
