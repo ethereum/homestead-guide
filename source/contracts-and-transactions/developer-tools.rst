@@ -44,7 +44,7 @@ Dapp development requires an understanding of the Web3 Javascript API, the JSON 
   Solidity is the Ethereum developed Smart Contract language, which compiles to EVM (Ethereum Virtual Machine) opcodes.
 * `Solium <https://github.com/duaraghav8/Solium/>`__ -
   A linter for Solidity which strictly follows the rules prescribed by the official `Solidity Style Guide <http://solidity.readthedocs.io/en/latest/style-guide.html>`__.
-* `Solhint <https://github.com/tokenhouse/solhint/>`__ -
+* `Solhint <https://github.com/protofire/solhint/>`__ -
   Solidity linter that provides security, style guide and best practice rules for smart contract validation.
 * :ref:`test-networks` - Test networks help developers develop and test Ethereum code and network interactions without spending their own ether on the main network. Test network options are listed below.
 * :ref:`IDE-or-development-framework`. This assists you in developing,
