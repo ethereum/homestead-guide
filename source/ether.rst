@@ -95,10 +95,12 @@ Exchange                   Currencies
 ========================== ============================
 `Shapeshift`_              BTC, LTC, DOGE, Other
 `Bity`_                    BTC, USD, EUR, CHF
+`Karsha`_                  BTC, LTC, BCH, ZEC, DSH, DGE, XMR, USD, EUR
 ========================== ============================
 
 .. _Bity: https://bity.com
 .. _Shapeshift: shapeshift.io
+.. _Karsha: https://karsha.biz
 
 
 Trading and price analytics
