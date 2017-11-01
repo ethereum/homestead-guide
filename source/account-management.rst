@@ -396,7 +396,7 @@ Manual backup/restore
 
 You must have an account’s keyfile to be able to send any transaction from that account. Keyfiles are found in the keystore subdirectory of your Ethereum node’s data directory. The default data directory locations are platform specific:
 
-- Windows: ``C:\Users\username\%appdata%\Roaming\Ethereum\keystore``
+- Windows: ``%appdata%\Ethereum\keystore``
 - Linux: ``~/.ethereum/keystore``
 - Mac: ``~/Library/Ethereum/keystore``
 
