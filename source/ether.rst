@@ -98,7 +98,7 @@ Exchange                   Currencies
 ========================== ============================
 
 .. _Bity: https://bity.com
-.. _Shapeshift: shapeshift.io
+.. _Shapeshift: https://shapeshift.io
 
 
 Trading and price analytics
