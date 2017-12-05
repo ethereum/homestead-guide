@@ -392,6 +392,7 @@ Mining pools
 * `alphapool`_
 * `cryptopool`_
 * `unitedminers`_
+* `2miners`_
 * `dwarfpool`_ - Try to avoid this (currently over 50% of the network)
 * `laintimes <http://pool.laintimes.com/>`_ - Discontinued
 
@@ -411,6 +412,7 @@ Mining pools
 .. _etherchain.org: https://etherchain.org/
 .. _unitedminers: http://eth.unitedminers.cloud/
 .. _cryptopool: http://ethereum.cryptopool.online/
+.. _2miners: https://2miners.com/
 
 
 Mining resources
