@@ -57,12 +57,17 @@ Trustless services
 
 Note that the Ethereum platform is special in that the smart contracts enable trustless services that obviate the need for trusted third parties in a currency exchange transaction, ie. disintermediate currency exchange businesses.
 
-Such projects (alpha/prelaunch status at the time of writing) are:
+Projects that have launched includes:
+* `Decentrex <https://decentrex.com/>`_
+
+Projects that have not been released yet (as of Dec 14 2017) includes:
 
 * `BTCrelay <http://btcrelay.org/>`_
    * `More information <https://medium.com/@ConsenSys/taking-stock-bitcoin-and-ethereum-4382f0a2f17>`_ (about ETH/BTC 2-way peg without modifying bitcoin code).
    * `BTCrelay audit <http://martin.swende.se/blog/BTCRelay-Auditing.html>`_
-* `EtherEx decentralised exchange <https://etherex.org>`_.
+* `EtherEx decentralised exchange <https://etherex.org>`_. (This link no longer works. `Etherex is not active on Github<https://github.com/etherex/etherex>`_.)
+
+Additionally there is also `LocalEthereum <https://localethereum.com/>`_. "The smart contract allows users to safely exchange ether with one another, and to name a trusted third-party to mediate a trade if a dispute arises. Currently, the trusted mediator is always localethereum.com, but the contract will be adapted in the future to switch over to a reputation-based distributed arbitrator pool." The source of this quote is `here <https://blog.localethereum.com/how-our-escrow-smart-contract-works/>`_.
 
 List of centralised exchange marketplaces
 --------------------------------------------------------------------------------
