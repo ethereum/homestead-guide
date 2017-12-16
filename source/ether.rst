@@ -62,7 +62,7 @@ Such projects (alpha/prelaunch status at the time of writing) are:
 * `BTCrelay <http://btcrelay.org/>`_
    * `More information <https://medium.com/@ConsenSys/taking-stock-bitcoin-and-ethereum-4382f0a2f17>`_ (about ETH/BTC 2-way peg without modifying bitcoin code).
    * `BTCrelay audit <http://martin.swende.se/blog/BTCRelay-Auditing.html>`_
-* `EtherEx decentralised exchange <https://etherex.org>`_.
+* `EtherEx decentralised exchange <https://etherex.github.io/etherex>`_.
 
 List of centralised exchange marketplaces
 --------------------------------------------------------------------------------
