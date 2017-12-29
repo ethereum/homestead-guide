@@ -234,7 +234,7 @@ You check your cooling status:
 
 Windows set-up
 -------------------------------
-`Download the latest Eth\+\+ installation <https://github.com/ethereum/webthree-umbrella/releases>`_ and choose ethminer at the "Choose Components" screen of the installation screen.
+`Download the latest Eth\+\+ installation <https://github.com/ethereum-mining/ethminer/releases>`_ and choose ethminer at the "Choose Components" screen of the installation screen.
 
 ..  image:: img/eth_miner_setup.png
 ..   :height: 513px
