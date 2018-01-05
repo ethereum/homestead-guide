@@ -1,6 +1,6 @@
 
 .. _Installing binaries:
- 
+
 Installing binaries
 ================================================================================
 
@@ -16,6 +16,7 @@ and we will add them to this list.
    :maxdepth: 2
 
    docker.rst
+   linux-ubuntu-snap.rst
    linux-ubuntu-ppa.rst
    windows-chocolatey.rst
    osx-homebrew.rst

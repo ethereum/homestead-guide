@@ -6,7 +6,8 @@ Ubuntu PPA (Personal Package Archive)
 following significant repository reorganizations and a change of automation
 process.  We have not hooked the PPA generation steps back together
 yet, though this will happen in the very near future.  In the meantime,
-please follow the** :ref:`Building Linux from source` **instructions.**
+please follow the** :ref:`Building Linux from source` **instructions**, or
+:ref:`install the snap <.. _linux-ubuntu-snap>` (currently in testing).
 
 We have set up PPA instances for the following Ubuntu versions:
 
@@ -23,14 +24,14 @@ add such support, but we will not put any of our development time into
 supporting Ubuntu 32-bit builds.
 
 For the latest stable version: ::
-    
+
     sudo apt-get install software-properties-common
     sudo add-apt-repository ppa:ethereum/ethereum
     sudo apt-get update
     sudo apt-get install cpp-ethereum
 
 If you want to use the cutting edge developer version: ::
-    
+
     sudo apt-get install software-properties-common
     sudo add-apt-repository ppa:ethereum/ethereum
     sudo add-apt-repository ppa:ethereum/ethereum-dev
