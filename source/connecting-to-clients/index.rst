@@ -24,7 +24,7 @@ A number of libraries have been written to help address these issues, allowing a
 +----------------------+------------+-----------------------------------------------+
 | :ref:`ethereum-ruby` | Ruby       | https://github.com/DigixGlobal/ethereum-ruby  |
 +----------------------+------------+-----------------------------------------------+
-| :ref:`web3.py`       | Python     | https://github.com/pipermerriam/web3.py       |
+| :ref:`web3.py`       | Python     | https://github.com/ethereum/web3.py           |
 +----------------------+------------+-----------------------------------------------+
 
 Information on each library is provided in the following sections:
