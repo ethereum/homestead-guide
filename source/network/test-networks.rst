@@ -226,7 +226,7 @@ blockchain unless they have the same genesis block, so you can make as many priv
   {
       "nonce": "0x0000000000000042",     "timestamp": "0x0",
       "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
-      "extraData": "0x0",     "gasLimit": "0x8000000",     "difficulty": "0x400",
+      "extraData": "0x00",     "gasLimit": "0x8000000",     "difficulty": "0x400",
       "mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",
       "coinbase": "0x3333333333333333333333333333333333333333",     "alloc": {     }
   }
