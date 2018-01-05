@@ -71,7 +71,7 @@ For non-interactive use you supply a plaintext password file as argument to the 
   >I type my pass
 
 
-To list all the accounts with keyfiles currently in you’re ``keystore`` folder use the ``list`` subcommand of the ``geth account`` command:
+To list all the accounts with keyfiles currently in your ``keystore`` folder use the ``list`` subcommand of the ``geth account`` command:
 
 .. code-block:: Bash
 
