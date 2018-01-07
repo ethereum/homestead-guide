@@ -7,7 +7,7 @@ Homestead is the second major version of the Ethereum platform and is the first 
 Milestones of the Ethereum development roadmap
 -----------------------------------------------
 
-See [here](https://github.com/ethereum/wiki/wiki/Releases) for the latest information.
+See `here <https://github.com/ethereum/wiki/wiki/Releases>`_ for the latest information.
 
 If you are running a node connected to the live network, it is important that you upgrade to a compatible client. Such clients with their versions are listed under :ref:`Ethereum Clients`. Otherwise you will end up on the wrong fork and will no longer be in sync with the rest of the network.
 
