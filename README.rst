@@ -1,11 +1,10 @@
 *****************************
 Homestead-Guide
 *****************************
-|License|
+|License| |Gitter|
 
 .. |License| image:: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
-   :target: https://creativecommons.org/licenses/by-sa/4.0/
-|Gitter|
+   :target: https://creativecommons.org/licenses/by-sa/4.0/ 
 
 .. |Gitter| image:: https://badges.gitter.im/ethereum/homestead-guide.svg
    :target: https://gitter.im/ethereum/homestead-guide?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
