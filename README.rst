@@ -5,7 +5,6 @@ Homestead-Guide
 
 .. |License| image:: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
    :target: https://creativecommons.org/licenses/by-sa/4.0/
-
 |Gitter|
 
 .. |Gitter| image:: https://badges.gitter.im/ethereum/homestead-guide.svg
