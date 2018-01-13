@@ -64,7 +64,8 @@ solution file using CMake: ::
 
 Which should result in the creation of **cpp-ethereum.sln** in that build directory.
 
-**NOTE: We only support Visual Studio 2015 as of cpp-ethereum-v.1.3.0.**
+**NOTE: We only support Visual Studio 2015 as of cpp-ethereum-v.1.3.0. If you don't
+have it already, install the `Visual C++ 2015 Build Tools <http://landinghub.visualstudio.com/visual-cpp-build-tools>`_ **
 
 Double-clicking on that file should result in Visual Studio firing up. We suggest
 building **RelWithDebugInfo** configuration, but all others work.
