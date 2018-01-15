@@ -1,3 +1,5 @@
+Note that some information on this website may no longer be relevant or out-of-date. You can also refer to the `Ethereum wiki <https://github.com/ethereum/wiki>`_ for the latest information.
+
 .. _what-is-ethereum:
 
 ################################################################################
