@@ -37,7 +37,11 @@ It is safe to transfer the entire directory or any individual keyfile between Et
 Creating an account
 ================================================================================
 
-.. Warning:: **Remember your passwords and** :ref:`backup your keyfiles <backup-and-restore-accounts>`. In order to send transactions from an account, including sending ether, you must have BOTH the keyfile and the password. Be absolutely sure to have a copy of your keyfile AND remember the password for that keyfile, and store them both as securely as possible. There are no escape routes here; lose the keyfile or forget your password and all your ether is gone. It is NOT possible to access your account without a password and there is no *forgot my password* option here. Do not forget it.
+.. Warning:: |remember_backup| In order to send transactions from an account, including sending ether, you must have BOTH the keyfile and the password. Be absolutely sure to have a copy of your keyfile AND remember the password for that keyfile, and store them both as securely as possible. There are no escape routes here; lose the keyfile or forget your password and all your ether is gone. It is NOT possible to access your account without a password and there is no *forgot my password* option here. Do not forget it.
+
+.. |remember_backup| raw:: html
+
+   <strong>Remember your passwords and <a href="#backup-and-restore-accounts">backup your keyfiles</a>.</strong>
 
 Using ``geth account new``
 --------------------------------------------------------------------------------
