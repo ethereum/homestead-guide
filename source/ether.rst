@@ -45,6 +45,7 @@ Ether supply
 
 Getting ether
 ================================================================================
+
 Please see this page `here <https://github.com/ethereum/wiki/wiki/Getting-Ether>_.
 
 Sending ether

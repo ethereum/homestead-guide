@@ -82,11 +82,7 @@ Morden's genesis.json
 Getting Morden testnet ether
 --------------------------------------------------------------------------------
 
-Two ways to obtain Morden testnet ether:
-
-- Mine using your CPU/GPU, (see :ref:`mining`).
-- Use the `Ethereum wei faucet <https://zerogox.com/ethereum/wei_faucet>`__.
-
+Because of decreased mining difficulty on the testnet, ether can easily mined using your CPU/GPU (see :ref:`mining`).
 
 ********************************************************************************
 Setting up a local private testnet
@@ -228,9 +224,9 @@ blockchain unless they have the same genesis block, so you can make as many priv
 .. code-block:: JSON
 
   {
-      "nonce": "0x0000000000000042",     "timestamp": "0x0",
+      "config": { }, "nonce": "0x0000000000000042",     "timestamp": "0x0",
       "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
-      "extraData": "0x0",     "gasLimit": "0x8000000",     "difficulty": "0x400",
+      "extraData": "0x00",     "gasLimit": "0x8000000",     "difficulty": "0x400",
       "mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",
       "coinbase": "0x3333333333333333333333333333333333333333",     "alloc": {     }
   }

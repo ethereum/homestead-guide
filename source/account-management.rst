@@ -37,7 +37,11 @@ It is safe to transfer the entire directory or any individual keyfile between Et
 Creating an account
 ================================================================================
 
-.. Warning:: **Remember your passwords and :ref:`backup your keyfiles <backup-and-restore-accounts>`.** In order to send transactions from an account, including sending ether, you must have BOTH the keyfile and the password. Be absolutely sure to have a copy of your keyfile AND remember the password for that keyfile, and store them both as securely as possible. There are no escape routes here; lose the keyfile or forget your password and all your ether is gone. It is NOT possible to access your account without a password and there is no *forgot my password* option here. Do not forget it.
+.. Warning:: |remember_backup| In order to send transactions from an account, including sending ether, you must have BOTH the keyfile and the password. Be absolutely sure to have a copy of your keyfile AND remember the password for that keyfile, and store them both as securely as possible. There are no escape routes here; lose the keyfile or forget your password and all your ether is gone. It is NOT possible to access your account without a password and there is no *forgot my password* option here. Do not forget it.
+
+.. |remember_backup| raw:: html
+
+   <strong>Remember your passwords and <a href="#backup-and-restore-accounts">backup your keyfiles</a>.</strong>
 
 Using ``geth account new``
 --------------------------------------------------------------------------------
@@ -71,7 +75,7 @@ For non-interactive use you supply a plaintext password file as argument to the 
   >I type my pass
 
 
-To list all the accounts with keyfiles currently in you’re ``keystore`` folder use the ``list`` subcommand of the ``geth account`` command:
+To list all the accounts with keyfiles currently in your ``keystore`` folder use the ``list`` subcommand of the ``geth account`` command:
 
 .. code-block:: Bash
 
@@ -169,7 +173,7 @@ Creating an account using the GUI Mist Ethereum wallet couldn’t be easier. In 
 Creating a Multi-Signature Wallet in Mist
 --------------------------------------------------------------------------------
 
-The Mist Ethereum wallet has an option to secure your wallet balance with a multisig wallet. The advantage of using a multisig wallet is that it requires authorization from more than one account to withdrawal larger amounts from your balance. Before you can create a multisig wallet, you'll need to create more than one account.
+The Mist Ethereum wallet has an option to secure your wallet balance with a multisig wallet. The advantage of using a multisig wallet is that it requires authorization from more than one account to withdraw larger amounts from your balance. Before you can create a multisig wallet, you'll need to create more than one account.
 
 It's very easy to create account files in Mist. In the 'Accounts' section click 'Add Account'. Pick a strong yet easy-to-remember password (remember there is no password recovery option), confirm it, and your account is created. Create at least 2 accounts. Secondary accounts can be created on separate computers running Mist if you prefer (and theoretically make your multisig more secure doing it this way). You only need the public keys (your deposit addresses) of your secondary accounts when creating the multisig wallet (copy/paste them, do not ever type them by hand). Your primary account will be needed to create the multisig wallet contract, so it must be on the computer you are creating the multisig wallet on.
 
@@ -183,7 +187,7 @@ We are now ready to create the multisig wallet. Under 'Wallet Contracts', select
 
 "This is a joint account controlled by X owners. You can send up to X ether per day. Any transaction over that daily limit requires the confirmation of X owners."
 
-Set whatever amount of owners (accounts) you are attaching to this multisig wallet, whatever you want for a daily withdrawal limit (that only requires one account to withdrawal that amount), and how many owners (accounts) are required to approve any withdrawal amount over the daily limit.
+Set whatever amount of owners (accounts) you are attaching to this multisig wallet, whatever you want for a daily withdrawal limit (that only requires one account to withdraw that amount), and how many owners (accounts) are required to approve any withdrawal amount over the daily limit.
 
 Now add the addresses of the accounts that you copied / pasted into your text editor earlier, confirm all your settings are correct, and click 'Create' at the bottom. You will then need to enter your password to send the transaction. In the 'Wallet Contracts' section it should show your new wallet, and say 'creating'.
 
@@ -205,7 +209,7 @@ Troubleshooting:
 Using Eth
 --------------------------------------------------------------------------------
 
-Every options related to key management available using geth can be used the same way in eth.
+Every option related to key management available using geth can be used the same way in eth.
 
 Below are "account" related options:
 
@@ -396,7 +400,7 @@ Manual backup/restore
 
 You must have an account’s keyfile to be able to send any transaction from that account. Keyfiles are found in the keystore subdirectory of your Ethereum node’s data directory. The default data directory locations are platform specific:
 
-- Windows: ``C:\Users\username\%appdata%\Roaming\Ethereum\keystore``
+- Windows: ``%appdata%\Ethereum\keystore``
 - Linux: ``~/.ethereum/keystore``
 - Mac: ``~/Library/Ethereum/keystore``
 

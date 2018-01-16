@@ -57,7 +57,7 @@ Transactions contain:
  - ``VALUE`` field - The amount of wei to transfer from the sender to the recipient,
  - an optional data field, which can contain the message sent to a contract,
  - a ``STARTGAS`` value, representing the maximum number of computational steps the transaction execution is allowed to take,
- - a ``GASPRICE`` value, representing the fee the sender is willing to pay for gas. One unit of gas corresponds to the execution of one atomic instruction, i.e., a computational step.
+ - a ``GASPRICE`` value, representing "Wei per gas". One Wei corresponds to 0.000000000000000001 Ether.
 
 What is a message?
 ================================================================================

@@ -234,7 +234,7 @@ You check your cooling status:
 
 Windows set-up
 -------------------------------
-`Download the latest Eth\+\+ installation <https://github.com/ethereum/webthree-umbrella/releases>`_ and choose ethminer at the "Choose Components" screen of the installation screen.
+`Download the latest Eth\+\+ installation <https://github.com/ethereum-mining/ethminer/releases>`_ and choose ethminer at the "Choose Components" screen of the installation screen.
 
 ..  image:: img/eth_miner_setup.png
 ..   :height: 513px
@@ -392,6 +392,7 @@ Mining pools
 * `alphapool`_
 * `cryptopool`_
 * `unitedminers`_
+* `2miners`_
 * `dwarfpool`_ - Try to avoid this (currently over 50% of the network)
 * `laintimes <http://pool.laintimes.com/>`_ - Discontinued
 
@@ -411,6 +412,7 @@ Mining pools
 .. _etherchain.org: https://etherchain.org/
 .. _unitedminers: http://eth.unitedminers.cloud/
 .. _cryptopool: http://ethereum.cryptopool.online/
+.. _2miners: https://2miners.com/
 
 
 Mining resources
