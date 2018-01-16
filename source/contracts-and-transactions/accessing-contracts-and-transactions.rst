@@ -60,9 +60,9 @@ note that data in these examples will differ on your local node. If you want to 
 .. code:: bash
 
     > curl --data '{"jsonrpc":"2.0","method":"eth_coinbase", "id":1}' localhost:8545
-    {"id":1,"jsonrpc":"2.0","result":["0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a"]}
+    {"id":1,"jsonrpc":"2.0","result":["0x9b1d35635cc34752ca54713bb99d38614f63c955"]}
 
-    > curl --data '{"jsonrpc":"2.0","method":"eth_getBalance", "params": ["0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "latest"], "id":2}' localhost:8545
+    > curl --data '{"jsonrpc":"2.0","method":"eth_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' localhost:8545
     {"id":2,"jsonrpc":"2.0","result":"0x1639e49bba16280000"}
 
 Remember when we said that numbers are hex encoded? In this case the balance is returned in wei as a hex string. If we want to have the balance in
@@ -73,38 +73,32 @@ ether as a number we can use web3 from the geth console.
     > web3.fromWei("0x1639e49bba16280000", "ether")
     "410"
 
-Now that we have some ether on our private development chain we can deploy the contract. The first step is to verify that the solidity compiler is
-available. We can retrieve available compilers using the ``eth_getCompilers`` RPC method.
-
-.. code:: bash
-
-   > curl --data '{"jsonrpc":"2.0","method": "eth_getCompilers", "id": 3}' localhost:8545
-   {"id":3,"jsonrpc":"2.0","result":["Solidity"]}
-
-We can see that the solidity compiler is available. If it's not available follow `these <http://solidity.readthedocs.org/en/latest/installing-solidity.html>`_
-instructions.
+Now that we have some ether on our private development chain we can deploy the contract. The first step is to compile the Multiply7 contract to byte code that can be sent to the EVM.  Follow these `these <http://solidity.readthedocs.org/en/latest/installing-solidity.html>`_
+instructions to install solc, the solidity compiler.
 
 The next step is to compile the Multiply7 contract to byte code that can be send to the EVM.
 
 .. code:: bash
-
-   > curl --data '{"jsonrpc":"2.0","method": "eth_compileSolidity", "params": ["contract Multiply7 { event Print(uint); function multiply(uint input) returns (uint) { Print(input * 7); return input * 7; } }"], "id": 4}' localhost:8545
-   {"id":4,"jsonrpc":"2.0","result":{"Multiply7":{"code":"0x6060604052605f8060106000396000f3606060405260e060020a6000350463c6888fa18114601a575b005b60586004356007810260609081526000907f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da90602090a15060070290565b5060206060f3","info":{"source":"contract Multiply7 { event Print(uint); function multiply(uint input) returns (uint) { Print(input * 7); return input * 7; } }","language":"Solidity","languageVersion":"0.2.2","compilerVersion":"0.2.2","compilerOptions":"--bin --abi --userdoc --devdoc --add-std --optimize -o /tmp/solc205309041","abiDefinition":[{"constant":false,"inputs":[{"name":"input","type":"uint256"}],"name":"multiply","outputs":[{"name":"","type":"uint256"}],"type":"function"},{"anonymous":false,"inputs":[{"indexed":false,"name":"","type":"uint256"}],"name":"Print","type":"event"}],"userDoc":{"methods":{}},"developerDoc":{"methods":{}}}}}}
+  
+   > echo 'pragma solidity ^0.4.16; contract Multiply7 { event Print(uint); function multiply(uint input) public returns (uint) { Print(input * 7); return input * 7; } }' | solc --bin
+   ======= <stdin>:Multiply7 =======
+   Binary: 
+   6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029
 
 Now that we have the compiled code we need to determine how much gas it costs to deploy it. The RPC interface has an ``eth_estimateGas`` method that will
 give us an estimate.
 
 .. code:: bash
 
-   > curl --data '{"jsonrpc":"2.0","method": "eth_estimateGas", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "data": "0x6060604052605f8060106000396000f3606060405260e060020a6000350463c6888fa18114601a575b005b60586004356007810260609081526000907f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da90602090a15060070290565b5060206060f3"}], "id": 5}' localhost:8545
-   {"id":5,"jsonrpc":"2.0","result":"0xb8a9"}
+   > curl --data '{"jsonrpc":"2.0","method": "eth_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' localhost:8545
+   {"jsonrpc":"2.0","id":5,"result":"0x1c31e"}
 
 And finally deploy the contract.
 
 .. code:: bash
 
-   > curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "gas": "0xb8a9", "data": "0x6060604052605f8060106000396000f3606060405260e060020a6000350463c6888fa18114601a575b005b60586004356007810260609081526000907f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da90602090a15060070290565b5060206060f3"}], "id": 6}' localhost:8545
-   {"id":6,"jsonrpc":"2.0","result":"0x3a90b5face52c4c5f30d507ccf51b0209ca628c6824d0532bcd6283df7c08a7c"}
+   > curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' localhost:8545
+   {"id":6,"jsonrpc":"2.0","result":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"}
 
 The transaction is accepted by the node and a transaction hash is returned. We can use this hash to track the transaction.
 
@@ -114,10 +108,10 @@ creates a contract it will also contain the contract address. We can retrieve th
 
 .. code:: bash
 
-   > curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": ["0x3a90b5face52c4c5f30d507ccf51b0209ca628c6824d0532bcd6283df7c08a7c"], "id": 7}' localhost:8545
-   {"id":7,"jsonrpc":"2.0","result":{"transactionHash":"0x3a90b5face52c4c5f30d507ccf51b0209ca628c6824d0532bcd6283df7c08a7c","transactionIndex":"0x0","blockNumber":"0x4c","blockHash":"0xe286656e478a1b99030e318d0f5c3a61a644f25e63deaa8be52e80da1e7b0c47","cumulativeGasUsed":"0xb8a9","gasUsed":"0xb8a9","contractAddress":"0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d","logs":[]}}
+   > curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' localhost:8545
+   {"jsonrpc":"2.0","id":7,"result":{"blockHash":"0x77b1a4f6872b9066312de3744f60020cbd8102af68b1f6512a05b7619d527a4f","blockNumber":"0x1","contractAddress":"0x4d03d617d700cf81935d7f797f4e2ae719648262","cumulativeGasUsed":"0x1c31e","from":"0x9b1d35635cc34752ca54713bb99d38614f63c955","gasUsed":"0x1c31e","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","status":"0x1","to":null,"transactionHash":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf","transactionIndex":"0x0"}}
 
-We can see that our contract was created on ``0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d``. If you got null instead of a receipt the transaction has
+We can see that our contract was created on ``0x4d03d617d700cf81935d7f797f4e2ae719648262``. If you got null instead of a receipt the transaction has
 not been included in a block yet. Wait for a moment and check if your miner is running and retry it.
 
 
@@ -137,8 +131,8 @@ over the function name and its argument types and hex encode it. The `multiply` 
 
 .. code:: js
 
-   > web3.sha3("multiply(uint256)").substring(0, 8)
-   "c6888fa1"
+   > web3.sha3("multiply(uint256)").substring(0, 10)
+   "0xc6888fa1"
 
 See for details `this page <https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI#function-selector>`_.
 
@@ -156,37 +150,48 @@ Lets try it:
 
 .. code:: bash
 
-   > curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' localhost:8545
-   {"id":8,"jsonrpc":"2.0","result":"0x759cf065cbc22e9d779748dc53763854e5376eea07409e590c990eafc0869d74"}
+   > curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "to": "0x4d03d617d700cf81935d7f797f4e2ae719648262", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' localhost:8545
+   {"id":8,"jsonrpc":"2.0","result":"0x50905bea8043e1166703a2a72390f6e6eb4f23150c8e7d13094a6d82ce89a054"}
 
 Since we sent a transaction we got the transaction hash returned. If we retrieve the receipt we can see something new:
 
 .. code-block:: js
-   :emphasize-lines: 7
-
+   :emphasize-lines: 8
    {
-      blockHash: "0xbf0a347307b8c63dd8c1d3d7cbdc0b463e6e7c9bf0a35be40393588242f01d55",
-      blockNumber: 268,
-      contractAddress: null,
-      cumulativeGasUsed: 22631,
-      gasUsed: 22631,
-      logs: [{
-         address: "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d",
-         blockHash: "0xbf0a347307b8c63dd8c1d3d7cbdc0b463e6e7c9bf0a35be40393588242f01d55",
-         blockNumber: 268,
+     blockHash: "0x55262092dc46db5c7d3595decd4317780896c765c4db69cf2d5f650e46249b13",
+     blockNumber: 6,
+     contractAddress: null,
+     cumulativeGasUsed: 22774,
+     from: "0x9b1d35635cc34752ca54713bb99d38614f63c955",
+     gasUsed: 22774,
+     logs: [{
+         address: "0x4d03d617d700cf81935d7f797f4e2ae719648262",
+         blockHash: "0x55262092dc46db5c7d3595decd4317780896c765c4db69cf2d5f650e46249b13",
+         blockNumber: 6,
          data: "0x000000000000000000000000000000000000000000000000000000000000002a",
          logIndex: 0,
+         removed: false,
          topics: ["0x24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da"],
-         transactionHash: "0x759cf065cbc22e9d779748dc53763854e5376eea07409e590c990eafc0869d74",
+         transactionHash: "0x50905bea8043e1166703a2a72390f6e6eb4f23150c8e7d13094a6d82ce89a054",
          transactionIndex: 0
      }],
-     transactionHash: "0x759cf065cbc22e9d779748dc53763854e5376eea07409e590c990eafc0869d74",
+     logsBloom: "0x00000000000008000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000020800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+     status: "0x1",
+     to: "0x4d03d617d700cf81935d7f797f4e2ae719648262",
+     transactionHash: "0x50905bea8043e1166703a2a72390f6e6eb4f23150c8e7d13094a6d82ce89a054",
      transactionIndex: 0
    }
 
+
 The receipt contains a log. This log was generated by the EVM on transaction execution and included in the receipt. If we look at the multipy function
 we can see that the Print event was raised with the input times 7. Since the argument for the Print event was a uint256 we can decode it according to
-the ABI rules which will leave us with the expected decimal 42. Apart from the data it is worth noting that topics can be used to determine which
+the ABI rules which will leave us with the expected decimal 42. 
+
+.. code-block:: bash
+   > echo $((0x000000000000000000000000000000000000000000000000000000000000002a))
+   42
+
+Apart from the data it is worth noting that topics can be used to determine which
 event created the log:
 
 .. code:: js
