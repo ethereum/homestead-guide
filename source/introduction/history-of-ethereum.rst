@@ -92,7 +92,4 @@ The presence of large companies like UBS, IBM and Microsoft clearly indicated en
 * `DEVCON-1 talks Youtube playlist <https://www.youtube.com/playlist?list=PLJqWcTqh_zKHQUFX4IaVjWjfT2tbS4NVk>`_
 * `DEVCON-1 website <https://devcon.ethereum.org/>`_ full listing of presentations with links to the slides if available.
 
-History resources
-----------------------------------------
 
-* `a simple graphical timeline <http://ethereumtimeline.org/>`_
