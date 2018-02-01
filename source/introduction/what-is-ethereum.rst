@@ -106,7 +106,6 @@ Infographics
 --------------------------------
 
 * `Ethereum explained...[to your mother] <https://blog.ethereum.org/wp-content/uploads/2015/06/Ethereum-image-infographic-beginners-guide.png>`_
-* http://decentral.ca/wp-content/uploads/2016/03/infographic.jpg
 * https://medium.com/@angelomilan/ethereum-explained-to-my-mom-infographic-673e32054c1c#.n9kzhme6v
 
 
