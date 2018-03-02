@@ -7,12 +7,12 @@ Accessing Contracts and Transactions
 RPC
 ================================================================================
 
-In previous sections we have seen how contracts can be written, deployed and interacted with. Now it's time to dive in the details of communicating
+In previous sections we have seen how contracts can be written, deployed and interacted with. Now it's time to dive into the details of communicating
 with the Ethereum network and smart contracts.
 
 An Ethereum node offers a `RPC <https://wikipedia.org/wiki/Remote_procedure_call>`_ interface. This interface gives Ðapp's access to the Ethereum
 blockchain and functionality that the node provides, such as compiling smart contract code. It uses a subset of the
-`JSON-RPC 2.0 <http://www.jsonrpc.org/specification>`_ specification (no support for notifications or named parameters) as serialisation protocol and
+`JSON-RPC 2.0 <http://www.jsonrpc.org/specification>`_ specification (no support for notifications or named parameters) as the serialisation protocol and
 is available over HTTP and IPC (unix domain sockets on linux/OSX and named pipe's on Windows).
 
 If you are not interested in the details but are looking for an easy to use javascript library you can skip the following sections and continue with :ref:`Using Web3 <using_web3.js>`.
@@ -23,7 +23,7 @@ The RPC interface uses a couple of conventions that are not part of the JSON-RPC
 
 * Numbers are hex encoded. This decision was made because some languages have no or limited support for working with extremly large numbers. To prevent
   these type of errors numbers are hex encoded and it is up to the developer to parse these numbers and handle them appropriately. See the
-  `hex encoding section <https://github.com/ethereum/wiki/wiki/JSON-RPC#output-hex-values>`_ on the wiki for examples.
+  `hex encoding section <https://github.com/ethereum/wiki/wiki/JSON-RPC#hex-value-encoding>`_ on the wiki for examples.
 * Default block number, several RPC methods accept a block number. In some cases it's not possible to give a block number or not very convenient. For
   these cases the default block number can be one of these strings ["earliest", "latest", "pending"]. See the
   `wiki page <https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter>`_ for a list of RPC methods that use the default block parameters.
@@ -55,7 +55,7 @@ This will start the HTTP RPC interface on ``http://localhost:8545``.
 .. note:: geth supports `CORS <https://en.wikipedia.org/wiki/Cross-origin_resource_sharing>`_, see the ``--rpccorsdomain`` flag for more information.
 
 We can verify that the interface is running by retrieving the coinbase address and balance using `curl <https://curl.haxx.se/download.html>`_. Please
-note that data in these examples will differ on your local node. If you want to try these command replace the request params accordingly.
+note that data in these examples will differ on your local node. If you want to try these commands replace the request params accordingly.
 
 .. code:: bash
 
@@ -122,7 +122,7 @@ Now that our contract is deployed we can interact with it. There are 2 methods f
 If we look at the documentation for the `eth_sendTransaction <https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_sendtransaction>`_ we can see that we need to supply
 several arguments. In our case we need to specify the ``from``, ``to`` and ``data`` arguments. ``From`` is the public address of our account and ``to``
 the contract address. The ``data`` argument is a bit harder. It contains a payload that defines which method must be called and with which arguments.
-This is were the ABI comes into play. The ABI defines how to define and encode data for the EVM. You can read
+This is where the ABI comes into play. The ABI defines how to define and encode data for the EVM. You can read
 `all the details about the ABI here <https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI>`_.
 
 The bytes of the payload is the function selector and defines which method is called. This is done by taking the first 4 bytes from the Keccak hash
@@ -134,7 +134,7 @@ over the function name and its argument types and hex encode it. The `multiply` 
    > web3.sha3("multiply(uint256)").substring(0, 10)
    "0xc6888fa1"
 
-See for details `this page <https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI#function-selector>`_.
+See `this page <https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI#function-selector>`_ for details.
 
 The next step is to encode the arguments. We only have one uint256, lets assume we supply the value 6. The ABI has a
 `section <https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI#argument-encoding>`_ which specifies how to encode uint256 types.

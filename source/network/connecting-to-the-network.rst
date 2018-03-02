@@ -4,7 +4,6 @@
 Connecting to the Network
 ********************************************************************************
 
-This section
 
 The Ethereum network
 ================================================================================
@@ -17,7 +16,7 @@ Ethereum network stats
 `EthStats\.net <https://ethstats.net/>`_ is a dashboard of live statistics of the Ethereum network. This dashboard displays important information such as the current block, hash difficulty, gas price, and gas spending. The nodes shown on the page are only a selection of actual nodes on the network.
 Anyone is allowed to add their node to the EthStats dashboard. The `Eth\-Netstats README on Github <https://github.com/cubedro/eth-netstats>`_ describes how to connect.
 
-`EtherNodes\.com <https://www.ethernodes.org/>`_ displays current and historical data on node count and other information on both the Ethereum mainnet and Morden testnet.
+`EtherNodes\.org <https://www.ethernodes.org/>`_ displays current and historical data on node count and other information on both the Ethereum mainnet and Morden testnet.
 
 `Distribution of client implementations on the current live network <https://etherchain.org/nodes>`_ - Realtime stats on EtherChain.
 
@@ -42,7 +41,7 @@ How to connect
 
 Geth continuously attempts to connect to other nodes on the network until it has peers. If you have UPnP enabled on your router or run Ethereum on an Internet-facing server, it will also accept connections from other nodes.
 
-Geth finds peers through something called the *discovery protocol*. In the discovery protocol, nodes are gossipping with each other to find out about other nodes on the network. In order to get going initially, geth uses a set of bootstrap nodes whose endpoints are recorded in the source code.
+Geth finds peers through something called the *discovery protocol*. In the discovery protocol, nodes gossip with each other to find out about other nodes on the network. In order to get going initially, geth uses a set of bootstrap nodes whose endpoints are recorded in the source code.
 
 Checking connectivity and ENODE IDs
 --------------------------------------------------------------------------------
@@ -144,7 +143,6 @@ Exporting/Importing the blockchain
 --------------------------------------------------------------------------------
 
 If you already have a full Ethereum node synced, you can export the blockchain data from the fully synced node and import it into your new node. You can accomplish this in geth by exporting your full node with the command ``geth export filename`` and importing the blockchain into your node using ``geth import filename``.
-see `this link <staticnodes>`_
 
 ..  _cr-static-nodes:
 

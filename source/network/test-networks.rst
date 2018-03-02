@@ -236,7 +236,7 @@ You will reference this when starting your geth node using the following command
 
 ``geth init /path/to/CustomGenesis.json``
 
-.. note:: By default geth will use the same directory for network related files as for the public mainnet. Thus you are advised to set a custom ``--datadir`` to keep the public network's chaindata from bing reset.
+.. note:: By default geth will use the same directory for network related files as for the public mainnet. Thus you are advised to set a custom ``--datadir`` to keep the public network's chaindata from being reset.
 
 Command line parameters for private network
 --------------------------------------------------------------------------------
@@ -356,7 +356,7 @@ A difficulty of "0x400" allows you to mine Ether very quickly on your private te
 
 .. note:: Replace ``0x1fb891f92eb557f4d688463d0d7c560552263b5a`` with your account address.
 
-Save your genesis file and rerun your private chain command. Once geth is fully loaded, close it by .
+Save your genesis file and rerun your private chain command.
 
 We want to assign an address to the variable ``primary`` and check its balance.
 
@@ -391,7 +391,7 @@ Type the following command:
 
   > balance = web3.fromWei(eth.getBalance(primary), "ether");
 
-This should return ``7.5`` indicating you have that much ether in your account. The reason we had to put such a large number in the alloc section of your genesis file is because the "balance" field takes a number in wei which is the smallest denomination of the Ethereum currency ether (see _`Ether`).
+This should return ``20`` indicating you have that much ether in your account. The reason we had to put such a large number in the alloc section of your genesis file is because the "balance" field takes a number in wei which is the smallest denomination of the Ethereum currency ether (see :ref:`Ether`).
 
 
 * https://www.reddit.com/r/ethereum/comments/3kdnus/question_about_private_chain_mining_dont_upvote/

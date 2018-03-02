@@ -12,7 +12,7 @@ Accounts are essential for users to interact with the Ethereum blockchain via tr
 
 If we restrict Ethereum to only externally owned accounts and allow only transactions between them, we arrive at an "altcoin" system that is less powerful than bitcoin itself and can only be used to transfer ether.
 
-Accounts represent identities of external agents (e.g., human personas, mining nodes or automated agents). Accounts use public key cryptography to sign transaction so that the EVM can securely validate the identity of a transaction sender.
+Accounts represent identities of external agents (e.g., human personas, mining nodes or automated agents). Accounts use public key cryptography to sign transactions so that the EVM can securely validate the identity of a transaction sender.
 
 Keyfiles
 ================================================================================
@@ -65,7 +65,7 @@ For non-interactive use you supply a plaintext password file as argument to the 
 
   $ geth --password /path/to/password account new
 
-..  Warning:: Using the ``--password`` flag is meant to be used only for testing or automation in trusted environments. It is a bad idea to save your password to file or expose it in any other way. If you do use the ``--password`` flag with a password file, make sure the file is not readable or even listable for anyone but you. You can achieve this in Mac/Linux systems with:
+..  Warning:: The ``--password`` flag is meant to be used only for testing or automation in trusted environments. It is a bad idea to save your password to file or expose it in any other way. If you do use the ``--password`` flag with a password file, make sure the file is not readable or even listable for anyone but you. You can achieve this in Mac/Linux systems with:
 
 .. code-block:: Bash
 

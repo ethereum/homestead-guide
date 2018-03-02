@@ -14,7 +14,7 @@ The word mining originates in the context of the gold analogy for crypto currenc
 What is mining?
 --------------------------------------------------------------------------------
 
-Ethereum, like all blockchain technologies, uses an incentive-driven model of security. Consensus is based on choosing the block with the highest total difficulty. Miners produce blocks which the others check for validity. Among other well-formedness criteria, a block is only valid if it contains *proof of work* (PoW) of a given *difficulty*. Note that in the Ethereum Serenity milestone, this is likely going to be replaced by a  (see :ref:`proof of stake model <POS vs POW>` ).
+Ethereum, like all blockchain technologies, uses an incentive-driven model of security. Consensus is based on choosing the block with the highest total difficulty. Miners produce blocks which the others check for validity. Among other well-formedness criteria, a block is only valid if it contains *proof of work* (PoW) of a given *difficulty*. Note that in the Ethereum Serenity milestone, this is likely going to be replaced by a  (see :ref:`proof of stake model <POS vs POW>`).
 
 The Ethereum blockchain is in many ways similar to the Bitcoin blockchain, although it does have some differences. The main difference between Ethereum and Bitcoin with regard to the blockchain architecture is that, unlike Bitcoin, Ethereum blocks contain a copy of both the transaction list and the most recent state (the root hash of the merkle patricia trie encoding the state to be more precise). Aside from that, two other values, the block number and the difficulty, are also stored in the block.
 
@@ -194,12 +194,12 @@ GPU mining
 Hardware
 -------------------------------
 
-The algorithm is memory hard and in order to fit the DAG into memory, it needs 1-2GB of RAM on each GPU. If you get ``Error GPU mining. GPU memory fragmentation?`` you do not have enough memory.
+The algorithm is memory hard and in order to fit the DAG into memory, it needs 2-3GB of RAM on each GPU. If you get ``Error GPU mining. GPU memory fragmentation?`` you do not have enough memory.
 The GPU miner is implemented in OpenCL, so AMD GPUs will be 'faster' than same-category NVIDIA GPUs.
 ASICs and FPGAs are relatively inefficient and therefore discouraged.
 To get openCL for your chipset and platform, try:
 
-- `AMD SDK openCL <http://developer.amd.com/tools-and-sdks/opencl-zone/amd-accelerated-parallel-processing-app-sdk>`_
+- `AMD SDK openCL <https://developer.amd.com/amd-accelerated-parallel-processing-app-sdk/>`_
 - `NVIDIA CUDA openCL <https://developer.nvidia.com/cuda-downloads>`_
 
 Ubuntu Linux set-up
@@ -300,9 +300,9 @@ In order to mine on a single GPU all that needs to be done is to run eth with th
 - ``-G`` set GPU mining on.
 
 While the client is running you can interact with it using either
-geth attach` or [ethconsole](https://github.com/ethereum/ethereum-console).
+geth attach or `ethconsole <https://github.com/ethereum/ethereum-console>`_.
 
-Mining on a multiple GPUs
+Mining on multiple GPUs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Mining with multiple GPUs and eth is very similar to mining with geth and multiple GPUs.
 Ensure that an eth node is running with your coinbase address properly set:
@@ -425,7 +425,7 @@ Mining resources
 * `Mining profitability calculator on cryptowizzard <http://cryptowizzard.github.io/eth-mining-calculator/>`_
 * `Mining profitability calculator on etherscan <http://etherscan.io/ether-mining-calculator/>`_
 * `Mining profitability calculator on In The Ether <http://ethereum-mining-calculator.com/>`_
-* `Mining difficulty chart on etherscan <http://etherscan.io/charts/difficulty>`_
+* `Mining difficulty chart on etherscan <https://etherscan.io/chart/difficulty>`_
 
 
 .. _POS vs POW:
