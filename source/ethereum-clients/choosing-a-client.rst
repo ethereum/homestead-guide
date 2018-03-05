@@ -92,7 +92,7 @@ are not yet any mobile Ethereum clients available.
 The main hinderance to the use of Ethereum on mobile devices is that the
 Light Client support is still incomplete.   The work which has been done is
 off in a private branch, and is only available for the Go client.
-doublethinkco will be starting development of Light Client for the C++ client
+doublethinkco will start development of Light Client for the C++ client
 in the coming months, following grant funding.
 
 Check out `Status.im <http://status.im>`_, who were initially using

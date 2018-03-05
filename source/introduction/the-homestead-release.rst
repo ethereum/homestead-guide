@@ -21,7 +21,7 @@ Homestead hard fork changes
 Ethereum in the narrow formal sense is a suite of protocols.
 Homestead comes with a few backward-incompatible protocol changes, and therefore will require a hard fork. These changes that made their way through the process for :ref:`Ethereum Improvement Proposals <Ethereum Improvement Proposals>` and included are:
 
-* `EIP 2: <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2.mediawiki>`_
+* `EIP 2: <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2.md>`_
 
   * cost for creating contracts via a transaction is increased from 21000 to 53000. Contract creation from a contract using the ``CREATE`` opcode is unaffected.
   * transaction signatures whose s-value is greater than ``secp256k1n/2`` are now considered invalid

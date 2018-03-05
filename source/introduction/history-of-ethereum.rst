@@ -8,10 +8,10 @@ Inception
 ================================================================================
 Ethereum was initially described by Vitalik Buterin in late 2013 as a result of his research and work in the Bitcoin community. Shortly thereafter, Vitalik published the `Ethereum white paper <https://github.com/ethereum/wiki/wiki/White-Paper>`_, where he describes in detail the technical design and rationale for the Ethereum protocol and smart contracts architecture. In January 2014, Ethereum was formally announced by Vitalik at the The North American Bitcoin Conference in Miami, Florida, USA.
 
-Around that time, Vitalik also started working with Dr. Gavin Wood and together co-founded Ethereum. By April 2014, Gavin published the `Ethereum Yellow Paper <https://github.com/ethereum/yellowpaper>`_ that would serve as the technical specification for the Ethereum Virtual Machine (EVM). By following the detailed specification in the Yellow Paper, the Ethereum client has been implemented in seven programming languages (C++, Go, Python, Java, JavaScript, Haskell, Rust), and has resulted in better software overall.
+Around that time, Vitalik also started working with Dr. Gavin Wood and together they co-founded Ethereum. By April 2014, Gavin published the `Ethereum Yellow Paper <https://github.com/ethereum/yellowpaper>`_ that would serve as the technical specification for the Ethereum Virtual Machine (EVM). By following the detailed specification in the Yellow Paper, the Ethereum client has been implemented in seven programming languages (C++, Go, Python, Java, JavaScript, Haskell, Rust), and has resulted in better software overall.
 
 * `Ethereum launches Cryptocurrency 2.0 network <http://www.coindesk.com/ethererum-launches-cryptocurrency-2-0-network/>`_ - Coindesk article of 2014 Jan on the beginnings
-* `Ethereum announcement on bitcointalk <https://bitcointalk.org/index.php?topic=428589.0>`_ Vitalik's original announcement to the bitcoin community. Forum thread with 5000 replies.
+* `Ethereum announcement on bitcointalk <https://bitcointalk.org/index.php?topic=428589.0>`_ Vitalik's original announcement to the bitcoin community. Forum thread with 17000 replies.
 
 The Ethereum Foundation and the ether presale
 ================================================================================
@@ -27,7 +27,7 @@ Beginning in July 2014, Ethereum distributed the initial allocation of ether via
 
 ETH/DEV and Ethereum development
 ================================================================================
-Following the successful ether presale, Ethereum development was formalized under a non-for-profit organization called ETH DEV, which manages the development of Ethereum under contract from Ethereum Suisse – with Vitalik Buterin, Gavin Wood, and Jeffrey Wilcke as the 3 directors of the organization. Developer interest in Ethereum grew steadily throughout 2014 and the ETH DEV team delivered a series of proof-of-concept (PoC) releases for the development community to evaluate. Frequent posts by ETH DEV team on the  `the Ethereum blog <https://blog.ethereum.org>`_ also kept the excitement and momentum around Ethereum going. Increasing traffic and growing user-base on both the Ethereum forum and the ethereum subreddit testified that the platform is attracting a fast-growing and devoted developer community. This trend has been continuing to this very day.
+Following the successful ether presale, Ethereum development was formalized under a not-for-profit organization called ETH DEV, which manages the development of Ethereum under contract from Ethereum Suisse – with Vitalik Buterin, Gavin Wood, and Jeffrey Wilcke as the 3 directors of the organization. Developer interest in Ethereum grew steadily throughout 2014 and the ETH DEV team delivered a series of proof-of-concept (PoC) releases for the development community to evaluate. Frequent posts by ETH DEV team on the  `the Ethereum blog <https://blog.ethereum.org>`_ also kept the excitement and momentum around Ethereum going. Increasing traffic and growing user-base on both the Ethereum forum and the ethereum subreddit testified that the platform is attracting a fast-growing and devoted developer community. This trend has been continuing to this very day.
 
 DEVCON-0
 --------------------------------------------------------------------------------

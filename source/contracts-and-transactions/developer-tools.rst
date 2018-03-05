@@ -4,7 +4,7 @@
 Dapps
 ********************************************************************************
 
-A dapp is a service that enables direct interaction between end users and providers (e.g. connecting buyers and sellers in some marketplace, owners and storers in file storage). Ethereum dapps typically interface users via an HTML/Javascript web application using a Javascript API to communicate with the blockchain. Dapps would typically have their own suite of associated contracts on the blockchain which they use to encode business logic and allow persistent storage of their consensus-critical state. Remember that because of the redundant nature of computation on the Ethereum network, the gas costs of execution will always be higher than private execution offchain. This incentivizes dapp developers to restrict the amount of code they execute and amount of data they store on the blockchain.
+A dapp is a service that enables direct interaction between end users and providers (e.g. connecting buyers and sellers in some marketplace, owners and storers in file storage). Ethereum dapps typically interface with users via an HTML/Javascript web application using a Javascript API to communicate with the blockchain. Dapps would typically have their own suite of associated contracts on the blockchain which they use to encode business logic and allow persistent storage of their consensus-critical state. Remember that because of the redundant nature of computation on the Ethereum network, the gas costs of execution will always be higher than private execution offchain. This incentivizes dapp developers to restrict the amount of code they execute and amount of data they store on the blockchain.
 
 Dapp directories
 ====================================
@@ -116,10 +116,10 @@ Command-line console for Ethereum nodes.
 
 `Ethconsole <https://github.com/ethereum/ethereum-console>`_ connects to an Ethereum node running in the background (tested with eth and geth) via IPC and provides an interactive javascript console containing the web3 object with admin additions.
 
-Here you could find a list of available commands `ethereum node control commands <https://github.com/ethereum/ethereum-console/blob/master/web3Admin.js>`_
+You can find a list of available commads here: `ethereum node control commands <https://github.com/ethereum/ethereum-console/blob/master/web3Admin.js>`_
 
 To use this console you would need to start a local ethereum node with ipc communication socket enabled (file ``geth.ipc`` in data directory).
-By default ipc socket should be located at you local home directory in .ethereum after you started a node.
+By default ipc socket should be located at your local home directory in .ethereum after you started a node.
 You could also set ``--test`` option to use specific node test commands.
 
 .. code:: Console
@@ -177,9 +177,9 @@ From the end user's perspective, Swarm is not that different from WWW, except th
 Code and status
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* [source](https://github.com/ethereum/go-ethereum/tree/swarm)
-* [issues on github](https://github.com/ethereum/go-ethereum/labels/swarm)
-* [development roadmap]()
+* `source <https://github.com/ethereum/go-ethereum/tree/swarm>`_
+* `issues on github <https://github.com/ethereum/go-ethereum/labels/swarm>`_
+* `development roadmap <https://github.com/ethersphere/swarm/wiki/swarm-dev-progress>`_
 
 * `ethersphere on twitter <https://twitter.com/ethersphere>`_
 * `swarm gitter room <https://gitter.im/ethereum/swarm>`_

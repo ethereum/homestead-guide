@@ -90,8 +90,8 @@ Ethereum Improvement Proposals (EIPs)
 The EIP scheme aims to be a framework and largely informal business process coordinating improvements to the protocols. People should first propose their idea as an issue or pull request to the EIPs repository. After basic filtering, the proposal will receive a number and is published in draft form. For an EIP to become Active it will require the mutual consent of the community. Those proposing changes should consider that ultimately consent may rest with the consensus of the Ethereum users.
 For discussion of EIPs, use the `gitter channel for EIP discussions`_.
 
-* `EIP guidelines and sample EIP <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1.mediawiki>`_
-* `EIP template <https://github.com/ethereum/EIPs/blob/master/eip-X.mediawiki>`_
+* `EIP guidelines and sample EIP <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1.md>`_
+* `EIP template <https://github.com/ethereum/EIPs/blob/master/eip-X.md>`_
 * `EIP repository and README <https://github.com/ethereum/EIPs>`_
 * `gitter channel for EIP discussions <https://gitter.im/ethereum/EIPs>`_
 
