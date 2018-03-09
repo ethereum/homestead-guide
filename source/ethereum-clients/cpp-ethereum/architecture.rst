@@ -8,7 +8,7 @@ Architecture
 
 - bench: trie benchmarking
 - cmake: cmake files for build system, contains specification of inter-dependencies
-- eth A command-line Ethereum full-node that can be controlled via RPC.
+- eth: A command-line Ethereum full-node that can be controlled via RPC.
 - ethkey: stand-alone key management
 - ethminer: stand-alone ethash miner
 - ethvm: stand-alone EVM execution utility
