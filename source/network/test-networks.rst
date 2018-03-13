@@ -4,10 +4,10 @@
 Test Networks
 ********************************************************************************
 
-Morden testnet
+Ropsten testnet
 ================================================================================
-Morden is a public Ethereum alternative testnet. It is expected to
-continue throughout the Frontier and Homestead milestones of the software.
+Ropsten is a public Ethereum alternative testnet. It is expected to
+continue through the Homestead release.
 
 Usage
 --------------------------------------------------------------------------------
@@ -15,16 +15,16 @@ Usage
 eth (C++ client)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This is supported natively on 0.9.93 and above. Pass the ``--morden`` argument in when starting any of the clients. e.g.:
+This is supported natively on 0.9.93 and above. Pass the ``--ropsten`` argument in when starting any of the clients. e.g.:
 
 .. code:: Console
 
-   > eth --morden
+   > eth --ropsten
 
 PyEthApp (Python client)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-PyEthApp supports the morden network from v1.0.5 onwards:
+PyEthApp currently only supports the old morden testnet. From v1.0.5 onwards:
 
 .. code:: Console
 
@@ -41,45 +41,21 @@ Details
 --------------------------------------------------------------------------------
 All parameters are the same as the main Ethereum network except:
 
--  Network Name: **Morden**
--  Network Identity: 2
--  genesis.json (given below);
--  Initial Account Nonce (``IAN``) is 2^20 (instead of 0 in all previous
-   networks).
+-  Network Name: **Ropsten**
+-  Network Identity: 3
+-  `genesis.json <https://github.com/paritytech/parity/blob/master/ethcore/res/ethereum/ropsten.json>`_
+-  Initial Account Nonce (``IAN``) is 0 (instead of 2^20 in the Morden testnet).
 
    -  All accounts in the state trie have nonce >= ``IAN``.
    -  Whenever an account is inserted into the state trie it is
       initialised with nonce = ``IAN``.
 
 -  Genesis generic block hash:
-   ``0cd786a2425d16f152c658316c423e6ce1181e15c3295826d7c9904cba9ce303``
+   ``41941023680923e0fe4d74a34bdac8141f2540e3ae90623718e47d66d1ca4a2d``
 -  Genesis generic state root:
-   ``f3f4696bbf3b3b07775128eb7a3763279a394e382130f27c21e70233e04946a9``
+   ``217b0bbcfb72e2d57e28f33cb361b9983513177755dc3f33ce3e7022ed62b77b``
 
-Morden's genesis.json
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code:: JSON
-
-	{
-			"nonce": "0x00006d6f7264656e",
-			"difficulty": "0x20000",
-			"mixhash": "0x00000000000000000000000000000000000000647572616c65787365646c6578",
-			"coinbase": "0x0000000000000000000000000000000000000000",
-			"timestamp": "0x00",
-			"parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
-			"extraData": "0x",
-			"gasLimit": "0x2FEFD8",
-			"alloc": {
-					"0000000000000000000000000000000000000001": { "balance": "1" },
-					"0000000000000000000000000000000000000002": { "balance": "1" },
-					"0000000000000000000000000000000000000003": { "balance": "1" },
-					"0000000000000000000000000000000000000004": { "balance": "1" },
-					"102e61f5d8f9bc71d0ad4a084df4e65e05ce0e1c": { "balance": "1606938044258990275541962092341162602522202993782792835301376" }
-			}
-	}
-
-Getting Morden testnet ether
+Getting Ropsten testnet ether
 --------------------------------------------------------------------------------
 
 Because of decreased mining difficulty on the testnet, ether can easily mined using your CPU/GPU (see :ref:`mining`).
@@ -203,7 +179,7 @@ geth (Go client)
 
 You either pre-generate or mine your own ether on a private
 testnet. It is a much more cost effective way of trying out
-Ethereum and you can avoid having to mine or find Morden test ether.
+Ethereum and you can avoid having to mine or find Ropsten test ether.
 
 The things that are required to specify in a private chain are:
  - Custom Genesis File

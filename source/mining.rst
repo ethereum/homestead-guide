@@ -84,7 +84,7 @@ In order to mine you need a fully synced Ethereum client that is enabled for min
 CPU mining
 ================================================================================
 
-You can use your computer's central processing unit (CPU) to mine ether. This is no longer profitable, since GPU miners are roughly two orders of magnitude more efficient. However, you can use CPU mining to mine on the Morden testnet or a private chain for the purposes of creating the ether you need to test contracts and transactions without spending your real ether on the live network.
+You can use your computer's central processing unit (CPU) to mine ether. This is no longer profitable, since GPU miners are roughly two orders of magnitude more efficient. However, you can use CPU mining to mine on the Ropsten testnet or a private chain for the purposes of creating the ether you need to test contracts and transactions without spending your real ether on the live network.
 
 .. note:: The testnet ether has no value other than using it for testing purposes (see :ref:`test-networks`).
 

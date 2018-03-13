@@ -16,7 +16,7 @@ Ethereum network stats
 `EthStats\.net <https://ethstats.net/>`_ is a dashboard of live statistics of the Ethereum network. This dashboard displays important information such as the current block, hash difficulty, gas price, and gas spending. The nodes shown on the page are only a selection of actual nodes on the network.
 Anyone is allowed to add their node to the EthStats dashboard. The `Eth\-Netstats README on Github <https://github.com/cubedro/eth-netstats>`_ describes how to connect.
 
-`EtherNodes\.org <https://www.ethernodes.org/>`_ displays current and historical data on node count and other information on both the Ethereum mainnet and Morden testnet.
+`EtherNodes\.org <https://www.ethernodes.org/>`_ displays current and historical data on node count and other information on both the Ethereum mainnet and Ropsten testnet.
 
 `Distribution of client implementations on the current live network <https://etherchain.org/nodes>`_ - Realtime stats on EtherChain.
 
