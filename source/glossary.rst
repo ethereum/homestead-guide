@@ -218,7 +218,10 @@ Glossary
       The Frontier pre-release, which launched on May 9th 2015. It was meant for developers to help test the limits of the Ethereum blockchain.
 
    morden
-      Morden is the first Ethereum alternative testnet. It is expected to continue throughout the Frontier and Homestead era.
+      Morden was the first Ethereum alternative testnet. 
+
+   ropsten
+      Ropsten is an active Ethereum testnet that replaced Morden in November 2016. It was started from a new genesis block due to a client consensus issue and increasing block times.
 
    testnet
       A mirror network of the production Ethereum network that is meant for testing. See Morden.
