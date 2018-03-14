@@ -221,7 +221,7 @@ Glossary
       Morden was the first Ethereum alternative testnet. 
 
    ropsten
-      Ropsten is a testnet forked from Morden in November 2016 due to increasing mining difficulty, and a client consensus issue.
+      Ropsten is an active Ethereum testnet that replaced Morden in November 2016. It was started from a new genesis block due to a client consensus issue and increasing block times.
 
    testnet
       A mirror network of the production Ethereum network that is meant for testing. See Morden.
