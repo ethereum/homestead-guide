@@ -36,7 +36,7 @@ sufficient and the client should behave exactly as if run from a local build.
 
 If you want the rpc port reachable from the network (not recommended, never do this
 if you have valuable data or private keys on your machine), replace
-``-p 127.0.0.1:8545:8545`` by ``-p 0.0.0.0:8545:8545``.
+``-p 127.0.0.1:8545:8545`` with ``-p 0.0.0.0:8545:8545``.
 
 For convenience, you can create the file ``/usr/local/bin/docker-eth`` with the
 following content::

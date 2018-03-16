@@ -104,6 +104,8 @@ To check the ports used by geth and also find your enode URI run:
     ListenAddr: '[::]:30303'
   }
 
+.. _download-the-blockchain-faster:
+
 Download the blockchain faster
 ================================================================================
 

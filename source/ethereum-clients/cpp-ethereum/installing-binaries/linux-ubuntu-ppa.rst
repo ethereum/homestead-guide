@@ -7,7 +7,7 @@ following significant repository reorganizations and a change of automation
 process.  We have not hooked the PPA generation steps back together
 yet, though this will happen in the very near future.  In the meantime,
 please follow the** :ref:`Building Linux from source` **instructions**, or
-:ref:`install the snap <.. _linux-ubuntu-snap>` (currently in testing).
+install :ref:`linux-ubuntu-snap` (currently in testing).
 
 We have set up PPA instances for the following Ubuntu versions:
 
