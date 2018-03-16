@@ -36,5 +36,7 @@ Contract registry
 To publish the source code of a specific contract, its address has to be mapped to it. The contract registry stores this mapping. Users can then look up this mapping and verify the contract byte code.
 
 See
+
 * global registrar code
+
 * namereg API
