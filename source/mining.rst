@@ -98,7 +98,7 @@ The ``-minerthreads`` parameter can be used to set the number parallel mining th
 
 You can also start and stop CPU mining at runtime using the `console <https://github.com/ethereum/go-ethereum/wiki/JavaScript-Console#adminminerstart>`__. ``miner.start`` takes an optional parameter for the number of miner threads.
 
-.. code-block:: Javascript
+.. code-block:: javascript
 
     > miner.start(8)
     true
@@ -126,20 +126,21 @@ Note that your etherbase does not need to be an address of a local account, just
 
 There is an option `to add extra Data <https://github.com/ethereum/go-ethereum/wiki/JavaScript-Console#minersetextra>`__ (32 bytes only) to your mined blocks. By convention this is interpreted as a unicode string, so you can set your short vanity tag.
 
-.. code-block:: javascript
+.. code-block:: none
 
-    miner.setExtra("ΞTHΞЯSPHΞЯΞ")
+    > miner.setExtra("ΞTHΞЯSPHΞЯΞ")
     ...
-    debug.printBlock(131805)
+    > debug.printBlock(131805)
     BLOCK(be465b020fdbedc4063756f0912b5a89bbb4735bd1d1df84363e05ade0195cb1): Size: 531.00 B TD: 643485290485 {
     NoNonce: ee48752c3a0bfe3d85339451a5f3f411c21c8170353e450985e1faab0a9ac4cc
     Header:
-    [
-    ...
+        [
+        ...
             Coinbase:           a4d8e9cae4d04b093aac82e6cd355b6b963fb7ff
             Number:             131805
             Extra:              ΞTHΞЯSPHΞЯΞ
-    ...
+        ...
+        ]
     }
 
 You can check your hashrate with `miner.hashrate <https://github.com/ethereum/go-ethereum/wiki/JavaScript-Console#adminminerhashrate>`_, the result is in H/s (Hash operations per second).

@@ -48,7 +48,7 @@ Checking connectivity and ENODE IDs
 
 To check how many peers the client is connected to in the interactive console, the ``net`` module has two attributes that give you info about the number of peers and whether you are a listening node.
 
-.. code-block:: Javascript
+.. code-block:: javascript
 
   > net.listening
   true
@@ -58,7 +58,7 @@ To check how many peers the client is connected to in the interactive console, t
 
 To get more information about the connected peers, such as IP address and port number, supported protocols, use the ``peers()`` function of the ``admin`` object. ``admin.peers()`` returns the list of currently connected peers.
 
-.. code-block:: Javascript
+.. code-block:: javascript
 
   > admin.peers
   [{
@@ -90,7 +90,7 @@ To get more information about the connected peers, such as IP address and port n
 
 To check the ports used by geth and also find your enode URI run:
 
-.. code-block:: Javascript
+.. code-block:: javascript
 
   > admin.nodeInfo
   {
@@ -135,7 +135,7 @@ This flag enables the JIT VM.
 
 Full example command with console:
 
-.. code-block:: Bash
+.. code-block:: bash
 
   geth --fast --cache=1024 --jitvm console
 
@@ -153,7 +153,7 @@ Static Nodes, Trusted Nodes, and Boot Nodes
 
 Geth supports a feature called static nodes if you have certain peers you always want to connect to. Static nodes are re-connected on disconnects. You can configure permanent static nodes by putting something like the following into ``<datadir>/static-nodes.json`` (this should be the same folder that your ``chaindata`` and ``keystore`` folders are in)
 
-.. code-block:: Javascript
+.. code-block:: javascript
 
   [
   	"enode://f4642fa65af50cfdea8fa7414a5def7bb7991478b768e296f5e4a54e8b995de102e0ceae2e826f293c481b5325f89be6d207b003382e18a8ecba66fbaf6416c0@33.4.2.1:30303",
@@ -162,7 +162,7 @@ Geth supports a feature called static nodes if you have certain peers you always
 
 You can also add static nodes at runtime via the Javascript console using ``admin.addPeer()``
 
-.. code-block:: Console
+.. code-block:: console
 
   > admin.addPeer("enode://f4642fa65af50cfdea8fa7414a5def7bb7991478b768e296f5e4a54e8b995de102e0ceae2e826f293c481b5325f89be6d207b003382e18a8ecba66fbaf6416c0@33.4.2.1:30303")
 

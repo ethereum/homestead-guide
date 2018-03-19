@@ -17,7 +17,7 @@ eth (C++ client)
 
 This is supported natively on 0.9.93 and above. Pass the ``--ropsten`` argument in when starting any of the clients. e.g.:
 
-.. code:: Console
+.. code:: console
 
    > eth --ropsten
 
@@ -26,14 +26,14 @@ PyEthApp (Python client)
 
 PyEthApp currently only supports the old morden testnet. From v1.0.5 onwards:
 
-.. code:: Console
+.. code:: console
 
    > pyethapp --profile morden run
 
 geth (Go client)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code:: Console
+.. code:: console
 
    > geth --testnet
 
@@ -72,7 +72,7 @@ eth (C++ client)
 
 It is possible to connect to or create a new network by using the --genesis and --config.
 
-.. code:: Console
+.. code:: console
 
   > eth --private "customChain" --config config.json --genesis genesis.json
 
@@ -80,11 +80,11 @@ It is possible to use both --config and --genesis.
 
 In that case, the genesis block description provided by --config will be overwritten by the --genesis option.
 
-.. code:: Console
+.. code:: console
 
   --private //defines the name of the custom chain (optional).
 
-.. code:: Console
+.. code:: console
 
   --config <filename>
 
@@ -104,7 +104,7 @@ In that case, the genesis block description provided by --config will be overwri
 
 Here is a Config sample (used by the Olympic network):
 
-.. code:: JSON
+.. code:: json
 
     {
     	"sealEngine": "Ethash",
@@ -149,7 +149,7 @@ Here is a Config sample (used by the Olympic network):
     }
 
 
-.. code:: Console
+.. code:: console
 
   --genesis <filename> (optional if the config option is provided and contains the genesis description).
 
@@ -157,7 +157,7 @@ Here is a Config sample (used by the Olympic network):
 
 The content is the same as the genesis field provided by the 'config' parameter:
 
-.. code:: JavaScript
+.. code:: javascript
 
   {
 		"nonce": "0x000000000000002a",
@@ -197,7 +197,7 @@ blockchain unless they have the same genesis block, so you can make as many priv
 
 :file:`CustomGenesis.json`
 
-.. code-block:: JSON
+.. code-block:: json
 
   {
       "config": { }, "nonce": "0x0000000000000042",     "timestamp": "0x0",
@@ -267,7 +267,7 @@ Launching ``geth``
 
 After you have created your custom genesis block JSON file and created a directory for your blockchain data, type the following command into your console that has access to geth:
 
-.. code-block:: Console
+.. code-block:: console
 
   geth --identity "MyNodeName" --rpc --rpcport "8080" --rpccorsdomain "*" --datadir "C:\chains\TestChain1" --port "30303" --nodiscover --rpcapi "db,eth,net,web3" --networkid 1999 init /path/to/CustomGenesis.json
 
@@ -275,7 +275,7 @@ After you have created your custom genesis block JSON file and created a directo
 
 This will initialize your genesis block.  To interact with geth through the console enter: 
 
-.. code-block:: Console
+.. code-block:: console
 
   geth --identity "MyNodeName" --rpc --rpcport "8080" --rpccorsdomain "*" --datadir "C:\chains\TestChain1" --port "30303" --nodiscover --rpcapi "db,eth,net,web3" --networkid 1999 console
 
@@ -285,7 +285,7 @@ The full list of methods available through the javascript console is available o
 
 If you already have a geth node running, you can attach another geth instance to it using:
 
-.. code-block:: Console
+.. code-block:: console
 
   geth attach
 
@@ -293,7 +293,7 @@ Now you'll need to initialize a new account on the testnest, and set it as your 
 
 In the javascript console type
 
-.. code-block:: Console
+.. code-block:: console
 
   personal.newAccount("password")
 
@@ -301,7 +301,7 @@ In the javascript console type
 
 Now we'll set it as the etherbase:
 
-.. code-block:: Console
+.. code-block:: console
 
   miner.setEtherbase(personal.listAccounts[0])
 
@@ -309,7 +309,7 @@ If successful, the console will print "true"
 
 Finally, you are ready to start mining test ether:
 
-.. code-block:: Console
+.. code-block:: console
 
   miner.start()
 
@@ -322,7 +322,7 @@ A difficulty of "0x400" allows you to mine Ether very quickly on your private te
 2. Copy your new account address
 3. Add the following command to your Custom_Genesis.json file:
 
-.. code-block:: Javascript
+.. code-block:: javascript
 
   "alloc":
   {
@@ -338,7 +338,7 @@ We want to assign an address to the variable ``primary`` and check its balance.
 
 Run the command ``geth account list`` in your terminal to see what account # your new address was assigned.
 
-.. code-block:: Console
+.. code-block:: console
 
    > geth account list
    Account #0: {d1ade25ccd3d550a7eb532ac759cac7be09c2719}
@@ -349,13 +349,13 @@ Run the command ``geth account list`` in your terminal to see what account # you
 Take note of which account # is the one that you pre-allocated ether to.
 Alternatively, you can launch the console with ``geth console`` (keep the same parameters as when you launched ``geth`` first). Once the prompt appears, type
 
-.. code-block:: Console
+.. code-block:: console
 
   > eth.accounts
 
 This will return the array of account addresses you possess.
 
-.. code-block:: Console
+.. code-block:: console
 
   > primary = eth.accounts[0]
 
@@ -363,7 +363,7 @@ This will return the array of account addresses you possess.
 
 Type the following command:
 
-.. code-block:: Console
+.. code-block:: console
 
   > balance = web3.fromWei(eth.getBalance(primary), "ether");
 

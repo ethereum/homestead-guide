@@ -50,7 +50,7 @@ Once you have the geth client installed, creating an account is merely a case of
 
 Note that you do not have to run the geth client or sync up with the blockchain to use the ``geth account`` command.
 
-.. code-block:: Bash
+.. code-block:: bash
 
   $ geth account new
 
@@ -61,13 +61,13 @@ Note that you do not have to run the geth client or sync up with the blockchain 
 
 For non-interactive use you supply a plaintext password file as argument to the ``--password`` flag. The data in the file consists of the raw bytes of the password optionally followed by a single newline.
 
-.. code-block:: Bash
+.. code-block:: bash
 
   $ geth --password /path/to/password account new
 
 ..  Warning:: The ``--password`` flag is meant to be used only for testing or automation in trusted environments. It is a bad idea to save your password to file or expose it in any other way. If you do use the ``--password`` flag with a password file, make sure the file is not readable or even listable for anyone but you. You can achieve this in Mac/Linux systems with:
 
-.. code-block:: Bash
+.. code-block:: bash
 
   touch /path/to/password
   chmod 600 /path/to/password
@@ -77,7 +77,7 @@ For non-interactive use you supply a plaintext password file as argument to the 
 
 To list all the accounts with keyfiles currently in your ``keystore`` folder use the ``list`` subcommand of the ``geth account`` command:
 
-.. code-block:: Bash
+.. code-block:: bash
 
   $ geth account list
 
@@ -94,7 +94,7 @@ Using geth console
 
 In order to create a new account using geth, we must first start geth in console mode (or you can use ``geth attach`` to attach a console to an already running instance):
 
-.. code-block:: Bash
+.. code-block:: bash
 
   > geth console 2>> file_to_log_output
   instance: Geth/v1.4.0-unstable/linux/go1.5.1
@@ -104,7 +104,7 @@ In order to create a new account using geth, we must first start geth in console
 
 The console allows you to interact with your local node by issuing commands. For example, try the command to list your accounts:
 
-.. code-block:: Javascript
+.. code-block:: javascript
 
   > eth.accounts
 
@@ -115,7 +115,7 @@ The console allows you to interact with your local node by issuing commands. For
 
 This shows that you have no accounts. You can also create an account from the console:
 
-.. code-block:: Javascript
+.. code-block:: javascript
 
   > personal.newAccount()
   Passphrase:
@@ -126,7 +126,7 @@ This shows that you have no accounts. You can also create an account from the co
 
 We just created our first account. If we try to list our accounts again we can see our new account:
 
-.. code-block:: Javascript
+.. code-block:: javascript
 
   > eth.accounts
   ["0xb2f69ddf70297958e582a0cc98bce43294f1007d"]
@@ -213,7 +213,7 @@ Every option related to key management available using geth can be used the same
 
 Below are "account" related options:
 
-.. code-block:: Javascript
+.. code-block:: javascript
 
   > eth account list  // List all keys available in wallet.
   > eth account new   // Create a new key and add it to the wallet.
@@ -222,7 +222,7 @@ Below are "account" related options:
 
 Below are "wallet" related option:
 
-.. code-block:: Javascript
+.. code-block:: javascript
 
   > eth wallet import <file> //Import a presale wallet.
 
@@ -230,7 +230,7 @@ Below are "wallet" related option:
 
 It is also possible to access keys management from the integrated console (using the built-in console or geth attach):
 
-.. code-block:: Javascript
+.. code-block:: javascript
 
   > web3.personal
   {
@@ -250,7 +250,7 @@ Ethkey is a CLI tool of the C++ implementation that allows you to interact with 
 We will assume you have not yet run a client such as eth or anything in the Aleth series of clients. If you have, you can skip this section.
 To create a wallet, run ``ethkey`` with the ``createwallet`` command:
 
-.. code-block:: Bash
+.. code-block:: bash
 
   > ethkey createwallet
 
@@ -261,7 +261,7 @@ You'll be asked for a "master" passphrase. This protects your privacy and acts a
 
 We can list the keys within the wallet simply by using the list command:
 
-.. code-block:: Bash
+.. code-block:: bash
 
   > ethkey list
 
@@ -271,7 +271,7 @@ We haven't yet created any keys, and it's telling us so! Let's create one.
 
 To create a key, we use the ``new`` command. To use it we must pass a name - this is the name we'll give to this account in the wallet. Let's call it "test":
 
-.. code-block:: Bash
+.. code-block:: bash
 
   > ethkey new test
 
@@ -282,7 +282,7 @@ Here, let's give it the incredibly imaginative passphrase of 123. (Never ever us
 Once you enter a passphrase, it'll ask you to confirm it by entering again. Enter 123 a second time.
 Because you gave it its own passphrase, it'll also ask you to provide a hint for this password which will be displayed to you whenever it asks you to enter it. The hint is stored in the wallet and is itself protected by the master passphrase. Enter the truly awful hint of 321 backwards.
 
-.. code-block:: Bash
+.. code-block:: bash
 
   > ethkey new test
 
@@ -298,7 +298,7 @@ Because you gave it its own passphrase, it'll also ask you to provide a hint for
 All normal (aka direct) ICAP addresses begin with XE so you should be able to recognize them easily. Notice also that the key has another identifier after Created key. This is known as the UUID. This is a unique identifier for the key that has absolutely nothing to do with the account itself. Knowing it does nothing to help an attacker discover who you are on the network. It also happens to be the filename for the key, which you can find in either ~/.web3/keys (Mac or Linux) or $HOME/AppData/Web3/keys (Windows).
 Now let's make sure it worked properly by listing the keys in the wallet:
 
-.. code-block:: Bash
+.. code-block:: bash
 
   > ethkey list
   055dde03-47ff-dded-8950-0fe39b1fa101 0092e965… XE472EVKU3CGMJF2YQ0J9RO1Y90BC0LDFZ  test
@@ -336,7 +336,7 @@ Using geth
 
 If you have a standalone installation of geth, importing your presale wallet is accomplished by executing the following command in a terminal:
 
-.. code-block:: Bash
+.. code-block:: bash
 
   geth wallet import /path/to/my/presale-wallet.json
 
@@ -352,19 +352,19 @@ Using geth
 
 You can update an existing account on the command line with the ``update`` subcommand with the account address or index as parameter. Remember that the account index reflects the order of creation (lexicographic order of keyfile names containing the creation time).
 
-.. code-block:: Bash
+.. code-block:: bash
 
   geth account update b0047c606f3af7392e073ed13253f8f4710b08b6
 
 or
 
-.. code-block:: Bash
+.. code-block:: bash
 
   geth account update 2
 
 For example:
 
-.. code-block:: Bash
+.. code-block:: bash
 
   $ geth account update a94f5374fce5edbc8e2a8697c15331677e6ebf0b
 
@@ -381,7 +381,7 @@ The account is saved in the newest version in encrypted format, you are prompted
 
 For non-interactive use the passphrase can be specified with the ``--password`` flag:
 
-.. code-block:: Bash
+.. code-block:: bash
 
   geth --password <passwordfile> account update a94f5374fce5edbc8e2a8697c15331677e6ebf0bs
 
@@ -413,7 +413,7 @@ Importing an unencrypted private key
 
 Importing an unencrypted private key is supported by ``geth``
 
-.. code-block:: Bash
+.. code-block:: bash
 
   geth account import /path/to/<keyfile>
 
@@ -423,7 +423,7 @@ The account is saved in encrypted format, you are prompted for a passphrase. You
 
 An example where the data directory is specified. If the ``--datadir`` flag is not used, the new account will be created in the default data directory, i.e., the keyfile will be placed in the ``keystore`` subdirectory of the data directory.
 
-.. code-block:: Bash
+.. code-block:: bash
 
   $ geth --datadir /someOtherEthDataDir  account import ./key.prv
   The new account will be encrypted with a passphrase.
@@ -434,7 +434,7 @@ An example where the data directory is specified. If the ``--datadir`` flag is n
 
 For non-interactive use the passphrase can be specified with the ``--password`` flag:
 
-.. code-block:: Bash
+.. code-block:: bash
 
   geth --password <passwordfile> account import <keyfile>
 

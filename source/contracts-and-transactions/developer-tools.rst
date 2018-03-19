@@ -122,20 +122,20 @@ To use this console you would need to start a local ethereum node with ipc commu
 By default ipc socket should be located at your local home directory in .ethereum after you started a node.
 You could also set ``--test`` option to use specific node test commands.
 
-.. code:: Console
+.. code:: console
 
    > eth --test
    > ethconsole ipc://path/to/geth.ipc
 
 In the console you could then type
 
-.. code:: Console
+.. code:: console
 
    > web3.eth.<command name> (arguments, function(){})
 
 Here the defenition of ``--test`` mode node commands:
 
-.. code:: Console
+.. code:: console
 
    > web3.test.addBlock("[RLP]", function(){}) - Add a block from a string containing its hex RLP
    > web3.test.rewindToBlock:("[int]", function(){}) - Reset the blockchain to specified block number
