@@ -62,7 +62,7 @@ Learn about Ethereum
 PR videos with some pathos:
 ---------------------------------
 
-* `Ethereum: the World Computer <https://www.youtube.com/watch?v=j23HnORQXvs>_
+* `Ethereum: the World Computer <https://www.youtube.com/watch?v=j23HnORQXvs>`_
 * `Ethereum -- your turn <https://vimeo.com/88959651>`_
 
 
