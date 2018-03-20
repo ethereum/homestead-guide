@@ -106,7 +106,7 @@ def lint(dir=SOURCE_DIR, log_level=WARNING):
                 sys.stdout.write(message)
             else:
                 sys.stderr.write(message)
-    if any(error.type == "ERROR" for error in errors):
+    if any((error.type == "ERROR" or error.type == "WARNING") for error in errors):
         sys.exit(1)
     else:
         sys.exit(0)
