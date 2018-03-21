@@ -11,7 +11,7 @@ Interacting with your node can be done using either geth or the ethereum console
 
 **Using geth**
 
-.. code:: Console
+.. code:: console
 
    > geth attach //attach geth to a running eth node.
 
