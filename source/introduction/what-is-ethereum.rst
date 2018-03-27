@@ -71,8 +71,7 @@ Blockchain and Ethereum 101
 
 * `Explain bitcoin like I'm five <https://medium.com/@nik5ter/explain-bitcoin-like-im-five-73b4257ac833>`_ - an excellent introduction to blockchain technology and bitcoin to the mildly techsavvy layperson.
 * https://medium.com/@creole/7-a-simple-view-of-ethereum-e276f76c980b
-* https://blog.chain.com/explaining-ethereum-fd043c7d602e
-
+* `A Beginner's Guide to Ethereum for the Average Person <https://unhashed.com/cryptocurrency-coin-guides/ethereum/>`_
 * `Explain Ethereum to non-technical people Q&A on stackexchange <http://ethereum.stackexchange.com/questions/45/how-would-i-explain-ethereum-to-a-non-technical-friend>`_
 * Reddit threads on ELI5-ing Ethereum:
 
