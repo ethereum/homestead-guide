@@ -12,6 +12,8 @@ Dapp directories
 Dapps that use Ethereum are compiled to the following lists. They are listed in various stages of development (concept, working prototype, live/deployed). If you are developing a dapp, consider adding an entry to these listings:
 
 * `Ethercasts State of the Ðapps <http://dapps.ethercasts.com/>`_
+* `Dapp Insight <https://dappinsight.com/>`_
+
 
 The offered decentralised services listed cover a wide range of areas including finance, insurance, prediction markets, social networks, distributed computation and storage, gambling, marketplace, internet of things, governance, collaboration, development and games.
 
