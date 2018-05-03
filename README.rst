@@ -79,7 +79,6 @@ RESOURCES
 
 **Legacy Docs**
 
-* Ethereum Wiki: https://github.com/ethereum/wiki/wiki
 * Frontier Guide: https://ethereum.gitbooks.io/frontier-guide/content/ (see below for converted files)
 * Souptacular's Giant List of Ethereum Resources: https://souptacular.gitbooks.io/ethereum-tutorials-and-tips-by-hudson/content/giant_ethereum_resource_list.html
 
