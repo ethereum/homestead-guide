@@ -7,12 +7,12 @@ Choosing a client
 Why are there multiple Ethereum clients?
 =====================================================================
 
-From the earliest days of the project there have been multiple
-client implementations across a range of different operating systems.  That
-client diversity is a huge win for the ecosystem as a whole.
+From the earliest days of the project, there have been multiple
+client implementations across different operating systems. The
+diversity of clients is a huge win for the ecosystem as a whole.
 It lets us verify that the protocol (specified in the `Yellow Paper <https://github.com/ethereum/yellowpaper>`_)
-is unambiguous.  It keeps the door open for new innovation.  It keeps us
-all honest.  However, it can be very confusing for end-users, because there
+is unambiguous. It keeps the door open for innovation. It keeps us
+all honest. However, it can be very confusing for end-users, because there
 is no universal "Ethereum Installer" for them to use.
 
 As of September 2016, the leading implementations are :ref:`go-ethereum` and :ref:`Parity`.
@@ -55,42 +55,41 @@ As of September 2016, the leading implementations are :ref:`go-ethereum` and :re
 What should I install on my desktop/laptop?
 ================================================================================
 
-Most users will likely just install `Mist / Ethereum Wallet <https://github.com/ethereum/mist>`_
+Most users will likely just install `Mist / Ethereum Wallet <https://github.com/ethereum/mist>`_, 
 and that will be enough for their needs.
 
-The Ethereum Wallet is a "single dapp" deployment of the **Mist Browser**
+The Ethereum Wallet is a "single-DApp" deployment of the **Mist Browser**,
 which will be the centerpiece of the Metropolis phase of development, which
 comes after Homestead.
 
-Mist comes with bundled :ref:`go-ethereum` and :ref:`cpp-ethereum` binaries
-and if you are not running a command-line Ethereum client when Mist starts
-then it will start syncing the blockchain using one of the bundled clients
-(defaulting to **geth**).  If you want to use Parity with Mist, or to run Mist against
-a private network, just start your node before Mist, and Mist
-will connect to your node rather than starting one itself.
+Mist comes with bundled :ref:`go-ethereum` and :ref:`cpp-ethereum` binaries. 
+If you are not running a command-line Ethereum client when Mist starts,
+then it will start syncing the blockchain by using one of the bundled clients
+(defaulting to **geth**). If you want to use Parity with Mist or to run Mist against
+a private network, then simply start your node before Mist; Mist
+will connect to your node rather than start one itself.
 
-**Work is underway to add Parity and other clients as "first-class entities"
-to Mist too.**
+**Work is underway to add Parity and other clients to Mist as first-class entities.**
 
 If you want to interact with Ethereum on the command-line, and to take
-advantage of the Javascript console then you will want to install one of
-the client applications directly, as well as Mist.  Follow the links in
-the table above for further instructions.
+advantage of the JavaScript console, then install one of
+the client applications directly, as well as Mist. For further instructions, follow the links in
+the table above.
 
-If you want to do mining then Mist will not be sufficient.  Check out
+If you want to do mining, then Mist will not be sufficient. Check out
 the :ref:`mining` section.
 
 
 What should I install on my mobile/tablet?
 ================================================================================
 
-We are at the very beginning of our support for mobile devices.   The Go
+We are at the very beginning of our support for mobile devices. The Go
 team are publishing experimental iOS and Android libraries, which some
 developers are using to start bootstrapping mobile applications, but there
 are not yet any mobile Ethereum clients available.
 
 The main hinderance to the use of Ethereum on mobile devices is that the
-Light Client support is still incomplete.   The work which has been done is
+Light Client support is still incomplete. The work which has been done is
 off in a private branch, and is only available for the Go client.
 doublethinkco will start development of Light Client for the C++ client
 in the coming months, following grant funding.
