@@ -116,11 +116,11 @@ You have some choice here depending on your skill level, and what you are lookin
 
 * Build from source using customizable scripts(link to page with more detail and individual SBC links to https://github.com/ethembedded)
 
-  * Looking to perform a custom install?  We have scripts available to compile from source "on device". Our scripts contain auto-install of dependencies as well as the client itself. This will allow you to install a specific version of the Ethereum client(i.e.-"develop", "master", etc.), compile your own forked version of a client, and generally play around with the intracacies of the build process.
+  * Looking to perform a custom install?  We have scripts available to compile from source "on device". Our scripts contain auto-install of dependencies as well as the client itself. This will allow you to install a specific version of the Ethereum client(i.e.-"develop", "master", etc.), compile your own forked version of a client, and generally play around with the intricacies of the build process.
 
 
 ********************************************************************************
 Interacting with Clients
 ********************************************************************************
 
-In order to interact with Ethereum clients programatically, please refer to the :ref:`Connecting to Clients` section.
+In order to interact with Ethereum clients programmatically, please refer to the :ref:`Connecting to Clients` section.
