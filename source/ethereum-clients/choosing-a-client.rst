@@ -89,7 +89,7 @@ team are publishing experimental iOS and Android libraries, which some
 developers are using to start bootstrapping mobile applications, but there
 are not yet any mobile Ethereum clients available.
 
-The main hinderance to the use of Ethereum on mobile devices is that the
+The main hindrance to the use of Ethereum on mobile devices is that the
 Light Client support is still incomplete.   The work which has been done is
 off in a private branch, and is only available for the Go client.
 doublethinkco will start development of Light Client for the C++ client
