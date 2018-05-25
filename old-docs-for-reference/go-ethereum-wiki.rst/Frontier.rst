@@ -59,7 +59,7 @@ Safety warnings
 -  **You are responsible for your own karma.** Don't be a jerk and
    respect others.
 
-**WARNING:** Before you interact with the ethereum Frontier network,
+**WARNING:** Before you interact with the Ethereum Frontier network,
 make sure you read the documentation and understand the caveats and
 risks. Please read the `legal
 disclaimer <https://github.com/ethereum/go-ethereum/wiki/Disclaimer>`__
@@ -67,16 +67,16 @@ disclaimer <https://github.com/ethereum/go-ethereum/wiki/Disclaimer>`__
 Components released
 -------------------
 
-The focus of Frontier is the Go implementation of an ethereum full node,
+The focus of Frontier is the Go implementation of an Ethereum full node,
 with a command line interface codenamed "Geth".
 
 By `installing and running
 ``geth`` <https://github.com/ethereum/go-ethereum/wiki/Geth>`__, you can
-take part in the ethereum live network, mine ether on the blockchain,
+take part in the Ethereum live network, mine ether on the blockchain,
 transfer funds between addresses, create contracts and send
 transactions.
 
-**WARNING**: before you use ``geth`` or interact with the ethereum
+**WARNING**: before you use ``geth`` or interact with the Ethereum
 Frontier live network, make sure you read the documentation and fully
 understand the `caveats and
 risks <https://github.com/ethereum/go-ethereum/wiki/Disclaimer>`__.
@@ -86,9 +86,9 @@ following components:
 
 -  ``web3.js`` library implementing the `JavaScript
    API <https://github.com/ethereum/wiki/wiki/JavaScript-API>`__ for
-   Dapps to conveniently interact with an ethereum node
+   dapps to conveniently interact with an Ethereum node
 -  ``solc`` a standalone solidity compiler. You only need this if you
-   want to use your Dapp or `console to compile solidity
+   want to use your dapp or `console to compile solidity
    code <https://github.com/ethereum/go-ethereum/wiki/Contracts-and-Transactions#compiling-a-contract>`__.
 -  ``ethminer`` a standalone miner for openCL `GPU
    mining <https://github.com/ethereum/go-ethereum/wiki/Mining#gpu-mining>`__

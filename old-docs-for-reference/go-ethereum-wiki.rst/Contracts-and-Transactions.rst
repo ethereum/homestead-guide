@@ -9,7 +9,7 @@ Both types of accounts have an ether balance.
 
 Transactions can be fired from both types of accounts, though contracts
 only fire transactions in response to other transactions that they have
-received. Therefore, all action on the ethereum block chain is set in
+received. Therefore, all action on the Ethereum block chain is set in
 motion by transactions fired from externally-controlled accounts.
 
 The simplest transactions are ether transfer transactions. But before we
@@ -86,7 +86,7 @@ Docs and tutorials
    (Outdated)
 -  `Solidity tutorial 1 by Eris
    Industries <https://eng.erisindustries.com/tutorials/2015/03/11/solidity-1/>`__
--  `Dapp tutorials by Andreas Olofsson (Eris
+-  `dapp tutorials by Andreas Olofsson (Eris
    Industries) <https://www.youtube.com/playlist?list=PL_kFomDrqPoZBu5uxd8OBGColQPYbuz3i>`__
 -  `Eris Solidity
    resources <https://github.com/eris-ltd/solidity-resources>`__
@@ -94,7 +94,7 @@ Docs and tutorials
 Examples
 ^^^^^^^^
 
--  `a dapp
+-  `A dapp
    listing <https://github.com/ethereum/wiki/wiki/FAQ#where-can-i-find-example-%C3%90apps>`__
 -  `Solidity Contracts on Ethereum -
    Ether.Fund <https://ether.fund/contracts/solidity>`__
@@ -102,7 +102,7 @@ Examples
 -  `Solidity Standard
    Library <https://github.com/ethereum/wiki/wiki/Solidity-standard-library>`__
 -  `Whisper chat
-   Dapp <https://github.com/ethereum/meteor-dapp-whisper-chat-client/tree/master/dist/deploy>`__
+   dapp <https://github.com/ethereum/meteor-dapp-whisper-chat-client/tree/master/dist/deploy>`__
    written in meteor
 -  `order statistic
    tree <https://github.com/drcode/ethereum-order-statistic-tree>`__ by
@@ -121,7 +121,7 @@ Serpent
 -  `serpent language
    spec <https://github.com/ethereum/wiki/wiki/Serpent>`__
 
-Contract/Dapp development environments and frameworks
+Contract/dapp development environments and frameworks
 -----------------------------------------------------
 
 -  `Mix standalone
@@ -313,7 +313,7 @@ The asynchronous way of doing the same looks like this:
 
     MyContract.new([arg1, arg2, ...,]{from: primaryAccount, data: evmCode}, function(err, contract) {
       if (!err && contract.address)
-        console.log(contract.address); 
+        console.log(contract.address);
     });
 
 Gas and transaction costs
@@ -420,13 +420,13 @@ model is used as document store, the url-hint is no longer necessary.)
     contract = eth.compile.solidity(source).test
     // create contract object
     var MyContract = eth.contract(contract.info.abiDefinition)
-    // extracts info from contract, save the json serialisation in the given file, 
+    // extracts info from contract, save the json serialisation in the given file,
     contenthash = admin.saveInfo(contract.info, "~/dapps/shared/contracts/test/info.json")
     // send off the contract to the blockchain
     MyContract.new({from: primaryAccount, data: contract.code}, function(error, contract){
       if(!error && contract.address) {
         // calculates the content hash and registers it with the code hash in `HashReg`
-        // it uses address to send the transaction. 
+        // it uses address to send the transaction.
         // returns the content hash that we use to register a url
         admin.register(primaryAccount, contract.address, contenthash)
         // here you deploy ~/dapps/shared/contracts/test/info.json to a url
@@ -578,7 +578,7 @@ And now try to send an actual transaction:
 .. code:: js
 
     > myMultiply7.multiply.sendTransaction(6, {from: eth.accounts[0]})
-    NatSpec: Will multiply 6 by 7. 
+    NatSpec: Will multiply 6 by 7.
     Confirm? [y/n] y
     >
 
@@ -646,7 +646,7 @@ private chain and for that you need an account. See the sections on
     // assume an existing unlocked primary account
     primary = eth.accounts[0];
 
-    // mine 10 blocks to generate ether 
+    // mine 10 blocks to generate ether
 
     // starting miner
     miner.start(8);
@@ -758,7 +758,7 @@ handled through it.
     // set UrlHint address via globalRegistrar
     urlHintAddr = admin.setUrlHint()
 
-    // (re)sets the registrar variable to a GlobalRegistrar contract instance 
+    // (re)sets the registrar variable to a GlobalRegistrar contract instance
     registrar = GlobalRegistrar.at(globalRegistrarAddr);
 
 If this is successful, you should be able to check with the following
@@ -978,7 +978,7 @@ always the live net.
 
     // retrieve contract address using global registrar entry with 'multply7'
     contractaddress = registrar.addr("multiply7);
-    // retrieve the info using the url 
+    // retrieve the info using the url
     info = admin.getContractInfo(contractaddress);
     multiply7 = eth.contract(info.abiDefinition).at(contractaddress);
     // try Natspec

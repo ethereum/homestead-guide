@@ -23,7 +23,7 @@ key/value combination is in the tree corresponding to a particular root
 hash.
 
 .. figure:: http://vitalik.ca/files/spv.png
-   :alt: 
+   :alt:
 
 The size complexity of a Merkle proof scales linearly with the height of
 a tree; because each child in a tree has a particular number of children

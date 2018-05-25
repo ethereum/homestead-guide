@@ -41,7 +41,7 @@ efficient multi-casting and broadcasting. Similarly, low-level
 partially-asynchronous communications is an important goal. Low-value
 traffic reduction or retardation is another goal (which might also be
 likened to the quest for QoS). It is designed to be a building block in
-next generation ÐApps which require large-scale many-to-many
+next generation dapps which require large-scale many-to-many
 data-discovery, signal negotiation and modest transmissions with an
 absolute minimum of fuss and the expectation that one has a very
 reasonable assurance of complete privacy.
@@ -50,7 +50,7 @@ Pitch-Black Darkness
 ~~~~~~~~~~~~~~~~~~~~
 
 Whisper operates around the notion of being user-configurable with
-regard to how much information it leaks concerning the ÐApp content and
+regard to how much information it leaks concerning the dapp content and
 ultimately, the user activities. To understand information leakage, it
 is important to distinguish between mere encryption, and *darkness*.
 Many protocols, both those designed around p2p and more traditional
@@ -95,7 +95,7 @@ operation. Even better, this applies not only for metadata collection
 from inter-peer conduits (i.e. backbone dragnet devices), but even
 against a much more arduous "100% - 2" attack; i.e. where every node in
 the network were compromised (though functional) save a pair running
-ÐApps for people that wanted to communicate without anybody else
+dapps for people that wanted to communicate without anybody else
 knowing.
 
 Routing and Lack Thereof
@@ -122,7 +122,7 @@ metadata collection.
 The first builds on the functionality of the ÐΞV-p2p backend. This
 backend provides the ability of Whisper to rate peers and, over time,
 probabilistically alter (or *steer*) its set of peers to those which
-tend to deliver useful (on-topic, timely, required for ones ÐApps to
+tend to deliver useful (on-topic, timely, required for ones dapps to
 function) information. Ultimately, as the network evolves and the
 peer-set is steered, the number of hops between this peer and any others
 that tend to be good conduits of useful information (be they the
@@ -137,7 +137,7 @@ of a proof-of-work function helps here); a low time-to-live; and
 well-corresponding to any provided information on what might be useful
 (read on for more).
 
-The second is more dynamic. Nodes are informed by their ÐApps over what
+The second is more dynamic. Nodes are informed by their dapps over what
 sort of topics are useful. Nodes are then allowed to advertise to each
 peer describing these topics. Topics may be described, using masks or
 Bloom filters, and thus in an incomplete manner, to reduce the amount of
@@ -152,7 +152,7 @@ information to the peer may be warranted."
 
 These settings can even be configured per-peer (more
 trusted/longer-lasting peers may be afforded greater amounts of
-information), and per-ÐApp (those ÐApps that may be more sensitive could
+information), and per-dapp (those dapps that may be more sensitive could
 be afforded less advertising than others). We can also make use of
 proof-of-work algorithms to minimise the changes of both DoS attacks and
 'everything-but' attacks (where a peer is flooded with almost-useful
@@ -294,7 +294,7 @@ both big-endian encoded, fixed-width 32-byte unsigned.
 The payload is otherwise unformatted binary data.
 
 In the Javascript API, the distinction between envelopes and messages is
-blurred. This is because DApps should know nothing about envelopes whose
+blurred. This is because dapps should know nothing about envelopes whose
 message cannot be inspected; the fact that nodes pass envelopes around
 regardless of their ability to decode the message (or indeed their
 interest in it at all) is an important component in Whisper's dark
@@ -317,12 +317,12 @@ and high proofs-of-work. Nodes should consider peers bad that pass then
 expired envelopes or, worse, those that have an implied insertion time
 prior to the present.
 
-Nodes should always keep messages that its ÐApps have created. Though
-not in PoC-1, later editions of this protocol may allow ÐApps to mark
+Nodes should always keep messages that its dapps have created. Though
+not in PoC-1, later editions of this protocol may allow dapps to mark
 messages as being "archived" and these should be stored and made
 available for additional time.
 
-Nodes should retain a set of per-ÐApp topics it is interested in.
+Nodes should retain a set of per-dapp topics it is interested in.
 
 Inserting (Authoring) Messages
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,12 +1,15 @@
 *****************************
 Homestead-Guide
 *****************************
-|Gitter|
+|License| |Gitter|
+
+.. |License| image:: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+   :target: https://creativecommons.org/licenses/by-sa/4.0/ 
 
 .. |Gitter| image:: https://badges.gitter.im/ethereum/homestead-guide.svg
    :target: https://gitter.im/ethereum/homestead-guide?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
-
-The Ethereum Homestead Guide is the reference documentation accompanying the Homestead release of the Ethereum project.
+   
+The Ethereum Homestead Guide is the reference documentation accompanying the Homestead release of the Ethereum project. Note that sections of this guide may be outdated. The Guide may be considered to be a historic reference since Ethereum had the Metropolis phase 1 fork, `Constantinople <https://eips.ethereum.org/EIPS/eip-609>`_. An alternative documentation base may be used at https://github.com/ethereum/wiki/wiki ("the Wiki"), which is being actively maintained, and is also freely editable by anyone with a GitHub account (while editing this repo requires making a PR and being merged by a collaborator, or accepting an invitation as a collaborator). Note that documentation in this guide that is still relevant could be moved to the Wiki.
 
 `Hosted on ReadTheDocs`_
 
@@ -43,9 +46,9 @@ Prerequisites
 
 Install Sphinx, etc
 --------------------------------------------------------------------------------
-For OSX/Linux users (based on instructions here: https://read-the-docs.readthedocs.org/en/latest/getting_started.html)
+For OSX/Linux users (based on instructions here: https://read-the-docs.readthedocs.org/en/latest/getting_started.html). Sphinx as of 1.4.0 no longer automatically installs `sphinx_rtd_theme`, hence its addition below.
 
-* From command line: ``sudo pip install sphinx``
+* From command line: ``sudo pip install sphinx sphinx_rtd_theme``
 
 For Windows users:
 
@@ -76,7 +79,6 @@ RESOURCES
 
 **Legacy Docs**
 
-* Ethereum Wiki: https://github.com/ethereum/wiki/wiki
 * Frontier Guide: https://ethereum.gitbooks.io/frontier-guide/content/ (see below for converted files)
 * Souptacular's Giant List of Ethereum Resources: https://souptacular.gitbooks.io/ethereum-tutorials-and-tips-by-hudson/content/giant_ethereum_resource_list.html
 

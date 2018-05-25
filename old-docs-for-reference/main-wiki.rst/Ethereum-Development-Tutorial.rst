@@ -15,12 +15,12 @@ Introduction
 ~~~~~~~~~~~~
 
 Ethereum is a platform that is intended to allow people to easily write
-decentralized applications (Đapps) using blockchain technology. A
+decentralized applications (dapps) using blockchain technology. A
 decentralized application is an application which serves some specific
 purpose to its users, but which has the important property that the
 application itself does not depend on any specific party existing.
 Rather than serving as a front-end for selling or providing a specific
-party's services, a Đapp is a tool for people and organizations on
+party's services, a dapp is a tool for people and organizations on
 different sides of an interaction use to come together without any
 centralized intermediary.
 
@@ -29,7 +29,7 @@ centralized providers, such as filtering, identity management, escrow
 and dispute resolution, are either handled directly by the network or
 left open for anyone to participate, using tools like internal token
 systems and reputation systems to ensure that users get access to
-high-quality services. Early examples of Đapps include BitTorrent for
+high-quality services. Early examples of dapps include BitTorrent for
 file sharing and Bitcoin for currency. Ethereum takes the primary
 developments used by BitTorrent and Bitcoin, the peer to peer network
 and the blockchain, and generalizes them in order to allow developers to
@@ -451,11 +451,11 @@ number, timestamp, address of the miner and gas limit.
 Graphical Interfaces (*OUTDATED API*)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A contract by itself is a powerful thing, but it is not a complete Đapp.
-A Đapp, rather, is defined as a combination of a contract and a
+A contract by itself is a powerful thing, but it is not a complete dapp.
+A dapp, rather, is defined as a combination of a contract and a
 graphical interface for using that contract (note: this is only true for
 now; future versions of Ethereum will include whisper, a protocol for
-allowing nodes in a Đapp to send direct peer-to-peer messages to each
+allowing nodes in a dapp to send direct peer-to-peer messages to each
 other without the blockchain). Right now, the interface is implemented
 as an HTML/CSS/JS webpage, with a special Javascript API in the form of
 the ``eth`` object for working with the Ethereum blockchain. The key
@@ -476,7 +476,7 @@ parts of the Javascript API are as follows:
    entry of the given account changes
 
 You do not need any special source file or library to use the ``eth``
-object; however, your Đapp will only work when opened in an Ethereum
+object; however, your dapp will only work when opened in an Ethereum
 client, not a regular web browser. For an example of the Javascript API
 being used in practice, see `the source code of this
 webpage <http://gavwood.com/gavcoin.html>`__.

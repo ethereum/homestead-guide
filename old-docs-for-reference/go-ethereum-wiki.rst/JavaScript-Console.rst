@@ -5,7 +5,7 @@ Ethereum implements a **javascript runtime environment** (JSRE) that can
 be used in either interactive (console) or non-interactive (script)
 mode.
 
-Ethereum's Javascript console exposes the full `web3 JavaScript Dapp
+Ethereum's Javascript console exposes the full `web3 JavaScript dapp
 API <https://github.com/ethereum/wiki/wiki/JavaScript-API>`__ and the
 `admin
 API <https://github.com/ethereum/go-ethereum/wiki/JavaScript-Console#javascript-console-api>`__.
@@ -115,7 +115,7 @@ Since ``ethereum.js`` uses the
 Timers
 ------
 
-In addition to the full functionality of JS (as per ECMA5), the ethereum
+In addition to the full functionality of JS (as per ECMA5), the Ethereum
 JSRE is augmented with various timers. It implements ``setInterval``,
 ``clearInterval``, ``setTimeout``, ``clearTimeout`` you may be used to
 using in browser windows. It also provides implementation for
@@ -127,11 +127,11 @@ confirmations".
 Management APIs
 ===============
 
-Beside the official `DApp
+Beside the official `Dapp
 API <https://github.com/ethereum/wiki/wiki/JSON-RPC>`__ interface the go
-ethereum node has support for additional management API's. These API's
+Ethereum node has support for additional management API's. These API's
 are offered using `JSON-RPC <http://www.jsonrpc.org/specification>`__
-and follow the same conventions as used in the DApp API. The go ethereum
+and follow the same conventions as used in the Dapp API. The go Ethereum
 package comes with a console client which has support for all additional
 API's.
 
@@ -145,11 +145,11 @@ go ethereum daemon. Where ``${interface}`` can be ``rpc`` for the
 on Windows.
 
 For example, ``geth --ipcapi "admin,eth,miner" --rpcapi "eth,web3"``
-will \* enable the admin, official DApp and miner API over the IPC
+will \* enable the admin, official dapp and miner API over the IPC
 interface \* enable the eth and web3 API over the RPC interface
 
 Please note that offering an API over the ``rpc`` interface will give
-everyone access to the API who can access this interface (e.g. DApp's).
+everyone access to the API who can access this interface (e.g. dapp's).
 So be careful which API's you enable. By default geth enables all API's
 over the ``ipc`` interface and only the db,eth,net and web3 API's over
 the ``rpc`` interface.
@@ -165,10 +165,10 @@ will give all enabled modules including the version number:
 
 ::
 
-    {  
+    {
        "id":1,
        "jsonrpc":"2.0",
-       "result":{  
+       "result":{
           "admin":"1.0",
           "db":"1.0",
           "debug":"1.0",
@@ -185,7 +185,7 @@ will give all enabled modules including the version number:
 Integration
 -----------
 
-These additional API's follow the same conventions as the official DApp
+These additional API's follow the same conventions as the official Dapp
 API. Web3 can be
 `extended <https://github.com/ethereum/web3.js/pull/229>`__ and used to
 consume these additional API's.
@@ -621,7 +621,7 @@ admin.stopRPC
 
 ::
 
-    admin.stopRPC() 
+    admin.stopRPC()
 
 Stops the HTTP server for the
 `JSON-RPC <https://github.com/ethereum/wiki/wiki/JSON-RPC>`__.

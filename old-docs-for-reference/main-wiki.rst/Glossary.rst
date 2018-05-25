@@ -262,12 +262,12 @@ Surrounding concepts: applications and governance
    specific purpose (eg. connecting buyers and sellers in some
    marketplace, sharing files, online file storage, maintaining a
    currency). Ethereum-based decentralized applications (also called
-   Đapps, where the Đ is the Norse letter "eth") typically consist of an
+   dapps, where the Đ is the Norse letter "eth") typically consist of an
    HTML/Javascript webpage, and if viewed inside the EtherBrowser the
    browser recognizes special Javascript APIs for sending transactions
    to the blockchain, reading data from the blockchain and interacting
-   with Whisper and Swarm. A Đapp typically also has a specific
-   associated contract on the blockchain, though Đapps that facilitate
+   with Whisper and Swarm. A dapp typically also has a specific
+   associated contract on the blockchain, though dapps that facilitate
    the creation of many contracts are quite possible.
 -  **Decentralized organization**: an organization that has no
    centralized leadership, instead using a combination of formal

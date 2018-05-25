@@ -4,14 +4,14 @@ Sending ether
 The basic way of sending a simple transaction of ether using the console
 is as follows:
 
-.. code:: JavaScript
+.. code:: javascript
 
     > eth.sendTransaction({from:sender, to:receiver, value: amount})
 
 Using the built-in JavaScript, you can easily set variables to hold
 these values. For example:
 
-.. code:: JavaScript
+.. code:: javascript
 
     > var sender = eth.accounts[0];
     > var receiver = eth.accounts[1];
@@ -19,7 +19,7 @@ these values. For example:
 
 Alternatively, you can compose a transaction in a single line with:
 
-.. code:: JavaScript
+.. code:: javascript
 
     > eth.sendTransaction({from:eth.coinbase, to:eth.accounts[1], value: web3.toWei(0.05, "ether")})
     Please unlock account d1ade25ccd3d550a7eb532ac759cac7be09c2719.
@@ -32,7 +32,7 @@ The resulting transaction is
 
 If the password was incorrect you will instead receive an error:
 
-.. code:: JavaScript
+.. code:: javascript
 
     error: could not unlock sender account
 

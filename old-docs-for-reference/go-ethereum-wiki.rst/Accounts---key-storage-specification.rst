@@ -27,7 +27,7 @@ corresponds to a key, and a user can have multiple accounts and be able
 to send / receive to any of them.
 
 The goal of this is to support better wallet / account functionality
-both in Mist as well as in DAPPs.
+both in Mist as well as in dapps.
 
 Specification
 =============
@@ -92,7 +92,7 @@ The RPC API must support:
    the current API definition on that wiki page does not include a
    from/sender field!)
 
-Wallet DAPP
+Wallet dapp
 -----------
 
 TODO:

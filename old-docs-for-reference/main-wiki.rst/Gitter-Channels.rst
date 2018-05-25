@@ -23,7 +23,7 @@ txs, ...)
 
 https://gitter.im/ethereum/pydevp2p - p2p network
 
-DApp Development
+Dapp Development
 ================
 
 https://gitter.im/ethereum/web3.js

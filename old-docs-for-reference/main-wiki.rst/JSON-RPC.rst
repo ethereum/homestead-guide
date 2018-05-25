@@ -16,7 +16,7 @@ message passing environments. It uses JSON (`RFC
 JavaScript API
 --------------
 
-To talk to an ethereum node from inside a JavaScript application use the
+To talk to an Ethereum node from inside a JavaScript application use the
 `web3.js <https://github.com/ethereum/web3.js>`__ library, which gives
 an convenient interface for the RPC methods. See the `JavaScript
 API <https://github.com/ethereum/wiki/wiki/JavaScript-API>`__ for more.
@@ -134,7 +134,7 @@ The following methods have a extra default block parameter:
 -  `eth\_getStorageAt <#eth_getstorageat>`__
 -  `eth\_call <#eth_call>`__
 
-When requests are made that act on the state of ethereum, the last
+When requests are made that act on the state of Ethereum, the last
 default block parameter determines the height of the block.
 
 The following options are possible for the defaultBlock parameter:
@@ -385,7 +385,7 @@ Example
 eth\_protocolVersion
 ^^^^^^^^^^^^^^^^^^^^
 
-Returns the current ethereum protocol version.
+Returns the current Ethereum protocol version.
 
 Parameters
 ''''''''''
@@ -395,7 +395,7 @@ none
 Returns
 '''''''
 
-``String`` - The current ethereum protocol version
+``String`` - The current Ethereum protocol version
 
 Example
 '''''''
@@ -1302,7 +1302,7 @@ Example
         "minGasPrice": "0x9f759", // 653145
         "gasUsed": "0x9f759", // 653145
         "timestamp": "0x54e34e8e" // 1424182926
-        "transactions": [{...},{ ... }] 
+        "transactions": [{...},{ ... }]
         "uncles": ["0x1606e5...", "0xd5145a9..."]
       }
     }

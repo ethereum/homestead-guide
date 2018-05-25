@@ -62,5 +62,5 @@ https://github.com/ethereum/webthree-umbrella (C++) -
 https://github.com/ethereum/pyethapp (Python)
 
 To see the state of the latest Ethereum builds, see the `Buildbot
-instance <http://build.ethdev.com/console>`__ for Go and Python and the
+instance <http://build.ethereum.org/console>`__ for Go and Python and the
 `Jenkins instance <http://52.28.164.97/>`__ for C++.

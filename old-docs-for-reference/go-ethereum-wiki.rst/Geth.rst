@@ -1,14 +1,14 @@
 Geth
 ====
 
-``geth`` is the the command line interface for running a full ethereum
+``geth`` is the the command line interface for running a full Ethereum
 node implemented in Go. It is the main deliverable of the `Frontier
 Release <https://github.com/ethereum/go-ethereum/wiki/Frontier>`__
 
 Capabilities
 ------------
 
-By installing and running ``geth``, you can take part in the ethereum
+By installing and running ``geth``, you can take part in the Ethereum
 frontier live network and \* mine real ether \* transfer funds between
 addresses \* create contracts and send transactions \* explore block
 history \* and much much more
@@ -140,7 +140,7 @@ Gitter
 -  `go-ethereum Gitter <https://gitter.im/ethereum/go-ethereum>`__
 -  `cpp-ethereum Gitter <https://gitter.im/ethereum/cpp-ethereum>`__
 -  `web3.js Gitter <https://gitter.im/ethereum/web3.js>`__
--  `ethereum documentation project
+-  `Ethereum documentation project
    Gitter <https://gitter.im/ethereum/frontier-guide>`__
 
 Forum

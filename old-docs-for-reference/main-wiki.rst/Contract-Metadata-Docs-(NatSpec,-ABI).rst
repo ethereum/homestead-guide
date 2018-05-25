@@ -1,9 +1,9 @@
 This is the main entry point for NatSpec and generally details a safe
-and efficient *standard* for ethereum contract metadata distribution.
+and efficient *standard* for Ethereum contract metadata distribution.
 
 By metadata we mean all information related to a contract that is
 thought to be relevant to and immutably linked to a specific version of
-a contract on the ethereum blockchain. This includes:
+a contract on the Ethereum blockchain. This includes:
 
 -  Contract source code
 -  `ABI
@@ -26,14 +26,14 @@ solidity specific about these data, and other contract languages are
 encouraged to implement their NatSpec/ABI support potentially with IDE-s
 extending it.
 
-Since DAPPs and IDEs will typically want to interact with these
+Since dapps and IDEs will typically want to interact with these
 resources, standardising their deployment and distribution is important
-for a smooth ethereum experience.
+for a smooth Ethereum experience.
 
 A specially important example of this is the **NatSpec transaction
 confirmation notice scheme**, which we will use to illustrate the point.
 However, the strategy described here trivially extends to arbitrary
-immutable metadata fixed to an ethereum contract.
+immutable metadata fixed to an Ethereum contract.
 
 Transaction Confirmation Notice
 ===============================
@@ -44,12 +44,12 @@ provide templating which allows parts of the user notice to be
 instantiated depending on the parameters of the actual transaction sent
 to the contract.
 
-Trusted ethereum client implementations are required to call back from
+Trusted Ethereum client implementations are required to call back from
 their backend instantiating the natspec transaction notice from actual
 transaction data and present it to the user for confirmation.
 
 This serves as a first line of defense against illegitimate transactions
-sent by malicious DAPPs in the user's name.
+sent by malicious dapps in the user's name.
 
 Surely, this is only feasible if - the node can trust the authenticity
 of metadata sources. - nodes have secure reliable access to the metadata
@@ -64,7 +64,7 @@ Metadata Authentication
 called ``cmd`` file, that stands for *contract metadata doc*.
 
 The ``cmd`` file's content is hashed and content hash is registered on a
-name registry via a contract on the ethereum blockchain under the code
+name registry via a contract on the Ethereum blockchain under the code
 hash, see
 https://github.com/ethereum/dapp-bin/blob/master/NatSpecReg/contract.sol
 *Registering* in this context will simply mean a key value pair is
@@ -73,10 +73,10 @@ sent to the registry contract.
 
 This provides a public immutable authentication for contract metadata,
 since: - the authenticity of the link between the contract and metadata
-is secured by ethereum consensus - the authenticity of actual metadata
+is secured by Ethereum consensus - the authenticity of actual metadata
 content is secured by content hashing - the binding is tamper proof
 
-DAPP IDE environments are supposed to support the functionality, that
+Dapp IDE environments are supposed to support the functionality, that
 when you create a contract, all its standard metadata is - bundled in a
 single ``cmd`` json file - compiled source code is keccak hashed ->
 ``Sha3(<evmcode>)`` - ``cmd`` json is keccak hashed ->

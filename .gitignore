@@ -1,1 +1,14 @@
 build
+
+# emacs Backup files
+*~
+
+# MacOS Development
+.DS_Store
+
+# Python virtual environment
+.venv
+
+# IntelliJ project files
+*.iml
+.idea

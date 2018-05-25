@@ -9,7 +9,7 @@ RasPi 2
 -------
 
 1. Download the `precompiled binary from master
-   branch <https://build.ethdev.com/builds/ARM%20Go%20master%20branch/geth-ARM-latest.tar.bz2>`__
+   branch <https://build.ethereum.org/builds/ARM%20Go%20master%20branch/geth-ARM-latest.tar.bz2>`__
 2. Copy it to a location in $PATH (i.e. /usr/bin/local)
 3. Run ``geth``
 
