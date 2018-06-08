@@ -27,12 +27,12 @@ You will need to install the following dependencies
 +------------------------------+-------------------------------------------------------+
 | `CMake`_                     | Cross-platform build file generator.                  |
 +------------------------------+-------------------------------------------------------+
-| `Visual Studio (>=2015)      | C++ compiler and dev environment.                     |
+| `Visual Studio (>=2015)`_    | C++ compiler and dev environment.                     |
 +------------------------------+-------------------------------------------------------+
 
 .. _Git for Windows: https://git-scm.com/download/win
 .. _CMake: https://cmake.org/download/
-.. _Visual Studio (current and legacy editions): https://www.visualstudio.com/vs/older-downloads/
+.. _Visual Studio (>=2015): https://www.visualstudio.com/vs/older-downloads/
 
 
 Get the source
