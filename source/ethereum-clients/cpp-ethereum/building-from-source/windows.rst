@@ -27,12 +27,12 @@ You will need to install the following dependencies
 +------------------------------+-------------------------------------------------------+
 | `CMake`_                     | Cross-platform build file generator.                  |
 +------------------------------+-------------------------------------------------------+
-| `Visual Studio 2015`_        | C++ compiler and dev environment.                     |
+| `Visual Studio (>=2015)      | C++ compiler and dev environment.                     |
 +------------------------------+-------------------------------------------------------+
 
 .. _Git for Windows: https://git-scm.com/download/win
 .. _CMake: https://cmake.org/download/
-.. _Visual Studio 2015: https://www.visualstudio.com/products/vs-2015-product-editions
+.. _Visual Studio (current and legacy editions): https://www.visualstudio.com/vs/older-downloads/
 
 
 Get the source
@@ -61,14 +61,15 @@ solution file using CMake: ::
     mkdir build
     cd build
     cmake -G "Visual Studio 14 2015 Win64" ..
+    
+       or
+    
+    cmake -G "Visual Studio 15 2017 Win64" ..
 
 Which should result in the creation of **cpp-ethereum.sln** in that build directory.
 
-**NOTE**: We only support Visual Studio 2015 as of cpp-ethereum-v.1.3.0. If you don't
-have it already, install the `Visual C++ 2015 Build Tools <http://landinghub.visualstudio.com/visual-cpp-build-tools>`_ **
-
 Double-clicking on that file should result in Visual Studio firing up. We suggest
-building **RelWithDebugInfo** configuration, but all others work.
+building **RelWithDebugInfo** configuration, but all others work e.g. **Debug**)
 
 
 Build on the command-line
