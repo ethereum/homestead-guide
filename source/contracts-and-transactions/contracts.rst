@@ -36,7 +36,7 @@ Solidity
 Solidity is a language similar to JavaScript which allows you to develop contracts and compile to EVM bytecode. It is currently the flagship language of Ethereum and the most popular.
 
 * `Solidity Documentation <http://solidity.readthedocs.org/en/latest/>`_ - Solidity is the flagship Ethereum high level language that is used to write contracts.
-* `Solidity online realtime compiler <http://ethereum.github.io/browser-solidity/>`_
+* `Solidity online realtime compiler <https://remix.ethereum.org/>`_
 * `Standardized Contract APIs <https://github.com/ethereum/wiki/wiki/Standardized_Contract_APIs>`__
 * `Useful Ðapp Patterns <https://github.com/ethereum/wiki/wiki/Useful-Ðapp-Patterns>`__ - Code snippets which are useful for Ðapp development.
 
@@ -268,8 +268,8 @@ well as some funds.
 You will now create a contract on the blockchain by `sending a transaction <https://github.com/ethereum/wiki/wiki/JavaScript-API#web3ethsendtransaction>`__ to the empty address with the EVM code from the previous section as data.
 
 .. note::
-    This can be accomplished much easier using the `online Solidity realtime
-    compiler <https://ethereum.github.io/browser-solidity/>`_ or the `Mix IDE
+    This can be accomplished much easier using the `Remix online Solidity
+    compiler <https://remix.ethereum.org/>`_ or the `Mix IDE
     <https://github.com/ethereum/wiki/wiki/Mix:-The-DApp-IDE>`_ program.
 
 
