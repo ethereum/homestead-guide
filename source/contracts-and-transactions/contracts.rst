@@ -92,7 +92,7 @@ mechanisms.
 * Using ``web3.eth.compile.solidity`` in the javascript console provided by
   ``geth`` or ``eth`` (This still requires the ``solc`` compiler to be
   installed).
-* The `online Solidity realtime compiler <https://ethereum.github.io/browser-solidity/>`_.
+* The `Remix <https://remix.ethereum.org/>`_online Solidity compiler.
 * The `Meteor dapp Cosmo for building solidity contracts <https://github.com/SilentCicero/meteor-dapp-cosmo>`_.
 * The `Mix IDE <https://github.com/ethereum/wiki/wiki/Mix:-The-DApp-IDE>`_.
 * The `Ethereum Wallet <https://github.com/ethereum/mist/releases>`_.
