@@ -51,9 +51,9 @@ Serpent is a language similar to Python which can be used to develop contracts a
 LLL
 --------------------------------------------------------------------------------
 
-`Lisp Like Language (LLL) <https://github.com/ethereum/libethereum/tree/develop/liblll>`_ is a low level language similar to Assembly. It is meant to be very simple and minimalistic; essentially just a tiny wrapper over coding in EVM directly.
+`Lisp Like Language (LLL) <https://lll-docs.readthedocs.io/en/latest/index.html>`_ is a low level language similar to Assembly. It is meant to be very simple and minimalistic; essentially just a tiny wrapper over coding in EVM directly.
 
-* `LIBLLL in GitHub <https://github.com/ethereum/libethereum/tree/develop/liblll>`_
+* `LIBLLL in GitHub <https://github.com/ethereum/solidity/tree/develop/liblll>`_
 * `Examples of LLL <https://www.reddit.com/r/ethereum/comments/3secu1/anyone_have_a_copy_of_the_old_lll_tutorials/>`_
 
 Mutan (deprecated)
