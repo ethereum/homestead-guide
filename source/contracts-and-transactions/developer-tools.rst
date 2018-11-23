@@ -103,7 +103,7 @@ IDEs/Frameworks
 Below are developer frameworks and IDEs used for writing Ethereum dapps.
 
 * `Truffle <https://github.com/ConsenSys/truffle>`__ - Truffle is a development environment, testing framework and asset pipeline for Ethereum.
-* `Superblocks Lab <https://lab.superblocks.com/>`__ - Web IDE. Built in browser blochain VM, Metamask integration (one click deployments to Testnet/Mainnet), transaction logger and live code your WebApp among many other features.
+* `Superblocks Lab <https://lab.superblocks.com/>`__ - Web IDE. Built in browser blockhain VM, Metamask integration (one click deployments to Testnet/Mainnet), transaction logger and live code your WebApp among many other features.
 * `Dapple <https://github.com/nexusdev/dapple>`__ - Dapple is a tool for Solidity developers to help build and manage complex contract systems on Ethereum-like blockchains.
 * `Populus <http://populus.readthedocs.org/en/latest/>`__ - Populus is a Smart Contract development framework written in python.
 * `Eris-PM <https://docs.erisindustries.com/documentation/eris-package-manager/>`__ - The Eris Package Manager deploys and tests smart contract systems on private and public chains.
