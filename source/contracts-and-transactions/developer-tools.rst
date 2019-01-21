@@ -83,12 +83,21 @@ https://github.com/ethereum/wiki/wiki/Dapp-Developer-Resources
 Tutorials
 --------------
 
+* `ToDo List Dapp <https://eattheblocks.com/etb-ethereum-todo-list-app-special-episode-1>`
+* `EatTheBlocks channel: Solidity / Dapp video tutorials <https://www.youtube.com/c/eattheblocks>`
+* `EatTheBlocks blog <https://eattheblocks.com>`
 * `Dapp tutorials on ethereum.org <https://ethereum.org>`_
 * `Dapps for beginners tutorial series <https://dappsforbeginners.wordpress.com/>`_
 * `Eris' Solidity Tutorial Series <https://docs.erisindustries.com/tutorials/solidity/>`_
 * `Tutorials on advanced Solidity <https://github.com/androlo/solidity-workshop>`_
 * http://ethereumj.io/blog/2015/09/09/friendly-ether-bot/
 * https://github.com/ConsenSys/ether-pudding
+
+Courses
+--------------
+
+* `EatTheBlocks Pro: Video courses on Ethereum Dapps & Smart contracts <http://pro.eattheblocks.com>`
+* `Ethereum DApps In Motion: build a decentralized exchange with Solidity & Truffle <https://www.manning.com/livevideo/ethereum-dapps-in-motion>`
 
 
 Mix-IDE
