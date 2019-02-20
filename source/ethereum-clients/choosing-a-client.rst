@@ -47,7 +47,7 @@ As of September 2016, the leading implementations are :ref:`go-ethereum` and :re
 .. _cpp-ethereum-v1.3.0: https://github.com/bobsummerwill/cpp-ethereum/releases/tag/v1.3.0
 .. _ethereumjs-lib-v3.0.0: https://github.com/ethereumjs/ethereumjs-lib/releases/tag/v3.0.0
 .. _ethereumJ-v1.3.1: https://github.com/ethereum/ethereumj/releases/tag/1.3.1
-.. _Parity-v1.4.0: https://github.com/ethcore/parity/releases/tag/v1.4.0
+.. _Parity-v1.4.0: https://github.com/paritytech/parity-ethereum/releases/tag/v1.4.0
 .. _pyethapp-v1.5.0: https://github.com/ethereum/pyethapp/releases/tag/v1.5.0
 .. _ruby-ethereum-v0.9.6: https://rubygems.org/gems/ruby-ethereum/versions/0.9.6
 
