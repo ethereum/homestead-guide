@@ -6,7 +6,7 @@ Parity
 
 **Parity** claims to be the world's fastest and lightest Ethereum client. It is written in the Rust language, which offers improved reliability, performance, and code clarity. Parity is being developed by `Parity Technologies (f.k.a. Ethcore) <https://paritytech.io/>`_, which was founded by several members of the Ethereum Foundation.
 
-* Website: https://parity.io/
+* Website: https://www.parity.io/ethereum/
 * GitHub: https://github.com/paritytech/parity
 * Gitter chat: https://gitter.im/paritytech/parity
 
