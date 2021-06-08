@@ -124,8 +124,6 @@ Since 1 ether is 1e18 wei, the total cost would be 0.00000015 Ether.
 This is a simplification since it ignores some costs, such as the cost of passing the 2 numbers to contract, before they can even be added.
 
 * `question <http://ethereum.stackexchange.com/q/324/42>`_
-* `gas fees <http://ether.fund/tool/gas-fees>`_
-* `gas cost calculator <http://ether.fund/tool/calculator>`_
 * `Ethereum Gas Prices <https://docs.google.com/spreadsheets/d/1m89CVujrQe5LAFJ8-YAUCcNK950dUzMQPMJBxRtGCqs>`_
 
 =================  =========    =============================
