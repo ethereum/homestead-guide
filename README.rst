@@ -14,8 +14,8 @@ DEPRECATION NOTICE
 ==================
 
 The Ethereum Homestead Guide is the reference documentation accompanying the **Homestead release** of the Ethereum project. 
-The information in this repository is largely out of date. Relevant material has been migrated to ethereum.org
-and this repository is **due to be archived shortly**. For current information on etheruem, please visit ethereum.org instead.
+The information in this repository is largely out of date. Relevant material has been migrated to https://ethereum.org.
+and this repository is **due to be archived shortly**. For current information on Ethereum, please visit https://ethereum.org instead.
 This repository is for historical reference only!
 
 
