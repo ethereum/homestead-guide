@@ -11,16 +11,13 @@ Homestead-Guide
    
 
 DEPRECATION NOTICE
-------------------
+==================
 
 The Ethereum Homestead Guide is the reference documentation accompanying the **Homestead release** of the Ethereum project. 
 The information in this repository is largely out of date. Relevant material has been migrated to ethereum.org
-and this repository is **due to be archived shortly**. Pleas
+and this repository is **due to be archived shortly**. For current information on etheruem, please visit ethereum.org instead.
+This repository is for historical reference only!
 
-
-Note that sections of this guide may be outdated. The Guide may be considered to be a historic reference since Ethereum had the Metropolis phase 1 fork, `Constantinople <https://eips.ethereum.org/EIPS/eip-609>`_. An alternative documentation base may be used at https://github.com/ethereum/wiki/wiki ("the Wiki"), which is being actively maintained, and is also freely editable by anyone with a GitHub account (while editing this repo requires making a PR and being merged by a collaborator, or accepting an invitation as a collaborator). Note that documentation in this guide that is still relevant could be moved to the Wiki.
-
-`Hosted on ReadTheDocs`_
 
 HOW YOU CAN HELP
 ================================================================================
