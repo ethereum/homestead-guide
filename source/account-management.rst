@@ -41,7 +41,7 @@ Creating an account
 
 .. |remember_backup| raw:: html
 
-   <strong>Remember your passwords and <a href="#backup-and-restore-accounts">backup your keyfiles</a>.</strong>
+   <strong>Remember your passwords and :ref:`backup your keyfiles <backup-and-restore-accounts>`.</strong>
 
 Using ``geth account new``
 --------------------------------------------------------------------------------
