@@ -21,6 +21,9 @@ This repository is for historical reference only!
 
 HOW YOU CAN HELP
 ================================================================================
+
+Looking to contribute to Ethereum documentation? Check out the ethereum.org repo: https://github.com/ethereum/ethereum-org-website
+
 **Homestead Documentation Initiative**
 
 It doesn't matter if you are a beginner or an expert, there are many ways to help.
