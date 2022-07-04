@@ -97,7 +97,7 @@ mechanisms.
 * The `Mix IDE <https://github.com/ethereum/wiki/wiki/Mix:-The-DApp-IDE>`_.
 * The `Ethereum Wallet <https://github.com/ethereum/mist/releases>`_.
 
-.. note::  More information on solc and compiling Solidity contract code can be found `here <https://solidity.readthedocs.org/en/latest/frequently-asked-questions.html#how-do-i-compile-contracts>`_.
+.. note::  More information on solc and compiling Solidity contract code can be found `here <https://solidity.readthedocs.io/en/latest/using-the-compiler.html>`_.
 
 
 Setting up the solidity compiler in geth
