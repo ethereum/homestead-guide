@@ -12,6 +12,12 @@ cpp-ethereum
     :height: 200px
     :width: 200px
 
+!!! OUTDATED DOCUMENTATION !!!
+================================================================================
+
+For actual documentation, please visit the project:
+
+https://github.com/ethereum/aleth
 
 Quick Start
 ================================================================================
