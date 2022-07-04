@@ -27,6 +27,8 @@ For the latest stable version: ::
 
     sudo apt-get install software-properties-common
     sudo add-apt-repository ppa:ethereum/ethereum
+    sudo add-apt-repository ppa:ethereum/ethereum-dev
+    sudo add-apt-repository ppa:ethereum/ethereum-qt
     sudo apt-get update
     sudo apt-get install cpp-ethereum
 
@@ -35,5 +37,6 @@ If you want to use the cutting edge developer version: ::
     sudo apt-get install software-properties-common
     sudo add-apt-repository ppa:ethereum/ethereum
     sudo add-apt-repository ppa:ethereum/ethereum-dev
+    sudo add-apt-repository ppa:ethereum/ethereum-qt
     sudo apt-get update
     sudo apt-get install cpp-ethereum
