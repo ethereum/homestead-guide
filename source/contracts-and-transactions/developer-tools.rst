@@ -135,7 +135,7 @@ In the console you could then type
 
    > web3.eth.<command name> (arguments, function(){})
 
-Here the defenition of ``--test`` mode node commands:
+Here the definition of ``--test`` mode node commands:
 
 .. code:: console
 
