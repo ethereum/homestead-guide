@@ -9,8 +9,6 @@ Founded July 2014 in Switzerland, Stiftung Ethereum’s mission is the promotion
 
 It is the aim that decentralized and open technologies will be developed, nurtured, promoted and maintained. A dominating, but not exclusive, focus is set on the promotion of the development of the Ethereum Protocol and the relevant technology to it as well as the promotion and support of applications using the Ethereum technology or protocol. Stiftung Ethereum will additionally support and advocate for a decentralized Internet in a variety of forms.
 
-Find out about more about the `Foundation Management Team on the website <https://ethereum.org/foundation>`_
-
 Ethereum Foundation's faces to the community
 ---------------------------------------------------
 * `Official Homestead website <https://ethereum.org>`_ - main entrypoint
