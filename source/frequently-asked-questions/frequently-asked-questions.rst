@@ -52,6 +52,14 @@ How do I get a list of transactions into/out of an address?
 ----------------------------------------------------------------------------------------------
 You would have to pull the transactions manually out of the blockchain to achieve this. Alternatively, you can rely on third party explorers' API's like `Etherchain <https://etherchain.org/apidoc>`_. For contract execution transactions however, you can filter the contract logs to achieve this.
 
+How do I pay for transactions on the Ethereum Network?
+----------------------------------------------------------------------------------------------
+Transaction costs are paid for through the concept of 'Gas'. Gas is an abstract price structure applied to running individual operations on the Ethereum Network.
+
+When you submit a transaction on a network, whether are transfering ETH to another account or invoking a contract, you need to provide an "Gas Limit" (the max amount of Gas you are willing to pay) and an additional amount of Ethereum to pay for the gas.
+
+To learn more about Gas, please read `this article <https://media.consensys.net/ethereum-gas-fuel-and-fees-3333e17fe1dc>`_.
+
 Can a contract pay for its execution?
 ----------------------------------------------------------------------------------------------
 No this is not possible. The gas for the execution must be provided by the address submitting the execution request.
@@ -106,7 +114,9 @@ Ethereum is planning on implementing a proof-of-stake consensus protocol change 
 
 Where do the contracts reside?
 ----------------------------------------------------------------------------------------------
-TODO
+Contracts reside on the blockchain as executable code. These contracts are able to be called and executed by transactions on the network, as contracts get distributed to all full nodes.
+
+This is similar to the process of how transactions get dispersed and added to the blockchain.
 
 Your question is still not answered?
 ----------------------------------------------------------------------------------------------
