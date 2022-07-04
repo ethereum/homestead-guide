@@ -14,5 +14,6 @@ Ethereum Clients
    ethereumjs-lib/index.rst
    ethereumj/index.rst
    ethereumh/index.rst
+   nethermind/nethermind.rst
    parity/index.rst
    ruby-ethereum/index.rst
