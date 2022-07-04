@@ -39,7 +39,7 @@ Dapp development requires an understanding of the Web3 Javascript API, the JSON 
 
 .. note:: There are developer tools that help you develop, test, and deploy dapps in a way that automatically utilizes the resources listed below.
 
-
+* `Play Solidity Editor <https://play.ethereum.org/play-editor/>`__ - lightweight Solidity editor to write, preview and interact with the code
 * `Web3 JavaScript API <https://github.com/ethereum/wiki/wiki/JavaScript-API>`__ - This is the main JavaScript SDK to use when you want to interact with an Ethereum node.
 * `JSON RPC API <https://github.com/ethereum/wiki/wiki/JSON-RPC>`__ - This is the low level JSON RPC 2.0 interface to interface with a node. This API is used by the `Web3 JavaScript API <https://github.com/ethereum/wiki/wiki/JavaScript-API>`__.
 * `Solidity Docs <https://solidity.readthedocs.org/en/latest/>`__ -
